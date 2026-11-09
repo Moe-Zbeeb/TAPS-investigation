@@ -167,9 +167,12 @@ class ServingPoolTests(unittest.TestCase):
         self.assertEqual(len(result['gpu_paths']), 8)
         self.assertTrue(all(Path(value['tmp']).is_dir() for value in result['gpu_paths'].values()))
         self.assertIn('runtime.py', serving_pool.MODULES)
-        with patch.dict(os.environ, {}, clear=True), patch.object(serving_pool.runtime, 'cache_directory', side_effect=ValueError('bad proof')), self.assertRaises(ValueError):
-            serving_pool.compiled_cache(self.root, 'different', self.hardware)
-        self.assertNotIn('CUDA_VISIBLE_DEVICES', os.environ)
+        for binding in (None, '', '2,5'):
+            environment = {} if binding is None else {'CUDA_VISIBLE_DEVICES': binding}
+            with self.subTest(cuda_visible_devices=binding), patch.dict(os.environ, environment, clear=True):
+                with patch.object(serving_pool.runtime, 'cache_directory', side_effect=ValueError('bad proof')), self.assertRaises(ValueError):
+                    serving_pool.compiled_cache(self.root, 'different', self.hardware)
+                self.assertEqual(dict(os.environ), environment)
 
     def test_real_cluster_ipc_path_budget_fits_uuid_socket_names(self):
         prefix = Path('/tmp/taps-rebuild-vllm-29562-2212576-deep-chungus-10-s12345678')

@@ -7,6 +7,12 @@
   ],
   "paper_metadata": "references/inputs.json retains canonical URLs and checksums",
   "publication": "fresh code snapshot; active cluster deployment remains unchanged",
+  "publication_changes": [
+    "Public README, getting-started guide and repository metadata",
+    "CPU GitHub Actions and command entry point",
+    "Small immutable engineering receipts with their original hashes",
+    "Environment-isolation portability fix in tests/test_serving_pool.py; production src bytes unchanged"
+  ],
   "runtime_artifacts": "weights, datasets, environments, caches, raw outputs and credentials are not included",
   "source_code_sha256": {
     "src/taps_rebuild/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
