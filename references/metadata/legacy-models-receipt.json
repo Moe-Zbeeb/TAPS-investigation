@@ -1,0 +1,2865 @@
+{
+  "study": "taps-setup-20261101",
+  "status": "complete",
+  "root": "/mnt/nfs/home/mohamadzbib/projects/rl-infra",
+  "registry": "/mnt/nfs/home/mohamadzbib/projects/rl-infra/configs/taps-setup-20261101/model_registry.json",
+  "registry_sha256": "0287554e62cf2c92841a82e25080a665acd6f17798b34fab25d75b647b6e8410",
+  "source_sha256": "d370facb7a535b2c182e8931204fb42839b5156f13af23315c1e4300b7d58a8f",
+  "slurm_job_id": "2196393",
+  "started_at_utc": "2026-11-01T13:58:49.556912+00:00",
+  "anonymous_public_downloads": true,
+  "gpu_execution_performed": false,
+  "model_execution_verified": false,
+  "training_started": false,
+  "models": {
+    "verifier": {
+      "repo_id": "zbeeb/base-llama3-8b",
+      "revision": "8f7aa66cc4769a735a351f43738f631943444f8e",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/rl-infra/models/taps-setup-20261101/verifier",
+      "resolved_path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-setup-20261101/verifier",
+      "files": {
+        "LICENSE": {
+          "size_bytes": 7801,
+          "sha256": "475211637354ce4c14b9c3dacccbefbaba735fe1b0db97d6c4fd11cd1356819f",
+          "git_blob_id": "4c763399690c7fec642231350756e4ee9184b5ce",
+          "verification_method": "git_blob_id",
+          "expected_identity": "4c763399690c7fec642231350756e4ee9184b5ce"
+        },
+        "USE_POLICY.md": {
+          "size_bytes": 4696,
+          "sha256": "003513f595a20b7d63c609dfe80879531acb9caef6376fcc109bf0827471f3d1",
+          "git_blob_id": "6f8e5f6e3243c92046a133c92eb62b1ed7975a0b",
+          "verification_method": "git_blob_id",
+          "expected_identity": "6f8e5f6e3243c92046a133c92eb62b1ed7975a0b"
+        },
+        "config.json": {
+          "size_bytes": 654,
+          "sha256": "61f3de03a16ca8046b05dc777bce72717022bc8522152eee61a69072272ef54b",
+          "git_blob_id": "31553d63b8f18df5d6d440860751533ada3759e4",
+          "verification_method": "git_blob_id",
+          "expected_identity": "31553d63b8f18df5d6d440860751533ada3759e4"
+        },
+        "generation_config.json": {
+          "size_bytes": 187,
+          "sha256": "d1af74d8ba49428ab2faa65f7948165cc6bf52b740e57e840f8af772587c894c",
+          "git_blob_id": "8675015d20a4b12ee2ee0197a0937beba318122a",
+          "verification_method": "git_blob_id",
+          "expected_identity": "8675015d20a4b12ee2ee0197a0937beba318122a"
+        },
+        "model-00001-of-00004.safetensors": {
+          "size_bytes": 4976698672,
+          "sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c",
+          "git_blob_id": null,
+          "verification_method": "lfs_sha256",
+          "expected_identity": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+        },
+        "model-00002-of-00004.safetensors": {
+          "size_bytes": 4999802720,
+          "sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c",
+          "git_blob_id": null,
+          "verification_method": "lfs_sha256",
+          "expected_identity": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+        },
+        "model-00003-of-00004.safetensors": {
+          "size_bytes": 4915916176,
+          "sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921",
+          "git_blob_id": null,
+          "verification_method": "lfs_sha256",
+          "expected_identity": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+        },
+        "model-00004-of-00004.safetensors": {
+          "size_bytes": 1168138808,
+          "sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46",
+          "git_blob_id": null,
+          "verification_method": "lfs_sha256",
+          "expected_identity": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+        },
+        "model.safetensors.index.json": {
+          "size_bytes": 23950,
+          "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+          "git_blob_id": "0fd8120f1c6acddc268ebc2583058efaf699a771",
+          "verification_method": "git_blob_id",
+          "expected_identity": "0fd8120f1c6acddc268ebc2583058efaf699a771"
+        },
+        "special_tokens_map.json": {
+          "size_bytes": 73,
+          "sha256": "462d91939dbc37178aa5a3eae7068d1990ccc92e09f288cc71f42cdf139d69cc",
+          "git_blob_id": "d8cd5076496dbe4be2320312abc10adc43097b81",
+          "verification_method": "git_blob_id",
+          "expected_identity": "d8cd5076496dbe4be2320312abc10adc43097b81"
+        },
+        "tokenizer.json": {
+          "size_bytes": 9085698,
+          "sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7",
+          "git_blob_id": "b197f72effb9d5ed16ee0f5663e11e4cfac2ba62",
+          "verification_method": "git_blob_id",
+          "expected_identity": "b197f72effb9d5ed16ee0f5663e11e4cfac2ba62"
+        },
+        "tokenizer_config.json": {
+          "size_bytes": 50977,
+          "sha256": "da0e3a7cce6e4d787e85eb1c24d548420e0d7fe2c7a214e192795c46e40d75bb",
+          "git_blob_id": "1bfd1146b7bde6168de7bb673bfe0acaea6e684c",
+          "verification_method": "git_blob_id",
+          "expected_identity": "1bfd1146b7bde6168de7bb673bfe0acaea6e684c"
+        }
+      },
+      "total_bytes": 16069730412,
+      "config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "attention_bias": false,
+        "attention_dropout": 0.0,
+        "bos_token_id": 128000,
+        "eos_token_id": 128009,
+        "hidden_act": "silu",
+        "hidden_size": 4096,
+        "initializer_range": 0.02,
+        "intermediate_size": 14336,
+        "max_position_embeddings": 8192,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 32,
+        "num_key_value_heads": 8,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "rope_theta": 500000.0,
+        "tie_word_embeddings": false,
+        "torch_dtype": "bfloat16",
+        "transformers_version": "4.40.0.dev0",
+        "use_cache": true,
+        "vocab_size": 128256
+      },
+      "safetensors": {
+        "parameters": 8030261248,
+        "dtype_parameters": {
+          "BF16": 8030261248
+        },
+        "shards": {
+          "model-00001-of-00004.safetensors": {
+            "parameters": 2488344576,
+            "tensors": 82
+          },
+          "model-00002-of-00004.safetensors": {
+            "parameters": 2499895296,
+            "tensors": 104
+          },
+          "model-00003-of-00004.safetensors": {
+            "parameters": 2457952256,
+            "tensors": 100
+          },
+          "model-00004-of-00004.safetensors": {
+            "parameters": 584069120,
+            "tensors": 5
+          }
+        },
+        "tensor_inventory": {
+          "model.embed_tokens.weight": {
+            "shape": [
+              128256,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 525336576,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.0.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.0.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.0.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.0.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.0.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.0.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.0.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.0.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.0.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.1.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.1.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.1.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.1.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.1.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.1.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.1.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.1.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.1.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.2.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.2.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.2.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.2.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.2.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.2.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.2.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.2.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.2.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.3.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.3.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.3.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.3.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.3.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.3.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.3.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.3.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.3.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.4.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.4.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.4.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.4.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.4.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.4.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.4.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.4.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.4.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.5.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.5.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.5.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.5.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.5.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.5.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.5.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.5.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.5.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.6.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.6.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.6.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.6.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.6.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.6.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.6.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.6.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.6.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.7.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.7.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.7.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.7.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.7.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.7.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.7.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.7.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.7.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.8.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.8.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.8.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.8.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.8.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.8.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.8.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.8.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.8.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00001-of-00004.safetensors"
+          },
+          "model.layers.10.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.10.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.10.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.10.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.10.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.10.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.10.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.10.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.10.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.11.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.11.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.11.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.11.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.11.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.11.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.11.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.11.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.11.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.12.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.12.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.12.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.12.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.12.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.12.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.12.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.12.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.12.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.13.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.13.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.13.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.13.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.13.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.13.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.13.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.13.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.13.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.14.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.14.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.14.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.14.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.14.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.14.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.14.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.14.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.14.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.15.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.15.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.15.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.15.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.15.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.15.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.15.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.15.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.15.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.16.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.16.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.16.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.16.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.16.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.16.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.16.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.16.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.16.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.17.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.17.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.17.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.17.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.17.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.17.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.17.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.17.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.17.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.18.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.18.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.18.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.18.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.18.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.18.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.18.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.18.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.18.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.19.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.19.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.19.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.19.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.19.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.19.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.19.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.19.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.19.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.20.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.20.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.20.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.20.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.20.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.9.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.9.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.9.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.9.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.9.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.9.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.9.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.9.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.9.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00002-of-00004.safetensors"
+          },
+          "model.layers.20.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.20.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.20.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.20.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.21.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.21.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.21.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.21.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.21.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.21.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.21.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.21.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.21.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.22.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.22.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.22.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.22.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.22.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.22.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.22.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.22.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.22.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.23.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.23.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.23.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.23.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.23.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.23.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.23.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.23.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.23.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.24.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.24.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.24.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.24.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.24.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.24.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.24.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.24.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.24.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.25.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.25.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.25.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.25.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.25.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.25.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.25.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.25.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.25.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.26.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.26.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.26.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.26.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.26.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.26.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.26.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.26.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.26.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.27.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.27.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.27.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.27.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.27.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.27.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.27.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.27.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.27.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.28.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.28.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.28.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.28.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.28.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.28.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.28.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.28.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.28.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.29.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.29.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.29.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.29.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.29.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.29.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.29.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.29.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.29.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.30.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.30.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.30.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.30.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.30.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.30.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.30.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.30.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.30.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.31.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.31.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.31.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.31.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.31.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 16777216,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "model.layers.31.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4194304,
+            "shard": "model-00003-of-00004.safetensors"
+          },
+          "lm_head.weight": {
+            "shape": [
+              128256,
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 525336576,
+            "shard": "model-00004-of-00004.safetensors"
+          },
+          "model.layers.31.input_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00004-of-00004.safetensors"
+          },
+          "model.layers.31.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "BF16",
+            "numel": 58720256,
+            "shard": "model-00004-of-00004.safetensors"
+          },
+          "model.layers.31.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00004-of-00004.safetensors"
+          },
+          "model.norm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "BF16",
+            "numel": 4096,
+            "shard": "model-00004-of-00004.safetensors"
+          }
+        },
+        "model_instantiated": false
+      }
+    },
+    "eagle_original": {
+      "repo_id": "yuhuili/EAGLE-LLaMA3-Instruct-8B",
+      "revision": "5bfe556a9af27e5402fc2df1bb7cc134cea54f41",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/rl-infra/models/taps-setup-20261101/eagle-original",
+      "resolved_path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-setup-20261101/eagle-original",
+      "files": {
+        "config.json": {
+          "size_bytes": 606,
+          "sha256": "0403c27c6848cb3aa4a51151f284e2f0fbf790e4c94e08babf1972060f5db4ee",
+          "git_blob_id": "f4507674f76ba0ea0f3f687f93bd062739591cb2",
+          "verification_method": "git_blob_id",
+          "expected_identity": "f4507674f76ba0ea0f3f687f93bd062739591cb2"
+        },
+        "pytorch_model.bin": {
+          "size_bytes": 1554000828,
+          "sha256": "5b4ca9d8321953526d49a50bd28d16c0e8d5cf559d5a66b60b8ac5df7ab8078a",
+          "git_blob_id": null,
+          "verification_method": "lfs_sha256",
+          "expected_identity": "5b4ca9d8321953526d49a50bd28d16c0e8d5cf559d5a66b60b8ac5df7ab8078a"
+        },
+        "LICENSE": {
+          "size_bytes": 557,
+          "sha256": "ab6a3bfbc8aacdac7132f4c919aa0fb938cf6b6a2df384d295ee332107a96f41",
+          "git_blob_id": "b012656399475a61b6e2a5e968dd5eee7142394f",
+          "verification_method": "git_blob_id",
+          "expected_identity": "b012656399475a61b6e2a5e968dd5eee7142394f"
+        }
+      },
+      "total_bytes": 1554001991,
+      "config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 128000,
+        "eos_token_id": 128001,
+        "hidden_act": "silu",
+        "hidden_size": 4096,
+        "initializer_range": 0.02,
+        "intermediate_size": 14336,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_key_value_heads": 8,
+        "num_hidden_layers": 1,
+        "pad_token_id": 0,
+        "rms_norm_eps": 1e-05,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float16",
+        "transformers_version": "4.28.1",
+        "use_cache": true,
+        "vocab_size": 128256,
+        "rope_theta": 500000.0,
+        "bias": false
+      },
+      "state_dict": {
+        "inspection": "torch.load(weights_only=True,map_location=cpu)",
+        "parameters_in_state_dict": 776998912,
+        "dtype_parameters": {
+          "float16": 776998912
+        },
+        "tensor_inventory": {
+          "layers.0.self_attn.q_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "float16",
+            "numel": 16777216
+          },
+          "layers.0.self_attn.k_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "float16",
+            "numel": 4194304
+          },
+          "layers.0.self_attn.v_proj.weight": {
+            "shape": [
+              1024,
+              4096
+            ],
+            "dtype": "float16",
+            "numel": 4194304
+          },
+          "layers.0.self_attn.o_proj.weight": {
+            "shape": [
+              4096,
+              4096
+            ],
+            "dtype": "float16",
+            "numel": 16777216
+          },
+          "layers.0.mlp.gate_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "float16",
+            "numel": 58720256
+          },
+          "layers.0.mlp.up_proj.weight": {
+            "shape": [
+              14336,
+              4096
+            ],
+            "dtype": "float16",
+            "numel": 58720256
+          },
+          "layers.0.mlp.down_proj.weight": {
+            "shape": [
+              4096,
+              14336
+            ],
+            "dtype": "float16",
+            "numel": 58720256
+          },
+          "layers.0.post_attention_layernorm.weight": {
+            "shape": [
+              4096
+            ],
+            "dtype": "float16",
+            "numel": 4096
+          },
+          "embed_tokens.weight": {
+            "shape": [
+              128256,
+              4096
+            ],
+            "dtype": "float16",
+            "numel": 525336576
+          },
+          "fc.weight": {
+            "shape": [
+              4096,
+              8192
+            ],
+            "dtype": "float16",
+            "numel": 33554432
+          }
+        },
+        "model_instantiated": false,
+        "torch_version": "2.11.0+cu128"
+      }
+    }
+  },
+  "completed_at_utc": "2026-11-01T14:03:08.045477+00:00",
+  "huggingface_hub_version": "1.16.1",
+  "setup_scope": "original verifier and original released EAGLE drafter; no TAPS specialists, training or GPU execution"
+}

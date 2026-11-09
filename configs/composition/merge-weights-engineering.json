@@ -1,0 +1,51 @@
+{
+  "ancestor": {
+    "inline": {
+      "step": 0,
+      "w": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "ancestor_identity": "288079c2dbb6becd5c616d30a78a2e5dcb3fe57885ab261a9cbf478b739b2d1b",
+  "density": 0.5,
+  "diagnostic_independent": false,
+  "expert_ancestors": {
+    "engineering-a": "288079c2dbb6becd5c616d30a78a2e5dcb3fe57885ab261a9cbf478b739b2d1b",
+    "engineering-b": "288079c2dbb6becd5c616d30a78a2e5dcb3fe57885ab261a9cbf478b739b2d1b"
+  },
+  "experts": {
+    "engineering-a": {
+      "inline": {
+        "step": 0,
+        "w": [
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ]
+      }
+    },
+    "engineering-b": {
+      "inline": {
+        "step": 0,
+        "w": [
+          2.0,
+          4.0,
+          6.0,
+          8.0
+        ]
+      }
+    }
+  },
+  "method": "linear",
+  "operation": "merge-weights",
+  "qualification": "Synthetic weight fixture; method may be linear, task_arithmetic, ties or dare. No trained checkpoint or quality measurement.",
+  "scale": 1.0,
+  "schema_version": 1,
+  "scope": "engineering",
+  "seed": 20261109
+}

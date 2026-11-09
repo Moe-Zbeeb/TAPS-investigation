@@ -1,0 +1,40 @@
+{
+  "omitted_downloaded_papers": [
+    "references/papers/eagle2-v1.pdf",
+    "references/papers/eagle3-v3.pdf",
+    "references/papers/hass-v3.pdf",
+    "references/papers/taps-original-v1.pdf"
+  ],
+  "paper_metadata": "references/inputs.json retains canonical URLs and checksums",
+  "publication": "fresh code snapshot; active cluster deployment remains unchanged",
+  "runtime_artifacts": "weights, datasets, environments, caches, raw outputs and credentials are not included",
+  "source_code_sha256": {
+    "src/taps_rebuild/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "src/taps_rebuild/__main__.py": "b2663b7425569c81aa530431d163a016dc86dbe3748818f472b9acc508c8b0ba",
+    "src/taps_rebuild/assets.py": "2a312ec52618ab335fcda435e47406c568f55d14e48baf2193b1bd364755ee32",
+    "src/taps_rebuild/attach.py": "376d2e5eb8936812b1b53e45adac8983bd6ceed226329fa355fd0e50a1868b6b",
+    "src/taps_rebuild/backends/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/taps_rebuild/backends/official.py": "e5a6863d3a387fe4a91d30b7b368358a6195e222a3a4ac3ab2958df539175d4a",
+    "src/taps_rebuild/backends/pooled.py": "3518af70d7c71e27710ac5a66c72816dfc7257ab5013a35c983ccd6375dabc64",
+    "src/taps_rebuild/composition.py": "e4c428f11468b6231c12156822a6c68b7e4a0bdf3e8bc59493b8dd79b398f69d",
+    "src/taps_rebuild/composition_cli.py": "edafe0e34d10f77c780cb25c350bd29f41692c65163597ce164cb16dbbfc437a",
+    "src/taps_rebuild/data.py": "ca070ff7bba2526d83a44a00d972ea7694fbd63c53539f244528cf2fc32b0608",
+    "src/taps_rebuild/data_pool.py": "21fedaacbf6e9ce0e9c0b9f143bcf8827d714429712aa57deee834ff05d121a4",
+    "src/taps_rebuild/engineering.py": "5d0f1f8758265e9914899069213f42105dd41ddceea58e3e0682ee05f19be941",
+    "src/taps_rebuild/learning.py": "bf46a60595b3f46829f0211e429aca2c0d48818e36c07121582b229e3e35f79d",
+    "src/taps_rebuild/metrics.py": "1a168810154a7c0f0d5fc46037997f461d8daf6999ce23b6ef8fca9db68ca508",
+    "src/taps_rebuild/native_runtime.py": "328626fef96ca9f40b288ab49c832f14a26ff3fc9b182ba78938b3b8239446df",
+    "src/taps_rebuild/native_training.py": "24f6f3bd6a7041e0d3d8a9b92e0cbe45bc85e61860c984df9dc55760f9b8f2eb",
+    "src/taps_rebuild/pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+    "src/taps_rebuild/reference_group.py": "a660867c89d2f13b8c7d5cff48c23a861df8925a8b14bf16f6b758a95d40d310",
+    "src/taps_rebuild/runner.py": "7cc2327f83d76238a28e7539f094e1d8c387c0496c0c8ad13f6c079f84794d3c",
+    "src/taps_rebuild/runtime.py": "ade8973206220550ec275b73c3a0fe7e33b7869b653cdfba700ee72117d41d3e",
+    "src/taps_rebuild/serving.py": "af74b16b5aa281671b2338e7fbba2517234cb91ab6a317ac8eed616cd21a6d07",
+    "src/taps_rebuild/serving_pool.py": "f40e8f8efe5ef64e5cee4326451970fcd185a34333b30e7a4b1e10e013c07e33",
+    "src/taps_rebuild/sources.py": "9aeb3df80bb81b856c114f753698caa2410074153e265aaa76a1e81a24be7faf",
+    "src/taps_rebuild/specialization.py": "7510c8e8d6960c117b8dbc7017176e8f3a9171b53215ac5f0157886b7c050bae",
+    "src/taps_rebuild/verification.py": "2f20b91dbf33aa101135f3b3199ce0542f764d3d41a5e8332c11c38920fc5d31"
+  },
+  "source_commit": "9f66144af13e5728bd276951916fa88d84ef1394",
+  "source_project": "TAPS rebuild working repository"
+}

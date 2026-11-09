@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "scope": "engineering",
+  "implementation": "REFERENCE_PROTOTYPE",
+  "native_official_eagle3_recipe": false,
+  "experiment": "shared-body-experts",
+  "run_id": "engineering-20261109",
+  "seed": 20261109,
+  "model": {
+    "feature_dim": 16,
+    "vocab_size": 32,
+    "hidden_size": 32,
+    "num_attention_heads": 4,
+    "num_hidden_layers": 1,
+    "num_experts": 2,
+    "expert_mode": "separate_heads",
+    "lora_rank": 4,
+    "lora_alpha": 4,
+    "max_sequence_length": 16,
+    "dropout": 0,
+    "pad_token_id": 0
+  },
+  "data": {
+    "synthetic": true,
+    "examples": 4,
+    "sequence_length": 8,
+    "include_teacher_logits": true
+  },
+  "loss": {
+    "objective": "hard_ce",
+    "temperature": 1,
+    "feature_mse_weight": 0.1,
+    "feature_mse_target": "next_features",
+    "domain_gate_weight": 0.1
+  },
+  "training": {
+    "optimizer_steps": 2,
+    "batch_size": 2,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 0.001,
+    "weight_decay": 0,
+    "max_grad_norm": 1,
+    "checkpoint_every_steps": 1,
+    "shuffle": true
+  },
+  "budget": {
+    "optimizer_steps": 2,
+    "loss_tokens": 64,
+    "nonpadding_tokens": 64,
+    "input_slots": 64
+  },
+  "qualification": "Tiny synthetic engineering exercise only; no native EAGLE-3 reproduction, trained-model quality or benchmark scores are claimed."
+}

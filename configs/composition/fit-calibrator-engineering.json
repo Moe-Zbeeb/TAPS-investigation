@@ -1,0 +1,42 @@
+{
+  "examples": {
+    "inline": [
+      {
+        "accepted": 0,
+        "example_id": "engineering-dev-0",
+        "label_source": "target_verification",
+        "log_probability": -2.302585092994046,
+        "split": "dev"
+      },
+      {
+        "accepted": 0,
+        "example_id": "engineering-dev-1",
+        "label_source": "target_verification",
+        "log_probability": -1.2039728043259361,
+        "split": "dev"
+      },
+      {
+        "accepted": 1,
+        "example_id": "engineering-dev-2",
+        "label_source": "target_verification",
+        "log_probability": -0.5108256237659907,
+        "split": "dev"
+      },
+      {
+        "accepted": 1,
+        "example_id": "engineering-dev-3",
+        "label_source": "target_verification",
+        "log_probability": -0.10536051565782628,
+        "split": "dev"
+      }
+    ]
+  },
+  "expert_id": "engineering-a",
+  "forbidden_ids": [],
+  "method": "isotonic",
+  "operation": "fit-calibrator",
+  "qualification": "Synthetic calibration fixture for CLI validation; not measured model verification logs.",
+  "schema_version": 1,
+  "scope": "engineering",
+  "split": "dev"
+}

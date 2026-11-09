@@ -1,0 +1,41 @@
+{
+  "rebuild_plan": {
+    "path": "TAPS_rebuild_plan.pdf",
+    "sha256": "357ba28e2e5e1aa658dae82c279253ac07457d9d406ac50cde0fbf513b150dae",
+    "source": "User-provided on 2026-11-09"
+  },
+  "papers": [
+    {
+      "id": "taps-original-v1",
+      "url": "https://arxiv.org/pdf/2603.27027v1",
+      "path": "references/papers/taps-original-v1.pdf",
+      "bytes": 2517018,
+      "sha256": "ce3a6d9d89d7faab220e6d3c51c1bc4f9e87bcf30c1777c03056aa45abc74541",
+      "pages": 21
+    },
+    {
+      "id": "eagle3-v3",
+      "url": "https://arxiv.org/pdf/2503.01840v3",
+      "path": "references/papers/eagle3-v3.pdf",
+      "bytes": 946062,
+      "sha256": "8a178337a1b05067907167dd81a43a7184596d71d4b795d6a0c73e6235fe1a27",
+      "pages": 12
+    },
+    {
+      "id": "hass-v3",
+      "url": "https://arxiv.org/pdf/2408.15766v3",
+      "path": "references/papers/hass-v3.pdf",
+      "bytes": 603718,
+      "sha256": "70397bfebb3f0ecbe1e14cac04cceb21de49db00865edbaf40b5326f9e4c54b7",
+      "pages": 22
+    },
+    {
+      "id": "eagle2-v1",
+      "url": "https://arxiv.org/pdf/2406.16858v1",
+      "path": "references/papers/eagle2-v1.pdf",
+      "bytes": 1778411,
+      "sha256": "a7dba83636c47b60f6ff7c9d2edaab99af2740c603a565f34351680825b2847e",
+      "pages": 12
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "budget": 3,
+  "calibrators": {
+    "engineering-a": {
+      "path": "outputs/composition/calibrator-engineering-a.json"
+    }
+  },
+  "drafts": {
+    "inline": [
+      {
+        "expert_id": "engineering-a",
+        "nodes": [
+          {
+            "log_probability": -0.5108256237659907,
+            "path": [
+              1
+            ]
+          },
+          {
+            "log_probability": -1.2039728043259361,
+            "path": [
+              1,
+              2
+            ]
+          },
+          {
+            "log_probability": -1.6094379124341003,
+            "path": [
+              3
+            ]
+          }
+        ],
+        "root_source": "target_greedy",
+        "root_token": 9
+      }
+    ]
+  },
+  "operation": "pool-tree",
+  "qualification": "Synthetic fixed-budget tree fixture; first run fit-calibrator-engineering.json to the configured calibrator output path.",
+  "root_source": "target_greedy",
+  "root_token": 9,
+  "schema_version": 1,
+  "scope": "engineering",
+  "score_mode": "estimated"
+}

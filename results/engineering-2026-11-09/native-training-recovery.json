@@ -1,0 +1,326 @@
+{
+  "all_eight_gpu_contexts_gone": true,
+  "completed_at": "2026-11-09T18:02:01.064008+00:00",
+  "config_sha256": "564dbff9b88da29f24202d78c1a90a0503d1743521105f9179bb1d233348f107",
+  "controller_and_idle_sha256": "672dee6195a082fbac6a190700c62d996d39837b60fb650fca48c85cff9ba268",
+  "draft_identity_sha256": "799ec84004c49f8e82acf43c849a64596f47a2f28d3516a810e951798de99fcf",
+  "limitations": [
+    "Tiny authored32train8validation fixture; no model quality or paper reproduction claim",
+    "Only same-engine ZeRO2 model and optimizer recovery tested",
+    "Counters and learning rates checked for invariance, not deliberately perturbed",
+    "Mid-epoch data/RNG restart remains unsupported",
+    "No frozen parameter selected for mutation; full frozen target GPU tensor hash not measured"
+  ],
+  "native_launch_sha256": "8c1bb6fcd18d74ad66e311a08b5aa9d1cb570b221ebd437fa2760e2d40e46d20",
+  "plan_sha256": "9f36053eae386210357942ac1e608e1e858a60470e1025940eaa4eaac60943be",
+  "post_return_idle_proof": {
+    "checked_at": "2026-11-09T18:02:01.063967+00:00",
+    "compute_processes_raw": "",
+    "gpus": [
+      {
+        "index": 0,
+        "memory_used_mib": 0,
+        "utilization_gpu_percent": 0,
+        "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434"
+      },
+      {
+        "index": 1,
+        "memory_used_mib": 0,
+        "utilization_gpu_percent": 0,
+        "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641"
+      },
+      {
+        "index": 2,
+        "memory_used_mib": 0,
+        "utilization_gpu_percent": 0,
+        "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a"
+      },
+      {
+        "index": 3,
+        "memory_used_mib": 0,
+        "utilization_gpu_percent": 0,
+        "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95"
+      },
+      {
+        "index": 4,
+        "memory_used_mib": 0,
+        "utilization_gpu_percent": 0,
+        "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8"
+      },
+      {
+        "index": 5,
+        "memory_used_mib": 0,
+        "utilization_gpu_percent": 0,
+        "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797"
+      },
+      {
+        "index": 6,
+        "memory_used_mib": 0,
+        "utilization_gpu_percent": 0,
+        "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a"
+      },
+      {
+        "index": 7,
+        "memory_used_mib": 0,
+        "utilization_gpu_percent": 0,
+        "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d"
+      }
+    ],
+    "idle": true
+  },
+  "ranks": [
+    {
+      "optimizer_state_sha256_after": "8b696f95da35b09e53b13ce6d5c184a258f527df923c3dad3c2a773b1fe05632",
+      "optimizer_state_sha256_before": "8b696f95da35b09e53b13ce6d5c184a258f527df923c3dad3c2a773b1fe05632",
+      "optimizer_state_sha256_perturbed": "555abd735ffeed629e36d7b9a71685cebadd5d023cc9d4b7f6ef028a4988744a",
+      "perturbation": {
+        "frozen_parameters_selected": false,
+        "model_flat_index": 0,
+        "model_parameter": "fc.weight",
+        "model_scalar_before": 0.01544952392578125,
+        "model_scalar_perturbed": 0.0,
+        "model_scalars_mutated": 1,
+        "optimizer_flat_index": 0,
+        "optimizer_moment_scalar_before": 0.0,
+        "optimizer_moment_scalar_perturbed": 1.0,
+        "optimizer_param_group": 0,
+        "optimizer_parameter_index": 0,
+        "optimizer_scalars_mutated": 1,
+        "optimizer_state_key": "exp_avg"
+      },
+      "rank": 0,
+      "receipt_sha256": "a35cf236fa5cd8178c1e7a80380db0219290c365ccb88c1d21be2cfc846dc34a",
+      "skipped_steps": 0,
+      "successful_optimizer_steps": 2,
+      "trainable_model_sha256_after": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_before": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_perturbed": "c4435ba4701b02fe32a94fc3de3c1b08473c0a44e5971466c7e5b185f578189c"
+    },
+    {
+      "optimizer_state_sha256_after": "7d5b143d984fdcbba3c67c48b4b0870c630daaa63c41548ef109bed0b8d1d482",
+      "optimizer_state_sha256_before": "7d5b143d984fdcbba3c67c48b4b0870c630daaa63c41548ef109bed0b8d1d482",
+      "optimizer_state_sha256_perturbed": "8bdabd06255f0cc14d3b99e878c65b2c2b712db28125867c67468ba6723d858b",
+      "perturbation": {
+        "frozen_parameters_selected": false,
+        "model_flat_index": 0,
+        "model_parameter": "fc.weight",
+        "model_scalar_before": 0.01544952392578125,
+        "model_scalar_perturbed": 0.0,
+        "model_scalars_mutated": 1,
+        "optimizer_flat_index": 0,
+        "optimizer_moment_scalar_before": 0.0,
+        "optimizer_moment_scalar_perturbed": 1.0,
+        "optimizer_param_group": 0,
+        "optimizer_parameter_index": 0,
+        "optimizer_scalars_mutated": 1,
+        "optimizer_state_key": "exp_avg"
+      },
+      "rank": 1,
+      "receipt_sha256": "17df442eeade81511f08519209fe1a1a86aa0fa0b2cfaf6d5d9d79cfbd4ceac3",
+      "skipped_steps": 0,
+      "successful_optimizer_steps": 2,
+      "trainable_model_sha256_after": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_before": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_perturbed": "c4435ba4701b02fe32a94fc3de3c1b08473c0a44e5971466c7e5b185f578189c"
+    },
+    {
+      "optimizer_state_sha256_after": "836a1c4fae197aa7e3c42c1fa7a4c56d3ed3d527530646ff1753e81e369429dd",
+      "optimizer_state_sha256_before": "836a1c4fae197aa7e3c42c1fa7a4c56d3ed3d527530646ff1753e81e369429dd",
+      "optimizer_state_sha256_perturbed": "edb8943f90f2646cce6803bb51425335efb9b2b112476acf4c8dcedc255cb98f",
+      "perturbation": {
+        "frozen_parameters_selected": false,
+        "model_flat_index": 0,
+        "model_parameter": "fc.weight",
+        "model_scalar_before": 0.01544952392578125,
+        "model_scalar_perturbed": 0.0,
+        "model_scalars_mutated": 1,
+        "optimizer_flat_index": 0,
+        "optimizer_moment_scalar_before": 0.0,
+        "optimizer_moment_scalar_perturbed": 1.0,
+        "optimizer_param_group": 0,
+        "optimizer_parameter_index": 0,
+        "optimizer_scalars_mutated": 1,
+        "optimizer_state_key": "exp_avg"
+      },
+      "rank": 2,
+      "receipt_sha256": "5253fa62690145db7fb3d4ccdec7863c384f3b02fabdb831532044b0225d87f5",
+      "skipped_steps": 0,
+      "successful_optimizer_steps": 2,
+      "trainable_model_sha256_after": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_before": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_perturbed": "c4435ba4701b02fe32a94fc3de3c1b08473c0a44e5971466c7e5b185f578189c"
+    },
+    {
+      "optimizer_state_sha256_after": "e09b6e4c670e9156cb81dcdeefa6d9a09fbb6d3ea6d4bd15ff1a3ef87b3bd91a",
+      "optimizer_state_sha256_before": "e09b6e4c670e9156cb81dcdeefa6d9a09fbb6d3ea6d4bd15ff1a3ef87b3bd91a",
+      "optimizer_state_sha256_perturbed": "e26395194f6ab4a413297fd19ce654e0c2b1a6f539a78ee93e2289f1d56ea9b1",
+      "perturbation": {
+        "frozen_parameters_selected": false,
+        "model_flat_index": 0,
+        "model_parameter": "fc.weight",
+        "model_scalar_before": 0.01544952392578125,
+        "model_scalar_perturbed": 0.0,
+        "model_scalars_mutated": 1,
+        "optimizer_flat_index": 0,
+        "optimizer_moment_scalar_before": 0.0,
+        "optimizer_moment_scalar_perturbed": 1.0,
+        "optimizer_param_group": 0,
+        "optimizer_parameter_index": 0,
+        "optimizer_scalars_mutated": 1,
+        "optimizer_state_key": "exp_avg"
+      },
+      "rank": 3,
+      "receipt_sha256": "cd85781749e5e70ff31cc654b8b786e1ebc6db152541f5830a3d635133e08e1f",
+      "skipped_steps": 0,
+      "successful_optimizer_steps": 2,
+      "trainable_model_sha256_after": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_before": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_perturbed": "c4435ba4701b02fe32a94fc3de3c1b08473c0a44e5971466c7e5b185f578189c"
+    },
+    {
+      "optimizer_state_sha256_after": "46e936ccbef610a43e472e1fd4841cfd48f31441cab2e81ad8d5a0789858922f",
+      "optimizer_state_sha256_before": "46e936ccbef610a43e472e1fd4841cfd48f31441cab2e81ad8d5a0789858922f",
+      "optimizer_state_sha256_perturbed": "aa7de7898d4659c4aebe4edac051a9fecea262a648432799bad06d0e86ef9a20",
+      "perturbation": {
+        "frozen_parameters_selected": false,
+        "model_flat_index": 0,
+        "model_parameter": "fc.weight",
+        "model_scalar_before": 0.01544952392578125,
+        "model_scalar_perturbed": 0.0,
+        "model_scalars_mutated": 1,
+        "optimizer_flat_index": 0,
+        "optimizer_moment_scalar_before": 0.0,
+        "optimizer_moment_scalar_perturbed": 1.0,
+        "optimizer_param_group": 0,
+        "optimizer_parameter_index": 0,
+        "optimizer_scalars_mutated": 1,
+        "optimizer_state_key": "exp_avg"
+      },
+      "rank": 4,
+      "receipt_sha256": "e4c1c02b2fbf774ef8df99c90e1056bc9f9de9da4285312fb45097bac86ea076",
+      "skipped_steps": 0,
+      "successful_optimizer_steps": 2,
+      "trainable_model_sha256_after": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_before": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_perturbed": "c4435ba4701b02fe32a94fc3de3c1b08473c0a44e5971466c7e5b185f578189c"
+    },
+    {
+      "optimizer_state_sha256_after": "1163466287371923e1cb402abe19e864f6c69edd577ff5376ef1cbbb775f04c5",
+      "optimizer_state_sha256_before": "1163466287371923e1cb402abe19e864f6c69edd577ff5376ef1cbbb775f04c5",
+      "optimizer_state_sha256_perturbed": "bd9cd80a528dbe0a43ddd1a4f455e340f85ddc714995c19c94c151deed240db2",
+      "perturbation": {
+        "frozen_parameters_selected": false,
+        "model_flat_index": 0,
+        "model_parameter": "fc.weight",
+        "model_scalar_before": 0.01544952392578125,
+        "model_scalar_perturbed": 0.0,
+        "model_scalars_mutated": 1,
+        "optimizer_flat_index": 0,
+        "optimizer_moment_scalar_before": 0.0,
+        "optimizer_moment_scalar_perturbed": 1.0,
+        "optimizer_param_group": 0,
+        "optimizer_parameter_index": 0,
+        "optimizer_scalars_mutated": 1,
+        "optimizer_state_key": "exp_avg"
+      },
+      "rank": 5,
+      "receipt_sha256": "6bb1eb970463058e9dcf51000e03254c7aa373b638d40c68b2f17e3f0916d13f",
+      "skipped_steps": 0,
+      "successful_optimizer_steps": 2,
+      "trainable_model_sha256_after": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_before": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_perturbed": "c4435ba4701b02fe32a94fc3de3c1b08473c0a44e5971466c7e5b185f578189c"
+    },
+    {
+      "optimizer_state_sha256_after": "696a17dae210b59563f0c71abfb423dd7794dca5ae27c7ca2025095ee7c90b13",
+      "optimizer_state_sha256_before": "696a17dae210b59563f0c71abfb423dd7794dca5ae27c7ca2025095ee7c90b13",
+      "optimizer_state_sha256_perturbed": "4d249fe3f376dcd38c7a4cb95bc756c66f0b03f908762798f60b0984b7db9f84",
+      "perturbation": {
+        "frozen_parameters_selected": false,
+        "model_flat_index": 0,
+        "model_parameter": "fc.weight",
+        "model_scalar_before": 0.01544952392578125,
+        "model_scalar_perturbed": 0.0,
+        "model_scalars_mutated": 1,
+        "optimizer_flat_index": 0,
+        "optimizer_moment_scalar_before": 1.6877337305487572e-09,
+        "optimizer_moment_scalar_perturbed": 0.0,
+        "optimizer_param_group": 0,
+        "optimizer_parameter_index": 0,
+        "optimizer_scalars_mutated": 1,
+        "optimizer_state_key": "exp_avg"
+      },
+      "rank": 6,
+      "receipt_sha256": "917153754aaf0d77c022755f7b3f4208ac7bf457a042c0ae6a0ab01957f0a2b8",
+      "skipped_steps": 0,
+      "successful_optimizer_steps": 2,
+      "trainable_model_sha256_after": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_before": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_perturbed": "c4435ba4701b02fe32a94fc3de3c1b08473c0a44e5971466c7e5b185f578189c"
+    },
+    {
+      "optimizer_state_sha256_after": "02c492de416ed76c52234fd688a71054e2ad2505cc96e3784aecbd6ee4f81eb7",
+      "optimizer_state_sha256_before": "02c492de416ed76c52234fd688a71054e2ad2505cc96e3784aecbd6ee4f81eb7",
+      "optimizer_state_sha256_perturbed": "a0f565407971ab44933bd49ef7412d3f9bd8a29f367333aa1e23714e5031a910",
+      "perturbation": {
+        "frozen_parameters_selected": false,
+        "model_flat_index": 0,
+        "model_parameter": "fc.weight",
+        "model_scalar_before": 0.01544952392578125,
+        "model_scalar_perturbed": 0.0,
+        "model_scalars_mutated": 1,
+        "optimizer_flat_index": 0,
+        "optimizer_moment_scalar_before": 1.6275215841687896e-07,
+        "optimizer_moment_scalar_perturbed": 0.0,
+        "optimizer_param_group": 0,
+        "optimizer_parameter_index": 0,
+        "optimizer_scalars_mutated": 1,
+        "optimizer_state_key": "exp_avg"
+      },
+      "rank": 7,
+      "receipt_sha256": "0d6cf2a53d0bb110fc6aa04222ca3d23a5876baa7aadbb3f41c6d5e9af084fc2",
+      "skipped_steps": 0,
+      "successful_optimizer_steps": 2,
+      "trainable_model_sha256_after": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_before": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+      "trainable_model_sha256_perturbed": "c4435ba4701b02fe32a94fc3de3c1b08473c0a44e5971466c7e5b185f578189c"
+    }
+  ],
+  "recorded_at": "2026-11-09T18:03:14.777704+00:00",
+  "scientific_quality_result": false,
+  "scope": "synthetic_engineering_only",
+  "slurm_accounting": "2212576.124|COMPLETED|0:0|00:02:25",
+  "slurm_job_id": "2212576",
+  "slurm_step_id": "124",
+  "source_sha256": "24f6f3bd6a7041e0d3d8a9b92e0cbe45bc85e61860c984df9dc55760f9b8f2eb",
+  "status": "passed",
+  "target_identity_sha256": "7c3d0c33c2a43a10ba658bdca906de7412050d8c094083a34e0d6fced7c94b6c",
+  "trained_models": {
+    "logical_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/models/trained/native-eagle3/native-startup-20261109-v6",
+    "resolved_path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-startup-20261109-v6",
+    "resolved_storage_root": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild"
+  },
+  "verification": "actual_eight_GPU_native_EAGLE3_two_successful_updates_and_same_engine_trainable_model_optimizer_recovery_after_explicit_perturbation",
+  "worker_summary": {
+    "checkpoint_roundtrip_all_ranks_passed": true,
+    "counts_include_sampler_padding": true,
+    "processed_training_tokens_all_dp_ranks": {
+      "input_assistant_mask_tokens": 448,
+      "input_slots": 5216,
+      "microbatches": 32,
+      "nonpadding_tokens": 5216
+    },
+    "reduced_vocab_loss_coverage_tokens_not_exposed": true,
+    "successful_optimizer_steps_by_rank": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "worker_count": 8
+  }
+}

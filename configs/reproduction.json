@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "study_id": "official-reproduction-20261109",
+  "plan_sha256": "357ba28e2e5e1aa658dae82c279253ac07457d9d406ac50cde0fbf513b150dae",
+  "cluster_root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+  "legacy_runtime_root": "/mnt/nfs/home/mohamadzbib/projects/rl-infra",
+  "scope": "reference",
+  "method_order": [
+    "eagle3",
+    "eagle2",
+    "hass"
+  ],
+  "methods": {
+    "eagle3": {
+      "source": "EAGLE",
+      "target": "llama31_instruct_8b",
+      "drafter": "eagle3_llama31_8b",
+      "profile": "eagle",
+      "depth": 7,
+      "max_observed_depth": 8,
+      "benchmarks": [
+        "mt_bench",
+        "humaneval",
+        "gsm8k",
+        "alpaca",
+        "cnn_dm"
+      ]
+    },
+    "eagle2": {
+      "source": "EAGLE",
+      "target": "llama3_instruct_8b",
+      "drafter": "eagle2_llama3_8b",
+      "profile": "eagle",
+      "depth": 5,
+      "max_observed_depth": 6,
+      "benchmarks": [
+        "mt_bench",
+        "humaneval",
+        "gsm8k"
+      ]
+    },
+    "hass": {
+      "source": "HASS",
+      "target": "llama3_instruct_8b",
+      "drafter": "hass_llama3_8b",
+      "profile": "hass",
+      "depth": 5,
+      "max_observed_depth": 6,
+      "benchmarks": [
+        "mt_bench",
+        "humaneval",
+        "gsm8k"
+      ]
+    }
+  },
+  "temperatures": [
+    0,
+    1
+  ],
+  "timing_repeats": 5,
+  "warmup_generations_per_mode": 3,
+  "max_new_tokens": 512,
+  "max_length": 2048,
+  "total_token": 60,
+  "top_k": 10,
+  "dtype": "float16",
+  "batch_size": 1,
+  "base_seed": 20261109,
+  "relative_acceptance_tolerance": 0.05,
+  "bootstrap_samples": 2000,
+  "reference_cli_advertised_cap": 1024,
+  "reference_effective_cap": 512,
+  "reference_max_length": 2048,
+  "timing_scope": "Synchronized generation including prefill and unused final drafting; excludes model load, tokenization, detokenization and disk logging",
+  "primary_throughput": "Comparison tokens including the first terminal token and capped at max_new_tokens per measured generation wall time",
+  "tau_definition": "For each question/repeat pool raw emitted tokens and true verification cycles across all turns, compute their ratio, then average repeats within question and questions within benchmark; prefill recorded separately",
+  "training_gate": {
+    "requires_reproduction_pass": true,
+    "requires_full_model_temperature_one_distribution_check": true,
+    "automatic_training": false
+  },
+  "reference_cells": [
+    {
+      "method": "eagle3",
+      "benchmark": "mt_bench",
+      "temperature": 0,
+      "published_tau": 6.13,
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle3",
+      "benchmark": "humaneval",
+      "temperature": 0,
+      "published_tau": 6.74,
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle3",
+      "benchmark": "gsm8k",
+      "temperature": 0,
+      "published_tau": 6.23,
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle3",
+      "benchmark": "alpaca",
+      "temperature": 0,
+      "published_tau": 6.7,
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle3",
+      "benchmark": "cnn_dm",
+      "temperature": 0,
+      "published_tau": 5.34,
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle3",
+      "benchmark": "mt_bench",
+      "temperature": 1,
+      "published_tau": 4.24,
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle3",
+      "benchmark": "humaneval",
+      "temperature": 1,
+      "published_tau": 5.82,
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle3",
+      "benchmark": "gsm8k",
+      "temperature": 1,
+      "published_tau": 4.59,
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle3",
+      "benchmark": "alpaca",
+      "temperature": 1,
+      "published_tau": 5.56,
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle3",
+      "benchmark": "cnn_dm",
+      "temperature": 1,
+      "published_tau": 4.39,
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle2",
+      "benchmark": "mt_bench",
+      "temperature": 0,
+      "published_tau": 4.21,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle2",
+      "benchmark": "humaneval",
+      "temperature": 0,
+      "published_tau": 4.93,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle2",
+      "benchmark": "gsm8k",
+      "temperature": 0,
+      "published_tau": 4.42,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle2",
+      "benchmark": "mt_bench",
+      "temperature": 1,
+      "published_tau": 3.9,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle2",
+      "benchmark": "humaneval",
+      "temperature": 1,
+      "published_tau": 4.73,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "eagle2",
+      "benchmark": "gsm8k",
+      "temperature": 1,
+      "published_tau": 4.3,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "hass",
+      "benchmark": "mt_bench",
+      "temperature": 0,
+      "published_tau": 4.68,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "timing_repeats": 5
+    },
+    {
+      "method": "hass",
+      "benchmark": "humaneval",
+      "temperature": 0,
+      "published_tau": 5.54,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "hass",
+      "benchmark": "gsm8k",
+      "temperature": 0,
+      "published_tau": 5.02,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "hass",
+      "benchmark": "mt_bench",
+      "temperature": 1,
+      "published_tau": 4.26,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "timing_repeats": 5
+    },
+    {
+      "method": "hass",
+      "benchmark": "humaneval",
+      "temperature": 1,
+      "published_tau": 5.3,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    },
+    {
+      "method": "hass",
+      "benchmark": "gsm8k",
+      "temperature": 1,
+      "published_tau": 4.85,
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "reference_kind": "published_not_measured",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "timing_repeats": 5
+    }
+  ]
+}

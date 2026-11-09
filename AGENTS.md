@@ -1,0 +1,15 @@
+# Working conventions
+
+Do not add comments to authored code. Do not implement unclear research requirements. Preserve upstream source, lockfiles and pinned artifact identities.
+
+Keep code in `src/`, configurations in `configs/`, experiment specifications in `experiments/`, inputs in `data/`, weights and trained checkpoints in `models/`, and execution artifacts in `outputs/`. Never commit credentials, model weights, datasets, environments, caches or large raw logs. Small reviewed result receipts may live in `results/` with their original hashes and scope.
+
+The default configurations and historical launch helpers describe a validated CSAIL deployment. Read the getting-started guide before GPU work. Use a verified owned allocation for GPU work and Slurm for substantial cluster CPU work. Respect site-specific resource limits and preserve any active holder and continuation. Never infer an allocation from a saved job ID alone.
+
+Keep a running experiment's deployed source, configuration, preparation receipts and hardware mapping frozen. Stage changes separately until that experiment completes. Do not redeploy a publication snapshot into an active run.
+
+Distinguish fetched code, installed packages, engineering execution and scientific results. Reproduce the registered official baselines and complete the full-model temperature-one validation before specialist training is admitted. The current scientific gate remains closed until the required validator is implemented and reviewed.
+
+Measure wall time directly. Never derive speedup from acceptance length. Generate tables from raw records, retain per-prompt and per-cycle provenance, and report incomplete coverage and failed comparisons honestly. Historical TAPS values and engineering smoke measurements are not new full-panel research results.
+
+Run lightweight source checks with `PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests`. Torch-dependent local skips must be distinguished from recorded CPU and GPU execution evidence.

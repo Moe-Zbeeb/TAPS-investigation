@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taps-investigation"
+version = "0.1.0"
+description = "Research infrastructure for investigating speculative decoding and TAPS"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+taps = "taps_rebuild.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/Moe-Zbeeb/TAPS-investigation"
+Issues = "https://github.com/Moe-Zbeeb/TAPS-investigation/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]

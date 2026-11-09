@@ -1,0 +1,361 @@
+{
+  "actual_requests": 344,
+  "actual_tokens_from_usage_including_warmup": 5504,
+  "automatic_pipeline_gate_pass": false,
+  "cleanup": {
+    "process_groups": [
+      956392,
+      956393,
+      956394,
+      956395,
+      956403,
+      956410,
+      956414,
+      956417
+    ],
+    "slurm_jobs_or_other_process_groups_signalled": false,
+    "status": "complete"
+  },
+  "compute_processes": [],
+  "controller_state_sha256": "9464228de57c3aa789293bee0b13cda4e2ba104f27010a53a55f7e936d2dddd8",
+  "full_model_distributional_correctness_established": false,
+  "hardware": {
+    "device_bindings": [
+      {
+        "index": "0",
+        "shard_index": 0,
+        "token": "0",
+        "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434"
+      },
+      {
+        "index": "1",
+        "shard_index": 1,
+        "token": "1",
+        "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641"
+      },
+      {
+        "index": "2",
+        "shard_index": 2,
+        "token": "2",
+        "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a"
+      },
+      {
+        "index": "3",
+        "shard_index": 3,
+        "token": "3",
+        "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95"
+      },
+      {
+        "index": "4",
+        "shard_index": 4,
+        "token": "4",
+        "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8"
+      },
+      {
+        "index": "5",
+        "shard_index": 5,
+        "token": "5",
+        "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797"
+      },
+      {
+        "index": "6",
+        "shard_index": 6,
+        "token": "6",
+        "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a"
+      },
+      {
+        "index": "7",
+        "shard_index": 7,
+        "token": "7",
+        "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d"
+      }
+    ],
+    "gpu_inventory": [
+      {
+        "driver_version": "580.65.06",
+        "index": "0",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "1",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "2",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "3",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "4",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "5",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "6",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "7",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d"
+      }
+    ],
+    "hardware_identity_sha256": "66213a48e5871bb4862329bdca15100ec3e9161400c0b9482b3716f755f912d9",
+    "job_id": "2212576",
+    "node": "deep-chungus-10",
+    "slurm": {
+      "job": {
+        "Account": "grad-students",
+        "EndTime": "2026-11-11T07:41:30",
+        "JobId": "2212576",
+        "JobName": "deep10-hold",
+        "NodeList": "deep-chungus-10",
+        "NumCPUs": "128",
+        "NumNodes": "1",
+        "Partition": "high-priority",
+        "QOS": "spec-priority",
+        "StartTime": "2026-11-09T07:41:30",
+        "TRES": "cpu=128,node=1,billing=128,gres/gpu=8,gres/gpu:a100=8",
+        "UserId": "mohamadzbib(29562)"
+      },
+      "job_record_sha256": "a9977911a0e85cc1c10351eb1e0090c1356c6a3232dadb4b6e4caa13d42b6cbb",
+      "node": {
+        "AllocTRES": "cpu=128,gres/gpu=8,gres/gpu:a100=8",
+        "CPUTot": "128",
+        "CfgTRES": "cpu=128,mem=1000000M,billing=128,gres/gpu=8,gres/gpu:a100=8",
+        "Gres": "gpu:a100:8",
+        "NodeName": "deep-chungus-10",
+        "RealMemory": "1000000",
+        "State": "ALLOCATED",
+        "Version": "21.08.8"
+      },
+      "node_record_sha256": "d0e114aac04271361352f9e1336bbdd38a01dc94c0a6407eb0fb4c8de10ced1e"
+    }
+  },
+  "live_controller_owned_wrappers": [],
+  "manifest_sha256": "9bb822c5b728047bc126cd70fed2977e3b40400a373b8aa4fb950f77dc4aa775",
+  "measured_requests": 320,
+  "measured_tokens_from_usage": 5120,
+  "observed_at_utc": "2026-11-09T17:40:15.256160+00:00",
+  "performance_comparison_eligible": false,
+  "post_return_idle": [
+    {
+      "memory_used_mib": 0.0,
+      "utilization_percent": 0.0,
+      "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434"
+    },
+    {
+      "memory_used_mib": 0.0,
+      "utilization_percent": 0.0,
+      "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641"
+    },
+    {
+      "memory_used_mib": 0.0,
+      "utilization_percent": 0.0,
+      "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a"
+    },
+    {
+      "memory_used_mib": 0.0,
+      "utilization_percent": 0.0,
+      "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95"
+    },
+    {
+      "memory_used_mib": 0.0,
+      "utilization_percent": 0.0,
+      "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8"
+    },
+    {
+      "memory_used_mib": 0.0,
+      "utilization_percent": 0.0,
+      "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797"
+    },
+    {
+      "memory_used_mib": 0.0,
+      "utilization_percent": 0.0,
+      "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a"
+    },
+    {
+      "memory_used_mib": 0.0,
+      "utilization_percent": 0.0,
+      "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d"
+    }
+  ],
+  "runtime_preparation_sha256": "0a6560d67e98c715f944e9b7db5e57ac558a86e4288aab8290adbed212026032",
+  "scientific_result": false,
+  "scope": "stock_serving_engineering_smoke",
+  "status": "passed",
+  "workers": [
+    {
+      "actual_requests": 43,
+      "actual_tokens_from_usage_including_warmup": 688,
+      "measured_requests": 40,
+      "measured_tokens_from_usage": 640,
+      "mode": "target_only",
+      "observed_peak_inflight_requests": 8,
+      "rank": 0,
+      "raw_evidence_sha256": {
+        "requests.jsonl": "bdd9efbbf3c2f7d8524dd015610f16bfed38e5d34be2f1154425472ab3cd016a",
+        "result.json": "3cba944df93b9d6c1cc8dcb1e205be65fb896f4fe11eba1ec1fbe66f17f699a4",
+        "server-launch.json": "8a1e54688719bffd9e79bf7d659e29ae56fd3b198da6c8a9ad299a6eff4e6624",
+        "stream-events.jsonl": "bcb96fde58219747c8b853ee3a5e0a9c8a28c684433e30ceaa9661bc8fa9e636"
+      },
+      "status": "passed",
+      "stream_done_validated_requests": 43,
+      "warmup_requests": 3
+    },
+    {
+      "actual_requests": 43,
+      "actual_tokens_from_usage_including_warmup": 688,
+      "measured_requests": 40,
+      "measured_tokens_from_usage": 640,
+      "mode": "target_only",
+      "observed_peak_inflight_requests": 8,
+      "rank": 1,
+      "raw_evidence_sha256": {
+        "requests.jsonl": "cdc4f5b5705caf6a6b708388f2d8a04ed6fd7d7e6e7eede84793a0fa76cf2624",
+        "result.json": "96d464fc56339bca11c67ee50e68aa45a289c1aead031066b9460b730f5a8a17",
+        "server-launch.json": "7de592924fd3d09d4776e3859941f3f871edbb5158dbee177de1fb07d333e2c1",
+        "stream-events.jsonl": "d14ce4ad36c90dc5589b7aebdfe1f1b28d4608e8e6089ab2113a03c7e99c5371"
+      },
+      "status": "passed",
+      "stream_done_validated_requests": 43,
+      "warmup_requests": 3
+    },
+    {
+      "actual_requests": 43,
+      "actual_tokens_from_usage_including_warmup": 688,
+      "measured_requests": 40,
+      "measured_tokens_from_usage": 640,
+      "mode": "target_only",
+      "observed_peak_inflight_requests": 8,
+      "rank": 2,
+      "raw_evidence_sha256": {
+        "requests.jsonl": "6b0ee595f87d09c0c932841cc3a9734b36a3e7e0a1486c8cb6c9027ae6e1fa39",
+        "result.json": "c372ad9159e40df8c26339dd1d8815bd08111d877b330b85a48577d05845ec90",
+        "server-launch.json": "495be16459166f758753af90288acad382e953152098b63b0767a0203b6ba816",
+        "stream-events.jsonl": "0965c51352020d7a11649dcd014387630a921ff8d86becdd6668b533a80b664c"
+      },
+      "status": "passed",
+      "stream_done_validated_requests": 43,
+      "warmup_requests": 3
+    },
+    {
+      "actual_requests": 43,
+      "actual_tokens_from_usage_including_warmup": 688,
+      "measured_requests": 40,
+      "measured_tokens_from_usage": 640,
+      "mode": "target_only",
+      "observed_peak_inflight_requests": 8,
+      "rank": 3,
+      "raw_evidence_sha256": {
+        "requests.jsonl": "2557c6469dda46a28a3ad9ac66a65921d405cc4cf58d2a13cf73e6a6493436be",
+        "result.json": "03bae7b0b70ce06f317f37128d24ab26a940bb3a41a5e622d1820d8b34fea382",
+        "server-launch.json": "00ed751c7496146ccda3358933927da070e407094c442a2a9f0baeb1603b4769",
+        "stream-events.jsonl": "d0d9b6f63a7fd5c7b8730632a6364d5c1ea58aa34b074ccec3e51e435f00c87d"
+      },
+      "status": "passed",
+      "stream_done_validated_requests": 43,
+      "warmup_requests": 3
+    },
+    {
+      "actual_requests": 43,
+      "actual_tokens_from_usage_including_warmup": 688,
+      "measured_requests": 40,
+      "measured_tokens_from_usage": 640,
+      "mode": "eagle3",
+      "observed_peak_inflight_requests": 8,
+      "rank": 4,
+      "raw_evidence_sha256": {
+        "requests.jsonl": "7b67108b0b6dcc4d57a4167426839b54c3111949b388e1b8f97c602fa220f7f0",
+        "result.json": "82bf0d155f9275e2b533008e9d5a46eb81fd9da35991660c1af41c161b683604",
+        "server-launch.json": "2c81bacd3374c4e0756623e301841e4d53a987609e0f14aee1e44dd8c201eb7e",
+        "stream-events.jsonl": "680bca8d6986c7febd9fafe6dd0518f61af10670e685943671274ea60f4aa9cb"
+      },
+      "status": "passed",
+      "stream_done_validated_requests": 43,
+      "warmup_requests": 3
+    },
+    {
+      "actual_requests": 43,
+      "actual_tokens_from_usage_including_warmup": 688,
+      "measured_requests": 40,
+      "measured_tokens_from_usage": 640,
+      "mode": "eagle3",
+      "observed_peak_inflight_requests": 8,
+      "rank": 5,
+      "raw_evidence_sha256": {
+        "requests.jsonl": "c786744f61705246eb428ee447e8de35966a6528ec159c39db641fbabff0d48e",
+        "result.json": "e851c03483d4526c1aeebaaa16927b0e9bcb217eb23c492ec897ee5945bbb574",
+        "server-launch.json": "6249c1e51ed712ea2e8fdf996c2d6a96260d2cc0eb9ae65049772f94666473f1",
+        "stream-events.jsonl": "289c4c97a0a83e92ff8eb4d2f4680fa16811828b885da06869664fe7ef458bad"
+      },
+      "status": "passed",
+      "stream_done_validated_requests": 43,
+      "warmup_requests": 3
+    },
+    {
+      "actual_requests": 43,
+      "actual_tokens_from_usage_including_warmup": 688,
+      "measured_requests": 40,
+      "measured_tokens_from_usage": 640,
+      "mode": "eagle3",
+      "observed_peak_inflight_requests": 8,
+      "rank": 6,
+      "raw_evidence_sha256": {
+        "requests.jsonl": "af345d699c61d647d60451e437dcd401bd0a71ed614a046931dcfc317001da55",
+        "result.json": "5c1d340da38e3d412bb703961f519ea65a87cc7cd11226637708ca0e7388a060",
+        "server-launch.json": "a752147a2fad21ddbcfa0459df67e2ce5bb0742f35441bdb112f200e3631c128",
+        "stream-events.jsonl": "10c01a3001044cfebc97d659bd9270fa5323cdcb2b8010926dac0220ed211c2c"
+      },
+      "status": "passed",
+      "stream_done_validated_requests": 43,
+      "warmup_requests": 3
+    },
+    {
+      "actual_requests": 43,
+      "actual_tokens_from_usage_including_warmup": 688,
+      "measured_requests": 40,
+      "measured_tokens_from_usage": 640,
+      "mode": "eagle3",
+      "observed_peak_inflight_requests": 8,
+      "rank": 7,
+      "raw_evidence_sha256": {
+        "requests.jsonl": "b10bf0bc80ef332d0562b659464d8f7f8ec79e0635aa4e7c9cabd06a319a940c",
+        "result.json": "765f35bfde37687f7d5091806ed6eedc665471abe5accc9bdb3fc6cd347feb08",
+        "server-launch.json": "084958610dad58542be22aa7aed147a318a2085b2c3500ddaa62f307dfa4a5b6",
+        "stream-events.jsonl": "4043bff29f8a4dfa0822264e530935bc09e3c01e3e3eb6d8e3031ecc7969c20e"
+      },
+      "status": "passed",
+      "stream_done_validated_requests": 43,
+      "warmup_requests": 3
+    }
+  ]
+}

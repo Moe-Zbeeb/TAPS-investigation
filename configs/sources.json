@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "project": "TAPS rebuild",
+  "default_cluster_root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+  "sources": [
+    {
+      "name": "EAGLE",
+      "url": "https://github.com/SafeAILab/EAGLE.git",
+      "revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+      "path": "repos/EAGLE",
+      "system_prompt_file": "eagle/evaluation/gen_ea_answer_llama3chat.py"
+    },
+    {
+      "name": "HASS",
+      "url": "https://github.com/HArmonizedSS/HASS.git",
+      "revision": "051c4020141f5d2a365994ca9a8148700044c6d7",
+      "path": "repos/HASS",
+      "system_prompt_file": "evaluation/gen_ea_answer_llama3chat.py"
+    }
+  ],
+  "benchmarks": [
+    {
+      "name": "mt_bench",
+      "source": "EAGLE",
+      "path": "eagle/data/mt_bench/question.jsonl",
+      "sha256": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7",
+      "rows": 80,
+      "turns_per_row": 2
+    },
+    {
+      "name": "humaneval",
+      "source": "EAGLE",
+      "path": "eagle/data/humaneval/question.jsonl",
+      "sha256": "ce0244e2b228339e9a11afc63a151719beede1e389fdaec7cd9751d33902180e",
+      "rows": 80,
+      "turns_per_row": 1
+    },
+    {
+      "name": "gsm8k",
+      "source": "EAGLE",
+      "path": "eagle/data/gsm8k/question.jsonl",
+      "sha256": "a55920b2f2aac724241124c59e5b8e8168dbbeb2ab0fdbee17d5b0ab6db5ff27",
+      "rows": 80,
+      "turns_per_row": 1
+    },
+    {
+      "name": "alpaca",
+      "source": "EAGLE",
+      "path": "eagle/data/alpaca/question.jsonl",
+      "sha256": "8ad3e5a7fc61b88d8e25edb81a52a2ce00a04494d5694c122cb11a5cc26a00df",
+      "rows": 80,
+      "turns_per_row": 1
+    },
+    {
+      "name": "cnn_dm",
+      "source": "EAGLE",
+      "path": "eagle/data/sum/question.jsonl",
+      "sha256": "916876f0c42f938a944de96eed16e51425f29f27438cca5c9ef4737c0fedf771",
+      "rows": 80,
+      "turns_per_row": 1
+    }
+  ]
+}

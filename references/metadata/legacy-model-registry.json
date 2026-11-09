@@ -1,0 +1,917 @@
+{
+  "study": "taps-setup-20261101",
+  "project_root": "/mnt/nfs/home/mohamadzbib/projects/rl-infra",
+  "verified_at_utc": "2026-11-01T13:54:33.931207+00:00",
+  "scope": "Confirmed runnable setup for the original Llama3-8B-Instruct verifier plus the original released EAGLE drafter only",
+  "weights_downloaded_by_this_audit": false,
+  "training_launched": false,
+  "gpu_work_launched": false,
+  "taps_trained_draft_variants_included": false,
+  "paper_url": "https://arxiv.org/html/2603.27027",
+  "target": {
+    "published_identity": "Meta-Llama-3-8B-Instruct",
+    "official": {
+      "key": "official_target",
+      "repo_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "revision": "8afb486c1db24fe5011ec46dfbe5b5dccdb575c2",
+      "source_url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/tree/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2",
+      "metadata_url": "https://huggingface.co/api/models/meta-llama/Meta-Llama-3-8B-Instruct/revision/8afb486c1db24fe5011ec46dfbe5b5dccdb575c2?blobs=true",
+      "private": false,
+      "gated": "manual",
+      "auth_required_for_metadata": false,
+      "auth_required_for_download": true,
+      "license": "llama3",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size_bytes": 1519,
+          "git_blob_id": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+          "lfs_sha256": null
+        },
+        {
+          "path": "LICENSE",
+          "size_bytes": 7801,
+          "git_blob_id": "4c763399690c7fec642231350756e4ee9184b5ce",
+          "lfs_sha256": null
+        },
+        {
+          "path": "README.md",
+          "size_bytes": 38854,
+          "git_blob_id": "671db9596dbd5ba6ee039d914b4915d509fc54a5",
+          "lfs_sha256": null
+        },
+        {
+          "path": "USE_POLICY.md",
+          "size_bytes": 4696,
+          "git_blob_id": "6f8e5f6e3243c92046a133c92eb62b1ed7975a0b",
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 654,
+          "git_blob_id": "31553d63b8f18df5d6d440860751533ada3759e4",
+          "lfs_sha256": null
+        },
+        {
+          "path": "generation_config.json",
+          "size_bytes": 187,
+          "git_blob_id": "8675015d20a4b12ee2ee0197a0937beba318122a",
+          "lfs_sha256": null
+        },
+        {
+          "path": "model-00001-of-00004.safetensors",
+          "size_bytes": 4976698672,
+          "git_blob_id": "69e1a8787496ffc0b3818d23d11036ef12e9eb8d",
+          "lfs_sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+        },
+        {
+          "path": "model-00002-of-00004.safetensors",
+          "size_bytes": 4999802720,
+          "git_blob_id": "3a8b51f9a991e3118837b93445a3f4647125a085",
+          "lfs_sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+        },
+        {
+          "path": "model-00003-of-00004.safetensors",
+          "size_bytes": 4915916176,
+          "git_blob_id": "706b3a174d9f0de9aec8b81231e32f349bfe4fe0",
+          "lfs_sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+        },
+        {
+          "path": "model-00004-of-00004.safetensors",
+          "size_bytes": 1168138808,
+          "git_blob_id": "280b9208b3412064a64594f4449cf89dfa014353",
+          "lfs_sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size_bytes": 23950,
+          "git_blob_id": "0fd8120f1c6acddc268ebc2583058efaf699a771",
+          "lfs_sha256": null
+        },
+        {
+          "path": "original/consolidated.00.pth",
+          "size_bytes": 16060617592,
+          "git_blob_id": "3cddca2efb3a276805dc42612389af680e3ec527",
+          "lfs_sha256": "be52262c9289304f3e8240e0749bf257bc04264405a86cd4de38efb9068724ee"
+        },
+        {
+          "path": "original/params.json",
+          "size_bytes": 211,
+          "git_blob_id": "65f16bb074ab2ba456331a8ea3d50c3fdbf343bf",
+          "lfs_sha256": null
+        },
+        {
+          "path": "original/tokenizer.model",
+          "size_bytes": 2183982,
+          "git_blob_id": "a097ce5a06fce0fa3d685a8cfb175cef243dfde9",
+          "lfs_sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size_bytes": 73,
+          "git_blob_id": "d8cd5076496dbe4be2320312abc10adc43097b81",
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer.json",
+          "size_bytes": 9085698,
+          "git_blob_id": "b197f72effb9d5ed16ee0f5663e11e4cfac2ba62",
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size_bytes": 50977,
+          "git_blob_id": "1bfd1146b7bde6168de7bb673bfe0acaea6e684c",
+          "lfs_sha256": null
+        }
+      ],
+      "weight_files": [
+        {
+          "path": "model-00001-of-00004.safetensors",
+          "size_bytes": 4976698672,
+          "git_blob_id": "69e1a8787496ffc0b3818d23d11036ef12e9eb8d",
+          "lfs_sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+        },
+        {
+          "path": "model-00002-of-00004.safetensors",
+          "size_bytes": 4999802720,
+          "git_blob_id": "3a8b51f9a991e3118837b93445a3f4647125a085",
+          "lfs_sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+        },
+        {
+          "path": "model-00003-of-00004.safetensors",
+          "size_bytes": 4915916176,
+          "git_blob_id": "706b3a174d9f0de9aec8b81231e32f349bfe4fe0",
+          "lfs_sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+        },
+        {
+          "path": "model-00004-of-00004.safetensors",
+          "size_bytes": 1168138808,
+          "git_blob_id": "280b9208b3412064a64594f4449cf89dfa014353",
+          "lfs_sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+        }
+      ],
+      "weight_bytes": 16060556376,
+      "minimum_inference_files": [
+        "LICENSE",
+        "USE_POLICY.md",
+        "config.json",
+        "generation_config.json",
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors",
+        "model.safetensors.index.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "local_path": "/mnt/nfs/home/mohamadzbib/projects/rl-infra/models/taps-setup-20261101/verifier"
+    },
+    "published_mirror": {
+      "key": "published_target_mirror",
+      "repo_id": "zbeeb/base-llama3-8b",
+      "revision": "8f7aa66cc4769a735a351f43738f631943444f8e",
+      "source_url": "https://huggingface.co/zbeeb/base-llama3-8b/tree/8f7aa66cc4769a735a351f43738f631943444f8e",
+      "metadata_url": "https://huggingface.co/api/models/zbeeb/base-llama3-8b/revision/8f7aa66cc4769a735a351f43738f631943444f8e?blobs=true",
+      "private": false,
+      "gated": false,
+      "auth_required_for_metadata": false,
+      "auth_required_for_download": false,
+      "license": "llama3",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size_bytes": 1519,
+          "git_blob_id": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+          "lfs_sha256": null
+        },
+        {
+          "path": "LICENSE",
+          "size_bytes": 7801,
+          "git_blob_id": "4c763399690c7fec642231350756e4ee9184b5ce",
+          "lfs_sha256": null
+        },
+        {
+          "path": "README.md",
+          "size_bytes": 38881,
+          "git_blob_id": "61a3fa8869a0f0850c613061bd06226b78fd2cc1",
+          "lfs_sha256": null
+        },
+        {
+          "path": "USE_POLICY.md",
+          "size_bytes": 4696,
+          "git_blob_id": "6f8e5f6e3243c92046a133c92eb62b1ed7975a0b",
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 654,
+          "git_blob_id": "31553d63b8f18df5d6d440860751533ada3759e4",
+          "lfs_sha256": null
+        },
+        {
+          "path": "generation_config.json",
+          "size_bytes": 187,
+          "git_blob_id": "8675015d20a4b12ee2ee0197a0937beba318122a",
+          "lfs_sha256": null
+        },
+        {
+          "path": "model-00001-of-00004.safetensors",
+          "size_bytes": 4976698672,
+          "git_blob_id": "69e1a8787496ffc0b3818d23d11036ef12e9eb8d",
+          "lfs_sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+        },
+        {
+          "path": "model-00002-of-00004.safetensors",
+          "size_bytes": 4999802720,
+          "git_blob_id": "3a8b51f9a991e3118837b93445a3f4647125a085",
+          "lfs_sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+        },
+        {
+          "path": "model-00003-of-00004.safetensors",
+          "size_bytes": 4915916176,
+          "git_blob_id": "706b3a174d9f0de9aec8b81231e32f349bfe4fe0",
+          "lfs_sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+        },
+        {
+          "path": "model-00004-of-00004.safetensors",
+          "size_bytes": 1168138808,
+          "git_blob_id": "280b9208b3412064a64594f4449cf89dfa014353",
+          "lfs_sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size_bytes": 23950,
+          "git_blob_id": "0fd8120f1c6acddc268ebc2583058efaf699a771",
+          "lfs_sha256": null
+        },
+        {
+          "path": "original/consolidated.00.pth",
+          "size_bytes": 16060617592,
+          "git_blob_id": "3cddca2efb3a276805dc42612389af680e3ec527",
+          "lfs_sha256": "be52262c9289304f3e8240e0749bf257bc04264405a86cd4de38efb9068724ee"
+        },
+        {
+          "path": "original/params.json",
+          "size_bytes": 211,
+          "git_blob_id": "65f16bb074ab2ba456331a8ea3d50c3fdbf343bf",
+          "lfs_sha256": null
+        },
+        {
+          "path": "original/tokenizer.model",
+          "size_bytes": 2183982,
+          "git_blob_id": "a097ce5a06fce0fa3d685a8cfb175cef243dfde9",
+          "lfs_sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size_bytes": 73,
+          "git_blob_id": "d8cd5076496dbe4be2320312abc10adc43097b81",
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer.json",
+          "size_bytes": 9085698,
+          "git_blob_id": "b197f72effb9d5ed16ee0f5663e11e4cfac2ba62",
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size_bytes": 50977,
+          "git_blob_id": "1bfd1146b7bde6168de7bb673bfe0acaea6e684c",
+          "lfs_sha256": null
+        }
+      ],
+      "weight_files": [
+        {
+          "path": "model-00001-of-00004.safetensors",
+          "size_bytes": 4976698672,
+          "git_blob_id": "69e1a8787496ffc0b3818d23d11036ef12e9eb8d",
+          "lfs_sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+        },
+        {
+          "path": "model-00002-of-00004.safetensors",
+          "size_bytes": 4999802720,
+          "git_blob_id": "3a8b51f9a991e3118837b93445a3f4647125a085",
+          "lfs_sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+        },
+        {
+          "path": "model-00003-of-00004.safetensors",
+          "size_bytes": 4915916176,
+          "git_blob_id": "706b3a174d9f0de9aec8b81231e32f349bfe4fe0",
+          "lfs_sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+        },
+        {
+          "path": "model-00004-of-00004.safetensors",
+          "size_bytes": 1168138808,
+          "git_blob_id": "280b9208b3412064a64594f4449cf89dfa014353",
+          "lfs_sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+        }
+      ],
+      "weight_bytes": 16060556376,
+      "minimum_inference_files": [
+        "LICENSE",
+        "USE_POLICY.md",
+        "config.json",
+        "generation_config.json",
+        "model-00001-of-00004.safetensors",
+        "model-00002-of-00004.safetensors",
+        "model-00003-of-00004.safetensors",
+        "model-00004-of-00004.safetensors",
+        "model.safetensors.index.json",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "local_path": "/mnt/nfs/home/mohamadzbib/projects/rl-infra/models/taps-setup-20261101/verifier"
+    },
+    "recommended_download_source": "published_target_mirror",
+    "mirror_comparison": {
+      "all_required_inference_file_identities_match": true,
+      "weight_comparison": "All four published mirror safetensors LFS SHA256 hashes match the official target",
+      "metadata_comparison": "Required configuration/tokenizer/index/license files compared through Git blob IDs without downloading model weights",
+      "files": [
+        {
+          "path": "LICENSE",
+          "size_bytes": 7801,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "git_blob_id",
+          "official_identity": "4c763399690c7fec642231350756e4ee9184b5ce",
+          "mirror_identity": "4c763399690c7fec642231350756e4ee9184b5ce"
+        },
+        {
+          "path": "USE_POLICY.md",
+          "size_bytes": 4696,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "git_blob_id",
+          "official_identity": "6f8e5f6e3243c92046a133c92eb62b1ed7975a0b",
+          "mirror_identity": "6f8e5f6e3243c92046a133c92eb62b1ed7975a0b"
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 654,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "git_blob_id",
+          "official_identity": "31553d63b8f18df5d6d440860751533ada3759e4",
+          "mirror_identity": "31553d63b8f18df5d6d440860751533ada3759e4"
+        },
+        {
+          "path": "generation_config.json",
+          "size_bytes": 187,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "git_blob_id",
+          "official_identity": "8675015d20a4b12ee2ee0197a0937beba318122a",
+          "mirror_identity": "8675015d20a4b12ee2ee0197a0937beba318122a"
+        },
+        {
+          "path": "model-00001-of-00004.safetensors",
+          "size_bytes": 4976698672,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "lfs_sha256",
+          "official_identity": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c",
+          "mirror_identity": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+        },
+        {
+          "path": "model-00002-of-00004.safetensors",
+          "size_bytes": 4999802720,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "lfs_sha256",
+          "official_identity": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c",
+          "mirror_identity": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+        },
+        {
+          "path": "model-00003-of-00004.safetensors",
+          "size_bytes": 4915916176,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "lfs_sha256",
+          "official_identity": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921",
+          "mirror_identity": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+        },
+        {
+          "path": "model-00004-of-00004.safetensors",
+          "size_bytes": 1168138808,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "lfs_sha256",
+          "official_identity": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46",
+          "mirror_identity": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size_bytes": 23950,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "git_blob_id",
+          "official_identity": "0fd8120f1c6acddc268ebc2583058efaf699a771",
+          "mirror_identity": "0fd8120f1c6acddc268ebc2583058efaf699a771"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size_bytes": 73,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "git_blob_id",
+          "official_identity": "d8cd5076496dbe4be2320312abc10adc43097b81",
+          "mirror_identity": "d8cd5076496dbe4be2320312abc10adc43097b81"
+        },
+        {
+          "path": "tokenizer.json",
+          "size_bytes": 9085698,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "git_blob_id",
+          "official_identity": "b197f72effb9d5ed16ee0f5663e11e4cfac2ba62",
+          "mirror_identity": "b197f72effb9d5ed16ee0f5663e11e4cfac2ba62"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size_bytes": 50977,
+          "same_size": true,
+          "same_content_identity": true,
+          "identity_method": "git_blob_id",
+          "official_identity": "1bfd1146b7bde6168de7bb673bfe0acaea6e684c",
+          "mirror_identity": "1bfd1146b7bde6168de7bb673bfe0acaea6e684c"
+        }
+      ]
+    }
+  },
+  "original_drafters": [
+    {
+      "key": "original_eagle",
+      "repo_id": "yuhuili/EAGLE-LLaMA3-Instruct-8B",
+      "revision": "5bfe556a9af27e5402fc2df1bb7cc134cea54f41",
+      "source_url": "https://huggingface.co/yuhuili/EAGLE-LLaMA3-Instruct-8B/tree/5bfe556a9af27e5402fc2df1bb7cc134cea54f41",
+      "metadata_url": "https://huggingface.co/api/models/yuhuili/EAGLE-LLaMA3-Instruct-8B/revision/5bfe556a9af27e5402fc2df1bb7cc134cea54f41?blobs=true",
+      "private": false,
+      "gated": false,
+      "auth_required_for_metadata": false,
+      "auth_required_for_download": false,
+      "license": "apache-2.0",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size_bytes": 1670,
+          "git_blob_id": "cc36064bf512b3de6a24ab1a8a9d81c5af76c049",
+          "lfs_sha256": null
+        },
+        {
+          "path": "LICENSE",
+          "size_bytes": 557,
+          "git_blob_id": "b012656399475a61b6e2a5e968dd5eee7142394f",
+          "lfs_sha256": null
+        },
+        {
+          "path": "README.md",
+          "size_bytes": 6096,
+          "git_blob_id": "3b9ed3295c58cc4f4c1a81470213ee478b1dcd5a",
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 606,
+          "git_blob_id": "f4507674f76ba0ea0f3f687f93bd062739591cb2",
+          "lfs_sha256": null
+        },
+        {
+          "path": "figs/e3.gif",
+          "size_bytes": 14229093,
+          "git_blob_id": "1b48ca81bdd0f8336f8229f2b6d09408dfb8618a",
+          "lfs_sha256": "ec19fcac60fdd37ca3de969b919d2e411fe782b084902e668f755c89855c14c6"
+        },
+        {
+          "path": "figs/eagle3r.jpg",
+          "size_bytes": 533404,
+          "git_blob_id": "0e71c8c0b1945222fecb7d0257a287c8a6788ea8",
+          "lfs_sha256": "5e404ac75809d8125e1c360c36054c2f90ebd72453a46a352609e538d91f6ba1"
+        },
+        {
+          "path": "figs/logo.png",
+          "size_bytes": 745032,
+          "git_blob_id": "9c8af44d62697b08fee79f6652504e25ff4a2cea",
+          "lfs_sha256": "efb8aec4952905335983eaddb078036e1d286e0bf3a62ebae83eff81b27870bc"
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size_bytes": 1554000828,
+          "git_blob_id": "aa9678bbd6fce0cd92b4cf55b8e3fa2b9db38ef7",
+          "lfs_sha256": "5b4ca9d8321953526d49a50bd28d16c0e8d5cf559d5a66b60b8ac5df7ab8078a"
+        }
+      ],
+      "weight_files": [
+        {
+          "path": "pytorch_model.bin",
+          "size_bytes": 1554000828,
+          "git_blob_id": "aa9678bbd6fce0cd92b4cf55b8e3fa2b9db38ef7",
+          "lfs_sha256": "5b4ca9d8321953526d49a50bd28d16c0e8d5cf559d5a66b60b8ac5df7ab8078a"
+        }
+      ],
+      "weight_bytes": 1554000828,
+      "config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 128000,
+        "eos_token_id": 128001,
+        "hidden_act": "silu",
+        "hidden_size": 4096,
+        "initializer_range": 0.02,
+        "intermediate_size": 14336,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_key_value_heads": 8,
+        "num_hidden_layers": 1,
+        "pad_token_id": 0,
+        "rms_norm_eps": 1e-05,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float16",
+        "transformers_version": "4.28.1",
+        "use_cache": true,
+        "vocab_size": 128256,
+        "rope_theta": 500000.0,
+        "bias": false
+      },
+      "config_sha256": "0403c27c6848cb3aa4a51151f284e2f0fbf790e4c94e08babf1972060f5db4ee",
+      "minimum_inference_files": [
+        "config.json",
+        "pytorch_model.bin"
+      ],
+      "backbone": "EAGLE-2",
+      "local_path": "/mnt/nfs/home/mohamadzbib/projects/rl-infra/models/taps-setup-20261101/eagle-original",
+      "selected_for_recommended_default": true,
+      "compatibility_status": "published original checkpoint with matching target/vocabulary; actual weight loading has not been executed",
+      "selected_for_setup": true
+    },
+    {
+      "key": "original_hass",
+      "repo_id": "HArmonizedSS/HASS-LLaMA3-Instruct-8B",
+      "revision": "ac88e8753cab0257a8460c75b3d74883864d2150",
+      "source_url": "https://huggingface.co/HArmonizedSS/HASS-LLaMA3-Instruct-8B/tree/ac88e8753cab0257a8460c75b3d74883864d2150",
+      "metadata_url": "https://huggingface.co/api/models/HArmonizedSS/HASS-LLaMA3-Instruct-8B/revision/ac88e8753cab0257a8460c75b3d74883864d2150?blobs=true",
+      "private": false,
+      "gated": false,
+      "auth_required_for_metadata": false,
+      "auth_required_for_download": false,
+      "license": "apache-2.0",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "size_bytes": 1519,
+          "git_blob_id": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+          "lfs_sha256": null
+        },
+        {
+          "path": "README.md",
+          "size_bytes": 31,
+          "git_blob_id": "7b95401dc46245ac339fc25059d4a56d90b4cde5",
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 628,
+          "git_blob_id": "1b9ec1d25cd5e530eb1fc1e6a7f3df64b7f1d0c1",
+          "lfs_sha256": null
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size_bytes": 3108016663,
+          "git_blob_id": "efb68c7c9b30d5c538c00f2b3c4a230ccfd31fae",
+          "lfs_sha256": "6ce7f96a3e457f16945d8b3177e2f2e7cab5c45ef211e5375397635102efb0db"
+        }
+      ],
+      "weight_files": [
+        {
+          "path": "pytorch_model.bin",
+          "size_bytes": 3108016663,
+          "git_blob_id": "efb68c7c9b30d5c538c00f2b3c4a230ccfd31fae",
+          "lfs_sha256": "6ce7f96a3e457f16945d8b3177e2f2e7cab5c45ef211e5375397635102efb0db"
+        }
+      ],
+      "weight_bytes": 3108016663,
+      "config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 128000,
+        "eos_token_id": 128001,
+        "hidden_act": "silu",
+        "hidden_size": 4096,
+        "initializer_range": 0.02,
+        "intermediate_size": 14336,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_key_value_heads": 8,
+        "num_hidden_layers": 1,
+        "pad_token_id": 0,
+        "rms_norm_eps": 1e-05,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float16",
+        "transformers_version": "4.28.1",
+        "use_cache": true,
+        "vocab_size": 128256,
+        "rope_theta": 500000.0,
+        "bias": true
+      },
+      "config_sha256": "acf92b9bb9bfae0ac6376f0e89df4bb7bdee64449b0f3234cf6a97b5e819789a",
+      "minimum_inference_files": [
+        "config.json",
+        "pytorch_model.bin"
+      ],
+      "backbone": "HASS",
+      "local_path": null,
+      "selected_for_recommended_default": false,
+      "compatibility_status": "published original checkpoint with matching target/vocabulary; actual weight loading has not been executed",
+      "selected_for_setup": false,
+      "setup_status": "deferred_not_downloaded"
+    }
+  ],
+  "original_drafter_sources": {
+    "eagle": "https://huggingface.co/yuhuili/EAGLE-LLaMA3-Instruct-8B",
+    "hass": "https://github.com/HArmonizedSS/HASS#hass-weights"
+  },
+  "compatibility_notes": [
+    "EAGLE config sets bias=false; HASS config sets bias=true. Preserve each original configuration.",
+    "Both original drafters specify one layer, hidden_size=4096 and vocab_size=128256 for the same Llama3-Instruct-8B target.",
+    "The repo HASS loader reads the bias configuration and strictly loads model state; interchangeability is not claimed without an actual load check.",
+    "The released EAGLE checkpoint is suitable as the original EAGLE/EAGLE-2 starter, not an EAGLE-3 Llama3.1 checkpoint."
+  ],
+  "bundled_evaluation_questions": {
+    "repo_url": "https://github.com/Moe-Zbeeb/TAPS",
+    "repo_commit": "6234472516ef574612f0066e841189bd1b33c24e",
+    "benchmarks": [
+      {
+        "benchmark": "mt_bench",
+        "copies": [
+          {
+            "backbone": "eagle",
+            "repo_relative_path": "Eagle-Code/eagle/data/mt_bench/question.jsonl",
+            "sha256": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7",
+            "size_bytes": 48929,
+            "rows": 80,
+            "turns": 160,
+            "question_id_and_turns_sha256": "d57ef8a1355f89ce09860c86d50a7781310b7002a50bbad4417b7e9221dddf7d",
+            "gold_reference_rows": 39,
+            "reference_types": [
+              "list"
+            ]
+          },
+          {
+            "backbone": "hass",
+            "repo_relative_path": "Hass-Code/data/mt_bench/question.jsonl",
+            "sha256": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7",
+            "size_bytes": 48929,
+            "rows": 80,
+            "turns": 160,
+            "question_id_and_turns_sha256": "d57ef8a1355f89ce09860c86d50a7781310b7002a50bbad4417b7e9221dddf7d",
+            "gold_reference_rows": 39,
+            "reference_types": [
+              "list"
+            ]
+          }
+        ],
+        "byte_identical_between_eagle_and_hass": true,
+        "interpretation": "Both full files and question IDs/turns match exactly. Both include reference fields on 39 of 80 rows; this is not a complete gold-answer annotation set.",
+        "question_ids_and_turns_identical_between_eagle_and_hass": true
+      },
+      {
+        "benchmark": "gsm8k",
+        "copies": [
+          {
+            "backbone": "eagle",
+            "repo_relative_path": "Eagle-Code/eagle/data/gsm8k/question.jsonl",
+            "sha256": "88cb865cf0a35a6bdf6f79868e20536384e4f1515a0fb027aae6b7bf39963235",
+            "size_bytes": 807178,
+            "rows": 1319,
+            "turns": 1319,
+            "question_id_and_turns_sha256": "f5613814a34479d7617751e59344219643358598a6e0d18ae6c2e5b8ab575d9e",
+            "gold_reference_rows": 1319,
+            "reference_types": [
+              "list"
+            ]
+          },
+          {
+            "backbone": "hass",
+            "repo_relative_path": "Hass-Code/data/gsm8k/question.jsonl",
+            "sha256": "3259be28c363cf794abfc56de3e82086be726b5d48312a6b52cddf0e743d3825",
+            "size_bytes": 392228,
+            "rows": 1319,
+            "turns": 1319,
+            "question_id_and_turns_sha256": "f5613814a34479d7617751e59344219643358598a6e0d18ae6c2e5b8ab575d9e",
+            "gold_reference_rows": 0,
+            "reference_types": []
+          }
+        ],
+        "byte_identical_between_eagle_and_hass": false,
+        "interpretation": "Rendered question IDs and turns match exactly. Eagle reasoning benchmark files additionally contain reference fields; HASS copies contain prompts only. Full-file hash differences are preserved.",
+        "question_ids_and_turns_identical_between_eagle_and_hass": true
+      },
+      {
+        "benchmark": "math_500",
+        "copies": [
+          {
+            "backbone": "eagle",
+            "repo_relative_path": "Eagle-Code/eagle/data/math_500/question.jsonl",
+            "sha256": "21f716c2b109b019d608e1d1fca3ca4e029dab312f1fb85dcf748d85a21f08e1",
+            "size_bytes": 416067,
+            "rows": 500,
+            "turns": 500,
+            "question_id_and_turns_sha256": "19727fb37893447d2683ce8b1b0ac584f19ea2b0bca242ccf039478a8071b28c",
+            "gold_reference_rows": 500,
+            "reference_types": [
+              "list"
+            ]
+          },
+          {
+            "backbone": "hass",
+            "repo_relative_path": "Hass-Code/data/math_500/question.jsonl",
+            "sha256": "73b945ce995351b07c76d95e2103f19b255857bac4802c828bd2f99d3f7c59b2",
+            "size_bytes": 130788,
+            "rows": 500,
+            "turns": 500,
+            "question_id_and_turns_sha256": "19727fb37893447d2683ce8b1b0ac584f19ea2b0bca242ccf039478a8071b28c",
+            "gold_reference_rows": 0,
+            "reference_types": []
+          }
+        ],
+        "byte_identical_between_eagle_and_hass": false,
+        "interpretation": "Rendered question IDs and turns match exactly. Eagle reasoning benchmark files additionally contain reference fields; HASS copies contain prompts only. Full-file hash differences are preserved.",
+        "question_ids_and_turns_identical_between_eagle_and_hass": true
+      },
+      {
+        "benchmark": "svamp",
+        "copies": [
+          {
+            "backbone": "eagle",
+            "repo_relative_path": "Eagle-Code/eagle/data/svamp/question.jsonl",
+            "sha256": "5bad4e0d014fcf9100e0f3ae4acddbf9b1271839b186c859944b2b3cb98cccca",
+            "size_bytes": 71686,
+            "rows": 300,
+            "turns": 300,
+            "question_id_and_turns_sha256": "dac7b35bb2044b0a651c6f99e745bd31acca9186931571c21352eadd63a22006",
+            "gold_reference_rows": 300,
+            "reference_types": [
+              "list"
+            ]
+          },
+          {
+            "backbone": "hass",
+            "repo_relative_path": "Hass-Code/data/svamp/question.jsonl",
+            "sha256": "5a91162ff4eda406642d7c66ae2efb2b7ba4cf298a22f827957803fb8d37681b",
+            "size_bytes": 65675,
+            "rows": 300,
+            "turns": 300,
+            "question_id_and_turns_sha256": "dac7b35bb2044b0a651c6f99e745bd31acca9186931571c21352eadd63a22006",
+            "gold_reference_rows": 0,
+            "reference_types": []
+          }
+        ],
+        "byte_identical_between_eagle_and_hass": false,
+        "interpretation": "Rendered question IDs and turns match exactly. Eagle reasoning benchmark files additionally contain reference fields; HASS copies contain prompts only. Full-file hash differences are preserved.",
+        "question_ids_and_turns_identical_between_eagle_and_hass": true
+      }
+    ]
+  },
+  "deferred": [
+    "Original HASS checkpoint download and execution",
+    "All TAPS-trained specialist checkpoints",
+    "Training and result-reproduction experiments",
+    "Training datasets and feature generation",
+    "GPU execution or acceptance/latency claims"
+  ],
+  "scope_confirmed": true,
+  "confirmed_model_scope": "verifier_plus_original_released_eagle_drafter",
+  "scope_updated_at_utc": "2026-11-01T13:56:35.383829+00:00",
+  "source_registry": {
+    "path": "/Users/mohammadzbeeb/ChatGPT/RL infra/prime-workspace/configs/taps-replication-20261101/model_registry.json",
+    "sha256": "6d76dc270f1d47bcf690b5a6918e96a391c372756b4c9e5375dfb3fe23c1c41f"
+  },
+  "selected_models": [
+    {
+      "role": "verifier",
+      "repo_id": "zbeeb/base-llama3-8b",
+      "revision": "8f7aa66cc4769a735a351f43738f631943444f8e",
+      "destination_subdir": "verifier",
+      "local_path": "/mnt/nfs/home/mohamadzbib/projects/rl-infra/models/taps-setup-20261101/verifier",
+      "auth_required_for_download": false,
+      "required_files": [
+        {
+          "path": "LICENSE",
+          "size_bytes": 7801,
+          "git_blob_id": "4c763399690c7fec642231350756e4ee9184b5ce",
+          "lfs_sha256": null
+        },
+        {
+          "path": "USE_POLICY.md",
+          "size_bytes": 4696,
+          "git_blob_id": "6f8e5f6e3243c92046a133c92eb62b1ed7975a0b",
+          "lfs_sha256": null
+        },
+        {
+          "path": "config.json",
+          "size_bytes": 654,
+          "git_blob_id": "31553d63b8f18df5d6d440860751533ada3759e4",
+          "lfs_sha256": null
+        },
+        {
+          "path": "generation_config.json",
+          "size_bytes": 187,
+          "git_blob_id": "8675015d20a4b12ee2ee0197a0937beba318122a",
+          "lfs_sha256": null
+        },
+        {
+          "path": "model-00001-of-00004.safetensors",
+          "size_bytes": 4976698672,
+          "git_blob_id": "69e1a8787496ffc0b3818d23d11036ef12e9eb8d",
+          "lfs_sha256": "d8cf9c4d0dd972e1a2131bfe656235ee98221679711a3beef6d46dadf0f20b5c"
+        },
+        {
+          "path": "model-00002-of-00004.safetensors",
+          "size_bytes": 4999802720,
+          "git_blob_id": "3a8b51f9a991e3118837b93445a3f4647125a085",
+          "lfs_sha256": "8d4782b4a69ef03845159ce1a15e272aadaaf134dc138d68f616098e8531729c"
+        },
+        {
+          "path": "model-00003-of-00004.safetensors",
+          "size_bytes": 4915916176,
+          "git_blob_id": "706b3a174d9f0de9aec8b81231e32f349bfe4fe0",
+          "lfs_sha256": "3acdd690e65c24f42a24581b8467af98bd3ca357444580f8012aacd2bd607921"
+        },
+        {
+          "path": "model-00004-of-00004.safetensors",
+          "size_bytes": 1168138808,
+          "git_blob_id": "280b9208b3412064a64594f4449cf89dfa014353",
+          "lfs_sha256": "67e9ad31c8c32abf3a55ee7fc7217b3ecb35fd3c74d98a5bd233e0e4d6964f46"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size_bytes": 23950,
+          "git_blob_id": "0fd8120f1c6acddc268ebc2583058efaf699a771",
+          "lfs_sha256": null
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size_bytes": 73,
+          "git_blob_id": "d8cd5076496dbe4be2320312abc10adc43097b81",
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer.json",
+          "size_bytes": 9085698,
+          "git_blob_id": "b197f72effb9d5ed16ee0f5663e11e4cfac2ba62",
+          "lfs_sha256": null
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size_bytes": 50977,
+          "git_blob_id": "1bfd1146b7bde6168de7bb673bfe0acaea6e684c",
+          "lfs_sha256": null
+        }
+      ],
+      "expected_parameters": 8030261248,
+      "config_sha256": null,
+      "source_url": "https://huggingface.co/zbeeb/base-llama3-8b/tree/8f7aa66cc4769a735a351f43738f631943444f8e",
+      "license": "llama3"
+    },
+    {
+      "role": "eagle_original",
+      "repo_id": "yuhuili/EAGLE-LLaMA3-Instruct-8B",
+      "revision": "5bfe556a9af27e5402fc2df1bb7cc134cea54f41",
+      "destination_subdir": "eagle-original",
+      "local_path": "/mnt/nfs/home/mohamadzbib/projects/rl-infra/models/taps-setup-20261101/eagle-original",
+      "auth_required_for_download": false,
+      "required_files": [
+        {
+          "path": "config.json",
+          "size_bytes": 606,
+          "git_blob_id": "f4507674f76ba0ea0f3f687f93bd062739591cb2",
+          "lfs_sha256": null
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size_bytes": 1554000828,
+          "git_blob_id": "aa9678bbd6fce0cd92b4cf55b8e3fa2b9db38ef7",
+          "lfs_sha256": "5b4ca9d8321953526d49a50bd28d16c0e8d5cf559d5a66b60b8ac5df7ab8078a"
+        },
+        {
+          "path": "LICENSE",
+          "size_bytes": 557,
+          "git_blob_id": "b012656399475a61b6e2a5e968dd5eee7142394f",
+          "lfs_sha256": null
+        }
+      ],
+      "expected_parameters": null,
+      "config_sha256": "0403c27c6848cb3aa4a51151f284e2f0fbf790e4c94e08babf1972060f5db4ee",
+      "source_url": "https://huggingface.co/yuhuili/EAGLE-LLaMA3-Instruct-8B/tree/5bfe556a9af27e5402fc2df1bb7cc134cea54f41",
+      "license": "apache-2.0"
+    }
+  ]
+}

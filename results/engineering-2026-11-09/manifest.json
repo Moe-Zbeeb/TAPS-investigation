@@ -1,0 +1,26 @@
+{
+  "copied_without_modification": true,
+  "files": [
+    {
+      "bytes": 199457,
+      "original_artifact": "outputs/runs/baseline-smoke-20261109-v1/report.json",
+      "path": "baseline-smoke-report.json",
+      "sha256": "aea6b4e424ba73f960a080806309de119f131daf1a56ea18a7630005d40fee58"
+    },
+    {
+      "bytes": 15161,
+      "original_artifact": "outputs/native-training/native-startup-20261109-v6/engineering-completion.json",
+      "path": "native-training-recovery.json",
+      "sha256": "2675969f6779a8dae1c6bd75a9400abccb26417c59a731ea69c731e1e671fd95"
+    },
+    {
+      "bytes": 12540,
+      "original_artifact": "outputs/serving-pools/serving-smoke-20261109-v3/completion.json",
+      "path": "serving-smoke.json",
+      "sha256": "30520e22faee28e0166d51ff29e165208b09a52b8d97bbfc148837f78800ecd6"
+    }
+  ],
+  "raw_records": "Large raw logs, trained checkpoints and datasets remain external. These receipts retain their recorded hashes and original artifact paths.",
+  "scope": "completed engineering evidence; not full published-baseline reproduction",
+  "source_snapshot": "references/publication-source.json"
+}

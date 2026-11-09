@@ -1,0 +1,200 @@
+{
+  "_id": "6a8e09402589ba880cdb308e",
+  "id": "positron-ai/Llama-3.1-8B-Instruct",
+  "private": false,
+  "pipeline_tag": "text-generation",
+  "library_name": "transformers",
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3",
+    "meta",
+    "mirror",
+    "conversational",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "downloads": 10,
+  "likes": 0,
+  "modelId": "positron-ai/Llama-3.1-8B-Instruct",
+  "author": "positron-ai",
+  "sha": "e63e9c4ae3b9074207cd49331b36a7d998eba86a",
+  "lastModified": "2026-08-25T21:50:38.000Z",
+  "gated": false,
+  "disabled": false,
+  "widgetData": [
+    {
+      "text": "Hi, what can you help me with?"
+    },
+    {
+      "text": "What is 84 * 3 / 2?"
+    },
+    {
+      "text": "Tell me an interesting fact about the universe!"
+    },
+    {
+      "text": "Explain quantum computing in simple terms."
+    }
+  ],
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "LlamaForCausalLM"
+    ],
+    "model_type": "llama",
+    "tokenizer_config": {
+      "bos_token": "<|begin_of_text|>",
+      "eos_token": "<|eot_id|>",
+      "chat_template": "{{- bos_token }}\n{%- if custom_tools is defined %}\n    {%- set tools = custom_tools %}\n{%- endif %}\n{%- if not tools_in_user_message is defined %}\n    {%- set tools_in_user_message = true %}\n{%- endif %}\n{%- if not date_string is defined %}\n    {%- set date_string = \"26 Jul 2024\" %}\n{%- endif %}\n{%- if not tools is defined %}\n    {%- set tools = none %}\n{%- endif %}\n\n{#- This block extracts the system message, so we can slot it into the right place. #}\n{%- if messages[0]['role'] == 'system' %}\n    {%- set system_message = messages[0]['content']|trim %}\n    {%- set messages = messages[1:] %}\n{%- else %}\n    {%- set system_message = \"\" %}\n{%- endif %}\n\n{#- System message + builtin tools #}\n{{- \"<|start_header_id|>system<|end_header_id|>\\n\\n\" }}\n{%- if builtin_tools is defined or tools is not none %}\n    {{- \"Environment: ipython\\n\" }}\n{%- endif %}\n{%- if builtin_tools is defined %}\n    {{- \"Tools: \" + builtin_tools | reject('equalto', 'code_interpreter') | join(\", \") + \"\\n\\n\"}}\n{%- endif %}\n{{- \"Cutting Knowledge Date: December 2023\\n\" }}\n{{- \"Today Date: \" + date_string + \"\\n\\n\" }}\n{%- if tools is not none and not tools_in_user_message %}\n    {{- \"You have access to the following functions. To call a function, please respond with JSON for a function call.\" }}\n    {{- 'Respond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.' }}\n    {{- \"Do not use variables.\\n\\n\" }}\n    {%- for t in tools %}\n        {{- t | tojson(indent=4) }}\n        {{- \"\\n\\n\" }}\n    {%- endfor %}\n{%- endif %}\n{{- system_message }}\n{{- \"<|eot_id|>\" }}\n\n{#- Custom tools are passed in a user message with some extra guidance #}\n{%- if tools_in_user_message and not tools is none %}\n    {#- Extract the first user message so we can plug it in here #}\n    {%- if messages | length != 0 %}\n        {%- set first_user_message = messages[0]['content']|trim %}\n        {%- set messages = messages[1:] %}\n    {%- else %}\n        {{- raise_exception(\"Cannot put tools in the first user message when there's no first user message!\") }}\n{%- endif %}\n    {{- '<|start_header_id|>user<|end_header_id|>\\n\\n' -}}\n    {{- \"Given the following functions, please respond with a JSON for a function call \" }}\n    {{- \"with its proper arguments that best answers the given prompt.\\n\\n\" }}\n    {{- 'Respond in the format {\"name\": function name, \"parameters\": dictionary of argument name and its value}.' }}\n    {{- \"Do not use variables.\\n\\n\" }}\n    {%- for t in tools %}\n        {{- t | tojson(indent=4) }}\n        {{- \"\\n\\n\" }}\n    {%- endfor %}\n    {{- first_user_message + \"<|eot_id|>\"}}\n{%- endif %}\n\n{%- for message in messages %}\n    {%- if not (message.role == 'ipython' or message.role == 'tool' or 'tool_calls' in message) %}\n        {{- '<|start_header_id|>' + message['role'] + '<|end_header_id|>\\n\\n'+ message['content'] | trim + '<|eot_id|>' }}\n    {%- elif 'tool_calls' in message %}\n        {%- if not message.tool_calls|length == 1 %}\n            {{- raise_exception(\"This model only supports single tool-calls at once!\") }}\n        {%- endif %}\n        {%- set tool_call = message.tool_calls[0].function %}\n        {%- if builtin_tools is defined and tool_call.name in builtin_tools %}\n            {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' -}}\n            {{- \"<|python_tag|>\" + tool_call.name + \".call(\" }}\n            {%- for arg_name, arg_val in tool_call.arguments | items %}\n                {{- arg_name + '=\"' + arg_val + '\"' }}\n                {%- if not loop.last %}\n                    {{- \", \" }}\n                {%- endif %}\n                {%- endfor %}\n            {{- \")\" }}\n        {%- else  %}\n            {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' -}}\n            {{- '{\"name\": \"' + tool_call.name + '\", ' }}\n            {{- '\"parameters\": ' }}\n            {{- tool_call.arguments | tojson }}\n            {{- \"}\" }}\n        {%- endif %}\n        {%- if builtin_tools is defined %}\n            {#- This means we're in ipython mode #}\n            {{- \"<|eom_id|>\" }}\n        {%- else %}\n            {{- \"<|eot_id|>\" }}\n        {%- endif %}\n    {%- elif message.role == \"tool\" or message.role == \"ipython\" %}\n        {{- \"<|start_header_id|>ipython<|end_header_id|>\\n\\n\" }}\n        {%- if message.content is mapping or message.content is iterable %}\n            {{- message.content | tojson }}\n        {%- else %}\n            {{- message.content }}\n        {%- endif %}\n        {{- \"<|eot_id|>\" }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|start_header_id|>assistant<|end_header_id|>\\n\\n' }}\n{%- endif %}\n"
+    }
+  },
+  "cardData": {
+    "license": "llama3.1",
+    "license_name": "llama3.1",
+    "license_link": "https://www.llama.com/llama3_1/license/",
+    "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "language": [
+      "en",
+      "de",
+      "fr",
+      "it",
+      "pt",
+      "hi",
+      "es",
+      "th"
+    ],
+    "pipeline_tag": "text-generation",
+    "library_name": "transformers",
+    "tags": [
+      "llama",
+      "llama-3",
+      "meta",
+      "mirror"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModelForCausalLM",
+    "pipeline_tag": "text-generation",
+    "processor": "AutoTokenizer"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519
+    },
+    {
+      "rfilename": "LICENSE",
+      "blobId": "a7c3ca16cee30425ed6ad841a809590f2bcbf290",
+      "size": 7627
+    },
+    {
+      "rfilename": "NOTICE",
+      "blobId": "3697e90d99265f846a73ff6971a29ecd29855345",
+      "size": 117
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "ae3cad08ddaaef2bd6c9b15e3b0acf331c99b4e0",
+      "size": 1839
+    },
+    {
+      "rfilename": "USE_POLICY.md",
+      "blobId": "81ebb55902285e8dd5804ccf423d17ffb2a622ee",
+      "size": 4691
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "0bb6fd75b3ad2fe988565929f329945262c2814e",
+      "size": 855
+    },
+    {
+      "rfilename": "generation_config.json",
+      "blobId": "cc7276afd599de091142c6ed3005faf8a74aa257",
+      "size": 184
+    },
+    {
+      "rfilename": "model-00001-of-00004.safetensors",
+      "blobId": "a59dca28867995c0d05384251ac5f4d62461a226",
+      "size": 4976698672,
+      "lfs": {
+        "sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+        "size": 4976698672,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00002-of-00004.safetensors",
+      "blobId": "4ab0726caf5e75dd1e5700c7e7899ac8c0798428",
+      "size": 4999802720,
+      "lfs": {
+        "sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+        "size": 4999802720,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00003-of-00004.safetensors",
+      "blobId": "5864b15557563e7700a3f95236afdee36f5fdb74",
+      "size": 4915916176,
+      "lfs": {
+        "sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+        "size": 4915916176,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model-00004-of-00004.safetensors",
+      "blobId": "b8babcaa5a888d6efd5c05206361b4685492ad13",
+      "size": 1168138808,
+      "lfs": {
+        "sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+        "size": 1168138808,
+        "pointerSize": 135
+      }
+    },
+    {
+      "rfilename": "model.safetensors.index.json",
+      "blobId": "0fd8120f1c6acddc268ebc2583058efaf699a771",
+      "size": 23950
+    },
+    {
+      "rfilename": "special_tokens_map.json",
+      "blobId": "02ee80b6196926a5ad790a004d9efd6ab1ba6542",
+      "size": 296
+    },
+    {
+      "rfilename": "tokenizer.json",
+      "blobId": "5cc5f00a5b203e90a27a3bd60d1ec393b07971e8",
+      "size": 9085657
+    },
+    {
+      "rfilename": "tokenizer_config.json",
+      "blobId": "db88166e2bc4c799fd5d1ae643b75e84d03ee70e",
+      "size": 55351
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2026-08-25T21:29:36.000Z",
+  "safetensors": {
+    "parameters": {
+      "BF16": 8030261248
+    },
+    "total": 8030261248
+  },
+  "usedStorage": 16060556376
+}

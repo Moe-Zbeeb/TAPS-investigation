@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.pdf binary
+results/**/*.json -text
+references/metadata/*.json -text

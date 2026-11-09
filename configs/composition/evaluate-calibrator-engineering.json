@@ -1,0 +1,42 @@
+{
+  "calibrator": {
+    "path": "outputs/composition/calibrator-engineering-a.json"
+  },
+  "examples": {
+    "inline": [
+      {
+        "accepted": 0,
+        "example_id": "engineering-test-0",
+        "label_source": "target_verification",
+        "log_probability": -2.302585092994046,
+        "split": "test"
+      },
+      {
+        "accepted": 0,
+        "example_id": "engineering-test-1",
+        "label_source": "target_verification",
+        "log_probability": -1.2039728043259361,
+        "split": "test"
+      },
+      {
+        "accepted": 1,
+        "example_id": "engineering-test-2",
+        "label_source": "target_verification",
+        "log_probability": -0.5108256237659907,
+        "split": "test"
+      },
+      {
+        "accepted": 1,
+        "example_id": "engineering-test-3",
+        "label_source": "target_verification",
+        "log_probability": -0.10536051565782628,
+        "split": "test"
+      }
+    ]
+  },
+  "operation": "evaluate-calibrator",
+  "qualification": "Disjoint synthetic calibration diagnostic fixture; no scientific heldout result.",
+  "schema_version": 1,
+  "scope": "engineering",
+  "split": "test"
+}

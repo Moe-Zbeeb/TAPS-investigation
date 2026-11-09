@@ -1,0 +1,29 @@
+torch @ https://download.pytorch.org/whl/cu124/torch-2.6.0%2Bcu124-cp310-cp310-linux_x86_64.whl#sha256=7f2ba7f7c0459320a521696f6b5bccc187f59890b23c9dfb6c49b0b87c6bfc97
+torchvision @ https://download.pytorch.org/whl/cu124/torchvision-0.21.0%2Bcu124-cp310-cp310-linux_x86_64.whl#sha256=3d3e74018eaa7837c73e3764dad3b7792b7544401c25a42977e9744303731bd3
+torchaudio @ https://download.pytorch.org/whl/cu124/torchaudio-2.6.0%2Bcu124-cp310-cp310-linux_x86_64.whl#sha256=6b54f97fff96b4ba3da44b6b3f50727c25122d1479107b119d1275944ec83ea1
+deepspeed @ https://files.pythonhosted.org/packages/38/10/a7f63e086c1e1c12e290c98363c748ef5ddd6313fde739d2aeccd5ed0cd4/deepspeed-0.17.1.tar.gz#sha256=6d6e21796982b9e024f489e1c211666cc6c0be6e344751368610b9d2da285d6e
+transformers==4.53.1
+accelerate==0.26.0
+datasets==3.6.0
+pyarrow==20.0.0
+huggingface-hub==0.33.4
+tokenizers==0.21.2
+safetensors==0.5.3
+numpy==1.26.4
+pandas==2.2.3
+fsspec[http]==2025.3.0
+wandb==0.20.1
+sentencepiece==0.1.99
+protobuf==3.19.0
+pydantic==2.11.4
+einops==0.8.1
+hjson==3.1.0
+msgpack==1.1.0
+ninja==1.11.1.4
+packaging==25.0
+psutil==7.0.0
+py-cpuinfo==9.0.0
+tqdm==4.67.1
+setuptools==80.9.0
+wheel==0.45.1
+nvidia-ml-py @ https://files.pythonhosted.org/packages/db/24/552ebea28f0570b9e65e62b50287a273804c9f997cc1c2dcd4e2d64b9e7d/nvidia_ml_py-12.575.51-py3-none-any.whl#sha256=eb8641800d98ce40a22f479873f34b482e214a7e80349c63be51c3919845446e

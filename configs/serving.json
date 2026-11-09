@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "cluster_root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+  "legacy_runtime_root": "/mnt/nfs/home/mohamadzbib/projects/rl-infra",
+  "method_order": ["vllm_ar", "vllm_eagle3"],
+  "concurrencies": [1, 8, 32, 128],
+  "warmup_requests": 3,
+  "measured_repeats": 5,
+  "requests_per_repeat": 128,
+  "max_tokens": 128,
+  "temperature": 0.0,
+  "ignore_eos": true,
+  "seed": 20261109,
+  "stream": true,
+  "request_timeout_seconds": 180,
+  "smoke_prompts": [
+    {"id": "smoke-chat", "domain": "chat", "prompt": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\nWrite one short sentence about the sky.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"},
+    {"id": "smoke-math", "domain": "math", "prompt": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\nWhat is seven plus five?<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"},
+    {"id": "smoke-code", "domain": "code", "prompt": "<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\nWrite a Python function that adds two integers.<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"}
+  ],
+  "prompt_stream": {
+    "path": "data/serving/prompts.jsonl",
+    "mode": "natural",
+    "split": "held_out",
+    "prompt_format": "preformatted_model_prompt",
+    "provenance": null,
+    "domain_schedule": [
+      {"domain": "chat", "requests": 128},
+      {"domain": "math", "requests": 128},
+      {"domain": "code", "requests": 128}
+    ]
+  },
+  "server": {
+    "readiness_timeout_seconds": 600,
+    "max_model_len": 2048,
+    "max_running_requests": 128,
+    "memory_fraction": 0.8,
+    "vllm_speculative_tokens": 3,
+    "sglang_num_steps": 3,
+    "sglang_topk": 1,
+    "sglang_draft_tokens": 4,
+    "prefix_cache_policy": "engine_default_not_overridden_or_independently_verified",
+    "lifetime": "Prefer foreground server launch inside a persistent GPU Slurm step"
+  },
+  "engines": {
+    "vllm": {
+      "version": "0.8.5.post1",
+      "serving_python": "envs/serving-vllm/bin/python",
+      "proposed_environment": {"python": "3.10", "torch": "2.6.0+cu124", "transformers": "4.51.1", "pydantic": "2.11.4", "fastapi": "0.115.12", "openai": "1.76.2", "dependency_release_cutoff": "2025-05-03T00:00:00Z"},
+      "runtime_installation_or_gpu_execution_verified": false,
+      "source_tag": "v0.8.5.post1",
+      "primary_sources": [
+        "https://github.com/vllm-project/vllm/blob/v0.8.5.post1/docker/Dockerfile",
+        "https://github.com/vllm-project/vllm/blob/v0.8.5.post1/requirements/cuda.txt",
+        "https://github.com/vllm-project/vllm/blob/v0.8.5.post1/vllm/config.py",
+        "https://github.com/vllm-project/vllm/blob/v0.8.5.post1/vllm/v1/spec_decode/eagle.py",
+        "https://github.com/vllm-project/vllm/blob/v0.8.5.post1/vllm/entrypoints/openai/protocol.py",
+        "https://docs.vllm.ai/en/v0.8.5/features/spec_decode.html"
+      ],
+      "constraints": ["Pinned EAGLE3 implementation supports Llama targets", "EagleProposer.load_model notes distributed inference is unhandled; launcher restricts EAGLE3 to TP1", "V1 is explicitly enabled", "All packages require a separate environment; do not install into either preserved TAPS environment"]
+    },
+    "sglang": {
+      "version": "0.4.6.post5",
+      "serving_python": "envs/serving-sglang-0.4.6.post5/bin/python",
+      "proposed_environment": {"python": "3.10", "torch": "2.6.0+cu124", "transformers": "4.51.1", "flashinfer_python": "0.2.5", "sgl-kernel": "0.1.4", "pydantic": "2.11.5"},
+      "runtime_installation_or_gpu_execution_verified": false,
+      "source_tag": "v0.4.6.post5",
+      "primary_sources": [
+        "https://github.com/sgl-project/sglang/blob/v0.4.6.post5/python/pyproject.toml",
+        "https://github.com/sgl-project/sglang/blob/v0.4.6.post5/docker/Dockerfile",
+        "https://github.com/sgl-project/sglang/blob/v0.4.6.post5/docs/backend/speculative_decoding.ipynb",
+        "https://github.com/sgl-project/sglang/blob/v0.4.6.post5/python/sglang/srt/speculative/eagle_worker.py",
+        "https://github.com/sgl-project/sglang/blob/v0.4.6.post5/python/sglang/srt/sampling/sampling_params.py"
+      ],
+      "constraints": ["Pinned native SamplingParams has no per-request seed; only the fixed server random seed is applied", "Stock EAGLE3 disables overlap scheduling internally", "Stock model loader supports one-layer EAGLE3; checkpoint/model loading remains subject to GPU smoke", "Use an isolated environment, never the preserved taps-hass or taps-eagle environment"]
+    }
+  },
+  "methods": {
+    "vllm_ar": {"engine": "vllm", "mode": "target_only", "protocol": "openai_completions", "endpoint": "http://127.0.0.1:8000/v1/completions", "bind_host": "127.0.0.1", "model": "taps-llama31", "target_asset": "llama31_instruct_8b", "tensor_parallel_size": 1, "provided_metric_paths": {}},
+    "vllm_eagle3": {"engine": "vllm", "mode": "eagle3", "protocol": "openai_completions", "endpoint": "http://127.0.0.1:8001/v1/completions", "bind_host": "127.0.0.1", "model": "taps-llama31", "target_asset": "llama31_instruct_8b", "draft_asset": "eagle3_llama31_8b", "tensor_parallel_size": 1, "provided_metric_paths": {}},
+    "sglang_ar": {"engine": "sglang", "mode": "target_only", "protocol": "sglang_generate", "endpoint": "http://127.0.0.1:30000/generate", "bind_host": "127.0.0.1", "model": "taps-llama31", "target_asset": "llama31_instruct_8b", "tensor_parallel_size": 1, "provided_metric_paths": {}},
+    "sglang_eagle3": {"engine": "sglang", "mode": "eagle3", "protocol": "sglang_generate", "endpoint": "http://127.0.0.1:30001/generate", "bind_host": "127.0.0.1", "model": "taps-llama31", "target_asset": "llama31_instruct_8b", "draft_asset": "eagle3_llama31_8b", "tensor_parallel_size": 1, "provided_metric_paths": {}}
+  },
+  "custom_production_integration": {
+    "stock_launcher_supports_pooled_tree_or_shared_experts": false,
+    "status": "Requires implementation and GPU validation inside an engine fork",
+    "vllm_entrypoints": ["vllm/v1/spec_decode/eagle.py:EagleProposer.propose", "vllm/v1/worker/gpu_model_runner.py speculative proposal and rejection-sampling path"],
+    "vllm_required_work": ["Multiple calibrated proposal sources or shared-expert heads", "A deduplicated prefix-closed tree representation instead of the current linear draft_token_ids contract", "Attention metadata, KV allocation/commit, scheduler and sampler integration", "Distributional checks and CUDA graph/batch-size tests"],
+    "sglang_entrypoints": ["python/sglang/srt/speculative/eagle_worker.py:EAGLEWorker.draft", "python/sglang/srt/speculative/eagle_worker.py:EAGLEWorker.verify", "EagleDraftInput/EagleVerifyInput and tree construction/cache metadata"],
+    "sglang_required_work": ["Replace the single draft_model_runner with actual pooled/shared-body execution", "Calibrated pooling, duplicate-path merge and fixed-budget tree construction", "Independent draft KV state or validated shared-expert state and cache commit", "Graph/scheduler/kernel integration plus batched numerical and distributional checks"],
+    "research_backend_is_not_production_engine_integration": true
+  },
+  "cuda_primary_source": "https://docs.nvidia.com/cuda/archive/12.4.1/cuda-toolkit-release-notes/index.html",
+  "cuda_12_4_1_linux_driver_baseline": "550.54.15"
+}

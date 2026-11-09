@@ -1,0 +1,195 @@
+{
+  "data_origin": "synthetic_fixture",
+  "domains": [
+    "chat",
+    "math"
+  ],
+  "drafters": [
+    {
+      "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "domain": null,
+      "id": "generalist-seed-17",
+      "logs": [
+        {
+          "path": "outputs/rq1/REPLACE/evaluation/generalist-seed-17.jsonl",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "role": "generalist",
+      "target_identity_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "training_evidence": {
+        "path": "outputs/rq1/REPLACE/training/generalist-seed-17.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "training_seed": 17
+    },
+    {
+      "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "domain": "chat",
+      "id": "chat-seed-17",
+      "logs": [
+        {
+          "path": "outputs/rq1/REPLACE/evaluation/chat-seed-17.jsonl",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "role": "specialist",
+      "target_identity_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "training_evidence": {
+        "path": "outputs/rq1/REPLACE/training/chat-seed-17.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "training_seed": 17
+    },
+    {
+      "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "domain": "math",
+      "id": "math-seed-17",
+      "logs": [
+        {
+          "path": "outputs/rq1/REPLACE/evaluation/math-seed-17.jsonl",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "role": "specialist",
+      "target_identity_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "training_evidence": {
+        "path": "outputs/rq1/REPLACE/training/math-seed-17.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "training_seed": 17
+    },
+    {
+      "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "domain": null,
+      "id": "generalist-seed-29",
+      "logs": [
+        {
+          "path": "outputs/rq1/REPLACE/evaluation/generalist-seed-29.jsonl",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "role": "generalist",
+      "target_identity_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "training_evidence": {
+        "path": "outputs/rq1/REPLACE/training/generalist-seed-29.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "training_seed": 29
+    },
+    {
+      "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "domain": "chat",
+      "id": "chat-seed-29",
+      "logs": [
+        {
+          "path": "outputs/rq1/REPLACE/evaluation/chat-seed-29.jsonl",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "role": "specialist",
+      "target_identity_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "training_evidence": {
+        "path": "outputs/rq1/REPLACE/training/chat-seed-29.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "training_seed": 29
+    },
+    {
+      "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "domain": "math",
+      "id": "math-seed-29",
+      "logs": [
+        {
+          "path": "outputs/rq1/REPLACE/evaluation/math-seed-29.jsonl",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "role": "specialist",
+      "target_identity_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "training_evidence": {
+        "path": "outputs/rq1/REPLACE/training/math-seed-29.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "training_seed": 29
+    },
+    {
+      "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "domain": null,
+      "id": "generalist-seed-43",
+      "logs": [
+        {
+          "path": "outputs/rq1/REPLACE/evaluation/generalist-seed-43.jsonl",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "role": "generalist",
+      "target_identity_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "training_evidence": {
+        "path": "outputs/rq1/REPLACE/training/generalist-seed-43.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "training_seed": 43
+    },
+    {
+      "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "domain": "chat",
+      "id": "chat-seed-43",
+      "logs": [
+        {
+          "path": "outputs/rq1/REPLACE/evaluation/chat-seed-43.jsonl",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "role": "specialist",
+      "target_identity_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "training_evidence": {
+        "path": "outputs/rq1/REPLACE/training/chat-seed-43.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "training_seed": 43
+    },
+    {
+      "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "domain": "math",
+      "id": "math-seed-43",
+      "logs": [
+        {
+          "path": "outputs/rq1/REPLACE/evaluation/math-seed-43.jsonl",
+          "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "role": "specialist",
+      "target_identity_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "training_evidence": {
+        "path": "outputs/rq1/REPLACE/training/math-seed-43.json",
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "training_seed": 43
+    }
+  ],
+  "evaluation_budget": {
+    "batch_size": 1,
+    "draft_depth": 7,
+    "dtype": "float16",
+    "max_length": 2048,
+    "max_new_tokens": 512,
+    "temperature": 0.0,
+    "top_k": 10,
+    "verifier_nodes": 60
+  },
+  "minimum_training_seeds": 3,
+  "panel": {
+    "path": "data/rq1/REPLACE/panel.jsonl",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "qualification": "Schema-only fixture: replace every placeholder path/hash with frozen observed artifacts in a separately preregistered study. This file contains no measured result and is ineligible for scientific comparison.",
+  "relative_compute_tolerance": 0.01,
+  "schema_version": 1,
+  "scope": "engineering",
+  "target_identity_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "traffic_weights": {
+    "chat": 0.5,
+    "math": 0.5
+  }
+}
