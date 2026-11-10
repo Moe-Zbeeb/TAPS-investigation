@@ -14,7 +14,7 @@ flowchart LR
 
 ## Evidence and current scope
 
-This snapshot contains research infrastructure and recorded engineering evidence. The registered **22-cell published-baseline reproduction still awaits a complete, reviewed result**. Scientific generalist/specialist training, full-model temperature-one validation and custom pooled-tree serving remain outstanding.
+This snapshot contains research infrastructure, full baseline measurements and recorded engineering evidence. The full **22-cell released-baseline panel completed 22,400 generations; its reproduction gate failed**. Acceptance length met tolerance in 19/22 cells, but greedy token disagreements and three sampling outliers require investigation. See the [full results](results/baselines-2026-11-10/README.md). Scientific generalist/specialist training, full-model temperature-one validation and custom pooled-tree serving remain outstanding.
 
 Engineering records dated 9 November 2026 document checks on eight A100 80GB GPUs:
 
@@ -26,7 +26,7 @@ Engineering records dated 9 November 2026 document checks on eight A100 80GB GPU
 
 The [evidence index](results/README.md) contains selected machine-readable receipts, and the [engineering report](experiments/engineering-20261109/RESULTS.md) explains their limits. Large raw logs, preparation artifacts, weights and datasets are excluded from this Git snapshot. Paths to these artifacts in experiment documents identify external records. These small checks do not establish drafter quality, published-number reproduction or production speedup.
 
-The publication source check ran 324 tests with eight Torch-dependent tests skipped on macOS. CPU source checks and CUDA execution are separate evidence. CI runs the CPU suite on Python 3.10 and 3.12.
+The publication source check ran 325 tests with eight Torch-dependent tests skipped on macOS. CPU source checks and CUDA execution are separate evidence. CI runs the CPU suite on Python 3.10 and 3.12.
 
 ## Start on CPU
 

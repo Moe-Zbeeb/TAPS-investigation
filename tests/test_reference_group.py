@@ -1,10 +1,13 @@
 import copy
+import errno
 import fcntl
 import json
+import os
 from pathlib import Path
 import shutil
 import tempfile
 import unittest
+from unittest.mock import patch
 
 from taps_rebuild import pool, reference_group as group, runner
 
@@ -209,13 +212,39 @@ class ReferenceGroupTests(unittest.TestCase):
             directory, _, _ = fixture.freeze('smoke', 'eagle3', smoke=True)
             with self.assertRaisesRegex(group.ReferenceGroupError, 'Smoke'):
                 group.run_documents(fixture.root, 'smoke')
-            with (directory / 'pool.lock').open('rb') as lock:
+            with (directory / 'pool.lock').open('r+b') as lock:
                 fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
                 with self.assertRaisesRegex(group.ReferenceGroupError, 'still holds'):
                     group.collect(fixture.root, ['smoke'], fixture.root / 'outputs/reference-groups/live')
             (directory / 'pool.json').unlink()
             with self.assertRaises(FileNotFoundError):
                 group.run_documents(fixture.root, 'smoke')
+
+    def test_nfs_exclusive_lock_uses_write_access_without_changing_lock_contents(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            fixture = Fixture(temporary)
+            directory, _, _ = fixture.freeze('smoke', 'eagle3', smoke=True)
+            path = directory / 'pool.lock'
+            contents = b'preserve existing lock contents\n'
+            path.write_bytes(contents)
+            original = fcntl.flock
+            observed = []
+
+            def nfs_lock(file, operation):
+                descriptor = file.fileno() if hasattr(file, 'fileno') else file
+                access = fcntl.fcntl(descriptor, fcntl.F_GETFL) & os.O_ACCMODE
+                if operation & fcntl.LOCK_EX and access == os.O_RDONLY:
+                    raise OSError(errno.EBADF, 'NFS requires write access for an exclusive lock')
+                observed.append(access)
+                return original(file, operation)
+
+            output = fixture.root / 'outputs/reference-groups/nfs'
+            with patch.object(group.fcntl, 'flock', side_effect=nfs_lock):
+                with self.assertRaisesRegex(group.ReferenceGroupError, 'Smoke'):
+                    group.collect(fixture.root, ['smoke'], output)
+            self.assertEqual(observed, [os.O_RDWR])
+            self.assertEqual(path.read_bytes(), contents)
+            self.assertFalse(output.exists())
 
     def test_output_and_coverage_guards(self):
         with tempfile.TemporaryDirectory() as temporary:

@@ -1,0 +1,2610 @@
+{
+  "automatic_pipeline_gate_pass": false,
+  "collector_sha256": "47c7d4c4b2ded3d61c3ea14c3d01644dce688bdbe983607135ced7ea1c2e4cd7",
+  "common_identity": {
+    "asset_receipt_sha256": "da62f1ca8001cc3be7ed6604c783987afe8f27d5ad281c6874d9ec55c3ad1b07",
+    "authored_source_hashes": {
+      "src/taps_rebuild/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "src/taps_rebuild/__main__.py": "b2663b7425569c81aa530431d163a016dc86dbe3748818f472b9acc508c8b0ba",
+      "src/taps_rebuild/assets.py": "2a312ec52618ab335fcda435e47406c568f55d14e48baf2193b1bd364755ee32",
+      "src/taps_rebuild/attach.py": "376d2e5eb8936812b1b53e45adac8983bd6ceed226329fa355fd0e50a1868b6b",
+      "src/taps_rebuild/backends/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/taps_rebuild/backends/official.py": "e5a6863d3a387fe4a91d30b7b368358a6195e222a3a4ac3ab2958df539175d4a",
+      "src/taps_rebuild/backends/pooled.py": "3518af70d7c71e27710ac5a66c72816dfc7257ab5013a35c983ccd6375dabc64",
+      "src/taps_rebuild/composition.py": "e4c428f11468b6231c12156822a6c68b7e4a0bdf3e8bc59493b8dd79b398f69d",
+      "src/taps_rebuild/composition_cli.py": "edafe0e34d10f77c780cb25c350bd29f41692c65163597ce164cb16dbbfc437a",
+      "src/taps_rebuild/data.py": "ca070ff7bba2526d83a44a00d972ea7694fbd63c53539f244528cf2fc32b0608",
+      "src/taps_rebuild/data_pool.py": "21fedaacbf6e9ce0e9c0b9f143bcf8827d714429712aa57deee834ff05d121a4",
+      "src/taps_rebuild/engineering.py": "5d0f1f8758265e9914899069213f42105dd41ddceea58e3e0682ee05f19be941",
+      "src/taps_rebuild/learning.py": "bf46a60595b3f46829f0211e429aca2c0d48818e36c07121582b229e3e35f79d",
+      "src/taps_rebuild/metrics.py": "1a168810154a7c0f0d5fc46037997f461d8daf6999ce23b6ef8fca9db68ca508",
+      "src/taps_rebuild/native_runtime.py": "328626fef96ca9f40b288ab49c832f14a26ff3fc9b182ba78938b3b8239446df",
+      "src/taps_rebuild/native_training.py": "24f6f3bd6a7041e0d3d8a9b92e0cbe45bc85e61860c984df9dc55760f9b8f2eb",
+      "src/taps_rebuild/pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "src/taps_rebuild/reference_group.py": "a660867c89d2f13b8c7d5cff48c23a861df8925a8b14bf16f6b758a95d40d310",
+      "src/taps_rebuild/runner.py": "7cc2327f83d76238a28e7539f094e1d8c387c0496c0c8ad13f6c079f84794d3c",
+      "src/taps_rebuild/runtime.py": "ade8973206220550ec275b73c3a0fe7e33b7869b653cdfba700ee72117d41d3e",
+      "src/taps_rebuild/serving.py": "af74b16b5aa281671b2338e7fbba2517234cb91ab6a317ac8eed616cd21a6d07",
+      "src/taps_rebuild/serving_pool.py": "f40e8f8efe5ef64e5cee4326451970fcd185a34333b30e7a4b1e10e013c07e33",
+      "src/taps_rebuild/sources.py": "9aeb3df80bb81b856c114f753698caa2410074153e265aaa76a1e81a24be7faf",
+      "src/taps_rebuild/specialization.py": "7510c8e8d6960c117b8dbc7017176e8f3a9171b53215ac5f0157886b7c050bae",
+      "src/taps_rebuild/verification.py": "2f20b91dbf33aa101135f3b3199ce0542f764d3d41a5e8332c11c38920fc5d31"
+    },
+    "code_commit": "a9855371b638fdd13a1f8125a0041759958aefbf",
+    "code_dirty": false,
+    "config_sha256": "51e82dae1296d16a41bb9cab9ce1042eac4d4b775b97df42866e65ff32e2cd16",
+    "deployed_source_identity_sha256": "6375933ffe6e688eb4eb032360eabe519efadd01e13233a56869a022bf6f2caa",
+    "plan_sha256": "357ba28e2e5e1aa658dae82c279253ac07457d9d406ac50cde0fbf513b150dae",
+    "source_identity_kind": "deployed_source_identity",
+    "source_receipt_sha256": "452fb3ff49e64eb0cd2e4f3625e5190fad8ee03b1d4bd9b6e0ae461406366dc1"
+  },
+  "common_identity_sha256": "1b48bcabeb204b0570a729e2a69b98f3ed83a853325d6ebb77f43937329f0c97",
+  "created_at_utc": "2026-11-10T09:20:49.428365+00:00",
+  "cross_node_timing_qualifications": [
+    "Each method retains its own co-located target-only control. Hardware, drivers, allocation priority and preemption histories remain separate per input run.",
+    "Raw throughput and cross-method timing rankings across nodes can reflect hardware or system differences. AR-normalized speedups remain within-method comparisons; no same-hardware cross-method ranking is established.",
+    "This collection reproduces configured numerical cells and observed T=0 comparisons only. Temperature-one distributional correctness and losslessness remain unestablished; the scientific training gate remains closed."
+  ],
+  "input_runs": [
+    {
+      "attempt_history": [
+        {
+          "completed_at_utc": "2026-11-09T20:17:02.548643+00:00",
+          "node": "deep-chungus-10",
+          "slurm": {
+            "job": {
+              "Account": "grad-students",
+              "EndTime": "2026-11-11T07:41:30",
+              "JobId": "2212576",
+              "JobName": "deep10-hold",
+              "NodeList": "deep-chungus-10",
+              "NumCPUs": "128",
+              "NumNodes": "1",
+              "Partition": "high-priority",
+              "QOS": "spec-priority",
+              "StartTime": "2026-11-09T07:41:30",
+              "TRES": "cpu=128,node=1,billing=128,gres/gpu=8,gres/gpu:a100=8",
+              "UserId": "mohamadzbib(29562)"
+            },
+            "job_record_sha256": "ffb6d5cc596d8fb66979b6e7a3187d9431cd0a4f2290fa6f79a202df8e3e4d55",
+            "node": {
+              "AllocTRES": "cpu=128,gres/gpu=8,gres/gpu:a100=8",
+              "CPUTot": "128",
+              "CfgTRES": "cpu=128,mem=1000000M,billing=128,gres/gpu=8,gres/gpu:a100=8",
+              "Gres": "gpu:a100:8",
+              "NodeName": "deep-chungus-10",
+              "RealMemory": "1000000",
+              "State": "ALLOCATED",
+              "Version": "21.08.8"
+            },
+            "node_record_sha256": "709024b0ea28b3b90c7f9294266b6b6822746af44031264b82aa26496d051e7a"
+          },
+          "slurm_job_id": "2212576",
+          "started_at_utc": "2026-11-09T18:05:40.727448+00:00",
+          "status": "complete",
+          "waves": [
+            {
+              "method": "eagle2",
+              "receipts": [
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-0.json",
+                  "sha256": "19a6abb191c91b0fbca7b273703acd160ce94415f3e99ea15eb23f5a6b48807d"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-1.json",
+                  "sha256": "d4e388452b6ad13f63faee9ba30ae8b9bdfea6f828ccfeefee890641a4056faf"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-2.json",
+                  "sha256": "b3969a94373f1ed37fd396e5fea5bf74ddbe3c8f4c9b85149a38514f2964ecff"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-3.json",
+                  "sha256": "88ede69dffc67eee71af3c054a70e002015c8d4707c25a28d2a148fb08bb7903"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-4.json",
+                  "sha256": "c3c80eacf4a46a6a359b8720d13eeec5e20d5d4dbf9276420a43e22961186216"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-5.json",
+                  "sha256": "0a6911614c556845a560f5b2f08329bb27bfe9d5a457d4fd87e6d65cb773b974"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-6.json",
+                  "sha256": "54e634f1be335d61bfa14c3197b452b8684eeb90ec3a17bca55d7dc9916e8206"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-7.json",
+                  "sha256": "e8e9dd9c654638493aecfa7fbdec66a77c22c9944d15c66d380f8a68781a8383"
+                }
+              ],
+              "status": "complete",
+              "workers": [
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "eagle2",
+                    "--shard-index",
+                    "0",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "0",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/eagle2-0.log",
+                  "pid": 1005421,
+                  "shard_index": 0
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "eagle2",
+                    "--shard-index",
+                    "1",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "1",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/eagle2-1.log",
+                  "pid": 1005422,
+                  "shard_index": 1
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "eagle2",
+                    "--shard-index",
+                    "2",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "2",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/eagle2-2.log",
+                  "pid": 1005423,
+                  "shard_index": 2
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "eagle2",
+                    "--shard-index",
+                    "3",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "3",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/eagle2-3.log",
+                  "pid": 1005424,
+                  "shard_index": 3
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "eagle2",
+                    "--shard-index",
+                    "4",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "4",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/eagle2-4.log",
+                  "pid": 1005427,
+                  "shard_index": 4
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "eagle2",
+                    "--shard-index",
+                    "5",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "5",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/eagle2-5.log",
+                  "pid": 1005428,
+                  "shard_index": 5
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "eagle2",
+                    "--shard-index",
+                    "6",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "6",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/eagle2-6.log",
+                  "pid": 1005429,
+                  "shard_index": 6
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "eagle2",
+                    "--shard-index",
+                    "7",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "7",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/eagle2-7.log",
+                  "pid": 1005430,
+                  "shard_index": 7
+                }
+              ]
+            },
+            {
+              "method": "hass",
+              "receipts": [
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-0.json",
+                  "sha256": "17ee5551a3fcecb22d369c322cd0a50089dce3526864d6a3eb8ca9cc1b53280b"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-1.json",
+                  "sha256": "3f2d5295a099225da7047b23656667bf99cca51baed55aadedd514406ec6e6de"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-2.json",
+                  "sha256": "e501019487ae8021486610403b6b0a246f4141b9a9272b06d38b5a382aabf03e"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-3.json",
+                  "sha256": "90cd580d503c6c123bf4c3e2f3d3498f885c6f8a71f5b0b29384c2b7637f67c1"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-4.json",
+                  "sha256": "ea6b20aff2ed5984c6c129441cbb3d5c38056be00bdcb2eb7ccb0ec5e9c7ed38"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-5.json",
+                  "sha256": "37ff7fe96a7b5fbcc4b06bd88eba0a74eff320571a9bdc3acd0bc3e09b379d3a"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-6.json",
+                  "sha256": "7957a102f0f9124b75460143b7da2b563056a6ea6af62335ee0b068e4b093514"
+                },
+                {
+                  "completed_cases": 800,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-7.json",
+                  "sha256": "ffa90d1481109262cd657e1d1d7eb12115f49142113f060d63f995bb3e5d829a"
+                }
+              ],
+              "status": "complete",
+              "workers": [
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-hass/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "hass",
+                    "--shard-index",
+                    "0",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "0",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/hass-0.log",
+                  "pid": 1085868,
+                  "shard_index": 0
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-hass/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "hass",
+                    "--shard-index",
+                    "1",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "1",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/hass-1.log",
+                  "pid": 1085869,
+                  "shard_index": 1
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-hass/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "hass",
+                    "--shard-index",
+                    "2",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "2",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/hass-2.log",
+                  "pid": 1085870,
+                  "shard_index": 2
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-hass/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "hass",
+                    "--shard-index",
+                    "3",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "3",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/hass-3.log",
+                  "pid": 1085871,
+                  "shard_index": 3
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-hass/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "hass",
+                    "--shard-index",
+                    "4",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "4",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/hass-4.log",
+                  "pid": 1085872,
+                  "shard_index": 4
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-hass/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "hass",
+                    "--shard-index",
+                    "5",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "5",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/hass-5.log",
+                  "pid": 1085873,
+                  "shard_index": 5
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-hass/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "hass",
+                    "--shard-index",
+                    "6",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "6",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/hass-6.log",
+                  "pid": 1085874,
+                  "shard_index": 6
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-hass/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+                    "--method",
+                    "hass",
+                    "--shard-index",
+                    "7",
+                    "--shard-count",
+                    "8"
+                  ],
+                  "device": "7",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/logs/hass-7.log",
+                  "pid": 1085875,
+                  "shard_index": 7
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "manifest": {
+        "active_methods": [
+          "eagle2",
+          "hass"
+        ],
+        "asset_receipt_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/assets.json",
+        "asset_receipt_sha256": "da62f1ca8001cc3be7ed6604c783987afe8f27d5ad281c6874d9ec55c3ad1b07",
+        "asset_registry_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/registries/assets.json",
+        "authored_source_hashes": {
+          "src/taps_rebuild/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+          "src/taps_rebuild/__main__.py": "b2663b7425569c81aa530431d163a016dc86dbe3748818f472b9acc508c8b0ba",
+          "src/taps_rebuild/assets.py": "2a312ec52618ab335fcda435e47406c568f55d14e48baf2193b1bd364755ee32",
+          "src/taps_rebuild/attach.py": "376d2e5eb8936812b1b53e45adac8983bd6ceed226329fa355fd0e50a1868b6b",
+          "src/taps_rebuild/backends/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/taps_rebuild/backends/official.py": "e5a6863d3a387fe4a91d30b7b368358a6195e222a3a4ac3ab2958df539175d4a",
+          "src/taps_rebuild/backends/pooled.py": "3518af70d7c71e27710ac5a66c72816dfc7257ab5013a35c983ccd6375dabc64",
+          "src/taps_rebuild/composition.py": "e4c428f11468b6231c12156822a6c68b7e4a0bdf3e8bc59493b8dd79b398f69d",
+          "src/taps_rebuild/composition_cli.py": "edafe0e34d10f77c780cb25c350bd29f41692c65163597ce164cb16dbbfc437a",
+          "src/taps_rebuild/data.py": "ca070ff7bba2526d83a44a00d972ea7694fbd63c53539f244528cf2fc32b0608",
+          "src/taps_rebuild/data_pool.py": "21fedaacbf6e9ce0e9c0b9f143bcf8827d714429712aa57deee834ff05d121a4",
+          "src/taps_rebuild/engineering.py": "5d0f1f8758265e9914899069213f42105dd41ddceea58e3e0682ee05f19be941",
+          "src/taps_rebuild/learning.py": "bf46a60595b3f46829f0211e429aca2c0d48818e36c07121582b229e3e35f79d",
+          "src/taps_rebuild/metrics.py": "1a168810154a7c0f0d5fc46037997f461d8daf6999ce23b6ef8fca9db68ca508",
+          "src/taps_rebuild/native_runtime.py": "328626fef96ca9f40b288ab49c832f14a26ff3fc9b182ba78938b3b8239446df",
+          "src/taps_rebuild/native_training.py": "24f6f3bd6a7041e0d3d8a9b92e0cbe45bc85e61860c984df9dc55760f9b8f2eb",
+          "src/taps_rebuild/pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+          "src/taps_rebuild/reference_group.py": "a660867c89d2f13b8c7d5cff48c23a861df8925a8b14bf16f6b758a95d40d310",
+          "src/taps_rebuild/runner.py": "7cc2327f83d76238a28e7539f094e1d8c387c0496c0c8ad13f6c079f84794d3c",
+          "src/taps_rebuild/runtime.py": "ade8973206220550ec275b73c3a0fe7e33b7869b653cdfba700ee72117d41d3e",
+          "src/taps_rebuild/serving.py": "af74b16b5aa281671b2338e7fbba2517234cb91ab6a317ac8eed616cd21a6d07",
+          "src/taps_rebuild/serving_pool.py": "f40e8f8efe5ef64e5cee4326451970fcd185a34333b30e7a4b1e10e013c07e33",
+          "src/taps_rebuild/sources.py": "9aeb3df80bb81b856c114f753698caa2410074153e265aaa76a1e81a24be7faf",
+          "src/taps_rebuild/specialization.py": "7510c8e8d6960c117b8dbc7017176e8f3a9171b53215ac5f0157886b7c050bae",
+          "src/taps_rebuild/verification.py": "2f20b91dbf33aa101135f3b3199ce0542f764d3d41a5e8332c11c38920fc5d31"
+        },
+        "authored_source_root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/source",
+        "code_commit": "a9855371b638fdd13a1f8125a0041759958aefbf",
+        "code_dirty": false,
+        "config_sha256": "51e82dae1296d16a41bb9cab9ce1042eac4d4b775b97df42866e65ff32e2cd16",
+        "created_at_utc": "2026-11-09T18:05:36.075937+00:00",
+        "deployed_source_identity_sha256": "6375933ffe6e688eb4eb032360eabe519efadd01e13233a56869a022bf6f2caa",
+        "device_bindings": [
+          {
+            "index": "0",
+            "shard_index": 0,
+            "token": "0",
+            "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434"
+          },
+          {
+            "index": "1",
+            "shard_index": 1,
+            "token": "1",
+            "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641"
+          },
+          {
+            "index": "2",
+            "shard_index": 2,
+            "token": "2",
+            "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a"
+          },
+          {
+            "index": "3",
+            "shard_index": 3,
+            "token": "3",
+            "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95"
+          },
+          {
+            "index": "4",
+            "shard_index": 4,
+            "token": "4",
+            "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8"
+          },
+          {
+            "index": "5",
+            "shard_index": 5,
+            "token": "5",
+            "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797"
+          },
+          {
+            "index": "6",
+            "shard_index": 6,
+            "token": "6",
+            "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a"
+          },
+          {
+            "index": "7",
+            "shard_index": 7,
+            "token": "7",
+            "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d"
+          }
+        ],
+        "effective_config": {
+          "base_seed": 20261109,
+          "batch_size": 1,
+          "bootstrap_samples": 2000,
+          "cluster_root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+          "dtype": "float16",
+          "legacy_runtime_root": "/mnt/nfs/home/mohamadzbib/projects/rl-infra",
+          "max_length": 2048,
+          "max_new_tokens": 512,
+          "method_order": [
+            "eagle2",
+            "hass"
+          ],
+          "methods": {
+            "eagle2": {
+              "benchmarks": [
+                "mt_bench",
+                "humaneval",
+                "gsm8k"
+              ],
+              "depth": 5,
+              "drafter": "eagle2_llama3_8b",
+              "max_observed_depth": 6,
+              "profile": "eagle",
+              "source": "EAGLE",
+              "target": "llama3_instruct_8b"
+            },
+            "hass": {
+              "benchmarks": [
+                "mt_bench",
+                "humaneval",
+                "gsm8k"
+              ],
+              "depth": 5,
+              "drafter": "hass_llama3_8b",
+              "max_observed_depth": 6,
+              "profile": "hass",
+              "source": "HASS",
+              "target": "llama3_instruct_8b"
+            }
+          },
+          "plan_sha256": "357ba28e2e5e1aa658dae82c279253ac07457d9d406ac50cde0fbf513b150dae",
+          "primary_throughput": "Comparison tokens including the first terminal token and capped at max_new_tokens per measured generation wall time",
+          "reference_cells": [
+            {
+              "benchmark": "mt_bench",
+              "expected_questions": 80,
+              "expected_turns": 2,
+              "method": "eagle2",
+              "published_tau": 4.21,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "humaneval",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle2",
+              "published_tau": 4.93,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "gsm8k",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle2",
+              "published_tau": 4.42,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "mt_bench",
+              "expected_questions": 80,
+              "expected_turns": 2,
+              "method": "eagle2",
+              "published_tau": 3.9,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "humaneval",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle2",
+              "published_tau": 4.73,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "gsm8k",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle2",
+              "published_tau": 4.3,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "mt_bench",
+              "expected_questions": 80,
+              "expected_turns": 2,
+              "method": "hass",
+              "published_tau": 4.68,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "humaneval",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "hass",
+              "published_tau": 5.54,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "gsm8k",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "hass",
+              "published_tau": 5.02,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "mt_bench",
+              "expected_questions": 80,
+              "expected_turns": 2,
+              "method": "hass",
+              "published_tau": 4.26,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "humaneval",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "hass",
+              "published_tau": 5.3,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "gsm8k",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "hass",
+              "published_tau": 4.85,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            }
+          ],
+          "reference_cli_advertised_cap": 1024,
+          "reference_effective_cap": 512,
+          "reference_max_length": 2048,
+          "relative_acceptance_tolerance": 0.05,
+          "schema_version": 1,
+          "scope": "reference",
+          "study_id": "official-reproduction-20261109",
+          "tau_definition": "For each question/repeat pool raw emitted tokens and true verification cycles across all turns, compute their ratio, then average repeats within question and questions within benchmark; prefill recorded separately",
+          "temperatures": [
+            0,
+            1
+          ],
+          "timing_repeats": 5,
+          "timing_scope": "Synchronized generation including prefill and unused final drafting; excludes model load, tokenization, detokenization and disk logging",
+          "top_k": 10,
+          "total_token": 60,
+          "training_gate": {
+            "automatic_training": false,
+            "requires_full_model_temperature_one_distribution_check": true,
+            "requires_reproduction_pass": true
+          },
+          "warmup_generations_per_mode": 3
+        },
+        "gpu_inventory": [
+          {
+            "driver_version": "580.65.06",
+            "index": "0",
+            "memory_total_mib": 81920.0,
+            "name": "NVIDIA A100 80GB PCIe",
+            "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434"
+          },
+          {
+            "driver_version": "580.65.06",
+            "index": "1",
+            "memory_total_mib": 81920.0,
+            "name": "NVIDIA A100 80GB PCIe",
+            "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641"
+          },
+          {
+            "driver_version": "580.65.06",
+            "index": "2",
+            "memory_total_mib": 81920.0,
+            "name": "NVIDIA A100 80GB PCIe",
+            "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a"
+          },
+          {
+            "driver_version": "580.65.06",
+            "index": "3",
+            "memory_total_mib": 81920.0,
+            "name": "NVIDIA A100 80GB PCIe",
+            "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95"
+          },
+          {
+            "driver_version": "580.65.06",
+            "index": "4",
+            "memory_total_mib": 81920.0,
+            "name": "NVIDIA A100 80GB PCIe",
+            "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8"
+          },
+          {
+            "driver_version": "580.65.06",
+            "index": "5",
+            "memory_total_mib": 81920.0,
+            "name": "NVIDIA A100 80GB PCIe",
+            "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797"
+          },
+          {
+            "driver_version": "580.65.06",
+            "index": "6",
+            "memory_total_mib": 81920.0,
+            "name": "NVIDIA A100 80GB PCIe",
+            "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a"
+          },
+          {
+            "driver_version": "580.65.06",
+            "index": "7",
+            "memory_total_mib": 81920.0,
+            "name": "NVIDIA A100 80GB PCIe",
+            "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d"
+          }
+        ],
+        "hardware_identity_sha256": "66213a48e5871bb4862329bdca15100ec3e9161400c0b9482b3716f755f912d9",
+        "initial_slurm": {
+          "job": {
+            "Account": "grad-students",
+            "EndTime": "2026-11-11T07:41:30",
+            "JobId": "2212576",
+            "JobName": "deep10-hold",
+            "NodeList": "deep-chungus-10",
+            "NumCPUs": "128",
+            "NumNodes": "1",
+            "Partition": "high-priority",
+            "QOS": "spec-priority",
+            "StartTime": "2026-11-09T07:41:30",
+            "TRES": "cpu=128,node=1,billing=128,gres/gpu=8,gres/gpu:a100=8",
+            "UserId": "mohamadzbib(29562)"
+          },
+          "job_record_sha256": "ffb6d5cc596d8fb66979b6e7a3187d9431cd0a4f2290fa6f79a202df8e3e4d55",
+          "node": {
+            "AllocTRES": "cpu=128,gres/gpu=8,gres/gpu:a100=8",
+            "CPUTot": "128",
+            "CfgTRES": "cpu=128,mem=1000000M,billing=128,gres/gpu=8,gres/gpu:a100=8",
+            "Gres": "gpu:a100:8",
+            "NodeName": "deep-chungus-10",
+            "RealMemory": "1000000",
+            "State": "ALLOCATED",
+            "Version": "21.08.8"
+          },
+          "node_record_sha256": "709024b0ea28b3b90c7f9294266b6b6822746af44031264b82aa26496d051e7a"
+        },
+        "plan_sha256": "357ba28e2e5e1aa658dae82c279253ac07457d9d406ac50cde0fbf513b150dae",
+        "root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "run_dir": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1",
+        "run_id": "official-eagle2-hass-20261109-v1",
+        "schema_version": 1,
+        "scientific_identity_sha256": "5ab92f48818e550a2ad18aa9cdcba113438261d42d8fcc9c776eb5f05c0ca08c",
+        "scope": "reference",
+        "shard_count": 8,
+        "source_identity_kind": "deployed_source_identity",
+        "source_receipt_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/sources.json",
+        "source_receipt_sha256": "452fb3ff49e64eb0cd2e4f3625e5190fad8ee03b1d4bd9b6e0ae461406366dc1",
+        "source_registry_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/inputs/registries/sources.json"
+      },
+      "manifest_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/manifest.json",
+      "manifest_sha256": "661cb409e9db14f7fa4c7d55a95dbc9d067ee9b20d0956ca552654369a786dbd",
+      "pool_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/pool.json",
+      "pool_sha256": "da67db03f389e308f63dffc3d8d603d664baa5cd74ee84771592bde612fad820",
+      "report_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/report.json",
+      "report_sha256": "ef723e4de066c1f1e27b332f4fa729d9e4b6ad60369e8e0eedb2e20bca2725c9",
+      "run_id": "official-eagle2-hass-20261109-v1",
+      "worker_proofs": [
+        {
+          "method": "eagle2",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/eagle2-shard0.jsonl",
+            "sha256": "4e9b4101902883071b0b5728363c3edb71675ea08058bdd58bb74eb622649e87"
+          },
+          "shard_index": 0,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-0.json",
+            "sha256": "19a6abb191c91b0fbca7b273703acd160ce94415f3e99ea15eb23f5a6b48807d"
+          }
+        },
+        {
+          "method": "eagle2",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/eagle2-shard1.jsonl",
+            "sha256": "02d7e174a81f61826d5f28077a713cefafc897745999897bd88177ddcdecb56e"
+          },
+          "shard_index": 1,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-1.json",
+            "sha256": "d4e388452b6ad13f63faee9ba30ae8b9bdfea6f828ccfeefee890641a4056faf"
+          }
+        },
+        {
+          "method": "eagle2",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/eagle2-shard2.jsonl",
+            "sha256": "dc5a39483b518b0070634e9c993f0f4be0c31525591d1ca0b8974f4fcebb6b0e"
+          },
+          "shard_index": 2,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-2.json",
+            "sha256": "b3969a94373f1ed37fd396e5fea5bf74ddbe3c8f4c9b85149a38514f2964ecff"
+          }
+        },
+        {
+          "method": "eagle2",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/eagle2-shard3.jsonl",
+            "sha256": "4bdd516f4f66db4754bbb068b89490abcfd36367a2d430b368febd035f5f4f3a"
+          },
+          "shard_index": 3,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-3.json",
+            "sha256": "88ede69dffc67eee71af3c054a70e002015c8d4707c25a28d2a148fb08bb7903"
+          }
+        },
+        {
+          "method": "eagle2",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/eagle2-shard4.jsonl",
+            "sha256": "118ab701309217a31c50ff86fa5025760a2e9d5eca1ae8914ff8aced8bd54e44"
+          },
+          "shard_index": 4,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-4.json",
+            "sha256": "c3c80eacf4a46a6a359b8720d13eeec5e20d5d4dbf9276420a43e22961186216"
+          }
+        },
+        {
+          "method": "eagle2",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/eagle2-shard5.jsonl",
+            "sha256": "b74eeb50a831256236a24f2823298b142c273fb83793d40db43baa576172a5c8"
+          },
+          "shard_index": 5,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-5.json",
+            "sha256": "0a6911614c556845a560f5b2f08329bb27bfe9d5a457d4fd87e6d65cb773b974"
+          }
+        },
+        {
+          "method": "eagle2",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/eagle2-shard6.jsonl",
+            "sha256": "ed53e9b9e3856cee65aa02b4eea6f4af5db5ae20b14dc8ec79be6a0c32f8a48c"
+          },
+          "shard_index": 6,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-6.json",
+            "sha256": "54e634f1be335d61bfa14c3197b452b8684eeb90ec3a17bca55d7dc9916e8206"
+          }
+        },
+        {
+          "method": "eagle2",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/eagle2-shard7.jsonl",
+            "sha256": "3555bdeaf18c8aa7e3ec86b6c57bdb3804b87690918f649bd5a2abc9a40485df"
+          },
+          "shard_index": 7,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/eagle2-7.json",
+            "sha256": "e8e9dd9c654638493aecfa7fbdec66a77c22c9944d15c66d380f8a68781a8383"
+          }
+        },
+        {
+          "method": "hass",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/hass-shard0.jsonl",
+            "sha256": "d5656ed6684d422fdf5b59a4ed621c9bf84a35c59e3c9f2ba42e89ed9bc9cb10"
+          },
+          "shard_index": 0,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-0.json",
+            "sha256": "17ee5551a3fcecb22d369c322cd0a50089dce3526864d6a3eb8ca9cc1b53280b"
+          }
+        },
+        {
+          "method": "hass",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/hass-shard1.jsonl",
+            "sha256": "50b5539aa6976bfdd03684263d68cab9897f1a91ec87771a407ea11da6d9cd9f"
+          },
+          "shard_index": 1,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-1.json",
+            "sha256": "3f2d5295a099225da7047b23656667bf99cca51baed55aadedd514406ec6e6de"
+          }
+        },
+        {
+          "method": "hass",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/hass-shard2.jsonl",
+            "sha256": "da68ffbfc5cbd7c33764b0c72e6cbd865dde864cfa2fa4d30e2e20a7ba42517e"
+          },
+          "shard_index": 2,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-2.json",
+            "sha256": "e501019487ae8021486610403b6b0a246f4141b9a9272b06d38b5a382aabf03e"
+          }
+        },
+        {
+          "method": "hass",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/hass-shard3.jsonl",
+            "sha256": "7772fe7d7c05e96dc92f164c4be5acda9f3650afac70ab58609fff33197bf835"
+          },
+          "shard_index": 3,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-3.json",
+            "sha256": "90cd580d503c6c123bf4c3e2f3d3498f885c6f8a71f5b0b29384c2b7637f67c1"
+          }
+        },
+        {
+          "method": "hass",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/hass-shard4.jsonl",
+            "sha256": "ca1c9abe9ead67f9cdaf0885a80d827df9de85fc051cd01fdcd05fab91a193fd"
+          },
+          "shard_index": 4,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-4.json",
+            "sha256": "ea6b20aff2ed5984c6c129441cbb3d5c38056be00bdcb2eb7ccb0ec5e9c7ed38"
+          }
+        },
+        {
+          "method": "hass",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/hass-shard5.jsonl",
+            "sha256": "f870b3de0d8ef0d019829b8add25635314d84224acce86b5b1412fcb006f8a79"
+          },
+          "shard_index": 5,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-5.json",
+            "sha256": "37ff7fe96a7b5fbcc4b06bd88eba0a74eff320571a9bdc3acd0bc3e09b379d3a"
+          }
+        },
+        {
+          "method": "hass",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/hass-shard6.jsonl",
+            "sha256": "c118739464adcbba78465ac46b4cc9f522ea6916108488cf5c1308cb43e968ea"
+          },
+          "shard_index": 6,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-6.json",
+            "sha256": "7957a102f0f9124b75460143b7da2b563056a6ea6af62335ee0b068e4b093514"
+          }
+        },
+        {
+          "method": "hass",
+          "raw": {
+            "completed_records": 800,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/raw/hass-shard7.jsonl",
+            "sha256": "5fefb2c9eb953bc48add0a5f2e9a1b2d56665e9d1294a9b0f56d88d3d2ba9fce"
+          },
+          "shard_index": 7,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle2-hass-20261109-v1/workers/hass-7.json",
+            "sha256": "ffa90d1481109262cd657e1d1d7eb12115f49142113f060d63f995bb3e5d829a"
+          }
+        }
+      ]
+    },
+    {
+      "attempt_history": [
+        {
+          "completed_at_utc": "2026-11-09T22:54:10.567605+00:00",
+          "node": "deep-chungus-3",
+          "slurm": {
+            "job": {
+              "Account": "grad-students",
+              "EndTime": "2026-11-10T01:11:09",
+              "JobId": "2212933",
+              "JobName": "official-eagle3-20261109-v2",
+              "NodeList": "deep-chungus-3",
+              "NumCPUs": "96",
+              "NumNodes": "1",
+              "Partition": "high-priority",
+              "QOS": "spec-priority",
+              "StartTime": "2026-11-09T13:11:09",
+              "TRES": "cpu=96,node=1,billing=96,gres/gpu=9,gres/gpu:a100=9",
+              "UserId": "mohamadzbib(29562)"
+            },
+            "job_record_sha256": "116b358cd3fd33883b144f9a8fb17c63ea823a710bdfb881d237ce371e1f695e",
+            "node": {
+              "AllocTRES": "cpu=96,gres/gpu=9,gres/gpu:a100=9",
+              "CPUTot": "96",
+              "CfgTRES": "cpu=96,mem=500000M,billing=96,gres/gpu=9,gres/gpu:a100=9",
+              "Gres": "gpu:a100:9",
+              "NodeName": "deep-chungus-3",
+              "RealMemory": "500000",
+              "State": "ALLOCATED",
+              "Version": "21.08.8"
+            },
+            "node_record_sha256": "45b6c2855b6715e2f17564c57736e8fa18b29ff06c160429e5e363d8a58d7ba8"
+          },
+          "slurm_job_id": "2212933",
+          "started_at_utc": "2026-11-09T18:11:20.893879+00:00",
+          "status": "complete",
+          "waves": [
+            {
+              "method": "eagle3",
+              "receipts": [
+                {
+                  "completed_cases": 1080,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-0.json",
+                  "sha256": "878014b64b2eda81ed874446b8b41822688312bca695e2c3c7165caa1536d60d"
+                },
+                {
+                  "completed_cases": 1080,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-1.json",
+                  "sha256": "cd44a597441de73299c903a12186c40db9440f4966f5b11e542a53977910eadb"
+                },
+                {
+                  "completed_cases": 1080,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-2.json",
+                  "sha256": "dbc6951d6eb42f6f22c4340d015a8f62602541b2a3cc5ee445f257dbe007c7a6"
+                },
+                {
+                  "completed_cases": 1080,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-3.json",
+                  "sha256": "e70f07a47baa04edcbf9bd0b5097a1830e690e52ff48a67f91ff6e83d478294a"
+                },
+                {
+                  "completed_cases": 1080,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-4.json",
+                  "sha256": "7a3d7cfe8cd62629a68d6b99aaa2aec9a983b019152c087a8963e518cb1c9a40"
+                },
+                {
+                  "completed_cases": 1080,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-5.json",
+                  "sha256": "d19d707f61d8e1382f2f78a265b8005374ffee98d8a03afbbee6e5c63850629a"
+                },
+                {
+                  "completed_cases": 1080,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-6.json",
+                  "sha256": "e337d79fbd436d7e58a4ed3cfed13ac118cd3b413e116d27966d8198ba33294a"
+                },
+                {
+                  "completed_cases": 1080,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-7.json",
+                  "sha256": "dcc1830e875e6700d65253aa7ff8f6da28aa21b8d9c7b781313558e8ced2c133"
+                },
+                {
+                  "completed_cases": 960,
+                  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-8.json",
+                  "sha256": "ad4fd2d3c629dc540ad04694297e540f680f8abca937eebbc73226250ea094ed"
+                }
+              ],
+              "status": "complete",
+              "workers": [
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/manifest.json",
+                    "--method",
+                    "eagle3",
+                    "--shard-index",
+                    "0",
+                    "--shard-count",
+                    "9"
+                  ],
+                  "device": "0",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/logs/eagle3-0.log",
+                  "pid": 784897,
+                  "shard_index": 0
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/manifest.json",
+                    "--method",
+                    "eagle3",
+                    "--shard-index",
+                    "1",
+                    "--shard-count",
+                    "9"
+                  ],
+                  "device": "1",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/logs/eagle3-1.log",
+                  "pid": 784898,
+                  "shard_index": 1
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/manifest.json",
+                    "--method",
+                    "eagle3",
+                    "--shard-index",
+                    "2",
+                    "--shard-count",
+                    "9"
+                  ],
+                  "device": "2",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/logs/eagle3-2.log",
+                  "pid": 784899,
+                  "shard_index": 2
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/manifest.json",
+                    "--method",
+                    "eagle3",
+                    "--shard-index",
+                    "3",
+                    "--shard-count",
+                    "9"
+                  ],
+                  "device": "3",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/logs/eagle3-3.log",
+                  "pid": 784900,
+                  "shard_index": 3
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/manifest.json",
+                    "--method",
+                    "eagle3",
+                    "--shard-index",
+                    "4",
+                    "--shard-count",
+                    "9"
+                  ],
+                  "device": "4",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/logs/eagle3-4.log",
+                  "pid": 784901,
+                  "shard_index": 4
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/manifest.json",
+                    "--method",
+                    "eagle3",
+                    "--shard-index",
+                    "5",
+                    "--shard-count",
+                    "9"
+                  ],
+                  "device": "5",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/logs/eagle3-5.log",
+                  "pid": 784902,
+                  "shard_index": 5
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/manifest.json",
+                    "--method",
+                    "eagle3",
+                    "--shard-index",
+                    "6",
+                    "--shard-count",
+                    "9"
+                  ],
+                  "device": "6",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/logs/eagle3-6.log",
+                  "pid": 784903,
+                  "shard_index": 6
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/manifest.json",
+                    "--method",
+                    "eagle3",
+                    "--shard-index",
+                    "7",
+                    "--shard-count",
+                    "9"
+                  ],
+                  "device": "7",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/logs/eagle3-7.log",
+                  "pid": 784904,
+                  "shard_index": 7
+                },
+                {
+                  "command": [
+                    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/envs/taps-eagle/bin/python",
+                    "-B",
+                    "-m",
+                    "taps_rebuild.runner",
+                    "--root",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+                    "--config",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/config.json",
+                    "--run-dir",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2",
+                    "--manifest",
+                    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/manifest.json",
+                    "--method",
+                    "eagle3",
+                    "--shard-index",
+                    "8",
+                    "--shard-count",
+                    "9"
+                  ],
+                  "device": "8",
+                  "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/logs/eagle3-8.log",
+                  "pid": 784905,
+                  "shard_index": 8
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "manifest": {
+        "active_methods": [
+          "eagle3"
+        ],
+        "asset_receipt_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/assets.json",
+        "asset_receipt_sha256": "da62f1ca8001cc3be7ed6604c783987afe8f27d5ad281c6874d9ec55c3ad1b07",
+        "asset_registry_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/registries/assets.json",
+        "authored_source_hashes": {
+          "src/taps_rebuild/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+          "src/taps_rebuild/__main__.py": "b2663b7425569c81aa530431d163a016dc86dbe3748818f472b9acc508c8b0ba",
+          "src/taps_rebuild/assets.py": "2a312ec52618ab335fcda435e47406c568f55d14e48baf2193b1bd364755ee32",
+          "src/taps_rebuild/attach.py": "376d2e5eb8936812b1b53e45adac8983bd6ceed226329fa355fd0e50a1868b6b",
+          "src/taps_rebuild/backends/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "src/taps_rebuild/backends/official.py": "e5a6863d3a387fe4a91d30b7b368358a6195e222a3a4ac3ab2958df539175d4a",
+          "src/taps_rebuild/backends/pooled.py": "3518af70d7c71e27710ac5a66c72816dfc7257ab5013a35c983ccd6375dabc64",
+          "src/taps_rebuild/composition.py": "e4c428f11468b6231c12156822a6c68b7e4a0bdf3e8bc59493b8dd79b398f69d",
+          "src/taps_rebuild/composition_cli.py": "edafe0e34d10f77c780cb25c350bd29f41692c65163597ce164cb16dbbfc437a",
+          "src/taps_rebuild/data.py": "ca070ff7bba2526d83a44a00d972ea7694fbd63c53539f244528cf2fc32b0608",
+          "src/taps_rebuild/data_pool.py": "21fedaacbf6e9ce0e9c0b9f143bcf8827d714429712aa57deee834ff05d121a4",
+          "src/taps_rebuild/engineering.py": "5d0f1f8758265e9914899069213f42105dd41ddceea58e3e0682ee05f19be941",
+          "src/taps_rebuild/learning.py": "bf46a60595b3f46829f0211e429aca2c0d48818e36c07121582b229e3e35f79d",
+          "src/taps_rebuild/metrics.py": "1a168810154a7c0f0d5fc46037997f461d8daf6999ce23b6ef8fca9db68ca508",
+          "src/taps_rebuild/native_runtime.py": "328626fef96ca9f40b288ab49c832f14a26ff3fc9b182ba78938b3b8239446df",
+          "src/taps_rebuild/native_training.py": "24f6f3bd6a7041e0d3d8a9b92e0cbe45bc85e61860c984df9dc55760f9b8f2eb",
+          "src/taps_rebuild/pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+          "src/taps_rebuild/reference_group.py": "a660867c89d2f13b8c7d5cff48c23a861df8925a8b14bf16f6b758a95d40d310",
+          "src/taps_rebuild/runner.py": "7cc2327f83d76238a28e7539f094e1d8c387c0496c0c8ad13f6c079f84794d3c",
+          "src/taps_rebuild/runtime.py": "ade8973206220550ec275b73c3a0fe7e33b7869b653cdfba700ee72117d41d3e",
+          "src/taps_rebuild/serving.py": "af74b16b5aa281671b2338e7fbba2517234cb91ab6a317ac8eed616cd21a6d07",
+          "src/taps_rebuild/serving_pool.py": "f40e8f8efe5ef64e5cee4326451970fcd185a34333b30e7a4b1e10e013c07e33",
+          "src/taps_rebuild/sources.py": "9aeb3df80bb81b856c114f753698caa2410074153e265aaa76a1e81a24be7faf",
+          "src/taps_rebuild/specialization.py": "7510c8e8d6960c117b8dbc7017176e8f3a9171b53215ac5f0157886b7c050bae",
+          "src/taps_rebuild/verification.py": "2f20b91dbf33aa101135f3b3199ce0542f764d3d41a5e8332c11c38920fc5d31"
+        },
+        "authored_source_root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/source",
+        "code_commit": "a9855371b638fdd13a1f8125a0041759958aefbf",
+        "code_dirty": false,
+        "config_sha256": "51e82dae1296d16a41bb9cab9ce1042eac4d4b775b97df42866e65ff32e2cd16",
+        "created_at_utc": "2026-11-09T18:11:14.919838+00:00",
+        "deployed_source_identity_sha256": "6375933ffe6e688eb4eb032360eabe519efadd01e13233a56869a022bf6f2caa",
+        "device_bindings": [
+          {
+            "index": "0",
+            "shard_index": 0,
+            "token": "0",
+            "uuid": "GPU-c1f32042-7d13-288d-4a15-8eafd80101de"
+          },
+          {
+            "index": "1",
+            "shard_index": 1,
+            "token": "1",
+            "uuid": "GPU-e4bfbffe-06da-eefc-b6d2-4b52fe3b171d"
+          },
+          {
+            "index": "2",
+            "shard_index": 2,
+            "token": "2",
+            "uuid": "GPU-1fdb57bc-3d88-2666-b679-970aad72373d"
+          },
+          {
+            "index": "3",
+            "shard_index": 3,
+            "token": "3",
+            "uuid": "GPU-561b6132-e99e-1a88-6573-4befca38e7bd"
+          },
+          {
+            "index": "4",
+            "shard_index": 4,
+            "token": "4",
+            "uuid": "GPU-35d62755-90ed-fd7c-9387-f47266322ced"
+          },
+          {
+            "index": "5",
+            "shard_index": 5,
+            "token": "5",
+            "uuid": "GPU-fc21ff18-d267-4189-76fc-73dded3b6321"
+          },
+          {
+            "index": "6",
+            "shard_index": 6,
+            "token": "6",
+            "uuid": "GPU-a8a05579-7c03-3f4a-5588-7588f6d0f163"
+          },
+          {
+            "index": "7",
+            "shard_index": 7,
+            "token": "7",
+            "uuid": "GPU-18465779-b4c9-f52a-b768-ba1e9b1ebb14"
+          },
+          {
+            "index": "8",
+            "shard_index": 8,
+            "token": "8",
+            "uuid": "GPU-eb352173-d6b6-eb20-e5b8-d29796d95fc0"
+          }
+        ],
+        "effective_config": {
+          "base_seed": 20261109,
+          "batch_size": 1,
+          "bootstrap_samples": 2000,
+          "cluster_root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+          "dtype": "float16",
+          "legacy_runtime_root": "/mnt/nfs/home/mohamadzbib/projects/rl-infra",
+          "max_length": 2048,
+          "max_new_tokens": 512,
+          "method_order": [
+            "eagle3"
+          ],
+          "methods": {
+            "eagle3": {
+              "benchmarks": [
+                "mt_bench",
+                "humaneval",
+                "gsm8k",
+                "alpaca",
+                "cnn_dm"
+              ],
+              "depth": 7,
+              "drafter": "eagle3_llama31_8b",
+              "max_observed_depth": 8,
+              "profile": "eagle",
+              "source": "EAGLE",
+              "target": "llama31_instruct_8b"
+            }
+          },
+          "plan_sha256": "357ba28e2e5e1aa658dae82c279253ac07457d9d406ac50cde0fbf513b150dae",
+          "primary_throughput": "Comparison tokens including the first terminal token and capped at max_new_tokens per measured generation wall time",
+          "reference_cells": [
+            {
+              "benchmark": "mt_bench",
+              "expected_questions": 80,
+              "expected_turns": 2,
+              "method": "eagle3",
+              "published_tau": 6.13,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "humaneval",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle3",
+              "published_tau": 6.74,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "gsm8k",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle3",
+              "published_tau": 6.23,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "alpaca",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle3",
+              "published_tau": 6.7,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "cnn_dm",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle3",
+              "published_tau": 5.34,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+              "temperature": 0,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "mt_bench",
+              "expected_questions": 80,
+              "expected_turns": 2,
+              "method": "eagle3",
+              "published_tau": 4.24,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "humaneval",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle3",
+              "published_tau": 5.82,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "gsm8k",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle3",
+              "published_tau": 4.59,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "alpaca",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle3",
+              "published_tau": 5.56,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            },
+            {
+              "benchmark": "cnn_dm",
+              "expected_questions": 80,
+              "expected_turns": 1,
+              "method": "eagle3",
+              "published_tau": 4.39,
+              "reference_kind": "published_not_measured",
+              "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+              "temperature": 1,
+              "timing_repeats": 5
+            }
+          ],
+          "reference_cli_advertised_cap": 1024,
+          "reference_effective_cap": 512,
+          "reference_max_length": 2048,
+          "relative_acceptance_tolerance": 0.05,
+          "schema_version": 1,
+          "scope": "reference",
+          "study_id": "official-reproduction-20261109",
+          "tau_definition": "For each question/repeat pool raw emitted tokens and true verification cycles across all turns, compute their ratio, then average repeats within question and questions within benchmark; prefill recorded separately",
+          "temperatures": [
+            0,
+            1
+          ],
+          "timing_repeats": 5,
+          "timing_scope": "Synchronized generation including prefill and unused final drafting; excludes model load, tokenization, detokenization and disk logging",
+          "top_k": 10,
+          "total_token": 60,
+          "training_gate": {
+            "automatic_training": false,
+            "requires_full_model_temperature_one_distribution_check": true,
+            "requires_reproduction_pass": true
+          },
+          "warmup_generations_per_mode": 3
+        },
+        "gpu_inventory": [
+          {
+            "driver_version": "565.57.01",
+            "index": "0",
+            "memory_total_mib": 40960.0,
+            "name": "NVIDIA A100-PCIE-40GB",
+            "uuid": "GPU-c1f32042-7d13-288d-4a15-8eafd80101de"
+          },
+          {
+            "driver_version": "565.57.01",
+            "index": "1",
+            "memory_total_mib": 40960.0,
+            "name": "NVIDIA A100-PCIE-40GB",
+            "uuid": "GPU-e4bfbffe-06da-eefc-b6d2-4b52fe3b171d"
+          },
+          {
+            "driver_version": "565.57.01",
+            "index": "2",
+            "memory_total_mib": 40960.0,
+            "name": "NVIDIA A100-PCIE-40GB",
+            "uuid": "GPU-1fdb57bc-3d88-2666-b679-970aad72373d"
+          },
+          {
+            "driver_version": "565.57.01",
+            "index": "3",
+            "memory_total_mib": 40960.0,
+            "name": "NVIDIA A100-PCIE-40GB",
+            "uuid": "GPU-561b6132-e99e-1a88-6573-4befca38e7bd"
+          },
+          {
+            "driver_version": "565.57.01",
+            "index": "4",
+            "memory_total_mib": 40960.0,
+            "name": "NVIDIA A100-PCIE-40GB",
+            "uuid": "GPU-35d62755-90ed-fd7c-9387-f47266322ced"
+          },
+          {
+            "driver_version": "565.57.01",
+            "index": "5",
+            "memory_total_mib": 40960.0,
+            "name": "NVIDIA A100-PCIE-40GB",
+            "uuid": "GPU-fc21ff18-d267-4189-76fc-73dded3b6321"
+          },
+          {
+            "driver_version": "565.57.01",
+            "index": "6",
+            "memory_total_mib": 40960.0,
+            "name": "NVIDIA A100-PCIE-40GB",
+            "uuid": "GPU-a8a05579-7c03-3f4a-5588-7588f6d0f163"
+          },
+          {
+            "driver_version": "565.57.01",
+            "index": "7",
+            "memory_total_mib": 40960.0,
+            "name": "NVIDIA A100-PCIE-40GB",
+            "uuid": "GPU-18465779-b4c9-f52a-b768-ba1e9b1ebb14"
+          },
+          {
+            "driver_version": "565.57.01",
+            "index": "8",
+            "memory_total_mib": 40960.0,
+            "name": "NVIDIA A100-PCIE-40GB",
+            "uuid": "GPU-eb352173-d6b6-eb20-e5b8-d29796d95fc0"
+          }
+        ],
+        "hardware_identity_sha256": "2e28347a4ddfcebb0c18c4444956d3c3201d57b365f63addab7baa1f1cb1e38a",
+        "initial_slurm": {
+          "job": {
+            "Account": "grad-students",
+            "EndTime": "2026-11-10T01:11:09",
+            "JobId": "2212933",
+            "JobName": "official-eagle3-20261109-v2",
+            "NodeList": "deep-chungus-3",
+            "NumCPUs": "96",
+            "NumNodes": "1",
+            "Partition": "high-priority",
+            "QOS": "spec-priority",
+            "StartTime": "2026-11-09T13:11:09",
+            "TRES": "cpu=96,node=1,billing=96,gres/gpu=9,gres/gpu:a100=9",
+            "UserId": "mohamadzbib(29562)"
+          },
+          "job_record_sha256": "116b358cd3fd33883b144f9a8fb17c63ea823a710bdfb881d237ce371e1f695e",
+          "node": {
+            "AllocTRES": "cpu=96,gres/gpu=9,gres/gpu:a100=9",
+            "CPUTot": "96",
+            "CfgTRES": "cpu=96,mem=500000M,billing=96,gres/gpu=9,gres/gpu:a100=9",
+            "Gres": "gpu:a100:9",
+            "NodeName": "deep-chungus-3",
+            "RealMemory": "500000",
+            "State": "ALLOCATED",
+            "Version": "21.08.8"
+          },
+          "node_record_sha256": "45b6c2855b6715e2f17564c57736e8fa18b29ff06c160429e5e363d8a58d7ba8"
+        },
+        "plan_sha256": "357ba28e2e5e1aa658dae82c279253ac07457d9d406ac50cde0fbf513b150dae",
+        "root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "run_dir": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2",
+        "run_id": "official-eagle3-20261109-v2",
+        "schema_version": 1,
+        "scientific_identity_sha256": "6c682b348ca0db789a1eaedcb8104b94ed6999bab6b6685a2d8a1d16aa021fea",
+        "scope": "reference",
+        "shard_count": 9,
+        "source_identity_kind": "deployed_source_identity",
+        "source_receipt_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/sources.json",
+        "source_receipt_sha256": "452fb3ff49e64eb0cd2e4f3625e5190fad8ee03b1d4bd9b6e0ae461406366dc1",
+        "source_registry_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/inputs/registries/sources.json"
+      },
+      "manifest_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/manifest.json",
+      "manifest_sha256": "502f80bb0d1c8d86407e3c4e4673b7326ea41b1de280fba5352eb00dd44a8a9a",
+      "pool_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/pool.json",
+      "pool_sha256": "f9ca6c673cc44f0e5ce90e5c8351573a6a2f15619fd4f187755c710bb08e5e87",
+      "report_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/report.json",
+      "report_sha256": "0d4294cc79432d186f39dcfefddc7edfde9a2967f699236fd4ba6087d22e9126",
+      "run_id": "official-eagle3-20261109-v2",
+      "worker_proofs": [
+        {
+          "method": "eagle3",
+          "raw": {
+            "completed_records": 1080,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/raw/eagle3-shard0.jsonl",
+            "sha256": "ccdb6199587b7ba5e2ee840ede7293413dde2f50e90c041d5355b97179b9b1da"
+          },
+          "shard_index": 0,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-0.json",
+            "sha256": "878014b64b2eda81ed874446b8b41822688312bca695e2c3c7165caa1536d60d"
+          }
+        },
+        {
+          "method": "eagle3",
+          "raw": {
+            "completed_records": 1080,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/raw/eagle3-shard1.jsonl",
+            "sha256": "73737047103bd4e9ecf5c13df9927d93b737497f709fcffeb1fe5fb1103b24a8"
+          },
+          "shard_index": 1,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-1.json",
+            "sha256": "cd44a597441de73299c903a12186c40db9440f4966f5b11e542a53977910eadb"
+          }
+        },
+        {
+          "method": "eagle3",
+          "raw": {
+            "completed_records": 1080,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/raw/eagle3-shard2.jsonl",
+            "sha256": "eca79d89a3052e7b8d5054e76ac9ee9616a60cf994cea45febd7679497cfce4e"
+          },
+          "shard_index": 2,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-2.json",
+            "sha256": "dbc6951d6eb42f6f22c4340d015a8f62602541b2a3cc5ee445f257dbe007c7a6"
+          }
+        },
+        {
+          "method": "eagle3",
+          "raw": {
+            "completed_records": 1080,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/raw/eagle3-shard3.jsonl",
+            "sha256": "1336e33deba964fd8ba8f1a093ac41ae9b5c9aae88ac4ec0b08d13f22a2e9e6f"
+          },
+          "shard_index": 3,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-3.json",
+            "sha256": "e70f07a47baa04edcbf9bd0b5097a1830e690e52ff48a67f91ff6e83d478294a"
+          }
+        },
+        {
+          "method": "eagle3",
+          "raw": {
+            "completed_records": 1080,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/raw/eagle3-shard4.jsonl",
+            "sha256": "b754e3787ad396668ac44928d066c18eec7edb0fb81b92d5087bf1366c91a4da"
+          },
+          "shard_index": 4,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-4.json",
+            "sha256": "7a3d7cfe8cd62629a68d6b99aaa2aec9a983b019152c087a8963e518cb1c9a40"
+          }
+        },
+        {
+          "method": "eagle3",
+          "raw": {
+            "completed_records": 1080,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/raw/eagle3-shard5.jsonl",
+            "sha256": "2325e9260126fd4aca122aa4fc86e8badff487046b538c1845de867ec0ebfa58"
+          },
+          "shard_index": 5,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-5.json",
+            "sha256": "d19d707f61d8e1382f2f78a265b8005374ffee98d8a03afbbee6e5c63850629a"
+          }
+        },
+        {
+          "method": "eagle3",
+          "raw": {
+            "completed_records": 1080,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/raw/eagle3-shard6.jsonl",
+            "sha256": "09938a87f414d54fc7247131a94c09fe8ff9a47d3347aee6a82c6a6f8774cf3d"
+          },
+          "shard_index": 6,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-6.json",
+            "sha256": "e337d79fbd436d7e58a4ed3cfed13ac118cd3b413e116d27966d8198ba33294a"
+          }
+        },
+        {
+          "method": "eagle3",
+          "raw": {
+            "completed_records": 1080,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/raw/eagle3-shard7.jsonl",
+            "sha256": "bb94bd578052f9ff79b60202ec97ab2e88bdb7fb0b7f09094682b20be3c8fca7"
+          },
+          "shard_index": 7,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-7.json",
+            "sha256": "dcc1830e875e6700d65253aa7ff8f6da28aa21b8d9c7b781313558e8ced2c133"
+          }
+        },
+        {
+          "method": "eagle3",
+          "raw": {
+            "completed_records": 960,
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/raw/eagle3-shard8.jsonl",
+            "sha256": "206ccc16b9729c9af68114b6dcd81eb29ea4ef06cccdc21123d4ceba34bec7f0"
+          },
+          "shard_index": 8,
+          "worker_receipt": {
+            "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-20261109-v2/workers/eagle3-8.json",
+            "sha256": "ad4fd2d3c629dc540ad04694297e540f680f8abca937eebbc73226250ea094ed"
+          }
+        }
+      ]
+    }
+  ],
+  "losslessness_established": false,
+  "original_config": {
+    "base_seed": 20261109,
+    "batch_size": 1,
+    "bootstrap_samples": 2000,
+    "cluster_root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "dtype": "float16",
+    "legacy_runtime_root": "/mnt/nfs/home/mohamadzbib/projects/rl-infra",
+    "max_length": 2048,
+    "max_new_tokens": 512,
+    "method_order": [
+      "eagle3",
+      "eagle2",
+      "hass"
+    ],
+    "methods": {
+      "eagle2": {
+        "benchmarks": [
+          "mt_bench",
+          "humaneval",
+          "gsm8k"
+        ],
+        "depth": 5,
+        "drafter": "eagle2_llama3_8b",
+        "max_observed_depth": 6,
+        "profile": "eagle",
+        "source": "EAGLE",
+        "target": "llama3_instruct_8b"
+      },
+      "eagle3": {
+        "benchmarks": [
+          "mt_bench",
+          "humaneval",
+          "gsm8k",
+          "alpaca",
+          "cnn_dm"
+        ],
+        "depth": 7,
+        "drafter": "eagle3_llama31_8b",
+        "max_observed_depth": 8,
+        "profile": "eagle",
+        "source": "EAGLE",
+        "target": "llama31_instruct_8b"
+      },
+      "hass": {
+        "benchmarks": [
+          "mt_bench",
+          "humaneval",
+          "gsm8k"
+        ],
+        "depth": 5,
+        "drafter": "hass_llama3_8b",
+        "max_observed_depth": 6,
+        "profile": "hass",
+        "source": "HASS",
+        "target": "llama3_instruct_8b"
+      }
+    },
+    "plan_sha256": "357ba28e2e5e1aa658dae82c279253ac07457d9d406ac50cde0fbf513b150dae",
+    "primary_throughput": "Comparison tokens including the first terminal token and capped at max_new_tokens per measured generation wall time",
+    "reference_cells": [
+      {
+        "benchmark": "mt_bench",
+        "expected_questions": 80,
+        "expected_turns": 2,
+        "method": "eagle3",
+        "published_tau": 6.13,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "humaneval",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle3",
+        "published_tau": 6.74,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "gsm8k",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle3",
+        "published_tau": 6.23,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "alpaca",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle3",
+        "published_tau": 6.7,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "cnn_dm",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle3",
+        "published_tau": 5.34,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "mt_bench",
+        "expected_questions": 80,
+        "expected_turns": 2,
+        "method": "eagle3",
+        "published_tau": 4.24,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "humaneval",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle3",
+        "published_tau": 5.82,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "gsm8k",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle3",
+        "published_tau": 4.59,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "alpaca",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle3",
+        "published_tau": 5.56,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "cnn_dm",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle3",
+        "published_tau": 4.39,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "mt_bench",
+        "expected_questions": 80,
+        "expected_turns": 2,
+        "method": "eagle2",
+        "published_tau": 4.21,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "humaneval",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle2",
+        "published_tau": 4.93,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "gsm8k",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle2",
+        "published_tau": 4.42,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "mt_bench",
+        "expected_questions": 80,
+        "expected_turns": 2,
+        "method": "eagle2",
+        "published_tau": 3.9,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "humaneval",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle2",
+        "published_tau": 4.73,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "gsm8k",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "eagle2",
+        "published_tau": 4.3,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "mt_bench",
+        "expected_questions": 80,
+        "expected_turns": 2,
+        "method": "hass",
+        "published_tau": 4.68,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "humaneval",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "hass",
+        "published_tau": 5.54,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "gsm8k",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "hass",
+        "published_tau": 5.02,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 0,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "mt_bench",
+        "expected_questions": 80,
+        "expected_turns": 2,
+        "method": "hass",
+        "published_tau": 4.26,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "humaneval",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "hass",
+        "published_tau": 5.3,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      },
+      {
+        "benchmark": "gsm8k",
+        "expected_questions": 80,
+        "expected_turns": 1,
+        "method": "hass",
+        "published_tau": 4.85,
+        "reference_kind": "published_not_measured",
+        "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+        "temperature": 1,
+        "timing_repeats": 5
+      }
+    ],
+    "reference_cli_advertised_cap": 1024,
+    "reference_effective_cap": 512,
+    "reference_max_length": 2048,
+    "relative_acceptance_tolerance": 0.05,
+    "schema_version": 1,
+    "scope": "reference",
+    "study_id": "official-reproduction-20261109",
+    "tau_definition": "For each question/repeat pool raw emitted tokens and true verification cycles across all turns, compute their ratio, then average repeats within question and questions within benchmark; prefill recorded separately",
+    "temperatures": [
+      0,
+      1
+    ],
+    "timing_repeats": 5,
+    "timing_scope": "Synchronized generation including prefill and unused final drafting; excludes model load, tokenization, detokenization and disk logging",
+    "top_k": 10,
+    "total_token": 60,
+    "training_gate": {
+      "automatic_training": false,
+      "requires_full_model_temperature_one_distribution_check": true,
+      "requires_reproduction_pass": true
+    },
+    "warmup_generations_per_mode": 3
+  },
+  "output_dir": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/reference-groups/official-20261110-v1",
+  "reference_cells": [
+    {
+      "benchmark": "mt_bench",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "method": "eagle3",
+      "published_tau": 6.13,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "humaneval",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle3",
+      "published_tau": 6.74,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "gsm8k",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle3",
+      "published_tau": 6.23,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "alpaca",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle3",
+      "published_tau": 6.7,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "cnn_dm",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle3",
+      "published_tau": 5.34,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "mt_bench",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "method": "eagle3",
+      "published_tau": 4.24,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "humaneval",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle3",
+      "published_tau": 5.82,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "gsm8k",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle3",
+      "published_tau": 4.59,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "alpaca",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle3",
+      "published_tau": 5.56,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "cnn_dm",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle3",
+      "published_tau": 4.39,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2503.01840v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "mt_bench",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "method": "eagle2",
+      "published_tau": 4.21,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "humaneval",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle2",
+      "published_tau": 4.93,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "gsm8k",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle2",
+      "published_tau": 4.42,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "mt_bench",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "method": "eagle2",
+      "published_tau": 3.9,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "humaneval",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle2",
+      "published_tau": 4.73,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "gsm8k",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "eagle2",
+      "published_tau": 4.3,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "mt_bench",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "method": "hass",
+      "published_tau": 4.68,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "humaneval",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "hass",
+      "published_tau": 5.54,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "gsm8k",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "hass",
+      "published_tau": 5.02,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 0,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "mt_bench",
+      "expected_questions": 80,
+      "expected_turns": 2,
+      "method": "hass",
+      "published_tau": 4.26,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "humaneval",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "hass",
+      "published_tau": 5.3,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    },
+    {
+      "benchmark": "gsm8k",
+      "expected_questions": 80,
+      "expected_turns": 1,
+      "method": "hass",
+      "published_tau": 4.85,
+      "reference_kind": "published_not_measured",
+      "source_url": "https://arxiv.org/html/2408.15766v3#S4.T1",
+      "temperature": 1,
+      "timing_repeats": 5
+    }
+  ],
+  "root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+  "schema_version": 1,
+  "scope": "reference_group",
+  "temperature_one_distributional_correctness": "requires_separate_statistical_check"
+}

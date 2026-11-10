@@ -11,3 +11,5 @@ The [9 November 2026 receipts](engineering-2026-11-09/manifest.json) are unchang
 These files establish the recorded execution checks. The smoke does not pass the full 22-cell reference gate, the checkpoint check does not establish mid-epoch restart, and the serving check does not establish a production speedup. EAGLE-3 and the other two methods use different target releases; the small smoke is not a controlled cross-backbone ranking.
 
 Full reproduction tables and specialist, pooled-tree and serving research results will be generated from their complete registered raw records. No such completed research result is claimed here. The [implementation status](../experiments/IMPLEMENTATION_STATUS.md) identifies the remaining work.
+
+The [full released-baseline panel](baselines-2026-11-10/README.md) completed 22,400 generations. Its strict reproduction gate failed; the linked report preserves all 22 cells, mismatches, intervals and input identities.

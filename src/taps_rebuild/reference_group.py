@@ -182,7 +182,7 @@ def collect(root, run_ids, output):
         for run_id in sorted(run_ids):
             check(isinstance(run_id, str) and re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,127}', run_id), 'Invalid run ID')
             lock_path = regular(root / 'outputs/runs' / run_id / 'pool.lock')
-            lock = locks.enter_context(lock_path.open('rb'))
+            lock = locks.enter_context(lock_path.open('r+b'))
             try:
                 fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
             except BlockingIOError as error:

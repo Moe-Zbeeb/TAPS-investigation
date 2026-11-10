@@ -1,0 +1,17 @@
+{
+  "automatic_pipeline_gate_pass": false,
+  "input_run_ids": [
+    "official-eagle2-hass-20261109-v1",
+    "official-eagle3-20261109-v2"
+  ],
+  "losslessness_established": false,
+  "manifest_sha256": "50caee8530376d5ec8fcf2eeee6e0483bf92a2b11486f42749b0fdfebe19c313",
+  "publication_performed": false,
+  "reference_cells": 22,
+  "report_sha256": "8f80b77b498bcecab24c4bfbb30a1134110d64df132ce0a7667d15926e040047",
+  "reproduction_gate_passed": false,
+  "reproduction_gate_status": "failed",
+  "scope": "reference_group",
+  "status": "complete",
+  "training_performed": false
+}

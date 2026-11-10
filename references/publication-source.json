@@ -42,5 +42,15 @@
     "src/taps_rebuild/verification.py": "2f20b91dbf33aa101135f3b3199ce0542f764d3d41a5e8332c11c38920fc5d31"
   },
   "source_commit": "9f66144af13e5728bd276951916fa88d84ef1394",
-  "source_project": "TAPS rebuild working repository"
+  "source_project": "TAPS rebuild working repository",
+  "source_code_sha256_scope": "Original source snapshot at publication; subsequent intentional patches are listed separately.",
+  "post_publication_patches": [
+    {
+      "path": "src/taps_rebuild/reference_group.py",
+      "original_sha256": "a660867c89d2f13b8c7d5cff48c23a861df8925a8b14bf16f6b758a95d40d310",
+      "current_sha256": "47c7d4c4b2ded3d61c3ea14c3d01644dce688bdbe983607135ced7ea1c2e4cd7",
+      "reason": "Use writable existing lock descriptor for exclusive flock on NFS; no truncation, generation, input or statistical-reduction change.",
+      "regression_test": "Simulated NFS read-only exclusive-lock rejection, preserving lock bytes and normal scope rejection."
+    }
+  ]
 }
