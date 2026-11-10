@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "study_id": "sharegpt-ultrachat-native-20261110",
+  "scope": "training_data_preparation",
+  "sources": [
+    {
+      "id": "sharegpt_v3",
+      "repo_id": "anon8231489123/ShareGPT_Vicuna_unfiltered",
+      "revision": "192ab2185289094fc556ec8ce5ce1e8e587154ca",
+      "files": [
+        {
+          "path": "ShareGPT_V3_unfiltered_cleaned_split.json",
+          "size_bytes": 672837942,
+          "sha256": "35f0e213ce091ed9b9af2a1f0755e9d39f9ccec34ab281cd4ca60d70f6479ba4"
+        }
+      ]
+    },
+    {
+      "id": "ultrachat_200k",
+      "repo_id": "HuggingFaceH4/ultrachat_200k",
+      "revision": "8049631c405ae6576f93f445c6b8166f76f5505a",
+      "files": [
+        {
+          "path": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+          "size_bytes": 243999189,
+          "sha256": "afa8fa7426081b2a0e732fb50dbb5cd402a28ad5f0dbe66c0d996d63e7220727"
+        },
+        {
+          "path": "data/train_sft-00001-of-00003-0a1804bcb6ae68c6.parquet",
+          "size_bytes": 243897199,
+          "sha256": "c8230190bc8b29084c974ff32f05589b458fad1908fc4b2fb2b9e1e9f7921f03"
+        },
+        {
+          "path": "data/train_sft-00002-of-00003-ee46ed25cfae92c6.parquet",
+          "size_bytes": 244131731,
+          "sha256": "6fe7d2a5e95cf660f972ecaf304aa5632d7f53384e4b0e0d0f44d9c96733c03e"
+        },
+        {
+          "path": "data/train_gen-00000-of-00003-a6c9fb894be3e50b.parquet",
+          "size_bytes": 243687391,
+          "sha256": "8172417116ff18bb0d1ecc2166a658ebabf79a6c9cf02d8cad411fa764548663"
+        },
+        {
+          "path": "data/train_gen-00001-of-00003-d6a0402e417f35ca.parquet",
+          "size_bytes": 243300397,
+          "sha256": "8b9e9ce202df576400e6727fcabb027bc92449767bec00871190d81f1b330de1"
+        },
+        {
+          "path": "data/train_gen-00002-of-00003-c0db75b92a2f48fd.parquet",
+          "size_bytes": 243497356,
+          "sha256": "1fe9ba24c1bc2be447041e93aaca4689342e25470e6dedd4101019decf151922"
+        }
+      ]
+    }
+  ],
+  "split": {
+    "seed": 20261110,
+    "train_fraction": 0.98,
+    "dev_fraction": 0.01,
+    "test_fraction": 0.01,
+    "grouping": "transitive original ShareGPT conversation root and normalized first-user prompt across sources"
+  },
+  "deduplication": "normalized complete user-prompt sequence; retain first record in pinned source/file/row order",
+  "benchmark_exclusion": "exact normalized individual user-turn overlap against all pinned reference-panel turns; not a semantic-contamination claim",
+  "native_max_length": 2048,
+  "target_id": "llama31_instruct_8b",
+  "response_regimes": [
+    "original",
+    "target_generated"
+  ],
+  "target_generation": {
+    "backend": "stock_vllm_target_only",
+    "runtime_python": "envs/serving-vllm/bin/python",
+    "dtype": "float16",
+    "max_context": 4096,
+    "max_new_tokens": 2048,
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 20261110,
+    "batch_conversations_per_worker": 64,
+    "include_only_complete_eos_terminated_conversations": true,
+    "truncated_prompt_policy": "reject_and_record",
+    "native_length_policy": "apply_unchanged_official_max2048_filter_after_regeneration"
+  },
+  "training": {
+    "implementation": "OFFICIAL_EAGLE3_EXTERNAL_COMPATIBILITY_ADAPTER",
+    "source_revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+    "world_size": 8,
+    "initialization": "scratch_native",
+    "profile_optimizer_steps": 200,
+    "full_epochs": 40,
+    "features": "online native teacher features",
+    "upstream_schedule": "preserved",
+    "data_order": "preserved native shuffle and distributed sampler"
+  },
+  "qualification": "New reproducible preparation recipe. Exact paper source snapshots, held-out split and response-generation settings were not fully published; do not claim identical training data or a reproduced checkpoint.",
+  "prompt_only_policy": "Preserve odd-length alternating prompt sequences for target completion; write only complete conversations to original-response native files."
+}

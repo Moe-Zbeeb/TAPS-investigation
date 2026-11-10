@@ -1,0 +1,1478 @@
+{
+  "artifacts": [
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-queue-20261110-v5/experiments/verification/LOSSLESS_RULE.md",
+      "sha256": "94de731a8918f84f2126cb8fc9dffd92298c25184595ad04ea8f7e3820a4113d",
+      "stat": {
+        "inode": 2613091,
+        "mtime_ns": 1794238515600803375,
+        "size_bytes": 2989
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/validation-queue-20261110-v2/driver.py",
+      "sha256": "d6ea2b5216b0052aa68282646b343143c6523ed14e75f8b2b838f99bb6458934",
+      "stat": {
+        "inode": 2608932,
+        "mtime_ns": 1794306811000000000,
+        "size_bytes": 28846
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-inputs/registered-20261110-v2/cases.json",
+      "sha256": "d3f236a73ab18940bd28f76112210449a2f6ef797061d50a1ab98fc059e0a865",
+      "stat": {
+        "inode": 2598476,
+        "mtime_ns": 1794306836265884109,
+        "size_bytes": 2179589
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-0-1.pt",
+      "sha256": "514a570f60c2161c9a008d73721ea44c5fc865574e84fa082a8549bf88f70762",
+      "stat": {
+        "inode": 2611735,
+        "mtime_ns": 1794310184233947777,
+        "size_bytes": 45664310
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-0-3.pt",
+      "sha256": "2efe5bf825e1810c1eb415458c44f32e9c54be7cdce0cb981ca6b01c99f8e3b1",
+      "stat": {
+        "inode": 2610844,
+        "mtime_ns": 1794310308973506580,
+        "size_bytes": 51051254
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-1-1.pt",
+      "sha256": "adda42256a1c72c34fc7b5d1ec7cb5e8da774c6cf8e0fe35bccaff0489e1d7ca",
+      "stat": {
+        "inode": 2610723,
+        "mtime_ns": 1794310183829949206,
+        "size_bytes": 47460022
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-1-3.pt",
+      "sha256": "115ab1851ea99f70f2aa0e9f9df293416e4fc51de12e41a84610636ed9a70b35",
+      "stat": {
+        "inode": 2607697,
+        "mtime_ns": 1794310320369466256,
+        "size_bytes": 56438262
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-2-1.pt",
+      "sha256": "8cf83806d9dd2623f98d888b71177ab6158fcc66a07bf6edf4af63cdb089bcbf",
+      "stat": {
+        "inode": 2611736,
+        "mtime_ns": 1794310184237947764,
+        "size_bytes": 47460598
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-2-3.pt",
+      "sha256": "e14337dcd655045819943ed2f570e00679b8f13dee0ef3cf6c6e8c1a263c238f",
+      "stat": {
+        "inode": 2605164,
+        "mtime_ns": 1794310308953506651,
+        "size_bytes": 58234486
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-3-1.pt",
+      "sha256": "ea4b4a047c768fe5e345547507653f0485f25ecbd5448b2fecf6c423be94c4db",
+      "stat": {
+        "inode": 2610841,
+        "mtime_ns": 1794310188097934117,
+        "size_bytes": 49256822
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-3-3.pt",
+      "sha256": "556beee0d711e91a41f9ab1f7105d03a3cdf512353743606d92881455a4dc9c4",
+      "stat": {
+        "inode": 2612480,
+        "mtime_ns": 1794310333773418821,
+        "size_bytes": 34891766
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-4-1.pt",
+      "sha256": "d1b8bd335953a4dc5e79267a5afca94e6154ba45e89c13e723c2b2b59f5e19aa",
+      "stat": {
+        "inode": 2605162,
+        "mtime_ns": 1794310188353933211,
+        "size_bytes": 54642550
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-4-3.pt",
+      "sha256": "9193c77fd6f3e8053ba86aee09730d687745d5727982d84192a54645fd41291a",
+      "stat": {
+        "inode": 2607594,
+        "mtime_ns": 1794310358949329718,
+        "size_bytes": 51051318
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-5-1.pt",
+      "sha256": "60e22baa3e3b294100fbc20c0947c30c65ffe8d70c17c1aa8b649a93abbc66c3",
+      "stat": {
+        "inode": 2610724,
+        "mtime_ns": 1794310183857949107,
+        "size_bytes": 51051254
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-5-3.pt",
+      "sha256": "18088ba2d635d9f6d4b06c663e370e94e119baa446703b9cc69b2ddfedb62095",
+      "stat": {
+        "inode": 2605167,
+        "mtime_ns": 1794310355289342673,
+        "size_bytes": 40277494
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-6-1.pt",
+      "sha256": "2f38be90edba9e5ce83f956d20f0946ae80ce42811136db792efd79f85284772",
+      "stat": {
+        "inode": 2607835,
+        "mtime_ns": 1794310183849949135,
+        "size_bytes": 54642358
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-6-3.pt",
+      "sha256": "ca5944290a7d348dc65df339a2cf2d3548d5f2c753c46c1b9e18d7dd9cc7fcd7",
+      "stat": {
+        "inode": 2609605,
+        "mtime_ns": 1794310312353494621,
+        "size_bytes": 58233782
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-7-1.pt",
+      "sha256": "ceca66fa5b9b5f44efe352e906d13c80552be4d4e0f0a8e4d038a6c0c0860c65",
+      "stat": {
+        "inode": 2610725,
+        "mtime_ns": 1794310184181947961,
+        "size_bytes": 45664246
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-7-3.pt",
+      "sha256": "6fc6feb72ab71650b8741169d6325694fadfe9462425e56581df6e889908aa11",
+      "stat": {
+        "inode": 2607065,
+        "mtime_ns": 1794310360725323432,
+        "size_bytes": 49255542
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-8-1.pt",
+      "sha256": "ad3608a087d2c8d98bc7acbe005347a098872cb0d9bb834ec246241525d1289b",
+      "stat": {
+        "inode": 2609063,
+        "mtime_ns": 1794310433425066045,
+        "size_bytes": 61831990
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-8-3.pt",
+      "sha256": "00b81af97a611b4ce048d11717ef9c2978a512ac2583a87a15dd41b461432c53",
+      "stat": {
+        "inode": 2610735,
+        "mtime_ns": 1794310622984391431,
+        "size_bytes": 58240694
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-9-1.pt",
+      "sha256": "0c7f391b58c64e0c2f86fe4b97c54e3b6c23bf29ba2490b0adb2197a1082796d",
+      "stat": {
+        "inode": 2610209,
+        "mtime_ns": 1794310472412927963,
+        "size_bytes": 60040630
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-9-3.pt",
+      "sha256": "879bdadc9804dcbc87cfb34645638831a6549ad30d706bad8f4d93d6fcd3ba04",
+      "stat": {
+        "inode": 2605171,
+        "mtime_ns": 1794310609072441051,
+        "size_bytes": 63631862
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-0-1.pt",
+      "sha256": "66ec723847d8dee5cb685a6b6108ebbfcc6b773429400d4f165d1d2de7acfd42",
+      "stat": {
+        "inode": 2612994,
+        "mtime_ns": 1794310884635457635,
+        "size_bytes": 62594806
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-0-3.pt",
+      "sha256": "e5c2dce6e481e34ea667881350e351758eb2cd8093cfee53ea57e088bca7524f",
+      "stat": {
+        "inode": 2609484,
+        "mtime_ns": 1794311053454854595,
+        "size_bytes": 53873206
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-1-1.pt",
+      "sha256": "ccf4b0ab33f442e82753183591398c48bd679b117e4fbb4abf61f4950c98d7e8",
+      "stat": {
+        "inode": 2610213,
+        "mtime_ns": 1794310885047456164,
+        "size_bytes": 66186102
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-1-3.pt",
+      "sha256": "88c4681be5eba5856248bc0bea3294b6bdd7bff86eeefe3777f107585375cbde",
+      "stat": {
+        "inode": 2607705,
+        "mtime_ns": 1794311057410840460,
+        "size_bytes": 41816758
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-2-1.pt",
+      "sha256": "70d02a8cb94f8955478034824b4cbc54a535632cc8bbf333d0503cdba01c52bb",
+      "stat": {
+        "inode": 2611854,
+        "mtime_ns": 1794310882131466576,
+        "size_bytes": 41817334
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-2-3.pt",
+      "sha256": "83c269a82bcc33283d58fe215b611dde43e29af675654e70c7f1c59216ab07e2",
+      "stat": {
+        "inode": 2612238,
+        "mtime_ns": 1794311028366944238,
+        "size_bytes": 71830198
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-3-1.pt",
+      "sha256": "9d729676347bc3b7c5484df9a2110ffb733dae35a2b18c7c00457d2dfb81b1e5",
+      "stat": {
+        "inode": 2610214,
+        "mtime_ns": 1794310884223459106,
+        "size_bytes": 41817910
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-3-3.pt",
+      "sha256": "f0396e7dc77bb5962051c05042ae86f5c1d551b2f80b14826d20ff6adf862e9a",
+      "stat": {
+        "inode": 2611283,
+        "mtime_ns": 1794311069986795520,
+        "size_bytes": 41818038
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-4-1.pt",
+      "sha256": "d901e3462be5ce2c4c5e4dfb151daa3e8c1d1079dfc937bc156f1670c1799f96",
+      "stat": {
+        "inode": 2608613,
+        "mtime_ns": 1794310880851471148,
+        "size_bytes": 37199350
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-4-3.pt",
+      "sha256": "4722a010bc37390d74416832189541ea73c89109959a646952af20c8c18c6a82",
+      "stat": {
+        "inode": 2611279,
+        "mtime_ns": 1794311052158859227,
+        "size_bytes": 62594998
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-5-1.pt",
+      "sha256": "a977eca69a1fb02752eba1fe88a8d1d99a98706efba9a8ff204e1d41bf90e783",
+      "stat": {
+        "inode": 2609844,
+        "mtime_ns": 1794310883747460806,
+        "size_bytes": 44125366
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-5-3.pt",
+      "sha256": "5655290f66a0e3e1bd842e7ca79f7d9ed73058a9e4a9921e61b4e1b4d8b6f7ec",
+      "stat": {
+        "inode": 2610738,
+        "mtime_ns": 1794310989803082015,
+        "size_bytes": 60286262
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-6-1.pt",
+      "sha256": "e44c0053113b235dc2fabfac52061c6b686ee08ae0d3762bc5060e87582b3f6b",
+      "stat": {
+        "inode": 2611599,
+        "mtime_ns": 1794310884739457264,
+        "size_bytes": 53359926
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-6-3.pt",
+      "sha256": "3771da4070285ee7902e4869333e11a72c26229879007ccdbb76c57d8f92e563",
+      "stat": {
+        "inode": 2611282,
+        "mtime_ns": 1794311065334812144,
+        "size_bytes": 57977398
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-7-1.pt",
+      "sha256": "8e2350ae878456a38a9ec49e8b296214186b22f2fde6ae49c6b5d87a39bd8e48",
+      "stat": {
+        "inode": 2609481,
+        "mtime_ns": 1794310885027456236,
+        "size_bytes": 53359990
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-7-3.pt",
+      "sha256": "4f9a752097923dbf38a9c165c2042cd7ce3785634c19334931a379151989f92c",
+      "stat": {
+        "inode": 2607703,
+        "mtime_ns": 1794311050794864101,
+        "size_bytes": 51051446
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-8-1.pt",
+      "sha256": "8425d02060da91fcae34ef24f805d575cafdece98d5ebcb8dfd0c905b0b6e7a4",
+      "stat": {
+        "inode": 2607231,
+        "mtime_ns": 1794311176182415944,
+        "size_bytes": 53366902
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-8-3.pt",
+      "sha256": "75fe662cbcb8951471de2240624c153678874dd7434d3390366813c82bdc4e31",
+      "stat": {
+        "inode": 2611356,
+        "mtime_ns": 1794311361265759538,
+        "size_bytes": 67219062
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-9-1.pt",
+      "sha256": "cf0ec476f44440ee67bf05a7f69954f7fc0f26c4010da433fd243c59607a8815",
+      "stat": {
+        "inode": 2613257,
+        "mtime_ns": 1794311185454382796,
+        "size_bytes": 51062518
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-9-3.pt",
+      "sha256": "a5ce9c34b1897480369ee574a07e8fa8fb53d9d46f8db9666850a1c28c888e0e",
+      "stat": {
+        "inode": 2613122,
+        "mtime_ns": 1794311345625814748,
+        "size_bytes": 60297334
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-0-1.pt",
+      "sha256": "e4c6f8a5d17e7a0660045942c6b861f9d84d99aaf3d336aca78c76ebfff681a2",
+      "stat": {
+        "inode": 2607081,
+        "mtime_ns": 1794311628312815950,
+        "size_bytes": 51051170
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-0-3.pt",
+      "sha256": "6f4954cf72edbbcac64ccd3e5ba1c971c9d0db957733088d9b9410971583ca66",
+      "stat": {
+        "inode": 2610227,
+        "mtime_ns": 1794311758760354421,
+        "size_bytes": 47460002
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-1-1.pt",
+      "sha256": "78093b9d12bfafa28ea4205d3159c21bbb0c3807692386f03e4b59064b7d5aed",
+      "stat": {
+        "inode": 2612622,
+        "mtime_ns": 1794311627636818340,
+        "size_bytes": 47460002
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-1-3.pt",
+      "sha256": "05e3b4b0eee473bb609d3ab4b55c4455d783826dd2c8d1550e8c8dc577b54e60",
+      "stat": {
+        "inode": 2612998,
+        "mtime_ns": 1794311761484344779,
+        "size_bytes": 40277474
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-2-1.pt",
+      "sha256": "0a85eb070c6f13764074fcff0310c8f61b83ffe1e02f2fb937764e83f291ddac",
+      "stat": {
+        "inode": 2607080,
+        "mtime_ns": 1794311628188816388,
+        "size_bytes": 49256162
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-2-3.pt",
+      "sha256": "4cfd2d42078c2ad53e2a191465d3737be2b6931fa76f94f261f055edd531ff00",
+      "stat": {
+        "inode": 2610609,
+        "mtime_ns": 1794311797580217001,
+        "size_bytes": 52847586
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-3-1.pt",
+      "sha256": "75d45a4d644961c9cf6a118fe26e5ce34d38aa1a5718b4b6d90e4424d98070df",
+      "stat": {
+        "inode": 2610223,
+        "mtime_ns": 1794311626764821424,
+        "size_bytes": 49256802
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-3-3.pt",
+      "sha256": "e6fbcef3c25cb0e9b241a8ea57a21e21886c2202cd8ece4018264b9ffabda8e3",
+      "stat": {
+        "inode": 2613126,
+        "mtime_ns": 1794311780628277014,
+        "size_bytes": 58235042
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-4-1.pt",
+      "sha256": "c1c4c77b969fc5e976de676c9b630cdcfc3d81fbce517bffaf34cd0c378b763a",
+      "stat": {
+        "inode": 2607608,
+        "mtime_ns": 1794311627464818949,
+        "size_bytes": 51051234
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-4-3.pt",
+      "sha256": "3dc97ead034ba10b68717c3cae7943493c66996204666336f021b9e28deae368",
+      "stat": {
+        "inode": 2612386,
+        "mtime_ns": 1794311811180168850,
+        "size_bytes": 47460066
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-5-1.pt",
+      "sha256": "ed237efbbc815e7bb0a118ff81356e60f34435448c9bbc53aef82affc277ad22",
+      "stat": {
+        "inode": 2610372,
+        "mtime_ns": 1794311628584814988,
+        "size_bytes": 54642530
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-5-3.pt",
+      "sha256": "9e0806b3b416413c1cd21eda962d2684313a39649f98dc97910bf27958d5c7ed",
+      "stat": {
+        "inode": 2610469,
+        "mtime_ns": 1794311805316189612,
+        "size_bytes": 56438242
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-6-1.pt",
+      "sha256": "bd0e4e3446facf3d3f6596c9c1bd0c667abf2e6e7fd19f269bcf8db9bad844f9",
+      "stat": {
+        "inode": 2611289,
+        "mtime_ns": 1794311628284816049,
+        "size_bytes": 58233634
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-6-3.pt",
+      "sha256": "7a1df00aab230707b15c2fd1243b8a281eda80810d605665ef4b19801fcde397",
+      "stat": {
+        "inode": 2611992,
+        "mtime_ns": 1794311774548298537,
+        "size_bytes": 54642466
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-7-1.pt",
+      "sha256": "69efbec9d7a48e4987fd23e30b95f5b06cb3eafa6a4ec8171c8645fc5aaf4a23",
+      "stat": {
+        "inode": 2612623,
+        "mtime_ns": 1794311628324815907,
+        "size_bytes": 42072930
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-7-3.pt",
+      "sha256": "a54c04cfc320bbee2202bef5b1669d7917c5400af33669f03f1dd82f309f5730",
+      "stat": {
+        "inode": 2598911,
+        "mtime_ns": 1794311754272370306,
+        "size_bytes": 43868706
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-8-1.pt",
+      "sha256": "12410828f9e0c57c4174093aea9f12ffda3a208b721cac573f362345be93b0a9",
+      "stat": {
+        "inode": 2611108,
+        "mtime_ns": 1794311889063893024,
+        "size_bytes": 56445026
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-8-3.pt",
+      "sha256": "5e0edd3cba8d0fdfb649146a08cc1a0c18a68d0fe483af180bd239b7e1bc1629",
+      "stat": {
+        "inode": 2611369,
+        "mtime_ns": 1794312077199226204,
+        "size_bytes": 54649442
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-9-1.pt",
+      "sha256": "5aecb93dc2ae2b3b430de75be1743c3af3bd6278b5708b218c9e0895cea598d0",
+      "stat": {
+        "inode": 2610753,
+        "mtime_ns": 1794311924279768263,
+        "size_bytes": 56449314
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-9-3.pt",
+      "sha256": "c682b14eab7445a97faf49e28f3f9ac06ce02557718e5b594c3303986c92c84c",
+      "stat": {
+        "inode": 2613507,
+        "mtime_ns": 1794312062415278629,
+        "size_bytes": 45675554
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/completion.json",
+      "sha256": "6bbbda8c199a01e683451d99bcc9b7ef18278e07804426b316c06aac7da3248a",
+      "stat": {
+        "inode": 2612886,
+        "mtime_ns": 1794312192286817929,
+        "size_bytes": 252
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-0.jsonl",
+      "sha256": "71207cd0a8e630cd2d1249d748959c6808b9779131694b00db6dedba579ef115",
+      "stat": {
+        "inode": 2608241,
+        "mtime_ns": 1794310750651935935,
+        "size_bytes": 2075362
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-0.receipt.json",
+      "sha256": "025aa496c41431f37d93ec3c88b577e4649e2a1f73246077e2e6955a8eb2461a",
+      "stat": {
+        "inode": 2608357,
+        "mtime_ns": 1794310750791935436,
+        "size_bytes": 1613
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-1.jsonl",
+      "sha256": "929cd8dcac3c58fe2576ec77721295c50d0270184d301e4ac8e3de835c8693c9",
+      "stat": {
+        "inode": 2608883,
+        "mtime_ns": 1794310738823978146,
+        "size_bytes": 2081763
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-1.receipt.json",
+      "sha256": "d7e3462b093da0f53a19bab15c13432ba375f0067357c9a24145e690d9f6db61",
+      "stat": {
+        "inode": 2611346,
+        "mtime_ns": 1794310738979977589,
+        "size_bytes": 1613
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-2.jsonl",
+      "sha256": "8c901157d5ba67bc27abd0c6615532430447ae9ca95b73613c107fb9d6c8b4c1",
+      "stat": {
+        "inode": 2608882,
+        "mtime_ns": 1794310445949021693,
+        "size_bytes": 1034695
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-2.receipt.json",
+      "sha256": "4c352e7ba14e96a692fa825f088e8a8b776222e668e66f93f7bb69fed63635d3",
+      "stat": {
+        "inode": 2608608,
+        "mtime_ns": 1794310446133021042,
+        "size_bytes": 1613
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-3.jsonl",
+      "sha256": "750fe254aa8b20c52f9d3a74322721f7299843ca02ab7fc22385af492f4e211c",
+      "stat": {
+        "inode": 2607062,
+        "mtime_ns": 1794310457772979817,
+        "size_bytes": 1035401
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-3.receipt.json",
+      "sha256": "4d7073a9ea61765a26e751e753300341ecf5ec3cc6d09649da9fd407406a0d6e",
+      "stat": {
+        "inode": 2607840,
+        "mtime_ns": 1794310457880979435,
+        "size_bytes": 1613
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-4.jsonl",
+      "sha256": "6d64ac5bcd8f8a1713e4f6fd8458ed5d4734bee29b65766dc546b51346f7ea0f",
+      "stat": {
+        "inode": 2612105,
+        "mtime_ns": 1794310473080925597,
+        "size_bytes": 1034097
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-4.receipt.json",
+      "sha256": "08c5fc5a5607e441bef5a55ad019278739e631b38c4b407974eb96bdf27d3388",
+      "stat": {
+        "inode": 2609345,
+        "mtime_ns": 1794310473308924789,
+        "size_bytes": 1613
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-5.jsonl",
+      "sha256": "7ef48a360a4d2c5480e1b4005136d789d6ed005a65a66a6c467577eb4f5526cd",
+      "stat": {
+        "inode": 2608240,
+        "mtime_ns": 1794310502084822540,
+        "size_bytes": 1034061
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-5.receipt.json",
+      "sha256": "355607aa7a6cc3976af9a266017166b8c9830cb53b9d0622969723f46093a7db",
+      "stat": {
+        "inode": 2612358,
+        "mtime_ns": 1794310502164822255,
+        "size_bytes": 1613
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-6.jsonl",
+      "sha256": "eb94ac4d55f05318fc0b60f0164c7e3b1178d0c159df922bb27dfbcbc1b4198b",
+      "stat": {
+        "inode": 2608242,
+        "mtime_ns": 1794310485500881603,
+        "size_bytes": 1033941
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-6.receipt.json",
+      "sha256": "7a68b1c6b7343bb72bc8d0d95abd6d82511dba29f83fa70f6af763146e4d8d3f",
+      "stat": {
+        "inode": 2608610,
+        "mtime_ns": 1794310485732880781,
+        "size_bytes": 1613
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-7.jsonl",
+      "sha256": "bd0875b1452cc22d894e30228ced4692584591af3d9d0324f409ac8269256fa8",
+      "stat": {
+        "inode": 2608243,
+        "mtime_ns": 1794310574068565886,
+        "size_bytes": 1034009
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-7.receipt.json",
+      "sha256": "f310a2db6e94295307e25cadbf91898c9b4ba2eb7532dc89fb553ba5821ad2ef",
+      "stat": {
+        "inode": 2609960,
+        "mtime_ns": 1794310574184565472,
+        "size_bytes": 1613
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-0.jsonl",
+      "sha256": "efe6b0505c205b8d8251b642ac23f1ff8b68808ca9910dbbaa59c95fdbf97211",
+      "stat": {
+        "inode": 2605174,
+        "mtime_ns": 1794311522165191216,
+        "size_bytes": 2075309
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-0.receipt.json",
+      "sha256": "9f18f921dddada71a095cc9c70207321896b14a138b5b567504976e954a28848",
+      "stat": {
+        "inode": 2607607,
+        "mtime_ns": 1794311522301190735,
+        "size_bytes": 1610
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-1.jsonl",
+      "sha256": "787bac06d3e7fe0c19f50831ac86fc8ebac876bbce090ac320808366b590e27e",
+      "stat": {
+        "inode": 2612613,
+        "mtime_ns": 1794311509009237708,
+        "size_bytes": 2081804
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-1.receipt.json",
+      "sha256": "22f710a0b8610d2c29268a1e49f02b192ff31cbec551cb83c9034cea1aa5d729",
+      "stat": {
+        "inode": 2610464,
+        "mtime_ns": 1794311509117237327,
+        "size_bytes": 1610
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-2.jsonl",
+      "sha256": "e98521f05553c64be74c9f52eed4a4d7b89eb8ac22780ab9cd36f48aca8d3617",
+      "stat": {
+        "inode": 2605675,
+        "mtime_ns": 1794311236874198942,
+        "size_bytes": 1034669
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-2.receipt.json",
+      "sha256": "9c367ecdca0b0a3297f6545d358fbfc773f0d24801718f0d3fdf9c24d72f52fd",
+      "stat": {
+        "inode": 2607075,
+        "mtime_ns": 1794311237066198255,
+        "size_bytes": 1610
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-3.jsonl",
+      "sha256": "8ac00b63128d2c55c3f9850d2b84ec1d71049462c14d32e96a9c1b0ee81eae91",
+      "stat": {
+        "inode": 2605677,
+        "mtime_ns": 1794311193426354295,
+        "size_bytes": 1035475
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-3.receipt.json",
+      "sha256": "56e5b735de9c773e6ac30e5e37744f819c332644a18dba13dfee524c3abe2697",
+      "stat": {
+        "inode": 2607849,
+        "mtime_ns": 1794311193706353293,
+        "size_bytes": 1610
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-4.jsonl",
+      "sha256": "12046d10642781f0aa05882d1c52a72c98009cf0c97f3789b586ed20ac34599e",
+      "stat": {
+        "inode": 2609843,
+        "mtime_ns": 1794311229818224173,
+        "size_bytes": 1034112
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-4.receipt.json",
+      "sha256": "92962bb57bfdb421e0704b2d2de300d13594f9b032cfa4d52e8e37c72053dbda",
+      "stat": {
+        "inode": 2606100,
+        "mtime_ns": 1794311229970223630,
+        "size_bytes": 1610
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-5.jsonl",
+      "sha256": "ec8be20fe61a3b9df452c2342afe64cbcbb8eb05e20102c741265242ae413ab3",
+      "stat": {
+        "inode": 2612612,
+        "mtime_ns": 1794311104574671910,
+        "size_bytes": 1034083
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-5.receipt.json",
+      "sha256": "d88e3e7837c71a24c80706b93f7d80d4e80168bf612f0fa9b396f35113a10c59",
+      "stat": {
+        "inode": 2611478,
+        "mtime_ns": 1794311104678671538,
+        "size_bytes": 1610
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-6.jsonl",
+      "sha256": "e5630199e0fc5b1bd47b589fe72ac63336f648c35aca1c80bf354f72bd06bd04",
+      "stat": {
+        "inode": 2606097,
+        "mtime_ns": 1794311216526271702,
+        "size_bytes": 1033914
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-6.receipt.json",
+      "sha256": "8fbdb98ca858f70816cd41af1a36fb77b2638aeaac5d05a231ee4300a6828e10",
+      "stat": {
+        "inode": 2610601,
+        "mtime_ns": 1794311216682271144,
+        "size_bytes": 1610
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-7.jsonl",
+      "sha256": "dd3caec256c0654e80d4309c4bdc1189e0bb1df940d2bf45c3ca738be11163a3",
+      "stat": {
+        "inode": 2605678,
+        "mtime_ns": 1794311193614353621,
+        "size_bytes": 1034034
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-7.receipt.json",
+      "sha256": "b7ca5c3db1051321d15c0afc4d646be4a9e928d64d47375dac89bcbcc6b94480",
+      "stat": {
+        "inode": 2613258,
+        "mtime_ns": 1794311193846352793,
+        "size_bytes": 1610
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-0.jsonl",
+      "sha256": "5c8699899097a1dc5f3d34f32b71babb4f8998a6e00d9d10e7cf9dd3fd29833c",
+      "stat": {
+        "inode": 2610370,
+        "mtime_ns": 1794312190290825013,
+        "size_bytes": 2075305
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-0.receipt.json",
+      "sha256": "31788db02036a879b7e819c1a165e1d1ddb76e512a7ccd26a9829f93cc3ab217",
+      "stat": {
+        "inode": 2611312,
+        "mtime_ns": 1794312190310824941,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-1.jsonl",
+      "sha256": "0f44edc3213f35d29ad0d65904f9b55ac8ff74759ddd9705428196bc0cdc398c",
+      "stat": {
+        "inode": 2606957,
+        "mtime_ns": 1794312184170846730,
+        "size_bytes": 2081887
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-1.receipt.json",
+      "sha256": "31f57b1882155cf63bd3b14dc6ac064e1930caec8e9320f6b58b8e797d747f41",
+      "stat": {
+        "inode": 2612762,
+        "mtime_ns": 1794312184278846346,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-2.jsonl",
+      "sha256": "af50bba8accff90fe53152a7b01a6d728ea7cd69e92a8c1379c96836f7bc3528",
+      "stat": {
+        "inode": 2609486,
+        "mtime_ns": 1794311912519809928,
+        "size_bytes": 1034645
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-2.receipt.json",
+      "sha256": "6ab2a6c75b862fa6dc4ce4aeb3bb9d432af3f169cc4ef327735fca65a8dfa345",
+      "stat": {
+        "inode": 2612120,
+        "mtime_ns": 1794311912559809787,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-3.jsonl",
+      "sha256": "e75fb523a421159082f19301197c5433f5874f9c43946a275be09beb385f8f0e",
+      "stat": {
+        "inode": 2613383,
+        "mtime_ns": 1794311942447703888,
+        "size_bytes": 1035414
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-3.receipt.json",
+      "sha256": "164512b4358085ff2ec07d308b30fe2baa677e70a981a303e311e7304999f790",
+      "stat": {
+        "inode": 2607612,
+        "mtime_ns": 1794311942515703647,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-4.jsonl",
+      "sha256": "15f7a279d7ecd58496bcab90afff04b2af0316788fddb74175ff1b0b95191174",
+      "stat": {
+        "inode": 2606956,
+        "mtime_ns": 1794311905743833934,
+        "size_bytes": 1034072
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-4.receipt.json",
+      "sha256": "fdee342b9c6f08b69d0a7d97fd8e0953302f7db17e373f5dd5a1c2c03a585634",
+      "stat": {
+        "inode": 2611750,
+        "mtime_ns": 1794311905771833835,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-5.jsonl",
+      "sha256": "0d75f3de92be2aa01fc17f230a4a2bc565956dc6a2a1af00f0d10c2cf666f74e",
+      "stat": {
+        "inode": 2609487,
+        "mtime_ns": 1794311955079659125,
+        "size_bytes": 1034053
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-5.receipt.json",
+      "sha256": "ee7ae7b1cc536f949a909e15c94b6f8e679a91472164995573d8711287c1e2a2",
+      "stat": {
+        "inode": 2611752,
+        "mtime_ns": 1794311955127658954,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-6.jsonl",
+      "sha256": "57a08fd9042582eb4c722a6853ff0aad1d9682d335ddf88b79996fdced40a070",
+      "stat": {
+        "inode": 2612874,
+        "mtime_ns": 1794311947991684242,
+        "size_bytes": 1033923
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-6.receipt.json",
+      "sha256": "f442803f4e665b2072afc1553e475127dadc07dc77fc03a53c16d83ee41289e8",
+      "stat": {
+        "inode": 2607720,
+        "mtime_ns": 1794311948059684001,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-7.jsonl",
+      "sha256": "b287229a36d51beaec2e8a8a381ca4f27a76bf56712bdc5cf7303a425a22ce34",
+      "stat": {
+        "inode": 2612875,
+        "mtime_ns": 1794311937591721095,
+        "size_bytes": 1034013
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-7.receipt.json",
+      "sha256": "11d1a342284b21ec5c21459e61d7763d7b44cbe8a468feebe6109ab88dbd17aa",
+      "stat": {
+        "inode": 2612121,
+        "mtime_ns": 1794311937647720896,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-0.jsonl",
+      "sha256": "0b4a5cee906cc937daecc67d74bb1d8c77811bac97e05f8d8e4f9bfa01e09047",
+      "stat": {
+        "inode": 2607546,
+        "mtime_ns": 1794307993601680444,
+        "size_bytes": 4571151
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-0.receipt.json",
+      "sha256": "5c575e70688596b255cc067e1f274be6ff26097e44759f6d99abf7ed1168a3b2",
+      "stat": {
+        "inode": 2606817,
+        "mtime_ns": 1794307993777679806,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-1.jsonl",
+      "sha256": "a2761cc3830b475bb6f250b8b2c505d39f769f028c673f051253c4e93b25c752",
+      "stat": {
+        "inode": 2607410,
+        "mtime_ns": 1794308000629655001,
+        "size_bytes": 4175336
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-1.receipt.json",
+      "sha256": "d20e357ef65bd9720dad9ad5a4989f7f76d1147f4dcbeaa1cf6d35a550c28b8b",
+      "stat": {
+        "inode": 2608953,
+        "mtime_ns": 1794308000725654653,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-2.jsonl",
+      "sha256": "6231a20fc64c302a884c17fab82a08958974bd5b719a5e1f16a276e5edd6a894",
+      "stat": {
+        "inode": 2604140,
+        "mtime_ns": 1794307952869827898,
+        "size_bytes": 4012734
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-2.receipt.json",
+      "sha256": "a2a199409fdbe162ab0ebcbef14ebf121b28d06295896966e1f6920e15d6536b",
+      "stat": {
+        "inode": 2609543,
+        "mtime_ns": 1794307952997827435,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-3.jsonl",
+      "sha256": "afbac8c40a1bed4dee28bd9214fc8789aa4af2c1f0b2f70ddfa22c55a2c244a0",
+      "stat": {
+        "inode": 2608452,
+        "mtime_ns": 1794307955317819036,
+        "size_bytes": 3942211
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-3.receipt.json",
+      "sha256": "eb35305724c81dc95d02c2d2210ba3ececca96d341d2cc6fed161d485d22ee18",
+      "stat": {
+        "inode": 2604918,
+        "mtime_ns": 1794307955409818703,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-4.jsonl",
+      "sha256": "dd338edd1db284bb27cf7ac53e7b520543b2db37c1ba1323a45e4dfed6171b37",
+      "stat": {
+        "inode": 2607409,
+        "mtime_ns": 1794307989481695359,
+        "size_bytes": 4471971
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-4.receipt.json",
+      "sha256": "6641f0d08eb73d898ea6087d9085f000842b7ffefb51f88e55eb315ed87ab137",
+      "stat": {
+        "inode": 2608824,
+        "mtime_ns": 1794307989545695127,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-5.jsonl",
+      "sha256": "5da2b15bcc0f99bed5c1b3c3c9d3d2287c9c51e5824219f6e09c0f36bee61ab0",
+      "stat": {
+        "inode": 2603258,
+        "mtime_ns": 1794307920625944619,
+        "size_bytes": 4033263
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-5.receipt.json",
+      "sha256": "1bd9558568e03bfe9c7ca59ff775c8af6807288fd84d931c0aaaed11e2e394ab",
+      "stat": {
+        "inode": 2601804,
+        "mtime_ns": 1794307920717944286,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-6.jsonl",
+      "sha256": "4b81a77b16cccce75b99de9cc0c99f8bbec0d877a93b7103429760a238b25603",
+      "stat": {
+        "inode": 2609167,
+        "mtime_ns": 1794307920569944822,
+        "size_bytes": 4064864
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-6.receipt.json",
+      "sha256": "5738c435032efd29a427146cd83db82902d1f952f6360893e7697b29827fc884",
+      "stat": {
+        "inode": 2606923,
+        "mtime_ns": 1794307920661944489,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-7.jsonl",
+      "sha256": "1ed5ce0ca086d3e02201839fa5c311343515238b09789795db469ecc9fac3a5c",
+      "stat": {
+        "inode": 2608060,
+        "mtime_ns": 1794307852970189518,
+        "size_bytes": 3642922
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle2-7.receipt.json",
+      "sha256": "6eca74410ebbc5727f7294dacb36a51440510007003c0023a4551d8af5a0cd35",
+      "stat": {
+        "inode": 2601803,
+        "mtime_ns": 1794307853058189199,
+        "size_bytes": 1609
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-0.jsonl",
+      "sha256": "db0209df25bd592b7307da09c6b57b7af4a918604a8f49188b0661993ad400df",
+      "stat": {
+        "inode": 2609550,
+        "mtime_ns": 1794309159621556572,
+        "size_bytes": 6466678
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-0.receipt.json",
+      "sha256": "cd4838a4f90b46fa23360b16ab6304ad628db0d09903173b074581c5539cde69",
+      "stat": {
+        "inode": 2608338,
+        "mtime_ns": 1794309159689556333,
+        "size_bytes": 1606
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-1.jsonl",
+      "sha256": "b572486de19a4e0ffa64e2f65235917aead74d287db264fe19d3752b6fd6ce8b",
+      "stat": {
+        "inode": 2604927,
+        "mtime_ns": 1794309340544921469,
+        "size_bytes": 6912637
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-1.receipt.json",
+      "sha256": "9e38f63f34754c3be6c36c5083e24762e592dd89cc27029d19f238ec3ae86bb0",
+      "stat": {
+        "inode": 2598732,
+        "mtime_ns": 1794309340672921019,
+        "size_bytes": 1606
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-2.jsonl",
+      "sha256": "a6f5e241caccf7cabd067d24f21419314909a86fa44b599ef8f72854eb0a7031",
+      "stat": {
+        "inode": 2608563,
+        "mtime_ns": 1794309202013407851,
+        "size_bytes": 6360226
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-2.receipt.json",
+      "sha256": "a241946563219d0b9e77bffce72e82ba09f68bd9b708a78c5516e9d33ff95ec9",
+      "stat": {
+        "inode": 2609322,
+        "mtime_ns": 1794309202125407458,
+        "size_bytes": 1606
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-3.jsonl",
+      "sha256": "8617fb4e58fa569b686a8f439e24286c72123a1cd798a20fb1dbce066cd41ce3",
+      "stat": {
+        "inode": 2601820,
+        "mtime_ns": 1794309289937099218,
+        "size_bytes": 6689666
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-3.receipt.json",
+      "sha256": "9b51e29adab650ea0997cabb370edc4c8059d5d9330f680900b3b01fe6412ea8",
+      "stat": {
+        "inode": 2607938,
+        "mtime_ns": 1794309290081098713,
+        "size_bytes": 1606
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-4.jsonl",
+      "sha256": "cedcb129b2cf4beb44ba27ea2b147856861e1526167ec4ef2cfa892063b9e327",
+      "stat": {
+        "inode": 2609793,
+        "mtime_ns": 1794309235221291311,
+        "size_bytes": 6521096
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-4.receipt.json",
+      "sha256": "db4c339bcf4307b6344c03e72b7cf3af139529858fdcbfac5a421b26a8f7e8aa",
+      "stat": {
+        "inode": 2608492,
+        "mtime_ns": 1794309235333290918,
+        "size_bytes": 1606
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-5.jsonl",
+      "sha256": "da650574bd9da6ed33bc1b27ed6f2f8a60469b8e7979a97f2b66f2558edd81b0",
+      "stat": {
+        "inode": 2601815,
+        "mtime_ns": 1794309230133309169,
+        "size_bytes": 6707839
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-5.receipt.json",
+      "sha256": "cbb1d147e22210a3f6a8e157dd412bcfb679c18e5bae76f18f335d12013ecb04",
+      "stat": {
+        "inode": 2608848,
+        "mtime_ns": 1794309230293308607,
+        "size_bytes": 1606
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-6.jsonl",
+      "sha256": "6d370634f1eef042bfed18a7201e24736138ccacf3fa44ea9a0db5d06e7305c5",
+      "stat": {
+        "inode": 2601826,
+        "mtime_ns": 1794309246941250173,
+        "size_bytes": 6783080
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-6.receipt.json",
+      "sha256": "9e39a6957756a218720f327b7728f0a129e09e5a00ffdd3665d906b3dd0bcee6",
+      "stat": {
+        "inode": 2607347,
+        "mtime_ns": 1794309247137249485,
+        "size_bytes": 1606
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-7.jsonl",
+      "sha256": "7fc1bc5cdbbeebdbae5e84aca901a512f055bcfc6bf06d9ffd27bf3fe135f48a",
+      "stat": {
+        "inode": 2607172,
+        "mtime_ns": 1794309358680857751,
+        "size_bytes": 7362182
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-eagle3-7.receipt.json",
+      "sha256": "3f49178e58d3e586220f4d317f0b5143521d99210e9f2de3e34341876f014798",
+      "stat": {
+        "inode": 2607579,
+        "mtime_ns": 1794309358772857429,
+        "size_bytes": 1606
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-0.jsonl",
+      "sha256": "94581c69f2891e9f6fa1dbf855825d35804ae3bf1cc6742f07d6c907b86683b0",
+      "stat": {
+        "inode": 2608968,
+        "mtime_ns": 1794310151950061902,
+        "size_bytes": 4474227
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-0.receipt.json",
+      "sha256": "0bf77d64a0c2519518559acf1f187e97b762fbb602f1154ac20898d12fb8ff23",
+      "stat": {
+        "inode": 2609463,
+        "mtime_ns": 1794310152006061705,
+        "size_bytes": 1605
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-1.jsonl",
+      "sha256": "f86ab1cb6d7f1aa777adeaacecf7111d30e77f8b813610410cc9d66dbd8b43ba",
+      "stat": {
+        "inode": 2609445,
+        "mtime_ns": 1794310148378074529,
+        "size_bytes": 4056065
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-1.receipt.json",
+      "sha256": "42cd26971fc32d92e0e5cdb5f5c62da9976a29e6f28f1322569e92ec66fdb9e1",
+      "stat": {
+        "inode": 2609274,
+        "mtime_ns": 1794310148394074471,
+        "size_bytes": 1605
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-2.jsonl",
+      "sha256": "860fad4ce7acbada4c0e98de04811c69cdb9a1b071a74b0151775873ac2ee79e",
+      "stat": {
+        "inode": 2606200,
+        "mtime_ns": 1794310103294233856,
+        "size_bytes": 3923998
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-2.receipt.json",
+      "sha256": "3425a1fcb799a3983a63b88fe46465392e38fe22dc90c62a129f780131d500dd",
+      "stat": {
+        "inode": 2610063,
+        "mtime_ns": 1794310103386233531,
+        "size_bytes": 1605
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-3.jsonl",
+      "sha256": "d8bc8f219a97679e7d13786467744bfdde9796b66d06ebff68432a22eaf01b30",
+      "stat": {
+        "inode": 2606061,
+        "mtime_ns": 1794310119794175550,
+        "size_bytes": 3876491
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-3.receipt.json",
+      "sha256": "439b19bbaef5be8042fa3ed862d095e8e62883ff6d01945bd23c61ff55cdca6c",
+      "stat": {
+        "inode": 2611732,
+        "mtime_ns": 1794310119950175000,
+        "size_bytes": 1605
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-4.jsonl",
+      "sha256": "2c166474cf2f2a6514a35abb9df14917170fa076287e164050e5da386b771c73",
+      "stat": {
+        "inode": 2608969,
+        "mtime_ns": 1794310152290060700,
+        "size_bytes": 4379495
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-4.receipt.json",
+      "sha256": "96c0cb336faec6fb5832b2814dfdf443b0bcb8d3f20c7c63ce193ba53c566fb7",
+      "stat": {
+        "inode": 2612103,
+        "mtime_ns": 1794310152338060531,
+        "size_bytes": 1605
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-5.jsonl",
+      "sha256": "a7511399d51a29d5e63a67a6af3bd820fc92ce49c2c96d149beedf116b68ad6e",
+      "stat": {
+        "inode": 2608855,
+        "mtime_ns": 1794310089670281995,
+        "size_bytes": 3992122
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-5.receipt.json",
+      "sha256": "5c77612c1bdd8836aac12b83398e14a01b6828ea534b353821faafb3fefb0f84",
+      "stat": {
+        "inode": 2606328,
+        "mtime_ns": 1794310089746281726,
+        "size_bytes": 1605
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-6.jsonl",
+      "sha256": "cbfd0b796d71fb9f5e8e706a2e0fc080a2ebf4e8ea089682a8d190d5148a790f",
+      "stat": {
+        "inode": 2605664,
+        "mtime_ns": 1794310082318307969,
+        "size_bytes": 3984268
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-6.receipt.json",
+      "sha256": "cb9eba3f9fd11fd5c80f6376454dd8ee55cdfda573f7522667be19151c543ee5",
+      "stat": {
+        "inode": 2605160,
+        "mtime_ns": 1794310082434307560,
+        "size_bytes": 1605
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-7.jsonl",
+      "sha256": "1bbe00df3456495bf80de4e3067c00c819a25a061a0887880ffcf5d3d653f3f9",
+      "stat": {
+        "inode": 2605665,
+        "mtime_ns": 1794310028390498459,
+        "size_bytes": 3605175
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/greedy-hass-7.receipt.json",
+      "sha256": "35204afd280e318a1cbf74470d674e4200781c429ec42f40e1957b6d23de4085",
+      "stat": {
+        "inode": 2609954,
+        "mtime_ns": 1794310028502498064,
+        "size_bytes": 1605
+      }
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/manifest.json",
+      "sha256": "b0fae69b9992e17cf453b805d9233ca8034f96124e04175815c0a050d9dc455e",
+      "stat": {
+        "inode": 2604259,
+        "mtime_ns": 1794307168524671116,
+        "size_bytes": 2864
+      }
+    }
+  ],
+  "automatic_pipeline_gate_pass": false,
+  "checks": {
+    "complete_registered_phases": false,
+    "conditional": true,
+    "greedy": false,
+    "independent_validator_review": false
+  },
+  "driver_sha256": "d6ea2b5216b0052aa68282646b343143c6523ed14e75f8b2b838f99bb6458934",
+  "format": "source-bound-full-model-audit-v1",
+  "full_model_temperature1_validation_still_required": true,
+  "hardware_scopes": "Preserve each raw manifest; no cross-node timing comparison is authorized",
+  "identity_sha256": "15a74f9496105c6acfd8624dcea8434428ec8971af0ef985d74e6e04b81aa4c0",
+  "models_loaded": true,
+  "phases_evaluated": [
+    "greedy",
+    "conditional"
+  ],
+  "prepared_sha256": "d3f236a73ab18940bd28f76112210449a2f6ef797061d50a1ab98fc059e0a865",
+  "review": {
+    "decision": "pending",
+    "reason": "The controlling temperature-one proposal requires independent review before native admission"
+  },
+  "scope": "registered checks listed in phases_evaluated only; not universal losslessness",
+  "status": "blocked",
+  "validator_sha256": "6c030fd443fdd172278502086aac1ea669750680a1344dcfc57f7c51c8bc1b34"
+}

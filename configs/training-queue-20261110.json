@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "run_id": "sharegpt-ultrachat-native-20261110",
+  "scope": "guarded_native_profile",
+  "driver": "outputs/preparation/validation-queue-20261110-v2/driver.py",
+  "prepared": "outputs/validation-inputs/registered-20261110-v2/cases.json",
+  "primary": "outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full",
+  "screen": "outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full",
+  "proof": "outputs/preparation/training-queue-20261110-v5/experiments/verification/LOSSLESS_RULE.md",
+  "review": "outputs/training-queue/sharegpt-ultrachat-native-20261110/review.json",
+  "native_template": "outputs/preparation/training-queue-20261110-v5/configs/native-eagle3-training.json",
+  "reproduction_config_sha256": "51e82dae1296d16a41bb9cab9ce1042eac4d4b775b97df42866e65ff32e2cd16",
+  "reproduction_report": {
+    "path": "outputs/reference-groups/official-20261110-v1/report.json",
+    "sha256": "8f80b77b498bcecab24c4bfbb30a1134110d64df132ce0a7667d15926e040047"
+  },
+  "generated_corpus": "data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated",
+  "profile_optimizer_steps": 200,
+  "world_size": 8,
+  "initialization": "scratch_native",
+  "preserve_original_failed_baseline": true,
+  "full_forty_epoch_training_queued": false
+}

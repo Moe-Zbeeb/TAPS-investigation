@@ -1,0 +1,130 @@
+{
+  "status": "queued_behind_strict_admission",
+  "data": {
+    "job_id": "2214977",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--nodes=1",
+      "--ntasks=1",
+      "--kill-on-invalid-dep=yes",
+      "--job-name=taps-teacher",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/teacher-%j.log",
+      "--partition=low-priority",
+      "--qos=normal",
+      "--cpus-per-task=1",
+      "--mem=2G",
+      "--time=2-00:00:00",
+      "--wrap",
+      "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/teacher-20261110-v3.sh"
+    ],
+    "script_sha256": "83eb05f903b596127f5633debdaf92681d90a5422857c2414843ca576ba264d0"
+  },
+  "audit": {
+    "job_id": "2214978",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--nodes=1",
+      "--ntasks=1",
+      "--kill-on-invalid-dep=yes",
+      "--job-name=taps-audit",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/audit-%j.log",
+      "--partition=low-priority",
+      "--qos=normal",
+      "--nodelist=deep-chungus-6",
+      "--cpus-per-task=16",
+      "--mem=64G",
+      "--time=6:00:00",
+      "--dependency=afterok:2214977:2214872",
+      "--wrap",
+      "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/audit-20261110-v3.sh"
+    ],
+    "script_sha256": "e592f6107d962a8e3952d80f121ecfc41666b7f478e0825dc3f6ec966aad3c34",
+    "active_script_sha256": "c83e6354b0cbe4a10490d2d28db33a85cd25ac58d3ba1e365f5f0619b0cacbca",
+    "active_dependency": "afterok:2214983:2214872"
+  },
+  "profile": {
+    "job_id": "2214979",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--nodes=1",
+      "--ntasks=1",
+      "--kill-on-invalid-dep=yes",
+      "--job-name=taps-profile",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/profile-%j.log",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodelist=deep-chungus-11",
+      "--exclusive",
+      "--gres=gpu:a100:8",
+      "--cpus-per-task=64",
+      "--time=4:00:00",
+      "--dependency=afterok:2214978",
+      "--wrap",
+      "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/profile-20261110-v3.sh"
+    ],
+    "script_sha256": "7fcd6ea168245abd1ace9b554f7878398821d98faaffdf1bae99b3f1c11888db",
+    "active_script_sha256": "33a96d8799a40278a842e6e67001bcb20bac9e8361ab50de9841721c248b78b7"
+  },
+  "validation_job_id": "2214872",
+  "source_corpus": "data/corpora/sharegpt-ultrachat-20261110-v2",
+  "generated_corpus": "data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated",
+  "profile_optimizer_steps": 200,
+  "full_forty_epoch_training_queued": false,
+  "teacher_bundle_sha256": "249be7645e7482894dded77e44eb4b3b67050d67b59bd2e0364ff93386cbb2cf",
+  "training_bundle_sha256": "45cc18927929898c481c0e10bb092458c8f3c7720225b3053a3fbacd7348b3eb",
+  "training_started": false,
+  "previous_smoke_failed_before_model_load": "0.8.5 assertion corrected to verified 0.8.5.post1; all previous dependency jobs cancelled",
+  "known_blocks": [
+    "3 FP32 greedy mismatches",
+    "Original 22-cell strict gate failed",
+    "End-to-end validation incomplete",
+    "Validator requires independent review"
+  ],
+  "amendments": [
+    {
+      "job_id": "2214978",
+      "before_sha256": "e592f6107d962a8e3952d80f121ecfc41666b7f478e0825dc3f6ec966aad3c34",
+      "after_sha256": "c83e6354b0cbe4a10490d2d28db33a85cd25ac58d3ba1e365f5f0619b0cacbca"
+    },
+    {
+      "job_id": "2214979",
+      "before_sha256": "7fcd6ea168245abd1ace9b554f7878398821d98faaffdf1bae99b3f1c11888db",
+      "after_sha256": "33a96d8799a40278a842e6e67001bcb20bac9e8361ab50de9841721c248b78b7"
+    }
+  ],
+  "active_training_bundle_sha256": "ccbd2ef3095a0ca4fc43bc65fac18fa6583bda48ef7bf17777141b201344e61a",
+  "active_training_config_sha256": "2c0bd4072a7861d32709a8648bc6ebbc6a62403ddfd1c8c5404b5ec856dd595f",
+  "data_completion_guard": {
+    "job_id": "2214983",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=low-priority",
+      "--qos=normal",
+      "--nodes=1",
+      "--ntasks=1",
+      "--cpus-per-task=1",
+      "--mem=2G",
+      "--time=2-00:00:00",
+      "--dependency=afterany:2214977",
+      "--kill-on-invalid-dep=yes",
+      "--job-name=taps-data-finish",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/data-finish-%j.log",
+      "--wrap",
+      "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/corpus-continuation-20261110-v1.sh"
+    ],
+    "script_sha256": "b11fcee7f14946100c911982b9afac41d942f47163060b6bebffcbb8d8ceeaaa",
+    "source_bundle_sha256": "c855ea8f24521ce64f636624e237b4f80af5d4e7437d8479cc6af82f0b162b65"
+  }
+}

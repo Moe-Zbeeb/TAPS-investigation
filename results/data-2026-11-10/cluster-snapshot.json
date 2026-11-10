@@ -1,0 +1,314 @@
+{
+  "as_of_utc": "2026-11-10T13:26:10.977289+00:00",
+  "training_started": false,
+  "corpus": {
+    "sha256": "42f408593e5d5774bd859e75fc11bc73ce69153d105a6b789b555e1ee743604c",
+    "counts": {
+      "excluded:duplicate_complete_prompt_sequence": 16020,
+      "excluded:incomplete_or_non_alternating_conversation": 848,
+      "excluded:invalid_role_or_text": 517,
+      "excluded:missing_conversation": 550,
+      "native_original:dev": 2902,
+      "native_original:test": 2913,
+      "native_original:train": 278300,
+      "sharegpt_v3:accepted_before_split": 76293,
+      "sharegpt_v3:read": 94145,
+      "split:dev": 5539,
+      "split:test": 5537,
+      "split:train": 529031,
+      "target_completion_required:dev": 2637,
+      "target_completion_required:test": 2624,
+      "target_completion_required:train": 250731,
+      "ultrachat_200k:accepted_before_split": 463814,
+      "ultrachat_200k:read": 463897
+    }
+  },
+  "sharegpt-ultrachat-teacher-20261110-v3-smoke": {
+    "plan_sha256": "707f0903255c22417b8d31be70f38dfc4deeb076964f632b9a2c93d95b31e3c8",
+    "progress": {},
+    "completion": {
+      "completed_at_utc": "2026-11-10T13:19:10.780003+00:00",
+      "corpus_output": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-smoke-target-generated",
+      "counts": {
+        "accepted:train": 55,
+        "excluded:response_censored_at_generation_limit": 9,
+        "processed": 64
+      },
+      "files": {
+        "dev.jsonl": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        "native-dev.jsonl": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        "native-test.jsonl": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        "native-train.jsonl": {
+          "sha256": "86e8648a7059c95607ec40e12f3650d724d5fe19aa8341ee2a9f30d12318ea1d",
+          "size_bytes": 432858
+        },
+        "test.jsonl": {
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        "train.jsonl": {
+          "sha256": "064e6822b40fda827fe38de0ad5030831e3140629a0d6b72d47cd24899779a88",
+          "size_bytes": 470139
+        }
+      },
+      "native_tokenization_filter_performed": false,
+      "plan_identity_sha256": "ce982a346b193aaa76584792d137295c6b987b2ef47959612eb41bcb77feedd3",
+      "plan_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3-smoke/plan.json",
+      "response_regime": "target_generated",
+      "scope": "teacher_generation_smoke",
+      "status": "complete",
+      "target_id": "llama31_instruct_8b",
+      "target_identity_sha256": "7c3d0c33c2a43a10ba658bdca906de7412050d8c094083a34e0d6fced7c94b6c",
+      "teacher_features": "online native training",
+      "training_started": false
+    },
+    "completion_sha256": "98ed9db2731cd2aeb685a0b4c33bdc7cfadbb81c115d4825bca0d7c9a9afa5e8",
+    "engines_ready": 8
+  },
+  "sharegpt-ultrachat-teacher-20261110-v3": {
+    "plan_sha256": "e0e850f329378c8d1f9ac352faa24a166f20fb57a0567eacadf9e7ec8114af58",
+    "progress": {
+      "worker-5-progress.json": {
+        "completed_examples": 128,
+        "elapsed_seconds_this_attempt": 276.2319438736886,
+        "expected_examples": 67513,
+        "generated_tokens_this_attempt": 200754
+      },
+      "worker-0-progress.json": {
+        "completed_examples": 128,
+        "elapsed_seconds_this_attempt": 298.7992300549522,
+        "expected_examples": 67514,
+        "generated_tokens_this_attempt": 233847
+      },
+      "worker-2-progress.json": {
+        "completed_examples": 64,
+        "elapsed_seconds_this_attempt": 159.2319350577891,
+        "expected_examples": 67514,
+        "generated_tokens_this_attempt": 107658
+      },
+      "worker-7-progress.json": {
+        "completed_examples": 64,
+        "elapsed_seconds_this_attempt": 175.8640453889966,
+        "expected_examples": 67513,
+        "generated_tokens_this_attempt": 117796
+      },
+      "worker-6-progress.json": {
+        "completed_examples": 64,
+        "elapsed_seconds_this_attempt": 168.61441486980766,
+        "expected_examples": 67513,
+        "generated_tokens_this_attempt": 108848
+      },
+      "worker-3-progress.json": {
+        "completed_examples": 64,
+        "elapsed_seconds_this_attempt": 162.44491236004978,
+        "expected_examples": 67513,
+        "generated_tokens_this_attempt": 104041
+      },
+      "worker-1-progress.json": {
+        "completed_examples": 128,
+        "elapsed_seconds_this_attempt": 301.4354601902887,
+        "expected_examples": 67514,
+        "generated_tokens_this_attempt": 201963
+      },
+      "worker-4-progress.json": {
+        "completed_examples": 128,
+        "elapsed_seconds_this_attempt": 239.4385418947786,
+        "expected_examples": 67513,
+        "generated_tokens_this_attempt": 196133
+      }
+    },
+    "engines_ready": 8
+  },
+  "validation": {
+    "greedy": {
+      "conditional_trials": null,
+      "counts": {
+        "eagle2": 320,
+        "eagle3": 480,
+        "hass": 320
+      },
+      "created_at_utc": "2026-11-10T11:29:15.513876+00:00",
+      "execution_complete": true,
+      "failed_checks": 3,
+      "passed_scoped_checks": false,
+      "phase": "greedy",
+      "sampling_event_bounds": {},
+      "scope": "validation_only_no_training_admission",
+      "training_admission": false
+    },
+    "conditional": {
+      "conditional_trials": 65536,
+      "counts": {
+        "eagle2": 20,
+        "eagle3": 20,
+        "hass": 20
+      },
+      "created_at_utc": "2026-11-10T12:03:12.227396+00:00",
+      "execution_complete": true,
+      "failed_checks": 0,
+      "passed_scoped_checks": true,
+      "phase": "conditional",
+      "sampling_event_bounds": {},
+      "scope": "validation_only_no_training_admission",
+      "training_admission": false
+    }
+  },
+  "sampling_progress": {
+    "eagle2": 20480,
+    "hass": 20080,
+    "eagle3": 20480
+  },
+  "queue": {
+    "status": "queued_behind_strict_admission",
+    "data": {
+      "job_id": "2214977",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--nodes=1",
+        "--ntasks=1",
+        "--kill-on-invalid-dep=yes",
+        "--job-name=taps-teacher",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/teacher-%j.log",
+        "--partition=low-priority",
+        "--qos=normal",
+        "--cpus-per-task=1",
+        "--mem=2G",
+        "--time=2-00:00:00",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/teacher-20261110-v3.sh"
+      ],
+      "script_sha256": "83eb05f903b596127f5633debdaf92681d90a5422857c2414843ca576ba264d0"
+    },
+    "audit": {
+      "job_id": "2214978",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--nodes=1",
+        "--ntasks=1",
+        "--kill-on-invalid-dep=yes",
+        "--job-name=taps-audit",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/audit-%j.log",
+        "--partition=low-priority",
+        "--qos=normal",
+        "--nodelist=deep-chungus-6",
+        "--cpus-per-task=16",
+        "--mem=64G",
+        "--time=6:00:00",
+        "--dependency=afterok:2214977:2214872",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/audit-20261110-v3.sh"
+      ],
+      "script_sha256": "e592f6107d962a8e3952d80f121ecfc41666b7f478e0825dc3f6ec966aad3c34",
+      "active_script_sha256": "c83e6354b0cbe4a10490d2d28db33a85cd25ac58d3ba1e365f5f0619b0cacbca",
+      "active_dependency": "afterok:2214983:2214872"
+    },
+    "profile": {
+      "job_id": "2214979",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--nodes=1",
+        "--ntasks=1",
+        "--kill-on-invalid-dep=yes",
+        "--job-name=taps-profile",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/profile-%j.log",
+        "--partition=high-priority",
+        "--qos=spec-priority",
+        "--nodelist=deep-chungus-11",
+        "--exclusive",
+        "--gres=gpu:a100:8",
+        "--cpus-per-task=64",
+        "--time=4:00:00",
+        "--dependency=afterok:2214978",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/profile-20261110-v3.sh"
+      ],
+      "script_sha256": "7fcd6ea168245abd1ace9b554f7878398821d98faaffdf1bae99b3f1c11888db",
+      "active_script_sha256": "33a96d8799a40278a842e6e67001bcb20bac9e8361ab50de9841721c248b78b7"
+    },
+    "validation_job_id": "2214872",
+    "source_corpus": "data/corpora/sharegpt-ultrachat-20261110-v2",
+    "generated_corpus": "data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated",
+    "profile_optimizer_steps": 200,
+    "full_forty_epoch_training_queued": false,
+    "teacher_bundle_sha256": "249be7645e7482894dded77e44eb4b3b67050d67b59bd2e0364ff93386cbb2cf",
+    "training_bundle_sha256": "45cc18927929898c481c0e10bb092458c8f3c7720225b3053a3fbacd7348b3eb",
+    "training_started": false,
+    "previous_smoke_failed_before_model_load": "0.8.5 assertion corrected to verified 0.8.5.post1; all previous dependency jobs cancelled",
+    "known_blocks": [
+      "3 FP32 greedy mismatches",
+      "Original 22-cell strict gate failed",
+      "End-to-end validation incomplete",
+      "Validator requires independent review"
+    ],
+    "amendments": [
+      {
+        "job_id": "2214978",
+        "before_sha256": "e592f6107d962a8e3952d80f121ecfc41666b7f478e0825dc3f6ec966aad3c34",
+        "after_sha256": "c83e6354b0cbe4a10490d2d28db33a85cd25ac58d3ba1e365f5f0619b0cacbca"
+      },
+      {
+        "job_id": "2214979",
+        "before_sha256": "7fcd6ea168245abd1ace9b554f7878398821d98faaffdf1bae99b3f1c11888db",
+        "after_sha256": "33a96d8799a40278a842e6e67001bcb20bac9e8361ab50de9841721c248b78b7"
+      }
+    ],
+    "active_training_bundle_sha256": "ccbd2ef3095a0ca4fc43bc65fac18fa6583bda48ef7bf17777141b201344e61a",
+    "active_training_config_sha256": "2c0bd4072a7861d32709a8648bc6ebbc6a62403ddfd1c8c5404b5ec856dd595f",
+    "data_completion_guard": {
+      "job_id": "2214983",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--partition=low-priority",
+        "--qos=normal",
+        "--nodes=1",
+        "--ntasks=1",
+        "--cpus-per-task=1",
+        "--mem=2G",
+        "--time=2-00:00:00",
+        "--dependency=afterany:2214977",
+        "--kill-on-invalid-dep=yes",
+        "--job-name=taps-data-finish",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/data-finish-%j.log",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/corpus-continuation-20261110-v1.sh"
+      ],
+      "script_sha256": "b11fcee7f14946100c911982b9afac41d942f47163060b6bebffcbb8d8ceeaaa",
+      "source_bundle_sha256": "c855ea8f24521ce64f636624e237b4f80af5d4e7437d8479cc6af82f0b162b65"
+    }
+  },
+  "slurm": "             JOBID                     NAME      PARTITION          QOS      STATE         TIME                              NODELIST(REASON)\n           2214979             taps-profile  high-priority spec-priorit    PENDING         0:00                                  (Dependency)\n           2212580              deep10-hold  high-priority spec-priorit    PENDING         0:00                                  (Dependency)\n           2214872   taps-t1-replication-v2  high-priority spec-priorit    RUNNING      2:51:32                               deep-chungus-11\n           2212576              deep10-hold  high-priority spec-priorit    RUNNING   1-00:44:41                               deep-chungus-10\n           2214983         taps-data-finish   low-priority       normal    PENDING         0:00                                  (Dependency)\n           2214978               taps-audit   low-priority       normal    PENDING         0:00                                  (Dependency)\n           2214977             taps-teacher   low-priority       normal    RUNNING        12:51                                deep-chungus-2\n",
+  "source_identity_sha256": "6375933ffe6e688eb4eb032360eabe519efadd01e13233a56869a022bf6f2caa",
+  "gpu_telemetry": {
+    "2212576": {
+      "returncode": 0,
+      "stdout": "0, NVIDIA A100 80GB PCIe, 70207, 93\n1, NVIDIA A100 80GB PCIe, 68807, 93\n2, NVIDIA A100 80GB PCIe, 68975, 94\n3, NVIDIA A100 80GB PCIe, 70135, 94\n4, NVIDIA A100 80GB PCIe, 69501, 94\n5, NVIDIA A100 80GB PCIe, 69297, 93\n6, NVIDIA A100 80GB PCIe, 70221, 93\n7, NVIDIA A100 80GB PCIe, 70273, 94\n",
+      "stderr": ""
+    },
+    "2214872": {
+      "returncode": 0,
+      "stdout": "0, NVIDIA A100 80GB PCIe, 21203, 41\n1, NVIDIA A100 80GB PCIe, 21203, 80\n2, NVIDIA A100 80GB PCIe, 21203, 41\n3, NVIDIA A100 80GB PCIe, 21203, 65\n4, NVIDIA A100 80GB PCIe, 1, 0\n5, NVIDIA A100 80GB PCIe, 21203, 41\n6, NVIDIA A100 80GB PCIe, 21203, 40\n7, NVIDIA A100 80GB PCIe, 31243, 42\n",
+      "stderr": ""
+    }
+  }
+}

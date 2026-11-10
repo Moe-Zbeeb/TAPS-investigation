@@ -1,0 +1,136 @@
+{
+  "benchmark_exclusion_proofs": [
+    {
+      "benchmark": "alpaca",
+      "sha256": "8ad3e5a7fc61b88d8e25edb81a52a2ce00a04494d5694c122cb11a5cc26a00df"
+    },
+    {
+      "benchmark": "cnn_dm",
+      "sha256": "916876f0c42f938a944de96eed16e51425f29f27438cca5c9ef4737c0fedf771"
+    },
+    {
+      "benchmark": "gsm8k",
+      "sha256": "a55920b2f2aac724241124c59e5b8e8168dbbeb2ab0fdbee17d5b0ab6db5ff27"
+    },
+    {
+      "benchmark": "humaneval",
+      "sha256": "ce0244e2b228339e9a11afc63a151719beede1e389fdaec7cd9751d33902180e"
+    },
+    {
+      "benchmark": "mt_bench",
+      "sha256": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7"
+    }
+  ],
+  "completed_at_utc": "2026-11-10T12:58:02.017080+00:00",
+  "config_sha256": "3bfebb8b0a944e22976bb62917b6d133f2aadb0933517d0001b49f231d22a352",
+  "counts": {
+    "excluded:duplicate_complete_prompt_sequence": 16020,
+    "excluded:incomplete_or_non_alternating_conversation": 848,
+    "excluded:invalid_role_or_text": 517,
+    "excluded:missing_conversation": 550,
+    "native_original:dev": 2902,
+    "native_original:test": 2913,
+    "native_original:train": 278300,
+    "sharegpt_v3:accepted_before_split": 76293,
+    "sharegpt_v3:read": 94145,
+    "split:dev": 5539,
+    "split:test": 5537,
+    "split:train": 529031,
+    "target_completion_required:dev": 2637,
+    "target_completion_required:test": 2624,
+    "target_completion_required:train": 250731,
+    "ultrachat_200k:accepted_before_split": 463814,
+    "ultrachat_200k:read": 463897
+  },
+  "files": {
+    "dev.jsonl": {
+      "sha256": "520406889ed356fd1564ae36d9d4d6375933232c387368ca49bb9f6b78d179e3",
+      "size_bytes": 33728335
+    },
+    "excluded.jsonl": {
+      "sha256": "498c454a7f2f7ac333e69bfad39469b069567e4e506bbd9b18797b173cc3d586",
+      "size_bytes": 2521231
+    },
+    "original/dev.jsonl": {
+      "sha256": "e636cb8d419dce26ba51b3ca425abadba4d711f5d2810396397f946961672b8f",
+      "size_bytes": 17336057
+    },
+    "original/test.jsonl": {
+      "sha256": "7ab52b8b85a6a7ab3ec540222d3f726ae969c93ab3047b45a02266e8457eb521",
+      "size_bytes": 17775433
+    },
+    "original/train.jsonl": {
+      "sha256": "b7bdce3793ca710f5445100a1e9bc409174ac2d5077c3e06b40419f2b453e5de",
+      "size_bytes": 1674030394
+    },
+    "test.jsonl": {
+      "sha256": "871c4f30911098a27c1b9405e9575bd4d474dc063e98f81664338de0f1b0ad3f",
+      "size_bytes": 33863338
+    },
+    "train.jsonl": {
+      "sha256": "827de82f6ec6df938f88078ff0528493cca327f78b9554ddf901d56abbfd3991",
+      "size_bytes": 3221863512
+    }
+  },
+  "native_original_files_contain_complete_pairs_only": true,
+  "native_tokenization_filter_performed": false,
+  "response_regime": "original_and_prompt_only_inputs",
+  "scope": "real_training_corpus_preparation",
+  "source_sha256": "69cdc2f1db54c78339fe83f71c7e8bd49b2a2a8e1fdbba7308721b586bc1b81f",
+  "sources": [
+    {
+      "files": [
+        {
+          "path": "ShareGPT_V3_unfiltered_cleaned_split.json",
+          "sha256": "35f0e213ce091ed9b9af2a1f0755e9d39f9ccec34ab281cd4ca60d70f6479ba4",
+          "size_bytes": 672837942
+        }
+      ],
+      "id": "sharegpt_v3",
+      "repo_id": "anon8231489123/ShareGPT_Vicuna_unfiltered",
+      "revision": "192ab2185289094fc556ec8ce5ce1e8e587154ca"
+    },
+    {
+      "files": [
+        {
+          "path": "data/train_sft-00000-of-00003-a3ecf92756993583.parquet",
+          "sha256": "afa8fa7426081b2a0e732fb50dbb5cd402a28ad5f0dbe66c0d996d63e7220727",
+          "size_bytes": 243999189
+        },
+        {
+          "path": "data/train_sft-00001-of-00003-0a1804bcb6ae68c6.parquet",
+          "sha256": "c8230190bc8b29084c974ff32f05589b458fad1908fc4b2fb2b9e1e9f7921f03",
+          "size_bytes": 243897199
+        },
+        {
+          "path": "data/train_sft-00002-of-00003-ee46ed25cfae92c6.parquet",
+          "sha256": "6fe7d2a5e95cf660f972ecaf304aa5632d7f53384e4b0e0d0f44d9c96733c03e",
+          "size_bytes": 244131731
+        },
+        {
+          "path": "data/train_gen-00000-of-00003-a6c9fb894be3e50b.parquet",
+          "sha256": "8172417116ff18bb0d1ecc2166a658ebabf79a6c9cf02d8cad411fa764548663",
+          "size_bytes": 243687391
+        },
+        {
+          "path": "data/train_gen-00001-of-00003-d6a0402e417f35ca.parquet",
+          "sha256": "8b9e9ce202df576400e6727fcabb027bc92449767bec00871190d81f1b330de1",
+          "size_bytes": 243300397
+        },
+        {
+          "path": "data/train_gen-00002-of-00003-c0db75b92a2f48fd.parquet",
+          "sha256": "1fe9ba24c1bc2be447041e93aaca4689342e25470e6dedd4101019decf151922",
+          "size_bytes": 243497356
+        }
+      ],
+      "id": "ultrachat_200k",
+      "repo_id": "HuggingFaceH4/ultrachat_200k",
+      "revision": "8049631c405ae6576f93f445c6b8166f76f5505a"
+    }
+  ],
+  "splits_grouped": true,
+  "status": "complete",
+  "target_regeneration_performed": false,
+  "teacher_features": "online native training; offline prototype tensors not required",
+  "training_started": false
+}

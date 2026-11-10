@@ -30,6 +30,8 @@ The publication source check ran 333 tests with nine Torch-dependent tests skipp
 
 The [active validation queue](experiments/validation-queue-20261110/SCHEDULING.md) chains the next controls across two full A100 80GB nodes. Its results remain pending; no scientific training is admitted by these jobs.
 
+ShareGPT and UltraChat [source preparation](experiments/corpus-20261110/README.md) now contains 540,107 grouped conversations, including 284,115 with complete original answers. Target-response generation and a dependent eight-GPU native training profile have separate frozen launchers. Training remains blocked by the failed scientific checks and required validator review.
+
 ## Start on CPU
 
 From the repository root, using Python 3.10 or newer:

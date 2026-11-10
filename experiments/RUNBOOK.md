@@ -36,7 +36,7 @@ taps specialization --help
 
 `data-gpu run` distributes authored engineering examples across all eight GPUs for target regeneration and aligned feature export. Its completed cache contains a merged manifest accepted by the reference trainer. `train` is the shared-body prototype. `native-train` runs the separately pinned official EAGLE-3 architecture and recipe adapter; it computes target features online and uses a different data contract. A prototype checkpoint is not a native EAGLE-3 checkpoint.
 
-Use fresh fixture, plan and run paths for engineering training. CPU preparation and substantive analysis also run in Slurm, with CUDA hidden. The engineering fixtures are authored test data and cannot be relabelled as research datasets. Scientific training requires complete baseline and full-model temperature-one validation; the current admission check remains closed until that validator is implemented.
+Use fresh fixture, plan and run paths for engineering training. CPU preparation and substantive analysis also run in Slurm, with CUDA hidden. The engineering fixtures are authored test data and cannot be relabelled as research datasets. Scientific training requires complete baseline and source-bound full-model validation, including the independent review required by the controlling proposal. The current gate remains closed. The real ShareGPT/UltraChat preparation and dependent training profile are documented in [the corpus runbook](corpus-20261110/README.md).
 
 For a new native engineering check, run this preparation inside a CPU Slurm step with CUDA hidden:
 

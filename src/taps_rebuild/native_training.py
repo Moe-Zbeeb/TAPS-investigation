@@ -219,7 +219,16 @@ def research_gate(root, config):
     full_model = gate_document(root, evidence['full_model_temperature_one_report'], 'full_model_temperature_one_report')
     if full_model.get('status') != 'passed' or full_model.get('models_loaded') is not True or full_model.get('full_model_temperature1_validation_still_required') is True or full_model.get('automatic_pipeline_gate_pass') is not True:
         raise NativeTrainingError('Finite-vocabulary checks or incomplete receipts do not establish the required full-model temperature-one audit')
-    raise NativeTrainingError('Native research remains blocked: no full-model temperature-one validator is implemented; claimed passed metadata cannot authorize training')
+    helper = Path(__file__).with_name('admission.py')
+    if not helper.is_file():
+        raise NativeTrainingError('Native research remains blocked: the source-bound admission verifier is missing; claimed passed metadata cannot authorize training')
+    spec = importlib.util.spec_from_file_location('native_full_model_admission', helper)
+    verifier = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(verifier)
+    try:
+        return verifier.verify_certificate(root, full_model)
+    except verifier.AdmissionError as error:
+        raise NativeTrainingError(str(error)) from error
 
 
 def engineering_row(split, index):
@@ -315,6 +324,8 @@ def prepare(root, config_path, train_path, validation_path, run_dir):
         shutil.copyfile(upstream / name, work / name)
     for source_file, name in ((config_path, 'config.json'), (sources_path, 'sources.json'), (assets_path, 'assets.json'), (Path(train_path), 'train' + Path(train_path).suffix), (Path(validation_path), 'validation' + Path(validation_path).suffix), (Path(__file__), 'native_training.py'), (root / 'src/taps_rebuild/pool.py', 'pool.py')):
         shutil.copyfile(source_file, inputs / name)
+    if config['scope'] == 'native_training':
+        shutil.copyfile(Path(__file__).with_name('admission.py'), inputs / 'admission.py')
     for label, data in (('train', train), ('validation', validation)):
         data['frozen_path'] = str(inputs / (label + Path(data['path']).suffix))
     python = root / config['runtime_python']
