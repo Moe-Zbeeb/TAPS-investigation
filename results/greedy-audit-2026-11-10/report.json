@@ -1,0 +1,3731 @@
+{
+  "scope": "selected_failure_diagnostic_not_benchmark",
+  "status": "complete",
+  "generated_at_utc": "2026-11-10T09:28:26.200261+00:00",
+  "source_manifest_sha256": "2a59dc7ffc3de5aa91875ea7e89ba4fa17481eb51982a0596cbecdd5de08718c",
+  "source_cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+  "source_script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+  "source_completion_sha256": "8f41a437494000373716e63c6e9f744f5749625ecb61bca37e36653ecf61485a",
+  "source_case_selection": "Eight earliest repeat-zero token failures per method, round-robin over benchmarks; descriptive selection, no rate estimate",
+  "original_reference_gate_modified": false,
+  "global_correctness_established": false,
+  "summary": [
+    {
+      "method": "eagle3",
+      "precision": "float16",
+      "cases": 8,
+      "original_common_prefix_valid": 8,
+      "repeated_replays_identical": 8,
+      "paired_disputed_token_agreement": 0,
+      "captured_argmax_agreement": 0,
+      "max_abs_logit_delta_min": 0.01953125,
+      "max_abs_logit_delta_max": 0.03125
+    },
+    {
+      "method": "eagle3",
+      "precision": "float32",
+      "cases": 8,
+      "original_common_prefix_valid": 8,
+      "repeated_replays_identical": 8,
+      "paired_disputed_token_agreement": 8,
+      "captured_argmax_agreement": 8,
+      "max_abs_logit_delta_min": 3.147125244140625e-05,
+      "max_abs_logit_delta_max": 4.9591064453125e-05
+    },
+    {
+      "method": "eagle2",
+      "precision": "float16",
+      "cases": 8,
+      "original_common_prefix_valid": 8,
+      "repeated_replays_identical": 8,
+      "paired_disputed_token_agreement": 0,
+      "captured_argmax_agreement": 0,
+      "max_abs_logit_delta_min": 0.01953125,
+      "max_abs_logit_delta_max": 0.03125
+    },
+    {
+      "method": "eagle2",
+      "precision": "float32",
+      "cases": 8,
+      "original_common_prefix_valid": 8,
+      "repeated_replays_identical": 8,
+      "paired_disputed_token_agreement": 8,
+      "captured_argmax_agreement": 8,
+      "max_abs_logit_delta_min": 3.4332275390625e-05,
+      "max_abs_logit_delta_max": 4.38690185546875e-05
+    },
+    {
+      "method": "hass",
+      "precision": "float16",
+      "cases": 8,
+      "original_common_prefix_valid": 8,
+      "repeated_replays_identical": 8,
+      "paired_disputed_token_agreement": 0,
+      "captured_argmax_agreement": 0,
+      "max_abs_logit_delta_min": 0.0224609375,
+      "max_abs_logit_delta_max": 0.04296875
+    },
+    {
+      "method": "hass",
+      "precision": "float32",
+      "cases": 8,
+      "original_common_prefix_valid": 8,
+      "repeated_replays_identical": 8,
+      "paired_disputed_token_agreement": 8,
+      "captured_argmax_agreement": 8,
+      "max_abs_logit_delta_min": 3.62396240234375e-05,
+      "max_abs_logit_delta_max": 6.4849853515625e-05
+    }
+  ],
+  "records": [
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 0,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "0",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 30,
+      "benchmark": "gsm8k",
+      "question_id": 54,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.03125,
+        "mean_abs_logit_delta": 0.004789889324456453,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:54.920662+00:00",
+      "source_receipt_sha256": "ffccb1170b8cfb888bf4c2f1d1c9526d4287bdca4c82c932351da546d12a272f",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "b2b492f81300b24ec0f3eff8d41195284df50a54ada738e06acf10aebcf84054",
+          "top5_token_ids": [
+            1473,
+            220,
+            512,
+            25,
+            25393
+          ],
+          "top5_logits": [
+            32.875,
+            32.84375,
+            28.453125,
+            21.59375,
+            18.921875
+          ],
+          "top2_margin": 0.03125,
+          "original_ar_minus_spec_logit": 0.03125,
+          "disputed_token_id": 1473
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "b2b492f81300b24ec0f3eff8d41195284df50a54ada738e06acf10aebcf84054",
+          "top5_token_ids": [
+            220,
+            1473,
+            512,
+            25,
+            25393
+          ],
+          "top5_logits": [
+            32.84375,
+            32.84375,
+            28.453125,
+            21.5625,
+            18.921875
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 220
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 1,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "1",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 49,
+      "benchmark": "humaneval",
+      "question_id": 61,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.03125,
+        "mean_abs_logit_delta": 0.0035743124317377806,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:56.020486+00:00",
+      "source_receipt_sha256": "27f36f193ffce75aa67f7d7a2a6eab07a98ef4030277458421e4f3f76dc10497",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5c28bd5bdde830a4a5cf29fc5211771d0ff485c9de447f9fbcce3b6791fa7ba1",
+          "top5_token_ids": [
+            2669,
+            871,
+            366,
+            2717,
+            63247
+          ],
+          "top5_logits": [
+            32.75,
+            32.71875,
+            21.609375,
+            20.5625,
+            19.28125
+          ],
+          "top2_margin": 0.03125,
+          "original_ar_minus_spec_logit": 0.03125,
+          "disputed_token_id": 2669
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5c28bd5bdde830a4a5cf29fc5211771d0ff485c9de447f9fbcce3b6791fa7ba1",
+          "top5_token_ids": [
+            871,
+            2669,
+            366,
+            2717,
+            63247
+          ],
+          "top5_logits": [
+            32.75,
+            32.75,
+            21.59375,
+            20.5625,
+            19.296875
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 871
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 2,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "2",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 11,
+      "benchmark": "mt_bench",
+      "question_id": 119,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.01953125,
+        "mean_abs_logit_delta": 0.0030649665277451277,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:53.559262+00:00",
+      "source_receipt_sha256": "fc88d68f2d7547779f15c1a42b9df4b2a3b7226e8ae9d7e9414d69cedfda58e2",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "398e1f5fde65a58a24404440ca97654798d4fe023af54841c08ddd7b439b1fb3",
+          "top5_token_ids": [
+            20,
+            16,
+            9,
+            91792,
+            334
+          ],
+          "top5_logits": [
+            25.3125,
+            25.3125,
+            25.28125,
+            24.890625,
+            22.34375
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 16
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "398e1f5fde65a58a24404440ca97654798d4fe023af54841c08ddd7b439b1fb3",
+          "top5_token_ids": [
+            20,
+            16,
+            9,
+            91792,
+            334
+          ],
+          "top5_logits": [
+            25.328125,
+            25.3125,
+            25.28125,
+            24.875,
+            22.34375
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": -0.015625,
+          "disputed_token_id": 20
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 3,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "3",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 37,
+      "benchmark": "gsm8k",
+      "question_id": 31,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.03125,
+        "mean_abs_logit_delta": 0.0037377304397523403,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:55.576732+00:00",
+      "source_receipt_sha256": "da457bfd6b4e473d8fdc2b6a9ef85cb910fa3ab9fa0bec2afc3aa648e811dbbf",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "4c321d654efe079f590ca13f6bc0e8e5a5cec4599cfd97c950c60f96df685df2",
+          "top5_token_ids": [
+            704,
+            264,
+            279,
+            832,
+            420
+          ],
+          "top5_logits": [
+            29.15625,
+            29.15625,
+            28.734375,
+            28.40625,
+            26.453125
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 264
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "4c321d654efe079f590ca13f6bc0e8e5a5cec4599cfd97c950c60f96df685df2",
+          "top5_token_ids": [
+            704,
+            264,
+            279,
+            832,
+            420
+          ],
+          "top5_logits": [
+            29.15625,
+            29.125,
+            28.75,
+            28.390625,
+            26.4375
+          ],
+          "top2_margin": 0.03125,
+          "original_ar_minus_spec_logit": -0.03125,
+          "disputed_token_id": 704
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 4,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "4",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 89,
+      "benchmark": "humaneval",
+      "question_id": 64,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.025390625,
+        "mean_abs_logit_delta": 0.003807505127042532,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:59.096285+00:00",
+      "source_receipt_sha256": "7438b0eb72c88762999ea11712d5da8a4eb1a94eaad0ad60984f79577a060d6d",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bfdd03feb84d389f562b01e54c02debe2856403f0eb3d2593554a91b77bebefd",
+          "top5_token_ids": [
+            25935,
+            19352,
+            5480,
+            53947,
+            31978
+          ],
+          "top5_logits": [
+            24.171875,
+            24.15625,
+            20.046875,
+            19.5625,
+            19.546875
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": 0.015625,
+          "disputed_token_id": 25935
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bfdd03feb84d389f562b01e54c02debe2856403f0eb3d2593554a91b77bebefd",
+          "top5_token_ids": [
+            25935,
+            19352,
+            5480,
+            53947,
+            31978
+          ],
+          "top5_logits": [
+            24.15625,
+            24.15625,
+            20.046875,
+            19.5625,
+            19.53125
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 19352
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 5,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "5",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 92,
+      "benchmark": "mt_bench",
+      "question_id": 109,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.0224609375,
+        "mean_abs_logit_delta": 0.003796149743720889,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:59.469561+00:00",
+      "source_receipt_sha256": "f18965ad65b1522fbac0427edaf0eda0253f31091751dc472e2a3f252d0b2e4a",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "e8a0afcac920bc8c7351c262a0d2a416012c0a2be460222f7043de6b3eeb1e7c",
+          "top5_token_ids": [
+            328,
+            279,
+            459,
+            1202,
+            264
+          ],
+          "top5_logits": [
+            27.53125,
+            27.515625,
+            23.171875,
+            22.6875,
+            22.203125
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": 0.015625,
+          "disputed_token_id": 328
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "e8a0afcac920bc8c7351c262a0d2a416012c0a2be460222f7043de6b3eeb1e7c",
+          "top5_token_ids": [
+            279,
+            328,
+            459,
+            1202,
+            264
+          ],
+          "top5_logits": [
+            27.53125,
+            27.515625,
+            23.171875,
+            22.6875,
+            22.1875
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": -0.015625,
+          "disputed_token_id": 279
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 6,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "6",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 89,
+      "benchmark": "gsm8k",
+      "question_id": 18,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.0234375,
+        "mean_abs_logit_delta": 0.003791607916355133,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:59.513588+00:00",
+      "source_receipt_sha256": "93bf612b5799d8472f8d368a12f1dbac941c2ae12c5c70d12c5e13d43b1fab80",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "86d09053f78863413ca393bb9dc10344e9aaeedef8b7029af7e3aab8b40e5a0b",
+          "top5_token_ids": [
+            8876,
+            2057,
+            1226,
+            6914,
+            1789
+          ],
+          "top5_logits": [
+            26.21875,
+            26.203125,
+            22.828125,
+            21.21875,
+            20.40625
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": 0.015625,
+          "disputed_token_id": 8876
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "86d09053f78863413ca393bb9dc10344e9aaeedef8b7029af7e3aab8b40e5a0b",
+          "top5_token_ids": [
+            2057,
+            8876,
+            1226,
+            6914,
+            1789
+          ],
+          "top5_logits": [
+            26.21875,
+            26.21875,
+            22.828125,
+            21.21875,
+            20.40625
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 2057
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 7,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "7",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 92,
+      "benchmark": "humaneval",
+      "question_id": 63,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.0234375,
+        "mean_abs_logit_delta": 0.0036640572361648083,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:59.416008+00:00",
+      "source_receipt_sha256": "a3049c0f15bcb2014c9ba89853baab56e5cd8a152c76126f6277673e76c6eb87",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf7914ac95eb0186bbf357fa89f359fa8050af6119845ae5e24265f8c8cf4be9",
+          "top5_token_ids": [
+            1176,
+            5885,
+            3160,
+            3284,
+            2134
+          ],
+          "top5_logits": [
+            21.71875,
+            21.71875,
+            21.59375,
+            21.09375,
+            19.796875
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 1176
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf7914ac95eb0186bbf357fa89f359fa8050af6119845ae5e24265f8c8cf4be9",
+          "top5_token_ids": [
+            5885,
+            1176,
+            3160,
+            3284,
+            2134
+          ],
+          "top5_logits": [
+            21.71875,
+            21.703125,
+            21.578125,
+            21.109375,
+            19.796875
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": -0.015625,
+          "disputed_token_id": 5885
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 0,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "0",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 30,
+      "benchmark": "gsm8k",
+      "question_id": 54,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 3.62396240234375e-05,
+        "mean_abs_logit_delta": 3.152096724079456e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:25:26.220150+00:00",
+      "source_receipt_sha256": "4cc89bfec3778864b275adb567b7a436d8aa6bb71d8485a1eaab366f73f34a79",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "b2b492f81300b24ec0f3eff8d41195284df50a54ada738e06acf10aebcf84054",
+          "top5_token_ids": [
+            1473,
+            220,
+            512,
+            25,
+            25393
+          ],
+          "top5_logits": [
+            32.85968780517578,
+            32.852989196777344,
+            28.4471378326416,
+            21.579917907714844,
+            18.917022705078125
+          ],
+          "top2_margin": 0.0066986083984375,
+          "original_ar_minus_spec_logit": 0.0066986083984375,
+          "disputed_token_id": 1473
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "b2b492f81300b24ec0f3eff8d41195284df50a54ada738e06acf10aebcf84054",
+          "top5_token_ids": [
+            1473,
+            220,
+            512,
+            25,
+            25393
+          ],
+          "top5_logits": [
+            32.859703063964844,
+            32.85299301147461,
+            28.447153091430664,
+            21.579954147338867,
+            18.917034149169922
+          ],
+          "top2_margin": 0.006710052490234375,
+          "original_ar_minus_spec_logit": 0.006710052490234375,
+          "disputed_token_id": 1473
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 1,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "1",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 49,
+      "benchmark": "humaneval",
+      "question_id": 61,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 3.814697265625e-05,
+        "mean_abs_logit_delta": 3.828545231954195e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:25:28.246068+00:00",
+      "source_receipt_sha256": "0c6d2e9395247da4a3ae4895bca802b03c0445f6db11a22cc312bcb48ecc4fe0",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5c28bd5bdde830a4a5cf29fc5211771d0ff485c9de447f9fbcce3b6791fa7ba1",
+          "top5_token_ids": [
+            2669,
+            871,
+            366,
+            2717,
+            63247
+          ],
+          "top5_logits": [
+            32.743865966796875,
+            32.74063491821289,
+            21.60101890563965,
+            20.570880889892578,
+            19.298534393310547
+          ],
+          "top2_margin": 0.003231048583984375,
+          "original_ar_minus_spec_logit": 0.003231048583984375,
+          "disputed_token_id": 2669
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5c28bd5bdde830a4a5cf29fc5211771d0ff485c9de447f9fbcce3b6791fa7ba1",
+          "top5_token_ids": [
+            2669,
+            871,
+            366,
+            2717,
+            63247
+          ],
+          "top5_logits": [
+            32.74382781982422,
+            32.74064254760742,
+            21.60102081298828,
+            20.57086181640625,
+            19.298524856567383
+          ],
+          "top2_margin": 0.003185272216796875,
+          "original_ar_minus_spec_logit": 0.003185272216796875,
+          "disputed_token_id": 2669
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 2,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "2",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 11,
+      "benchmark": "mt_bench",
+      "question_id": 119,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 3.719329833984375e-05,
+        "mean_abs_logit_delta": 2.945837195511558e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:25:24.394973+00:00",
+      "source_receipt_sha256": "e2819da2899d8ed892b40a6f1df1b256d3273bef0d28d8681843f3245b5e08d6",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "398e1f5fde65a58a24404440ca97654798d4fe023af54841c08ddd7b439b1fb3",
+          "top5_token_ids": [
+            20,
+            16,
+            9,
+            91792,
+            334
+          ],
+          "top5_logits": [
+            25.32258415222168,
+            25.31916618347168,
+            25.282089233398438,
+            24.892440795898438,
+            22.349754333496094
+          ],
+          "top2_margin": 0.00341796875,
+          "original_ar_minus_spec_logit": -0.00341796875,
+          "disputed_token_id": 20
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "398e1f5fde65a58a24404440ca97654798d4fe023af54841c08ddd7b439b1fb3",
+          "top5_token_ids": [
+            20,
+            16,
+            9,
+            91792,
+            334
+          ],
+          "top5_logits": [
+            25.322561264038086,
+            25.319169998168945,
+            25.282072067260742,
+            24.892457962036133,
+            22.349769592285156
+          ],
+          "top2_margin": 0.003391265869140625,
+          "original_ar_minus_spec_logit": -0.003391265869140625,
+          "disputed_token_id": 20
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 3,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "3",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 37,
+      "benchmark": "gsm8k",
+      "question_id": 31,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 4.38690185546875e-05,
+        "mean_abs_logit_delta": 3.0717662866663886e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:25:27.860138+00:00",
+      "source_receipt_sha256": "9fe0a9fbb95d9b67f999d06953d6efd5a488e9f3b251872446464a3a80dc7aa3",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "4c321d654efe079f590ca13f6bc0e8e5a5cec4599cfd97c950c60f96df685df2",
+          "top5_token_ids": [
+            704,
+            264,
+            279,
+            832,
+            420
+          ],
+          "top5_logits": [
+            29.161916732788086,
+            29.148372650146484,
+            28.735103607177734,
+            28.400135040283203,
+            26.439254760742188
+          ],
+          "top2_margin": 0.013544082641601562,
+          "original_ar_minus_spec_logit": -0.013544082641601562,
+          "disputed_token_id": 704
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "4c321d654efe079f590ca13f6bc0e8e5a5cec4599cfd97c950c60f96df685df2",
+          "top5_token_ids": [
+            704,
+            264,
+            279,
+            832,
+            420
+          ],
+          "top5_logits": [
+            29.16196060180664,
+            29.148378372192383,
+            28.735095977783203,
+            28.400123596191406,
+            26.439231872558594
+          ],
+          "top2_margin": 0.013582229614257812,
+          "original_ar_minus_spec_logit": -0.013582229614257812,
+          "disputed_token_id": 704
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 4,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "4",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 89,
+      "benchmark": "humaneval",
+      "question_id": 64,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 4.00543212890625e-05,
+        "mean_abs_logit_delta": 4.050588813697686e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:25:31.664929+00:00",
+      "source_receipt_sha256": "3d39949b5ffe1880cb734bc8a7df27197f46bb0e1c9e6c38274c43de77a83685",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bfdd03feb84d389f562b01e54c02debe2856403f0eb3d2593554a91b77bebefd",
+          "top5_token_ids": [
+            25935,
+            19352,
+            5480,
+            53947,
+            31978
+          ],
+          "top5_logits": [
+            24.16149139404297,
+            24.149951934814453,
+            20.048988342285156,
+            19.554302215576172,
+            19.532981872558594
+          ],
+          "top2_margin": 0.011539459228515625,
+          "original_ar_minus_spec_logit": 0.011539459228515625,
+          "disputed_token_id": 25935
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bfdd03feb84d389f562b01e54c02debe2856403f0eb3d2593554a91b77bebefd",
+          "top5_token_ids": [
+            25935,
+            19352,
+            5480,
+            53947,
+            31978
+          ],
+          "top5_logits": [
+            24.161487579345703,
+            24.149951934814453,
+            20.049028396606445,
+            19.554298400878906,
+            19.532991409301758
+          ],
+          "top2_margin": 0.01153564453125,
+          "original_ar_minus_spec_logit": 0.01153564453125,
+          "disputed_token_id": 25935
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 5,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "5",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 92,
+      "benchmark": "mt_bench",
+      "question_id": 109,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 4.00543212890625e-05,
+        "mean_abs_logit_delta": 3.919581558875507e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:25:32.357361+00:00",
+      "source_receipt_sha256": "529ba942c5134762785a81a33894501b872827b9bb11b0ec459ad23a0595ea67",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "e8a0afcac920bc8c7351c262a0d2a416012c0a2be460222f7043de6b3eeb1e7c",
+          "top5_token_ids": [
+            328,
+            279,
+            459,
+            1202,
+            264
+          ],
+          "top5_logits": [
+            27.5308895111084,
+            27.519561767578125,
+            23.165241241455078,
+            22.684696197509766,
+            22.189048767089844
+          ],
+          "top2_margin": 0.011327743530273438,
+          "original_ar_minus_spec_logit": 0.011327743530273438,
+          "disputed_token_id": 328
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "e8a0afcac920bc8c7351c262a0d2a416012c0a2be460222f7043de6b3eeb1e7c",
+          "top5_token_ids": [
+            328,
+            279,
+            459,
+            1202,
+            264
+          ],
+          "top5_logits": [
+            27.530902862548828,
+            27.519540786743164,
+            23.16526985168457,
+            22.684701919555664,
+            22.189064025878906
+          ],
+          "top2_margin": 0.011362075805664062,
+          "original_ar_minus_spec_logit": 0.011362075805664062,
+          "disputed_token_id": 328
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 6,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "6",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 89,
+      "benchmark": "gsm8k",
+      "question_id": 18,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 3.4332275390625e-05,
+        "mean_abs_logit_delta": 3.958953584515257e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:25:32.895382+00:00",
+      "source_receipt_sha256": "0d1caf4eb7f6b1659c47bfaa235383a478894dd2f2e3eed0512436c3b6014714",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "86d09053f78863413ca393bb9dc10344e9aaeedef8b7029af7e3aab8b40e5a0b",
+          "top5_token_ids": [
+            2057,
+            8876,
+            1226,
+            6914,
+            1789
+          ],
+          "top5_logits": [
+            26.225543975830078,
+            26.222530364990234,
+            22.830080032348633,
+            21.222360610961914,
+            20.410133361816406
+          ],
+          "top2_margin": 0.00301361083984375,
+          "original_ar_minus_spec_logit": -0.00301361083984375,
+          "disputed_token_id": 2057
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "86d09053f78863413ca393bb9dc10344e9aaeedef8b7029af7e3aab8b40e5a0b",
+          "top5_token_ids": [
+            2057,
+            8876,
+            1226,
+            6914,
+            1789
+          ],
+          "top5_logits": [
+            26.225570678710938,
+            26.2225399017334,
+            22.830087661743164,
+            21.222347259521484,
+            20.4101505279541
+          ],
+          "top2_margin": 0.0030307769775390625,
+          "original_ar_minus_spec_logit": -0.0030307769775390625,
+          "disputed_token_id": 2057
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle2",
+      "worker": 7,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "7",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 92,
+      "benchmark": "humaneval",
+      "question_id": 63,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 4.38690185546875e-05,
+        "mean_abs_logit_delta": 3.179520035700989e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:25:32.664247+00:00",
+      "source_receipt_sha256": "53860bb00eeccf96e2a1905f5616e1de4045046e43b594aaa460bf7a29001f9b",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf7914ac95eb0186bbf357fa89f359fa8050af6119845ae5e24265f8c8cf4be9",
+          "top5_token_ids": [
+            5885,
+            1176,
+            3160,
+            3284,
+            2134
+          ],
+          "top5_logits": [
+            21.72334861755371,
+            21.699262619018555,
+            21.591297149658203,
+            21.1087646484375,
+            19.801013946533203
+          ],
+          "top2_margin": 0.02408599853515625,
+          "original_ar_minus_spec_logit": -0.02408599853515625,
+          "disputed_token_id": 5885
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf7914ac95eb0186bbf357fa89f359fa8050af6119845ae5e24265f8c8cf4be9",
+          "top5_token_ids": [
+            5885,
+            1176,
+            3160,
+            3284,
+            2134
+          ],
+          "top5_logits": [
+            21.723392486572266,
+            21.699289321899414,
+            21.59126853942871,
+            21.108741760253906,
+            19.801000595092773
+          ],
+          "top2_margin": 0.024103164672851562,
+          "original_ar_minus_spec_logit": -0.024103164672851562,
+          "disputed_token_id": 5885
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 0,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "0",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 4,
+      "benchmark": "alpaca",
+      "question_id": 76,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.03125,
+        "mean_abs_logit_delta": 0.0039408160373568535,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:15.795273+00:00",
+      "source_receipt_sha256": "6cc32310024277da5392807be1d356af8b77c5bd42448d5d22363107988df3e1",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "8df5c1aae2be18b91ac76cc88edbf2b71d89f18a15bc8591339cd98775945953",
+          "top5_token_ids": [
+            1701,
+            311,
+            11,
+            304,
+            13750
+          ],
+          "top5_logits": [
+            24.34375,
+            24.328125,
+            24.046875,
+            22.71875,
+            22.5
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": 0.015625,
+          "disputed_token_id": 1701
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "8df5c1aae2be18b91ac76cc88edbf2b71d89f18a15bc8591339cd98775945953",
+          "top5_token_ids": [
+            1701,
+            311,
+            11,
+            304,
+            13750
+          ],
+          "top5_logits": [
+            24.34375,
+            24.34375,
+            24.046875,
+            22.71875,
+            22.5
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 311
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 1,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "1",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 49,
+      "benchmark": "cnn_dm",
+      "question_id": 311,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.01953125,
+        "mean_abs_logit_delta": 0.0026916912756860256,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:19.658226+00:00",
+      "source_receipt_sha256": "00e3bc4a667a3dd15f4f668be5163e430c12d280aa625fa4e4b52cf1ad4a16d1",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "8a6c8262c529c39465e2d47873627d834bbaef5bf062971853c6aaf77211f58e",
+          "top5_token_ids": [
+            28932,
+            11096,
+            13605,
+            11224,
+            2663
+          ],
+          "top5_logits": [
+            20.46875,
+            20.453125,
+            19.546875,
+            19.0,
+            18.875
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": 0.015625,
+          "disputed_token_id": 28932
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "8a6c8262c529c39465e2d47873627d834bbaef5bf062971853c6aaf77211f58e",
+          "top5_token_ids": [
+            11096,
+            28932,
+            13605,
+            11224,
+            2663
+          ],
+          "top5_logits": [
+            20.453125,
+            20.453125,
+            19.546875,
+            19.0,
+            18.890625
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 11096
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 2,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "2",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 25,
+      "benchmark": "gsm8k",
+      "question_id": 72,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.03125,
+        "mean_abs_logit_delta": 0.0031707510352134705,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:17.663448+00:00",
+      "source_receipt_sha256": "1957ca90f104bb9830faf485fd1e1c30fc1e45a72ca948ba86f72febd67fa122",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "099163f85eb7165d04c2d7e4df0615bc1b2eee198332cca47f1cdfe4885b48da",
+          "top5_token_ids": [
+            1396,
+            2860,
+            5578,
+            20081,
+            2694
+          ],
+          "top5_logits": [
+            30.734375,
+            30.734375,
+            21.734375,
+            19.90625,
+            19.265625
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 1396
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "099163f85eb7165d04c2d7e4df0615bc1b2eee198332cca47f1cdfe4885b48da",
+          "top5_token_ids": [
+            2860,
+            1396,
+            5578,
+            20081,
+            2694
+          ],
+          "top5_logits": [
+            30.765625,
+            30.75,
+            21.75,
+            19.921875,
+            19.296875
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": -0.015625,
+          "disputed_token_id": 2860
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 3,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "3",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 5,
+      "benchmark": "humaneval",
+      "question_id": 55,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.01953125,
+        "mean_abs_logit_delta": 0.00291619636118412,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:16.035224+00:00",
+      "source_receipt_sha256": "32534e95c4e19604e954c36301a75fba21b81497dc39b737af3be65216fb93eb",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "cd3ff105b17951a8c9f5b2ba123db09cf83b38cbeb55cabe55d88c8bd311e13c",
+          "top5_token_ids": [
+            304,
+            1473,
+            1701,
+            512,
+            369
+          ],
+          "top5_logits": [
+            27.1875,
+            27.171875,
+            25.875,
+            24.78125,
+            24.5
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": 0.015625,
+          "disputed_token_id": 304
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "cd3ff105b17951a8c9f5b2ba123db09cf83b38cbeb55cabe55d88c8bd311e13c",
+          "top5_token_ids": [
+            1473,
+            304,
+            1701,
+            512,
+            369
+          ],
+          "top5_logits": [
+            27.1875,
+            27.171875,
+            25.859375,
+            24.796875,
+            24.515625
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": -0.015625,
+          "disputed_token_id": 1473
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 4,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "4",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 1,
+      "benchmark": "mt_bench",
+      "question_id": 115,
+      "turn_id": 1,
+      "comparison": {
+        "max_abs_logit_delta": 0.020660400390625,
+        "mean_abs_logit_delta": 0.003072430845350027,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:15.888952+00:00",
+      "source_receipt_sha256": "1c95d33816e7c86c374719874487bccc01f8e4976817c24d3c210aef85e5955f",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "26504ee18c273f8fdfb9424067de48743e8270002930cf798b7534d032f6878d",
+          "top5_token_ids": [
+            2736,
+            1440,
+            3077,
+            8767,
+            617
+          ],
+          "top5_logits": [
+            28.578125,
+            28.5625,
+            26.46875,
+            26.40625,
+            25.5625
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": 0.015625,
+          "disputed_token_id": 2736
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "26504ee18c273f8fdfb9424067de48743e8270002930cf798b7534d032f6878d",
+          "top5_token_ids": [
+            2736,
+            1440,
+            3077,
+            8767,
+            617
+          ],
+          "top5_logits": [
+            28.5625,
+            28.5625,
+            26.46875,
+            26.40625,
+            25.5625
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 1440
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 5,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "5",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 5,
+      "benchmark": "alpaca",
+      "question_id": 55,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.01953125,
+        "mean_abs_logit_delta": 0.0027551143430173397,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:15.842231+00:00",
+      "source_receipt_sha256": "bd1dab7d413593d9ee450ddaea19fc77cf6acbf42bb9d58834fa90219880adfe",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf18aea238dac06b34ff6a6ceaf4907fc23a4f1ba3d07f3e5b49a38ae544da24",
+          "top5_token_ids": [
+            617,
+            527,
+            1782,
+            8854,
+            3085
+          ],
+          "top5_logits": [
+            25.46875,
+            25.46875,
+            22.453125,
+            21.53125,
+            20.390625
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 527
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf18aea238dac06b34ff6a6ceaf4907fc23a4f1ba3d07f3e5b49a38ae544da24",
+          "top5_token_ids": [
+            617,
+            527,
+            1782,
+            8854,
+            3085
+          ],
+          "top5_logits": [
+            25.46875,
+            25.453125,
+            22.453125,
+            21.53125,
+            20.390625
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": -0.015625,
+          "disputed_token_id": 617
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 6,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "6",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 53,
+      "benchmark": "cnn_dm",
+      "question_id": 245,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.01953125,
+        "mean_abs_logit_delta": 0.002618299098685384,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:19.742624+00:00",
+      "source_receipt_sha256": "2736fd7a860afe9dba6bc3932c2ecc02dcee141d54b0ee85b028cad935ee7962",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bdd4884183bc57a0dfaf66c36b0a42f9c2e6496b1eb47a579a2a5bf2d1b756d7",
+          "top5_token_ids": [
+            323,
+            13,
+            11,
+            382,
+            889
+          ],
+          "top5_logits": [
+            26.78125,
+            26.765625,
+            25.515625,
+            24.984375,
+            24.90625
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": 0.015625,
+          "disputed_token_id": 323
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bdd4884183bc57a0dfaf66c36b0a42f9c2e6496b1eb47a579a2a5bf2d1b756d7",
+          "top5_token_ids": [
+            323,
+            13,
+            11,
+            382,
+            889
+          ],
+          "top5_logits": [
+            26.78125,
+            26.78125,
+            25.515625,
+            24.984375,
+            24.90625
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 13
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 7,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "7",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 33,
+      "benchmark": "gsm8k",
+      "question_id": 49,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.03125,
+        "mean_abs_logit_delta": 0.0030976159032434225,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:22:18.061969+00:00",
+      "source_receipt_sha256": "a5bf2793707d80b6f99ae743595147ed937f634f957305ddbb44a5ff986ae427",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "445d57f86c338e070f046aefcdf77718b81fdcfca8d1ee2e018fdd49f41688cc",
+          "top5_token_ids": [
+            315,
+            520,
+            369,
+            1855,
+            824
+          ],
+          "top5_logits": [
+            33.5625,
+            33.5625,
+            22.8125,
+            21.46875,
+            20.578125
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 315
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "445d57f86c338e070f046aefcdf77718b81fdcfca8d1ee2e018fdd49f41688cc",
+          "top5_token_ids": [
+            520,
+            315,
+            369,
+            1855,
+            824
+          ],
+          "top5_logits": [
+            33.5625,
+            33.53125,
+            22.8125,
+            21.46875,
+            20.59375
+          ],
+          "top2_margin": 0.03125,
+          "original_ar_minus_spec_logit": -0.03125,
+          "disputed_token_id": 520
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 0,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "0",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 4,
+      "benchmark": "alpaca",
+      "question_id": 76,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 3.24249267578125e-05,
+        "mean_abs_logit_delta": 2.9861610073567135e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:24:30.469051+00:00",
+      "source_receipt_sha256": "7b06a6ee32b88e487e6b1bd72da520eed8a3f3984a708425c47b7f30662fecf8",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "8df5c1aae2be18b91ac76cc88edbf2b71d89f18a15bc8591339cd98775945953",
+          "top5_token_ids": [
+            1701,
+            311,
+            11,
+            304,
+            13750
+          ],
+          "top5_logits": [
+            24.345664978027344,
+            24.31774139404297,
+            24.04159164428711,
+            22.715057373046875,
+            22.507614135742188
+          ],
+          "top2_margin": 0.027923583984375,
+          "original_ar_minus_spec_logit": 0.027923583984375,
+          "disputed_token_id": 1701
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "8df5c1aae2be18b91ac76cc88edbf2b71d89f18a15bc8591339cd98775945953",
+          "top5_token_ids": [
+            1701,
+            311,
+            11,
+            304,
+            13750
+          ],
+          "top5_logits": [
+            24.345670700073242,
+            24.317745208740234,
+            24.041593551635742,
+            22.715059280395508,
+            22.507600784301758
+          ],
+          "top2_margin": 0.027925491333007812,
+          "original_ar_minus_spec_logit": 0.027925491333007812,
+          "disputed_token_id": 1701
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 1,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "1",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 49,
+      "benchmark": "cnn_dm",
+      "question_id": 311,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 3.62396240234375e-05,
+        "mean_abs_logit_delta": 2.97545307148539e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:24:40.035375+00:00",
+      "source_receipt_sha256": "6ecc072682c1d9bdb33a966d7a7e66fae8a9a56577548ac2643e47a2abe18820",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "8a6c8262c529c39465e2d47873627d834bbaef5bf062971853c6aaf77211f58e",
+          "top5_token_ids": [
+            28932,
+            11096,
+            13605,
+            11224,
+            2663
+          ],
+          "top5_logits": [
+            20.467052459716797,
+            20.459373474121094,
+            19.550621032714844,
+            18.999229431152344,
+            18.886804580688477
+          ],
+          "top2_margin": 0.007678985595703125,
+          "original_ar_minus_spec_logit": 0.007678985595703125,
+          "disputed_token_id": 28932
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "8a6c8262c529c39465e2d47873627d834bbaef5bf062971853c6aaf77211f58e",
+          "top5_token_ids": [
+            28932,
+            11096,
+            13605,
+            11224,
+            2663
+          ],
+          "top5_logits": [
+            20.467031478881836,
+            20.4593505859375,
+            19.55061912536621,
+            18.99922752380371,
+            18.8868350982666
+          ],
+          "top2_margin": 0.0076808929443359375,
+          "original_ar_minus_spec_logit": 0.0076808929443359375,
+          "disputed_token_id": 28932
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 2,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "2",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 25,
+      "benchmark": "gsm8k",
+      "question_id": 72,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 4.1961669921875e-05,
+        "mean_abs_logit_delta": 2.7548614980332786e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:24:33.905314+00:00",
+      "source_receipt_sha256": "a3d564bb75a352fcc915dbd848dfe8f4c64568cab0f388a21d2db4ad6c2d849c",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "099163f85eb7165d04c2d7e4df0615bc1b2eee198332cca47f1cdfe4885b48da",
+          "top5_token_ids": [
+            2860,
+            1396,
+            5578,
+            20081,
+            2694
+          ],
+          "top5_logits": [
+            30.73678207397461,
+            30.71894645690918,
+            21.746858596801758,
+            19.908002853393555,
+            19.28170394897461
+          ],
+          "top2_margin": 0.017835617065429688,
+          "original_ar_minus_spec_logit": -0.017835617065429688,
+          "disputed_token_id": 2860
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "099163f85eb7165d04c2d7e4df0615bc1b2eee198332cca47f1cdfe4885b48da",
+          "top5_token_ids": [
+            2860,
+            1396,
+            5578,
+            20081,
+            2694
+          ],
+          "top5_logits": [
+            30.7368221282959,
+            30.71897315979004,
+            21.74689292907715,
+            19.90800666809082,
+            19.281661987304688
+          ],
+          "top2_margin": 0.017848968505859375,
+          "original_ar_minus_spec_logit": -0.017848968505859375,
+          "disputed_token_id": 2860
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 3,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "3",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 5,
+      "benchmark": "humaneval",
+      "question_id": 55,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 3.147125244140625e-05,
+        "mean_abs_logit_delta": 2.8248332455405034e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:24:31.198684+00:00",
+      "source_receipt_sha256": "8f162de25f54fe4e395958e1677569393b73d9819a364ae56de86ce3cd27f59a",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "cd3ff105b17951a8c9f5b2ba123db09cf83b38cbeb55cabe55d88c8bd311e13c",
+          "top5_token_ids": [
+            304,
+            1473,
+            1701,
+            512,
+            369
+          ],
+          "top5_logits": [
+            27.181747436523438,
+            27.17709732055664,
+            25.871166229248047,
+            24.791378021240234,
+            24.513835906982422
+          ],
+          "top2_margin": 0.004650115966796875,
+          "original_ar_minus_spec_logit": 0.004650115966796875,
+          "disputed_token_id": 304
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "cd3ff105b17951a8c9f5b2ba123db09cf83b38cbeb55cabe55d88c8bd311e13c",
+          "top5_token_ids": [
+            304,
+            1473,
+            1701,
+            512,
+            369
+          ],
+          "top5_logits": [
+            27.181747436523438,
+            27.177087783813477,
+            25.87116813659668,
+            24.791378021240234,
+            24.513811111450195
+          ],
+          "top2_margin": 0.0046596527099609375,
+          "original_ar_minus_spec_logit": 0.0046596527099609375,
+          "disputed_token_id": 304
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 4,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "4",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 1,
+      "benchmark": "mt_bench",
+      "question_id": 115,
+      "turn_id": 1,
+      "comparison": {
+        "max_abs_logit_delta": 4.57763671875e-05,
+        "mean_abs_logit_delta": 2.5793535769480513e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:24:32.885798+00:00",
+      "source_receipt_sha256": "c47130c6d2af120b895b43a44df4962638610ded96a9f75ccdbb0ef2deeec2fd",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "26504ee18c273f8fdfb9424067de48743e8270002930cf798b7534d032f6878d",
+          "top5_token_ids": [
+            2736,
+            1440,
+            3077,
+            8767,
+            617
+          ],
+          "top5_logits": [
+            28.57118797302246,
+            28.569957733154297,
+            26.457927703857422,
+            26.416744232177734,
+            25.559463500976562
+          ],
+          "top2_margin": 0.0012302398681640625,
+          "original_ar_minus_spec_logit": 0.0012302398681640625,
+          "disputed_token_id": 2736
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "26504ee18c273f8fdfb9424067de48743e8270002930cf798b7534d032f6878d",
+          "top5_token_ids": [
+            2736,
+            1440,
+            3077,
+            8767,
+            617
+          ],
+          "top5_logits": [
+            28.571189880371094,
+            28.569917678833008,
+            26.457956314086914,
+            26.416767120361328,
+            25.55948829650879
+          ],
+          "top2_margin": 0.0012722015380859375,
+          "original_ar_minus_spec_logit": 0.0012722015380859375,
+          "disputed_token_id": 2736
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 5,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "5",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 5,
+      "benchmark": "alpaca",
+      "question_id": 55,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 3.4332275390625e-05,
+        "mean_abs_logit_delta": 3.0599878755310783e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:24:31.364255+00:00",
+      "source_receipt_sha256": "c9e5b070ce8679c3ed5209ab7b629f10980d292af521e0ec09d75e5d140e1329",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf18aea238dac06b34ff6a6ceaf4907fc23a4f1ba3d07f3e5b49a38ae544da24",
+          "top5_token_ids": [
+            617,
+            527,
+            1782,
+            8854,
+            3085
+          ],
+          "top5_logits": [
+            25.472896575927734,
+            25.468276977539062,
+            22.457618713378906,
+            21.53169822692871,
+            20.39891815185547
+          ],
+          "top2_margin": 0.004619598388671875,
+          "original_ar_minus_spec_logit": -0.004619598388671875,
+          "disputed_token_id": 617
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf18aea238dac06b34ff6a6ceaf4907fc23a4f1ba3d07f3e5b49a38ae544da24",
+          "top5_token_ids": [
+            617,
+            527,
+            1782,
+            8854,
+            3085
+          ],
+          "top5_logits": [
+            25.47289276123047,
+            25.46826934814453,
+            22.457653045654297,
+            21.531709671020508,
+            20.398927688598633
+          ],
+          "top2_margin": 0.0046234130859375,
+          "original_ar_minus_spec_logit": -0.0046234130859375,
+          "disputed_token_id": 617
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 6,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "6",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 53,
+      "benchmark": "cnn_dm",
+      "question_id": 245,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 4.9591064453125e-05,
+        "mean_abs_logit_delta": 2.9513387289625825e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:24:37.323072+00:00",
+      "source_receipt_sha256": "3cc62198ceccd1c948e198d502014bafdd0602e162c00d6076118ee727fde25c",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bdd4884183bc57a0dfaf66c36b0a42f9c2e6496b1eb47a579a2a5bf2d1b756d7",
+          "top5_token_ids": [
+            13,
+            323,
+            11,
+            382,
+            889
+          ],
+          "top5_logits": [
+            26.77157211303711,
+            26.770780563354492,
+            25.501882553100586,
+            25.00771713256836,
+            24.901836395263672
+          ],
+          "top2_margin": 0.0007915496826171875,
+          "original_ar_minus_spec_logit": -0.0007915496826171875,
+          "disputed_token_id": 13
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bdd4884183bc57a0dfaf66c36b0a42f9c2e6496b1eb47a579a2a5bf2d1b756d7",
+          "top5_token_ids": [
+            13,
+            323,
+            11,
+            382,
+            889
+          ],
+          "top5_logits": [
+            26.771549224853516,
+            26.770830154418945,
+            25.501893997192383,
+            25.007705688476562,
+            24.90183448791504
+          ],
+          "top2_margin": 0.0007190704345703125,
+          "original_ar_minus_spec_logit": -0.0007190704345703125,
+          "disputed_token_id": 13
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "eagle3",
+      "worker": 7,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "7",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle3-20261109-v2",
+      "divergence": 33,
+      "benchmark": "gsm8k",
+      "question_id": 49,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 4.00543212890625e-05,
+        "mean_abs_logit_delta": 2.951230271719396e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:24:33.821011+00:00",
+      "source_receipt_sha256": "f8d4068a4abb78048b63da6b2d79c30e5a874b225ea2a6a3fe16752f25b5de41",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "445d57f86c338e070f046aefcdf77718b81fdcfca8d1ee2e018fdd49f41688cc",
+          "top5_token_ids": [
+            520,
+            315,
+            369,
+            1855,
+            824
+          ],
+          "top5_logits": [
+            33.575477600097656,
+            33.541297912597656,
+            22.804092407226562,
+            21.47332763671875,
+            20.572830200195312
+          ],
+          "top2_margin": 0.0341796875,
+          "original_ar_minus_spec_logit": -0.0341796875,
+          "disputed_token_id": 520
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "445d57f86c338e070f046aefcdf77718b81fdcfca8d1ee2e018fdd49f41688cc",
+          "top5_token_ids": [
+            520,
+            315,
+            369,
+            1855,
+            824
+          ],
+          "top5_logits": [
+            33.57549285888672,
+            33.54128646850586,
+            22.804121017456055,
+            21.473344802856445,
+            20.57281494140625
+          ],
+          "top2_margin": 0.034206390380859375,
+          "original_ar_minus_spec_logit": -0.034206390380859375,
+          "disputed_token_id": 520
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 0,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "0",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 19,
+      "benchmark": "gsm8k",
+      "question_id": 65,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.04296875,
+        "mean_abs_logit_delta": 0.005668840371072292,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:23:42.228734+00:00",
+      "source_receipt_sha256": "4c1148742d1cbffa7d8225aade3140ec8638b84b3b738b84dec41db691abee64",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5cd04b47fd801a16b0b700d98c2cf16e132c2f3eddd44ac3584da20a7af93039",
+          "top5_token_ids": [
+            12834,
+            1687,
+            25584,
+            11439,
+            5971
+          ],
+          "top5_logits": [
+            28.640625,
+            28.640625,
+            28.609375,
+            22.6875,
+            22.296875
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 1687
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5cd04b47fd801a16b0b700d98c2cf16e132c2f3eddd44ac3584da20a7af93039",
+          "top5_token_ids": [
+            12834,
+            1687,
+            25584,
+            11439,
+            5971
+          ],
+          "top5_logits": [
+            28.640625,
+            28.625,
+            28.59375,
+            22.6875,
+            22.3125
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": -0.015625,
+          "disputed_token_id": 12834
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 1,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "1",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 49,
+      "benchmark": "humaneval",
+      "question_id": 61,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.03125,
+        "mean_abs_logit_delta": 0.0037704247515648603,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:23:44.150459+00:00",
+      "source_receipt_sha256": "98d603a109aa76da1954f29f344784ae017260ab229ef29ed8f9dbdad6129ec7",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5c28bd5bdde830a4a5cf29fc5211771d0ff485c9de447f9fbcce3b6791fa7ba1",
+          "top5_token_ids": [
+            2669,
+            871,
+            366,
+            2717,
+            63247
+          ],
+          "top5_logits": [
+            32.75,
+            32.71875,
+            21.609375,
+            20.5625,
+            19.28125
+          ],
+          "top2_margin": 0.03125,
+          "original_ar_minus_spec_logit": 0.03125,
+          "disputed_token_id": 2669
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5c28bd5bdde830a4a5cf29fc5211771d0ff485c9de447f9fbcce3b6791fa7ba1",
+          "top5_token_ids": [
+            871,
+            2669,
+            366,
+            2717,
+            63247
+          ],
+          "top5_logits": [
+            32.75,
+            32.71875,
+            21.609375,
+            20.5625,
+            19.296875
+          ],
+          "top2_margin": 0.03125,
+          "original_ar_minus_spec_logit": -0.03125,
+          "disputed_token_id": 871
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 2,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "2",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 14,
+      "benchmark": "mt_bench",
+      "question_id": 93,
+      "turn_id": 1,
+      "comparison": {
+        "max_abs_logit_delta": 0.0234375,
+        "mean_abs_logit_delta": 0.0031950760167092085,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:23:41.875617+00:00",
+      "source_receipt_sha256": "028ecd6fc856bcbc68181e567eac0807cd5754656bc643650472875f30076cc5",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "f5ceb9442dc9688c62e25d1d9e4763c10c04604bfbe0176d3e0f5315462e11f1",
+          "top5_token_ids": [
+            58742,
+            4754,
+            24099,
+            904,
+            60754
+          ],
+          "top5_logits": [
+            21.03125,
+            21.015625,
+            20.6875,
+            19.5,
+            19.453125
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": 0.015625,
+          "disputed_token_id": 58742
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "f5ceb9442dc9688c62e25d1d9e4763c10c04604bfbe0176d3e0f5315462e11f1",
+          "top5_token_ids": [
+            58742,
+            4754,
+            24099,
+            904,
+            60754
+          ],
+          "top5_logits": [
+            21.015625,
+            21.015625,
+            20.703125,
+            19.5,
+            19.453125
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 4754
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 3,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "3",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 37,
+      "benchmark": "gsm8k",
+      "question_id": 31,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.03125,
+        "mean_abs_logit_delta": 0.003990152385085821,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:23:42.475031+00:00",
+      "source_receipt_sha256": "f7081ec488938e2ca4f842eb71776955e56097d4591c4380206ab9e6092c541e",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "4c321d654efe079f590ca13f6bc0e8e5a5cec4599cfd97c950c60f96df685df2",
+          "top5_token_ids": [
+            704,
+            264,
+            279,
+            832,
+            420
+          ],
+          "top5_logits": [
+            29.15625,
+            29.15625,
+            28.734375,
+            28.40625,
+            26.453125
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 264
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "4c321d654efe079f590ca13f6bc0e8e5a5cec4599cfd97c950c60f96df685df2",
+          "top5_token_ids": [
+            704,
+            264,
+            279,
+            832,
+            420
+          ],
+          "top5_logits": [
+            29.15625,
+            29.140625,
+            28.734375,
+            28.390625,
+            26.4375
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": -0.015625,
+          "disputed_token_id": 704
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 4,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "4",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 92,
+      "benchmark": "humaneval",
+      "question_id": 52,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.0234375,
+        "mean_abs_logit_delta": 0.0037980449851602316,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:23:46.502785+00:00",
+      "source_receipt_sha256": "3c2c21145c854fd7d7a78f318b75ecac077731e37826708e57316c38f05cc5e1",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "2774b150fa8e859a1add5926b0eb15fcd0b7b981be9c4fa4059e20840b8cd03a",
+          "top5_token_ids": [
+            1084,
+            262,
+            1827,
+            720,
+            5996
+          ],
+          "top5_logits": [
+            31.765625,
+            31.765625,
+            20.015625,
+            20.0,
+            19.6875
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 262
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "2774b150fa8e859a1add5926b0eb15fcd0b7b981be9c4fa4059e20840b8cd03a",
+          "top5_token_ids": [
+            1084,
+            262,
+            1827,
+            720,
+            5996
+          ],
+          "top5_logits": [
+            31.765625,
+            31.75,
+            20.0,
+            19.984375,
+            19.6875
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": -0.015625,
+          "disputed_token_id": 1084
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 5,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "5",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 32,
+      "benchmark": "mt_bench",
+      "question_id": 85,
+      "turn_id": 1,
+      "comparison": {
+        "max_abs_logit_delta": 0.0224609375,
+        "mean_abs_logit_delta": 0.0033539137803018093,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:23:43.143608+00:00",
+      "source_receipt_sha256": "2082743ff61e68aa87e82e4a0bdb8014696251458427bc7a767a384a5d4f34dd",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "f51baaadb7ff7a7f03ccc9a8c3cfadb274e661f81158e01c868e0b005c3c9992",
+          "top5_token_ids": [
+            304,
+            11,
+            24082,
+            50905,
+            505
+          ],
+          "top5_logits": [
+            19.703125,
+            19.6875,
+            18.671875,
+            17.40625,
+            17.390625
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": 0.015625,
+          "disputed_token_id": 304
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "f51baaadb7ff7a7f03ccc9a8c3cfadb274e661f81158e01c868e0b005c3c9992",
+          "top5_token_ids": [
+            304,
+            11,
+            24082,
+            50905,
+            505
+          ],
+          "top5_logits": [
+            19.703125,
+            19.703125,
+            18.671875,
+            17.40625,
+            17.390625
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 11
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 6,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "6",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 84,
+      "benchmark": "gsm8k",
+      "question_id": 62,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.03125,
+        "mean_abs_logit_delta": 0.0035045892000198364,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:23:46.172633+00:00",
+      "source_receipt_sha256": "8afdbb9010cb9442cf1e7dfe9a20166e966b450cfde510c01d16d710c2e5ba73",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "9aa9b0d40ae288a1455204f669c1c4f03672ba948b2af94270945475239f5aed",
+          "top5_token_ids": [
+            813,
+            279,
+            1148,
+            400,
+            1268
+          ],
+          "top5_logits": [
+            32.875,
+            32.84375,
+            30.5,
+            26.546875,
+            24.953125
+          ],
+          "top2_margin": 0.03125,
+          "original_ar_minus_spec_logit": 0.03125,
+          "disputed_token_id": 813
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "9aa9b0d40ae288a1455204f669c1c4f03672ba948b2af94270945475239f5aed",
+          "top5_token_ids": [
+            279,
+            813,
+            1148,
+            400,
+            1268
+          ],
+          "top5_logits": [
+            32.875,
+            32.875,
+            30.484375,
+            26.5625,
+            24.953125
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 279
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 7,
+      "precision": "float16",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "7",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 92,
+      "benchmark": "humaneval",
+      "question_id": 63,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 0.0234375,
+        "mean_abs_logit_delta": 0.0031731922645121813,
+        "same_captured_prefix": true,
+        "argmax_equal": false
+      },
+      "completed_at_utc": "2026-11-10T09:23:46.576029+00:00",
+      "source_receipt_sha256": "ce5fc86d5e0a4a823125b75bacb2f51e7ffba2396dd5fbca5869ff6a54f58e23",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf7914ac95eb0186bbf357fa89f359fa8050af6119845ae5e24265f8c8cf4be9",
+          "top5_token_ids": [
+            1176,
+            5885,
+            3160,
+            3284,
+            2134
+          ],
+          "top5_logits": [
+            21.71875,
+            21.71875,
+            21.59375,
+            21.09375,
+            19.796875
+          ],
+          "top2_margin": 0.0,
+          "original_ar_minus_spec_logit": 0.0,
+          "disputed_token_id": 1176
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf7914ac95eb0186bbf357fa89f359fa8050af6119845ae5e24265f8c8cf4be9",
+          "top5_token_ids": [
+            5885,
+            1176,
+            3160,
+            3284,
+            2134
+          ],
+          "top5_logits": [
+            21.71875,
+            21.703125,
+            21.578125,
+            21.109375,
+            19.796875
+          ],
+          "top2_margin": 0.015625,
+          "original_ar_minus_spec_logit": -0.015625,
+          "disputed_token_id": 5885
+        }
+      },
+      "paired_equal_through_disputed_token": false
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 0,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "0",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 19,
+      "benchmark": "gsm8k",
+      "question_id": 65,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 5.7220458984375e-05,
+        "mean_abs_logit_delta": 2.9246509711811086e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:26:42.468969+00:00",
+      "source_receipt_sha256": "a0abeae47ec37bda7f1acecbe8fce18936e2ec4f250cf509c7c4994090608b59",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5cd04b47fd801a16b0b700d98c2cf16e132c2f3eddd44ac3584da20a7af93039",
+          "top5_token_ids": [
+            12834,
+            1687,
+            25584,
+            11439,
+            5971
+          ],
+          "top5_logits": [
+            28.636024475097656,
+            28.635107040405273,
+            28.59416961669922,
+            22.684375762939453,
+            22.302431106567383
+          ],
+          "top2_margin": 0.0009174346923828125,
+          "original_ar_minus_spec_logit": -0.0009174346923828125,
+          "disputed_token_id": 12834
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5cd04b47fd801a16b0b700d98c2cf16e132c2f3eddd44ac3584da20a7af93039",
+          "top5_token_ids": [
+            12834,
+            1687,
+            25584,
+            11439,
+            5971
+          ],
+          "top5_logits": [
+            28.636022567749023,
+            28.63507080078125,
+            28.59416389465332,
+            22.68431854248047,
+            22.302444458007812
+          ],
+          "top2_margin": 0.0009517669677734375,
+          "original_ar_minus_spec_logit": -0.0009517669677734375,
+          "disputed_token_id": 12834
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 1,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "1",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 49,
+      "benchmark": "humaneval",
+      "question_id": 61,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 3.814697265625e-05,
+        "mean_abs_logit_delta": 4.376876859168988e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:26:45.822552+00:00",
+      "source_receipt_sha256": "a7eac1928791a9ecab0d4f1f9fd45c80c0fe5ad4976bde5ebc4c2ab28ffb24a4",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5c28bd5bdde830a4a5cf29fc5211771d0ff485c9de447f9fbcce3b6791fa7ba1",
+          "top5_token_ids": [
+            2669,
+            871,
+            366,
+            2717,
+            63247
+          ],
+          "top5_logits": [
+            32.743865966796875,
+            32.74063491821289,
+            21.60101890563965,
+            20.570880889892578,
+            19.298534393310547
+          ],
+          "top2_margin": 0.003231048583984375,
+          "original_ar_minus_spec_logit": 0.003231048583984375,
+          "disputed_token_id": 2669
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "5c28bd5bdde830a4a5cf29fc5211771d0ff485c9de447f9fbcce3b6791fa7ba1",
+          "top5_token_ids": [
+            2669,
+            871,
+            366,
+            2717,
+            63247
+          ],
+          "top5_logits": [
+            32.74382781982422,
+            32.740631103515625,
+            21.601028442382812,
+            20.57086181640625,
+            19.298526763916016
+          ],
+          "top2_margin": 0.00319671630859375,
+          "original_ar_minus_spec_logit": 0.00319671630859375,
+          "disputed_token_id": 2669
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 2,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "2",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 14,
+      "benchmark": "mt_bench",
+      "question_id": 93,
+      "turn_id": 1,
+      "comparison": {
+        "max_abs_logit_delta": 3.62396240234375e-05,
+        "mean_abs_logit_delta": 2.7085739020549227e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:26:44.141060+00:00",
+      "source_receipt_sha256": "39a3b84557d7dd4e25370ab8eb6e71b8f905da459699c6b000b78eac162f53a5",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "f5ceb9442dc9688c62e25d1d9e4763c10c04604bfbe0176d3e0f5315462e11f1",
+          "top5_token_ids": [
+            4754,
+            58742,
+            24099,
+            904,
+            60754
+          ],
+          "top5_logits": [
+            21.01885414123535,
+            21.015329360961914,
+            20.699871063232422,
+            19.492517471313477,
+            19.449155807495117
+          ],
+          "top2_margin": 0.0035247802734375,
+          "original_ar_minus_spec_logit": -0.0035247802734375,
+          "disputed_token_id": 4754
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "f5ceb9442dc9688c62e25d1d9e4763c10c04604bfbe0176d3e0f5315462e11f1",
+          "top5_token_ids": [
+            4754,
+            58742,
+            24099,
+            904,
+            60754
+          ],
+          "top5_logits": [
+            21.018831253051758,
+            21.015365600585938,
+            20.699874877929688,
+            19.49251937866211,
+            19.449138641357422
+          ],
+          "top2_margin": 0.0034656524658203125,
+          "original_ar_minus_spec_logit": -0.0034656524658203125,
+          "disputed_token_id": 4754
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 3,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "3",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 37,
+      "benchmark": "gsm8k",
+      "question_id": 31,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 6.4849853515625e-05,
+        "mean_abs_logit_delta": 2.915611730713863e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:26:48.242333+00:00",
+      "source_receipt_sha256": "142f86e41eebfa35e10f2196bdd4119effe18f250594df50053ef760f8005575",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "4c321d654efe079f590ca13f6bc0e8e5a5cec4599cfd97c950c60f96df685df2",
+          "top5_token_ids": [
+            704,
+            264,
+            279,
+            832,
+            420
+          ],
+          "top5_logits": [
+            29.161916732788086,
+            29.148372650146484,
+            28.735103607177734,
+            28.400135040283203,
+            26.439254760742188
+          ],
+          "top2_margin": 0.013544082641601562,
+          "original_ar_minus_spec_logit": -0.013544082641601562,
+          "disputed_token_id": 704
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "4c321d654efe079f590ca13f6bc0e8e5a5cec4599cfd97c950c60f96df685df2",
+          "top5_token_ids": [
+            704,
+            264,
+            279,
+            832,
+            420
+          ],
+          "top5_logits": [
+            29.16196632385254,
+            29.148374557495117,
+            28.735109329223633,
+            28.40011978149414,
+            26.43923568725586
+          ],
+          "top2_margin": 0.013591766357421875,
+          "original_ar_minus_spec_logit": -0.013591766357421875,
+          "disputed_token_id": 704
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 4,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "4",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 92,
+      "benchmark": "humaneval",
+      "question_id": 52,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 6.103515625e-05,
+        "mean_abs_logit_delta": 3.3002474992827047e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:26:49.526937+00:00",
+      "source_receipt_sha256": "c474067c6b06bf2405453543ad4ce20a6309f3411be6829efad0774d83a65bdf",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "2774b150fa8e859a1add5926b0eb15fcd0b7b981be9c4fa4059e20840b8cd03a",
+          "top5_token_ids": [
+            262,
+            1084,
+            1827,
+            720,
+            5996
+          ],
+          "top5_logits": [
+            31.76229476928711,
+            31.758249282836914,
+            20.011234283447266,
+            19.990055084228516,
+            19.682918548583984
+          ],
+          "top2_margin": 0.0040454864501953125,
+          "original_ar_minus_spec_logit": 0.0040454864501953125,
+          "disputed_token_id": 262
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "2774b150fa8e859a1add5926b0eb15fcd0b7b981be9c4fa4059e20840b8cd03a",
+          "top5_token_ids": [
+            262,
+            1084,
+            1827,
+            720,
+            5996
+          ],
+          "top5_logits": [
+            31.76235580444336,
+            31.758256912231445,
+            20.01125144958496,
+            19.990034103393555,
+            19.68294334411621
+          ],
+          "top2_margin": 0.0040988922119140625,
+          "original_ar_minus_spec_logit": 0.0040988922119140625,
+          "disputed_token_id": 262
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 5,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "5",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 32,
+      "benchmark": "mt_bench",
+      "question_id": 85,
+      "turn_id": 1,
+      "comparison": {
+        "max_abs_logit_delta": 3.7670135498046875e-05,
+        "mean_abs_logit_delta": 3.7675938528991537e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:26:50.359375+00:00",
+      "source_receipt_sha256": "b230ff21153db1c5351becd5e8505bb30230ea095ce2421c17cf3be5a28f166f",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "f51baaadb7ff7a7f03ccc9a8c3cfadb274e661f81158e01c868e0b005c3c9992",
+          "top5_token_ids": [
+            11,
+            304,
+            24082,
+            505,
+            50905
+          ],
+          "top5_logits": [
+            19.711776733398438,
+            19.70403289794922,
+            18.67812156677246,
+            17.406898498535156,
+            17.404521942138672
+          ],
+          "top2_margin": 0.00774383544921875,
+          "original_ar_minus_spec_logit": -0.00774383544921875,
+          "disputed_token_id": 11
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "f51baaadb7ff7a7f03ccc9a8c3cfadb274e661f81158e01c868e0b005c3c9992",
+          "top5_token_ids": [
+            11,
+            304,
+            24082,
+            505,
+            50905
+          ],
+          "top5_logits": [
+            19.711759567260742,
+            19.704050064086914,
+            18.678119659423828,
+            17.406892776489258,
+            17.40455436706543
+          ],
+          "top2_margin": 0.007709503173828125,
+          "original_ar_minus_spec_logit": -0.007709503173828125,
+          "disputed_token_id": 11
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 6,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "6",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 84,
+      "benchmark": "gsm8k",
+      "question_id": 62,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 4.76837158203125e-05,
+        "mean_abs_logit_delta": 3.155073500238359e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:26:49.590002+00:00",
+      "source_receipt_sha256": "4f75828922c2bf7dde3565e9528c98d0674119d9d2a4c669877abe1f307df329",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "9aa9b0d40ae288a1455204f669c1c4f03672ba948b2af94270945475239f5aed",
+          "top5_token_ids": [
+            813,
+            279,
+            1148,
+            400,
+            1268
+          ],
+          "top5_logits": [
+            32.88229751586914,
+            32.853919982910156,
+            30.487682342529297,
+            26.550167083740234,
+            24.953601837158203
+          ],
+          "top2_margin": 0.028377532958984375,
+          "original_ar_minus_spec_logit": 0.028377532958984375,
+          "disputed_token_id": 813
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "9aa9b0d40ae288a1455204f669c1c4f03672ba948b2af94270945475239f5aed",
+          "top5_token_ids": [
+            813,
+            279,
+            1148,
+            400,
+            1268
+          ],
+          "top5_logits": [
+            32.88231658935547,
+            32.853919982910156,
+            30.487730026245117,
+            26.550119400024414,
+            24.953594207763672
+          ],
+          "top2_margin": 0.0283966064453125,
+          "original_ar_minus_spec_logit": 0.0283966064453125,
+          "disputed_token_id": 813
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    },
+    {
+      "status": "complete",
+      "scope": "selected_failure_diagnostic_not_benchmark",
+      "method": "hass",
+      "worker": 7,
+      "precision": "float32",
+      "gpu_name": "NVIDIA A100 80GB PCIe",
+      "cuda_visible_devices": "7",
+      "slurm_job_id": "2212576",
+      "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+      "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+      "source_run_id": "official-eagle2-hass-20261109-v1",
+      "divergence": 92,
+      "benchmark": "humaneval",
+      "question_id": 63,
+      "turn_id": 0,
+      "comparison": {
+        "max_abs_logit_delta": 6.4849853515625e-05,
+        "mean_abs_logit_delta": 3.161824452035944e-06,
+        "same_captured_prefix": true,
+        "argmax_equal": true
+      },
+      "completed_at_utc": "2026-11-10T09:26:49.915718+00:00",
+      "source_receipt_sha256": "2fb406fb4c396141389868b48fed68d591f2f35746da773092da6e2f40745fd5",
+      "records": {
+        "target_only": {
+          "replay_prefix_matches_original_through_divergence": false,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf7914ac95eb0186bbf357fa89f359fa8050af6119845ae5e24265f8c8cf4be9",
+          "top5_token_ids": [
+            5885,
+            1176,
+            3160,
+            3284,
+            2134
+          ],
+          "top5_logits": [
+            21.72334861755371,
+            21.699262619018555,
+            21.591297149658203,
+            21.1087646484375,
+            19.801013946533203
+          ],
+          "top2_margin": 0.02408599853515625,
+          "original_ar_minus_spec_logit": -0.02408599853515625,
+          "disputed_token_id": 5885
+        },
+        "speculative": {
+          "replay_prefix_matches_original_through_divergence": true,
+          "two_replays_identical": true,
+          "captured": true,
+          "prefix_matches_original_common_prefix": true,
+          "prefix_sha256": "bf7914ac95eb0186bbf357fa89f359fa8050af6119845ae5e24265f8c8cf4be9",
+          "top5_token_ids": [
+            5885,
+            1176,
+            3160,
+            3284,
+            2134
+          ],
+          "top5_logits": [
+            21.723413467407227,
+            21.69929313659668,
+            21.591285705566406,
+            21.108734130859375,
+            19.800987243652344
+          ],
+          "top2_margin": 0.024120330810546875,
+          "original_ar_minus_spec_logit": -0.024120330810546875,
+          "disputed_token_id": 5885
+        }
+      },
+      "paired_equal_through_disputed_token": true
+    }
+  ],
+  "post_run_cluster_state_sha256": "c10d5b98714325b130c5034d5f3b5d93f465b8d8ee99b0ec9b864d0ddc5f79fd"
+}

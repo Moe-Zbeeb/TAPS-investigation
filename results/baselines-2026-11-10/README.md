@@ -39,7 +39,7 @@ There were 366/2,400 repeated greedy pairs with token mismatches for EAGLE-3, 16
 
 The three acceptance-length outliers are EAGLE-3 at temperature one: GSM8K (+18.71%), MT-Bench (+7.23%) and HumanEval (+5.29%). Their cause is unestablished. GSM8K's separately reported pooled tau is 4.499 versus question-mean 5.449; the published target is 4.59. This difference motivates checking reduction conventions but does not justify substituting a post hoc metric or changing the registered gate. The pinned upstream speed script computes speed, without providing an acceptance-length reducer that resolves this question.
 
-A selected-failure replay diagnostic is recorded in [the audit protocol](../../experiments/greedy-audit-20261110/README.md). Full-model temperature-one distributional correctness remains unvalidated. Specialist training remains gated.
+The [selected-failure precision control](../greedy-audit-2026-11-10/README.md) reproduced all 24 selected FP16 disagreements and observed FP32 agreement at the disputed token in all 24 cases. This supports numerical sensitivity in those cases; the original failed gate remains unchanged. Full-model temperature-one distributional correctness remains unvalidated. Specialist training remains gated.
 
 ## Hardware and interpretation
 

@@ -13,3 +13,5 @@ These files establish the recorded execution checks. The smoke does not pass the
 Full reproduction tables and specialist, pooled-tree and serving research results will be generated from their complete registered raw records. No such completed research result is claimed here. The [implementation status](../experiments/IMPLEMENTATION_STATUS.md) identifies the remaining work.
 
 The [full released-baseline panel](baselines-2026-11-10/README.md) completed 22,400 generations. Its strict reproduction gate failed; the linked report preserves all 22 cells, mismatches, intervals and input identities.
+
+The [greedy numerical control](greedy-audit-2026-11-10/README.md) reproduced 24 selected FP16 failures and observed FP32 agreement at their disputed tokens, with original common prefixes verified. This diagnostic does not establish full-panel correctness.

@@ -9,3 +9,7 @@ Run one worker on each of the eight held A100 80GB GPUs, separately for EAGLE-3,
 The driver records missing captures, prefix validity, exact replay repeatability and logit differences. A precision change may change earlier tokens; a capture whose prefix differs is not evidence about the original disputed decision. Selected-case behavior cannot establish global greedy equivalence or full-model sampling correctness. The original failed benchmark report remains the reference result.
 
 The source is a frozen site-specific experiment driver, not a general allocation launcher. Its historical run IDs and allocation guard must never be treated as evidence that an allocation is still owned. Verify the live holder and successor before any new submission and use a fresh output directory. GPU work must remain inside the verified allocation. The recorded execution artifacts are under `outputs/greedy-audits/official-20261110-v1` on the cluster.
+
+## Recorded outcome
+
+All six waves completed on 10 November: 48 workers and 96 paired replays. The 24 original FP16 disagreements reproduced; all 24 FP32 controls agreed at the disputed token, with the original common prefix valid in every capture. See [the diagnostic results](../../results/greedy-audit-2026-11-10/README.md) for per-method measurements and limits. The failed full-panel benchmark gate remains unchanged.

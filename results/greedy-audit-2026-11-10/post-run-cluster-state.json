@@ -1,0 +1,41 @@
+{
+  "observed_at_utc": "2026-11-10T09:27:33.897262+00:00",
+  "holder": {
+    "job_id": "2212576",
+    "node": "deep-chungus-10",
+    "successor": "2212580",
+    "partition": "high-priority",
+    "qos": "spec-priority",
+    "gpus": 8,
+    "mode": "hold-for-user",
+    "started_at": "2026-11-09T12:41:31.335549+00:00",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodes=1",
+      "--exclusive",
+      "--nodelist=deep-chungus-10",
+      "--gres=gpu:a100:8",
+      "--ntasks=1",
+      "--cpus-per-task=64",
+      "--time=2-00:00:00",
+      "--dependency=afterany:2212576",
+      "--job-name=deep10-hold",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold-%j.log",
+      "--wrap",
+      "python3 /mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold.py"
+    ]
+  },
+  "queue": "           JOBID    PARTITION               NAME      STATE  NODES NODELIST(REASON)\n         2212580 high-priorit        deep10-hold    PENDING      1 (Dependency)\n         2212576 high-priorit        deep10-hold    RUNNING      1 deep-chungus-10\n",
+  "compute_processes": "",
+  "gpu_inventory": "0, GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434, NVIDIA A100 80GB PCIe, 0 MiB, 0 %\n1, GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641, NVIDIA A100 80GB PCIe, 0 MiB, 0 %\n2, GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a, NVIDIA A100 80GB PCIe, 0 MiB, 0 %\n3, GPU-1870ead3-a098-9d90-ed88-aac3941baf95, NVIDIA A100 80GB PCIe, 0 MiB, 0 %\n4, GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8, NVIDIA A100 80GB PCIe, 0 MiB, 0 %\n5, GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797, NVIDIA A100 80GB PCIe, 0 MiB, 0 %\n6, GPU-01fcdb82-ccf6-4d20-c903-23911d81031a, NVIDIA A100 80GB PCIe, 0 MiB, 0 %\n7, GPU-61620af6-dea3-e5b0-dc25-b8d057be615d, NVIDIA A100 80GB PCIe, 0 MiB, 0 %\n",
+  "reserved_gpus": 8,
+  "active_gpu_processes": 0,
+  "holder_and_successor_modified": false,
+  "reference_group": "outputs/reference-groups/official-20261110-v1",
+  "diagnostic": "outputs/greedy-audits/official-20261110-v1"
+}

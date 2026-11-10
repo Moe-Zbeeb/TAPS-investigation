@@ -1,0 +1,18 @@
+{
+  "scope": "selected_failure_diagnostic_not_benchmark",
+  "inventory": [
+    "0, GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434, NVIDIA A100 80GB PCIe, 81920 MiB",
+    "1, GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641, NVIDIA A100 80GB PCIe, 81920 MiB",
+    "2, GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a, NVIDIA A100 80GB PCIe, 81920 MiB",
+    "3, GPU-1870ead3-a098-9d90-ed88-aac3941baf95, NVIDIA A100 80GB PCIe, 81920 MiB",
+    "4, GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8, NVIDIA A100 80GB PCIe, 81920 MiB",
+    "5, GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797, NVIDIA A100 80GB PCIe, 81920 MiB",
+    "6, GPU-01fcdb82-ccf6-4d20-c903-23911d81031a, NVIDIA A100 80GB PCIe, 81920 MiB",
+    "7, GPU-61620af6-dea3-e5b0-dc25-b8d057be615d, NVIDIA A100 80GB PCIe, 81920 MiB"
+  ],
+  "cases_sha256": "8531e8783a470ac8d77a0b69f77ffaa3bd0ba49c01182b526d3ee694a8c757a8",
+  "script_sha256": "b2f239dd674362b364e8edc813d3c17e71b89a8c947023d3e084ba8786739b85",
+  "selection": "Eight earliest repeat-zero token failures per method, round-robin over benchmarks; descriptive selection, no rate estimate",
+  "original_inference_inputs_modified": false,
+  "created_at_utc": "2026-11-10T09:20:05.088028+00:00"
+}

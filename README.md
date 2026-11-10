@@ -2,7 +2,7 @@
 
 Research code for studying specialist drafters under mixed traffic, following the [TAPS rebuild plan](TAPS_rebuild_plan.pdf). The project connects official-baseline reproduction, controlled specialization experiments, fixed-budget candidate pooling, shared-body experts and serving evaluation. The Python module is `taps_rebuild`.
 
-[Getting started](docs/GETTING_STARTED.md) · [Reproduction protocol](experiments/official-reproduction-20261109/PREREGISTRATION.md) · [Implementation status](experiments/IMPLEMENTATION_STATUS.md) · [References](references/README.md)
+[Getting started](docs/GETTING_STARTED.md) · [Reproduction protocol](experiments/official-reproduction-20261109/PREREGISTRATION.md) · [Implementation status](experiments/IMPLEMENTATION_STATUS.md) · [Current stages](experiments/STATUS_20261110.md) · [References](references/README.md)
 
 ```mermaid
 flowchart LR
@@ -14,7 +14,7 @@ flowchart LR
 
 ## Evidence and current scope
 
-This snapshot contains research infrastructure, full baseline measurements and recorded engineering evidence. The full **22-cell released-baseline panel completed 22,400 generations; its reproduction gate failed**. Acceptance length met tolerance in 19/22 cells, but greedy token disagreements and three sampling outliers require investigation. See the [full results](results/baselines-2026-11-10/README.md). Scientific generalist/specialist training, full-model temperature-one validation and custom pooled-tree serving remain outstanding.
+This snapshot contains research infrastructure, full baseline measurements and recorded engineering evidence. The full **22-cell released-baseline panel completed 22,400 generations; its reproduction gate failed**. Acceptance length met tolerance in 19/22 cells, but greedy token disagreements and three sampling outliers require investigation. See the [full results](results/baselines-2026-11-10/README.md). A [precision control](results/greedy-audit-2026-11-10/README.md) reproduced 24 selected FP16 failures and observed FP32 agreement at each disputed token. Scientific generalist/specialist training, full-model temperature-one validation and custom pooled-tree serving remain outstanding.
 
 Engineering records dated 9 November 2026 document checks on eight A100 80GB GPUs:
 
