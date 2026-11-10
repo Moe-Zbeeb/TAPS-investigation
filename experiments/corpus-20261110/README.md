@@ -59,3 +59,7 @@ The source-bound admission audit recomputes the registered checks from actual ra
 Training remains blocked. The full FP32 greedy panel has 3 mismatches among 1,120 pairs, and the original strict 22-cell gate did not pass. The 60-case conditional audit completed with zero failed registered checks; its 7,864,320 draws include both posterior and target-reference samplers. The separate end-to-end screen completed all 61,440 continuations with zero failed registered checks. The controlling [temperature-one proposal](../verification/TEMPERATURE_ONE_AUDIT_PLAN.md) and [workspace instructions](../../AGENTS.md) also require independent review of the validator and its admission interpretation. No approval is supplied or inferred by these scripts.
 
 The protected deep10 holder and successor are preserved. At submission, the two running high-priority nodes account for 16 A100 80GB GPUs. The pending profile can start only after the current deep11 job has ended, preserving the 18-GPU allowance. Deep-h-1 failed its CUDA health check and is not used for computation.
+
+## Scheduled independent follow-up
+
+Job `2215000` follows the current node11 job with the complete FP32 greedy control and then the EAGLE-2/HASS reference replication. Its [registration](REPLICATION_FOLLOWUP.md) preserves all original cases and keeps new outputs separate from the failed original baseline. The successor uses the same eight-GPU node and keeps total running high-priority use at 16 GPUs when eligible.
