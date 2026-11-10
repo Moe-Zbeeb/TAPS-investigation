@@ -135,6 +135,12 @@
       "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/corpus-continuation-20261110-v1.sh"
     ],
     "script_sha256": "b11fcee7f14946100c911982b9afac41d942f47163060b6bebffcbb8d8ceeaaa",
-    "source_bundle_sha256": "c855ea8f24521ce64f636624e237b4f80af5d4e7437d8479cc6af82f0b162b65"
+    "source_bundle_sha256": "c855ea8f24521ce64f636624e237b4f80af5d4e7437d8479cc6af82f0b162b65",
+    "active_script_sha256": "9bf5103ed4a4f46044de6839260f9e84d51c229149fbb9ae82082e0dff1a71a0",
+    "active_source_bundle_sha256": "8adc9a117f681c716ad3abda8b3a8fa58db0a909d40cca3dfdee4ff5c1a4e41c",
+    "amendment": {
+      "reason": "Handle preemption and requeue of the completion coordinator itself",
+      "previous_script_sha256": "b11fcee7f14946100c911982b9afac41d942f47163060b6bebffcbb8d8ceeaaa"
+    }
   }
 }

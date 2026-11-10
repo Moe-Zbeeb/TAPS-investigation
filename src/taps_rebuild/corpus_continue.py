@@ -58,7 +58,9 @@ def run(root, plan_path, coordinator):
         corpus_generate.check(previous['plan_identity_sha256'] == plan['identity_sha256'], 'Previous GPU attempt belongs to another plan')
         previous_job = previous['hardware']['job_id']
         original = job_record(coordinator)
-        recovery = allow_resume(job_record(previous_job).get('JobState'), original.get('JobState'), int(original.get('Restarts', '0')))
+        own = job_record(os.environ['SLURM_JOB_ID'])
+        restarts = max(int(original.get('Restarts', '0')), int(own.get('Restarts', '0')))
+        recovery = allow_resume(job_record(previous_job).get('JobState'), original.get('JobState'), restarts)
         while recovery:
             deadline = time.monotonic() + 3600
             while True:
