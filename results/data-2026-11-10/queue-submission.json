@@ -45,7 +45,7 @@
       "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/audit-20261110-v3.sh"
     ],
     "script_sha256": "e592f6107d962a8e3952d80f121ecfc41666b7f478e0825dc3f6ec966aad3c34",
-    "active_script_sha256": "c83e6354b0cbe4a10490d2d28db33a85cd25ac58d3ba1e365f5f0619b0cacbca",
+    "active_script_sha256": "40a854e3a403e270ee76d3e13a4b5352a02117b698e0a3f49cbaa8a71908bbcd",
     "active_dependency": "afterok:2214983:2214872"
   },
   "profile": {
@@ -72,7 +72,7 @@
       "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/profile-20261110-v3.sh"
     ],
     "script_sha256": "7fcd6ea168245abd1ace9b554f7878398821d98faaffdf1bae99b3f1c11888db",
-    "active_script_sha256": "33a96d8799a40278a842e6e67001bcb20bac9e8361ab50de9841721c248b78b7"
+    "active_script_sha256": "90a548593b33780432df7c5283470df26ab080888e0ff413bea6c09a0d2759b7"
   },
   "validation_job_id": "2214872",
   "source_corpus": "data/corpora/sharegpt-ultrachat-20261110-v2",
@@ -99,10 +99,20 @@
       "job_id": "2214979",
       "before_sha256": "7fcd6ea168245abd1ace9b554f7878398821d98faaffdf1bae99b3f1c11888db",
       "after_sha256": "33a96d8799a40278a842e6e67001bcb20bac9e8361ab50de9841721c248b78b7"
+    },
+    {
+      "job_id": "2214978",
+      "before_sha256": "c83e6354b0cbe4a10490d2d28db33a85cd25ac58d3ba1e365f5f0619b0cacbca",
+      "after_sha256": "40a854e3a403e270ee76d3e13a4b5352a02117b698e0a3f49cbaa8a71908bbcd"
+    },
+    {
+      "job_id": "2214979",
+      "before_sha256": "33a96d8799a40278a842e6e67001bcb20bac9e8361ab50de9841721c248b78b7",
+      "after_sha256": "90a548593b33780432df7c5283470df26ab080888e0ff413bea6c09a0d2759b7"
     }
   ],
-  "active_training_bundle_sha256": "ccbd2ef3095a0ca4fc43bc65fac18fa6583bda48ef7bf17777141b201344e61a",
-  "active_training_config_sha256": "2c0bd4072a7861d32709a8648bc6ebbc6a62403ddfd1c8c5404b5ec856dd595f",
+  "active_training_bundle_sha256": "fedb3f7709b46376c57bae59203c82794d6715296044954b082fb310d62fee3e",
+  "active_training_config_sha256": "6ea235f9d6b21f67b96fe1d56df91c51eb8004dbbfd77d463bc87799f64b8323",
   "data_completion_guard": {
     "job_id": "2214983",
     "command": [

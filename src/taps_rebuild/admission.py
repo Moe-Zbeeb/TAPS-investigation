@@ -130,6 +130,7 @@ def audit(root, driver_path, prepared_path, primary, screen, proof, review_path=
     checks = {}
     from transformers import AutoTokenizer
     tokenizers = {method: AutoTokenizer.from_pretrained(prepared['methods'][method]['models']['target']['path'], local_files_only=True) for method in METHODS}
+    vocabulary_sizes = {method: len(tokenizer) for method, tokenizer in tokenizers.items()}
     stops = {}
     for method, tokenizer in tokenizers.items():
         eos = tokenizer.eos_token_id
@@ -184,7 +185,7 @@ def audit(root, driver_path, prepared_path, primary, screen, proof, review_path=
                         tokens = row['comparison_token_ids']
                         raw = row['output_token_ids']
                         first_stop = next((index for index, token in enumerate(raw) if token in stops[method]), None)
-                        require(tokens == raw[:min(32, first_stop + 1 if first_stop is not None else len(raw))] and all(type(token) is int and 0 <= token < len(tokenizers[method]) for token in raw), 'End-to-end token or termination rule differs')
+                        require(tokens == raw[:min(32, first_stop + 1 if first_stop is not None else len(raw))] and all(type(token) is int and 0 <= token < vocabulary_sizes[method] for token in raw), 'End-to-end token or termination rule differs')
                         events = driver.continuation_events(tokens, stops[method])
                         require(events == row['events'] and driver.identity(row['input_token_ids']) == row['input_sha256'], 'End-to-end events or input identity differ')
                         values = totals.setdefault((method, row['mode']), [0] * 12)

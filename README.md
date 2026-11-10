@@ -14,7 +14,7 @@ flowchart LR
 
 ## Evidence and current scope
 
-This snapshot contains research infrastructure, full baseline measurements and recorded engineering evidence. The full **22-cell released-baseline panel completed 22,400 generations; its reproduction gate failed**. Acceptance length met tolerance in 19/22 cells, but greedy token disagreements and three sampling outliers require investigation. See the [full results](results/baselines-2026-11-10/README.md). A [precision control](results/greedy-audit-2026-11-10/README.md) reproduced 24 selected FP16 failures and observed FP32 agreement at each disputed token. Scientific generalist/specialist training, full-model temperature-one validation and custom pooled-tree serving remain outstanding.
+This snapshot contains research infrastructure, full baseline measurements and recorded engineering evidence. The full **22-cell released-baseline panel completed 22,400 generations; its reproduction gate failed**. Acceptance length met tolerance in 19/22 cells, but greedy token disagreements and three sampling outliers require investigation. See the [full results](results/baselines-2026-11-10/README.md). A [precision control](results/greedy-audit-2026-11-10/README.md) reproduced 24 selected FP16 failures and observed FP32 agreement at each disputed token. Scientific generalist/specialist training, independent validator review and custom pooled-tree serving remain outstanding.
 
 Engineering records dated 9 November 2026 document checks on eight A100 80GB GPUs:
 
@@ -28,7 +28,7 @@ The [evidence index](results/README.md) contains selected machine-readable recei
 
 The publication source check ran 333 tests with nine Torch-dependent tests skipped on macOS. CPU source checks and CUDA execution are separate evidence. CI runs the CPU suite on Python 3.10 and 3.12.
 
-The [active validation queue](experiments/validation-queue-20261110/SCHEDULING.md) chains the next controls across two full A100 80GB nodes. Its results remain pending; no scientific training is admitted by these jobs.
+The [active validation queue](experiments/validation-queue-20261110/SCHEDULING.md) chains the next controls across two full A100 80GB nodes. The conditional audit and 61,440-continuation screen passed their registered checks; the full FP32 greedy control retained 3 mismatches among 1,120 pairs. Independent EAGLE-3 replication is still running; scientific training remains blocked.
 
 ShareGPT and UltraChat [source preparation](experiments/corpus-20261110/README.md) now contains 540,107 grouped conversations, including 284,115 with complete original answers. Target-response generation and a dependent eight-GPU native training profile have separate frozen launchers. Training remains blocked by the failed scientific checks and required validator review.
 
