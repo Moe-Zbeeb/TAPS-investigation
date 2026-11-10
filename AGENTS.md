@@ -8,6 +8,8 @@ The default configurations and historical launch helpers describe a validated CS
 
 Keep a running experiment's deployed source, configuration, preparation receipts and hardware mapping frozen. Stage changes separately until that experiment completes. Do not redeploy a publication snapshot into an active run.
 
+Schedule known runnable successors in advance using verified Slurm dependencies or a frozen sequential controller. Prefer full-node high-priority work within the user's allowance, use authorized idle normal-priority capacity when available, and retain correctness and research-admission gates between dependent scientific stages. Do not submit placeholder training to keep GPUs busy.
+
 Distinguish fetched code, installed packages, engineering execution and scientific results. Reproduce the registered official baselines and complete the full-model temperature-one validation before specialist training is admitted. The current scientific gate remains closed until the required validator is implemented and reviewed.
 
 Measure wall time directly. Never derive speedup from acceptance length. Generate tables from raw records, retain per-prompt and per-cycle provenance, and report incomplete coverage and failed comparisons honestly. Historical TAPS values and engineering smoke measurements are not new full-panel research results.

@@ -26,7 +26,9 @@ Engineering records dated 9 November 2026 document checks on eight A100 80GB GPU
 
 The [evidence index](results/README.md) contains selected machine-readable receipts, and the [engineering report](experiments/engineering-20261109/RESULTS.md) explains their limits. Large raw logs, preparation artifacts, weights and datasets are excluded from this Git snapshot. Paths to these artifacts in experiment documents identify external records. These small checks do not establish drafter quality, published-number reproduction or production speedup.
 
-The publication source check ran 325 tests with eight Torch-dependent tests skipped on macOS. CPU source checks and CUDA execution are separate evidence. CI runs the CPU suite on Python 3.10 and 3.12.
+The publication source check ran 333 tests with nine Torch-dependent tests skipped on macOS. CPU source checks and CUDA execution are separate evidence. CI runs the CPU suite on Python 3.10 and 3.12.
+
+The [active validation queue](experiments/validation-queue-20261110/SCHEDULING.md) chains the next controls across two full A100 80GB nodes. Its results remain pending; no scientific training is admitted by these jobs.
 
 ## Start on CPU
 

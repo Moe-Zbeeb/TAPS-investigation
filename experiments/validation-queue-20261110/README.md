@@ -1,0 +1,15 @@
+# Scheduled validation controls
+
+These jobs implement the next correctness measurements before scientific training. They retain the original failed 22-cell report and cannot admit training by themselves.
+
+Read the [frozen input registration](PREREGISTRATION.md), [controlling sampling proposal](../verification/TEMPERATURE_ONE_AUDIT_PLAN.md), and [execution/scheduling addendum](SCHEDULING.md). The addendum records the submitted allocations, startup failure, isolated revision, actual CPU Torch regression, and H100 failure.
+
+The driver has four actions: `prepare` freezes source-bound original prefixes and the predetermined ten-prompt sampling panel in a CPU Slurm job; `controller` verifies full-node ownership and CUDA health, then runs a separate process on every assigned GPU; `worker` executes one method/shard; `health` performs a bounded allocation-only device check. `chain.py` runs excluded startup checks before the registered full budgets, then starts the independent reference replication on the second A100 node.
+
+Each validation uses a fresh output directory. Existing original run directories, source, checkpoints and receipts remain unchanged. The executed driver and inputs are frozen under the cluster `outputs/` tree and bound by SHA256. Source revisions receive separate bundles and explicit input migrations. Never edit a running bundle or reuse its output directory.
+
+The full primary sequence is FP32 greedy conditional equivalence over 1,120 original repeat-zero question-turn pairs, followed by 60 real-model conditional T=1 cases with 65,536 native posterior calls and 65,536 independent target categorical draws per case. The second node runs 61,440 complete short AR/speculative continuations, then a separately named full EAGLE-3 replication with a fresh base seed and the original five-repeat protocol. Sampling margins concern only the declared events and populations; they are not a bound on all full-model output distributions.
+
+Reports check raw/worker hashes, expected coverage and duplicate samples. Same-seed equality is used for the deterministic greedy control; sampling uses distinct mode-specific seed streams. Tests verify collision-free registered seeds, termination and repeated-gram event definitions, simultaneous-bound constants, malformed coverage rejection, raw corruption, duplicate rejection and the actual inference-cache regression. Scientific training remains behind separate reviewed admission gates.
+
+The default paths and runtime interpreters are site-specific. Create an isolated bundle containing the driver, chain, registration, a copy of the controlling sampling proposal, the original-compatible source package and the explicit independent-replication configuration. Run preparation in Slurm, verify its receipt, and submit the controller in a live owned full-node allocation. Exact submitted commands are retained in the cluster launcher receipts; saved allocation IDs in documentation must never be reused without live ownership verification.

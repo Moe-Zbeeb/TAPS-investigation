@@ -13,7 +13,7 @@ PYTHONPATH=src python3 -B -m taps_rebuild --help
 PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests
 ```
 
-The core command inventory and lightweight source suite can be inspected without installing a CUDA environment. Torch-dependent tests skip when Torch is unavailable. The publication check ran 325 tests with eight such skips on macOS; that result does not establish GPU execution.
+The core command inventory and lightweight source suite can be inspected without installing a CUDA environment. Torch-dependent tests skip when Torch is unavailable. The publication check ran 333 tests with nine such skips on macOS; that result does not establish GPU execution.
 
 Keep the checkout available when working with the pipeline: configurations, protocols and the rebuild PDF are repository inputs. Python package metadata alone does not provision GPU dependencies, model weights, upstream checkouts or preparation receipts.
 
