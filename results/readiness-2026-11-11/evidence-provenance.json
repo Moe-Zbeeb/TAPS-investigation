@@ -62,5 +62,25 @@
   "restart-ranks.json": {
     "path": "collected original rank receipts; each source path and file SHA256 retained",
     "sha256": "39f271fefccd80c94415da10bbfda23927d4e5b50e89cdd89b3c1e8b679e1954"
+  },
+  "pipeline-v3-replay.json": {
+    "path": "outputs/pipeline-validation/pipeline-20261111-v3/replay.json",
+    "sha256": "687ec4ac53f1ba3160db9891e592dce66cb384e69f516551d2e7745be7426295"
+  },
+  "restart-v4-report.json": {
+    "path": "outputs/native-restart/native-restart-20261111-v4/report.json",
+    "sha256": "8b30ec44b67e9daada835ba6d4f4f7839d4de219185de0bea6336ac9a707d905"
+  },
+  "restart-v4-prepared.json": {
+    "path": "outputs/native-restart/native-restart-20261111-v4/prepared.json",
+    "sha256": "2cec4e1a0fab246f2f35af190ba9d999622d99a7d20a4dcbf244fa1c2ed72d5b"
+  },
+  "export-v3-report.json": {
+    "path": "outputs/native-export/native-export-20261111-v3/report.json",
+    "sha256": "c85f398f81221a595f884a801e5e0127b53e5390f7a973f457aa6f9c25b4bfc3"
+  },
+  "retired-paper-queue.json": {
+    "path": "outputs/preparation/pipeline-validation-20261111-v2/retired-paper-queue.json",
+    "sha256": "730427ac66586c6d249e8843d4e333427e915d608710a0f7044680171fdfa5b2"
   }
 }

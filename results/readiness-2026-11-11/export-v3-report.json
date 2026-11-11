@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "scope": "Eight-GPU stock native inference of the two-update engineering export; no quality or speed benchmark",
+  "native_training_sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+  "native_recovery_sha256": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+  "manifest_sha256": "f9e7b4e3f31d45752c4fc1f50b5c08c0524ac521f348d70b72546bc9efc0dbc2",
+  "ranks": [
+    {
+      "rank": 0,
+      "passed": true,
+      "receipt_sha256": "f8d1fd6a819a4735f71f9b61ca32c1b9b8d2dc40e151c32a10789a00605ad066"
+    },
+    {
+      "rank": 1,
+      "passed": true,
+      "receipt_sha256": "e88594314af55da7bec1451caaf9452b2b875d862d1db8ae8fbaafa6479bf827"
+    },
+    {
+      "rank": 2,
+      "passed": true,
+      "receipt_sha256": "4122fbf4605a443194fe243c8ccde127db2987586a90390c06c4819791f123ab"
+    },
+    {
+      "rank": 3,
+      "passed": true,
+      "receipt_sha256": "3e9be453ce7ef3279290ec0ef132a3de57974e88ea70843e008419852d791286"
+    },
+    {
+      "rank": 4,
+      "passed": true,
+      "receipt_sha256": "4ee02cf1e11f83e92694d9d7a087cec63795e362f131c637fa14f928d3ebd4af"
+    },
+    {
+      "rank": 5,
+      "passed": true,
+      "receipt_sha256": "7bb04cb793bb7129c8e4b5cc8f61e6ca2b65700417170e879fb5e586186f5a2f"
+    },
+    {
+      "rank": 6,
+      "passed": true,
+      "receipt_sha256": "61c28dd19c5a5816c71cd7cc31a3bf9cc2c15fbbca3caf8ef7638f3e877221fe"
+    },
+    {
+      "rank": 7,
+      "passed": true,
+      "receipt_sha256": "5b7e6dd451d417fb576e9e1fee58170115787ce0ad460a646293773113f11de9"
+    }
+  ],
+  "training_admission": false,
+  "completed_at_utc": "2026-11-11T17:03:55.652348+00:00"
+}
