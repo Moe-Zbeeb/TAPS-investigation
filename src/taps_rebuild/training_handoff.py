@@ -28,7 +28,7 @@ def prepare(root, config_path):
     admission.require(os.environ.get('CUDA_VISIBLE_DEVICES') == '', 'Full training preparation requires CPU Slurm')
     root = Path(root).resolve()
     config = admission.read(config_path)
-    admission.require(all(isinstance(config.get(key), str) and re.fullmatch('[A-Za-z0-9][A-Za-z0-9_.-]{0,127}', config[key]) for key in ('run_id', 'profile_run_id')) and config.get('requires_original_scientific_gates') is True, 'Full training requires valid run identities and the original scientific gates')
+    admission.require(all(isinstance(config.get(key), str) and re.fullmatch('[A-Za-z0-9][A-Za-z0-9_.-]{0,127}', config[key]) for key in ('run_id', 'profile_run_id')) and (config.get('requires_original_scientific_gates') is True or config.get('requires_scientific_gates') is True and config.get('admission_policy') == 'pipeline-v2'), 'Full training requires valid run identities and scientific gates')
     directory = root / 'outputs/training-handoff' / config['run_id']
     directory.mkdir(parents=True, exist_ok=True)
     if (directory / 'status.json').exists():
@@ -47,6 +47,8 @@ def prepare(root, config_path):
         plan_path = Path(prior_status['native_plan'])
         admission.require(admission.digest(plan_path) == prior_status['native_plan_sha256'] == profile['native_plan_sha256'], 'Completed profile plan changed')
         profile_plan = native.load_plan(plan_path)
+        if config.get('admission_policy') == 'pipeline-v2':
+            admission.require(profile_plan['config']['research_gate'].get('policy') == 'pipeline-v2', 'The full handoff requires the independently reviewed v2 pipeline gate')
         admission.require(profile_plan['scope'] == 'native_training' and profile_plan['config']['initialize_from_released_draft'] is False, 'Full reproduction requires an admitted scratch-native profile')
         admission.require('work/cache.pt' in profile_plan['frozen_files'] and 'inputs/vocabulary-audit.json' in profile_plan['frozen_files'], 'A source-bound CPU-prepared native vocabulary is required')
         full_config = {**profile_plan['config'], 'budget': {'optimizer_steps': None}, 'checkpoint_roundtrip': False, 'recovery': {'checkpoint_interval': 1000, 'stop_after_optimizer_step': None}, 'qualification': 'Full forty-epoch scratch native ShareGPT/UltraChat generalist reproduction; quality requires subsequent held-out evaluation'}

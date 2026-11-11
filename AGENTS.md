@@ -10,7 +10,7 @@ Keep a running experiment's deployed source, configuration, preparation receipts
 
 Schedule known runnable successors in advance using verified Slurm dependencies or a frozen sequential controller. Prefer full-node high-priority work within the user's allowance, use authorized idle normal-priority capacity when available, and retain correctness and research-admission gates between dependent scientific stages. Do not submit placeholder training to keep GPUs busy.
 
-Distinguish fetched code, installed packages, engineering execution and scientific results. Reproduce the registered official baselines and complete the full-model temperature-one validation before specialist training is admitted. The current scientific gate remains closed until the required validator is implemented and reviewed.
+Distinguish fetched code, installed packages, engineering execution and scientific results. The user's 11 November instruction makes matching paper comparisons nonblocking; retain those historical failures unchanged. Complete source-bound full-model pipeline validation and independent evidence review before scientific training is admitted. The versioned v2 policy preserves correctness, data QA and engineering qualification gates.
 
 Measure wall time directly. Never derive speedup from acceptance length. Generate tables from raw records, retain per-prompt and per-cycle provenance, and report incomplete coverage and failed comparisons honestly. Historical TAPS values and engineering smoke measurements are not new full-panel research results.
 

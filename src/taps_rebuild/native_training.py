@@ -190,8 +190,12 @@ def validate_config(value):
         raise NativeTrainingError('Engineering mode requires released initialization and a one/two optimizer-step ceiling')
     if value['scope'] == 'native_training' and value.get('initialize_from_released_draft'):
         raise NativeTrainingError('Released warm starts are currently engineering-only, not scratch native reproduction')
-    if value['scope'] == 'native_training' and (not isinstance(value.get('research_gate'), dict) or set(value['research_gate']) != {'reproduction_report', 'reproduction_config_sha256', 'full_model_temperature_one_report'}):
-        raise NativeTrainingError('Native research requires pinned all-method reproduction and full-model temperature-one research_gate evidence')
+    if value['scope'] == 'native_training':
+        gate = value.get('research_gate')
+        old = {'reproduction_report', 'reproduction_config_sha256', 'full_model_temperature_one_report'}
+        new = {'policy', 'pipeline_certificate', 'independent_review'}
+        if not isinstance(gate, dict) or set(gate) not in (old, new) or set(gate) == new and gate['policy'] != 'pipeline-v2':
+            raise NativeTrainingError('Native research_gate requires pinned source-bound validation and independent review evidence')
     if value.get('checkpoint_roundtrip') and budget['optimizer_steps'] is None:
         raise NativeTrainingError('The external checkpoint roundtrip requires a bounded optimizer-step run; disable it for the unchanged forty-epoch native command')
     if value.get('recovery') is not None:
@@ -216,6 +220,21 @@ def research_gate(root, config):
     if config['scope'] == 'engineering':
         return {'status': 'synthetic_engineering_only', 'scientific_training_authorized': False}
     evidence = config['research_gate']
+    if evidence.get('policy') == 'pipeline-v2':
+        report = gate_document(root, evidence['pipeline_certificate'], 'pipeline_certificate')
+        gate_document(root, evidence['independent_review'], 'independent_review')
+        if report.get('native_training_sha256') != digest(__file__):
+            raise NativeTrainingError('Pipeline review covers another native training implementation')
+        helper = Path(__file__).with_name('admission_v2.py')
+        name = 'frozen_pipeline_' + digest(helper)
+        spec = importlib.util.spec_from_file_location(name, helper, submodule_search_locations=[str(helper.parent)])
+        verifier = importlib.util.module_from_spec(spec)
+        sys.modules[name] = verifier
+        spec.loader.exec_module(verifier)
+        try:
+            return verifier.verify_certificate(root, report, evidence['independent_review'])
+        except ValueError as error:
+            raise NativeTrainingError('Pipeline validation is closed: ' + str(error)) from error
     registry_path = Path(root) / 'configs/reproduction.json'
     if digest(registry_path) != evidence['reproduction_config_sha256']:
         raise NativeTrainingError('Research reproduction configuration SHA256 differs')
@@ -342,6 +361,9 @@ def prepare(root, config_path, train_path, validation_path, run_dir):
         shutil.copyfile(source_file, inputs / name)
     if config['scope'] == 'native_training':
         shutil.copyfile(Path(__file__).with_name('admission.py'), inputs / 'admission.py')
+        if config['research_gate'].get('policy') == 'pipeline-v2':
+            for name in ('admission_v2.py', 'numerical_validation.py'):
+                shutil.copyfile(Path(__file__).with_name(name), inputs / name)
     if config.get('recovery') is not None:
         shutil.copyfile(Path(__file__).with_name('native_recovery.py'), inputs / 'native_recovery.py')
     for label, data in (('train', train), ('validation', validation)):

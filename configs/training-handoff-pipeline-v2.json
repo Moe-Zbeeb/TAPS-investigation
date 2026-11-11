@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "run_id": "sharegpt-ultrachat-full-pipeline-20261111-v2",
+  "profile_run_id": "sharegpt-ultrachat-pipeline-20261111-v2",
+  "restart_qualification": "outputs/native-restart/native-restart-20261111-v4/report.json",
+  "export_qualification": "outputs/native-export/native-export-20261111-v3/report.json",
+  "requires_scientific_gates": true,
+  "admission_policy": "pipeline-v2",
+  "full_native_epochs": 40,
+  "recovery_checkpoint_retention": 2,
+  "scope": "Full generalist handoff after independently admitted pipeline validation, real-data profile, data QA and source-matched engineering qualifications; historical paper matching is nonblocking"
+}

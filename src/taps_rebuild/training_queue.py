@@ -18,9 +18,13 @@ def audit(root, config_path):
     status = {'status': 'checking_validation', 'config_sha256': admission.digest(config_path), 'training_started': False, 'created_at_utc': datetime.now(timezone.utc).isoformat()}
     pool.atomic_json(directory / 'status.json', status)
     try:
-        report = admission.audit(root, root / config['driver'], root / config['prepared'], root / config['primary'], root / config['screen'], root / config['proof'], root / config['review'])
-        pool.atomic_json(directory / 'full-model-certificate.json', report)
-        research_config = {**admission.read(root / config['native_template']), 'scope': 'native_training', 'initialize_from_released_draft': False, 'budget': {'optimizer_steps': config['profile_optimizer_steps']}, 'checkpoint_roundtrip': False, 'qualification': 'Scratch native real-data profiling; not the completed forty-epoch reproduction or a trained-quality benchmark', 'research_gate': {'reproduction_config_sha256': config['reproduction_config_sha256'], 'reproduction_report': config['reproduction_report'], 'full_model_temperature_one_report': {'path': str(directory / 'full-model-certificate.json'), 'sha256': admission.digest(directory / 'full-model-certificate.json')}}}
+        if config.get('admission_policy') == 'pipeline-v2':
+            research_gate = {'policy': 'pipeline-v2', 'pipeline_certificate': config['pipeline_certificate'], 'independent_review': config['independent_review']}
+        else:
+            report = admission.audit(root, root / config['driver'], root / config['prepared'], root / config['primary'], root / config['screen'], root / config['proof'], root / config['review'])
+            pool.atomic_json(directory / 'full-model-certificate.json', report)
+            research_gate = {'reproduction_config_sha256': config['reproduction_config_sha256'], 'reproduction_report': config['reproduction_report'], 'full_model_temperature_one_report': {'path': str(directory / 'full-model-certificate.json'), 'sha256': admission.digest(directory / 'full-model-certificate.json')}}
+        research_config = {**admission.read(root / config['native_template']), 'scope': 'native_training', 'initialize_from_released_draft': False, 'budget': {'optimizer_steps': config['profile_optimizer_steps']}, 'checkpoint_roundtrip': False, 'qualification': 'Scratch native real-data profiling; not the completed forty-epoch generalist or a trained-quality benchmark', 'research_gate': research_gate}
         pool.atomic_json(directory / 'native-profile-config.json', research_config)
         native_training.research_gate(root, research_config)
         completion_path = root / config['generated_corpus'] / 'completion.json'
@@ -33,7 +37,7 @@ def audit(root, config_path):
         cache = root / 'cache/native-eagle3'
         os.environ.update(HF_HOME=str(cache / 'huggingface'), HF_HUB_CACHE=str(cache / 'huggingface/hub'), HF_DATASETS_CACHE=str(cache / 'datasets'), XDG_CACHE_HOME=str(cache / 'xdg'), HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1')
         native_training.audit(run / 'plan.json')
-        status.update(status='passed', native_plan=str(run / 'plan.json'), native_plan_sha256=admission.digest(run / 'plan.json'), certificate_sha256=admission.digest(directory / 'full-model-certificate.json'))
+        status.update(status='passed', native_plan=str(run / 'plan.json'), native_plan_sha256=admission.digest(run / 'plan.json'), research_gate=research_gate)
     except Exception as error:
         status.update(status='blocked', error_type=type(error).__name__, reason=str(error))
         raise
