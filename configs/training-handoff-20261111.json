@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "run_id": "sharegpt-ultrachat-full-20261111-v1",
+  "run_id": "sharegpt-ultrachat-full-20261111-v2",
   "profile_run_id": "sharegpt-ultrachat-native-20261110",
-  "restart_qualification": "outputs/native-restart/native-restart-20261111-v2/report.json",
-  "export_qualification": "outputs/native-export/native-export-20261111-v1/report.json",
+  "restart_qualification": "outputs/native-restart/native-restart-20261111-v3/report.json",
+  "export_qualification": "outputs/native-export/native-export-20261111-v2/report.json",
   "requires_original_scientific_gates": true,
   "full_native_epochs": 40,
   "recovery_checkpoint_retention": 2,
