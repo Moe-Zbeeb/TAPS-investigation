@@ -267,6 +267,13 @@ def research_gate(root, config):
         raise NativeTrainingError(str(error)) from error
 
 
+def pipeline_dataset_gate(root, config, train, validation):
+    if config.get('research_gate', {}).get('policy') == 'pipeline-v2' and config.get('pipeline_stage') == 'full-generalist':
+        profile = gate_document(root, config['pipeline_stage_evidence']['profile_plan'], 'qualified_profile_plan')
+        if train['sha256'] != profile['train']['sha256'] or validation['sha256'] != profile['validation']['sha256']:
+            raise NativeTrainingError('Full training data differ from the qualified profile and vocabulary audit')
+
+
 def engineering_row(split, index):
     return {'example_id': 'native-engineering-' + split + '-' + str(index), 'split': split, 'response_regime': 'synthetic_engineering_reference', 'messages': [{'role': 'user', 'content': 'For the synthetic ' + split + ' fixture item ' + str(index) + ', write a short greeting.'}, {'role': 'assistant', 'content': 'Hello. This is synthetic engineering ' + split + ' fixture item ' + str(index) + '.'}]}
 
@@ -336,6 +343,7 @@ def prepare(root, config_path, train_path, validation_path, run_dir):
     if any(digest(upstream / name) != value for name, value in UPSTREAM.items()):
         raise NativeTrainingError('Pinned official training source bytes differ')
     train, validation = dataset_inventory(train_path), dataset_inventory(validation_path)
+    pipeline_dataset_gate(root, config, train, validation)
     if set(train['ids']) & set(validation['ids']) or set(train['prompt_identities']) & set(validation['prompt_identities']):
         raise NativeTrainingError('Native train and validation IDs/prompts overlap')
     if config['scope'] == 'engineering':
@@ -407,6 +415,7 @@ def load_plan(path):
     if marker.get('plan_identity_sha256') != identity:
         raise NativeTrainingError('Native trained-model run identity differs')
     validate_config(plan['config'])
+    pipeline_dataset_gate(plan['project_root'], plan['config'], plan['train'], plan['validation'])
     research_gate(plan['project_root'], plan['config'])
     if plan['config']['scope'] == 'engineering':
         engineering_data(plan['train']['frozen_path'], 'train', plan['config']['world_size'])

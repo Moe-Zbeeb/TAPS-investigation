@@ -55,7 +55,7 @@ def prepare(root, config_path):
         if config.get('admission_policy') == 'pipeline-v2':
             def descriptor(path):
                 return {'path': str(path), 'sha256': admission.digest(path)}
-            full_config.update(pipeline_stage='full-generalist', pipeline_stage_evidence={'profile_completion': descriptor(profile_directory / 'profile-completion.json'), 'profile_status': descriptor(profile_directory / 'status.json'), 'profile_plan': descriptor(plan_path), 'restart_qualification': status['qualifications']['restart_qualification'], 'export_qualification': status['qualifications']['export_qualification'], 'vocabulary_audit': descriptor(plan_path.parent / 'inputs/vocabulary-audit.json'), 'profile_rank_receipts': [descriptor(plan_path.parent / ('rank-' + str(rank) + '.json')) for rank in range(8)]})
+            full_config.update(pipeline_stage='full-generalist', pipeline_stage_evidence={'profile_completion': descriptor(profile_directory / 'profile-completion.json'), 'profile_status': descriptor(profile_directory / 'status.json'), 'profile_plan': descriptor(plan_path), 'profile_launch': descriptor(plan_path.parent / 'launch.json'), 'restart_qualification': status['qualifications']['restart_qualification'], 'export_qualification': status['qualifications']['export_qualification'], 'vocabulary_audit': descriptor(plan_path.parent / 'inputs/vocabulary-audit.json'), 'profile_rank_receipts': [descriptor(plan_path.parent / ('rank-' + str(rank) + '.json')) for rank in range(8)]})
         attempt = int(os.environ.get('SLURM_RESTART_COUNT', '0'))
         preparation = directory / ('preparation-attempt-' + str(attempt))
         preparation.mkdir(exist_ok=False)

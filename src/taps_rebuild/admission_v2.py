@@ -189,11 +189,13 @@ def audit(root, config):
     bind(p('prepared'), 'registered_inputs', legacy.PREPARED_SHA256)
     bind(p('driver'), 'registered_collector', legacy.DRIVER_SHA256)
     bind(p('native_training'), 'training_source')
+    bind(p('native_training').with_name('native_recovery.py'), 'training_recovery_source')
     checks = {'conditional': replay['checks']['conditional'], 'sampling': replay['checks']['sampling'], 'complete_registered_population': True, 'common_budget_panel': True, 'numerical_classification': numerical['status'] == 'passed', 'live_source_model_content': True}
     report = {'format': FORMAT, 'status': 'replay_passed_review_required' if all(checks.values()) else 'blocked', 'scope': 'Native released Llama8B EAGLE3/EAGLE2/HASS pipeline evidence; scratch native EAGLE3 generalist training only; no universal lossless/serving/pooled admission', 'checks': checks, 'coverage': COVERAGE, 'paper_matching_required': False, 'historical_report': {'path': str(p('historical_report')), 'sha256': legacy.digest(p('historical_report')), 'agreement_relabelled': False}, 'numerical': numerical, 'greedy': panel, 'provenance': provenance, 'rendered_prompt_identities': {method + ':' + str(index): legacy.identity(value) for (method, index), value in inputs.items()}, 'input_freeze_timing': 'Retrospective tokenizer/system reconstruction of retained draws, not a pre-draw token-ID freeze', 'validator_sha256': legacy.digest(__file__), 'numerical_validator_sha256': legacy.digest(numerical_validation.__file__), 'native_training_sha256': legacy.digest(p('native_training')), 'artifacts': sorted(artifacts.values(), key=lambda item: item['path']), 'checked_at_utc': datetime.now(timezone.utc).isoformat(), 'scientific_training_authorized': False}
     report['artifact_categories'] = dict(sorted(Counter(category for item in report['artifacts'] for category in item['categories']).items()))
     report['conditional_tv_diagnostics'] = conditional_diagnostics
     report['training_contract'] = TRAINING_CONTRACT
+    report['native_recovery_sha256'] = legacy.digest(p('native_training').with_name('native_recovery.py'))
     report['identity_sha256'] = legacy.identity(report)
     return report
 
@@ -243,25 +245,27 @@ def verify_training_scope(root, report, config):
         return
     legacy.require(stage == 'full-generalist' and config['budget'] == {'optimizer_steps': None} and config.get('recovery') == {'checkpoint_interval': 1000, 'stop_after_optimizer_step': None}, 'Full training requires the independently qualified generalist stage')
     evidence = config.get('pipeline_stage_evidence', {})
-    legacy.require(set(evidence) == {'profile_completion', 'profile_status', 'profile_plan', 'restart_qualification', 'export_qualification', 'vocabulary_audit', 'profile_rank_receipts'}, 'Full-stage qualification inventory is incomplete')
+    legacy.require(set(evidence) == {'profile_completion', 'profile_status', 'profile_plan', 'profile_launch', 'restart_qualification', 'export_qualification', 'vocabulary_audit', 'profile_rank_receipts'}, 'Full-stage qualification inventory is incomplete')
     def document(item):
         legacy.require(isinstance(item, dict) and set(item) == {'path', 'sha256'}, 'Stage evidence requires a pinned descriptor')
         path = (root / item['path']).resolve()
         legacy.require(path.is_relative_to(root) and legacy.digest(path) == item['sha256'], 'Full-stage qualification content changed')
         return legacy.read(path)
-    completion, status, plan = (document(evidence[key]) for key in ('profile_completion', 'profile_status', 'profile_plan'))
+    completion, status, plan, launch = (document(evidence[key]) for key in ('profile_completion', 'profile_status', 'profile_plan', 'profile_launch'))
     legacy.require(completion.get('status') == 'complete' and completion.get('successful_optimizer_steps_by_rank') == [200] * 8 and status.get('status') == 'passed' and status['native_plan_sha256'] == completion['native_plan_sha256'] == evidence['profile_plan']['sha256'], 'The admitted 200-update profile has not completed')
     profile_config = plan['config']
+    plan_identity = legacy.hashlib.sha256(json.dumps({key: value for key, value in plan.items() if key != 'plan_identity_sha256'}, sort_keys=True, separators=(',', ':'), ensure_ascii=False, allow_nan=False).encode()).hexdigest()
+    legacy.require(plan_identity == plan['plan_identity_sha256'] and plan['frozen_files'].get('inputs/native_training.py') == report['native_training_sha256'] and launch.get('status') == 'complete' and launch.get('plan_identity_sha256') == plan_identity and launch['hardware']['job_id'] == launch['slurm_job_id'], 'Profile plan/launch identity does not match reviewed execution')
     legacy.require(plan['scope'] == 'native_training' and profile_config.get('pipeline_stage') == 'real-data-profile' and profile_config['budget'] == {'optimizer_steps': 200} and profile_config['research_gate'] == config['research_gate'] and all(profile_config.get(key) == value for key, value in TRAINING_CONTRACT.items()), 'Completed profile belongs to another scientific contract')
     legacy.require(len(evidence['profile_rank_receipts']) == 8, 'Missing actual profile rank receipts')
     for rank, item in enumerate(evidence['profile_rank_receipts']):
         row = document(item)
-        legacy.require(row.get('rank') == rank and row.get('status') == 'bounded_complete' and row.get('successful_optimizer_steps') == 200, 'An actual native profile rank did not complete 200 successful updates')
+        legacy.require(row.get('rank') == rank and row.get('world_size') == 8 and row.get('scope') == 'native_training' and row.get('plan_identity_sha256') == plan_identity and row.get('slurm_job_id') == launch['slurm_job_id'] and row.get('status') == 'bounded_complete' and row.get('successful_optimizer_steps') == 200, 'An actual source-bound native profile rank did not complete 200 successful updates')
     for name in ('restart_qualification', 'export_qualification'):
         row = document(evidence[name])
-        legacy.require(row.get('status') == 'passed' and row.get('training_admission') is False and row.get('native_training_sha256') == report['native_training_sha256'] and len(row.get('ranks', [])) == 8 and {item.get('rank') for item in row['ranks']} == set(range(8)) and all(item.get('passed') is True for item in row['ranks']), 'Source-matched eight-rank engineering qualification is required')
+        legacy.require(row.get('status') == 'passed' and row.get('training_admission') is False and row.get('native_training_sha256') == report['native_training_sha256'] and row.get('native_recovery_sha256') == report['native_recovery_sha256'] and len(row.get('ranks', [])) == 8 and {item.get('rank') for item in row['ranks']} == set(range(8)) and all(item.get('passed') is True for item in row['ranks']), 'Source-matched eight-rank engineering qualification is required')
     qa = document(evidence['vocabulary_audit'])
-    legacy.require(qa.get('status') == 'passed' and qa.get('scope') == 'native_data_preparation' and qa.get('vocabulary_uses_train_only') is True and qa['splits']['train']['input_sha256'] == plan['train']['sha256'] and 'work/cache.pt' in plan['frozen_files'] and plan['frozen_files'].get('inputs/vocabulary-audit.json') == evidence['vocabulary_audit']['sha256'], 'The complete source-bound data/vocabulary audit is required')
+    legacy.require(qa.get('status') == 'passed' and qa.get('scope') == 'native_data_preparation' and qa.get('vocabulary_uses_train_only') is True and qa['splits']['train']['input_sha256'] == plan['train']['sha256'] and qa['splits']['dev']['input_sha256'] == plan['validation']['sha256'] and 'work/cache.pt' in plan['frozen_files'] and plan['frozen_files'].get('inputs/vocabulary-audit.json') == evidence['vocabulary_audit']['sha256'], 'The complete source-bound data/vocabulary audit is required')
 
 
 def main():
