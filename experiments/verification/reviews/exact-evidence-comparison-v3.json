@@ -1,0 +1,79 @@
+{
+  "evidence_identity_sha256": "33f9c8879bdf233ca095e1acd3d30f757d7966534c68d8f081b135f32c50a9ca",
+  "artifact_inventory_sha256": "3e99f9a74cad6dc05c14a5deebb07013ac06c96640bcd46be132b31d9b50355d",
+  "artifact_count": 468,
+  "independently_matched_raw_capture_and_receipt_artifacts": 220,
+  "coverage": {
+    "conditional_states": 60,
+    "conditional_draws": 7864320,
+    "conditional_events": 960,
+    "sampling_continuations": 61440,
+    "sampling_events": 36,
+    "greedy_pairs": 1120,
+    "greedy_exact_pairs": 1119,
+    "classified_first_divergences": 1,
+    "numerical_cases": 8,
+    "retained_logit_vectors": 48
+  },
+  "checks": {
+    "conditional": true,
+    "sampling": true,
+    "complete_registered_population": true,
+    "common_budget_panel": true,
+    "numerical_classification": true,
+    "live_source_model_content": true
+  },
+  "artifact_categories": {
+    "authored_source": 50,
+    "conditional_raw": 24,
+    "conditional_receipt": 24,
+    "conditional_vectors": 60,
+    "drafter_model": 8,
+    "greedy_raw": 24,
+    "greedy_receipt": 24,
+    "historical_report": 1,
+    "numerical_inputs": 2,
+    "numerical_manifest": 2,
+    "numerical_source": 4,
+    "numerical_vectors": 8,
+    "numerical_worker": 8,
+    "policy": 1,
+    "proof": 1,
+    "protocol": 1,
+    "registered_collector": 1,
+    "registered_evidence": 103,
+    "registered_inputs": 1,
+    "run_provenance": 8,
+    "sampling_proposal": 1,
+    "sampling_raw": 24,
+    "sampling_receipt": 24,
+    "stopping_manifest": 3,
+    "stopping_source": 6,
+    "target_model": 24,
+    "training_recovery_source": 1,
+    "training_source": 1,
+    "upstream_source": 125,
+    "validator_source": 3
+  },
+  "conditional_diagnostics": 60,
+  "historical_reproduction_passed": false,
+  "scope": "Native released Llama8B EAGLE3/EAGLE2/HASS pipeline evidence; scratch native EAGLE3 generalist training only; no universal lossless/serving/pooled admission",
+  "provenance": {
+    "models": {
+      "eagle2:drafter": "74e4248f180167010a0a7a1e641a2719314d0faced75fc556c3c4d685c3c63ee",
+      "eagle2:target": "3dd1c35b4a9dd90c081ebcb68efb9f066697cadbc17e928ba593f9c7cb2d3d86",
+      "eagle3:drafter": "799ec84004c49f8e82acf43c849a64596f47a2f28d3516a810e951798de99fcf",
+      "eagle3:target": "7c3d0c33c2a43a10ba658bdca906de7412050d8c094083a34e0d6fced7c94b6c",
+      "hass:drafter": "64b2b6131d75ab75e27a72a64e58b2cad331f3b5fc2f53be69a74e33a4bb0c1c",
+      "hass:target": "3dd1c35b4a9dd90c081ebcb68efb9f066697cadbc17e928ba593f9c7cb2d3d86"
+    },
+    "sources": {
+      "eagle2": "86577b8b6c90bfb5dde208133d9828859b81a6a7b89691971e89447a4f103b54",
+      "eagle3": "86577b8b6c90bfb5dde208133d9828859b81a6a7b89691971e89447a4f103b54",
+      "hass": "22892275b2b551e955b70716494b46e75ee8ca289735f18ced0036413cb2fc16"
+    },
+    "collection_time_model_content_reverified": false,
+    "admission_time_full_content_verified": true,
+    "runtime_scope": "Retained raw manifests, versions, native dtype, batch-one kernels and eight-A100 bindings only; no portability or serving admission"
+  }
+}

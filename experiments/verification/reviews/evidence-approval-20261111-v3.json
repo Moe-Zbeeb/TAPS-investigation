@@ -1,0 +1,109 @@
+{
+  "decision": "approved",
+  "reviewer": "independent-agent-validation-review",
+  "review_kind": "exact_evidence_admission",
+  "evidence_admission": true,
+  "scientific_training_authorized": false,
+  "evidence_identity_sha256": "33f9c8879bdf233ca095e1acd3d30f757d7966534c68d8f081b135f32c50a9ca",
+  "artifact_inventory_sha256": "3e99f9a74cad6dc05c14a5deebb07013ac06c96640bcd46be132b31d9b50355d",
+  "report_file_sha256": "687ec4ac53f1ba3160db9891e592dce66cb384e69f516551d2e7745be7426295",
+  "artifact_count": 468,
+  "validator_sha256": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49",
+  "numerical_validator_sha256": "cb0546c268c09d73e15f62bde6d55a9a3437d26cce24ef464c14a9138d84629a",
+  "native_training_sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+  "native_recovery_sha256": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+  "driver_sha256": "d6ea2b5216b0052aa68282646b343143c6523ed14e75f8b2b838f99bb6458934",
+  "prepared_sha256": "d3f236a73ab18940bd28f76112210449a2f6ef797061d50a1ab98fc059e0a865",
+  "proof_sha256": "94de731a8918f84f2126cb8fc9dffd92298c25184595ad04ea8f7e3820a4113d",
+  "protocol_sha256": "d1dc71bac2c8215d17c34e205e4e8b58d318a492e4b782550ebaa5b7a7f57ac4",
+  "sampling_proposal_sha256": "dcba7076095d4ffac978bc139889d9d205fcaa7f898bc9b7dbe2c1381d15638e",
+  "policy_sha256": "2de64c1fb2368a61a72f070150c15a879faed7d16e4e4a42743a2874b5639885",
+  "numerical_collector_sha256": "7a18bfc90886c4133dc0641b2c1bd42c69eae65d629efe8a829d8c374131f89c",
+  "numerical_protocol_sha256": "522f98f6ac1b5ae118998d3bdfd077ea12241f61f7b309c05783e034ed769e1c",
+  "scope": "Native released Llama8B EAGLE3/EAGLE2/HASS pipeline evidence; scratch native EAGLE3 generalist training only; no universal lossless/serving/pooled admission",
+  "paper_matching_required": false,
+  "checks_reviewed": {
+    "conditional": true,
+    "sampling": true,
+    "complete_registered_population": true,
+    "common_budget_panel": true,
+    "numerical_classification": true,
+    "live_source_model_content": true
+  },
+  "coverage_reviewed": {
+    "conditional_states": 60,
+    "conditional_draws": 7864320,
+    "conditional_events": 960,
+    "sampling_continuations": 61440,
+    "sampling_events": 36,
+    "greedy_pairs": 1120,
+    "greedy_exact_pairs": 1119,
+    "classified_first_divergences": 1,
+    "numerical_cases": 8,
+    "retained_logit_vectors": 48
+  },
+  "independent_raw_reconstruction": {
+    "job_id": "2216017",
+    "status": "passed",
+    "slurm_state": "COMPLETED",
+    "exit_code": "0:0",
+    "script_sha256": "7a8e3678c2e99fdfa268eaf3574829d2d345ded15da8fb8361fd5a2870c26412",
+    "report_identity_sha256": "4244c3b166e9a9318ee681fd2b3ea4696851db7fa38909d417b69a318e3988c7",
+    "report_file_sha256": "0a4faa9ef49b698d2ea9f4260ebe5f8e3d2868663bdcb9a99d0e3680af90d12b",
+    "matched_raw_capture_and_receipt_artifacts": 220,
+    "author_validator_imported": false
+  },
+  "observed_bounds": {
+    "conditional_maximum_error_upper_bound": 0.014536679493417535,
+    "conditional_registered_margin": 0.02,
+    "end_to_end_maximum_error_upper_bound": 0.039414032866108194,
+    "end_to_end_registered_margin": 0.06,
+    "known_site_maximum_pairwise_full_vector_delta": 5.364418029785156e-05,
+    "maximum_control_pairwise_full_vector_delta": 8.225440979003906e-05,
+    "registered_absolute_epsilon": 0.0001
+  },
+  "historical_reproduction": {
+    "status": "failed",
+    "passed": false,
+    "passed_reference_cells": 8,
+    "reference_cells": 22,
+    "sha256": "8f80b77b498bcecab24c4bfbb30a1134110d64df132ce0a7667d15926e040047",
+    "agreement_relabelled": false
+  },
+  "engineering_qualifications": {
+    "restart": {
+      "job_id": "2216015",
+      "status": "passed",
+      "sha256": "8b30ec44b67e9daada835ba6d4f4f7839d4de219185de0bea6336ac9a707d905",
+      "rank_count": 8
+    },
+    "export": {
+      "job_id": "2216016",
+      "status": "passed",
+      "sha256": "c85f398f81221a595f884a801e5e0127b53e5390f7a973f457aa6f9c25b4bfc3",
+      "manifest_sha256": "f9e7b4e3f31d45752c4fc1f50b5c08c0524ac521f348d70b72546bc9efc0dbc2",
+      "rank_count": 8,
+      "rank_receipt_hashes_checked": true
+    },
+    "scientific_quality_result": false
+  },
+  "implementation_review_file_sha256": "2a13141984c22ca2b6612ae354b718f2154365a8c2ff6c6433cbc37f850eda2e",
+  "limitations": [
+    "The mathematical fixed-tree theorem is an exact-arithmetic statement, distinct from native finite-precision and PRNG-endpoint behavior.",
+    "Conditional confidence applies only to eight registered binary events in each selected real-model state; it is not a full-vocabulary TV bound.",
+    "End-to-end confidence applies to the registered equal-weight ten-prompt mixture and twelve short-continuation events; it does not establish general long-sequence or traffic equivalence.",
+    "The common-budget panel has 1,119 exact pairs and one explicitly classified first divergence; unequal suffixes and original failed panels remain unequal and failed.",
+    "The numerical epsilon was motivated retrospectively and frozen before fresh confirmation. Classification is limited to the exact registered source/model/prefix/offset/runtime/hardware site; exact kernel cause remains unresolved.",
+    "Prompt-token reconstruction is retrospective and does not claim a separate pre-draw token-ID freeze existed.",
+    "Admission-time model/source content was fully hashed by the final strict CPU reconstruction; historical collection-time model content was not reverified before every draw.",
+    "Engineering restart/export qualification establishes source-matched execution only, not model quality, scientific training completion or long-run guarantees.",
+    "No serving, pooled/shared/routed, changed-target/drafter/tree, dtype/kernel/runtime or portability admission is granted.",
+    "This review approves evidence; the production native gate must still reverify all bound content and satisfy the target-generated-data, native QA, 200-update profile and guarded full-stage requirements."
+  ],
+  "preserved_failures": [
+    "Original 22-cell reproduction report",
+    "Original strict FP32 greedy panels and blocked legacy CPU certificates",
+    "Failed final-replay attempt 2216013 before registered storage-alias repair"
+  ],
+  "decision_basis": "Exact repaired implementation review, independently recomputed raw empirical evidence, canonical report and 468-artifact inventory identities, all 220 independently consumed raw/capture/receipt hashes matched, frozen source/protocol/proof identities and source-matched eight-rank engineering qualifications. No unresolved material finding blocks this scoped evidence decision."
+}

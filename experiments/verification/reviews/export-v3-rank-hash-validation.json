@@ -1,0 +1,42 @@
+[
+  {
+    "rank": 0,
+    "sha256": "f8d1fd6a819a4735f71f9b61ca32c1b9b8d2dc40e151c32a10789a00605ad066",
+    "passed": true
+  },
+  {
+    "rank": 1,
+    "sha256": "e88594314af55da7bec1451caaf9452b2b875d862d1db8ae8fbaafa6479bf827",
+    "passed": true
+  },
+  {
+    "rank": 2,
+    "sha256": "4122fbf4605a443194fe243c8ccde127db2987586a90390c06c4819791f123ab",
+    "passed": true
+  },
+  {
+    "rank": 3,
+    "sha256": "3e9be453ce7ef3279290ec0ef132a3de57974e88ea70843e008419852d791286",
+    "passed": true
+  },
+  {
+    "rank": 4,
+    "sha256": "4ee02cf1e11f83e92694d9d7a087cec63795e362f131c637fa14f928d3ebd4af",
+    "passed": true
+  },
+  {
+    "rank": 5,
+    "sha256": "7bb04cb793bb7129c8e4b5cc8f61e6ca2b65700417170e879fb5e586186f5a2f",
+    "passed": true
+  },
+  {
+    "rank": 6,
+    "sha256": "61c28dd19c5a5816c71cd7cc31a3bf9cc2c15fbbca3caf8ef7638f3e877221fe",
+    "passed": true
+  },
+  {
+    "rank": 7,
+    "sha256": "5b7e6dd451d417fb576e9e1fee58170115787ce0ad460a646293773113f11de9",
+    "passed": true
+  }
+]

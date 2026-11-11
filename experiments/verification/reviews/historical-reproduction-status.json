@@ -1,0 +1,15 @@
+{
+  "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/reference-groups/official-20261110-v1/report.json",
+  "sha256": "8f80b77b498bcecab24c4bfbb30a1134110d64df132ce0a7667d15926e040047",
+  "reproduction_gate": {
+    "losslessness_established": false,
+    "passed": false,
+    "passed_reference_cells": 8,
+    "qualification": "Passing this gate reproduces configured numerical reference cells and finite T=0 checks; it does not prove losslessness or establish T=1 distributional correctness.",
+    "reference_cells": 22,
+    "scope": "Published tau reproduction, complete paired coverage, at least five timing repeats, and observed T=0 token comparisons",
+    "status": "failed",
+    "temperature_one_distributional_correctness": "requires_separate_statistical_check"
+  },
+  "reference_cells": 22
+}
