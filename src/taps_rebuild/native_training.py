@@ -39,6 +39,18 @@ class BudgetComplete(Exception):
     pass
 
 
+class RecoveryComplete(Exception):
+    pass
+
+
+def recovery_module():
+    path = Path(__file__).with_name('native_recovery.py')
+    spec = importlib.util.spec_from_file_location('frozen_native_recovery', path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
 def canonical(value):
     return json.dumps(value, sort_keys=True, separators=(',', ':'), ensure_ascii=False, allow_nan=False).encode()
 
@@ -182,6 +194,10 @@ def validate_config(value):
         raise NativeTrainingError('Native research requires pinned all-method reproduction and full-model temperature-one research_gate evidence')
     if value.get('checkpoint_roundtrip') and budget['optimizer_steps'] is None:
         raise NativeTrainingError('The external checkpoint roundtrip requires a bounded optimizer-step run; disable it for the unchanged forty-epoch native command')
+    if value.get('recovery') is not None:
+        recovery_module().validate_policy(value['recovery'])
+        if value.get('checkpoint_roundtrip') or (budget['optimizer_steps'] is not None and budget['optimizer_steps'] % value['recovery']['checkpoint_interval']):
+            raise NativeTrainingError('Process recovery requires a checkpoint-aligned budget without same-engine roundtrip')
     return value
 
 
@@ -326,6 +342,8 @@ def prepare(root, config_path, train_path, validation_path, run_dir):
         shutil.copyfile(source_file, inputs / name)
     if config['scope'] == 'native_training':
         shutil.copyfile(Path(__file__).with_name('admission.py'), inputs / 'admission.py')
+    if config.get('recovery') is not None:
+        shutil.copyfile(Path(__file__).with_name('native_recovery.py'), inputs / 'native_recovery.py')
     for label, data in (('train', train), ('validation', validation)):
         data['frozen_path'] = str(inputs / (label + Path(data['path']).suffix))
     python = root / config['runtime_python']
@@ -333,6 +351,9 @@ def prepare(root, config_path, train_path, validation_path, run_dir):
         raise NativeTrainingError('Native training requires its separate envs/native-eagle3 runtime')
     command = [str(python), '-B', '-m', 'torch.distributed.run', '--standalone', '--nnodes=1', '--nproc_per_node=' + str(config['world_size']), str(inputs / 'native_training.py'), 'worker', '--plan', str(run_dir / 'plan.json')]
     plan = {'schema_version': 1, 'status': 'prepared_not_executed', 'scope': config['scope'], 'implementation': config['implementation'], 'source_revision': REVISION, 'source_checkout': str(checkout), 'project_root': str(root), 'source_receipt_sha256': digest(sources_path), 'asset_receipt_sha256': digest(assets_path), 'config': config, 'training_admission': admission, 'config_sha256': digest(config_path), 'target': target, 'draft': draft, 'train': train, 'validation': validation, 'workdir': str(work), 'run_dir': str(run_dir), 'trained_models': trained, 'command': command, 'frozen_files': {str(path.relative_to(run_dir)): digest(path) for path in [*inputs.iterdir(), *work.iterdir()]}, 'upstream_arguments': ['--basepath', target['path'], '--trainpath', train['frozen_path'], '--testpath', validation['frozen_path'], '--savedir', trained['resolved_path'], '--deepspeed_config', str(work / 'ds_config.json')], 'compatibility_changes': ['dict training configuration exposed as gradient_checkpointing/max_len attributes', 'run-local serialized vocabulary cache', 'offline tracking', 'dedicated native Ninja and verified CUDA executable paths', 'spawn-safe main registration with exact upstream collator AST exposed in workers; upstream source bytes unchanged'], 'engineering_changes': ['released draft trainables and vocabulary initialization', 'bounded optimizer-step checkpoint stop'] if draft else [], 'native_recipe': {'seed': 0, 'epochs': 40, 'max_length': 2048, 'training_time_test_length': 7, 'length_policy': 'official tokenizer filter, no truncation', 'loss': 'official seven-position target-distribution cross entropy weighted 0.8**position', 'features': 'online native target low/mid/high hidden states; no .pt feature cache input', 'ds_config_sha256': UPSTREAM['ds_config.json']}, 'limitations': ['Not a reproduced result until GPU startup and benchmark gates pass', 'Upstream dependency list omits deepspeed/datasets versions', 'No matched-token budget enforcement', 'No claim that published training data/order/checkpoint are reproduced', 'Upstream per-batch model.zero_grad and native optimizer schedule are preserved', 'Native cache vocabulary requires enough observed supervised token types'], 'scientific_results': False, 'created_at': datetime.now(timezone.utc).isoformat()}
+    if config.get('recovery') is not None:
+        plan['compatibility_changes'].append('Opt-in pinned AST loop hooks for committed process recovery; upstream bytes and loss unchanged')
+        plan['native_recipe']['process_recovery'] = config['recovery']
     plan['plan_identity_sha256'] = hashlib.sha256(canonical(plan)).hexdigest()
     atomic_json(run_dir / 'plan.json', plan)
     atomic_json(Path(trained['resolved_path']) / 'native-plan.json', {'plan_identity_sha256': plan['plan_identity_sha256'], 'plan_path': str(run_dir / 'plan.json')})
@@ -502,7 +523,9 @@ def install_step_adapter(deepspeed, plan, torch, rank, observation=None):
     observation = {} if observation is None else observation
     directory = Path(plan['run_dir'])
     cap = plan['config']['budget']['optimizer_steps']
-    step_log = directory / ('steps-rank-' + str(rank) + '.jsonl')
+    journal_directory = directory / 'attempts' / ('attempt-' + os.environ.get('TAPS_NATIVE_ATTEMPT_ID', '1')) if plan['config'].get('recovery') is not None else directory
+    journal_directory.mkdir(parents=True, exist_ok=True)
+    step_log = journal_directory / ('steps-rank-' + str(rank) + '.jsonl')
 
     def initialize(*args, **kwargs):
         result = original(*args, **kwargs)
@@ -511,6 +534,26 @@ def install_step_adapter(deepspeed, plan, torch, rank, observation=None):
         counts = {'microbatches': 0, 'input_slots': 0, 'nonpadding_tokens': 0, 'input_assistant_mask_tokens': 0}
         observation.update(engine=engine, token_counts=counts)
         last_loss = None
+
+        def finish(successful):
+            destination = Path(plan['trained_models']['resolved_path']) / ('budget_step_' + str(successful))
+            if destination.resolve() != destination:
+                raise NativeTrainingError('Native checkpoint child cannot be a symlink alias')
+            if engine.save_16bit_model(str(destination), exclude_frozen_parameters=True) is False:
+                raise NativeTrainingError('Native bounded checkpoint save failed')
+            if rank == 0:
+                shutil.copyfile(Path(plan['workdir']) / 'config.json', destination / 'config.json')
+            torch.distributed.barrier()
+            if plan['config'].get('checkpoint_roundtrip', False):
+                observation['checkpoint_roundtrip'] = checkpoint_roundtrip(engine, destination / 'training-state', torch)
+            raise BudgetComplete('Reached successful native optimizer step ' + str(successful))
+
+        if plan['config'].get('recovery') is not None:
+            def stop(path):
+                raise RecoveryComplete('Committed native process checkpoint ' + path)
+            helpers = SimpleNamespace(canonical=canonical, digest=digest, atomic_json=atomic_json, tensor_state_identity=tensor_state_identity)
+            observation['recovery'] = recovery_module().Recovery(plan, torch, rank, observation, helpers, stop, finish)
+            observation['recovery'].namespace = observation['native_namespace']
 
         def forward(*arguments, **options):
             if torch.is_grad_enabled():
@@ -545,18 +588,10 @@ def install_step_adapter(deepspeed, plan, torch, rank, observation=None):
                     handle.write(canonical(item) + b'\n')
                     handle.flush()
                     os.fsync(handle.fileno())
-            if cap is not None and successful >= cap:
-                destination = Path(plan['trained_models']['resolved_path']) / ('budget_step_' + str(successful))
-                if destination.resolve() != destination:
-                    raise NativeTrainingError('Native checkpoint child cannot be a symlink alias')
-                if engine.save_16bit_model(str(destination), exclude_frozen_parameters=True) is False:
-                    raise NativeTrainingError('Native bounded checkpoint save failed')
-                if rank == 0:
-                    shutil.copyfile(Path(plan['workdir']) / 'config.json', destination / 'config.json')
-                torch.distributed.barrier()
-                if plan['config'].get('checkpoint_roundtrip', False):
-                    observation['checkpoint_roundtrip'] = checkpoint_roundtrip(engine, destination / 'training-state', torch)
-                raise BudgetComplete('Reached successful native optimizer step ' + str(successful))
+            if 'recovery' in observation:
+                observation['recovery'].after_step(before, skipped_before)
+            elif cap is not None and successful >= cap:
+                finish(successful)
             return value
 
         engine.backward, engine.step, engine.forward = backward, step, forward
@@ -582,7 +617,7 @@ def collator_definition(source, expected):
     return module, {'native_main_sha256': expected, 'collator_ast_sha256': identity, 'collator': 'DataCollatorWithPadding', 'upstream_bytes_modified': False, 'parent_setup_execution': 'once', 'child_exposes_only_collator': True, 'native_loader_workers_unchanged': 4, 'native_pin_memory_unchanged': True}
 
 
-def run_native_main(plan):
+def run_native_main(plan, observation=None):
     directory = Path(plan['run_dir'])
     source, adapter = Path(plan['workdir']) / 'main.py', directory / 'inputs/native_training.py'
     if digest(adapter) != plan['frozen_files']['inputs/native_training.py']:
@@ -596,7 +631,12 @@ def run_native_main(plan):
     os.environ[key] = plan['plan_identity_sha256']
     sys.modules['__main__'] = sys.modules['__mp_main__'] = namespace
     try:
-        exec(compile(source.read_bytes(), str(source), 'exec'), namespace.__dict__)
+        code = source.read_bytes()
+        if plan['config'].get('recovery') is not None:
+            observation['native_namespace'] = namespace.__dict__
+            namespace._taps_recovery = SimpleNamespace(epochs=lambda *args: observation['recovery'].epochs(*args), batches=lambda *args: observation['recovery'].batches(*args), commit_batch=lambda: observation['recovery'].commit_batch())
+            code = recovery_module().transform(source, plan['frozen_files']['work/main.py'])
+        exec(compile(code, str(source), 'exec'), namespace.__dict__)
     finally:
         for name, module in previous.items():
             if module is None:
@@ -664,11 +704,13 @@ def worker(plan_path):
         sys.argv = [str(work / 'main.py'), *plan['upstream_arguments'], '--local_rank', str(local_rank)]
         _, status['spawn_compatibility'] = collator_definition(work / 'main.py', plan['frozen_files']['work/main.py'])
         try:
-            run_native_main(plan)
+            run_native_main(plan, observation)
             status['status'] = 'native_epochs_complete'
         except BudgetComplete as error:
             status.update(status='bounded_complete', stop_reason=str(error))
-        if plan['config']['budget']['optimizer_steps'] is not None and status['status'] != 'bounded_complete':
+        except RecoveryComplete as error:
+            status.update(status='checkpointed_for_restart', stop_reason=str(error))
+        if plan['config']['budget']['optimizer_steps'] is not None and status['status'] not in ('bounded_complete', 'checkpointed_for_restart'):
             raise NativeTrainingError('Native epochs ended before the requested optimizer-step ceiling')
         if any(digest(work / name) != expected for name, expected in UPSTREAM.items()):
             raise NativeTrainingError('Immutable staged upstream source changed during execution')
@@ -680,6 +722,8 @@ def worker(plan_path):
         if 'engine' in observation:
             engine = observation['engine']
             status.update(successful_optimizer_steps=int(engine.global_steps) - int(engine.skipped_steps), native_global_steps=int(engine.global_steps), skipped_steps=int(engine.skipped_steps), processed_tokens_this_dp_rank=dict(observation['token_counts']), checkpoint_roundtrip=observation.get('checkpoint_roundtrip'), mid_epoch_dataset_resume_supported=False)
+            if 'recovery' in observation:
+                status.update(process_recovery=observation.get('process_recovery'), restored_rng_and_cursor=observation.get('restored_rng_and_cursor', False), final_state_identity=observation['recovery'].state_identity(), final_rng_identity=observation['recovery'].rng_identity(), mid_epoch_dataset_resume_supported=True, mid_epoch_recovery_independently_validated=False)
         if cnets is not None and original_model is not None:
             cnets.Model = original_model
         if original_initialize is not None:
@@ -863,7 +907,7 @@ def summarize_workers(plan, job_id):
     return {'worker_count': len(rows), 'successful_optimizer_steps_by_rank': [row['successful_optimizer_steps'] for row in rows], 'processed_training_tokens_all_dp_ranks': {key: sum(row['processed_tokens_this_dp_rank'][key] for row in rows) for key in keys}, 'counts_include_sampler_padding': True, 'reduced_vocab_loss_coverage_tokens_not_exposed': True, 'checkpoint_roundtrip_all_ranks_passed': all((row.get('checkpoint_roundtrip') or {}).get('status') == 'passed' for row in rows)}
 
 
-def launch(plan_path):
+def launch(plan_path, *, resume=False):
     require_slurm()
     plan = load_plan(plan_path)
     config = plan['config']
@@ -874,10 +918,32 @@ def launch(plan_path):
     directory = Path(plan['run_dir'])
     lock = (directory / 'launch.lock').open('a+')
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-    if (directory / 'launch.json').exists():
+    previous = json.loads((directory / 'launch.json').read_bytes()) if (directory / 'launch.json').exists() else None
+    recovery_path = None
+    attempt = 1
+    if resume:
+        if not config.get('recovery') or previous is None or previous['status'] not in ('checkpointed_for_restart', 'failed'):
+            raise NativeTrainingError('Explicit native resume requires a stopped recovery-enabled attempt')
+        latest_path = Path(plan['trained_models']['resolved_path']) / 'recovery/latest.json'
+        latest = json.loads(latest_path.read_bytes())
+        recovery_path = Path(latest['path'])
+        if latest['plan_identity_sha256'] != plan['plan_identity_sha256'] or digest(recovery_path / 'manifest.json') != latest['manifest_sha256'] or previous['hardware']['hardware_identity_sha256'] != hardware['hardware_identity_sha256']:
+            raise NativeTrainingError('Native resume checkpoint identity or physical GPU topology differs')
+        attempt = previous.get('attempt', 1) + 1
+    elif previous is not None:
         raise NativeTrainingError('Native launch is single-use; choose a fresh plan instead of silently restarting')
     environment = {key: value for key, value in os.environ.items() if key not in {'HF_TOKEN', 'HUGGING_FACE_HUB_TOKEN', 'WANDB_API_KEY'}}
     environment['CUDA_VISIBLE_DEVICES'] = ','.join(visible)
+    environment.pop('TAPS_NATIVE_RESUME_CHECKPOINT', None)
+    if config.get('recovery') is not None:
+        environment['TAPS_NATIVE_ATTEMPT_ID'] = str(attempt)
+        attempt_directory = directory / 'attempts' / ('attempt-' + str(attempt))
+        attempt_directory.mkdir(parents=True, exist_ok=False)
+        if previous is not None:
+            for rank in range(config['world_size']):
+                shutil.copyfile(directory / ('rank-' + str(rank) + '.json'), directory / 'attempts' / ('attempt-' + str(attempt-1)) / ('rank-' + str(rank) + '.json'))
+        if recovery_path is not None:
+            environment['TAPS_NATIVE_RESUME_CHECKPOINT'] = str(recovery_path)
     environment.update(cuda_environment(plan['project_root'], hardware['node'], config))
     environment, jit_tools = jit_environment(python, environment)
     cache = Path(plan['project_root']) / 'cache/native-eagle3'
@@ -886,20 +952,26 @@ def launch(plan_path):
     audit_environment = environment.copy()
     audit_environment['CUDA_VISIBLE_DEVICES'] = ''
     subprocess.run([str(python), '-B', str(directory / 'inputs/native_training.py'), 'audit', '--plan', str(Path(plan_path).resolve())], env=audit_environment, check=True)
-    receipt = {'status': 'running', 'hardware': hardware, 'command': plan['command'], 'runtime': runtime, 'jit_tools': jit_tools, 'plan_identity_sha256': plan['plan_identity_sha256'], 'slurm_job_id': os.environ['SLURM_JOB_ID'], 'cuda_visible_devices': visible, 'does_not_allocate_or_submit_jobs': True, 'started_at': datetime.now(timezone.utc).isoformat()}
+    receipt = {'status': 'running', 'hardware': hardware, 'command': plan['command'], 'runtime': runtime, 'jit_tools': jit_tools, 'plan_identity_sha256': plan['plan_identity_sha256'], 'slurm_job_id': os.environ['SLURM_JOB_ID'], 'cuda_visible_devices': visible, 'attempt': attempt, 'resume_checkpoint': str(recovery_path) if recovery_path else None, 'does_not_allocate_or_submit_jobs': True, 'started_at': datetime.now(timezone.utc).isoformat()}
     atomic_json(directory / 'launch.json', receipt)
     try:
         returncode = run_training(plan['command'], plan['workdir'], environment, lock.fileno())
         receipt.update(returncode=returncode)
         if returncode:
             raise NativeTrainingError('Native training subprocess failed: ' + str(returncode))
-        receipt.update(status='complete', worker_summary=summarize_workers(plan, hardware['job_id']))
+        statuses = [json.loads((directory / ('rank-' + str(rank) + '.json')).read_bytes()) for rank in range(config['world_size'])]
+        if config.get('recovery') and all(row['status'] == 'checkpointed_for_restart' for row in statuses):
+            receipt.update(status='checkpointed_for_restart', successful_optimizer_steps_by_rank=[row['successful_optimizer_steps'] for row in statuses])
+        else:
+            receipt.update(status='complete', worker_summary=summarize_workers(plan, hardware['job_id']))
     except BaseException as error:
         receipt.update(status='failed', error_type=type(error).__name__, error=str(error))
         raise
     finally:
         receipt['finished_at'] = datetime.now(timezone.utc).isoformat()
         atomic_json(directory / 'launch.json', receipt)
+        if config.get('recovery') is not None:
+            atomic_json(directory / 'attempts' / ('attempt-' + str(attempt)) / 'launch.json', receipt)
 
 
 def main():
@@ -916,7 +988,7 @@ def main():
     preparation.add_argument('--train', type=Path, required=True)
     preparation.add_argument('--validation', type=Path, required=True)
     preparation.add_argument('--run-dir', type=Path, required=True)
-    for name in ('launch', 'worker', 'audit'):
+    for name in ('launch', 'resume', 'worker', 'audit'):
         command = commands.add_parser(name)
         command.add_argument('--plan', type=Path, required=True)
     fixture_parser = commands.add_parser('fixture')
@@ -934,8 +1006,8 @@ def main():
         value = convert(args.input, args.output, split=args.split, prompt=system_prompt(args.native_main) if args.native_main else None)
     elif args.command == 'prepare':
         value = prepare(args.root, args.config, args.train, args.validation, args.run_dir)
-    elif args.command == 'launch':
-        launch(args.plan)
+    elif args.command in ('launch', 'resume'):
+        launch(args.plan, resume=args.command == 'resume')
         return
     elif args.command == 'audit':
         value = audit(args.plan)
