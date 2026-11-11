@@ -1,0 +1,11 @@
+# Storage compatibility addendum
+
+The implementation-only approval of validator SHA `befe4958005a00df7512e2e238c81d80b8e51bf6ba4ce124d09b45c16e5fcd0b` is superseded for complete replay execution by **changes required** after the first final real-artifact replay. The separate frozen training helper and numerical implementation findings are unchanged. No evidence-level approval was issued.
+
+CPU Slurm job 2216013 failed with exit 1:0 after 5m07s. Its preserved traceback reaches `admission_v2.py:119`, then `bind` at line 143: the model-file allowlist rejects a registered storage alias after the statistical/numerical phases. This is a storage compatibility failure, not a failed event bound or numerical result.
+
+Read-only inspection confirms that the project's logical `models/` alias resolves to `/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild`, while the fixed prepared registration also uses existing project model aliases resolving to `/mnt/nfs/home/mohamadzbib/projects/models/taps-setup-20261101/eagle-original` and `/mnt/nfs/home/mohamadzbib/projects/models/taps-setup-20261101/verifier`. The latter target is shared by EAGLE-2 and HASS. These paths are represented in the frozen prepared registration; no asset was moved or repointed.
+
+Repair the validator and certificate verifier consistently by deriving exact allowed resolved model files from the SHA-pinned prepared inventory, requiring each registered model file's expected SHA256 and category. Keep generic non-model artifacts confined to the project or designated model root. Broadly allowing an external directory is unnecessary. Preserve the failed job/log and run the complete source-bound replay on the repaired validator bytes before any evidence decision.
+
+Independent raw job 2216017 separately completed 0:0 in 1m49s and reconstructed the statistical, common-budget and full-vector numerical evidence successfully. Its report explicitly does not perform the model-content audit or grant scientific admission. The retained local report has file SHA256 `0a4faa9ef49b698d2ea9f4260ebe5f8e3d2868663bdcb9a99d0e3680af90d12b` and canonical report identity `4244c3b166e9a9318ee681fd2b3ea4696851db7fa38909d417b69a318e3988c7`.

@@ -1,0 +1,11 @@
+# Independent implementation approval after storage repair
+
+Decision: **implementation approved** on commit 9c48cbc and the exact hashes in `implementation-approval-20261111-v3.json`. Evidence admission and scientific training authorization remain false in this implementation artifact.
+
+The repaired validator SHA is `3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49`. Its exact external model-file exception derives from the fixed prepared population, checks the model-directory alias against its frozen resolved path, rejects child escapes and conflicting identities, and requires matching model category and expected hash. Certificate verification derives the same inventory after rehashing the fixed prepared file and still rehashes all evidence/model content. The repair accommodates the original registered storage aliases without widening access for unrelated external artifacts.
+
+The storage finding is resolved at source level. The previous failed replay and review records remain unchanged. The frozen native training helper, recovery helper, numerical checker, collector and staged handoff identities remain those already reviewed. Read-only cluster inspection confirmed the relevant model `resolved_path` fields and that registered upstream/authored sources remain inside the project. Thirty-nine focused regression tests passed, including external sibling/category/hash rejection. The previous complete source suite passed 391 tests with nine Torch skips.
+
+Independent CPU Slurm job 2216017 has now recomputed the retained statistical, stopping and full-vector numerical facts successfully without importing the author's validator. It confirms 960 passing conditional checks, 36 passing end-to-end checks, 1,119 exact common-budget pairs plus the one registered mismatch, and all 48 vector/prefix/cache/mask checks. This independently supports the scoped facts; it does not replace the final repaired validator's model-content inventory or exact evidence-certificate review.
+
+Final repaired CPU replay, source-matched qualification evidence and exact report/inventory review remain required before any evidence-level approval. No production review artifact or gate was changed by this approval.

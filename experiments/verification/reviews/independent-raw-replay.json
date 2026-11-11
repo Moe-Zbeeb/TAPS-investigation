@@ -1,0 +1,782 @@
+{
+  "status": "passed",
+  "review_kind": "independent_raw_reconstruction",
+  "scientific_training_authorized": false,
+  "slurm_job_id": "2216017",
+  "hostname": "deep-chungus-6.csail.mit.edu",
+  "uid": 29562,
+  "script_sha256": "7a8e3678c2e99fdfa268eaf3574829d2d345ded15da8fb8361fd5a2870c26412",
+  "source_identities": {
+    "admission_v2.py": "befe4958005a00df7512e2e238c81d80b8e51bf6ba4ce124d09b45c16e5fcd0b",
+    "numerical_validation.py": "cb0546c268c09d73e15f62bde6d55a9a3437d26cce24ef464c14a9138d84629a",
+    "native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51"
+  },
+  "conditional_states": 60,
+  "conditional_checks": 960,
+  "conditional_draws": 7864320,
+  "conditional_maximum_event_bound": 0.014536679493417535,
+  "sampling_continuations": 61440,
+  "sampling_checks": 36,
+  "sampling_maximum_event_bound": 0.039414032866108194,
+  "greedy_pairs": 1120,
+  "greedy_exact_pairs": 1119,
+  "greedy_failures": [
+    {
+      "method": "eagle3",
+      "benchmark": "mt_bench",
+      "question_id": 146,
+      "turn_id": 1,
+      "first_difference": 200
+    }
+  ],
+  "numerical_cases": [
+    {
+      "case_index": 0,
+      "known_site": true,
+      "maximum_pairwise_infinity_delta": 5.364418029785156e-05,
+      "winners": {
+        "target_only-0": 8798,
+        "target_only-1": 8798,
+        "speculative-0": 3177,
+        "speculative-1": 3177,
+        "clean-0": 8798,
+        "clean-1": 8798
+      }
+    },
+    {
+      "case_index": 1,
+      "known_site": false,
+      "maximum_pairwise_infinity_delta": 8.225440979003906e-05,
+      "winners": {
+        "target_only-0": 13,
+        "target_only-1": 13,
+        "speculative-0": 13,
+        "speculative-1": 13,
+        "clean-0": 13,
+        "clean-1": 13
+      }
+    },
+    {
+      "case_index": 2,
+      "known_site": false,
+      "maximum_pairwise_infinity_delta": 7.2479248046875e-05,
+      "winners": {
+        "target_only-0": 323,
+        "target_only-1": 323,
+        "speculative-0": 323,
+        "speculative-1": 323,
+        "clean-0": 323,
+        "clean-1": 323
+      }
+    },
+    {
+      "case_index": 3,
+      "known_site": false,
+      "maximum_pairwise_infinity_delta": 5.91278076171875e-05,
+      "winners": {
+        "target_only-0": 4579,
+        "target_only-1": 4579,
+        "speculative-0": 4579,
+        "speculative-1": 4579,
+        "clean-0": 4579,
+        "clean-1": 4579
+      }
+    },
+    {
+      "case_index": 4,
+      "known_site": false,
+      "maximum_pairwise_infinity_delta": 5.508027970790863e-05,
+      "winners": {
+        "target_only-0": 16,
+        "target_only-1": 16,
+        "speculative-0": 16,
+        "speculative-1": 16,
+        "clean-0": 16,
+        "clean-1": 16
+      }
+    },
+    {
+      "case_index": 5,
+      "known_site": false,
+      "maximum_pairwise_infinity_delta": 5.1975250244140625e-05,
+      "winners": {
+        "target_only-0": 449,
+        "target_only-1": 449,
+        "speculative-0": 449,
+        "speculative-1": 449,
+        "clean-0": 449,
+        "clean-1": 449
+      }
+    },
+    {
+      "case_index": 6,
+      "known_site": false,
+      "maximum_pairwise_infinity_delta": 4.291534423828125e-05,
+      "winners": {
+        "target_only-0": 575,
+        "target_only-1": 575,
+        "speculative-0": 575,
+        "speculative-1": 575,
+        "clean-0": 575,
+        "clean-1": 575
+      }
+    },
+    {
+      "case_index": 7,
+      "known_site": false,
+      "maximum_pairwise_infinity_delta": 6.67572021484375e-05,
+      "winners": {
+        "target_only-0": 1176,
+        "target_only-1": 1176,
+        "speculative-0": 1176,
+        "speculative-1": 1176,
+        "clean-0": 1176,
+        "clean-1": 1176
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-0-1.pt",
+      "sha256": "514a570f60c2161c9a008d73721ea44c5fc865574e84fa082a8549bf88f70762"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-0-3.pt",
+      "sha256": "2efe5bf825e1810c1eb415458c44f32e9c54be7cdce0cb981ca6b01c99f8e3b1"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-8-1.pt",
+      "sha256": "ad3608a087d2c8d98bc7acbe005347a098872cb0d9bb834ec246241525d1289b"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-8-3.pt",
+      "sha256": "00b81af97a611b4ce048d11717ef9c2978a512ac2583a87a15dd41b461432c53"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-0.jsonl",
+      "sha256": "71207cd0a8e630cd2d1249d748959c6808b9779131694b00db6dedba579ef115",
+      "receipt_sha256": "025aa496c41431f37d93ec3c88b577e4649e2a1f73246077e2e6955a8eb2461a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-1-1.pt",
+      "sha256": "adda42256a1c72c34fc7b5d1ec7cb5e8da774c6cf8e0fe35bccaff0489e1d7ca"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-1-3.pt",
+      "sha256": "115ab1851ea99f70f2aa0e9f9df293416e4fc51de12e41a84610636ed9a70b35"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-9-1.pt",
+      "sha256": "0c7f391b58c64e0c2f86fe4b97c54e3b6c23bf29ba2490b0adb2197a1082796d"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-9-3.pt",
+      "sha256": "879bdadc9804dcbc87cfb34645638831a6549ad30d706bad8f4d93d6fcd3ba04"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-1.jsonl",
+      "sha256": "929cd8dcac3c58fe2576ec77721295c50d0270184d301e4ac8e3de835c8693c9",
+      "receipt_sha256": "d7e3462b093da0f53a19bab15c13432ba375f0067357c9a24145e690d9f6db61"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-2-1.pt",
+      "sha256": "8cf83806d9dd2623f98d888b71177ab6158fcc66a07bf6edf4af63cdb089bcbf"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-2-3.pt",
+      "sha256": "e14337dcd655045819943ed2f570e00679b8f13dee0ef3cf6c6e8c1a263c238f"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-2.jsonl",
+      "sha256": "8c901157d5ba67bc27abd0c6615532430447ae9ca95b73613c107fb9d6c8b4c1",
+      "receipt_sha256": "4c352e7ba14e96a692fa825f088e8a8b776222e668e66f93f7bb69fed63635d3"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-3-1.pt",
+      "sha256": "ea4b4a047c768fe5e345547507653f0485f25ecbd5448b2fecf6c423be94c4db"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-3-3.pt",
+      "sha256": "556beee0d711e91a41f9ab1f7105d03a3cdf512353743606d92881455a4dc9c4"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-3.jsonl",
+      "sha256": "750fe254aa8b20c52f9d3a74322721f7299843ca02ab7fc22385af492f4e211c",
+      "receipt_sha256": "4d7073a9ea61765a26e751e753300341ecf5ec3cc6d09649da9fd407406a0d6e"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-4-1.pt",
+      "sha256": "d1b8bd335953a4dc5e79267a5afca94e6154ba45e89c13e723c2b2b59f5e19aa"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-4-3.pt",
+      "sha256": "9193c77fd6f3e8053ba86aee09730d687745d5727982d84192a54645fd41291a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-4.jsonl",
+      "sha256": "6d64ac5bcd8f8a1713e4f6fd8458ed5d4734bee29b65766dc546b51346f7ea0f",
+      "receipt_sha256": "08c5fc5a5607e441bef5a55ad019278739e631b38c4b407974eb96bdf27d3388"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-5-1.pt",
+      "sha256": "60e22baa3e3b294100fbc20c0947c30c65ffe8d70c17c1aa8b649a93abbc66c3"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-5-3.pt",
+      "sha256": "18088ba2d635d9f6d4b06c663e370e94e119baa446703b9cc69b2ddfedb62095"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-5.jsonl",
+      "sha256": "7ef48a360a4d2c5480e1b4005136d789d6ed005a65a66a6c467577eb4f5526cd",
+      "receipt_sha256": "355607aa7a6cc3976af9a266017166b8c9830cb53b9d0622969723f46093a7db"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-6-1.pt",
+      "sha256": "2f38be90edba9e5ce83f956d20f0946ae80ce42811136db792efd79f85284772"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-6-3.pt",
+      "sha256": "ca5944290a7d348dc65df339a2cf2d3548d5f2c753c46c1b9e18d7dd9cc7fcd7"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-6.jsonl",
+      "sha256": "eb94ac4d55f05318fc0b60f0164c7e3b1178d0c159df922bb27dfbcbc1b4198b",
+      "receipt_sha256": "7a68b1c6b7343bb72bc8d0d95abd6d82511dba29f83fa70f6af763146e4d8d3f"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-7-1.pt",
+      "sha256": "ceca66fa5b9b5f44efe352e906d13c80552be4d4e0f0a8e4d038a6c0c0860c65"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle2-7-3.pt",
+      "sha256": "6fc6feb72ab71650b8741169d6325694fadfe9462425e56581df6e889908aa11"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle2-7.jsonl",
+      "sha256": "bd0875b1452cc22d894e30228ced4692584591af3d9d0324f409ac8269256fa8",
+      "receipt_sha256": "f310a2db6e94295307e25cadbf91898c9b4ba2eb7532dc89fb553ba5821ad2ef"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-0-1.pt",
+      "sha256": "66ec723847d8dee5cb685a6b6108ebbfcc6b773429400d4f165d1d2de7acfd42"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-0-3.pt",
+      "sha256": "e5c2dce6e481e34ea667881350e351758eb2cd8093cfee53ea57e088bca7524f"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-8-1.pt",
+      "sha256": "8425d02060da91fcae34ef24f805d575cafdece98d5ebcb8dfd0c905b0b6e7a4"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-8-3.pt",
+      "sha256": "75fe662cbcb8951471de2240624c153678874dd7434d3390366813c82bdc4e31"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-0.jsonl",
+      "sha256": "efe6b0505c205b8d8251b642ac23f1ff8b68808ca9910dbbaa59c95fdbf97211",
+      "receipt_sha256": "9f18f921dddada71a095cc9c70207321896b14a138b5b567504976e954a28848"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-1-1.pt",
+      "sha256": "ccf4b0ab33f442e82753183591398c48bd679b117e4fbb4abf61f4950c98d7e8"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-1-3.pt",
+      "sha256": "88c4681be5eba5856248bc0bea3294b6bdd7bff86eeefe3777f107585375cbde"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-9-1.pt",
+      "sha256": "cf0ec476f44440ee67bf05a7f69954f7fc0f26c4010da433fd243c59607a8815"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-9-3.pt",
+      "sha256": "a5ce9c34b1897480369ee574a07e8fa8fb53d9d46f8db9666850a1c28c888e0e"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-1.jsonl",
+      "sha256": "787bac06d3e7fe0c19f50831ac86fc8ebac876bbce090ac320808366b590e27e",
+      "receipt_sha256": "22f710a0b8610d2c29268a1e49f02b192ff31cbec551cb83c9034cea1aa5d729"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-2-1.pt",
+      "sha256": "70d02a8cb94f8955478034824b4cbc54a535632cc8bbf333d0503cdba01c52bb"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-2-3.pt",
+      "sha256": "83c269a82bcc33283d58fe215b611dde43e29af675654e70c7f1c59216ab07e2"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-2.jsonl",
+      "sha256": "e98521f05553c64be74c9f52eed4a4d7b89eb8ac22780ab9cd36f48aca8d3617",
+      "receipt_sha256": "9c367ecdca0b0a3297f6545d358fbfc773f0d24801718f0d3fdf9c24d72f52fd"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-3-1.pt",
+      "sha256": "9d729676347bc3b7c5484df9a2110ffb733dae35a2b18c7c00457d2dfb81b1e5"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-3-3.pt",
+      "sha256": "f0396e7dc77bb5962051c05042ae86f5c1d551b2f80b14826d20ff6adf862e9a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-3.jsonl",
+      "sha256": "8ac00b63128d2c55c3f9850d2b84ec1d71049462c14d32e96a9c1b0ee81eae91",
+      "receipt_sha256": "56e5b735de9c773e6ac30e5e37744f819c332644a18dba13dfee524c3abe2697"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-4-1.pt",
+      "sha256": "d901e3462be5ce2c4c5e4dfb151daa3e8c1d1079dfc937bc156f1670c1799f96"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-4-3.pt",
+      "sha256": "4722a010bc37390d74416832189541ea73c89109959a646952af20c8c18c6a82"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-4.jsonl",
+      "sha256": "12046d10642781f0aa05882d1c52a72c98009cf0c97f3789b586ed20ac34599e",
+      "receipt_sha256": "92962bb57bfdb421e0704b2d2de300d13594f9b032cfa4d52e8e37c72053dbda"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-5-1.pt",
+      "sha256": "a977eca69a1fb02752eba1fe88a8d1d99a98706efba9a8ff204e1d41bf90e783"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-5-3.pt",
+      "sha256": "5655290f66a0e3e1bd842e7ca79f7d9ed73058a9e4a9921e61b4e1b4d8b6f7ec"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-5.jsonl",
+      "sha256": "ec8be20fe61a3b9df452c2342afe64cbcbb8eb05e20102c741265242ae413ab3",
+      "receipt_sha256": "d88e3e7837c71a24c80706b93f7d80d4e80168bf612f0fa9b396f35113a10c59"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-6-1.pt",
+      "sha256": "e44c0053113b235dc2fabfac52061c6b686ee08ae0d3762bc5060e87582b3f6b"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-6-3.pt",
+      "sha256": "3771da4070285ee7902e4869333e11a72c26229879007ccdbb76c57d8f92e563"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-6.jsonl",
+      "sha256": "e5630199e0fc5b1bd47b589fe72ac63336f648c35aca1c80bf354f72bd06bd04",
+      "receipt_sha256": "8fbdb98ca858f70816cd41af1a36fb77b2638aeaac5d05a231ee4300a6828e10"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-7-1.pt",
+      "sha256": "8e2350ae878456a38a9ec49e8b296214186b22f2fde6ae49c6b5d87a39bd8e48"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-eagle3-7-3.pt",
+      "sha256": "4f9a752097923dbf38a9c165c2042cd7ce3785634c19334931a379151989f92c"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-eagle3-7.jsonl",
+      "sha256": "dd3caec256c0654e80d4309c4bdc1189e0bb1df940d2bf45c3ca738be11163a3",
+      "receipt_sha256": "b7ca5c3db1051321d15c0afc4d646be4a9e928d64d47375dac89bcbcc6b94480"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-0-1.pt",
+      "sha256": "e4c6f8a5d17e7a0660045942c6b861f9d84d99aaf3d336aca78c76ebfff681a2"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-0-3.pt",
+      "sha256": "6f4954cf72edbbcac64ccd3e5ba1c971c9d0db957733088d9b9410971583ca66"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-8-1.pt",
+      "sha256": "12410828f9e0c57c4174093aea9f12ffda3a208b721cac573f362345be93b0a9"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-8-3.pt",
+      "sha256": "5e0edd3cba8d0fdfb649146a08cc1a0c18a68d0fe483af180bd239b7e1bc1629"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-0.jsonl",
+      "sha256": "5c8699899097a1dc5f3d34f32b71babb4f8998a6e00d9d10e7cf9dd3fd29833c",
+      "receipt_sha256": "31788db02036a879b7e819c1a165e1d1ddb76e512a7ccd26a9829f93cc3ab217"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-1-1.pt",
+      "sha256": "78093b9d12bfafa28ea4205d3159c21bbb0c3807692386f03e4b59064b7d5aed"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-1-3.pt",
+      "sha256": "05e3b4b0eee473bb609d3ab4b55c4455d783826dd2c8d1550e8c8dc577b54e60"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-9-1.pt",
+      "sha256": "5aecb93dc2ae2b3b430de75be1743c3af3bd6278b5708b218c9e0895cea598d0"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-9-3.pt",
+      "sha256": "c682b14eab7445a97faf49e28f3f9ac06ce02557718e5b594c3303986c92c84c"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-1.jsonl",
+      "sha256": "0f44edc3213f35d29ad0d65904f9b55ac8ff74759ddd9705428196bc0cdc398c",
+      "receipt_sha256": "31f57b1882155cf63bd3b14dc6ac064e1930caec8e9320f6b58b8e797d747f41"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-2-1.pt",
+      "sha256": "0a85eb070c6f13764074fcff0310c8f61b83ffe1e02f2fb937764e83f291ddac"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-2-3.pt",
+      "sha256": "4cfd2d42078c2ad53e2a191465d3737be2b6931fa76f94f261f055edd531ff00"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-2.jsonl",
+      "sha256": "af50bba8accff90fe53152a7b01a6d728ea7cd69e92a8c1379c96836f7bc3528",
+      "receipt_sha256": "6ab2a6c75b862fa6dc4ce4aeb3bb9d432af3f169cc4ef327735fca65a8dfa345"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-3-1.pt",
+      "sha256": "75d45a4d644961c9cf6a118fe26e5ce34d38aa1a5718b4b6d90e4424d98070df"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-3-3.pt",
+      "sha256": "e6fbcef3c25cb0e9b241a8ea57a21e21886c2202cd8ece4018264b9ffabda8e3"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-3.jsonl",
+      "sha256": "e75fb523a421159082f19301197c5433f5874f9c43946a275be09beb385f8f0e",
+      "receipt_sha256": "164512b4358085ff2ec07d308b30fe2baa677e70a981a303e311e7304999f790"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-4-1.pt",
+      "sha256": "c1c4c77b969fc5e976de676c9b630cdcfc3d81fbce517bffaf34cd0c378b763a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-4-3.pt",
+      "sha256": "3dc97ead034ba10b68717c3cae7943493c66996204666336f021b9e28deae368"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-4.jsonl",
+      "sha256": "15f7a279d7ecd58496bcab90afff04b2af0316788fddb74175ff1b0b95191174",
+      "receipt_sha256": "fdee342b9c6f08b69d0a7d97fd8e0953302f7db17e373f5dd5a1c2c03a585634"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-5-1.pt",
+      "sha256": "ed237efbbc815e7bb0a118ff81356e60f34435448c9bbc53aef82affc277ad22"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-5-3.pt",
+      "sha256": "9e0806b3b416413c1cd21eda962d2684313a39649f98dc97910bf27958d5c7ed"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-5.jsonl",
+      "sha256": "0d75f3de92be2aa01fc17f230a4a2bc565956dc6a2a1af00f0d10c2cf666f74e",
+      "receipt_sha256": "ee7ae7b1cc536f949a909e15c94b6f8e679a91472164995573d8711287c1e2a2"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-6-1.pt",
+      "sha256": "bd0e4e3446facf3d3f6596c9c1bd0c667abf2e6e7fd19f269bcf8db9bad844f9"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-6-3.pt",
+      "sha256": "7a1df00aab230707b15c2fd1243b8a281eda80810d605665ef4b19801fcde397"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-6.jsonl",
+      "sha256": "57a08fd9042582eb4c722a6853ff0aad1d9682d335ddf88b79996fdced40a070",
+      "receipt_sha256": "f442803f4e665b2072afc1553e475127dadc07dc77fc03a53c16d83ee41289e8"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-7-1.pt",
+      "sha256": "69efbec9d7a48e4987fd23e30b95f5b06cb3eafa6a4ec8171c8645fc5aaf4a23"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/capture-hass-7-3.pt",
+      "sha256": "a54c04cfc320bbee2202bef5b1669d7917c5400af33669f03f1dd82f309f5730"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/primary-2212576-validation-queue-20261110-v2-full/conditional-hass-7.jsonl",
+      "sha256": "b287229a36d51beaec2e8a8a381ca4f27a76bf56712bdc5cf7303a425a22ce34",
+      "receipt_sha256": "11d1a342284b21ec5c21459e61d7763d7b44cbe8a468feebe6109ab88dbd17aa"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle2-0.jsonl",
+      "sha256": "07436227b854fb375930afa9e6e3dea7a8a7f1a61f2503b999f8041a106b9368",
+      "receipt_sha256": "31e64c45f7e4e087f7272ae65805bea19bac9fae425db2c982671e38310eee16"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle2-1.jsonl",
+      "sha256": "7b818bff474f8bc5ce511599ce7b072f888a5c4ee520beecd099e0b15ff09dd3",
+      "receipt_sha256": "f791c3fb96fae796a03fb0a081114c4b218aef69d626af58a1b20d70dccf52c4"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle2-2.jsonl",
+      "sha256": "5c8fb458522f8e8089f7aa7f7b0f75d0747afd6bf451add134b6a868f2a05bce",
+      "receipt_sha256": "ea3e2be3bb91c3c5f6703b55300d66d9713d5710e577bb6cb51eed283f537784"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle2-3.jsonl",
+      "sha256": "cebaf9463e07a4e50e9851115059c143d17b26981b4418ed84e4c208a7c0df23",
+      "receipt_sha256": "329f2f898ec57c26542d0fff1c4f3c2454c7a167896060f9499f789aaea8349f"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle2-4.jsonl",
+      "sha256": "a846323a1f3306b61c48db071c2dec25bfa430cf672ecaecbf02d3992ff5ab46",
+      "receipt_sha256": "96dc6167ed7d9b483ac216e0b5ae32328eba53fdc3a020049998113e35ac26b9"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle2-5.jsonl",
+      "sha256": "6688a103eea062802e627a92fa3f0ce881f2c02ca1041ed2585867ac35235bbd",
+      "receipt_sha256": "08c99592ea753329cdd6a76453e2856f31c4415471bf745104203b175b104aeb"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle2-6.jsonl",
+      "sha256": "6600f3a132d6a73e5f455379ea85edd56ec41292995209a8e6cdfce74607c8f6",
+      "receipt_sha256": "63be0a9471eb4be7231b2d302c72ae3b82a4a6ca3a6a0dff4c9561298a5332bf"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle2-7.jsonl",
+      "sha256": "b42796a39c6b231beba4d38b5a2b4ef093690ac8cd759f164852815eb732eb35",
+      "receipt_sha256": "f69dad5d51187c748675ece7a6560ec45af9b1579818fcc3ce80ad955b674344"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle3-0.jsonl",
+      "sha256": "a5f4b02ae3e2db879434106ae64c4abb1d4253e3b1994aee48e323bfea3c7de1",
+      "receipt_sha256": "7efef3b9ab5083aaabb936a70d2bd557d9cf21b55e16e88a6e4a105e75e0e68a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle3-1.jsonl",
+      "sha256": "0263cc819c3c592237401d176ae055c292a350d6092d75071c14a362bdba67b4",
+      "receipt_sha256": "bc2605374f807cc58a62edd5752cf13e2d3dd05c1cb83db3c0e3005bb42c3411"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle3-2.jsonl",
+      "sha256": "f66d70294af54a53238adcea5b709af6a72de9cc38ab22d75a19f1df3537a46d",
+      "receipt_sha256": "893d16643685162a6927d628028a444aef14a416e5c8727540f4f080d1167a30"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle3-3.jsonl",
+      "sha256": "77447386d12101f32b3302eb30665543cb8bfcd22bc90f6404d1880abd6c4297",
+      "receipt_sha256": "5302b3ed149962b753bd724fc01d56620060b6617f394fa47da04319a7f202e3"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle3-4.jsonl",
+      "sha256": "17d9055d05b50ddbbba686c894d205673c6c89f0cb869f6d98fb0a6e88215314",
+      "receipt_sha256": "4f6d5c4fcba0298708dd665bc9eaa039bfe3fea0e0ea17f3ac8239f706a98164"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle3-5.jsonl",
+      "sha256": "a964f27d4aa8b147a040ddc7cf0b41a7106c62ccad04e3acf15fa5f87aa3139c",
+      "receipt_sha256": "61970263a8e261b48d4a41b0d36595c5688ec3996914baf2f325cd8ce39c8c01"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle3-6.jsonl",
+      "sha256": "0ff78f5d9376c9d69a2cc77cc686fd013e07bd2e4081c92b7fc53058d8182076",
+      "receipt_sha256": "a54d0fdc6fa0b99a0ee0e13b1cb8de7a2129935f48b8477d05c7cf33ae1ef63e"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-eagle3-7.jsonl",
+      "sha256": "64ec10da4cb3fe64060afbb0b1a091d00e2aa257e54fa7805e694db1e8ac9e31",
+      "receipt_sha256": "3fd9d3eb8780a1967ed78ab8695289336018a4bfe1c64328efc986bc4526aff4"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-hass-0.jsonl",
+      "sha256": "de0fc907802a34fb078541f4c11c84dd2e31707e3c95583e0dc372ece7e090ef",
+      "receipt_sha256": "ebdde92a1dabc3e540a7d933973dbc16faae9fe5800dd9a70c891e9a97f5db9a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-hass-1.jsonl",
+      "sha256": "13034a5441d0d0f5043bf1ea1ce514312eade7b55d070d04398a65da4528fbef",
+      "receipt_sha256": "4fbf031e002e320318d949fec7bb95da5f90bf940da3b3c896449ee71af92678"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-hass-2.jsonl",
+      "sha256": "adcd181487a7ee4e751c9651253a4505b8c04b6c38283dad61242597437279be",
+      "receipt_sha256": "00b5ffe2872b03fe63e2c9baa426a7f7494945ad032bf15535256a506e463853"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-hass-3.jsonl",
+      "sha256": "4d9f8d570fa19709078f7254224fffa030b8c2c498ef45af39b069d3354c1c03",
+      "receipt_sha256": "e88019c57b53de95a048380241e856df01a99d58f54d5709d65ea1bac7fda0e0"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-hass-4.jsonl",
+      "sha256": "7338c955d51c600b994b4d6ef444a0211bb39342a6c8d4a97fedf953278c5025",
+      "receipt_sha256": "53d1f613bcef88e88ef4632e4655720158815dd244409a86235604df16d26067"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-hass-5.jsonl",
+      "sha256": "28076580ef32fc9df22a9072e6008ae4b670099a5b8ea2773b13f0948b17f9bf",
+      "receipt_sha256": "6f9ddb62731a937afaf0b1ee0b6c28ba0a1a1fa9dfa8e5b6b1765b6e595e90a3"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-hass-6.jsonl",
+      "sha256": "c845a6aa06797339b2c1978a6eb12275c4d3ed6147bc19cb7da18a7955c52d40",
+      "receipt_sha256": "137b33e2e40243651381df7b688a84031e62f45411d13f11abad6326404222af"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-pipelines/screen-2214872-validation-queue-20261110-v2-full/sampling-hass-7.jsonl",
+      "sha256": "9288c22d816e4638d1e6a048a0db46ec0c18918625ad5f9245563bf76f6f78c4",
+      "receipt_sha256": "dffaeb357062065dfe1431c50019c303ecf28ebd920f524af7db14a316c2fb83"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle2-0.jsonl",
+      "sha256": "2406a4472bc605d22891092a4c8e9fe769fd8a24ed91a715e66638f06e2b72d8",
+      "receipt_sha256": "5e5aff342472b953f07f49e0d74d4babc7e0021a79036d53cb926f2b156786be"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle2-1.jsonl",
+      "sha256": "60aa42fc02082e367ac65b72f3c9853938ad3a0dff50acbcb1087300f0291088",
+      "receipt_sha256": "bd9e066fd4d183e5cc7b8975ca1bde4a3234bb2fe6259eb842cac39704b23479"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle2-2.jsonl",
+      "sha256": "2847ed02247549393f0b1faa7a036298fa311e10659d1c8ca973e980a7ae6ebd",
+      "receipt_sha256": "9c77718ab580a21cfb317a31e705606a39f356a68f063d4c868186ec30cfa536"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle2-3.jsonl",
+      "sha256": "6716b97aa6b16ceac9781ea6547040f59382d966bbf05b85fee42f44e682d052",
+      "receipt_sha256": "5a5af91dcd48528fd6d6f54ed487efe02b7286eb93c2d0279976997a49dc1920"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle2-4.jsonl",
+      "sha256": "15c5efc8eb65676cdca097a288a846cef93053abac6736f4274d03686a700afb",
+      "receipt_sha256": "5aadba1375329383d35405658199a251adef52fab064e883f39e5fc7e59ccb7f"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle2-5.jsonl",
+      "sha256": "340c12ee1e4d8622c6dfc035672b213d684323c935dcfeec57133dc359157f0a",
+      "receipt_sha256": "0c2f88118de6791b97069940ffd98be2e7ef15d3e3042c4209c9dd6f76e63205"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle2-6.jsonl",
+      "sha256": "62eb7054f2670624c11f1bfcd0dab7b5083c2c134751abb49a2a3c89b82a0ca7",
+      "receipt_sha256": "8f0216d9759e384ae74de0468f04fc035d8fb6bdcb1c4cf335b6c61181cfcb33"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle2-7.jsonl",
+      "sha256": "54f903ba0afa38f3d686fd96c989046d663b98a0485d1a404451f324929030b9",
+      "receipt_sha256": "59f22093b2cd33dcf495601df5df872b2970922021044084fe87c69b803d14fc"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle3-0.jsonl",
+      "sha256": "50fafe870f3ef13c4172f68165971cdd27267e73aa904941f5ba0b440cf9021d",
+      "receipt_sha256": "5331e314d3b22696c4efa6742ecaf0749f82cb824d7a3bae8f9ae61ad33c2164"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle3-1.jsonl",
+      "sha256": "f1af52338db5cb5f53d83fd3e2b2c754c4e57d4fd820ff05b5c6bf35e8f6dfaa",
+      "receipt_sha256": "d1203b7baa3d375eb514d76f2c627d10df19a5a8b24b0888ac27997e56cabdec"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle3-2.jsonl",
+      "sha256": "91dbc922719d18c49b99fb3c23250cfc9a72be819df8fcc96a96fc9f22765b00",
+      "receipt_sha256": "ad73da3cb08295832d484776a8faf66076fc42ffa48cfcf322f5aa65fe4c6da1"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle3-3.jsonl",
+      "sha256": "64f25a6a1a42f8c52666882e35350e913a2f1e16db55e86ace479542d2f5d157",
+      "receipt_sha256": "a86ec3455313d15d32382929247a4ec39e15f902b1dac42703a11824ba5ff3a4"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle3-4.jsonl",
+      "sha256": "60cbc7db2925d419a84647652221bb7824f3638ad1fc2232c52b0cfeaa124895",
+      "receipt_sha256": "ce5fdec1288cc12d2e9b8fde9aee3d4ceea4497e02fe26b4bfec583d67459dec"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle3-5.jsonl",
+      "sha256": "ee6f74f6e8ccbdca832dab0dc5a2933ee48b834ba05b934a01c03f02575ad59f",
+      "receipt_sha256": "1b320fc2ab030db393384c32ecaffb5fbcc76ff6a125a92f05d4bb22247c6d60"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle3-6.jsonl",
+      "sha256": "cee3b7d1aa8850e43875b9212328bc6b122ccfb779805de4145ac842ba472349",
+      "receipt_sha256": "c53382b7c531606a13f8a8289da74a0778f37b775ee5e999e9e1129468a107cb"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-eagle3-7.jsonl",
+      "sha256": "1097fcb23f9c6ef0147fa5a7388fd779af62b4c4209447d9c54a83ea80af7378",
+      "receipt_sha256": "69bac323af13bfea627c0f3ca71d30c0338f19de41b4cc69bc7a148dc2b23296"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-hass-0.jsonl",
+      "sha256": "af7a9d4e600b0efe7e1ea7b25682ee9db4e0a238de0a260cd65e735f196838ad",
+      "receipt_sha256": "9d65c515a96026a196a5ac04b59a37de7b8671e356dcf4ee7c1cd31140802046"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-hass-1.jsonl",
+      "sha256": "270f8c5fed9e0f8e996818a922c5f185070623e3de40b5a7f4d75df267b8821f",
+      "receipt_sha256": "545abf3755d544b19fc7b1635ed829cda02a2575aa3dd95ccbcc4f56a8801744"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-hass-2.jsonl",
+      "sha256": "5d7e2532ab4312253193b9179bcacc7eb9d0fdd932bfabac67aa7ae26c9165c9",
+      "receipt_sha256": "6cd7adb8c0c5dfcaf888457c2784344c5e3b477263bbff67c30334456b98a2ce"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-hass-3.jsonl",
+      "sha256": "e9bb2dddc6c42807eca4cff71898c3fd816c6d18b836beea74d7adacad4477d8",
+      "receipt_sha256": "37d06d005a4e6efc97f8c7ee43db0f5c6fb6e65ccd7002c1ba364398837714b3"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-hass-4.jsonl",
+      "sha256": "bd561f0ca05b3b3f2e2c163992242662a0c2d9c3e01733757ac32cb3b6611d26",
+      "receipt_sha256": "437992de2f8177539979c8b7ce2b20d2ba3aadda4e0a71870c76c0ee968bab9b"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-hass-5.jsonl",
+      "sha256": "899da3d16fda2c93df6255ba3f50ba30f9c4a64b8b8fcfd913c9170281f6ecf2",
+      "receipt_sha256": "d551edd9ffcd01b30748f05cc45e619f28e608715838ecfd4795ade02fd358bb"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-hass-6.jsonl",
+      "sha256": "b8910c898b82365383f378dfb429339c6bfd4bfa4fd2a42df2d06eab22c0267b",
+      "receipt_sha256": "bb4fcace0bebbf00b71846b0854002fa02791a70a988dee730b3735cc076ffb7"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1/greedy-hass-7.jsonl",
+      "sha256": "5b5714cb3f0c5fc74d7d48f430c0d16d4b09c103afae9924305326d79e4fc803",
+      "receipt_sha256": "0e2fd5d1f3d5b0f88a26d047fb3db1926685ef356e121450489a40fb377898ee"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/numerical-confirmation/confirmation-20261111-v2/vectors-0.pt",
+      "sha256": "d6e1530fea10edbfe9162a947b97f1b20a31ed4fcfd5dcfb34dc4c04275f11f9",
+      "worker_sha256": "454a4bdfc4b3867c5e4363c0b82a0eee8ce3142a197f690098ca81343d90e380"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/numerical-confirmation/confirmation-20261111-v2/vectors-1.pt",
+      "sha256": "9a1dd66c79a4bb97b418813148288cf726e39d13f104c6afb3078ddbb5d5c499",
+      "worker_sha256": "0cfa104c89d88322dd8763d13cd84990bba2dd46464761444bab6bcca8d9e8d2"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/numerical-confirmation/confirmation-20261111-v2/vectors-2.pt",
+      "sha256": "4967a39bcbd210a341b66aa19a315f43841a18c021b3a4eaf919d42e790d313f",
+      "worker_sha256": "0e4502a85e2460d97007b1d3bd027fef829acfecf0e429c68aa4c0888e872bde"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/numerical-confirmation/confirmation-20261111-v2/vectors-3.pt",
+      "sha256": "80a4380336969757be2b9d865d2fd0d1f29f94b5848c74fbc2b627705c9cbabd",
+      "worker_sha256": "8bfdb724d7570a5d04212215d424b2f3b9cabf33bcfa38ec1ddd4aa546de02dc"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/numerical-confirmation/confirmation-20261111-v2/vectors-4.pt",
+      "sha256": "b3ab1174bd3c515500b52d67f438b657c1c7fef4118f920e16e22e9cc53bd300",
+      "worker_sha256": "32b56b8be634d88d200c8a06ab14aae79cd7160de4920613e524307a8dca76f4"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/numerical-confirmation/confirmation-20261111-v2/vectors-5.pt",
+      "sha256": "a64674f0c1d8720d1a4d1c3f0c65ca6a26c91492070947ac8f6f61616e803262",
+      "worker_sha256": "e45ca3cac2c857563f652641ea5212ec9ff2029c952e017e4c1881feebab5ff2"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/numerical-confirmation/confirmation-20261111-v2/vectors-6.pt",
+      "sha256": "3d10239237b27ea90886613dbbd4678f8d4451e91bf67dcd491df965088996c7",
+      "worker_sha256": "07deda0c8fc346c8456d25567a6ed7e2bbbd03df062fc0aab5f44a9ca3677f34"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/numerical-confirmation/confirmation-20261111-v2/vectors-7.pt",
+      "sha256": "0135ef786ec960869ed2c80519f303da3b3761cd1decec73c346a51da749096a",
+      "worker_sha256": "4f4c708497fb24a9b402da836cd4c8748ee5c4adac027a922212cce45cdeb8f7"
+    }
+  ],
+  "scope": "Independent retained raw/tensor reconstruction only; not a new GPU collection, model-content audit, paper-agreement result or scientific admission",
+  "identity_sha256": "4244c3b166e9a9318ee681fd2b3ea4696851db7fa38909d417b69a318e3988c7"
+}
