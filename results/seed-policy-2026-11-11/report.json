@@ -1,0 +1,124 @@
+{
+  "scope": "paired_first_turn_seed_diagnostic_not_reproduction_admission",
+  "status": "complete",
+  "measured_generations": 1600,
+  "cells": [
+    {
+      "benchmark": "alpaca",
+      "arm": "upstream_seed_zero",
+      "questions": 80,
+      "timing_repeats": 5,
+      "question_mean_tokens_per_cycle": 5.336986449050836,
+      "published_reference_tau": 5.56,
+      "relative_error": -0.04011035089013733,
+      "within_five_percent_diagnostic": true,
+      "questions_with_identical_replay_tokens": 80
+    },
+    {
+      "benchmark": "alpaca",
+      "arm": "registered_hash",
+      "questions": 80,
+      "timing_repeats": 5,
+      "question_mean_tokens_per_cycle": 5.595749026904817,
+      "published_reference_tau": 5.56,
+      "relative_error": 0.006429681097988683,
+      "within_five_percent_diagnostic": true,
+      "questions_with_identical_replay_tokens": 0
+    },
+    {
+      "benchmark": "alpaca",
+      "contrast": "upstream_seed_zero_minus_registered_hash",
+      "paired_question_mean_difference": -0.2587625778539797,
+      "bootstrap_ci95": [
+        -0.4576588930313387,
+        -0.07318562155971911
+      ],
+      "bootstrap_samples": 5000,
+      "bootstrap_unit": "question",
+      "questions": 80,
+      "timing_repeats_are_not_independent_questions": true
+    },
+    {
+      "benchmark": "gsm8k",
+      "arm": "upstream_seed_zero",
+      "questions": 80,
+      "timing_repeats": 5,
+      "question_mean_tokens_per_cycle": 5.39682605141472,
+      "published_reference_tau": 4.59,
+      "relative_error": 0.17577909616878443,
+      "within_five_percent_diagnostic": false,
+      "questions_with_identical_replay_tokens": 80
+    },
+    {
+      "benchmark": "gsm8k",
+      "arm": "registered_hash",
+      "questions": 80,
+      "timing_repeats": 5,
+      "question_mean_tokens_per_cycle": 5.514284568902649,
+      "published_reference_tau": 4.59,
+      "relative_error": 0.20136918712476026,
+      "within_five_percent_diagnostic": false,
+      "questions_with_identical_replay_tokens": 0
+    },
+    {
+      "benchmark": "gsm8k",
+      "contrast": "upstream_seed_zero_minus_registered_hash",
+      "paired_question_mean_difference": -0.11745851748792861,
+      "bootstrap_ci95": [
+        -0.2816591536005836,
+        0.03818774818598977
+      ],
+      "bootstrap_samples": 5000,
+      "bootstrap_unit": "question",
+      "questions": 80,
+      "timing_repeats_are_not_independent_questions": true
+    }
+  ],
+  "training_admission": false,
+  "speedup_claim": false,
+  "completed_at_utc": "2026-11-11T12:30:19.292365+00:00",
+  "manifest_sha256": "d25e77f155e4213000c0e195121a95a3694af84e99fde1157e19f4e7452e5012",
+  "gpu_context_sha256": "a6b7122bdac1371f389e74b08978cd0c2954838f0adac3f3caf9733d59ca0786",
+  "workers": [
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-0.jsonl",
+      "sha256": "3e828c617977ba6266ec7dbc35091559032d4d5a90189ec3c565583bc90edeae",
+      "receipt_sha256": "12f39435d03117a3d19e3d2ea98d3776e9e16908161db75be7026ead1a0ce351"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-1.jsonl",
+      "sha256": "50f71fba7b94089dfc2bb23505c6c7fcf7cc5bcbcb579f616e1b1952d79c5c7d",
+      "receipt_sha256": "7a84201b62d34093d95316194329fd26fcd811cdc7302089faa45294aeec778a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-2.jsonl",
+      "sha256": "3e9b1e2e210ec7132bf5b650c1a16c20c6570477191873637e3536bb9072d968",
+      "receipt_sha256": "36ae52ee396854d1cda8addcc40794480ccef9d23115a1fac2a58beede51c7c2"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-3.jsonl",
+      "sha256": "8721b9bc5ff39ffd0d2fe35f2d7d8e7cae46136247abcd8e796f05870d26cf1e",
+      "receipt_sha256": "52c55d1846ad361a17eab5eb7e17f0e1e68287bfb2b5188d26872d643ab331ab"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-4.jsonl",
+      "sha256": "2b8950b8549652742c837ec2df9873e3e070333915d3f891ca6fc340f3e94021",
+      "receipt_sha256": "7203f032e05e00df0542bf02c7bad236449ff357a968b774ade3c45bfe5d694a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-5.jsonl",
+      "sha256": "759e443d8794e7fde32c752bd76ddb5281fd1149fb77def7a59c8b31573e8f71",
+      "receipt_sha256": "5d2a8fd26c6ea7f6a8cdb6615f0627d32fa4decfd6bdce2bfd08dc69915c4cfa"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-6.jsonl",
+      "sha256": "8f8a22c91ee9204d4870f8e589f1b2f9176a70efa395a8f5730aa0480e811797",
+      "receipt_sha256": "03e0fb68521ac1d2bea7c14d422d615721b5f8dc7d77380fb07ec544aa037d63"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-7.jsonl",
+      "sha256": "8206ea2b6312499e0faaaf8043332c1bf40a2b516d7a10bc9715f6c03b50034a",
+      "receipt_sha256": "9d60051a90f1fe0615b629b669c99c88b1430e6403416946bad5bc839addadc8"
+    }
+  ]
+}

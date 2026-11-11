@@ -1,0 +1,23 @@
+{
+  "as_of_utc": "2026-11-11T12:35:29.226221+00:00",
+  "job_id": "2215919",
+  "source_sha256": "ad7183a540ef7276dccc8ea35836e9f155b6a19ce361255e88f1f1279c83d01d",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=low-priority",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=2",
+    "--mem=4G",
+    "--time=00:15:00",
+    "--job-name=taps-seed-replay",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/seed-replay-%j.log",
+    "--wrap",
+    "CUDA_VISIBLE_DEVICES= /usr/bin/python3 -B -S /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/seed-policy-20261111-replay-v1.py --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/cluster-analysis-20261111/seed-policy-replay.json"
+  ],
+  "verified_job": "JobId=2215919 JobName=taps-seed-replay UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:15:00 TimeMin=N/A SubmitTime=2026-11-11T07:35:29 EligibleTime=2026-11-11T07:35:29 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T07:35:29 Scheduler=Main Partition=low-priority AllocNode:Sid=mslurm:2654486 ReqNodeList=(null) ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=2 NumTasks=1 CPUs/Task=2 ReqB:S:C:T=0:0:*:* TRES=cpu=2,mem=4G,node=1,billing=2 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=2 MinMemoryNode=4G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/seed-replay-2215919.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/launchers/seed-replay-2215919.log Power= \n"
+}

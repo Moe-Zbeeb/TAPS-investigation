@@ -2,7 +2,7 @@
 
 See the [11 November completion plan](finalization-20261111/COMPLETION_PLAN.md) for current evidence, explicit exit criteria, resource scheduling and the remaining work for every memo section.
 
-The [remaining FP32 token decision](../results/fp32-decision-2026-11-11/README.md) completed on eight GPUs with seven matched controls. The next [seed-policy diagnostic](seed-policy-20261111/PREREGISTRATION.md) is submitted as job 2215909; it tests a verified difference from the upstream evaluation source. The [review packet](verification/REVIEW_PACKET_20261111.md) makes the required validation review concrete. These diagnostics preserve the failed original gate.
+The [remaining FP32 token decision](../results/fp32-decision-2026-11-11/README.md) completed on eight GPUs with seven matched controls. The [seed-policy diagnostic](../results/seed-policy-2026-11-11/README.md) completed 1,600 generations and a separate CPU raw replay; upstream seed zero did not resolve the GSM8K outlier. The [review packet](verification/REVIEW_PACKET_20261111.md) makes the required validation review concrete. These diagnostics preserve the failed original gate.
 
 The source of requirements is the unchanged `TAPS_rebuild_plan.pdf`. The current runnable milestone is official-baseline reproduction. Later stages remain conditional on its results.
 

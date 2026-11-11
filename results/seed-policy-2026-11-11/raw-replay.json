@@ -1,0 +1,96 @@
+{
+  "status": "complete",
+  "scope": "cpu_raw_replay_and_legacy_token_comparison_not_independent_review",
+  "as_of_utc": "2026-11-11T12:36:50.896478+00:00",
+  "slurm_job_id": "2215919",
+  "source_sha256": "ad7183a540ef7276dccc8ea35836e9f155b6a19ce361255e88f1f1279c83d01d",
+  "seed_report_sha256": "686dfe7f3fdd6cdfc1ccfe9931f9ef1ddf1164b3e9c5dba758ea7aca3bf9cbaf",
+  "recomputed_generations": 1600,
+  "statistics_recomputed_exactly": true,
+  "legacy_pairs": 800,
+  "legacy_mismatches": [],
+  "all_legacy_tokens_and_cycle_emissions_identical": true,
+  "raw_proofs": [
+    {
+      "completed_records": 1200,
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-replication-20261110-a10080-v1/raw/eagle3-shard0.jsonl",
+      "sha256": "8af0e06c2c1624b2e90c897dedd8cd31ddee33a227613437f23ebbfe45d315d7"
+    },
+    {
+      "completed_records": 1200,
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-replication-20261110-a10080-v1/raw/eagle3-shard1.jsonl",
+      "sha256": "e3df79fb21fea11c81831deb0574c22e299b5474cb6c7c78ebb55b76114ece15"
+    },
+    {
+      "completed_records": 1200,
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-replication-20261110-a10080-v1/raw/eagle3-shard2.jsonl",
+      "sha256": "fac20f803d9e1c285d64e4719cde5faa03b0f4a8247aea76eb1bf24855d12d84"
+    },
+    {
+      "completed_records": 1200,
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-replication-20261110-a10080-v1/raw/eagle3-shard3.jsonl",
+      "sha256": "a7ca4914d8ef49a4d748a9777a9efa7e01a31933e47beaac52f9febb120ab481"
+    },
+    {
+      "completed_records": 1200,
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-replication-20261110-a10080-v1/raw/eagle3-shard4.jsonl",
+      "sha256": "9dc5c4260b7ab8bf9e2b572a3f48218c9c26058655ed7f73dc5ec455850a3299"
+    },
+    {
+      "completed_records": 1200,
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-replication-20261110-a10080-v1/raw/eagle3-shard5.jsonl",
+      "sha256": "ac1c5ecc0737fd20ac9110569344ecf854b2094816c4752b58a350bebd4599ce"
+    },
+    {
+      "completed_records": 1200,
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-replication-20261110-a10080-v1/raw/eagle3-shard6.jsonl",
+      "sha256": "f0e8fbfa5b64476a8fcbd5984461c447cdffd85a1002f706113a6a65316d62dd"
+    },
+    {
+      "completed_records": 1200,
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/runs/official-eagle3-replication-20261110-a10080-v1/raw/eagle3-shard7.jsonl",
+      "sha256": "102735868274370a429a35ae751eff1ce058e47a5c44d9669f0fff4ce9c0a53c"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-0.jsonl",
+      "sha256": "3e828c617977ba6266ec7dbc35091559032d4d5a90189ec3c565583bc90edeae",
+      "receipt_sha256": "12f39435d03117a3d19e3d2ea98d3776e9e16908161db75be7026ead1a0ce351"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-1.jsonl",
+      "sha256": "50f71fba7b94089dfc2bb23505c6c7fcf7cc5bcbcb579f616e1b1952d79c5c7d",
+      "receipt_sha256": "7a84201b62d34093d95316194329fd26fcd811cdc7302089faa45294aeec778a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-2.jsonl",
+      "sha256": "3e9b1e2e210ec7132bf5b650c1a16c20c6570477191873637e3536bb9072d968",
+      "receipt_sha256": "36ae52ee396854d1cda8addcc40794480ccef9d23115a1fac2a58beede51c7c2"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-3.jsonl",
+      "sha256": "8721b9bc5ff39ffd0d2fe35f2d7d8e7cae46136247abcd8e796f05870d26cf1e",
+      "receipt_sha256": "52c55d1846ad361a17eab5eb7e17f0e1e68287bfb2b5188d26872d643ab331ab"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-4.jsonl",
+      "sha256": "2b8950b8549652742c837ec2df9873e3e070333915d3f891ca6fc340f3e94021",
+      "receipt_sha256": "7203f032e05e00df0542bf02c7bad236449ff357a968b774ade3c45bfe5d694a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-5.jsonl",
+      "sha256": "759e443d8794e7fde32c752bd76ddb5281fd1149fb77def7a59c8b31573e8f71",
+      "receipt_sha256": "5d2a8fd26c6ea7f6a8cdb6615f0627d32fa4decfd6bdce2bfd08dc69915c4cfa"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-6.jsonl",
+      "sha256": "8f8a22c91ee9204d4870f8e589f1b2f9176a70efa395a8f5730aa0480e811797",
+      "receipt_sha256": "03e0fb68521ac1d2bea7c14d422d615721b5f8dc7d77380fb07ec544aa037d63"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-7.jsonl",
+      "sha256": "8206ea2b6312499e0faaaf8043332c1bf40a2b516d7a10bc9715f6c03b50034a",
+      "receipt_sha256": "9d60051a90f1fe0615b629b669c99c88b1430e6403416946bad5bc839addadc8"
+    }
+  ],
+  "training_admission": false
+}

@@ -1,0 +1,352 @@
+{
+  "status": "complete",
+  "scope": "allocation_timeout_recovery_check_not_corpus_completion",
+  "progress_as_of_utc": "2026-11-11T12:49:04.409090+00:00",
+  "prior_progress_as_of_utc": "2026-11-11T12:43:09.571465+00:00",
+  "telemetry_as_of_utc": "2026-11-11T12:46:40.283425+00:00",
+  "original_holder_job_id": "2212576",
+  "original_coordinator_job_id": "2214977",
+  "current_holder": {
+    "job_id": "2212580",
+    "node": "deep-chungus-10",
+    "successor": "2215920",
+    "partition": "high-priority",
+    "qos": "spec-priority",
+    "gpus": 8,
+    "mode": "hold-for-user",
+    "started_at": "2026-11-11T12:41:59.547979+00:00",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodes=1",
+      "--exclusive",
+      "--nodelist=deep-chungus-10",
+      "--gres=gpu:a100:8",
+      "--ntasks=1",
+      "--cpus-per-task=64",
+      "--time=2-00:00:00",
+      "--dependency=afterany:2212580",
+      "--job-name=deep10-hold",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold-%j.log",
+      "--wrap",
+      "python3 /mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold.py"
+    ]
+  },
+  "current_holder_live_record": "JobId=2212580 JobName=deep10-hold UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=spec-priority JobState=RUNNING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:04:42 TimeLimit=2-00:00:00 TimeMin=N/A SubmitTime=2026-11-09T07:41:31 EligibleTime=2026-11-11T07:41:58 AccrueTime=Unknown StartTime=2026-11-11T07:41:58 EndTime=2026-11-13T07:41:58 Deadline=N/A PreemptEligibleTime=2026-11-11T07:41:58 PreemptTime=None SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T07:41:58 Scheduler=Main Partition=high-priority AllocNode:Sid=deep-chungus-10:563134 ReqNodeList=deep-chungus-10 ExcNodeList=(null) NodeList=deep-chungus-10 BatchHost=deep-chungus-10 NumNodes=1 NumCPUs=128 NumTasks=1 CPUs/Task=64 ReqB:S:C:T=0:0:*:* TRES=cpu=128,node=1,billing=128,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=64 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10 StdErr=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold-2212580.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold-2212580.log Power= TresPerNode=gres:gpu:a100:8 \n",
+  "coordinator_job_id": "2214983",
+  "continuation": {
+    "attempts": [],
+    "plan_identity_sha256": "dbf6acd428977385aa98b2f302241086764f28eb9e1cda1005af0f45ed3331af",
+    "status": "resuming",
+    "training_admission": false
+  },
+  "new_attempt": {
+    "hardware": {
+      "device_bindings": [
+        {
+          "index": "0",
+          "shard_index": 0,
+          "token": "0",
+          "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434"
+        },
+        {
+          "index": "1",
+          "shard_index": 1,
+          "token": "1",
+          "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641"
+        },
+        {
+          "index": "2",
+          "shard_index": 2,
+          "token": "2",
+          "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a"
+        },
+        {
+          "index": "3",
+          "shard_index": 3,
+          "token": "3",
+          "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95"
+        },
+        {
+          "index": "4",
+          "shard_index": 4,
+          "token": "4",
+          "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8"
+        },
+        {
+          "index": "5",
+          "shard_index": 5,
+          "token": "5",
+          "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797"
+        },
+        {
+          "index": "6",
+          "shard_index": 6,
+          "token": "6",
+          "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a"
+        },
+        {
+          "index": "7",
+          "shard_index": 7,
+          "token": "7",
+          "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d"
+        }
+      ],
+      "gpu_inventory": [
+        {
+          "driver_version": "580.65.06",
+          "index": "0",
+          "memory_total_mib": 81920.0,
+          "name": "NVIDIA A100 80GB PCIe",
+          "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434"
+        },
+        {
+          "driver_version": "580.65.06",
+          "index": "1",
+          "memory_total_mib": 81920.0,
+          "name": "NVIDIA A100 80GB PCIe",
+          "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641"
+        },
+        {
+          "driver_version": "580.65.06",
+          "index": "2",
+          "memory_total_mib": 81920.0,
+          "name": "NVIDIA A100 80GB PCIe",
+          "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a"
+        },
+        {
+          "driver_version": "580.65.06",
+          "index": "3",
+          "memory_total_mib": 81920.0,
+          "name": "NVIDIA A100 80GB PCIe",
+          "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95"
+        },
+        {
+          "driver_version": "580.65.06",
+          "index": "4",
+          "memory_total_mib": 81920.0,
+          "name": "NVIDIA A100 80GB PCIe",
+          "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8"
+        },
+        {
+          "driver_version": "580.65.06",
+          "index": "5",
+          "memory_total_mib": 81920.0,
+          "name": "NVIDIA A100 80GB PCIe",
+          "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797"
+        },
+        {
+          "driver_version": "580.65.06",
+          "index": "6",
+          "memory_total_mib": 81920.0,
+          "name": "NVIDIA A100 80GB PCIe",
+          "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a"
+        },
+        {
+          "driver_version": "580.65.06",
+          "index": "7",
+          "memory_total_mib": 81920.0,
+          "name": "NVIDIA A100 80GB PCIe",
+          "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d"
+        }
+      ],
+      "hardware_identity_sha256": "66213a48e5871bb4862329bdca15100ec3e9161400c0b9482b3716f755f912d9",
+      "job_id": "2212580",
+      "node": "deep-chungus-10",
+      "slurm": {
+        "job": {
+          "Account": "grad-students",
+          "EndTime": "2026-11-13T07:41:58",
+          "JobId": "2212580",
+          "JobName": "deep10-hold",
+          "NodeList": "deep-chungus-10",
+          "NumCPUs": "128",
+          "NumNodes": "1",
+          "Partition": "high-priority",
+          "QOS": "spec-priority",
+          "StartTime": "2026-11-11T07:41:58",
+          "TRES": "cpu=128,node=1,billing=128,gres/gpu=8,gres/gpu:a100=8",
+          "UserId": "mohamadzbib(29562)"
+        },
+        "job_record_sha256": "a5763e4d0eb5d543ae3f8cf26a957e15539ec41f40fdd574723175cbf02ce09c",
+        "node": {
+          "AllocTRES": "cpu=128,gres/gpu=8,gres/gpu:a100=8",
+          "CPUTot": "128",
+          "CfgTRES": "cpu=128,mem=1000000M,billing=128,gres/gpu=8,gres/gpu:a100=8",
+          "Gres": "gpu:a100:8",
+          "NodeName": "deep-chungus-10",
+          "RealMemory": "1000000",
+          "State": "ALLOCATED",
+          "Version": "21.08.8"
+        },
+        "node_record_sha256": "e7d668d70c6d18e405403603eb998a5d2f5107ef5de0889e6b4aebab347f2b12"
+      }
+    },
+    "plan_identity_sha256": "dbf6acd428977385aa98b2f302241086764f28eb9e1cda1005af0f45ed3331af",
+    "started_at_utc": "2026-11-11T12:43:08.118989+00:00"
+  },
+  "before_workers": [
+    {
+      "rank": 0,
+      "age_seconds": 179.4316189289093,
+      "completed_examples": 40896,
+      "elapsed_seconds_this_attempt": 83940.46150187682,
+      "expected_examples": 67514,
+      "generated_tokens_this_attempt": 73972219
+    },
+    {
+      "rank": 1,
+      "age_seconds": 101.42806267738342,
+      "completed_examples": 38976,
+      "elapsed_seconds_this_attempt": 84019.69244267419,
+      "expected_examples": 67514,
+      "generated_tokens_this_attempt": 70380833
+    },
+    {
+      "rank": 2,
+      "age_seconds": 84.03936386108398,
+      "completed_examples": 37568,
+      "elapsed_seconds_this_attempt": 84036.35415777285,
+      "expected_examples": 67514,
+      "generated_tokens_this_attempt": 67320735
+    },
+    {
+      "rank": 3,
+      "age_seconds": 184.69220542907715,
+      "completed_examples": 38592,
+      "elapsed_seconds_this_attempt": 83936.59525836445,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 69184241
+    },
+    {
+      "rank": 4,
+      "age_seconds": 92.5293185710907,
+      "completed_examples": 40960,
+      "elapsed_seconds_this_attempt": 84028.14409801736,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 73947302
+    },
+    {
+      "rank": 5,
+      "age_seconds": 150.17535424232483,
+      "completed_examples": 40896,
+      "elapsed_seconds_this_attempt": 83968.88431400899,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 73623505
+    },
+    {
+      "rank": 6,
+      "age_seconds": 108.30285882949829,
+      "completed_examples": 40768,
+      "elapsed_seconds_this_attempt": 84012.8716936633,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 73693307
+    },
+    {
+      "rank": 7,
+      "age_seconds": 175.73967456817627,
+      "completed_examples": 40768,
+      "elapsed_seconds_this_attempt": 83945.77361002471,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 73226067
+    }
+  ],
+  "after_workers": [
+    {
+      "rank": 0,
+      "age_seconds": 6.177011489868164,
+      "completed_examples": 41024,
+      "elapsed_seconds_this_attempt": 244.5305346911773,
+      "expected_examples": 67514,
+      "generated_tokens_this_attempt": 250922
+    },
+    {
+      "rank": 1,
+      "age_seconds": 129.12761878967285,
+      "completed_examples": 39040,
+      "elapsed_seconds_this_attempt": 118.4279139181599,
+      "expected_examples": 67514,
+      "generated_tokens_this_attempt": 117310
+    },
+    {
+      "rank": 2,
+      "age_seconds": 113.88188552856445,
+      "completed_examples": 37632,
+      "elapsed_seconds_this_attempt": 134.62332272622734,
+      "expected_examples": 67514,
+      "generated_tokens_this_attempt": 120821
+    },
+    {
+      "rank": 3,
+      "age_seconds": 117.43601679801941,
+      "completed_examples": 38656,
+      "elapsed_seconds_this_attempt": 130.3036798480898,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 114332
+    },
+    {
+      "rank": 4,
+      "age_seconds": 8.75795865058899,
+      "completed_examples": 41088,
+      "elapsed_seconds_this_attempt": 239.82529929745942,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 223553
+    },
+    {
+      "rank": 5,
+      "age_seconds": 3.2519404888153076,
+      "completed_examples": 41024,
+      "elapsed_seconds_this_attempt": 244.64989624451846,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 239090
+    },
+    {
+      "rank": 6,
+      "age_seconds": 120.62518787384033,
+      "completed_examples": 40832,
+      "elapsed_seconds_this_attempt": 127.32675630878657,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 114914
+    },
+    {
+      "rank": 7,
+      "age_seconds": 122.16266632080078,
+      "completed_examples": 40832,
+      "elapsed_seconds_this_attempt": 128.3288569767028,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 118830
+    }
+  ],
+  "new_committed_examples_by_rank": [
+    128,
+    64,
+    64,
+    64,
+    128,
+    128,
+    64,
+    64
+  ],
+  "all_workers_committed_new_examples": true,
+  "processed_inputs": 320128,
+  "source_population": 540107,
+  "corpus_complete": false,
+  "gpu_telemetry": {
+    "exit_code": 0,
+    "stdout": "0, NVIDIA A100 80GB PCIe, 81920, 69121, 93\n1, NVIDIA A100 80GB PCIe, 81920, 68781, 93\n2, NVIDIA A100 80GB PCIe, 81920, 68841, 94\n3, NVIDIA A100 80GB PCIe, 81920, 68975, 94\n4, NVIDIA A100 80GB PCIe, 81920, 69297, 93\n5, NVIDIA A100 80GB PCIe, 81920, 68963, 84\n6, NVIDIA A100 80GB PCIe, 81920, 69121, 94\n7, NVIDIA A100 80GB PCIe, 81920, 68909, 94\n",
+    "stderr": ""
+  },
+  "queue": "2215920|PENDING|high-priority|spec-priority|gres:gpu:a100:8|(Dependency)|0:00\n2214979|PENDING|high-priority|spec-priority|gres:gpu:a100:8|(Dependency)|0:00\n2212580|RUNNING|high-priority|spec-priority|gres:gpu:a100:8|deep-chungus-10|7:06\n2214978|PENDING|low-priority|normal|N/A|(Dependency)|0:00\n2214983|RUNNING|low-priority|normal|N/A|deep-chungus-2|6:48\n",
+  "original_accounting": "2212576|TIMEOUT|0:0|deep-chungus-10|2-00:00:24|2-00:00:00\n2212580|RUNNING|0:0|deep-chungus-10|00:01:11|2-00:00:00\n2214977|FAILED|1:0|deep-chungus-2|23:28:52|2-00:00:00\n2214978|PENDING|0:0|None assigned|00:00:00|06:00:00\n2214979|PENDING|0:0|None assigned|00:00:00|04:00:00\n2214983|RUNNING|0:0|deep-chungus-2|00:00:53|2-00:00:00\n",
+  "deployed_source_identity_sha256": "6375933ffe6e688eb4eb032360eabe519efadd01e13233a56869a022bf6f2caa",
+  "training_admission": false,
+  "source_observations": {
+    "rollover-state.json": "a5413b02e2c2f7ce7e1911a5461043dfc60688bdfe8018545dc647745a31deeb",
+    "post-rollover.json": "c48f4c6b5a1bb2d8bb9ba43978bc47cedc6c3d194a3d2e6cb43c8049fde08834",
+    "recovered-progress.json": "53c57038f8fc50de150eed473d1c001a92cc1bdf6cfdd715025aeb7b6353f645"
+  }
+}

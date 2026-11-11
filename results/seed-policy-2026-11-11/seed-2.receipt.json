@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "worker": 2,
+  "records": 200,
+  "warmups_excluded": 3,
+  "raw_sha256": "3e9b1e2e210ec7132bf5b650c1a16c20c6570477191873637e3536bb9072d968",
+  "manifest_sha256": "d25e77f155e4213000c0e195121a95a3694af84e99fde1157e19f4e7452e5012",
+  "source_sha256": "40672807438ed129f0de86aca6d7c154ce056d436144646b8cad1c4b6a8558be",
+  "slurm_job_id": "2215909",
+  "cuda_visible_devices": "2",
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "torch": "2.6.0+cu124"
+}

@@ -1,0 +1,62 @@
+{
+  "report.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/report.json",
+    "sha256": "686dfe7f3fdd6cdfc1ccfe9931f9ef1ddf1164b3e9c5dba758ea7aca3bf9cbaf",
+    "size_bytes": 5218
+  },
+  "manifest.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/manifest.json",
+    "sha256": "d25e77f155e4213000c0e195121a95a3694af84e99fde1157e19f4e7452e5012",
+    "size_bytes": 1409
+  },
+  "allocation.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/allocation.json",
+    "sha256": "54a79f696a1705aa758a3caf9455893744e0c376a6385261efd13188df5fb4e8",
+    "size_bytes": 3886
+  },
+  "gpu-context.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/gpu-context.json",
+    "sha256": "a6b7122bdac1371f389e74b08978cd0c2954838f0adac3f3caf9733d59ca0786",
+    "size_bytes": 1068
+  },
+  "seed-0.receipt.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-0.receipt.json",
+    "sha256": "12f39435d03117a3d19e3d2ea98d3776e9e16908161db75be7026ead1a0ce351",
+    "size_bytes": 465
+  },
+  "seed-1.receipt.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-1.receipt.json",
+    "sha256": "7a84201b62d34093d95316194329fd26fcd811cdc7302089faa45294aeec778a",
+    "size_bytes": 465
+  },
+  "seed-2.receipt.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-2.receipt.json",
+    "sha256": "36ae52ee396854d1cda8addcc40794480ccef9d23115a1fac2a58beede51c7c2",
+    "size_bytes": 465
+  },
+  "seed-3.receipt.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-3.receipt.json",
+    "sha256": "52c55d1846ad361a17eab5eb7e17f0e1e68287bfb2b5188d26872d643ab331ab",
+    "size_bytes": 465
+  },
+  "seed-4.receipt.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-4.receipt.json",
+    "sha256": "7203f032e05e00df0542bf02c7bad236449ff357a968b774ade3c45bfe5d694a",
+    "size_bytes": 465
+  },
+  "seed-5.receipt.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-5.receipt.json",
+    "sha256": "5d2a8fd26c6ea7f6a8cdb6615f0627d32fa4decfd6bdce2bfd08dc69915c4cfa",
+    "size_bytes": 465
+  },
+  "seed-6.receipt.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-6.receipt.json",
+    "sha256": "03e0fb68521ac1d2bea7c14d422d615721b5f8dc7d77380fb07ec544aa037d63",
+    "size_bytes": 465
+  },
+  "seed-7.receipt.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/seed-policy/first-turn-20261111-v1/seed-7.receipt.json",
+    "sha256": "9d60051a90f1fe0615b629b669c99c88b1430e6403416946bad5bc839addadc8",
+    "size_bytes": 465
+  }
+}

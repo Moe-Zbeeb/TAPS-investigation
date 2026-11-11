@@ -1,5 +1,9 @@
 # Recorded engineering evidence
 
+The [actual allocation-timeout recovery](data-2026-11-11/README.md) verified committed progress on all eight data workers under the protected successor allocation, with the next holder queued. This is completed recovery evidence; the full corpus remains in progress.
+
+The [completed seed-policy comparison](seed-policy-2026-11-11/README.md) contains 1,600 measured generations and a separate CPU raw replay. It preserves the failed published-value comparison and verifies that the registered-hash arm reproduces all 800 earlier paired token/cycle records exactly.
+
 The [completed remaining-token diagnostic](fp32-decision-2026-11-11/README.md) captures a same-prefix near-tie argmax flip and seven controls on eight GPUs. It refines the failure diagnosis without changing the original reproduction gate.
 
 The [11 November status and diagnostics](status-2026-11-11/README.md) contain the latest completed replications, repeated FP32 failure classification and live allocation/data receipts. The [completion plan](../experiments/finalization-20261111/COMPLETION_PLAN.md) distinguishes these results from the research still required.

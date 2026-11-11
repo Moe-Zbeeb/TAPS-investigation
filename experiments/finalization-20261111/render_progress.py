@@ -42,9 +42,22 @@ def render_seed(report):
     return '\n'.join(table)
 
 
+def render_rollover(report):
+    before, after = report['before_workers'], report['after_workers']
+    if len(before) != 8 or len(after) != 8 or not report['all_workers_committed_new_examples']:
+        raise ValueError('All eight resumed workers must commit new examples')
+    table = ['| Worker | Prior committed inputs | After recovery | New committed inputs |', '|---|---:|---:|---:|']
+    for index, (old, current) in enumerate(zip(before, after)):
+        delta = current['completed_examples'] - old['completed_examples']
+        if old['rank'] != index or current['rank'] != index or delta <= 0:
+            raise ValueError('Worker identity or new committed progress differs')
+        table.append(f"| {index} | {old['completed_examples']:,} | {current['completed_examples']:,} | {delta:,} |")
+    return '\n'.join(table)
+
+
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--kind', choices=('logits', 'seed'), required=True)
+    parser.add_argument('--kind', choices=('logits', 'seed', 'rollover'), required=True)
     parser.add_argument('--input', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
@@ -52,7 +65,7 @@ def main():
     report = json.loads(data)
     if report['status'] != 'complete':
         raise ValueError('Incomplete reports cannot produce result tables')
-    text = {'logits': render_logits, 'seed': render_seed}[args.kind](report)
+    text = {'logits': render_logits, 'seed': render_seed, 'rollover': render_rollover}[args.kind](report)
     args.output.write_text(text + '\n\nGenerated from report SHA256 `' + hashlib.sha256(data).hexdigest() + '`.\n')
 
 

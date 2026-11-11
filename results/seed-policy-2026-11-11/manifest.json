@@ -1,0 +1,22 @@
+{
+  "scope": "paired_first_turn_seed_diagnostic_not_reproduction_admission",
+  "created_at_utc": "2026-11-11T12:20:34.231424+00:00",
+  "source_sha256": "40672807438ed129f0de86aca6d7c154ce056d436144646b8cad1c4b6a8558be",
+  "protocol_sha256": "823f5b578a5c44bec49e43896bf30ed3962bb24c329e2e9c0a0de96327bde044",
+  "utility_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/seed-policy-20261111-v1/utility.py",
+  "utility_sha256": "87842c151e8bbbcd40b8e333ceb87106dad9add4fdf677e29eb5d87f6c65502b",
+  "validation_driver": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/validation-queue-20261110-v2/driver.py",
+  "validation_driver_sha256": "d6ea2b5216b0052aa68282646b343143c6523ed14e75f8b2b838f99bb6458934",
+  "registered_cases_sha256": "d3f236a73ab18940bd28f76112210449a2f6ef797061d50a1ab98fc059e0a865",
+  "upstream_generator_sha256": "6daaf6f8010ff986eadfd5a5da7546b7ea9107c4ecdcfed57d694335dc78aef3",
+  "context_policy": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/seed-policy-20261111-v1/stale-context.json",
+  "context_policy_sha256": "65266223bb7f2c4895b874e0c6c4fbeeef22718c0b291db1c7ca0925c5ae4983",
+  "inputs_sha256": "9ef7797488b1677958046b024104b8322b013a77d8cc6749f0811e0c2bba2a91",
+  "arms": [
+    "upstream_seed_zero",
+    "registered_hash"
+  ],
+  "repeats": 5,
+  "legacy_base_seed": 20261110,
+  "training_admission": false
+}
