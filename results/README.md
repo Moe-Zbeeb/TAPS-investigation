@@ -1,5 +1,7 @@
 # Recorded engineering evidence
 
+The [11 November status and diagnostics](status-2026-11-11/README.md) contain the latest completed replications, repeated FP32 failure classification and live allocation/data receipts. The [completion plan](../experiments/finalization-20261111/COMPLETION_PLAN.md) distinguishes these results from the research still required.
+
 The [9 November 2026 receipts](engineering-2026-11-09/manifest.json) are unchanged copies from completed engineering runs. Their manifest records the original artifact paths, byte counts and SHA256 identities. Large raw logs, datasets and checkpoints remain outside this repository.
 
 | Receipt | Evidence | Scope |

@@ -2,7 +2,7 @@
 
 Research code for studying specialist drafters under mixed traffic, following the [TAPS rebuild plan](TAPS_rebuild_plan.pdf). The project connects official-baseline reproduction, controlled specialization experiments, fixed-budget candidate pooling, shared-body experts and serving evaluation. The Python module is `taps_rebuild`.
 
-[Getting started](docs/GETTING_STARTED.md) · [Reproduction protocol](experiments/official-reproduction-20261109/PREREGISTRATION.md) · [Implementation status](experiments/IMPLEMENTATION_STATUS.md) · [Current stages](experiments/STATUS_20261110.md) · [References](references/README.md)
+[Getting started](docs/GETTING_STARTED.md) · [Reproduction protocol](experiments/official-reproduction-20261109/PREREGISTRATION.md) · [Implementation status](experiments/IMPLEMENTATION_STATUS.md) · [Current completion plan](experiments/finalization-20261111/COMPLETION_PLAN.md) · [References](references/README.md)
 
 ```mermaid
 flowchart LR
@@ -28,7 +28,7 @@ The [evidence index](results/README.md) contains selected machine-readable recei
 
 The publication source check ran 333 tests with nine Torch-dependent tests skipped on macOS. CPU source checks and CUDA execution are separate evidence. CI runs the CPU suite on Python 3.10 and 3.12.
 
-The [active validation queue](experiments/validation-queue-20261110/SCHEDULING.md) chains the next controls across two full A100 80GB nodes. The conditional audit and 61,440-continuation screen passed their registered checks; the full FP32 greedy control retained 3 mismatches among 1,120 pairs. Independent EAGLE-3 replication is still running; scientific training remains blocked.
+The [11 November check](results/status-2026-11-11/README.md) confirms both independent replication jobs completed: 20/22 acceptance values were within 5%, while only 9/22 strict cells passed. Both full FP32 controls retained the same three mismatches among 1,120 pairs; two are explained by context-stop lengths and one token disagreement remains unresolved. The conditional audit and 61,440-continuation screen passed their registered checks. Scientific training remains blocked by reproduction and validator review. Eight A100 80GB GPUs are generating target responses; 133,120/540,107 source inputs were processed at the latest audit. The [completion plan](experiments/finalization-20261111/COMPLETION_PLAN.md) maps the remaining work to every section of the memo.
 
 ShareGPT and UltraChat [source preparation](experiments/corpus-20261110/README.md) now contains 540,107 grouped conversations, including 284,115 with complete original answers. Target-response generation and a dependent eight-GPU native training profile have separate frozen launchers. Training remains blocked by the failed scientific checks and required validator review.
 

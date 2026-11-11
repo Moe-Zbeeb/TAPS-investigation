@@ -1,5 +1,7 @@
 # Research stages and dependencies
 
+See the [11 November completion plan](finalization-20261111/COMPLETION_PLAN.md) for current evidence, explicit exit criteria, resource scheduling and the remaining work for every memo section.
+
 The source of requirements is the unchanged `TAPS_rebuild_plan.pdf`. The current runnable milestone is official-baseline reproduction. Later stages remain conditional on its results.
 
 | Stage | Required evidence | Next action |

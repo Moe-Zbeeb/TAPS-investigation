@@ -1,0 +1,19 @@
+{
+  "as_of_utc": "2026-11-11T00:03:40.772266+00:00",
+  "scope": "instantaneous_read_only_gpu_telemetry_inside_verified_owned_allocation",
+  "argv": [
+    "srun",
+    "--jobid=2212576",
+    "--overlap",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=1",
+    "--gres=none",
+    "/usr/bin/nvidia-smi",
+    "--query-gpu=index,name,memory.total,memory.used,utilization.gpu",
+    "--format=csv,noheader,nounits"
+  ],
+  "exit_code": 0,
+  "stdout": "0, NVIDIA A100 80GB PCIe, 81920, 71985, 93\n1, NVIDIA A100 80GB PCIe, 81920, 72257, 94\n2, NVIDIA A100 80GB PCIe, 81920, 71155, 96\n3, NVIDIA A100 80GB PCIe, 81920, 71031, 95\n4, NVIDIA A100 80GB PCIe, 81920, 71275, 93\n5, NVIDIA A100 80GB PCIe, 81920, 70641, 94\n6, NVIDIA A100 80GB PCIe, 81920, 71999, 94\n7, NVIDIA A100 80GB PCIe, 81920, 71169, 93\n",
+  "stderr": ""
+}

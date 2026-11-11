@@ -1,0 +1,73 @@
+{
+  "as_of_utc": "2026-11-11T00:03:17.908302+00:00",
+  "holder_authority": {
+    "job_id": "2212576",
+    "node": "deep-chungus-10",
+    "successor": "2212580",
+    "partition": "high-priority",
+    "qos": "spec-priority",
+    "gpus": 8,
+    "mode": "hold-for-user",
+    "started_at": "2026-11-09T12:41:31.335549+00:00",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodes=1",
+      "--exclusive",
+      "--nodelist=deep-chungus-10",
+      "--gres=gpu:a100:8",
+      "--ntasks=1",
+      "--cpus-per-task=64",
+      "--time=2-00:00:00",
+      "--dependency=afterany:2212576",
+      "--job-name=deep10-hold",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold-%j.log",
+      "--wrap",
+      "python3 /mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold.py"
+    ]
+  },
+  "commands": {
+    "queue": {
+      "argv": [
+        "squeue",
+        "-u",
+        "mohamadzbib",
+        "-o",
+        "%.18i %.12P %.26j %.10T %.10M %.10l %.28R %.24b %.18q"
+      ],
+      "exit_code": 0,
+      "stdout": "             JOBID    PARTITION                       NAME      STATE       TIME TIME_LIMIT             NODELIST(REASON)            TRES_PER_NODE                QOS\n           2214979 high-priorit               taps-profile    PENDING       0:00    4:00:00                 (Dependency)          gres:gpu:a100:8      spec-priority\n           2212580 high-priorit                deep10-hold    PENDING       0:00 2-00:00:00                 (Dependency)          gres:gpu:a100:8      spec-priority\n           2212576 high-priorit                deep10-hold    RUNNING 1-11:21:48 2-00:00:00              deep-chungus-10          gres:gpu:a100:8      spec-priority\n           2214983 low-priority           taps-data-finish    PENDING       0:00 2-00:00:00                 (Dependency)                      N/A             normal\n           2214978 low-priority                 taps-audit    PENDING       0:00    6:00:00                 (Dependency)                      N/A             normal\n           2214977 low-priority               taps-teacher    RUNNING   10:49:58 2-00:00:00               deep-chungus-2                      N/A             normal\n",
+      "stderr": ""
+    },
+    "accounting": {
+      "argv": [
+        "sacct",
+        "-X",
+        "-j",
+        "2212576,2212580,2214977,2214983,2214978,2214979,2214872,2215000",
+        "-n",
+        "-P",
+        "-o",
+        "JobIDRaw,JobName,State,ExitCode,Partition,QOS,NodeList,AllocTRES,Elapsed,Timelimit,End"
+      ],
+      "exit_code": 0,
+      "stdout": "2212576|deep10-hold|RUNNING|0:0|high-priority|spec-priority|deep-chungus-10|billing=128,cpu=128,gres/gpu:a100=8,gres/gpu=8,node=1|1-11:21:48|2-00:00:00|Unknown\n2212580|deep10-hold|PENDING|0:0|high-priority|spec-priority|None assigned||00:00:00|2-00:00:00|Unknown\n2214872|taps-t1-replication-v2|COMPLETED|0:0|high-priority|spec-priority|deep-chungus-11|billing=128,cpu=128,gres/gpu:a100=8,gres/gpu=8,node=1|06:29:26|12:00:00|2026-11-10T12:04:05\n2214977|taps-teacher|RUNNING|0:0|low-priority|normal|deep-chungus-2|billing=2,cpu=2,node=1|10:49:58|2-00:00:00|Unknown\n2214978|taps-audit|PENDING|0:0|low-priority|normal|None assigned||00:00:00|06:00:00|Unknown\n2214979|taps-profile|PENDING|0:0|high-priority|spec-priority|None assigned||00:00:00|04:00:00|Unknown\n2214983|taps-data-finish|PENDING|0:0|low-priority|normal|None assigned||00:00:00|2-00:00:00|Unknown\n2215000|taps-baseline-followup|COMPLETED|0:0|high-priority|spec-priority|deep-chungus-11|billing=128,cpu=128,gres/gpu:a100=8,gres/gpu=8,node=1|02:54:34|12:00:00|2026-11-10T14:58:40\n",
+      "stderr": ""
+    },
+    "node11": {
+      "argv": [
+        "scontrol",
+        "show",
+        "node",
+        "deep-chungus-11"
+      ],
+      "exit_code": 0,
+      "stdout": "NodeName=deep-chungus-11 Arch=x86_64 CoresPerSocket=32 \n   CPUAlloc=36 CPUTot=128 CPULoad=15.14\n   AvailableFeatures=(null)\n   ActiveFeatures=(null)\n   Gres=gpu:a100:8\n   NodeAddr=deep-chungus-11 NodeHostName=deep-chungus-11 Version=21.08.8\n   OS=Linux 5.15.0-190-generic #200-Ubuntu SMP Fri Aug 7 15:06:04 UTC 2026 \n   RealMemory=1000000 AllocMem=0 FreeMem=340937 Sockets=2 Boards=1\n   State=MIXED ThreadsPerCore=2 TmpDisk=0 Weight=10 Owner=N/A MCS_label=N/A\n   Partitions=extreme-priority,high-priority,urop,background,meng,low-priority \n   BootTime=2026-09-03T09:29:35 SlurmdStartTime=2026-09-24T16:34:45\n   LastBusyTime=2026-11-10T14:58:40\n   CfgTRES=cpu=128,mem=1000000M,billing=128,gres/gpu=8,gres/gpu:a100=8\n   AllocTRES=cpu=36,gres/gpu=8,gres/gpu:a100=8\n   CapWatts=n/a\n   CurrentWatts=0 AveWatts=0\n   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s\n\n",
+      "stderr": ""
+    }
+  }
+}
