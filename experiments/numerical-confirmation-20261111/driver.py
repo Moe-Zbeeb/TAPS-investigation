@@ -35,7 +35,7 @@ def worker(args):
     from taps_rebuild.runner import seed_runtime, verify_provenance
 
     selected = read(args.prepared / 'cases.json')['eagle3']
-    verify_provenance(args.root, selected['run_config'], selected['run_manifest'], 'eagle3')
+    provenance = verify_provenance(args.root, selected['run_config'], selected['run_manifest'], 'eagle3')[-1]
     case = selected['cases'][args.index]
     pair, probe = case['pair'], case['divergence']
     prompt = pair['target_only']['input_token_ids']
@@ -107,7 +107,7 @@ def worker(args):
             del result, past, data, lengths
         tensor_path = args.output / ('vectors-' + str(args.index) + '.pt')
         torch.save(captures, tensor_path)
-        write(args.output / ('worker-' + str(args.index) + '.json'), {'status': 'complete', 'worker': args.index, 'cases_sha256': digest(args.prepared / 'cases.json'), 'script_sha256': digest(__file__), 'protocol_sha256': digest(Path(__file__).with_name('PREREGISTRATION.md')), 'case_index': args.index, 'probe': probe, 'outputs': outputs, 'capture': tensor_path.name, 'capture_sha256': digest(tensor_path), 'vocabulary_size': backend.model.base_model.config.vocab_size, 'cuda_visible_devices': os.environ['CUDA_VISIBLE_DEVICES'], 'gpu': torch.cuda.get_device_name(0), 'slurm_job_id': os.environ['SLURM_JOB_ID'], 'runtime': {'torch': torch.__version__, 'cuda': torch.version.cuda, 'dtype': 'torch.float32', 'deterministic_algorithms': torch.are_deterministic_algorithms_enabled()}, 'provenance': selected['provenance']})
+        write(args.output / ('worker-' + str(args.index) + '.json'), {'status': 'complete', 'worker': args.index, 'cases_sha256': digest(args.prepared / 'cases.json'), 'script_sha256': digest(__file__), 'protocol_sha256': digest(Path(__file__).with_name('PREREGISTRATION.md')), 'case_index': args.index, 'probe': probe, 'outputs': outputs, 'capture': tensor_path.name, 'capture_sha256': digest(tensor_path), 'vocabulary_size': backend.model.base_model.config.vocab_size, 'cuda_visible_devices': os.environ['CUDA_VISIBLE_DEVICES'], 'gpu': torch.cuda.get_device_name(0), 'slurm_job_id': os.environ['SLURM_JOB_ID'], 'runtime': {'torch': torch.__version__, 'cuda': torch.version.cuda, 'dtype': 'torch.float32', 'deterministic_algorithms': torch.are_deterministic_algorithms_enabled()}, 'provenance': provenance})
     finally:
         backend.close()
 
