@@ -32,7 +32,8 @@ class RecoveryTests(unittest.TestCase):
             self.assertIn('_taps_recovery.epochs', text)
             self.assertIn('_taps_recovery.batches', text)
             self.assertIn('_taps_recovery.commit_batch()', text)
-            self.assertIn('checkpoint_path, start_epoch = (None, 0)', text)
+            self.assertIsInstance(transformed.body[0].value, ast.Tuple)
+            self.assertEqual([value.value for value in transformed.body[0].value.elts], [None, 0])
             source.write_text(SOURCE.replace('tqdm(train_loader)', 'train_loader'))
             with self.assertRaisesRegex(ValueError, 'pinned upstream bytes'):
                 recovery.transform(source, digest)

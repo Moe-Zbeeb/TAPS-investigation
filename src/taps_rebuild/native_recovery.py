@@ -4,6 +4,7 @@ import json
 import os
 from pathlib import Path
 import random
+import shutil
 
 
 def transform(source, expected):
@@ -131,6 +132,18 @@ class Recovery:
             manifest = {'format': 'native-process-recovery-v1', 'plan_identity_sha256': self.plan['plan_identity_sha256'], 'world_size': self.plan['config']['world_size'], 'hardware_identity_sha256': launch['hardware']['hardware_identity_sha256'], 'files': files, 'global_step': int(engine.global_steps), 'cursor': self.cursor}
             h.atomic_json(path / 'manifest.json', manifest)
             h.atomic_json(self.directory / 'latest.json', {'path': str(path), 'manifest_sha256': h.digest(path / 'manifest.json'), 'plan_identity_sha256': self.plan['plan_identity_sha256']})
+            committed = []
+            for candidate in self.directory.glob('attempt-*-step-*'):
+                if candidate.resolve() != candidate or not (candidate / 'manifest.json').is_file():
+                    continue
+                receipt = json.loads((candidate / 'manifest.json').read_bytes())
+                if receipt['plan_identity_sha256'] == self.plan['plan_identity_sha256']:
+                    committed.append((receipt['global_step'], int(candidate.name.split('-')[1]), candidate))
+            for _, _, candidate in sorted(committed, reverse=True)[2:]:
+                archive = Path(self.plan['run_dir']) / 'recovery-receipts'
+                archive.mkdir(exist_ok=True)
+                shutil.copyfile(candidate / 'manifest.json', archive / (candidate.name + '.json'))
+                shutil.rmtree(candidate)
         torch.distributed.barrier()
         return path
 

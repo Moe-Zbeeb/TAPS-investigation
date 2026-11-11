@@ -1,30 +1,49 @@
 import argparse
+import csv
 from datetime import datetime, timezone
+import importlib.util
+import io
 import json
 import os
 from pathlib import Path
+import subprocess
 
 from taps_rebuild import native_training as native
 
 
+def check_bundle(bundle):
+    identity = json.loads((bundle / 'bundle.json').read_bytes())
+    if any(native.digest(bundle / name) != digest for name, digest in identity['files'].items()):
+        raise ValueError('Frozen restart bundle changed')
+
+
 def prepare(root, bundle, destination):
     native.require_slurm()
+    check_bundle(bundle)
     if os.environ.get('CUDA_VISIBLE_DEVICES') != '':
         raise ValueError('Restart fixture preparation requires CPU Slurm')
-    destination.mkdir(parents=True, exist_ok=False)
-    fixture = root / 'data/engineering/native-restart-20261111-v1'
+    destination.mkdir(parents=True, exist_ok=True)
+    if (destination / 'prepared.json').exists():
+        prepared = json.loads((destination / 'prepared.json').read_bytes())
+        if prepared['native_training_sha256'] != native.digest(native.__file__) or any(native.digest(item['path']) != item['sha256'] for item in prepared['plans'].values()):
+            raise ValueError('Completed restart preparation differs on requeue')
+        return
+    attempt = int(os.environ.get('SLURM_RESTART_COUNT', '0'))
+    attempt_directory = destination / ('preparation-attempt-' + str(attempt))
+    attempt_directory.mkdir(exist_ok=False)
+    fixture = root / 'data/engineering' / (destination.name + '-attempt-' + str(attempt))
     native.fixture(root, fixture)
     plans = {}
     for name, stop in [('control', None), ('interrupted', 1)]:
         config = json.loads((bundle / 'configs/native-eagle3-training.json').read_bytes())
         config.update(checkpoint_roundtrip=False, recovery={'checkpoint_interval': 1, 'stop_after_optimizer_step': stop})
-        config_path = destination / (name + '-config.json')
+        config_path = attempt_directory / (name + '-config.json')
         native.atomic_json(config_path, config)
-        run = root / 'outputs/native-training' / ('native-restart-20261111-v1-' + name)
+        run = root / 'outputs/native-training' / (destination.name + '-attempt-' + str(attempt) + '-' + name)
         plan = native.prepare(root, config_path, fixture / 'train.jsonl', fixture / 'dev.jsonl', run)
         native.audit(run / 'plan.json')
         plans[name] = {'path': str(run / 'plan.json'), 'sha256': native.digest(run / 'plan.json'), 'plan_identity_sha256': plan['plan_identity_sha256']}
-    report = {'status': 'prepared', 'scope': 'synthetic engineering process restart; no scientific training', 'plans': plans, 'native_training_sha256': native.digest(native.__file__), 'native_recovery_sha256': native.digest(Path(native.__file__).with_name('native_recovery.py')), 'protocol_sha256': native.digest(bundle / 'PREREGISTRATION.md')}
+    report = {'status': 'prepared', 'scope': 'synthetic engineering process restart; no scientific training', 'plans': plans, 'native_training_sha256': native.digest(native.__file__), 'native_recovery_sha256': native.digest(Path(native.__file__).with_name('native_recovery.py')), 'protocol_sha256': native.digest(bundle / 'PREREGISTRATION.md'), 'bundle_sha256': native.digest(bundle / 'bundle.json')}
     native.atomic_json(destination / 'prepared.json', report)
 
 
@@ -36,9 +55,29 @@ def journals(run, rank):
 
 
 def controller(root, bundle, destination):
+    check_bundle(bundle)
     prepared = json.loads((destination / 'prepared.json').read_bytes())
-    if prepared['native_training_sha256'] != native.digest(native.__file__) or prepared['native_recovery_sha256'] != native.digest(Path(native.__file__).with_name('native_recovery.py')):
+    if prepared['native_training_sha256'] != native.digest(native.__file__) or prepared['native_recovery_sha256'] != native.digest(Path(native.__file__).with_name('native_recovery.py')) or prepared['protocol_sha256'] != native.digest(bundle / 'PREREGISTRATION.md') or prepared['bundle_sha256'] != native.digest(bundle / 'bundle.json'):
         raise ValueError('Restart qualification source changed after preparation')
+    from taps_rebuild.pool import allocation
+
+    hardware = allocation(8)
+    spec = importlib.util.spec_from_file_location('restart_context_guard', bundle / 'context.py')
+    context = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(context)
+    policy = json.loads((bundle / 'stale-context.json').read_bytes())
+    policy = policy if hardware['node'] == policy['node'] else None
+    def query():
+        text = subprocess.check_output(['/usr/bin/nvidia-smi', '--query-compute-apps=gpu_uuid,pid,process_name,used_memory', '--format=csv,noheader,nounits'], text=True, timeout=15)
+        apps = [{'gpu_uuid': row[0].strip(), 'pid': int(row[1]), 'process_name': row[2].strip(), 'used_memory_mib': int(row[3])} for row in csv.reader(io.StringIO(text)) if row]
+        text = subprocess.check_output(['/usr/bin/nvidia-smi', '--query-gpu=uuid,memory.free', '--format=csv,noheader,nounits'], text=True, timeout=15)
+        free = {row[0].strip(): int(row[1]) for row in csv.reader(io.StringIO(text)) if row}
+        if set(free) != {gpu['uuid'] for gpu in hardware['gpu_inventory']}:
+            raise ValueError('Restart allocation physical memory inventory differs')
+        blocked = context.blocking_contexts(apps, free, policy, lambda pid: Path('/proc', str(pid)).exists(), context.host_proc_visible())
+        native.atomic_json(destination / 'gpu-context.json', {'applications': apps, 'blocking_contexts': blocked, 'free_memory_mib': free, 'policy': policy, 'no_signals_or_resets': True})
+        return str(blocked) if blocked else ''
+    context.wait_for_idle(query, lambda observations: native.atomic_json(destination / 'idle-check.json', {'observations': observations}))
     plans = {}
     for name, item in prepared['plans'].items():
         path = Path(item['path'])
@@ -57,7 +96,6 @@ def controller(root, bundle, destination):
         resumed = json.loads((plans['interrupted'].parent / ('rank-' + str(rank) + '.json')).read_bytes())
         recovery = resumed.get('process_recovery') or {}
         cursor = recovery.get('cursor') or {}
-        plan = native.load_plan(plans['interrupted'])
         audit = json.loads((plans['interrupted'].parent / 'tokenization-audit.json').read_bytes())
         per_rank = (audit['splits']['train']['rows_after_official_filter'] + 7) // 8
         state_equal = control['final_state_identity'] == resumed['final_state_identity']
