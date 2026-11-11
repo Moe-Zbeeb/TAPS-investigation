@@ -1,0 +1,10 @@
+{
+  "scope": "read_only_no_signals_or_gpu_computation",
+  "observations": [
+    {
+      "elapsed_seconds": 0.424078450538218,
+      "reported_processes": ""
+    }
+  ],
+  "idle_observed": true
+}

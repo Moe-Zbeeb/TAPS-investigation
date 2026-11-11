@@ -1,0 +1,13 @@
+{
+  "scope": "numerical_diagnostic_only_no_timing_benchmark",
+  "node": "deep-chungus-11",
+  "min_free_gpu_mib": 51200,
+  "contexts": [
+    {
+      "gpu_uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8",
+      "pid": 2107512,
+      "process_name": "[Not Found]",
+      "max_used_memory_mib": 11000
+    }
+  ]
+}

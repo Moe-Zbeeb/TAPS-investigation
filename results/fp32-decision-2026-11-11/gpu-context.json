@@ -1,0 +1,37 @@
+{
+  "applications": [
+    {
+      "gpu_uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8",
+      "pid": 2107512,
+      "process_name": "[Not Found]",
+      "used_memory_mib": 10034
+    }
+  ],
+  "blocking_contexts": [],
+  "free_memory_mib": {
+    "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c": 81156,
+    "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2": 81156,
+    "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19": 81156,
+    "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c": 81156,
+    "GPU-8ceb7e35-48da-9616-c892-129f3109918c": 81156,
+    "GPU-713f3893-df91-42ab-0810-d8b881f5bbed": 81156,
+    "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c": 81156,
+    "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8": 71113
+  },
+  "host_proc_visible": true,
+  "policy": {
+    "scope": "numerical_diagnostic_only_no_timing_benchmark",
+    "node": "deep-chungus-11",
+    "min_free_gpu_mib": 51200,
+    "contexts": [
+      {
+        "gpu_uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8",
+        "pid": 2107512,
+        "process_name": "[Not Found]",
+        "max_used_memory_mib": 11000
+      }
+    ]
+  },
+  "no_signals_or_gpu_resets": true,
+  "timing_benchmark_claim": false
+}

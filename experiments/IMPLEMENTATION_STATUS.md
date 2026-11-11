@@ -1,6 +1,6 @@
 # Implementation and evidence boundaries
 
-The [11 November completion plan](finalization-20261111/COMPLETION_PLAN.md) and [live receipts](../results/status-2026-11-11/README.md) supersede the operational status below. Both independent replications and all registered sampling phases have completed; reproduction and independent review still block training. The historical failed reference panel remains unchanged.
+The [11 November completion plan](finalization-20261111/COMPLETION_PLAN.md) and [live receipts](../results/status-2026-11-11/README.md) supersede the operational status below. Both independent replications and all registered sampling phases have completed. The [remaining-token capture](../results/fp32-decision-2026-11-11/README.md) now explains the observed same-prefix decision flip at a near tie, and a [seed-policy control](seed-policy-20261111/README.md) is submitted. Reproduction and independent review still block training. The historical failed reference panel remains unchanged.
 
 The rebuild memo defines a research programme, not a single runnable benchmark. The source implements preparation, official reference execution, data processing, a shared-expert research prototype, pooled candidate generation/verification, weight composition, native EAGLE-3 integration and stock serving tools. Execution receipts determine which paths are verified.
 

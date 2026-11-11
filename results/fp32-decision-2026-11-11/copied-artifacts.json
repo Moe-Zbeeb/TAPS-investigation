@@ -1,0 +1,86 @@
+{
+  "report.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/report.json",
+    "sha256": "f3e4cf91338400524aa96676d40631a184cf7e63b1d3d596951767baf790a7be",
+    "size_bytes": 140277,
+    "included_in_public_snapshot": true
+  },
+  "manifest.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/manifest.json",
+    "sha256": "5fdcfba641845ab2350d95ef01a536e11a03a1a32dc7df2f9a0b270d6662bc6e",
+    "size_bytes": 79206,
+    "included_in_public_snapshot": true
+  },
+  "allocation.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/allocation.json",
+    "sha256": "4e37f240c4119fffd49f79c04f030dcc6c548c4786ee64e791280fbb16b9ff3f",
+    "size_bytes": 3880,
+    "included_in_public_snapshot": true
+  },
+  "gpu-context.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/gpu-context.json",
+    "sha256": "17c100af7233b87e025c4dd0a6a58af2fc3f83ee28f41ba0fd37103e030346d5",
+    "size_bytes": 1133,
+    "included_in_public_snapshot": true
+  },
+  "idle-check.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/idle-check.json",
+    "sha256": "ffaa9d778d9152aa2f9f94ba2075babbb36283b8a1944573b50041ee2c0a5fa8",
+    "size_bytes": 194,
+    "included_in_public_snapshot": true
+  },
+  "cases.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/cases.json",
+    "sha256": "782dc425270ff366f2fe64f15f9034a7d403194f49eacb8957f5339a43fa5c9f",
+    "size_bytes": 2171369,
+    "included_in_public_snapshot": false
+  },
+  "eagle3-float32-0.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/eagle3-float32-0.json",
+    "sha256": "f6a9dfec4406db7ddc05aa1019120a2d35bde66fec705713fb530d39cd9db0e5",
+    "size_bytes": 15272,
+    "included_in_public_snapshot": true
+  },
+  "eagle3-float32-1.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/eagle3-float32-1.json",
+    "sha256": "e2380688846df155ebbd9e45f5db342fd3f2587058caf86055f50c18156d500c",
+    "size_bytes": 4694,
+    "included_in_public_snapshot": true
+  },
+  "eagle3-float32-2.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/eagle3-float32-2.json",
+    "sha256": "c1ae394433deba9a043702824bbb2b67e98fd6195baa9ca3984f00272187fe84",
+    "size_bytes": 4618,
+    "included_in_public_snapshot": true
+  },
+  "eagle3-float32-3.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/eagle3-float32-3.json",
+    "sha256": "2a38d6d2809c7f4495064638ff8c17381cb96765fe562fef0b82ebddcb487786",
+    "size_bytes": 4561,
+    "included_in_public_snapshot": true
+  },
+  "eagle3-float32-4.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/eagle3-float32-4.json",
+    "sha256": "d80851f7f6c249df6e826fdb2529a427b15ba69518263a9f152bafdea3ebd585",
+    "size_bytes": 4826,
+    "included_in_public_snapshot": true
+  },
+  "eagle3-float32-5.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/eagle3-float32-5.json",
+    "sha256": "94b3486ef7ad275c078e5fcc6d4fe972ee9e862cc8811f1ceeb09db56924ac31",
+    "size_bytes": 4635,
+    "included_in_public_snapshot": true
+  },
+  "eagle3-float32-6.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/eagle3-float32-6.json",
+    "sha256": "4cc388ce041d21733628b4c831eee17223a36261ce037efaa34444cf905bc58e",
+    "size_bytes": 4692,
+    "included_in_public_snapshot": true
+  },
+  "eagle3-float32-7.json": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/remaining-fp32-20261111-v3/eagle3-float32-7.json",
+    "sha256": "0eaace6519c15c688ec45d34ebcea7b409f151d1e62c68f45d5be0306d6b1dab",
+    "size_bytes": 4711,
+    "included_in_public_snapshot": true
+  }
+}

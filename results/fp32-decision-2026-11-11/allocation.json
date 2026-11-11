@@ -1,0 +1,141 @@
+{
+  "gpu_inventory": [
+    {
+      "index": "0",
+      "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920.0,
+      "driver_version": "565.57.01"
+    },
+    {
+      "index": "1",
+      "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920.0,
+      "driver_version": "565.57.01"
+    },
+    {
+      "index": "2",
+      "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920.0,
+      "driver_version": "565.57.01"
+    },
+    {
+      "index": "3",
+      "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920.0,
+      "driver_version": "565.57.01"
+    },
+    {
+      "index": "4",
+      "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920.0,
+      "driver_version": "565.57.01"
+    },
+    {
+      "index": "5",
+      "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920.0,
+      "driver_version": "565.57.01"
+    },
+    {
+      "index": "6",
+      "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920.0,
+      "driver_version": "565.57.01"
+    },
+    {
+      "index": "7",
+      "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8",
+      "name": "NVIDIA A100 80GB PCIe",
+      "memory_total_mib": 81920.0,
+      "driver_version": "565.57.01"
+    }
+  ],
+  "device_bindings": [
+    {
+      "shard_index": 0,
+      "token": "0",
+      "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c",
+      "index": "0"
+    },
+    {
+      "shard_index": 1,
+      "token": "1",
+      "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2",
+      "index": "1"
+    },
+    {
+      "shard_index": 2,
+      "token": "2",
+      "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19",
+      "index": "2"
+    },
+    {
+      "shard_index": 3,
+      "token": "3",
+      "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c",
+      "index": "3"
+    },
+    {
+      "shard_index": 4,
+      "token": "4",
+      "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c",
+      "index": "4"
+    },
+    {
+      "shard_index": 5,
+      "token": "5",
+      "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed",
+      "index": "5"
+    },
+    {
+      "shard_index": 6,
+      "token": "6",
+      "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c",
+      "index": "6"
+    },
+    {
+      "shard_index": 7,
+      "token": "7",
+      "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8",
+      "index": "7"
+    }
+  ],
+  "hardware_identity_sha256": "47811704de2166adcf61e573d434222a9a66d7498c4b9c6b36001201ac2a60a2",
+  "job_id": "2215900",
+  "node": "deep-chungus-11",
+  "slurm": {
+    "job": {
+      "JobId": "2215900",
+      "JobName": "taps-fp32-decision",
+      "UserId": "mohamadzbib(29562)",
+      "Account": "grad-students",
+      "QOS": "spec-priority",
+      "StartTime": "2026-11-11T07:10:23",
+      "EndTime": "2026-11-11T09:10:23",
+      "Partition": "high-priority",
+      "NodeList": "deep-chungus-11",
+      "NumNodes": "1",
+      "NumCPUs": "128",
+      "TRES": "cpu=128,node=1,billing=128,gres/gpu=8,gres/gpu:a100=8"
+    },
+    "node": {
+      "NodeName": "deep-chungus-11",
+      "CPUTot": "128",
+      "Gres": "gpu:a100:8",
+      "Version": "21.08.8",
+      "RealMemory": "1000000",
+      "State": "ALLOCATED",
+      "CfgTRES": "cpu=128,mem=1000000M,billing=128,gres/gpu=8,gres/gpu:a100=8",
+      "AllocTRES": "cpu=128,gres/gpu=8,gres/gpu:a100=8"
+    },
+    "job_record_sha256": "08df94f3d80af39c561db6fad80d711de9474bf7c718cf4c0ac0556e209e7ad8",
+    "node_record_sha256": "9e13949915ad09ef275ebd5721fd3a1ccfdcd2ea93c38135fbd7d93605b3c714"
+  }
+}

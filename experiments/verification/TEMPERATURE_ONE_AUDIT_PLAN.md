@@ -1,5 +1,9 @@
 # Temperature-one audit proposal
 
+Execution update, 11 November 2026: the registered collector and CPU replay completed. Conditional and end-to-end sampling checks passed their declared event criteria; greedy comparisons and independent review still block admission. See the [source-bound execution evidence](../../results/data-2026-11-10/README.md), [new numerical diagnosis](../../results/fp32-decision-2026-11-11/README.md) and [review packet](REVIEW_PACKET_20261111.md). The original proposal text below predates execution. Its controlling frozen cluster copy retains SHA256 `dcba7076095d4ffac978bc139889d9d205fcaa7f898bc9b7dbe2c1381d15638e`; this editorial update is not deployed into a running experiment.
+
+## Original proposal status and definitions
+
 Status: proposed on 2026-11-09; no validator has been implemented or run. This document changes no admission gate. The existing native-training gate remains closed even if a hand-written receipt claims success. No scientific result is supplied here.
 
 The rebuild plan, section 5.5, requires both a proof of the verification rule and empirical token-distribution checks. A finite experiment cannot prove losslessness for every prompt, history, tree, hardware path and random stream. The proposed evidence is a real-model conditional sampler audit plus a bounded end-to-end distribution screen, each with a stated population and tolerance. Neither should be relabelled a universal losslessness proof.
