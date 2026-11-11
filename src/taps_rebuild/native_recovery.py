@@ -7,6 +7,14 @@ import random
 import shutil
 
 
+def checkpoint_directory(path, rank, barrier):
+    if rank == 0:
+        path.mkdir(exist_ok=False)
+    barrier()
+    if not path.is_dir():
+        raise ValueError('Shared native checkpoint directory is not visible after synchronization')
+
+
 def transform(source, expected):
     data = Path(source).read_bytes()
     if hashlib.sha256(data).hexdigest() != expected:
@@ -118,7 +126,7 @@ class Recovery:
     def save(self):
         h, engine, torch = self.helpers, self.engine, self.torch
         path = self.directory / ('attempt-' + os.environ.get('TAPS_NATIVE_ATTEMPT_ID', '1') + '-step-' + str(engine.global_steps))
-        path.mkdir(exist_ok=False)
+        checkpoint_directory(path, self.rank, torch.distributed.barrier)
         state = {'plan_identity_sha256': self.plan['plan_identity_sha256'], 'cursor': dict(self.cursor), 'sampler': self.sampler(), 'rng': self.rng_state(), 'epoch_metrics': {key: self.namespace[key] for key in ('epoch_acces', 'epoch_plosses')}, 'token_counts': dict(self.observation['token_counts']), 'state_identity': self.state_identity()}
         engine.save_checkpoint(str(path), tag='state', client_state={'plan_identity_sha256': self.plan['plan_identity_sha256'], 'cursor': self.cursor}, exclude_frozen_parameters=True)
         rank_path = path / ('rank-' + str(self.rank) + '.pt')

@@ -1,6 +1,7 @@
 import ast
 import hashlib
 import json
+import multiprocessing
 import os
 from pathlib import Path
 import random
@@ -20,7 +21,36 @@ for epoch in range(start_epoch, num_epochs):
 '''
 
 
+def create_checkpoint_rank(path, rank, barrier, queue):
+    try:
+        recovery.checkpoint_directory(Path(path), rank, barrier.wait)
+        queue.put(('passed', rank))
+    except Exception as error:
+        queue.put((type(error).__name__, rank))
+
+
 class RecoveryTests(unittest.TestCase):
+    def test_multiple_ranks_share_one_fresh_checkpoint_directory(self):
+        with tempfile.TemporaryDirectory() as directory:
+            context = multiprocessing.get_context('spawn')
+            barrier, queue = context.Barrier(2), context.Queue()
+            processes = [context.Process(target=create_checkpoint_rank, args=(str(Path(directory) / 'checkpoint'), rank, barrier, queue)) for rank in range(2)]
+            try:
+                for process in processes:
+                    process.start()
+                results = [queue.get(timeout=10) for _ in processes]
+                for process in processes:
+                    process.join(timeout=10)
+                self.assertEqual(sorted(results), [('passed', 0), ('passed', 1)])
+                self.assertEqual([process.exitcode for process in processes], [0, 0])
+            finally:
+                for process in processes:
+                    if process.is_alive():
+                        process.terminate()
+                        process.join(timeout=5)
+                queue.close()
+                queue.join_thread()
+
     def test_pinned_transform_preserves_original_and_requires_every_hook(self):
         with tempfile.TemporaryDirectory() as directory:
             source = Path(directory) / 'main.py'
