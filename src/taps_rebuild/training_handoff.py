@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 import re
 
-from . import admission, native_training as native
+from . import admission, native_data_qa, native_training as native
 
 
 def qualifications(root, config):
@@ -48,6 +48,7 @@ def prepare(root, config_path):
         admission.require(admission.digest(plan_path) == prior_status['native_plan_sha256'] == profile['native_plan_sha256'], 'Completed profile plan changed')
         profile_plan = native.load_plan(plan_path)
         admission.require(profile_plan['scope'] == 'native_training' and profile_plan['config']['initialize_from_released_draft'] is False, 'Full reproduction requires an admitted scratch-native profile')
+        admission.require('work/cache.pt' in profile_plan['frozen_files'] and 'inputs/vocabulary-audit.json' in profile_plan['frozen_files'], 'A source-bound CPU-prepared native vocabulary is required')
         full_config = {**profile_plan['config'], 'budget': {'optimizer_steps': None}, 'checkpoint_roundtrip': False, 'recovery': {'checkpoint_interval': 1000, 'stop_after_optimizer_step': None}, 'qualification': 'Full forty-epoch scratch native ShareGPT/UltraChat generalist reproduction; quality requires subsequent held-out evaluation'}
         attempt = int(os.environ.get('SLURM_RESTART_COUNT', '0'))
         preparation = directory / ('preparation-attempt-' + str(attempt))
@@ -55,6 +56,7 @@ def prepare(root, config_path):
         native.atomic_json(preparation / 'native-full-config.json', full_config)
         run = root / 'outputs/native-training' / (config['run_id'] + '-preparation-' + str(attempt))
         plan = native.prepare(root, preparation / 'native-full-config.json', profile_plan['train']['frozen_path'], profile_plan['validation']['frozen_path'], run)
+        plan = native_data_qa.bind_vocabulary(run / 'plan.json', Path(profile_plan['run_dir']) / 'inputs/vocabulary-audit.json', Path(profile_plan['workdir']) / 'cache.pt')
         native.audit(run / 'plan.json')
         status.update(status='passed', native_plan=str(run / 'plan.json'), native_plan_sha256=admission.digest(run / 'plan.json'), source_profile_plan_sha256=admission.digest(plan_path), full_epochs=plan['native_recipe']['epochs'], automatic_training_after_checks=True)
     except Exception as error:
