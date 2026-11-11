@@ -18,6 +18,7 @@ def main():
     parser.add_argument('--root', type=Path, required=True)
     parser.add_argument('--config', type=Path, required=True)
     args = parser.parse_args()
+    started = time.monotonic()
     hardware = allocation(8)
     config = admission.read(args.config)
     directory = args.root / 'outputs/training-queue' / config['run_id']
@@ -26,8 +27,11 @@ def main():
     plan = native.load_plan(status['native_plan'])
     command = [sys.executable, '-B', '-m', 'taps_rebuild.training_queue', 'profile', '--root', str(args.root), '--config', str(args.config)]
     stream = (directory / 'profile-gpu-samples.jsonl').open('x')
-    started = time.monotonic()
-    process = subprocess.Popen(command, stdin=subprocess.DEVNULL)
+    try:
+        process = subprocess.Popen(command, stdin=subprocess.DEVNULL)
+    except BaseException:
+        stream.close()
+        raise
     samples, errors = [], []
     try:
         with stream:
