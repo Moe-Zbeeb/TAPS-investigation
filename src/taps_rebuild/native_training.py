@@ -232,6 +232,7 @@ def research_gate(root, config):
         sys.modules[name] = verifier
         spec.loader.exec_module(verifier)
         try:
+            verifier.verify_training_scope(root, report, config)
             return verifier.verify_certificate(root, report, evidence['independent_review'])
         except ValueError as error:
             raise NativeTrainingError('Pipeline validation is closed: ' + str(error)) from error

@@ -27,9 +27,9 @@ def vector_checks(captures, case, vocabulary):
         winner = int(vector.argmax())
         winners[key], vectors[key] = winner, vector
         cache = capture['cache_before']
-        require(cache['pointers'] and len(cache['pointers']) == len(cache['shapes']) == len(cache['dtypes']) and all(value == 'torch.float32' for value in cache['dtypes']), 'Missing FP32 cache identity')
+        require(len(cache['pointers']) == 1 and cache['shapes'] == [[64, 1, 8, 2048, 128]] and cache['dtypes'] == ['torch.float32'], 'FP32 single-GPU arena geometry differs')
         lengths = cache['logical_lengths']
-        require(lengths.ndim == 1 and lengths.numel() == 64 and bool((lengths == lengths[0]).all()), 'Inconsistent logical cache lengths')
+        require(lengths.shape == (64,) and lengths.dtype == torch.long and bool((lengths == lengths[0]).all()), 'Inconsistent logical cache lengths')
         if route == 'clean':
             require(bool((lengths == 0).all()) and bool((capture['cache_after_lengths'] == len(expected)).all()), 'Clean reference did not use an empty cache and complete prefix')
             require(not set(cache['pointers']) & set(capture['inherited_pointers']) and capture['tree_mask'] is None and capture['position_ids'] is None, 'Clean reference reused speculative state')
@@ -76,7 +76,9 @@ def replay(root, prepared, directory, bundle, bind, registered):
 
     prepared, directory, bundle = Path(prepared), Path(directory), Path(bundle)
     manifest = read(directory / 'manifest.json')
-    require(manifest['epsilon'] == EPSILON and manifest['retrospective_case_selection'] is True and len(manifest['hardware']['tokens']) == 8, 'Numerical confirmation registration differs')
+    require(manifest['epsilon'] == EPSILON and manifest['retrospective_case_selection'] is True and len(manifest['hardware']['device_bindings']) == 8, 'Numerical confirmation registration differs')
+    bindings = manifest['hardware']['device_bindings']
+    require({value['shard_index'] for value in bindings} == set(range(8)) and len({value['uuid'] for value in bindings}) == 8 and len({value['token'] for value in bindings}) == 8 and all(value['memory_total_mib'] >= 75000 for value in manifest['hardware']['gpu_inventory']), 'Numerical confirmation GPU population differs')
     require(read(directory / 'completion.json') == {'status': 'complete', 'workers': 8, 'captures': 48, 'training_admission': False}, 'Numerical collection is incomplete')
     require(manifest['cases_sha256'] == digest(prepared / 'cases.json') == CASES_SHA256 and manifest['prepared_manifest_sha256'] == digest(prepared / 'manifest.json'), 'Selected numerical inputs changed')
     for name, expected in manifest['files'].items():
@@ -99,7 +101,9 @@ def replay(root, prepared, directory, bundle, bind, registered):
             outputs = row['outputs'][mode]
             require(len(outputs) == 2 and outputs[0] == outputs[1] and outputs[0][:row['probe'] + 1] == case['pair'][mode]['output_token_ids'][:row['probe'] + 1], 'Native output replay differs from original probe')
         require(row['vocabulary_size'] == 128256 and row['runtime']['dtype'] == 'torch.float32', 'Numerical vocabulary/dtype differs')
-        require(row['provenance'] == method['provenance'] and row['cuda_visible_devices'] == manifest['hardware']['device_bindings'][index]['token'] and row['slurm_job_id'] == manifest['hardware']['slurm_job_id'] and row['gpu'] == manifest['hardware']['gpu_inventory'][index]['name'], 'Numerical runtime/hardware/provenance binding differs')
+        binding = next(value for value in bindings if value['shard_index'] == index)
+        gpu = next(value for value in manifest['hardware']['gpu_inventory'] if value['uuid'] == binding['uuid'])
+        require(row['provenance'] == method['provenance'] and row['cuda_visible_devices'] == binding['token'] and row['slurm_job_id'] == manifest['hardware']['job_id'] and row['gpu'] == gpu['name'], 'Numerical runtime/hardware/provenance binding differs')
         require(row['runtime']['torch'] and row['runtime']['cuda'] and (index == 0 or row['runtime'] == read(directory / 'worker-0.json')['runtime']), 'Numerical worker runtimes differ')
         capture_path = directory / row['capture']
         require(capture_path.parent.resolve() == directory.resolve() and digest(capture_path) == row['capture_sha256'], 'Retained vectors changed')

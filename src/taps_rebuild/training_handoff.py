@@ -52,6 +52,10 @@ def prepare(root, config_path):
         admission.require(profile_plan['scope'] == 'native_training' and profile_plan['config']['initialize_from_released_draft'] is False, 'Full reproduction requires an admitted scratch-native profile')
         admission.require('work/cache.pt' in profile_plan['frozen_files'] and 'inputs/vocabulary-audit.json' in profile_plan['frozen_files'], 'A source-bound CPU-prepared native vocabulary is required')
         full_config = {**profile_plan['config'], 'budget': {'optimizer_steps': None}, 'checkpoint_roundtrip': False, 'recovery': {'checkpoint_interval': 1000, 'stop_after_optimizer_step': None}, 'qualification': 'Full forty-epoch scratch native ShareGPT/UltraChat generalist reproduction; quality requires subsequent held-out evaluation'}
+        if config.get('admission_policy') == 'pipeline-v2':
+            def descriptor(path):
+                return {'path': str(path), 'sha256': admission.digest(path)}
+            full_config.update(pipeline_stage='full-generalist', pipeline_stage_evidence={'profile_completion': descriptor(profile_directory / 'profile-completion.json'), 'profile_status': descriptor(profile_directory / 'status.json'), 'profile_plan': descriptor(plan_path), 'restart_qualification': status['qualifications']['restart_qualification'], 'export_qualification': status['qualifications']['export_qualification'], 'vocabulary_audit': descriptor(plan_path.parent / 'inputs/vocabulary-audit.json'), 'profile_rank_receipts': [descriptor(plan_path.parent / ('rank-' + str(rank) + '.json')) for rank in range(8)]})
         attempt = int(os.environ.get('SLURM_RESTART_COUNT', '0'))
         preparation = directory / ('preparation-attempt-' + str(attempt))
         preparation.mkdir(exist_ok=False)

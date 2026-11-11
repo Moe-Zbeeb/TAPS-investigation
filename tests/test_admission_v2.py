@@ -39,6 +39,17 @@ class PipelineAdmissionTests(unittest.TestCase):
             with self.assertRaisesRegex(native_training.NativeTrainingError, 'another native training'):
                 native_training.research_gate('.', config)
 
+    def test_pipeline_contract_cannot_admit_another_target_or_skip_profile(self):
+        report = {'training_contract': admission_v2.TRAINING_CONTRACT}
+        config = {**admission_v2.TRAINING_CONTRACT, 'budget': {'optimizer_steps': 200}, 'pipeline_stage': 'real-data-profile'}
+        admission_v2.verify_training_scope('.', report, config)
+        with self.assertRaisesRegex(admission.AdmissionError, 'target/runtime/recipe'):
+            admission_v2.verify_training_scope('.', report, {**config, 'target_id': 'another-target'})
+        with self.assertRaisesRegex(admission.AdmissionError, '200-update'):
+            admission_v2.verify_training_scope('.', report, {**config, 'budget': {'optimizer_steps': None}})
+        with self.assertRaisesRegex(admission.AdmissionError, 'qualification inventory'):
+            admission_v2.verify_training_scope('.', report, {**config, 'pipeline_stage': 'full-generalist', 'budget': {'optimizer_steps': None}, 'recovery': {'checkpoint_interval': 1000, 'stop_after_optimizer_step': None}})
+
 
 if __name__ == '__main__':
     unittest.main()

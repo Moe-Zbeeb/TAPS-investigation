@@ -25,6 +25,8 @@ def audit(root, config_path):
             pool.atomic_json(directory / 'full-model-certificate.json', report)
             research_gate = {'reproduction_config_sha256': config['reproduction_config_sha256'], 'reproduction_report': config['reproduction_report'], 'full_model_temperature_one_report': {'path': str(directory / 'full-model-certificate.json'), 'sha256': admission.digest(directory / 'full-model-certificate.json')}}
         research_config = {**admission.read(root / config['native_template']), 'scope': 'native_training', 'initialize_from_released_draft': False, 'budget': {'optimizer_steps': config['profile_optimizer_steps']}, 'checkpoint_roundtrip': False, 'qualification': 'Scratch native real-data profiling; not the completed forty-epoch generalist or a trained-quality benchmark', 'research_gate': research_gate}
+        if config.get('admission_policy') == 'pipeline-v2':
+            research_config['pipeline_stage'] = 'real-data-profile'
         pool.atomic_json(directory / 'native-profile-config.json', research_config)
         native_training.research_gate(root, research_config)
         completion_path = root / config['generated_corpus'] / 'completion.json'
