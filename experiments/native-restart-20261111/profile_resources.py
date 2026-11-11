@@ -25,22 +25,25 @@ def main():
     admission.require(status['status'] == 'passed', 'Profile preparation must pass before measurement')
     plan = native.load_plan(status['native_plan'])
     command = [sys.executable, '-B', '-m', 'taps_rebuild.training_queue', 'profile', '--root', str(args.root), '--config', str(args.config)]
+    stream = (directory / 'profile-gpu-samples.jsonl').open('x')
     started = time.monotonic()
     process = subprocess.Popen(command, stdin=subprocess.DEVNULL)
     samples, errors = [], []
     try:
-        with (directory / 'profile-gpu-samples.jsonl').open('x') as stream:
+        with stream:
             while True:
                 sample = {'elapsed_seconds': time.monotonic() - started, 'at_utc': datetime.now(timezone.utc).isoformat()}
-                query = subprocess.run(['/usr/bin/nvidia-smi', '--query-gpu=uuid,utilization.gpu,memory.used,memory.total,power.draw', '--format=csv,noheader,nounits'], capture_output=True, text=True, timeout=20)
-                if query.returncode:
-                    errors.append({'elapsed_seconds': sample['elapsed_seconds'], 'returncode': query.returncode})
-                else:
+                try:
+                    query = subprocess.run(['/usr/bin/nvidia-smi', '--query-gpu=uuid,utilization.gpu,memory.used,memory.total,power.draw', '--format=csv,noheader,nounits'], capture_output=True, text=True, timeout=20)
+                    if query.returncode:
+                        raise OSError('nvidia-smi returned ' + str(query.returncode))
                     sample['gpus'] = [{'uuid': row[0].strip(), 'utilization_percent': float(row[1]), 'used_memory_mib': float(row[2]), 'total_memory_mib': float(row[3]), 'power_watts': float(row[4])} for row in csv.reader(io.StringIO(query.stdout)) if row]
                     admission.require({row['uuid'] for row in sample['gpus']} == {row['uuid'] for row in hardware['gpu_inventory']}, 'GPU telemetry escaped the owned node')
                     stream.write(json.dumps(sample, allow_nan=False) + '\n')
                     stream.flush()
                     samples.append(sample)
+                except (OSError, ValueError, subprocess.TimeoutExpired) as error:
+                    errors.append({'elapsed_seconds': sample['elapsed_seconds'], 'error_type': type(error).__name__, 'error': str(error)})
                 try:
                     code = process.wait(timeout=2)
                     break
