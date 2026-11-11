@@ -23,6 +23,28 @@ def load(path, name):
     return module
 
 
+def registered_model_files(prepared):
+    values = {}
+    for selected in prepared['methods'].values():
+        for role, model in selected['models'].items():
+            directory = Path(model['path']).resolve()
+            legacy.require(directory == Path(model['resolved_path']), 'Registered model storage alias changed')
+            for name, record in model['files'].items():
+                relative = Path(name)
+                legacy.require(not relative.is_absolute() and '..' not in relative.parts, 'Invalid registered model file path')
+                path = (directory / relative).resolve()
+                legacy.require(path.is_relative_to(directory), 'Registered model file escaped its exact frozen storage directory')
+                key = str(path)
+                legacy.require(key not in values or values[key]['sha256'] == record['sha256'], 'Conflicting fixed model content identities')
+                item = values.setdefault(key, {'sha256': record['sha256'], 'categories': set()})
+                item['categories'].add(role + '_model')
+    return values
+
+
+def artifact_allowed(root, path, categories, expected, models):
+    return path.is_relative_to(root) or str(path) in models and expected == models[str(path)]['sha256'] and bool(set(categories) & models[str(path)]['categories'])
+
+
 def prompt_inputs(prepared):
     from transformers import AutoTokenizer
 
@@ -136,11 +158,13 @@ def content_inventory(root, prepared, bind):
 def audit(root, config):
     legacy.require(os.environ.get('SLURM_JOB_ID') and os.environ.get('CUDA_VISIBLE_DEVICES') == '', 'Pipeline reconstruction requires CPU Slurm')
     root = Path(root).resolve()
-    allowed = (root, (root / 'models').resolve())
+    prepared = legacy.read(root / config['prepared'])
+    legacy.require(legacy.digest(root / config['prepared']) == legacy.PREPARED_SHA256, 'Original registered model population changed')
+    models = registered_model_files(prepared)
     artifacts = {}
     def bind(path, category, expected=None):
         path = Path(path).resolve()
-        legacy.require(any(path.is_relative_to(base) for base in allowed), 'Bound artifact escaped registered project/model storage')
+        legacy.require(artifact_allowed(root, path, [category], expected, models), 'Bound artifact escaped project or exact registered model-file inventory')
         key = str(path)
         if key not in artifacts:
             before = legacy.stamp(path)
@@ -151,7 +175,6 @@ def audit(root, config):
         if category not in item['categories']:
             item['categories'].append(category)
     p = lambda name: root / config[name]
-    prepared = legacy.read(p('prepared'))
     legacy.require(legacy.digest(p('prepared')) == legacy.PREPARED_SHA256 and legacy.digest(p('driver')) == legacy.DRIVER_SHA256, 'Original raw registration changed')
     inputs, vocabularies = prompt_inputs(prepared)
     stops = historical_stop_ids(prepared)
@@ -216,7 +239,9 @@ def verify_certificate(root, report, review_descriptor):
     registered = [item for item in report['artifacts'] if 'registered_inputs' in item['categories']]
     collectors = [item for item in report['artifacts'] if 'registered_collector' in item['categories']]
     legacy.require(len(registered) == len(collectors) == 1 and registered[0]['sha256'] == legacy.PREPARED_SHA256 and collectors[0]['sha256'] == legacy.DRIVER_SHA256, 'Missing original hash-pinned prepared population/collector')
+    legacy.require(legacy.digest(registered[0]['path']) == legacy.PREPARED_SHA256, 'Fixed prepared inputs changed after CPU replay')
     prepared = legacy.read(registered[0]['path'])
+    models = registered_model_files(prepared)
     inventory = {item['path']: item for item in report['artifacts']}
     for method, selected in prepared['methods'].items():
         for role, model in selected['models'].items():
@@ -228,10 +253,9 @@ def verify_certificate(root, report, review_descriptor):
             path = Path(selected['source']['path']) / name
             item = inventory.get(str(path.resolve()), {})
             legacy.require('upstream_source' in item.get('categories', []) and (record['kind'] == 'symlink' and path.is_symlink() and legacy.hashlib.sha256(os.fsencode(os.readlink(path))).hexdigest() == record['sha256'] or record['kind'] == 'regular_file' and item.get('sha256') == record['sha256']), 'Missing registered upstream content')
-    allowed = (root, (root / 'models').resolve())
     for item in report['artifacts']:
         path = Path(item['path']).resolve()
-        legacy.require(any(path.is_relative_to(base) for base in allowed) and legacy.digest(path) == item['sha256'], 'Admission artifact content changed after CPU replay: ' + str(path))
+        legacy.require(artifact_allowed(root, path, item['categories'], item['sha256'], models) and legacy.digest(path) == item['sha256'], 'Admission artifact content changed after CPU replay: ' + str(path))
     legacy.require(review.get('artifact_inventory_sha256') == legacy.identity(report['artifacts']), 'Independent review did not bind the full evidence inventory')
     return {'status': 'passed', 'scope': report['scope'], 'scientific_training_authorized': True, 'certificate_identity_sha256': report['identity_sha256'], 'independent_review_sha256': review_descriptor['sha256'], 'paper_matching_required': False}
 

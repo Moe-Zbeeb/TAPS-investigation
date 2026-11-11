@@ -6,12 +6,12 @@
   "proof": "outputs/preparation/training-queue-20261110-v6/experiments/verification/LOSSLESS_RULE.md",
   "protocol": "outputs/preparation/validation-queue-20261110-v2/PREREGISTRATION.md",
   "sampling_proposal": "outputs/preparation/validation-queue-20261110-v2/TEMPERATURE_ONE_AUDIT_PLAN.md",
-  "policy": "outputs/preparation/pipeline-validation-20261111-v2/experiments/verification/PIPELINE_VALIDATION_V2.md",
+  "policy": "outputs/preparation/pipeline-validation-20261111-v3/experiments/verification/PIPELINE_VALIDATION_V2.md",
   "historical_report": "outputs/reference-groups/official-20261110-v1/report.json",
   "stopping_bundle": "outputs/preparation/stopping-control-20261111-v1",
   "stopping_output": "outputs/greedy-audits/stopping-control-20261111-v1",
   "numerical_prepared": "outputs/validation-inputs/remaining-greedy-20261111-v3",
   "numerical_bundle": "outputs/preparation/numerical-confirmation-20261111-v2",
   "numerical_output": "outputs/numerical-confirmation/confirmation-20261111-v2",
-  "native_training": "outputs/preparation/pipeline-validation-20261111-v2/src/taps_rebuild/native_training.py"
+  "native_training": "outputs/preparation/pipeline-validation-20261111-v3/src/taps_rebuild/native_training.py"
 }

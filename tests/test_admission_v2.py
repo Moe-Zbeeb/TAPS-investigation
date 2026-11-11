@@ -8,6 +8,22 @@ from taps_rebuild import admission, admission_v2, native_training
 
 
 class PipelineAdmissionTests(unittest.TestCase):
+    def test_only_exact_registered_external_model_files_are_allowed(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            base = Path(temporary).resolve()
+            root, external = base / 'project', base / 'registered-model'
+            root.mkdir()
+            external.mkdir()
+            (external / 'weight').write_text('model')
+            (root / 'model-alias').symlink_to(external, target_is_directory=True)
+            expected = admission.digest(external / 'weight')
+            prepared = {'methods': {'fixture': {'models': {'target': {'path': str(root / 'model-alias'), 'resolved_path': str(external), 'files': {'weight': {'sha256': expected}}}}}}}
+            models = admission_v2.registered_model_files(prepared)
+            self.assertTrue(admission_v2.artifact_allowed(root, external / 'weight', ['target_model'], expected, models))
+            self.assertFalse(admission_v2.artifact_allowed(root, external / 'another', ['target_model'], expected, models))
+            self.assertFalse(admission_v2.artifact_allowed(root, external / 'weight', ['registered_evidence'], expected, models))
+            self.assertFalse(admission_v2.artifact_allowed(root, external / 'weight', ['target_model'], 'changed', models))
+
     def test_claimed_metadata_and_embedded_review_cannot_admit(self):
         with self.assertRaisesRegex(admission.AdmissionError, 'source-bound v2 CPU replay'):
             admission_v2.verify_certificate('.', {'status': 'passed', 'checks': {'passed': True}, 'review': {'decision': 'approved'}}, {})
