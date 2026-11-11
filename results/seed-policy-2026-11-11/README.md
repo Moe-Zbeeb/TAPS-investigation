@@ -1,5 +1,7 @@
 # Source seed-policy diagnostic · completed 11 November 2026
 
+Interpret the retained `upstream_seed_zero` label as the fully reset Python/NumPy/Torch bridge control. The native CLI resets Torch per question but keeps a process-level Python posterior RNG stream. See the [execution clarification](../../experiments/seed-policy-20261111/README.md); original registration and raw values are unchanged.
+
 Job **2215909** completed on eight A100 80GB GPUs on deep-chungus-11 at 12:30 UTC / 14:30 Beirut, with Slurm exit zero and runtime 9m49s. It collected **1,600 measured speculative generations**, covering both RNG policies on 80 GSM8K and 80 Alpaca questions, with five repetitions. Three warmups per worker were excluded. No target-only speedup or training admission is claimed.
 
 ## Generated measurements

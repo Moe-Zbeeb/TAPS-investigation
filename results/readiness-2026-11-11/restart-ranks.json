@@ -1,0 +1,1274 @@
+[
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-control/rank-0.json",
+    "sha256": "4c117225e03678774ea9356744d943f544d50609f101e6eee30165f219af482d",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:10:03.035127+00:00",
+      "final_rng_identity": "6601e0a857e1876c40562ae2857d7431c15cf89478d9ac183b718bd91b55202d",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "8b696f95da35b09e53b13ce6d5c184a258f527df923c3dad3c2a773b1fe05632",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 0,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "58f5f63c85ae518e752bc0beeae14de9350e8f3e53c0d16d25289c3abb5b3c49",
+      "process_recovery": null,
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 0,
+      "restored_rng_and_cursor": false,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-control/rank-1.json",
+    "sha256": "ca37a23e30175684270a8344276eb84e2ed649496d668c990fa2fd401f31291b",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:10:02.873047+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "7d5b143d984fdcbba3c67c48b4b0870c630daaa63c41548ef109bed0b8d1d482",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 1,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "58f5f63c85ae518e752bc0beeae14de9350e8f3e53c0d16d25289c3abb5b3c49",
+      "process_recovery": null,
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 1,
+      "restored_rng_and_cursor": false,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-control/rank-2.json",
+    "sha256": "441c7bbaf96e0464af497c9811ecdb1d5246426601cf691e5d60019f7093be0b",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:10:03.074222+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "836a1c4fae197aa7e3c42c1fa7a4c56d3ed3d527530646ff1753e81e369429dd",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 2,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "58f5f63c85ae518e752bc0beeae14de9350e8f3e53c0d16d25289c3abb5b3c49",
+      "process_recovery": null,
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 2,
+      "restored_rng_and_cursor": false,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-control/rank-3.json",
+    "sha256": "14301b213add0acee4f72814c574291665e4acc80420725e9edb633dd0e0942c",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:10:02.873584+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "e09b6e4c670e9156cb81dcdeefa6d9a09fbb6d3ea6d4bd15ff1a3ef87b3bd91a",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 3,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "58f5f63c85ae518e752bc0beeae14de9350e8f3e53c0d16d25289c3abb5b3c49",
+      "process_recovery": null,
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 3,
+      "restored_rng_and_cursor": false,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-control/rank-4.json",
+    "sha256": "21b282ed1dfc205986d7b7c6a7629c1b9e2fe544f4307f99d1e275ba582ca003",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:10:02.854423+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "46e936ccbef610a43e472e1fd4841cfd48f31441cab2e81ad8d5a0789858922f",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 4,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "58f5f63c85ae518e752bc0beeae14de9350e8f3e53c0d16d25289c3abb5b3c49",
+      "process_recovery": null,
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 4,
+      "restored_rng_and_cursor": false,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-control/rank-5.json",
+    "sha256": "4babfab48e87d731d9436c0170938b12a6a106229a8a7fb891afb1d2b4fd4874",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:10:02.781948+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "1163466287371923e1cb402abe19e864f6c69edd577ff5376ef1cbbb775f04c5",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 5,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "58f5f63c85ae518e752bc0beeae14de9350e8f3e53c0d16d25289c3abb5b3c49",
+      "process_recovery": null,
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 5,
+      "restored_rng_and_cursor": false,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-control/rank-6.json",
+    "sha256": "72523af400710334d2b9af1135e299c739e05ed8b2a0cba56f6f4b5c31684c6a",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:10:02.864036+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "696a17dae210b59563f0c71abfb423dd7794dca5ae27c7ca2025095ee7c90b13",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 6,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "58f5f63c85ae518e752bc0beeae14de9350e8f3e53c0d16d25289c3abb5b3c49",
+      "process_recovery": null,
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 6,
+      "restored_rng_and_cursor": false,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-control/rank-7.json",
+    "sha256": "e1d157b3daa6cf435ed9e929e986040573918f723759a15f7c0344734d666fb9",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:10:03.015051+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "02c492de416ed76c52234fd688a71054e2ad2505cc96e3784aecbd6ee4f81eb7",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 7,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "58f5f63c85ae518e752bc0beeae14de9350e8f3e53c0d16d25289c3abb5b3c49",
+      "process_recovery": null,
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 7,
+      "restored_rng_and_cursor": false,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-interrupted/rank-0.json",
+    "sha256": "44b9d1b5eeb0839dc5811e892c8c7b1b70947b2ed27f6c586fa191568f378185",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:17:26.293772+00:00",
+      "final_rng_identity": "6601e0a857e1876c40562ae2857d7431c15cf89478d9ac183b718bd91b55202d",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "8b696f95da35b09e53b13ce6d5c184a258f527df923c3dad3c2a773b1fe05632",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 0,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "991839a7e06c7cd7e490d0f59d29f23e5311fbea13ede1c78bb025304e04dd8c",
+      "process_recovery": {
+        "cursor": {
+          "epoch": 0,
+          "next_batch": 2
+        },
+        "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v3-attempt-0-interrupted/recovery/attempt-1-step-1",
+        "rng_restore_deferred_until_loader_skip": true,
+        "state_identity": {
+          "global_steps": 1,
+          "learning_rates": [
+            0.0
+          ],
+          "micro_steps": 2,
+          "optimizer_and_scaler": "211ef1e61b2a88931ef9ead8fc658ca85943d70a699b48b2deff452dae0567cd",
+          "scheduler": "b4ac9cf339874348f2d2c51b6efde11e7eb4953e93244de3b39b9f7bde06837e",
+          "skipped_steps": 0,
+          "trainable_model": "c3005a6fb15010cd8d528751df9d2eb5ecab6e955ea0d0f865f4bd21b1136cf9"
+        },
+        "status": "loaded_exact_state"
+      },
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 0,
+      "restored_rng_and_cursor": true,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-interrupted/rank-1.json",
+    "sha256": "ba6f838c0b06ece7df8c3c6b5227dc1ebf36b5341d28dc920d166b29b10828df",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:17:26.300263+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "7d5b143d984fdcbba3c67c48b4b0870c630daaa63c41548ef109bed0b8d1d482",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 1,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "991839a7e06c7cd7e490d0f59d29f23e5311fbea13ede1c78bb025304e04dd8c",
+      "process_recovery": {
+        "cursor": {
+          "epoch": 0,
+          "next_batch": 2
+        },
+        "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v3-attempt-0-interrupted/recovery/attempt-1-step-1",
+        "rng_restore_deferred_until_loader_skip": true,
+        "state_identity": {
+          "global_steps": 1,
+          "learning_rates": [
+            0.0
+          ],
+          "micro_steps": 2,
+          "optimizer_and_scaler": "a204dd956c5d88d5ef064a02392e6ac5750c43b560c532864c6e6fda009043a2",
+          "scheduler": "b4ac9cf339874348f2d2c51b6efde11e7eb4953e93244de3b39b9f7bde06837e",
+          "skipped_steps": 0,
+          "trainable_model": "c3005a6fb15010cd8d528751df9d2eb5ecab6e955ea0d0f865f4bd21b1136cf9"
+        },
+        "status": "loaded_exact_state"
+      },
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 1,
+      "restored_rng_and_cursor": true,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-interrupted/rank-2.json",
+    "sha256": "00d310491b79fdb6f152e491295708c0f3f3ec05b83a9e3fe35186feed0fe673",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:17:26.311271+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "836a1c4fae197aa7e3c42c1fa7a4c56d3ed3d527530646ff1753e81e369429dd",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 2,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "991839a7e06c7cd7e490d0f59d29f23e5311fbea13ede1c78bb025304e04dd8c",
+      "process_recovery": {
+        "cursor": {
+          "epoch": 0,
+          "next_batch": 2
+        },
+        "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v3-attempt-0-interrupted/recovery/attempt-1-step-1",
+        "rng_restore_deferred_until_loader_skip": true,
+        "state_identity": {
+          "global_steps": 1,
+          "learning_rates": [
+            0.0
+          ],
+          "micro_steps": 2,
+          "optimizer_and_scaler": "7aaa04c1d2a3f6565e4570e2ffb67fc9b40ad743d7c7a23650d4e8a6e7eb856b",
+          "scheduler": "b4ac9cf339874348f2d2c51b6efde11e7eb4953e93244de3b39b9f7bde06837e",
+          "skipped_steps": 0,
+          "trainable_model": "c3005a6fb15010cd8d528751df9d2eb5ecab6e955ea0d0f865f4bd21b1136cf9"
+        },
+        "status": "loaded_exact_state"
+      },
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 2,
+      "restored_rng_and_cursor": true,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-interrupted/rank-3.json",
+    "sha256": "16a8edcda177a176a6f2838d40003ca84f470bd05c074334351dc61230ab2b97",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:17:26.300357+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "e09b6e4c670e9156cb81dcdeefa6d9a09fbb6d3ea6d4bd15ff1a3ef87b3bd91a",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 3,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "991839a7e06c7cd7e490d0f59d29f23e5311fbea13ede1c78bb025304e04dd8c",
+      "process_recovery": {
+        "cursor": {
+          "epoch": 0,
+          "next_batch": 2
+        },
+        "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v3-attempt-0-interrupted/recovery/attempt-1-step-1",
+        "rng_restore_deferred_until_loader_skip": true,
+        "state_identity": {
+          "global_steps": 1,
+          "learning_rates": [
+            0.0
+          ],
+          "micro_steps": 2,
+          "optimizer_and_scaler": "2078b3c6c3c9d9d3b97d471d07a9bb7dea95b3e4b4dd1306b8d1f0cf9c9dfcf7",
+          "scheduler": "b4ac9cf339874348f2d2c51b6efde11e7eb4953e93244de3b39b9f7bde06837e",
+          "skipped_steps": 0,
+          "trainable_model": "c3005a6fb15010cd8d528751df9d2eb5ecab6e955ea0d0f865f4bd21b1136cf9"
+        },
+        "status": "loaded_exact_state"
+      },
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 3,
+      "restored_rng_and_cursor": true,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-interrupted/rank-4.json",
+    "sha256": "dce18281dc5bbc2247612a7333e8c5050e94de444367404d76591b824a64f674",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:17:26.298898+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "46e936ccbef610a43e472e1fd4841cfd48f31441cab2e81ad8d5a0789858922f",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 4,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "991839a7e06c7cd7e490d0f59d29f23e5311fbea13ede1c78bb025304e04dd8c",
+      "process_recovery": {
+        "cursor": {
+          "epoch": 0,
+          "next_batch": 2
+        },
+        "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v3-attempt-0-interrupted/recovery/attempt-1-step-1",
+        "rng_restore_deferred_until_loader_skip": true,
+        "state_identity": {
+          "global_steps": 1,
+          "learning_rates": [
+            0.0
+          ],
+          "micro_steps": 2,
+          "optimizer_and_scaler": "6d7933cd18a6f88f1f87b494e9ac35e052e1900bd21b976ffb06552d069a2073",
+          "scheduler": "b4ac9cf339874348f2d2c51b6efde11e7eb4953e93244de3b39b9f7bde06837e",
+          "skipped_steps": 0,
+          "trainable_model": "c3005a6fb15010cd8d528751df9d2eb5ecab6e955ea0d0f865f4bd21b1136cf9"
+        },
+        "status": "loaded_exact_state"
+      },
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 4,
+      "restored_rng_and_cursor": true,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-interrupted/rank-5.json",
+    "sha256": "8fc0e596e901f68fcd118380d86a3644a7a9a92629a86f9f80794e7c28e9dc5b",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:17:26.302722+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "1163466287371923e1cb402abe19e864f6c69edd577ff5376ef1cbbb775f04c5",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 5,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "991839a7e06c7cd7e490d0f59d29f23e5311fbea13ede1c78bb025304e04dd8c",
+      "process_recovery": {
+        "cursor": {
+          "epoch": 0,
+          "next_batch": 2
+        },
+        "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v3-attempt-0-interrupted/recovery/attempt-1-step-1",
+        "rng_restore_deferred_until_loader_skip": true,
+        "state_identity": {
+          "global_steps": 1,
+          "learning_rates": [
+            0.0
+          ],
+          "micro_steps": 2,
+          "optimizer_and_scaler": "a61a853861a2e4f01077a404f5a16007ea204699c74ea07ec7174f8f6fb82acb",
+          "scheduler": "b4ac9cf339874348f2d2c51b6efde11e7eb4953e93244de3b39b9f7bde06837e",
+          "skipped_steps": 0,
+          "trainable_model": "c3005a6fb15010cd8d528751df9d2eb5ecab6e955ea0d0f865f4bd21b1136cf9"
+        },
+        "status": "loaded_exact_state"
+      },
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 5,
+      "restored_rng_and_cursor": true,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-interrupted/rank-6.json",
+    "sha256": "af3e4b102da7bc6edece6dc8135218ed4b9a24882705cd13c98fc3740e0cd266",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:17:26.297855+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "696a17dae210b59563f0c71abfb423dd7794dca5ae27c7ca2025095ee7c90b13",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 6,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "991839a7e06c7cd7e490d0f59d29f23e5311fbea13ede1c78bb025304e04dd8c",
+      "process_recovery": {
+        "cursor": {
+          "epoch": 0,
+          "next_batch": 2
+        },
+        "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v3-attempt-0-interrupted/recovery/attempt-1-step-1",
+        "rng_restore_deferred_until_loader_skip": true,
+        "state_identity": {
+          "global_steps": 1,
+          "learning_rates": [
+            0.0
+          ],
+          "micro_steps": 2,
+          "optimizer_and_scaler": "ec1be940a5c839c8430f143baa5c9452c254c2a5a1052ebb85ef59c8737e602d",
+          "scheduler": "b4ac9cf339874348f2d2c51b6efde11e7eb4953e93244de3b39b9f7bde06837e",
+          "skipped_steps": 0,
+          "trainable_model": "c3005a6fb15010cd8d528751df9d2eb5ecab6e955ea0d0f865f4bd21b1136cf9"
+        },
+        "status": "loaded_exact_state"
+      },
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 6,
+      "restored_rng_and_cursor": true,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  },
+  {
+    "path": "outputs/native-training/native-restart-20261111-v3-attempt-0-interrupted/rank-7.json",
+    "sha256": "cbf8da0e842e748d49a31d28911e223e454969dfd94368b772de2f8cb9ba0e1d",
+    "document": {
+      "checkpoint_roundtrip": null,
+      "completed_at": "2026-11-11T16:17:26.302195+00:00",
+      "final_rng_identity": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+      "final_state_identity": {
+        "global_steps": 2,
+        "learning_rates": [
+          3.6898335414202713e-06
+        ],
+        "micro_steps": 4,
+        "optimizer_and_scaler": "02c492de416ed76c52234fd688a71054e2ad2505cc96e3784aecbd6ee4f81eb7",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0,
+        "trainable_model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775"
+      },
+      "gpu": "NVIDIA A100 80GB PCIe",
+      "local_rank": 7,
+      "mid_epoch_dataset_resume_supported": true,
+      "mid_epoch_recovery_independently_validated": false,
+      "native_global_steps": 2,
+      "package_versions": {
+        "accelerate": "0.26.0",
+        "datasets": "3.6.0",
+        "deepspeed": "0.17.1",
+        "huggingface-hub": "0.33.4",
+        "ninja": "1.11.1.4",
+        "numpy": "1.26.4",
+        "protobuf": "3.19.0",
+        "pyarrow": "20.0.0",
+        "pydantic": "2.11.4",
+        "safetensors": "0.5.3",
+        "sentencepiece": "0.1.99",
+        "torch": "2.6.0+cu124",
+        "tqdm": "4.67.1",
+        "transformers": "4.53.1",
+        "wandb": "0.20.1"
+      },
+      "plan_identity_sha256": "991839a7e06c7cd7e490d0f59d29f23e5311fbea13ede1c78bb025304e04dd8c",
+      "process_recovery": {
+        "cursor": {
+          "epoch": 0,
+          "next_batch": 2
+        },
+        "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v3-attempt-0-interrupted/recovery/attempt-1-step-1",
+        "rng_restore_deferred_until_loader_skip": true,
+        "state_identity": {
+          "global_steps": 1,
+          "learning_rates": [
+            0.0
+          ],
+          "micro_steps": 2,
+          "optimizer_and_scaler": "1f55d70ed624a53453707c66eea083934f0f749e5ea3eb71b132be2b02c69def",
+          "scheduler": "b4ac9cf339874348f2d2c51b6efde11e7eb4953e93244de3b39b9f7bde06837e",
+          "skipped_steps": 0,
+          "trainable_model": "c3005a6fb15010cd8d528751df9d2eb5ecab6e955ea0d0f865f4bd21b1136cf9"
+        },
+        "status": "loaded_exact_state"
+      },
+      "processed_tokens_this_dp_rank": {
+        "input_assistant_mask_tokens": 56,
+        "input_slots": 652,
+        "microbatches": 4,
+        "nonpadding_tokens": 652
+      },
+      "rank": 7,
+      "restored_rng_and_cursor": true,
+      "scientific_results": false,
+      "scope": "engineering",
+      "skipped_steps": 0,
+      "slurm_job_id": "2215983",
+      "spawn_compatibility": {
+        "child_exposes_only_collator": true,
+        "collator": "DataCollatorWithPadding",
+        "collator_ast_sha256": "97876e676ada11c80ae138c6775272b6dc7ba5debf9242f986ecb0969bf00bb6",
+        "native_loader_workers_unchanged": 4,
+        "native_main_sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+        "native_pin_memory_unchanged": true,
+        "parent_setup_execution": "once",
+        "upstream_bytes_modified": false
+      },
+      "status": "bounded_complete",
+      "stop_reason": "Reached successful native optimizer step 2",
+      "successful_optimizer_steps": 2,
+      "world_size": 8
+    }
+  }
+]

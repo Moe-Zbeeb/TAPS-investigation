@@ -1,0 +1,44 @@
+{
+  "decision": "approved",
+  "reviewer": "independent-agent-validation-review",
+  "review_kind": "implementation_only",
+  "evidence_admission": false,
+  "scientific_training_authorized": false,
+  "reviewed_commit": "1705912",
+  "validator_sha256": "befe4958005a00df7512e2e238c81d80b8e51bf6ba4ce124d09b45c16e5fcd0b",
+  "numerical_validator_sha256": "cb0546c268c09d73e15f62bde6d55a9a3437d26cce24ef464c14a9138d84629a",
+  "native_training_sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+  "native_recovery_sha256": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+  "training_handoff_sha256": "3e3ea9b80c6c81bd91e8fcecf8e46006cdb08f4f6b2ca9a5e1495f427f211a9e",
+  "training_queue_sha256": "4576e22bd456e6e51e2fcf5bb09b2dde74f074d57fcda202c3eed5cd4ffc4e01",
+  "numerical_collector_sha256": "7a18bfc90886c4133dc0641b2c1bd42c69eae65d629efe8a829d8c374131f89c",
+  "numerical_protocol_sha256": "522f98f6ac1b5ae118998d3bdfd077ea12241f61f7b309c05783e034ed769e1c",
+  "policy_sha256": "2de64c1fb2368a61a72f070150c15a879faed7d16e4e4a42743a2874b5639885",
+  "legacy_validator_sha256": "028747152f4c4bbbeca49120aaa72100b6d5293439411840d9546815a6ec3c0b",
+  "registered_collector_sha256": "d6ea2b5216b0052aa68282646b343143c6523ed14e75f8b2b838f99bb6458934",
+  "proof_sha256": "94de731a8918f84f2126cb8fc9dffd92298c25184595ad04ea8f7e3820a4113d",
+  "registered_proposal_sha256": "dcba7076095d4ffac978bc139889d9d205fcaa7f898bc9b7dbe2c1381d15638e",
+  "registered_protocol_sha256": "d1dc71bac2c8215d17c34e205e4e8b58d318a492e4b782550ebaa5b7a7f57ac4",
+  "source_test_result": {
+    "command": "PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests -q",
+    "tests": 391,
+    "skipped": 9,
+    "status": "passed",
+    "limitation": "Torch-dependent skips; source tests do not replace actual GPU evidence"
+  },
+  "scope": "Approval of the exact source implementation for source-bound native pipeline reconstruction and staged scratch EAGLE3 training gates, with published-paper agreement removed only under the user's explicit authorization. No passing evidence certificate is approved by this artifact.",
+  "remaining_evidence_requirements": [
+    "Final strict CPU reconstruction using these exact validator and helper bytes",
+    "Independent review of exact evidence identity and complete content-hash inventory",
+    "Retained numerical vectors satisfying the frozen case, geometry, prefix, mask, cache, runtime, hardware and epsilon checks",
+    "Source-matched eight-rank restart/export qualification before full-stage admission",
+    "Completed target-generated data, native vocabulary QA and qualified 200-update profile before full-stage admission"
+  ],
+  "limitations": [
+    "The ideal theorem is not a claim of exact native floating-point losslessness",
+    "Conditional and end-to-end empirical tests retain their registered finite event and prompt-mixture scopes",
+    "The one known numerical site remains a bounded route-dependent near-tie classification, with kernel cause unresolved and unequal divergent suffixes",
+    "Historical failed comparisons and original blocked reports retain their original status",
+    "Different targets, drafters, tree rules, dtypes, kernels, runtimes, pooled/shared/routed or serving paths require their own scoped evidence"
+  ]
+}

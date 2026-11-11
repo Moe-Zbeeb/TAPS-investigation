@@ -14,7 +14,7 @@ flowchart LR
 
 ## Evidence and current scope
 
-This snapshot contains research infrastructure, full baseline measurements and recorded engineering evidence. The full **22-cell released-baseline panel completed 22,400 generations; its reproduction gate failed**. Acceptance length met tolerance in 19/22 cells, but greedy token disagreements and three sampling outliers require investigation. See the [full results](results/baselines-2026-11-10/README.md). A [precision control](results/greedy-audit-2026-11-10/README.md) reproduced 24 selected FP16 failures and observed FP32 agreement at each disputed token. Scientific generalist/specialist training, independent validator review and custom pooled-tree serving remain outstanding.
+This snapshot contains research infrastructure, full baseline measurements and recorded engineering evidence. The full **22-cell released-baseline panel completed 22,400 generations; its reproduction gate failed**. See the [historical full results](results/baselines-2026-11-10/README.md) and [current execution status](experiments/STATUS_20261111.md). The user's 11 November instruction makes matching published paper numbers nonblocking. The [versioned pipeline policy](experiments/verification/PIPELINE_VALIDATION_V2.md) retains correctness, independent evidence review, data QA and source-matched engineering gates. Scientific generalist/specialist results and custom pooled-tree serving remain outstanding.
 
 Engineering records dated 9 November 2026 document checks on eight A100 80GB GPUs:
 

@@ -1,6 +1,8 @@
 # Seed-policy execution
 
-**Completed:** job 2215909 finished all 1,600 measured generations on eight GPUs. The [generated results](../../results/seed-policy-2026-11-11/README.md) show that upstream seed zero does not resolve the GSM8K acceptance outlier. CPU replay 2215919 recomputed the statistics exactly and verified all 800 registered-hash token/cycle replays against the prior replication. The original failed gate remains unchanged.
+**Completed:** job 2215909 finished all 1,600 measured generations on eight GPUs. The [generated results](../../results/seed-policy-2026-11-11/README.md) show that the fully reset seed-zero bridge control does not resolve the GSM8K acceptance outlier. CPU replay 2215919 recomputed the statistics exactly and verified all 800 registered-hash token/cycle replays against the prior replication. The original failed gate remains unchanged.
+
+The raw label `upstream_seed_zero` is retained for provenance. It resets Python, NumPy and Torch before each bridge generation. The native CLI resets Torch to the choice index per question, while its posterior consumes Python `random.random()` from a process-level stream; it does not reset that stream per question. The earlier seed-zero control therefore does not reproduce the complete native RNG procedure. The separately registered unmodified CLI control tests that procedure directly. This clarification leaves the original registration and raw records unchanged.
 
 Job **2215909** was submitted with a dependency on successful token-decision job 2215900, account `grad-students`, partition `high-priority`, QoS `spec-priority`, one exclusive eight-A100 node and a two-hour limit. The [registration](PREREGISTRATION.md) fixes all 160 first-turn inputs, both RNG policies, 1,600 measured generations, 24 excluded warmups and the unchanged question-mean acceptance reduction.
 

@@ -1,0 +1,47 @@
+{
+  "completed_at_utc": "2026-11-11T16:07:17.109464+00:00",
+  "manifest_sha256": "f731edbfa2f745b6f3c7f03f5792ab122827e984e68235b1b69e9987f88fecef",
+  "raw_files": {
+    "gsm8k-0.jsonl": "b74f2317dc3c6e54562bb3aec95baac2cc2ae600b222c7b36d74c55a58e8b2ad",
+    "gsm8k-1.jsonl": "4e95c98f4fa65d39fbdf8023f66385857a7f9dc09f352b77172a1e599be7dd48",
+    "gsm8k-2.jsonl": "4502307c72df6eef68ff2c19db811cae93427ffd3b1153e13709a2e262e25ca9",
+    "gsm8k-3.jsonl": "e6c4be746f6e505ccfa70131d100ed3c9dfce83837be91ce5963374c36567433",
+    "gsm8k-4.jsonl": "fb02348a9e8399c77dcb1b1186ce3ae3f665eca152eb2ab29f40005115168587",
+    "gsm8k-5.jsonl": "a3761d9c4bfb22cd6f4330dc14e69bebf65daac97e267c5ed99ff885711dc69a",
+    "gsm8k-6.jsonl": "60f1ca1b48125c198535c9b305e2c2834467bea9ba601c058ce7d0862a7d1b8a",
+    "gsm8k-7.jsonl": "04ebaae386abd6082721b46c22d7b16aabbe7f1fc87e039ea6d79e16c473c7cd",
+    "mt_bench-0.jsonl": "96616b4e7008d894b18aec5792d24e161ca22c2a099cf0675e51a82d55d4c1e9",
+    "mt_bench-1.jsonl": "24b473fa068797e8a5eb5dd9fdcc1e80837ce5680062811e4d102344ad77b022",
+    "mt_bench-2.jsonl": "1ae9d51b88eccc2659ca83e7823faf47e6fdee1fb7ab9fb92803201a162d82a8",
+    "mt_bench-3.jsonl": "e324cf9b09ff7b2a63bd5d0bdaafe8df7bb683490124c3666ea4e59d68815eaf",
+    "mt_bench-4.jsonl": "602be037df2bf87541506525734a4a74ad723cd13518629485aac85234511134",
+    "mt_bench-5.jsonl": "4f72e803c10136c481446aa5b1a18e9a6d510d2b68a8192b834a38b218b2f7ba",
+    "mt_bench-6.jsonl": "88202bf116fbe037e9479f31102431e975d14f608a4c880995e40534b157ad6d",
+    "mt_bench-7.jsonl": "93eab2e53ac0b6ae43dd655cc5dda736d1acfc7a0951dcf025a5cefd588e51e0"
+  },
+  "scope": "Unmodified original CLI procedure diagnostic; official counters, no paired AR speedup or training admission",
+  "status": "complete",
+  "summaries": {
+    "gsm8k": {
+      "official_counter_question_mean_tau": 5.515150016127496,
+      "published_tau": 4.59,
+      "questions": 80,
+      "raw_token_counter_equivalence_established": false,
+      "relative_error": 0.20155773771840876,
+      "turns": 80,
+      "within_five_percent": false,
+      "zero_based_index_ratio_diagnostic": 5.703248724195579
+    },
+    "mt_bench": {
+      "official_counter_question_mean_tau": 4.525160785909873,
+      "published_tau": 4.24,
+      "questions": 80,
+      "raw_token_counter_equivalence_established": false,
+      "relative_error": 0.0672549023372341,
+      "turns": 160,
+      "within_five_percent": false,
+      "zero_based_index_ratio_diagnostic": 4.650617856998895
+    }
+  },
+  "training_admission": false
+}

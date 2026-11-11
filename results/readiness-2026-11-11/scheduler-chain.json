@@ -1,0 +1,327 @@
+{
+  "checked_at_utc": "2026-11-11T15:50:48.072903+00:00",
+  "source_identity_sha256": "6375933ffe6e688eb4eb032360eabe519efadd01e13233a56869a022bf6f2caa",
+  "processed_source_inputs": 365312,
+  "expected_source_inputs": 540107,
+  "worker_count": 8,
+  "queue": "2215961|PENDING|high-priority|spec-priority|gres:gpu:a100:8|(Dependency)|0:00\n2215958|PENDING|high-priority|spec-priority|gres:gpu:a100:8|(Dependency)|0:00\n2215953|PENDING|high-priority|spec-priority|gres:gpu:a100:8|(Dependency)|0:00\n2215950|PENDING|high-priority|spec-priority|gres:gpu:a100:8|(Dependency)|0:00\n2215920|PENDING|high-priority|spec-priority|gres:gpu:a100:8|(Dependency)|0:00\n2214979|PENDING|high-priority|spec-priority|gres:gpu:a100:8|(Dependency)|0:00\n2215959|PENDING|high-priority|spec-priority|N/A|(Dependency)|0:00\n2215954|PENDING|high-priority|spec-priority|N/A|(Dependency)|0:00\n2215942|RUNNING|high-priority|spec-priority|gres:gpu:a100:8|deep-chungus-11|33:49\n2212580|RUNNING|high-priority|spec-priority|gres:gpu:a100:8|deep-chungus-10|3:08:50\n2215957|PENDING|low-priority|normal|N/A|(Dependency)|0:00\n2214978|PENDING|low-priority|normal|N/A|(Dependency)|0:00\n2214983|RUNNING|low-priority|normal|N/A|deep-chungus-2|3:08:32\n",
+  "artifacts": [
+    {
+      "path": "outputs/preparation/stopping-control-20261111-v1/submission.json",
+      "sha256": "1f3b1ddf35c9424fa31b499206878c3f0424a77f080b84f7e6e1c8b90821be23",
+      "document": {
+        "job_id": "2215942",
+        "command": [
+          "sbatch",
+          "--parsable",
+          "--account=grad-students",
+          "--partition=high-priority",
+          "--qos=spec-priority",
+          "--nodes=1",
+          "--exclusive",
+          "--nodelist=deep-chungus-11",
+          "--gres=gpu:a100:8",
+          "--ntasks=1",
+          "--cpus-per-task=64",
+          "--time=03:00:00",
+          "--job-name=taps-fixed-budget",
+          "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+          "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/stopping-control-20261111-v1/slurm-%j.log",
+          "--wrap",
+          "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/stopping-control-20261111-v1/run.sh"
+        ],
+        "slurm": "JobId=2215942 JobName=taps-fixed-budget UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=03:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:16:58 EligibleTime=2026-11-11T10:16:58 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:16:58 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2768574 ReqNodeList=deep-chungus-11 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=64 NumTasks=1 CPUs/Task=64 ReqB:S:C:T=0:0:*:* TRES=cpu=64,mem=500000M,node=1,billing=64,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=64 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/stopping-control-20261111-v1/slurm-2215942.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/stopping-control-20261111-v1/slurm-2215942.log Power= TresPerNode=gres:gpu:a100:8 \n",
+        "bundle": {
+          "PREREGISTRATION.md": "5dd50bd54f887d917368ef1885ba079090dbf0392c97ec3998510381612aa5a9",
+          "collector.py": "d6ea2b5216b0052aa68282646b343143c6523ed14e75f8b2b838f99bb6458934",
+          "context.py": "87842c151e8bbbcd40b8e333ceb87106dad9add4fdf677e29eb5d87f6c65502b",
+          "driver.py": "75b6e07823baf6561325defaa4980244ab00ff13c11f3b6a0d725439103d84d6",
+          "run.sh": "b03ac12e2309944a50fc71b7ce18779c218f2e6ab9f6c44782be60bd950a48ae",
+          "stale-context.json": "65266223bb7f2c4895b874e0c6c4fbeeef22718c0b291db1c7ca0925c5ae4983",
+          "validation_budget.py": "7ccfd76f3e3d9b657cd310f10417fd2c2c608e1fb49ce53012e31993f669d8ff"
+        },
+        "submitted_at_utc": "2026-11-11T15:16:58.517350+00:00"
+      }
+    },
+    {
+      "path": "outputs/preparation/native-restart-20261111-v2/submission.json",
+      "sha256": "cdac0de3828c33f869e2d149231e4e9d533032d2d23b0c09cda7e7fcf4d3b546",
+      "document": {
+        "prepare": {
+          "job_id": "2215949",
+          "command": [
+            "sbatch",
+            "--parsable",
+            "--account=grad-students",
+            "--nodes=1",
+            "--ntasks=1",
+            "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+            "--partition=high-priority",
+            "--qos=spec-priority",
+            "--nodelist=deep-chungus-6",
+            "--cpus-per-task=32",
+            "--mem=32G",
+            "--time=01:00:00",
+            "--job-name=taps-restart-prepare",
+            "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2/prepare-%j.log",
+            "--wrap",
+            "env PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2/src OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HOME=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/huggingface CUDA_VISIBLE_DEVICES= /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2/driver.py prepare --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --bundle /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2 --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-restart/native-restart-20261111-v2"
+          ],
+          "slurm": "JobId=2215949 JobName=taps-restart-prepare UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:28:23 EligibleTime=2026-11-11T10:28:23 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:28:23 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2776527 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* TRES=cpu=32,mem=32G,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2/prepare-2215949.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2/prepare-2215949.log Power= \n"
+        },
+        "proof": {
+          "job_id": "2215950",
+          "command": [
+            "sbatch",
+            "--parsable",
+            "--account=grad-students",
+            "--nodes=1",
+            "--ntasks=1",
+            "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+            "--partition=high-priority",
+            "--qos=spec-priority",
+            "--nodelist=deep-chungus-11",
+            "--exclusive",
+            "--gres=gpu:a100:8",
+            "--cpus-per-task=64",
+            "--time=02:00:00",
+            "--dependency=afterok:2215949,afterany:2215942",
+            "--job-name=taps-native-restart",
+            "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2/proof-%j.log",
+            "--wrap",
+            "env PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2/src OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HOME=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/huggingface /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2/driver.py controller --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --bundle /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2 --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-restart/native-restart-20261111-v2"
+          ],
+          "slurm": "JobId=2215950 JobName=taps-native-restart UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Resources Dependency=afterok:2215949(unfulfilled),afterany:2215942(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:28:23 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:28:23 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2776527 ReqNodeList=deep-chungus-11 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=64 NumTasks=1 CPUs/Task=64 ReqB:S:C:T=0:0:*:* TRES=cpu=64,mem=500000M,node=1,billing=64,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=64 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2/proof-2215950.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-restart-20261111-v2/proof-2215950.log Power= TresPerNode=gres:gpu:a100:8 \n"
+        },
+        "superseded": {
+          "prepare_failed": "2215946",
+          "proof_pending_cancelled": "2215947"
+        },
+        "code_commit": "ba72d67",
+        "submitted_at_utc": "2026-11-11T15:28:23.250587+00:00"
+      }
+    },
+    {
+      "path": "outputs/preparation/training-handoff-20261111-v1/submission.json",
+      "sha256": "d23cfe95886e34e98b96cc2d1c6ec0c8550cd2043c149844ddf7c39be10babb1",
+      "document": {
+        "export": {
+          "job_id": "2215953",
+          "command": [
+            "sbatch",
+            "--parsable",
+            "--account=grad-students",
+            "--nodes=1",
+            "--ntasks=1",
+            "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+            "--partition=high-priority",
+            "--qos=spec-priority",
+            "--nodelist=deep-chungus-11",
+            "--exclusive",
+            "--gres=gpu:a100:8",
+            "--cpus-per-task=64",
+            "--time=01:00:00",
+            "--dependency=afterok:2215950",
+            "--job-name=taps-export-check",
+            "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/export-%j.log",
+            "--wrap",
+            "env PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/src OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HOME=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/huggingface /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/export.py controller --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --proof /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-restart/native-restart-20261111-v2 --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-export/native-export-20261111-v1"
+          ],
+          "slurm": "JobId=2215953 JobName=taps-export-check UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Resources Dependency=afterok:2215950(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:36:12 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:36:12 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2782538 ReqNodeList=deep-chungus-11 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=64 NumTasks=1 CPUs/Task=64 ReqB:S:C:T=0:0:*:* TRES=cpu=64,mem=500000M,node=1,billing=64,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=64 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/export-2215953.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/export-2215953.log Power= TresPerNode=gres:gpu:a100:8 \n"
+        },
+        "prepare_full": {
+          "job_id": "2215954",
+          "command": [
+            "sbatch",
+            "--parsable",
+            "--account=grad-students",
+            "--nodes=1",
+            "--ntasks=1",
+            "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+            "--partition=high-priority",
+            "--qos=spec-priority",
+            "--nodelist=deep-chungus-6",
+            "--cpus-per-task=32",
+            "--mem=64G",
+            "--time=06:00:00",
+            "--dependency=afterok:2214979:2215953",
+            "--job-name=taps-full-prepare",
+            "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/prepare-%j.log",
+            "--wrap",
+            "env PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/src OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HOME=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/huggingface CUDA_VISIBLE_DEVICES= /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B -m taps_rebuild.training_handoff prepare --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --config /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/configs/training-handoff.json"
+          ],
+          "slurm": "JobId=2215954 JobName=taps-full-prepare UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2214979(unfulfilled),afterok:2215953(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:36:12 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:36:12 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2782538 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=32 NumTasks=1 CPUs/Task=32 ReqB:S:C:T=0:0:*:* TRES=cpu=32,mem=64G,node=1,billing=32 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=32 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/prepare-2215954.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/prepare-2215954.log Power= \n"
+        },
+        "full_training": {
+          "job_id": "2215955",
+          "command": [
+            "sbatch",
+            "--parsable",
+            "--account=grad-students",
+            "--nodes=1",
+            "--ntasks=1",
+            "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+            "--partition=high-priority",
+            "--qos=spec-priority",
+            "--nodelist=deep-chungus-11",
+            "--exclusive",
+            "--gres=gpu:a100:8",
+            "--cpus-per-task=64",
+            "--time=2-00:00:00",
+            "--signal=B:TERM@120",
+            "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/full-%j.log",
+            "--dependency=afterok:2215954",
+            "--job-name=taps-full-train",
+            "--wrap",
+            "env PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/src OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HOME=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/huggingface /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B -m taps_rebuild.training_handoff launch --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --config /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/configs/training-handoff.json"
+          ],
+          "slurm": "JobId=2215955 JobName=taps-full-train UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Resources Dependency=afterok:2215954(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=2-00:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:36:13 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:36:13 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2782538 ReqNodeList=deep-chungus-11 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=64 NumTasks=1 CPUs/Task=64 ReqB:S:C:T=0:0:*:* TRES=cpu=64,mem=500000M,node=1,billing=64,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=64 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/full-2215955.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/full-2215955.log Power= TresPerNode=gres:gpu:a100:8 \n"
+        },
+        "continuation": {
+          "job_id": "2215956",
+          "command": [
+            "sbatch",
+            "--parsable",
+            "--account=grad-students",
+            "--nodes=1",
+            "--ntasks=1",
+            "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+            "--partition=high-priority",
+            "--qos=spec-priority",
+            "--nodelist=deep-chungus-6",
+            "--gres=none",
+            "--cpus-per-task=1",
+            "--mem=4G",
+            "--time=01:00:00",
+            "--job-name=taps-full-continue",
+            "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/continuation-%j.log",
+            "--dependency=afterany:2215955",
+            "--wrap",
+            "env PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/src OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HOME=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/huggingface CUDA_VISIBLE_DEVICES= /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/continue_training.py --schedule /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/schedule.json --previous-job 2215955 --attempt 1"
+          ],
+          "slurm": "JobId=2215956 JobName=taps-full-continue UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterany:2215955(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:36:13 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:36:13 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2782538 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* TRES=cpu=1,mem=4G,node=1,billing=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=4G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/continuation-2215956.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/continuation-2215956.log Power= \n"
+        },
+        "stopping_replay": {
+          "job_id": "2215957",
+          "command": [
+            "sbatch",
+            "--parsable",
+            "--account=grad-students",
+            "--nodes=1",
+            "--ntasks=1",
+            "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+            "--partition=low-priority",
+            "--qos=normal",
+            "--cpus-per-task=2",
+            "--mem=4G",
+            "--time=00:30:00",
+            "--dependency=afterok:2215942",
+            "--job-name=taps-stopping-replay",
+            "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/stopping-control-20261111-v1/replay-%j.log",
+            "--wrap",
+            "env CUDA_VISIBLE_DEVICES= PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/src /usr/bin/python3 -B -S /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/stopping-control-20261111-v1/driver.py replay --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --prepared /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/validation-inputs/registered-20261110-v2 --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/greedy-audits/stopping-control-20261111-v1 --report-name cpu-replay.json"
+          ],
+          "slurm": "JobId=2215957 JobName=taps-stopping-replay UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=normal JobState=PENDING Reason=Dependency Dependency=afterok:2215942(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-11-11T10:36:13 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:36:13 Scheduler=Main Partition=low-priority AllocNode:Sid=mslurm:2782538 ReqNodeList=(null) ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=2 NumTasks=1 CPUs/Task=2 ReqB:S:C:T=0:0:*:* TRES=cpu=2,mem=4G,node=1,billing=2 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=2 MinMemoryNode=4G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/stopping-control-20261111-v1/replay-2215957.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/stopping-control-20261111-v1/replay-2215957.log Power= \n"
+        },
+        "scope": "All scientific gates preserved; full training is dependency-queued and not admitted",
+        "submitted_at_utc": "2026-11-11T15:36:13.241649+00:00"
+      }
+    },
+    {
+      "path": "outputs/preparation/training-handoff-20261111-v1/submission-v2.json",
+      "sha256": "88c04faab0b5493f214e63860e941c0f9ecc84493d1445d38b5ee98b8c0ca25c",
+      "document": {
+        "full_training": {
+          "job_id": "2215958",
+          "command": [
+            "sbatch",
+            "--parsable",
+            "--account=grad-students",
+            "--nodes=1",
+            "--ntasks=1",
+            "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+            "--partition=high-priority",
+            "--qos=spec-priority",
+            "--nodelist=deep-chungus-11",
+            "--exclusive",
+            "--gres=gpu:a100:8",
+            "--cpus-per-task=64",
+            "--time=2-00:00:00",
+            "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/full-%j.log",
+            "--dependency=afterok:2215954",
+            "--job-name=taps-full-train",
+            "--wrap",
+            "env PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/src OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HOME=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/huggingface /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B -m taps_rebuild.training_handoff launch --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --config /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/configs/training-handoff.json"
+          ],
+          "slurm": "JobId=2215958 JobName=taps-full-train UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Resources Dependency=afterok:2215954(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=2-00:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:36:31 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:36:31 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2782940 ReqNodeList=deep-chungus-11 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=64 NumTasks=1 CPUs/Task=64 ReqB:S:C:T=0:0:*:* TRES=cpu=64,mem=500000M,node=1,billing=64,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=64 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/full-2215958.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/full-2215958.log Power= TresPerNode=gres:gpu:a100:8 \n"
+        },
+        "continuation": {
+          "job_id": "2215959",
+          "command": [
+            "sbatch",
+            "--parsable",
+            "--account=grad-students",
+            "--nodes=1",
+            "--ntasks=1",
+            "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+            "--partition=high-priority",
+            "--qos=spec-priority",
+            "--nodelist=deep-chungus-6",
+            "--gres=none",
+            "--cpus-per-task=1",
+            "--mem=4G",
+            "--time=01:00:00",
+            "--job-name=taps-full-continue",
+            "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/continuation-%j.log",
+            "--dependency=afterany:2215958",
+            "--wrap",
+            "env PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/src OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HOME=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/huggingface CUDA_VISIBLE_DEVICES= /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/continue_training.py --schedule /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/schedule-v2.json --previous-job 2215958 --attempt 1"
+          ],
+          "slurm": "JobId=2215959 JobName=taps-full-continue UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterany:2215958(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:36:31 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:36:31 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2782940 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* TRES=cpu=1,mem=4G,node=1,billing=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=4G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/continuation-2215959.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/continuation-2215959.log Power= \n"
+        },
+        "superseded_pending_jobs": [
+          {
+            "job_id": "2215955",
+            "slurm": "JobId=2215955 JobName=taps-full-train UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2215954(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=2-00:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:36:13 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:36:13 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2782538 ReqNodeList=deep-chungus-11 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=64 NumTasks=1 CPUs/Task=64 ReqB:S:C:T=0:0:*:* TRES=cpu=64,mem=500000M,node=1,billing=64,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=64 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/full-2215955.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/full-2215955.log Power= TresPerNode=gres:gpu:a100:8 \n"
+          },
+          {
+            "job_id": "2215956",
+            "slurm": "JobId=2215956 JobName=taps-full-continue UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterany:2215955(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:36:13 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:36:13 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2782538 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* TRES=cpu=1,mem=4G,node=1,billing=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=4G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/continuation-2215956.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/training-handoff-20261111-v1/continuation-2215956.log Power= \n"
+          }
+        ],
+        "reason": "Remove early batch-shell termination; real scheduler timeouts control checkpoint recovery",
+        "schedule_sha256": "c288b9fceb1791e1ff52be3c5feee57ef38af0827651653762c3b7707b5baae1",
+        "checked_at_utc": "2026-11-11T15:36:31.377080+00:00"
+      }
+    },
+    {
+      "path": "outputs/preparation/upstream-cli-20261111-v1/submission.json",
+      "sha256": "f8a034b8913c28f193e4bc521cc2dd8c4d36ef8031db752de1a8381645a2ba66",
+      "document": {
+        "job_id": "2215961",
+        "command": [
+          "sbatch",
+          "--parsable",
+          "--account=grad-students",
+          "--partition=high-priority",
+          "--qos=spec-priority",
+          "--nodes=1",
+          "--exclusive",
+          "--nodelist=deep-chungus-11",
+          "--gres=gpu:a100:8",
+          "--ntasks=1",
+          "--cpus-per-task=64",
+          "--time=02:00:00",
+          "--dependency=afterany:2215953",
+          "--job-name=taps-upstream-cli",
+          "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+          "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/upstream-cli-20261111-v1/slurm-%j.log",
+          "--wrap",
+          "env PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/src PATH=/usr/local/bin:/usr/bin:/bin /usr/bin/python3 -B -S /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/upstream-cli-20261111-v1/driver.py --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/upstream-cli/native-20261111-v1"
+        ],
+        "slurm": "JobId=2215961 JobName=taps-upstream-cli UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Resources Dependency=afterany:2215953(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-11-11T10:41:33 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T10:41:33 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2786531 ReqNodeList=deep-chungus-11 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=64 NumTasks=1 CPUs/Task=64 ReqB:S:C:T=0:0:*:* TRES=cpu=64,mem=500000M,node=1,billing=64,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=64 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/upstream-cli-20261111-v1/slurm-2215961.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/upstream-cli-20261111-v1/slurm-2215961.log Power= TresPerNode=gres:gpu:a100:8 \n",
+        "submitted_at_utc": "2026-11-11T15:41:33.434269+00:00"
+      }
+    }
+  ]
+}

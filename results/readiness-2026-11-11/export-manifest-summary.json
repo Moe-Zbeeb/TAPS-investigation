@@ -1,0 +1,260 @@
+{
+  "driver_sha256": "28d6849de6911fe759986da3a33bb50bc86d6dae0c16424a7435c65fe4c93e48",
+  "context_sha256": "87842c151e8bbbcd40b8e333ceb87106dad9add4fdf677e29eb5d87f6c65502b",
+  "policy_sha256": "65266223bb7f2c4895b874e0c6c4fbeeef22718c0b291db1c7ca0925c5ae4983",
+  "hardware": {
+    "gpu_inventory": [
+      {
+        "index": "0",
+        "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c",
+        "name": "NVIDIA A100 80GB PCIe",
+        "memory_total_mib": 81920.0,
+        "driver_version": "565.57.01"
+      },
+      {
+        "index": "1",
+        "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2",
+        "name": "NVIDIA A100 80GB PCIe",
+        "memory_total_mib": 81920.0,
+        "driver_version": "565.57.01"
+      },
+      {
+        "index": "2",
+        "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19",
+        "name": "NVIDIA A100 80GB PCIe",
+        "memory_total_mib": 81920.0,
+        "driver_version": "565.57.01"
+      },
+      {
+        "index": "3",
+        "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c",
+        "name": "NVIDIA A100 80GB PCIe",
+        "memory_total_mib": 81920.0,
+        "driver_version": "565.57.01"
+      },
+      {
+        "index": "4",
+        "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c",
+        "name": "NVIDIA A100 80GB PCIe",
+        "memory_total_mib": 81920.0,
+        "driver_version": "565.57.01"
+      },
+      {
+        "index": "5",
+        "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed",
+        "name": "NVIDIA A100 80GB PCIe",
+        "memory_total_mib": 81920.0,
+        "driver_version": "565.57.01"
+      },
+      {
+        "index": "6",
+        "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c",
+        "name": "NVIDIA A100 80GB PCIe",
+        "memory_total_mib": 81920.0,
+        "driver_version": "565.57.01"
+      },
+      {
+        "index": "7",
+        "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8",
+        "name": "NVIDIA A100 80GB PCIe",
+        "memory_total_mib": 81920.0,
+        "driver_version": "565.57.01"
+      }
+    ],
+    "device_bindings": [
+      {
+        "shard_index": 0,
+        "token": "0",
+        "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c",
+        "index": "0"
+      },
+      {
+        "shard_index": 1,
+        "token": "1",
+        "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2",
+        "index": "1"
+      },
+      {
+        "shard_index": 2,
+        "token": "2",
+        "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19",
+        "index": "2"
+      },
+      {
+        "shard_index": 3,
+        "token": "3",
+        "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c",
+        "index": "3"
+      },
+      {
+        "shard_index": 4,
+        "token": "4",
+        "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c",
+        "index": "4"
+      },
+      {
+        "shard_index": 5,
+        "token": "5",
+        "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed",
+        "index": "5"
+      },
+      {
+        "shard_index": 6,
+        "token": "6",
+        "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c",
+        "index": "6"
+      },
+      {
+        "shard_index": 7,
+        "token": "7",
+        "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8",
+        "index": "7"
+      }
+    ],
+    "hardware_identity_sha256": "47811704de2166adcf61e573d434222a9a66d7498c4b9c6b36001201ac2a60a2",
+    "job_id": "2215987",
+    "node": "deep-chungus-11",
+    "slurm": {
+      "job": {
+        "JobId": "2215987",
+        "JobName": "taps-export-check",
+        "UserId": "mohamadzbib(29562)",
+        "Account": "grad-students",
+        "QOS": "spec-priority",
+        "StartTime": "2026-11-11T11:17:40",
+        "EndTime": "2026-11-11T12:17:40",
+        "Partition": "high-priority",
+        "NodeList": "deep-chungus-11",
+        "NumNodes": "1",
+        "NumCPUs": "128",
+        "TRES": "cpu=128,node=1,billing=128,gres/gpu=8,gres/gpu:a100=8"
+      },
+      "node": {
+        "NodeName": "deep-chungus-11",
+        "CPUTot": "128",
+        "Gres": "gpu:a100:8",
+        "Version": "21.08.8",
+        "RealMemory": "1000000",
+        "State": "ALLOCATED",
+        "CfgTRES": "cpu=128,mem=1000000M,billing=128,gres/gpu=8,gres/gpu:a100=8",
+        "AllocTRES": "cpu=128,gres/gpu=8,gres/gpu:a100=8"
+      },
+      "job_record_sha256": "993503b5805f562767ed4d500a460d1e9079310a8b0b7417876483c49fb01155",
+      "node_record_sha256": "e2126828893f3f79cf61916171fa555cf25a6e8490b53dbfd05af4b442a50e83"
+    }
+  },
+  "proof_sha256": "e3f383f12a031d9712e577ec40be726ac8e000168d23e71a3235649a347c1e69",
+  "draft_path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v3-attempt-0-control/budget_step_2",
+  "weights_sha256": "ab2b4a03223aacaa06cc8d0c36e369965b4183d880c14ece8093581166a40e99",
+  "original_manifest_sha256": "13a84b0dd0e32c5ec01da21ea38fcb8da26148810ffbd3e24452375d58004a0a",
+  "original_manifest_cluster_path": "outputs/native-export/native-export-20261111-v2/manifest.json",
+  "scope": "Public provenance summary; original full manifest retained privately; benchmark inputs are excluded",
+  "selected_provenance": {
+    "asset_receipt_sha256": "da62f1ca8001cc3be7ed6604c783987afe8f27d5ad281c6874d9ec55c3ad1b07",
+    "authored_source_hashes_sha256": "5eba925f982cc29be98660fdb6232dced129e3e311921a0c42063e4b40b94db6",
+    "code_commit": "a9855371b638fdd13a1f8125a0041759958aefbf",
+    "config_sha256": "51e82dae1296d16a41bb9cab9ce1042eac4d4b775b97df42866e65ff32e2cd16",
+    "draft_model_id": "eagle3_llama31_8b",
+    "draft_model_identity_sha256": "799ec84004c49f8e82acf43c849a64596f47a2f28d3516a810e951798de99fcf",
+    "effective_config_sha256": "086323307b976b7b42407830615324baa49d7f8963df5184412909581993dd61",
+    "manifest_sha256": "502f80bb0d1c8d86407e3c4e4673b7326ea41b1de280fba5352eb00dd44a8a9a",
+    "run_id": "official-eagle3-20261109-v2",
+    "scientific_identity_sha256": "6c682b348ca0db789a1eaedcb8104b94ed6999bab6b6685a2d8a1d16aa021fea",
+    "scope": "reference",
+    "source_identity_sha256": "86577b8b6c90bfb5dde208133d9828859b81a6a7b89691971e89447a4f103b54",
+    "source_receipt_sha256": "452fb3ff49e64eb0cd2e4f3625e5190fad8ee03b1d4bd9b6e0ae461406366dc1",
+    "source_revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+    "target_model_id": "llama31_instruct_8b",
+    "target_model_identity_sha256": "7c3d0c33c2a43a10ba658bdca906de7412050d8c094083a34e0d6fced7c94b6c"
+  },
+  "case_identities": [
+    {
+      "benchmark": "mt_bench",
+      "input_sha256": "0319d4317ffb9cff7899059cdae4077fe87f412fa7aaf70b23004e5ce2d36e35",
+      "original_case_ids": {
+        "speculative": "3872d50a8bbf7e51c6e49436a7ca99451aa18b270e1a1493bbffba3fd8ecebda",
+        "target_only": "e81fd13441c26fbb61921efb208d439176de6b432acded6a3d71ee45c4eeeed0"
+      },
+      "question_id": 121,
+      "seed": 881316833,
+      "turn_id": 0
+    },
+    {
+      "benchmark": "humaneval",
+      "input_sha256": "76dc10b1feb67afce45c0e877a7f9fa524f2290f1517e52c789d654455960efe",
+      "original_case_ids": {
+        "speculative": "383af21092d7fcadcc94b6780094d3866f4f2e886c53aef00da419db2dbeb81a",
+        "target_only": "8d0cdd812bc39f7230e750cae5f2b314f0c6bf0a44bd567655ab5b397b7ea5d4"
+      },
+      "question_id": 53,
+      "seed": 2431656316,
+      "turn_id": 0
+    },
+    {
+      "benchmark": "gsm8k",
+      "input_sha256": "a5e7b02ad8e8bc1280c3fa30b2ee08eb8cfd7a839641bd8d3d7873af18bc79af",
+      "original_case_ids": {
+        "speculative": "ff645616044ae77bea213e5f72fbcd705e2149a8dde1de5fe0832b4514cec752",
+        "target_only": "ae580d419cea17b6532ed4d5f119e2652e257afb27fda07187c6f7e6f5924588"
+      },
+      "question_id": 50,
+      "seed": 1692439135,
+      "turn_id": 0
+    },
+    {
+      "benchmark": "alpaca",
+      "input_sha256": "4ca8355c64ab0eb98e8612e2ed092b59387acb36ae414215b4f33d63ba98d664",
+      "original_case_ids": {
+        "speculative": "1c3882a2be33cf0ee723e18d5e9bb3c043be89d261cba802e4e9b174eeaaacd1",
+        "target_only": "29d12c3770bc571ac53c500edbb69f85e72382a03e77dd8814d7fbdca4882f92"
+      },
+      "question_id": 15,
+      "seed": 3561987521,
+      "turn_id": 0
+    },
+    {
+      "benchmark": "cnn_dm",
+      "input_sha256": "a36fbbbe653ae6ea6350ba6e34afb76e147ea2eb3a564151f3916d15019acfd5",
+      "original_case_ids": {
+        "speculative": "23d1414619c24f36a27b9748e201c28666486e914359bade52befff2893132e3",
+        "target_only": "a189fa63475b877dd52ba9d9e20dd6b102d5b633dd2b6c4dfeedb96eecc57f43"
+      },
+      "question_id": 248,
+      "seed": 2288697101,
+      "turn_id": 0
+    },
+    {
+      "benchmark": "mt_bench",
+      "input_sha256": "5c7a098c1c65714b518bb253695542bd623d714a9461fe51d491a71ce743f705",
+      "original_case_ids": {
+        "speculative": "91f386be9b620b16d7f8c344fa6d634aad0ed129845ddf5bac1407624910b545",
+        "target_only": "6fca197479882bfe263493ab090944c14a9a28db5c4e9e260c4268febc13af2d"
+      },
+      "question_id": 96,
+      "seed": 53100737,
+      "turn_id": 1
+    },
+    {
+      "benchmark": "alpaca",
+      "input_sha256": "f341bad306653f1e3a9e7e14ce7c1c296522dc5479ab77668deb71a4ca84fc62",
+      "original_case_ids": {
+        "speculative": "c55e3ae81371e27ba39f08c7dc0df6a6640c2246252ec79447e7dd853c9544e0",
+        "target_only": "98d94ab2b4bdafe5b1497a2735eae0a6ec073056fb31e61dd0cbc2fd8ee15296"
+      },
+      "question_id": 52,
+      "seed": 611604911,
+      "turn_id": 0
+    },
+    {
+      "benchmark": "mt_bench",
+      "input_sha256": "1a74025923a5955ebe9412ec823d7a7ecb4d7bc85d59df7f0b73fe41d077f1b2",
+      "original_case_ids": {
+        "speculative": "1fe3f88c52047163cbd20130f4f4d34bd1d1b152ae8301989715286f81973f47",
+        "target_only": "322c664b13e8d49219f0f72f86275c657132292de9f495c0e72fe4cd89412bb0"
+      },
+      "question_id": 137,
+      "seed": 2365480920,
+      "turn_id": 1
+    }
+  ]
+}

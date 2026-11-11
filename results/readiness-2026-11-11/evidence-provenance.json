@@ -1,0 +1,66 @@
+{
+  "stopping-report.json": {
+    "path": "outputs/greedy-audits/stopping-control-20261111-v1/report.json",
+    "sha256": "dfdafda192ea5462226ac390211a6b57083f1720be201f654595aea5ac0e5b44"
+  },
+  "stopping-cpu-replay.json": {
+    "path": "outputs/greedy-audits/stopping-control-20261111-v1/cpu-replay.json",
+    "sha256": "3e6761850f2cf848ac59151812f0ba1bd49524117b661cd2eb5d99ed3767ad1f"
+  },
+  "stopping-manifest.json": {
+    "path": "outputs/greedy-audits/stopping-control-20261111-v1/manifest.json",
+    "sha256": "de0d7e8a64aa62c3a21f54fc5576239936dfe7c39d7361b4f8931d32863901dc"
+  },
+  "stopping-completion.json": {
+    "path": "outputs/greedy-audits/stopping-control-20261111-v1/completion.json",
+    "sha256": "7b0573456a0c2bbe0f3c26d405ab4a692e1c8c15181d233c94ec659bc99d2128"
+  },
+  "upstream-cli-report.json": {
+    "path": "outputs/upstream-cli/native-20261111-v1/report.json",
+    "sha256": "49ef2c545a270c8d05b2871845e40d1410fa62034a6f802fc414f6f20d3bb649"
+  },
+  "upstream-cli-manifest.json": {
+    "path": "outputs/upstream-cli/native-20261111-v1/manifest.json",
+    "sha256": "f731edbfa2f745b6f3c7f03f5792ab122827e984e68235b1b69e9987f88fecef"
+  },
+  "vocabulary-engineering.json": {
+    "path": "outputs/native-data-qa/engineering-20261111-v1/report.json",
+    "sha256": "3bf24f19c4d2acab46ac363aac3e63851c9faccaad8e42abc3863ac00f051e50"
+  },
+  "frozen-lossless-proof.md": {
+    "path": "outputs/preparation/training-queue-20261110-v6/experiments/verification/LOSSLESS_RULE.md",
+    "sha256": "94de731a8918f84f2126cb8fc9dffd92298c25184595ad04ea8f7e3820a4113d"
+  },
+  "root-historical-temperature-one-proposal.md": {
+    "path": "experiments/verification/TEMPERATURE_ONE_AUDIT_PLAN.md",
+    "sha256": "967c24f08c56323f3bcd273dc3b4d9c567c3aca250b11559451bb1e8d843555d"
+  },
+  "registered-temperature-one-proposal.md": {
+    "path": "outputs/preparation/validation-queue-20261110-v2/TEMPERATURE_ONE_AUDIT_PLAN.md",
+    "sha256": "dcba7076095d4ffac978bc139889d9d205fcaa7f898bc9b7dbe2c1381d15638e"
+  },
+  "registered-validation-protocol.md": {
+    "path": "outputs/preparation/validation-queue-20261110-v2/PREREGISTRATION.md",
+    "sha256": "d1dc71bac2c8215d17c34e205e4e8b58d318a492e4b782550ebaa5b7a7f57ac4"
+  },
+  "restart-report.json": {
+    "path": "outputs/native-restart/native-restart-20261111-v3/report.json",
+    "sha256": "e3f383f12a031d9712e577ec40be726ac8e000168d23e71a3235649a347c1e69"
+  },
+  "restart-prepared.json": {
+    "path": "outputs/native-restart/native-restart-20261111-v3/prepared.json",
+    "sha256": "23fc16a5fe270ea4df75a4c4d773ff89a4bbe9c5a39d976fdf8890a27d41ba7c"
+  },
+  "export-report.json": {
+    "path": "outputs/native-export/native-export-20261111-v2/report.json",
+    "sha256": "8e366d23eec47380d081584dcf22ebca77bf62f445ba851dc104e808e07aedec"
+  },
+  "export-manifest.json": {
+    "path": "outputs/native-export/native-export-20261111-v2/manifest.json",
+    "sha256": "13a84b0dd0e32c5ec01da21ea38fcb8da26148810ffbd3e24452375d58004a0a"
+  },
+  "restart-ranks.json": {
+    "path": "collected original rank receipts; each source path and file SHA256 retained",
+    "sha256": "39f271fefccd80c94415da10bbfda23927d4e5b50e89cdd89b3c1e8b679e1954"
+  }
+}

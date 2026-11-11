@@ -1,0 +1,200 @@
+{
+  "checked_at_utc": "2026-11-11T15:49:13.800322+00:00",
+  "repo_id": "yuhuili/EAGLE3-LLaMA3.1-Instruct-8B",
+  "used_revision": "ada412b672e293d682423de84a095447bf38a637",
+  "used_weights_sha256": "16d5bf9524108d59f68c7af196edd69018c29316cb6a2fb491cfd2a393ee1cf4",
+  "first_release_weights_match_current_used_bytes": true,
+  "paper_experiment_checkpoint_identity_established": false,
+  "scope": "Public release-history metadata comparison only; not a new weight download or inference result",
+  "commits": {
+    "url": "https://huggingface.co/api/models/yuhuili/EAGLE3-LLaMA3.1-Instruct-8B/commits/main",
+    "response_sha256": "a14df6734694cf7769a7aca9939f96a9db0bcc0c345c8aa8c9d3f4c5033ae3f3",
+    "records": [
+      {
+        "id": "ada412b672e293d682423de84a095447bf38a637",
+        "title": "Update README.md",
+        "message": "",
+        "authors": [
+          {
+            "user": "yuhuili",
+            "avatar": "/avatars/ef5c232a49b50c7cda8325591e4560fb.svg"
+          }
+        ],
+        "date": "2025-09-19T12:13:44.000Z"
+      },
+      {
+        "id": "ed6a9b3a03171201ad52374ec4139fb942a38b33",
+        "title": "Update README.md",
+        "message": "",
+        "authors": [
+          {
+            "user": "yuhuili",
+            "avatar": "/avatars/ef5c232a49b50c7cda8325591e4560fb.svg"
+          }
+        ],
+        "date": "2025-09-19T12:12:10.000Z"
+      },
+      {
+        "id": "73852ed927720095ad7d33eba8f45aa170d46bdb",
+        "title": "Update README.md",
+        "message": "",
+        "authors": [
+          {
+            "user": "yuhuili",
+            "avatar": "/avatars/ef5c232a49b50c7cda8325591e4560fb.svg"
+          }
+        ],
+        "date": "2025-09-19T01:42:51.000Z"
+      },
+      {
+        "id": "22d4b3fc1650d4206abcd79ed09d289aa1e465a5",
+        "title": "Upload 2 files",
+        "message": "",
+        "authors": [
+          {
+            "user": "yuhuili",
+            "avatar": "/avatars/ef5c232a49b50c7cda8325591e4560fb.svg"
+          }
+        ],
+        "date": "2025-09-08T03:04:16.000Z"
+      },
+      {
+        "id": "cb0c30d4e15836028eae96b49db1e57a4dd9fca5",
+        "title": "Upload 3 files",
+        "message": "",
+        "authors": [
+          {
+            "user": "yuhuili",
+            "avatar": "/avatars/ef5c232a49b50c7cda8325591e4560fb.svg"
+          }
+        ],
+        "date": "2025-09-08T03:02:55.000Z"
+      },
+      {
+        "id": "607d0d5b7871cd4b89395b6af288c070cfa0a168",
+        "title": "Add model weights",
+        "message": "\n",
+        "authors": [
+          {
+            "user": "yuhuili"
+          }
+        ],
+        "date": "2025-03-03T18:47:34.000Z"
+      },
+      {
+        "id": "c80e414d38a6f84a9fc26b022bc2655a68489a40",
+        "title": "initial commit",
+        "message": "",
+        "authors": [
+          {
+            "user": "yuhuili",
+            "avatar": "/avatars/ef5c232a49b50c7cda8325591e4560fb.svg"
+          }
+        ],
+        "date": "2025-03-03T15:21:02.000Z"
+      }
+    ]
+  },
+  "trees": [
+    {
+      "revision": "607d0d5b7871cd4b89395b6af288c070cfa0a168",
+      "url": "https://huggingface.co/api/models/yuhuili/EAGLE3-LLaMA3.1-Instruct-8B/tree/607d0d5b7871cd4b89395b6af288c070cfa0a168?recursive=true&expand=false",
+      "response_sha256": "d28133cc154a269beffb60840345ded88233358fa3855329e159d726e7c0bbb2",
+      "files": [
+        {
+          "type": "file",
+          "oid": "93a1a197af98e51e76188e5a4bb0d61500f89874",
+          "size": 591,
+          "path": "config.json"
+        },
+        {
+          "type": "file",
+          "oid": "d5eeb21899aef7e13d7dd781ee9d348b81c56734",
+          "size": 849768795,
+          "lfs": {
+            "oid": "16d5bf9524108d59f68c7af196edd69018c29316cb6a2fb491cfd2a393ee1cf4",
+            "size": 849768795,
+            "pointerSize": 134
+          },
+          "xetHash": "cd9bad8a64e04d2d7123692ba18859b0812012e9bcabc65fc7366516db11256c",
+          "path": "pytorch_model.bin"
+        }
+      ]
+    },
+    {
+      "revision": "cb0c30d4e15836028eae96b49db1e57a4dd9fca5",
+      "url": "https://huggingface.co/api/models/yuhuili/EAGLE3-LLaMA3.1-Instruct-8B/tree/cb0c30d4e15836028eae96b49db1e57a4dd9fca5?recursive=true&expand=false",
+      "response_sha256": "7303a3653f998183d8bef861508ec76b377c357c86ad764eb76a466579fd1101",
+      "files": [
+        {
+          "type": "file",
+          "oid": "93a1a197af98e51e76188e5a4bb0d61500f89874",
+          "size": 591,
+          "path": "config.json"
+        },
+        {
+          "type": "file",
+          "oid": "d5eeb21899aef7e13d7dd781ee9d348b81c56734",
+          "size": 849768795,
+          "lfs": {
+            "oid": "16d5bf9524108d59f68c7af196edd69018c29316cb6a2fb491cfd2a393ee1cf4",
+            "size": 849768795,
+            "pointerSize": 134
+          },
+          "xetHash": "cd9bad8a64e04d2d7123692ba18859b0812012e9bcabc65fc7366516db11256c",
+          "path": "pytorch_model.bin"
+        }
+      ]
+    },
+    {
+      "revision": "22d4b3fc1650d4206abcd79ed09d289aa1e465a5",
+      "url": "https://huggingface.co/api/models/yuhuili/EAGLE3-LLaMA3.1-Instruct-8B/tree/22d4b3fc1650d4206abcd79ed09d289aa1e465a5?recursive=true&expand=false",
+      "response_sha256": "866417c488e16169b59babbee652839bdbb18f773aaa639eb077c1faa0fb7c90",
+      "files": [
+        {
+          "type": "file",
+          "oid": "93a1a197af98e51e76188e5a4bb0d61500f89874",
+          "size": 591,
+          "path": "config.json"
+        },
+        {
+          "type": "file",
+          "oid": "d5eeb21899aef7e13d7dd781ee9d348b81c56734",
+          "size": 849768795,
+          "lfs": {
+            "oid": "16d5bf9524108d59f68c7af196edd69018c29316cb6a2fb491cfd2a393ee1cf4",
+            "size": 849768795,
+            "pointerSize": 134
+          },
+          "xetHash": "cd9bad8a64e04d2d7123692ba18859b0812012e9bcabc65fc7366516db11256c",
+          "path": "pytorch_model.bin"
+        }
+      ]
+    },
+    {
+      "revision": "ada412b672e293d682423de84a095447bf38a637",
+      "url": "https://huggingface.co/api/models/yuhuili/EAGLE3-LLaMA3.1-Instruct-8B/tree/ada412b672e293d682423de84a095447bf38a637?recursive=true&expand=false",
+      "response_sha256": "4ef9488633a7a40dd7681c0d2fa03be66d3a50de567249eac4e5791c0b56999f",
+      "files": [
+        {
+          "type": "file",
+          "oid": "93a1a197af98e51e76188e5a4bb0d61500f89874",
+          "size": 591,
+          "path": "config.json"
+        },
+        {
+          "type": "file",
+          "oid": "d5eeb21899aef7e13d7dd781ee9d348b81c56734",
+          "size": 849768795,
+          "lfs": {
+            "oid": "16d5bf9524108d59f68c7af196edd69018c29316cb6a2fb491cfd2a393ee1cf4",
+            "size": 849768795,
+            "pointerSize": 134
+          },
+          "xetHash": "cd9bad8a64e04d2d7123692ba18859b0812012e9bcabc65fc7366516db11256c",
+          "path": "pytorch_model.bin"
+        }
+      ]
+    }
+  ]
+}

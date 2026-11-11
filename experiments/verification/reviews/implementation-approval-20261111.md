@@ -1,0 +1,11 @@
+# Independent implementation approval
+
+Decision: **approved for implementation only** on the exact identities in `implementation-approval-20261111.json`. Evidence admission and scientific training authorization remain false. This is not the evidence-level review expected by the production v2 gate.
+
+The final 1705912 candidates close the concrete findings in the earlier review checkpoints. The validator reconstructs the registered finite-event tests without redefining their reference law, independently reconstructs tokenized input identities and short-continuation validity, and separates the CPU FP64 diagnostic from the retained CUDA scalar. Its source-bound numerical checks preserve exact registered selection, complete repeated vectors, clean-cache reference, actual route selections, selected-path masks/positions, geometry and hardware identities. Content hashes and a separate review tied to the exact evidence report and inventory replace embedded approval flags and file-stat shortcuts.
+
+The staged training contract now constrains the actual target, source recipe, runtime, rank count and profile ceiling. Full training requires the canonical qualified profile plan, its launch and all source-matched rank receipts, both training/recovery qualification identities, and train/dev QA bindings. Actual full-run dataset inventories are compared with the qualified profile at preparation and plan loading. The intended handoff retains the vocabulary binding and all existing completion gates.
+
+No remaining material source finding was identified on these final candidates. This statement is scoped to the reviewed implementation and does not predict a passing final replay, numerical classification, training run or scientific result. New evidence must still be reviewed on its exact identities. In particular, the parent's preliminary numerical replay result is not being approved here because its validator predates the final geometry and hardware checks.
+
+Validation: the full local source suite completed successfully, 391 tests with nine Torch-dependent skips. No source implementation, production review, registry, active cluster job or historical result was modified by this reviewer. Prior checkpoint records remain preserved as review history.

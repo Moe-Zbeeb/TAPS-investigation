@@ -1,0 +1,174 @@
+{
+  "checked_at_utc": "2026-11-11T16:18:07.634082+00:00",
+  "paper_version_url": "https://arxiv.org/abs/2503.01840v3",
+  "paper_version_timestamp_utc": "2025-04-23T07:08:17Z",
+  "paper_era_commit_selection": "Last public default-branch commit before the v3 paper timestamp; not asserted to be the unpublished experiment commit",
+  "paper_era_commit": "91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817",
+  "paper_era_commit_timestamp_utc": "2025-04-19T07:54:29Z",
+  "pinned_commit": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+  "files": [
+    {
+      "path": "eagle/data/gsm8k/question.jsonl",
+      "byte_identical": true,
+      "files": [
+        {
+          "revision": "91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817/eagle/data/gsm8k/question.jsonl",
+          "sha256": "a55920b2f2aac724241124c59e5b8e8168dbbeb2ab0fdbee17d5b0ab6db5ff27",
+          "size_bytes": 48188
+        },
+        {
+          "revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/eagle/data/gsm8k/question.jsonl",
+          "sha256": "a55920b2f2aac724241124c59e5b8e8168dbbeb2ab0fdbee17d5b0ab6db5ff27",
+          "size_bytes": 48188
+        }
+      ]
+    },
+    {
+      "path": "eagle/data/mt_bench/question.jsonl",
+      "byte_identical": true,
+      "files": [
+        {
+          "revision": "91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817/eagle/data/mt_bench/question.jsonl",
+          "sha256": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7",
+          "size_bytes": 48929
+        },
+        {
+          "revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/eagle/data/mt_bench/question.jsonl",
+          "sha256": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7",
+          "size_bytes": 48929
+        }
+      ]
+    },
+    {
+      "path": "eagle/evaluation/gen_ea_answer_llama3chat.py",
+      "byte_identical": false,
+      "files": [
+        {
+          "revision": "91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817/eagle/evaluation/gen_ea_answer_llama3chat.py",
+          "sha256": "5db55e24be59e19db41958a2abd0543e93871f446a36d01da893c20f4dc4cb6e",
+          "size_bytes": 14660
+        },
+        {
+          "revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/eagle/evaluation/gen_ea_answer_llama3chat.py",
+          "sha256": "6daaf6f8010ff986eadfd5a5da7546b7ea9107c4ecdcfed57d694335dc78aef3",
+          "size_bytes": 14692
+        }
+      ]
+    },
+    {
+      "path": "eagle/model/cnets.py",
+      "byte_identical": false,
+      "files": [
+        {
+          "revision": "91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817/eagle/model/cnets.py",
+          "sha256": "05046c97bbaf6ab731dcd63f8dd886b38bb575a6b87fd52e120867425be19d4a",
+          "size_bytes": 36606
+        },
+        {
+          "revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/eagle/model/cnets.py",
+          "sha256": "b0e2512db4529c9689ffd768e9a2812059a5715d786686a131a751c56fbf3292",
+          "size_bytes": 37403
+        }
+      ]
+    },
+    {
+      "path": "eagle/model/configs.py",
+      "byte_identical": true,
+      "files": [
+        {
+          "revision": "91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817/eagle/model/configs.py",
+          "sha256": "14ae62877cd9ab12c9076fc70fe940714b9ca980865b00ba974de340df2d1ac5",
+          "size_bytes": 7550
+        },
+        {
+          "revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/eagle/model/configs.py",
+          "sha256": "14ae62877cd9ab12c9076fc70fe940714b9ca980865b00ba974de340df2d1ac5",
+          "size_bytes": 7550
+        }
+      ]
+    },
+    {
+      "path": "eagle/model/ea_model.py",
+      "byte_identical": false,
+      "files": [
+        {
+          "revision": "91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817/eagle/model/ea_model.py",
+          "sha256": "6ae02c9a593462123cf727f82605ca11f8b18f630bc47176e82fa3296ea48915",
+          "size_bytes": 20319
+        },
+        {
+          "revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/eagle/model/ea_model.py",
+          "sha256": "f834fc37d350b9109ad91ac27a29eb2be59153dc0aac48ab753c6e43aa91d506",
+          "size_bytes": 20606
+        }
+      ]
+    },
+    {
+      "path": "eagle/model/kv_cache.py",
+      "byte_identical": false,
+      "files": [
+        {
+          "revision": "91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817/eagle/model/kv_cache.py",
+          "sha256": "27e6907d79da6820cf501d7f882f5522a0c68b2cdbcc01767b91884f215c60c6",
+          "size_bytes": 5835
+        },
+        {
+          "revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/eagle/model/kv_cache.py",
+          "sha256": "f41d85e0210583a25b2714fea78efceed1efcf68052bae7c156b1a477b0c337b",
+          "size_bytes": 5893
+        }
+      ]
+    },
+    {
+      "path": "eagle/model/modeling_llama_kv.py",
+      "byte_identical": true,
+      "files": [
+        {
+          "revision": "91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817/eagle/model/modeling_llama_kv.py",
+          "sha256": "615ed5d1d0d702b69cab1383eeec1843bfa209273b8a8d90cd444f8a00a6c478",
+          "size_bytes": 61298
+        },
+        {
+          "revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/eagle/model/modeling_llama_kv.py",
+          "sha256": "615ed5d1d0d702b69cab1383eeec1843bfa209273b8a8d90cd444f8a00a6c478",
+          "size_bytes": 61298
+        }
+      ]
+    },
+    {
+      "path": "eagle/model/utils.py",
+      "byte_identical": false,
+      "files": [
+        {
+          "revision": "91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/91ae5f2ffa44a6e2cf50b7a1d19d899c7bbd5817/eagle/model/utils.py",
+          "sha256": "27a77f43576b78def0de411e1b63fd59dd4880b2ed4a163aaf547c743fbd3678",
+          "size_bytes": 18606
+        },
+        {
+          "revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+          "url": "https://raw.githubusercontent.com/SafeAILab/EAGLE/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/eagle/model/utils.py",
+          "sha256": "68dadf1977dd76624f87d0dc5ce9f840783ccaeb7554861f1206daa664367fe9",
+          "size_bytes": 18615
+        }
+      ]
+    }
+  ],
+  "scope": "Fetched source/data byte comparison, not installed code, historical inference execution or a resolved reproduction gate"
+}
