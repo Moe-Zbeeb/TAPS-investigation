@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "implementation": "OFFICIAL_EAGLE3_EXTERNAL_COMPATIBILITY_ADAPTER",
+  "scope": "native_training",
+  "source_revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+  "target_id": "llama31_instruct_8b",
+  "draft_id": "eagle3_llama31_8b",
+  "runtime_python": "envs/native-eagle3/bin/python",
+  "world_size": 8,
+  "initialize_from_released_draft": false,
+  "budget": {
+    "optimizer_steps": 200
+  },
+  "required_packages": {
+    "torch": "==2.6.0",
+    "transformers": "==4.53.1",
+    "accelerate": "==0.26.0",
+    "deepspeed": "==0.17.1",
+    "datasets": "==3.6.0",
+    "safetensors": "==0.5.3",
+    "numpy": "==1.26.4",
+    "tqdm": null,
+    "wandb": "==0.20.1",
+    "sentencepiece": "==0.1.99",
+    "protobuf": "==3.19.0",
+    "pyarrow": "==20.0.0",
+    "huggingface-hub": "==0.33.4",
+    "pydantic": "==2.11.4",
+    "ninja": null
+  },
+  "dependency_note": "Immutable upstream constraints plus explicit external runtime pins selected from primary package metadata; actual runtime import and GPU optimizer validation remain required.",
+  "qualification": "Bounded native-architecture engineering startup with released drafter initialization and vocabulary; not scratch native reproduction, a trained-quality result, or the prototype shared-body trainer.",
+  "upstream_references": [
+    "https://github.com/SafeAILab/EAGLE/tree/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/eagle/traineagle3",
+    "https://github.com/SafeAILab/EAGLE/blob/cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b/README.md"
+  ],
+  "checkpoint_roundtrip": false,
+  "cuda_home": "/usr/local/cuda-12.4",
+  "engineering_fixture": {
+    "train_rows": 32,
+    "dev_rows": 8,
+    "scope": "synthetic_engineering_only",
+    "official_benchmark_data": false
+  },
+  "pipeline_stage": "real-data-profile",
+  "research_gate": {
+    "policy": "pipeline-v2",
+    "pipeline_certificate": {
+      "path": "outputs/pipeline-validation/pipeline-20261111-v3/replay.json",
+      "sha256": "687ec4ac53f1ba3160db9891e592dce66cb384e69f516551d2e7745be7426295"
+    },
+    "independent_review": {
+      "path": "outputs/pipeline-validation/pipeline-20261111-v3/evidence-review.json",
+      "sha256": "8c4d1d716c6f120559417c36b2ef813bb6e599908d6491d3f76954e8caede9c7"
+    }
+  }
+}

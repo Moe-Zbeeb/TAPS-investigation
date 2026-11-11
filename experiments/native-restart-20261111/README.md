@@ -1,5 +1,7 @@
 # Training readiness and automatic handoff
 
+The current deployment uses the [independently admitted pipeline runbook](../pipeline-training-20261111/README.md) and [`training-handoff-pipeline-v2.json`](../../configs/training-handoff-pipeline-v2.json). The user made published-number matching nonblocking. The older configuration and gate descriptions below document the earlier paper-strict handoff; they are preserved as history and are not the active queue.
+
 The controlling stage checklist remains `TAPS_rebuild_plan.pdf`. These changes prepare §5.1 generalist reproduction; they do not complete the 24-run RQ1 pilot or the later pooled/shared/serving studies.
 
 | Order | Work | Pass requirement |

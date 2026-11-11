@@ -1,0 +1,42 @@
+{
+  "root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+  "config": "outputs/preparation/pipeline-training-20261111-v1/configs/training-handoff-pipeline-v2.json",
+  "resume_command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=high-priority",
+    "--qos=spec-priority",
+    "--nodes=1",
+    "--ntasks=1",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--nodelist=deep-chungus-11",
+    "--exclusive",
+    "--gres=gpu:a100:8",
+    "--cpus-per-task=64",
+    "--kill-on-invalid-dep=yes",
+    "--time=2-00:00:00",
+    "--job-name=taps-full-resume",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/resume-%j.log",
+    "--wrap",
+    "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/resume.sh"
+  ],
+  "followup_command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=high-priority",
+    "--qos=spec-priority",
+    "--nodes=1",
+    "--ntasks=1",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=16",
+    "--mem=64G",
+    "--time=04:00:00",
+    "--kill-on-invalid-dep=yes",
+    "--job-name=taps-full-continue",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/continue-%j.log"
+  ],
+  "followup_wrap": "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/continue.sh"
+}

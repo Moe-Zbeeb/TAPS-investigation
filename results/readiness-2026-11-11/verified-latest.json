@@ -1,0 +1,168 @@
+{
+  "checked_at_utc": "2026-11-11T17:15:13.120432+00:00",
+  "processed_source_inputs": 385856,
+  "expected_source_inputs": 540107,
+  "worker_count": 8,
+  "source_identity_sha256": "6375933ffe6e688eb4eb032360eabe519efadd01e13233a56869a022bf6f2caa",
+  "protected_holder": {
+    "job_id": "2212580",
+    "node": "deep-chungus-10",
+    "successor": "2215920",
+    "partition": "high-priority",
+    "qos": "spec-priority",
+    "gpus": 8,
+    "mode": "hold-for-user",
+    "started_at": "2026-11-11T12:41:59.547979+00:00",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodes=1",
+      "--exclusive",
+      "--nodelist=deep-chungus-10",
+      "--gres=gpu:a100:8",
+      "--ntasks=1",
+      "--cpus-per-task=64",
+      "--time=2-00:00:00",
+      "--dependency=afterany:2212580",
+      "--job-name=deep10-hold",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold-%j.log",
+      "--wrap",
+      "python3 /mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold.py"
+    ]
+  },
+  "active_generation_progress": [
+    {
+      "file": "worker-0-progress.json",
+      "completed_examples": 49344,
+      "elapsed_seconds_this_attempt": 16176.077721260488,
+      "expected_examples": 67514,
+      "generated_tokens_this_attempt": 15442719
+    },
+    {
+      "file": "worker-1-progress.json",
+      "completed_examples": 47104,
+      "elapsed_seconds_this_attempt": 16091.945818260312,
+      "expected_examples": 67514,
+      "generated_tokens_this_attempt": 14999078
+    },
+    {
+      "file": "worker-2-progress.json",
+      "completed_examples": 45440,
+      "elapsed_seconds_this_attempt": 16209.926869999617,
+      "expected_examples": 67514,
+      "generated_tokens_this_attempt": 14453315
+    },
+    {
+      "file": "worker-3-progress.json",
+      "completed_examples": 46528,
+      "elapsed_seconds_this_attempt": 16095.18976937607,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 14630998
+    },
+    {
+      "file": "worker-4-progress.json",
+      "completed_examples": 49536,
+      "elapsed_seconds_this_attempt": 16177.078293780796,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 15797900
+    },
+    {
+      "file": "worker-5-progress.json",
+      "completed_examples": 49472,
+      "elapsed_seconds_this_attempt": 16094.483329880983,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 15566968
+    },
+    {
+      "file": "worker-6-progress.json",
+      "completed_examples": 49216,
+      "elapsed_seconds_this_attempt": 16156.99752452597,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 15563389
+    },
+    {
+      "file": "worker-7-progress.json",
+      "completed_examples": 49216,
+      "elapsed_seconds_this_attempt": 16138.63293282874,
+      "expected_examples": 67513,
+      "generated_tokens_this_attempt": 15445877
+    }
+  ],
+  "owned_allocation_steps": [
+    {
+      "StepId": "2212580.batch",
+      "State": "RUNNING",
+      "Nodes": "1",
+      "CPUs": "0",
+      "Name": "batch",
+      "TRES": "(null)"
+    },
+    {
+      "StepId": "2212580.0",
+      "State": "RUNNING",
+      "Nodes": "1",
+      "CPUs": "48",
+      "Name": "taps-teacher-resume",
+      "TRES": "cpu=48,gres/gpu:a100=8,gres/gpu=8,mem=0,node=1"
+    },
+    {
+      "StepId": "2212580.TDB",
+      "State": "PENDING",
+      "Nodes": "1",
+      "CPUs": "1",
+      "Name": "(null)",
+      "TRES": "(null)"
+    }
+  ],
+  "gpu_usage_scope": "Eight allocated A100s and eight active progressing teacher workers. A separate nvidia-smi read-only step timed out; no live utilization sample is claimed.",
+  "live_queue": "2216035|taps-full-train|PENDING|high-priority|spec-priority|gres:gpu:a100:8||(Dependency)\n2216033|taps-v2-profile|PENDING|high-priority|spec-priority|gres:gpu:a100:8||(Dependency)\n2215920|deep10-hold|PENDING|high-priority|spec-priority|gres:gpu:a100:8||(Dependency)\n2216036|taps-full-continue|PENDING|high-priority|spec-priority|N/A||(Dependency)\n2216034|taps-v2-full-prep|PENDING|high-priority|spec-priority|N/A||(Dependency)\n2216032|taps-v2-bind|PENDING|high-priority|spec-priority|N/A||(Dependency)\n2216031|taps-v2-prepare|PENDING|high-priority|spec-priority|N/A||(Dependency)\n2215985|taps-native-data-qa|PENDING|high-priority|spec-priority|N/A||(Dependency)\n2212580|deep10-hold|RUNNING|high-priority|spec-priority|gres:gpu:a100:8|deep-chungus-10|deep-chungus-10\n2214983|taps-data-finish|RUNNING|low-priority|normal|N/A|deep-chungus-2|deep-chungus-2\n",
+  "production_gate": {
+    "certificate_identity_sha256": "33f9c8879bdf233ca095e1acd3d30f757d7966534c68d8f081b135f32c50a9ca",
+    "independent_review_sha256": "8c4d1d716c6f120559417c36b2ef813bb6e599908d6491d3f76954e8caede9c7",
+    "paper_matching_required": false,
+    "scientific_training_authorized": true,
+    "scope": "Native released Llama8B EAGLE3/EAGLE2/HASS pipeline evidence; scratch native EAGLE3 generalist training only; no universal lossless/serving/pooled admission",
+    "status": "passed"
+  },
+  "jobs": {
+    "production_gate": {
+      "job_id": "2216030",
+      "current_slurm": "JobId=2216030 JobName=taps-v2-admission UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=COMPLETED Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:42 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-11-11T12:09:45 EligibleTime=2026-11-11T12:09:45 AccrueTime=2026-11-11T12:09:45 StartTime=2026-11-11T12:09:45 EndTime=2026-11-11T12:10:27 Deadline=N/A PreemptEligibleTime=2026-11-11T12:09:45 PreemptTime=None SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T12:09:45 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2852317 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=deep-chungus-6 BatchHost=deep-chungus-6 NumNodes=1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/gate-2216030.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/gate-2216030.log Power= KillOInInvalidDependent=Yes \n",
+      "sacct": "2216030|COMPLETED|0:0|mohamadzbib|taps-v2-admission|billing=16,cpu=16,node=1\n"
+    },
+    "profile_prepare": {
+      "job_id": "2216031",
+      "current_slurm": "JobId=2216031 JobName=taps-v2-prepare UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2214983(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-11-11T12:09:45 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T12:09:45 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2852317 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=64G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/prepare-2216031.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/prepare-2216031.log Power= KillOInInvalidDependent=Yes \n",
+      "sacct": "2216031|PENDING|0:0|mohamadzbib|taps-v2-prepare|\n"
+    },
+    "vocabulary_bind": {
+      "job_id": "2216032",
+      "current_slurm": "JobId=2216032 JobName=taps-v2-bind UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2215985(unfulfilled),afterok:2216031(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-11-11T12:09:45 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T12:09:45 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2852317 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=64G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/bind-2216032.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/bind-2216032.log Power= KillOInInvalidDependent=Yes \n",
+      "sacct": "2216032|PENDING|0:0|mohamadzbib|taps-v2-bind|\n"
+    },
+    "profile": {
+      "job_id": "2216033",
+      "current_slurm": "JobId=2216033 JobName=taps-v2-profile UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216032(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=08:00:00 TimeMin=N/A SubmitTime=2026-11-11T12:09:45 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T12:09:45 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2852317 ReqNodeList=deep-chungus-11 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=64 NumTasks=1 CPUs/Task=64 ReqB:S:C:T=0:0:*:* TRES=cpu=64,mem=500000M,node=1,billing=64,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=64 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/profile-2216033.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/profile-2216033.log Power= KillOInInvalidDependent=Yes TresPerNode=gres:gpu:a100:8 \n",
+      "sacct": "2216033|PENDING|0:0|mohamadzbib|taps-v2-profile|\n"
+    },
+    "full_prepare": {
+      "job_id": "2216034",
+      "current_slurm": "JobId=2216034 JobName=taps-v2-full-prep UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216033(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-11-11T12:09:45 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T12:09:45 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2852317 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=64G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/full-prepare-2216034.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/full-prepare-2216034.log Power= KillOInInvalidDependent=Yes \n",
+      "sacct": "2216034|PENDING|0:0|mohamadzbib|taps-v2-full-prep|\n"
+    },
+    "full_training": {
+      "job_id": "2216035",
+      "current_slurm": "JobId=2216035 JobName=taps-full-train UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216034(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=2-00:00:00 TimeMin=N/A SubmitTime=2026-11-11T12:09:45 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T12:09:45 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2852317 ReqNodeList=deep-chungus-11 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=64 NumTasks=1 CPUs/Task=64 ReqB:S:C:T=0:0:*:* TRES=cpu=64,mem=500000M,node=1,billing=64,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=64 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/full-2216035.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/full-2216035.log Power= KillOInInvalidDependent=Yes TresPerNode=gres:gpu:a100:8 \n",
+      "sacct": "2216035|PENDING|0:0|mohamadzbib|taps-full-train|\n"
+    },
+    "conditional_continuation": {
+      "job_id": "2216036",
+      "current_slurm": "JobId=2216036 JobName=taps-full-continue UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterany:2216035(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-11-11T12:09:45 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-11T12:09:45 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:2852317 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=64G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/continue-2216036.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/continue-2216036.log Power= KillOInInvalidDependent=Yes \n",
+      "sacct": "2216036|PENDING|0:0|mohamadzbib|taps-full-continue|\n"
+    }
+  }
+}

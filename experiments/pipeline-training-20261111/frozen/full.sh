@@ -1,0 +1,13 @@
+set -euo pipefail
+export PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/src
+export HF_HOME=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/huggingface
+export HF_HUB_CACHE=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/huggingface/hub
+export HF_DATASETS_CACHE=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/datasets
+export XDG_CACHE_HOME=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/xdg
+export HF_HUB_OFFLINE=1
+export TRANSFORMERS_OFFLINE=1
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export TOKENIZERS_PARALLELISM=false
+cd /mnt/nfs/home/mohamadzbib/projects/taps-rebuild
+/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B -m taps_rebuild.training_handoff launch --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --config /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pipeline-training-20261111-v1/configs/training-handoff-pipeline-v2.json

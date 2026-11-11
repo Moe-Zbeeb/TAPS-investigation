@@ -23,6 +23,7 @@ Official-counter and raw-token counter equivalence has not been established. The
 | Native export/inference | 8/8 | Stock inference of the engineering checkpoint; no quality or speed claim |
 
 The CPU vocabulary fixture passed with 32 training/eight dev examples and a 16-token draft vocabulary. It does not qualify the full corpus or the native 32,000-token draft vocabulary.
+
 ## Final scoped replay
 
 | Independent raw reconstruction | Population | Maximum event bound |
