@@ -1,0 +1,28 @@
+{
+  "blocking_findings": [],
+  "decision": "approved_for_bounded_stock_export_engineering_only",
+  "limits": [
+    "Actual8rankstock output, complete source/model/vocabulary identity and runtime evidence still require independent evidence review.",
+    "Original7core training source/evidence approval is unchanged.",
+    "Use a fresh output directory per attempted controller invocation so prior failed launch metadata and logs remain retained."
+  ],
+  "resolved_findings": [
+    "Bound helper ownsource/status/plan identity.",
+    "Reject existing rank outputs and mismatched rank geometry."
+  ],
+  "reviewed_behavior": [
+    "CPU verifies complete finite13 export trainables, valid train-only vocabulary, configuration and exact dtype-preserving raw-checkpoint/export tensor identities after4successfulupdates.",
+    "CPU/GPU receipt binds helper sourcepath/SHA, original plan identity and7frozen core sources.",
+    "GPU requires8A100s, matchingRANK/LOCAL_RANK andfresh rank evidence path.",
+    "Controller checks liveowned8GPUdeep11 holder/account/partition/QoS, attaches an exclusive existing8GPUstep, records actualhardware and ownsource hash; no allocation release/cancellation/resume.",
+    "Stock EAGLE3 loader performs genuine speculative and AR continuations on the synthetic prompt; equality is recorded without promoting the smoke to quality/speed/universal-losslessness evidence."
+  ],
+  "scientific_training_admitted": false,
+  "scope": "corrected_native_four_update_export_inventory_and_one_synthetic_prompt_on_eight_owned_deep11_gpus",
+  "source_or_jobs_mutated_by_reviewer": false,
+  "source_sha256": {
+    "native_full_body_export.py": "7e63cfa11907eed11d8abaad091b639071bd35b9ea13d178943765678e368aa1",
+    "native_full_body_export_queue.py": "19951e9b498f06afe6f903d9057f5da2b4a5c1fe68c64bac281037a5c8c3e07e"
+  },
+  "validation": "AST parses passed. No Torch/GPU execution by reviewer is claimed in this source-only decision."
+}

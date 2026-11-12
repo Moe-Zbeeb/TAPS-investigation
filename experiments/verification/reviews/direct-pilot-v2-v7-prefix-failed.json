@@ -1,0 +1,54 @@
+{
+  "analyzer_v1_sha256": "32f142ee0142b54d6dd2cd4f0650656ff06d3fba609f55b40ab7ad3f87bce85b",
+  "analyzer_v2_sha256": "5e11dd792adb840be1e861f6a0f2e235d483b977e7dca3cfef31f78e3f0f4091",
+  "analyzer_v3_sha256": "a0749cf04cdbaab39fec1c29eff7d3654fe39a7cb88667f116f270f4ec4346aa",
+  "analyzer_v4_sha256": "592ab1fcc7592b1b3d36e758126d3177b1a1dd34f6d119077876e180e8284a05",
+  "analyzer_v5_sha256": "82a4668211870e124a7b434500b038dce75447fb63650d26a8ed10eb60c097c5",
+  "analyzer_v6_sha256": "bb8c6eef947390535094cea39d009e5e1cd474856eb6ae84db03f86a972024b9",
+  "analyzer_v7_sha256": "c13b08f0b62c9e1990423627906f2a98bfe1e666bfcbb6ea31781eef5cf50254",
+  "artifact_inventory": {
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/manifest.json": {
+      "sha256": "0fe6b34868d11ce61c2dedcda1143651b377a2dbba533ba51b4c9c263f0ff4c2",
+      "size_bytes": 4476
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-0.initial.json": {
+      "sha256": "9f3f7ef2e9d04d1c8ef777b7bb066c67b9e2617f19ca02dcaddec377b2e8e397",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-0.jsonl": {
+      "sha256": "5e576d0108354d4b48c43c6a6cecd331efb8e71519bdfa2df04ffddf73017a6e",
+      "size_bytes": 6872
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/manifest.json": {
+      "sha256": "edd77dcdc0e91ce53c38506044a6e992fa601ca5d105a34bd3d2ffd83147c7b5",
+      "size_bytes": 105842
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-original-s0.json": {
+      "sha256": "195e3357520276749c57ed7e7c5799ed8bff8ec269bc4bd498876adceec6d258",
+      "size_bytes": 15436
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-original-s0.json": {
+      "sha256": "b9a8cf22050c7ad0c3244b2273514b4015af1c07c56c24aff868478870a5b2c1",
+      "size_bytes": 15508
+    }
+  },
+  "artifact_inventory_sha256": "ad8bd05cfc5822ed0a581137c6b231f0d4d1bab358f39d018ef0d4c83569ddc5",
+  "automatic_admission_emitted": false,
+  "completed_analysis": {},
+  "cpu_only": true,
+  "error_code": "actual_two_step_prefix_does_not_have_zero_lr_and_unchanged_model",
+  "phase": "source_bound_expected_zero_learning_rate_prefix",
+  "project_helpers_imported": false,
+  "runtime_packages": {
+    "accelerate": "0.26.0",
+    "deepspeed": "0.17.1",
+    "numpy": "1.26.4",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.53.1"
+  },
+  "scientific_training_admitted": false,
+  "slurm_job_id": "2216787",
+  "status": "failed",
+  "verifier_change_scope": "At the registered split2 prefix, require both actual pre-step learning rates0, raw nonzero moments for all13, and exactly unchanged FP32 masters. Preserve all13 strictly positive master changes at all step4 finals and all prior numerical/source/state checks.",
+  "wall_seconds": 0.009773226920515299
+}

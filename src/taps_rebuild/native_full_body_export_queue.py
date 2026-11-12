@@ -22,6 +22,7 @@ def run(root, plan, receipt, output, attached):
     else:
         allocation = pool.allocation(8)
         require(allocation['node'] == 'deep-chungus-11', 'Native stock export requires the owned deep11 allocation')
+        Path(output).mkdir(parents=True, exist_ok=False)
         python = Path(root) / 'envs/native-eagle3/bin/python'
         environment = dict(os.environ, PYTHONUNBUFFERED='1', PYTHONDONTWRITEBYTECODE='1', PYTHONNOUSERSITE='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1', HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1')
         environment.update(native.cuda_environment(root, allocation['node'], {}))

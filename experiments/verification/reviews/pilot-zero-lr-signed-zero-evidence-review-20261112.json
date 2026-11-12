@@ -1,0 +1,55 @@
+{
+  "actual_prefixes": [
+    {
+      "all13_moments_nonzero": true,
+      "all13_numeric_master_values_unchanged": true,
+      "initial_model_sha256": "70ac5d3ad0a39a4a71c72a39402b255ed6aa40bb71bb06199a3fa279c1b7a6ce",
+      "manifest_sha256": "0fe6b34868d11ce61c2dedcda1143651b377a2dbba533ba51b4c9c263f0ff4c2",
+      "master_casts_match_visible_bytes": true,
+      "master_signed_zero_bit_changes": 225,
+      "plan_identity_sha256": "bdaec9e2c9d748d0d588053e1f1c7759db480989cb14a793328df24918fdbf6a",
+      "policy": "original",
+      "two_step_model_sha256": "f0c9ebcab1cc9f4fe70ef7564538e7937e3633c1ee05d28c897a7b7e5bda725e",
+      "visible_signed_zero_bit_changes": 225,
+      "vocabulary_bitwise_unchanged": true
+    },
+    {
+      "all13_moments_nonzero": true,
+      "all13_numeric_master_values_unchanged": true,
+      "initial_model_sha256": "70ac5d3ad0a39a4a71c72a39402b255ed6aa40bb71bb06199a3fa279c1b7a6ce",
+      "manifest_sha256": "06eb391101a71bd6f62b5b76afdc735ed1d3916dfb3bb675b7acbc2b76f761fe",
+      "master_casts_match_visible_bytes": true,
+      "master_signed_zero_bit_changes": 224,
+      "plan_identity_sha256": "eeb57054b8619a367fd4fef5220ce41757975289ec5425304d4fe3f8ce0e1e6d",
+      "policy": "target",
+      "two_step_model_sha256": "949e760a5dbbaebcd65a777a27860ab857a2396e58130d3abaab9d1b0ad342da",
+      "visible_signed_zero_bit_changes": 224,
+      "vocabulary_bitwise_unchanged": true
+    }
+  ],
+  "decision": "approved_exact_two_step_signed_zero_prefix_classification_only",
+  "finding": "Both first two observed pre-step learning rates are0. All13 saved first/second Adam moments are nonzero. Every FP32 master and every visible FP16 parameter has zero numeric difference from the dtype-cast released initialization; all observed bit changes are exclusively signed zeros. d2t/t2d dtype/shape/bytes are unchanged, and cast raw masters match the visible model byte-for-byte. The different model hashes remain retained facts.",
+  "full_replay_still_required": true,
+  "jobs_sources_or_production_admission_mutated_by_reviewer": false,
+  "kernel_cause_limit": "The exact fused-kernel operation responsible for signed-zero canonicalization was not isolated. The complete retained states are independently classified; no numeric magnitude or vocabulary difference is accepted.",
+  "original_failures_preserved": [
+    "full-v6 failed named_update criterion",
+    "zero-lr-prefix-v7 failed unchanged_model_hash criterion"
+  ],
+  "preserved_requirements": [
+    "All13 strictly positive numeric FP32 changes at every step4 final",
+    "All13 finite nonzero backward callbacks",
+    "Exact same-step control/reference/restart state hashes",
+    "Existing FP64 CE/gradient bounds and suffix checks",
+    "Complete source/model/data/runtime/evidence rehashing",
+    "Independent actual full-report review before scientific admission"
+  ],
+  "raw_diagnostic_job_id": "2216794",
+  "raw_diagnostic_sha256": "2eeb5b213449072bff78f695afe9bd600f4ddb872144fcd8cb842af7765ca4a4",
+  "raw_diagnostic_source_sha256": "4de754a2067f5d23274435e7b276e87c85cae5e56295c2a00ee8c96451e29166",
+  "reviewer": "independent-agent-validation-review",
+  "scientific_training_admitted": false,
+  "scope": "two_specific_registered_zero_learning_rate_pilot_restart_prefix_states",
+  "v8_analyzer_sha256": "3edbf557a8f564cf0c84b1735f37ee23aa2e1fb3d61c597e6d7425ebcda9b65e",
+  "verifier_correction": "The original positive-master-update test was invalid at a zero-rate two-step prefix. The first correction also incorrectly expected unchanged bitwise model identity. V8 requires exact named moments plus zero numeric changes and the separately reviewed signed-zero-only state classification for these two states."
+}
