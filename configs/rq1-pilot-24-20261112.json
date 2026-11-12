@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "study_id": "rq1-pilot-24-20261112-v1",
+  "study_id": "rq1-pilot-24-20261112-v2",
   "scope": "common_ancestor_matched_budget_finetuning_pilot",
   "cohorts": [
     "chat",
@@ -84,7 +84,8 @@
     "eight_rank_four_vs_two_plus_two_exact_restore",
     "stock_trained_checkpoint_inference",
     "independent_full_schedule_and_provenance_audit",
-    "independent_explicit_evidence_approval"
+    "independent_explicit_evidence_approval",
+    "all_thirteen_trainables_gradient_and_adam_coverage"
   ],
   "ds_config": {
     "fp16": {
@@ -135,5 +136,14 @@
     "path": "outputs/pipeline-validation/pipeline-20261111-v3/replay.json",
     "sha256": "687ec4ac53f1ba3160db9891e592dce66cb384e69f516551d2e7745be7426295",
     "scope": "prior independently reviewed full-model EAGLE3/EAGLE2/HASS implementation validation; new pilot training and exports require additional qualification"
+  },
+  "checkpoint_mode": "non_reentrant",
+  "limitations": [
+    "Legacy default reentrant checkpoint path disconnects nested decoder outputs; corrected non-reentrant path requires new source-bound qualification against a direct uncheckpointed native-function reference."
+  ],
+  "rotary_cache": {
+    "capacity": 2054,
+    "construction": "CPU FP32 before engine FP16/device conversion; preserve existing2048-position prefix",
+    "requirement": "no rotary cache extension during forward or checkpoint recomputation"
   }
 }

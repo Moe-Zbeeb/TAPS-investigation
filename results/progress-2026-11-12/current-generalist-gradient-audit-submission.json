@@ -1,0 +1,28 @@
+{
+  "job_id": "2216735",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=high-priority",
+    "--qos=spec-priority",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=8",
+    "--mem=64G",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--time=00:30:00",
+    "--job-name=taps-generalist-grad-audit",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/current-generalist-gradient-coverage-20261112-v1/probe-%j.log",
+    "--wrap",
+    "env CUDA_VISIBLE_DEVICES= PYTHONDONTWRITEBYTECODE=1 PYTHONNOUSERSITE=1 OMP_NUM_THREADS=8 MKL_NUM_THREADS=8 /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/current-generalist-gradient-coverage-20261112-v1/probe.py --checkpoint /mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/sharegpt-ultrachat-full-pipeline-20261111-v2-preparation-0/recovery/attempt-1-step-7005 --manifest-sha256 857e4eb1f9ea262ea55ab0837791084e29baa53016f1486e72d4ba8eec8051cf --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v1/current-generalist-named-adam.json"
+  ],
+  "verified_slurm": "JobId=2216735 JobName=taps-generalist-grad-audit UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=00:30:00 TimeMin=N/A SubmitTime=2026-11-12T09:46:13 EligibleTime=2026-11-12T09:46:13 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T09:46:13 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4098404 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:* TRES=cpu=8,mem=64G,node=1,billing=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=8 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/current-generalist-gradient-coverage-20261112-v1/probe-2216735.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/current-generalist-gradient-coverage-20261112-v1/probe-2216735.log Power= \n",
+  "source_sha256": "7258421e55b15f4e1f09a54d5937db89699bf4c6572fe4f80dd9f0f0f3caca7b",
+  "checkpoint": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/sharegpt-ultrachat-full-pipeline-20261111-v2-preparation-0/recovery/attempt-1-step-7005",
+  "manifest_sha256": "857e4eb1f9ea262ea55ab0837791084e29baa53016f1486e72d4ba8eec8051cf",
+  "output": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v1/current-generalist-named-adam.json",
+  "scope": "read-only audit of actual currently running generalist committed checkpoint",
+  "active_job_modified": false
+}

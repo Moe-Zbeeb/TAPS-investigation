@@ -1,0 +1,55 @@
+{
+  "blocking_findings_for_bounded_qualification": [],
+  "decision": "approved_for_bounded_corrected_engineering_qualification_only",
+  "independent_v3_analyzer_sha256": "a0749cf04cdbaab39fec1c29eff7d3654fe39a7cb88667f116f270f4ec4346aa",
+  "legacy_training_block_receipt_sha256": "18d860cdd13ace4856ee2d354f9614be65e778a69ddb64ee59547c776e23b674",
+  "limitations": [
+    "Global torch checkpoint routing is isolated to each new worker process; it is not a modification of pinned upstream or active deployed code.",
+    "Full-body gradient collection changes the legacy memory and throughput regime. Prior head-only engineering timing/memory does not qualify the corrected path.",
+    "Per-rank nonzero moments, finite losses, successful counters and head-logit gradients alone cannot establish body learning.",
+    "The off_reference full-gradient trajectory may consume more memory; bounded GPU qualification must establish feasibility."
+  ],
+  "local_validation": [
+    "Adapter routing with stdlib call stubs preserved nested outputs, forcedFalse, directly bypassed checkpoint in reference mode, and rejected explicitTrue. No Torch/GPU execution claimed.",
+    "Independent v3 analyzer syntax/import plus13 missing-gradient rejection probes passed."
+  ],
+  "production_admission_modified": false,
+  "required_actual_evidence": [
+    "Both response-context policies with source-matched nonreentrant vs direct-function native-reference gradient/update parity.",
+    "All13 named hooks in every qualification update, all13 independently reconstructed named raw Adam moments and FP32-master changes, and source-bound initialization.",
+    "Fresh exact eight-rank4-vs2+2 restore, causal-suffix and FP64 CE/logit-gradient replay, runtime envelope, real memory observations and stock export compatibility.",
+    "Independent inspection of actual raw reports and complete source/evidence inventory before scientific admission."
+  ],
+  "reviewed_behavior": [
+    {
+      "finding": "Production adapter explicitly passes use_reentrant=False. Direct reference invokes the same checkpointed callable with the same arguments, retaining the native gradient_checkpoint branch.",
+      "line": 9,
+      "path": "src/taps_rebuild/native_gradients.py"
+    },
+    {
+      "finding": "Tensor hooks observe all13 intended trainable parameters before ZeRO clears .grad, require finite nonzero callback gradients each update, and retain named coverage.",
+      "line": 34,
+      "path": "src/taps_rebuild/native_gradients.py"
+    },
+    {
+      "finding": "A new plan requires non_reentrant, installs the policy before native model construction, records exact adapter/Torch checkpoint identities and restores the native branch without editing upstream.",
+      "line": 219,
+      "path": "src/taps_rebuild/pilot_train.py"
+    },
+    {
+      "finding": "The new adapter enters the new frozen study source inventory; old studies and qualifications are not promoted.",
+      "line": 97,
+      "path": "src/taps_rebuild/pilot_study.py"
+    }
+  ],
+  "reviewer": "independent-agent-validation-review",
+  "scientific_training_admitted": false,
+  "scope": "explicit_nonreentrant_checkpoint_adapter_and_pilot_integration_source_review",
+  "source_or_jobs_mutated_by_reviewer": false,
+  "source_sha256": {
+    "configs/rq1-pilot-24-20261112.json": "cd3d47cfa5270228771ba342282b18dbbb25ac6a4af78bbbd0f5582498482449",
+    "src/taps_rebuild/native_gradients.py": "8df5d4670d0ba19141ae077ca0394906f1964809316d51eb1ef07b20915ead70",
+    "src/taps_rebuild/pilot_study.py": "8e9fb70fb92240d9253711cca23c0343d1f5b894c32b87eb12e0d2058872f882",
+    "src/taps_rebuild/pilot_train.py": "5f847447d46428a9f3a77338028e04bc1921ec778b84089d419fc630af6f2c4d"
+  }
+}

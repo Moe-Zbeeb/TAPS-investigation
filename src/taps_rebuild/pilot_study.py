@@ -92,9 +92,9 @@ def prepare(root, cache, eligibility, config, output):
                 expected = {domain: 512 for domain in DOMAINS} if cohort == 'generalist' else {cohort: 1536}
                 require(dict(counts) == expected, 'Pilot domain budget differs')
                 files['schedules/' + name] = {'sha256': pool.digest(path), 'size_bytes': path.stat().st_size}
-                statistics[name] = {'domain_examples': dict(counts), 'pool_examples': {domain: len(rows) for domain, rows in pools.items()}, 'unique_examples': len(repetitions), 'repeated_exposures': 1536 - len(repetitions), 'repeat_multiplicity_histogram': dict(Counter(repetitions.values())), 'unique_base_contexts_original_target': list(map(len, context_coverage)), 'effective_contexts': 1536 * quota, 'per_head_effective_contexts': [1536 * quota] * 7, 'dense_slots': 1536 * 2048}
+                statistics[name] = {'domain_examples': dict(counts), 'pool_examples': {domain: len(rows) for domain, rows in pools.items()}, 'unique_examples': len(repetitions), 'repeated_exposures': 1536 - len(repetitions), 'repeat_multiplicity_histogram': {str(key): value for key, value in Counter(repetitions.values()).items()}, 'unique_base_contexts_original_target': list(map(len, context_coverage)), 'effective_contexts': 1536 * quota, 'per_head_effective_contexts': [1536 * quota] * 7, 'dense_slots': 1536 * 2048}
     source = Path(__file__).parent
-    names = ['native_training.py', 'pool.py', 'pilot_cache.py', 'pilot_gate.py', 'pilot_study.py', 'pilot_train.py', 'pilot_queue.py', 'pilot_pipeline.py', 'pilot_smoke.py']
+    names = ['native_training.py', 'pool.py', 'pilot_cache.py', 'pilot_gate.py', 'pilot_study.py', 'pilot_train.py', 'pilot_queue.py', 'pilot_pipeline.py', 'pilot_smoke.py', 'native_gradients.py']
     code = {name: pool.digest(source / name) for name in names}
     order = []
     for seed in recipe['seeds']:

@@ -1,0 +1,483 @@
+{
+  "decoder_forward_ast_sha256": "d4576c29df42e4ab92b8407d2281ae8235c2e0b919eab6587cde9f4ecc9e7e88",
+  "decoder_source_sha256": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+  "deepspeed_version": "0.17.1",
+  "gpu_work_performed": false,
+  "jobs_or_active_sources_modified": false,
+  "observed_at_utc": "2026-11-12T14:46:55.438230+00:00",
+  "observed_cut_by_mode": {
+    "default_unspecified": true,
+    "explicit_reentrant": true
+  },
+  "observed_full_connectivity_by_mode": {
+    "explicit_nonreentrant": true,
+    "off": true
+  },
+  "probe_source_sha256": "4f9b3c6aa137ea25d71cdc6992659a30cc2c8b3fadf2d2b12cf8e6b18f7a2627",
+  "results": [
+    {
+      "gradients": {
+        "fc.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 48,
+          "gradient_norm": 1.7451338991643166
+        },
+        "lm_head.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 28,
+          "gradient_norm": 1.3802169846049483
+        },
+        "midlayer.hidden_norm.bias": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.15679968267515618
+        },
+        "midlayer.hidden_norm.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.20476231416459073
+        },
+        "midlayer.input_layernorm.bias": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.35060034060460243
+        },
+        "midlayer.input_layernorm.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.3226299326653673
+        },
+        "midlayer.mlp.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 16,
+          "gradient_norm": 1.1438082955940372
+        },
+        "midlayer.post_attention_layernorm.bias": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.17514270304776133
+        },
+        "midlayer.post_attention_layernorm.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.24627418789476305
+        },
+        "midlayer.self_attn.projection.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 32,
+          "gradient_norm": 2.102873863527774
+        },
+        "norm.bias": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.3960129002009627
+        },
+        "norm.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.9373189455794243
+        }
+      },
+      "initial_model_sha256": "ecd129c3e8d0b1cbe368a98887100313bbdb34d854fe69997df0b93f0e408d4e",
+      "loss": 8.373383522033691,
+      "mode": "off",
+      "nested_outputs": [
+        {
+          "head": 0,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 1,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 2,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 3,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 4,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 5,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 6,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        }
+      ],
+      "warnings": [
+        {
+          "category": "UserWarning",
+          "message": "CUDA initialization: The NVIDIA driver on your system is too old (found version 11060). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at /pytorch/c10/cuda/CUDAFunctions.cpp:109.)"
+        }
+      ]
+    },
+    {
+      "gradients": {
+        "fc.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "lm_head.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 28,
+          "gradient_norm": 1.3802169846049483
+        },
+        "midlayer.hidden_norm.bias": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.hidden_norm.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.input_layernorm.bias": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.input_layernorm.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.mlp.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.post_attention_layernorm.bias": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.post_attention_layernorm.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.self_attn.projection.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "norm.bias": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.3960129002009627
+        },
+        "norm.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.9373189455794243
+        }
+      },
+      "initial_model_sha256": "ecd129c3e8d0b1cbe368a98887100313bbdb34d854fe69997df0b93f0e408d4e",
+      "loss": 8.373383522033691,
+      "mode": "default_unspecified",
+      "nested_outputs": [
+        {
+          "head": 0,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 1,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 2,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 3,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 4,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 5,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 6,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        }
+      ],
+      "warnings": [
+        {
+          "category": "UserWarning",
+          "message": "torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants."
+        },
+        {
+          "category": "UserWarning",
+          "message": "torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants."
+        },
+        {
+          "category": "UserWarning",
+          "message": "torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants."
+        },
+        {
+          "category": "UserWarning",
+          "message": "torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants."
+        },
+        {
+          "category": "UserWarning",
+          "message": "torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants."
+        },
+        {
+          "category": "UserWarning",
+          "message": "torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants."
+        },
+        {
+          "category": "UserWarning",
+          "message": "torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants."
+        }
+      ]
+    },
+    {
+      "gradients": {
+        "fc.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "lm_head.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 28,
+          "gradient_norm": 1.3802169846049483
+        },
+        "midlayer.hidden_norm.bias": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.hidden_norm.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.input_layernorm.bias": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.input_layernorm.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.mlp.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.post_attention_layernorm.bias": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.post_attention_layernorm.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "midlayer.self_attn.projection.weight": {
+          "gradient_is_none": true,
+          "gradient_nonzero_elements": null,
+          "gradient_norm": null
+        },
+        "norm.bias": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.3960129002009627
+        },
+        "norm.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.9373189455794243
+        }
+      },
+      "initial_model_sha256": "ecd129c3e8d0b1cbe368a98887100313bbdb34d854fe69997df0b93f0e408d4e",
+      "loss": 8.373383522033691,
+      "mode": "explicit_reentrant",
+      "nested_outputs": [
+        {
+          "head": 0,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 1,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 2,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 3,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 4,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 5,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        },
+        {
+          "head": 6,
+          "hidden_grad_fn": null,
+          "hidden_requires_grad": false
+        }
+      ],
+      "warnings": []
+    },
+    {
+      "gradients": {
+        "fc.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 48,
+          "gradient_norm": 1.7451338991643166
+        },
+        "lm_head.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 28,
+          "gradient_norm": 1.3802169846049483
+        },
+        "midlayer.hidden_norm.bias": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.15679968267515618
+        },
+        "midlayer.hidden_norm.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.20476231416459073
+        },
+        "midlayer.input_layernorm.bias": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.35060034060460243
+        },
+        "midlayer.input_layernorm.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.3226299326653673
+        },
+        "midlayer.mlp.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 16,
+          "gradient_norm": 1.1438082955940372
+        },
+        "midlayer.post_attention_layernorm.bias": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.17514270304776133
+        },
+        "midlayer.post_attention_layernorm.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.24627418789476305
+        },
+        "midlayer.self_attn.projection.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 32,
+          "gradient_norm": 2.102873863527774
+        },
+        "norm.bias": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.3960129002009627
+        },
+        "norm.weight": {
+          "gradient_is_none": false,
+          "gradient_nonzero_elements": 4,
+          "gradient_norm": 0.9373189455794243
+        }
+      },
+      "initial_model_sha256": "ecd129c3e8d0b1cbe368a98887100313bbdb34d854fe69997df0b93f0e408d4e",
+      "loss": 8.373383522033691,
+      "mode": "explicit_nonreentrant",
+      "nested_outputs": [
+        {
+          "head": 0,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 1,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 2,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 3,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 4,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 5,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        },
+        {
+          "head": 6,
+          "hidden_grad_fn": "AddBackward0",
+          "hidden_requires_grad": true
+        }
+      ],
+      "warnings": []
+    }
+  ],
+  "scientific_training_admitted": false,
+  "scope": "CPU mechanism diagnostic using exact pinned decoder forward AST with tiny substitute modules, not an executed full8B training gradient test",
+  "slurm_job_id": "2216737",
+  "source_checkpoint_use_reentrant_keyword_absent": true,
+  "status": "reproduced_nested_reentrant_gradient_cut",
+  "torch_checkpoint_source": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/lib/python3.10/site-packages/torch/utils/checkpoint.py",
+    "sha256": "7a05799e678085df1b81d512bed679c35053fb6225ea90c96661306f93140f6c"
+  },
+  "torch_version": "2.6.0+cu124"
+}

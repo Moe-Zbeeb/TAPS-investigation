@@ -1,0 +1,8 @@
+{
+  "job_ids": [
+    "2216735",
+    "2216737",
+    "2216728"
+  ],
+  "sacct_pipe_output": "JobIDRaw|State|ExitCode|Elapsed|AllocCPUS|ReqMem|AllocTRES|NodeList\n2216728|COMPLETED|0:0|00:08:44|16|96G|billing=16,cpu=16,node=1|deep-chungus-6\n2216728.batch|COMPLETED|0:0|00:08:44|16||cpu=16,mem=0,node=1|deep-chungus-6\n2216735|COMPLETED|0:0|00:01:24|8|64G|billing=8,cpu=8,node=1|deep-chungus-6\n2216735.batch|COMPLETED|0:0|00:01:24|8||cpu=8,mem=0,node=1|deep-chungus-6\n2216737|COMPLETED|0:0|00:00:11|4|8G|billing=4,cpu=4,node=1|deep-chungus-6\n2216737.batch|COMPLETED|0:0|00:00:11|4||cpu=4,mem=0,node=1|deep-chungus-6\n"
+}

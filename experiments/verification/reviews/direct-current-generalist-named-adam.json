@@ -1,0 +1,312 @@
+{
+  "all_files_stable_before_after": true,
+  "artifact_inventory": {
+    "latest": "4ba69735ca53765ed6a709edb56c6ea236b7193a3b29a6b390c346f0f4340e4e",
+    "manifest.json": "857e4eb1f9ea262ea55ab0837791084e29baa53016f1486e72d4ba8eec8051cf",
+    "rank-0.pt": "222d6c5d62a86093495cda4a857168355b599933cd83661c2680b5f1f1c1a943",
+    "rank-1.pt": "43528bc2834e8172feb1c6f97c230aa475867ee191c4e73b14a0cc02d4390230",
+    "rank-2.pt": "9351a8e6ace99d91eaaf79d577410945c612c9b803633edee5942c0e45dfef1a",
+    "rank-3.pt": "e2221df427ebaa5dd7e38615faece7b1f972d8901405e49222c9ec4647e4bb67",
+    "rank-4.pt": "95daeedbc59d51df18d387ab618632e16483285247a93c0225add4824be933cb",
+    "rank-5.pt": "beb67b00cb7b5594dbb9165b9adf40464a074384e33c204a35bcbb816b745149",
+    "rank-6.pt": "04cc6de193d9f1428f78d44c0154bc0080441c4ee356728523cfe8fbdbdfce70",
+    "rank-7.pt": "0ea766e952f6b1cb60f10cae4f6f237cb8d162c6f6918326b2eb79b8cc6fdf7b",
+    "state/mp_rank_00_model_states.pt": "db9bfbc9856774779a2e9dfcba3f89e7ca1576c89ef5050fe902b118139a0031",
+    "state/zero_pp_rank_0_mp_rank_00_optim_states.pt": "67ea4e1b3d470ec73b4cd0ab4bb178c350ce1f0b50528fb0f8e23ac1df87f0c6",
+    "state/zero_pp_rank_1_mp_rank_00_optim_states.pt": "4862714dc40e475f500f4429efec9935d79ab70e859109fc49b3076e9bda76b6",
+    "state/zero_pp_rank_2_mp_rank_00_optim_states.pt": "5f8c589b0be3cae8c888315ec9a81f16d69ff46cbfb48f6a025904768a4976c6",
+    "state/zero_pp_rank_3_mp_rank_00_optim_states.pt": "73c89929bed4b600ade17f6f2c11627b6c191ebf7965b4477bb016af6cf45665",
+    "state/zero_pp_rank_4_mp_rank_00_optim_states.pt": "30c21e158cbb2edf11a5d3de90947987b7435b73d551bdcc0690fc711eb16b55",
+    "state/zero_pp_rank_5_mp_rank_00_optim_states.pt": "727b04e2b5280541edceb452210fdd2e56ac1bae3eceaf5053187af495069752",
+    "state/zero_pp_rank_6_mp_rank_00_optim_states.pt": "b53c79eb643a3bb9dd651cbfb97b1204f10170582a6b94601a3f6d8213ce624d",
+    "state/zero_pp_rank_7_mp_rank_00_optim_states.pt": "fe91d08d1906a0a955e880352777dda69afa8bb7ecd2c485dfdfae6ed1f93fe8",
+    "zero_to_fp32.py": "46497565ccf2b4a8b1f6f18c8341042f3749605a94335c81f69df1bd268af64f"
+  },
+  "checkpoint": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/sharegpt-ultrachat-full-pipeline-20261111-v2-preparation-0/recovery/attempt-1-step-7005",
+  "deepspeed_version": "0.17.1",
+  "fc_midlayer_all_moments_zero": true,
+  "global_steps": 7005,
+  "head_only_pattern_detected": true,
+  "jobs_or_active_sources_modified": false,
+  "manifest_sha256": "857e4eb1f9ea262ea55ab0837791084e29baa53016f1486e72d4ba8eec8051cf",
+  "outer_norm_and_head_have_nonzero_moments": true,
+  "probe_source_sha256": "7258421e55b15f4e1f09a54d5937db89699bf4c6572fe4f80dd9f0f0f3caca7b",
+  "scientific_training_admitted": false,
+  "scope": "actual_saved_optimizer_moment_coverage_per_named_trainable_not_a_fresh_gradient_execution",
+  "slurm_job_id": "2216735",
+  "status": "raw_named_adam_coverage_complete",
+  "torch_version": "2.6.0+cu124",
+  "trainable_parameters": {
+    "fc.weight": {
+      "elements": 50331648,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 22145024,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 30941184,
+          "rank": 4,
+          "second_moment_nonzero": 0
+        },
+        {
+          "adam_step": 7000,
+          "elements": 28186624,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 0,
+          "rank": 5,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "lm_head.weight": {
+      "elements": 131072000,
+      "first_moment_nonzero": 131072000,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 24899584,
+          "first_moment_nonzero": 24899584,
+          "group": 0,
+          "local_start": 28186624,
+          "rank": 5,
+          "second_moment_nonzero": 24899584
+        },
+        {
+          "adam_step": 7000,
+          "elements": 53086208,
+          "first_moment_nonzero": 53086208,
+          "group": 0,
+          "local_start": 0,
+          "rank": 6,
+          "second_moment_nonzero": 53086208
+        },
+        {
+          "adam_step": 7000,
+          "elements": 53086208,
+          "first_moment_nonzero": 53086208,
+          "group": 0,
+          "local_start": 0,
+          "rank": 7,
+          "second_moment_nonzero": 53086208
+        }
+      ],
+      "second_moment_nonzero": 131072000
+    },
+    "midlayer.hidden_norm.weight": {
+      "elements": 4096,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 4096,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 30924800,
+          "rank": 4,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "midlayer.input_layernorm.weight": {
+      "elements": 4096,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 4096,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 30928896,
+          "rank": 4,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "midlayer.mlp.down_proj.weight": {
+      "elements": 58720256,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 27795456,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 25290752,
+          "rank": 3,
+          "second_moment_nonzero": 0
+        },
+        {
+          "adam_step": 7000,
+          "elements": 30924800,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 0,
+          "rank": 4,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "midlayer.mlp.gate_proj.weight": {
+      "elements": 58720256,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 39063552,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 14022656,
+          "rank": 1,
+          "second_moment_nonzero": 0
+        },
+        {
+          "adam_step": 7000,
+          "elements": 19656704,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 0,
+          "rank": 2,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "midlayer.mlp.up_proj.weight": {
+      "elements": 58720256,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 33429504,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 19656704,
+          "rank": 2,
+          "second_moment_nonzero": 0
+        },
+        {
+          "adam_step": 7000,
+          "elements": 25290752,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 0,
+          "rank": 3,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "midlayer.post_attention_layernorm.weight": {
+      "elements": 4096,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 4096,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 30932992,
+          "rank": 4,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "midlayer.self_attn.k_proj.weight": {
+      "elements": 8388608,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 8388608,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 33554432,
+          "rank": 0,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "midlayer.self_attn.o_proj.weight": {
+      "elements": 16777216,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 2754560,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 50331648,
+          "rank": 0,
+          "second_moment_nonzero": 0
+        },
+        {
+          "adam_step": 7000,
+          "elements": 14022656,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 0,
+          "rank": 1,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "midlayer.self_attn.q_proj.weight": {
+      "elements": 33554432,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 33554432,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 0,
+          "rank": 0,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "midlayer.self_attn.v_proj.weight": {
+      "elements": 8388608,
+      "first_moment_nonzero": 0,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 8388608,
+          "first_moment_nonzero": 0,
+          "group": 0,
+          "local_start": 41943040,
+          "rank": 0,
+          "second_moment_nonzero": 0
+        }
+      ],
+      "second_moment_nonzero": 0
+    },
+    "norm.weight": {
+      "elements": 4096,
+      "first_moment_nonzero": 4096,
+      "fragments": [
+        {
+          "adam_step": 7000,
+          "elements": 4096,
+          "first_moment_nonzero": 4096,
+          "group": 0,
+          "local_start": 30937088,
+          "rank": 4,
+          "second_moment_nonzero": 4096
+        }
+      ],
+      "second_moment_nonzero": 4096
+    }
+  }
+}

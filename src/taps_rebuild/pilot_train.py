@@ -14,6 +14,7 @@ from . import native_training as native, pool
 from .pilot_cache import read, records, require
 from .pilot_gate import backend, devices, upstream, verify_cache
 from .pilot_study import mask_positions, verify_identity
+from .native_gradients import ParameterCoverage, install_checkpoint_policy, prime_rotary_cache
 
 
 def admission(plan, verify_content=True):
@@ -215,6 +216,8 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
     from accelerate.utils import set_seed
 
     plan = load_plan(plan_path, qualification)
+    require(plan['recipe']['checkpoint_mode'] == 'non_reentrant', 'Full-body pilots require corrected non-reentrant checkpointing')
+    checkpoint_policy = install_checkpoint_policy('off_reference' if reference else 'non_reentrant')
     rank = int(os.environ['LOCAL_RANK'])
     require(rank == int(os.environ['RANK']) and torch.cuda.device_count() == 8, 'Pilot worker rank geometry differs')
     torch.cuda.set_device(rank)
@@ -263,6 +266,7 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
     training = {'bs': 1, 'num_epochs': 1, 'num_workers': 0, 'max_len': 2048, 'config_path': str(source / 'config.json'), 'gradient_checkpoint': True}
     model = cnets.Model(config, plan['recipe']['ds_config'], training, path=plan['target']['path'], load_emb=True, load_head=True)
     model.scandata(None, plan['target']['path'])
+    checkpoint_policy['rotary_cache'] = prime_rotary_cache(model, torch)
     engine, _, _, _ = deepspeed.initialize(model=model, model_parameters=model.parameters(), config=plan['recipe']['ds_config'])
     engine.train()
     model.target_model.eval()
@@ -274,7 +278,7 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
     expected_initial.update({key: released[key] for key in ('d2t', 't2d')})
     require(native.tensor_state_identity(expected_initial, torch) == initial['model'], 'Pilot initialization differs from complete released common ancestor')
     del released, expected_initial
-    pool.atomic_json(attempt_dir / ('rank-' + str(rank) + '.initial.json'), {'state': initial, 'trainable_names': initial_names, 'plan_identity_sha256': plan['identity_sha256'], 'qualification': qualification, 'reference': reference})
+    pool.atomic_json(attempt_dir / ('rank-' + str(rank) + '.initial.json'), {'state': initial, 'trainable_names': initial_names, 'plan_identity_sha256': plan['identity_sha256'], 'qualification': qualification, 'reference': reference, 'checkpoint_policy': checkpoint_policy})
     if resume:
         require(Path(resume).resolve() == Path(resume) and Path(resume).parent == model_root / 'checkpoints', 'Pilot resume checkpoint is outside its model run')
     start = restore(engine, plan, trajectory, Path(resume), torch, rank) if resume else 0
@@ -282,6 +286,7 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
     count = cache_receipt['rank_examples'][rank]
     ids = np.memmap(cache / ('rank-' + str(rank) + '.ids'), mode='r', dtype='<i4', shape=(count, 2, 2048))
     guard = Guard(model, torch, plan['quota'], capture)
+    body_coverage = ParameterCoverage(model, torch)
     gradient_observation = {}
     if qualification:
         original_step = engine.step
@@ -319,17 +324,20 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
         batch = {'input_ids': torch.as_tensor(tokens, device=rank)[None], 'attention_mask': torch.ones((1, 2048), dtype=torch.long, device=rank), 'loss_mask': torch.zeros((1, 2048), dtype=torch.long, device=rank)}
         batch['loss_mask'][0, positions] = 1
         guard.begin(positions)
+        body_coverage.begin()
         skipped = int(engine.skipped_steps)
         old_step = int(engine.global_steps)
         losses, loss = native_reference_step(source / 'main.py', engine, batch, plan['quota'], rank) if reference else update(engine, batch, plan['quota'])
         end.record()
         torch.cuda.synchronize(rank)
         guard.finish()
+        parameter_gradients = body_coverage.finish()
         require(bool(torch.isfinite(loss).all()) and int(engine.skipped_steps) == skipped == 0 and int(engine.global_steps) == old_step + 1 == step + 1, 'Pilot nonfinite loss, overflow or successful-step budget mismatch')
         elapsed = time.monotonic() - started
         event_seconds = begin.elapsed_time(end) / 1000
         cuda_seconds += event_seconds
         record = {'event': 'committed_update', 'step': step, 'global_step': int(engine.global_steps), 'skipped_steps': int(engine.skipped_steps), 'loss': float(loss.detach()), 'native_head_losses': [float(value.detach()) for value in losses], 'effective_base_contexts': plan['quota'], 'effective_head_contexts': [plan['quota']] * 7, 'dense_slots': 2048, 'real_tokens': row['lengths'][policy], 'cuda_default_stream_seconds': event_seconds, 'rank_loop_seconds': elapsed, 'logical_examples_per_rank': step + 1, 'physical_attempt': attempt}
+        record['parameter_gradient_coverage'] = parameter_gradients
         if qualification:
             record['state_identity'] = state_identity(engine, torch)
             record['pre_step_scaled_gradient_partition_sha256'] = gradient_observation['identity_sha256']
@@ -355,10 +363,15 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
                 stop = step + 1
                 break
     guard.close()
+    body_coverage.close()
     torch.distributed.barrier()
     loop_seconds = time.monotonic() - loop_started - checkpoint_seconds
     final = state_identity(engine, torch)
     report = {'status': 'completed_prefix' if stop < 1536 else 'completed_fixed_budget', 'qualification': qualification, 'reference': reference, 'plan_identity_sha256': plan['identity_sha256'], 'source_sha256': plan['source_sha256'], 'rank': rank, 'start_step': start, 'stop_step': stop, 'successful_updates_this_attempt': stop - start, 'logical_examples_per_rank': stop, 'logical_effective_contexts_per_rank': stop * plan['quota'], 'cuda_default_stream_seconds_this_attempt': cuda_seconds, 'rank_loop_seconds_this_attempt': loop_seconds, 'checkpoint_seconds_this_attempt': checkpoint_seconds, 'physical_attempts_this_process': stop - start, 'state_identity': final, 'journal_sha256': pool.digest(journal), 'vocabulary_identity_sha256': native.tensor_state_identity({key: getattr(model, key) for key in ('d2t', 't2d')}, torch)}
+    report['checkpoint_policy'] = checkpoint_policy
+    report['all_thirteen_trainables_received_finite_nonzero_gradients_each_update'] = True
+    report['cuda_max_allocated_bytes'] = torch.cuda.max_memory_allocated(rank)
+    report['cuda_max_reserved_bytes'] = torch.cuda.max_memory_reserved(rank)
     pool.atomic_json(attempt_dir / ('rank-' + str(rank) + '.complete.json'), report)
     if stop == 1536 or qualification:
         export = model_root / 'exports' / ('step-' + str(stop))

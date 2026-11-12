@@ -1,0 +1,258 @@
+{
+  "analyzer_v1_sha256": "32f142ee0142b54d6dd2cd4f0650656ff06d3fba609f55b40ab7ad3f87bce85b",
+  "analyzer_v2_sha256": "5e11dd792adb840be1e861f6a0f2e235d483b977e7dca3cfef31f78e3f0f4091",
+  "artifact_inventory": {
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/latest": {
+      "sha256": "4ba69735ca53765ed6a709edb56c6ea236b7193a3b29a6b390c346f0f4340e4e",
+      "size_bytes": 5
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/manifest.json": {
+      "sha256": "18e1fee396b0e42b8e4c5eb2aa793e2c541bd72a6a5f8637a1926a447a59fc22",
+      "size_bytes": 2132
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/rank-0.pt": {
+      "sha256": "34e6f981ad9e7663972692273befa185bbdb7e5e5aa96f838989ff7f68f8a594",
+      "size_bytes": 15698
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/rank-1.pt": {
+      "sha256": "6fa8adeb98f6176856ea8a6e618f2470de7269b471f0f6d07fad9891af27d638",
+      "size_bytes": 15634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/rank-2.pt": {
+      "sha256": "1a549c5b2fceadee69624c202c16412de138d98148fe03dd349ee3fc90e35d72",
+      "size_bytes": 15634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/rank-3.pt": {
+      "sha256": "10f3cd6f212645fe1280bd88d9b7c49d0243d3fd1ce008c8137e3761e99c8d5c",
+      "size_bytes": 15634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/rank-4.pt": {
+      "sha256": "78045544b62b9785253d2e47cb3f63ec3f1d4cb7f314318fa5b7f8fe74c033fb",
+      "size_bytes": 15634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/rank-5.pt": {
+      "sha256": "e16b75ae9fe63769f038b5567e4376c25abfe0f2ccf409fcfd3afbc1b4692998",
+      "size_bytes": 15634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/rank-6.pt": {
+      "sha256": "5370a66c3e2a20b3d50bb6ce1fe5359edd945cfdc88cc0f3d55c89f4845ceb1f",
+      "size_bytes": 15634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/rank-7.pt": {
+      "sha256": "82cdd1fb0237612e810448e2f0b2b30cb498fea796cce638b98628892efefd5f",
+      "size_bytes": 15634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/state/mp_rank_00_model_states.pt": {
+      "sha256": "e00bffdc828162a0870e3e2ed97f4a260359062bd5b4deaf6d47a67f223a2161",
+      "size_bytes": 849797252
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/state/zero_pp_rank_0_mp_rank_00_optim_states.pt": {
+      "sha256": "c6a7fc3aef4621e7642afd2bc7402d73169636aa989f6730922ebc2ff1aef9a7",
+      "size_bytes": 637037997
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/state/zero_pp_rank_1_mp_rank_00_optim_states.pt": {
+      "sha256": "d26a5c04570cf94f165dab661cfc9fc327576494aa947c85d62b0133a48aa9f0",
+      "size_bytes": 637037805
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/state/zero_pp_rank_2_mp_rank_00_optim_states.pt": {
+      "sha256": "e3c5b1c41dd55fb4dc8c7ce98f406ae9d6a7fefce93a448bf489fe8d880222bc",
+      "size_bytes": 637037805
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/state/zero_pp_rank_3_mp_rank_00_optim_states.pt": {
+      "sha256": "94afce53470bc501583beb75ba591109f6c716dd62b9f5212b887be29e18d015",
+      "size_bytes": 637037805
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/state/zero_pp_rank_4_mp_rank_00_optim_states.pt": {
+      "sha256": "83e2db5ec10693d0dd7e2032eb0a4d4d1f987eba3e6689fbc073ce730ddfd236",
+      "size_bytes": 637038061
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/state/zero_pp_rank_5_mp_rank_00_optim_states.pt": {
+      "sha256": "af629102b94905236ad1b1a1191a584c86c6c02035a675309de6befbc538d284",
+      "size_bytes": 637037805
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/state/zero_pp_rank_6_mp_rank_00_optim_states.pt": {
+      "sha256": "efba8b628519997558a7fcceacac50d87e8dbdc32765508d665c7eb1b4fa3ddd",
+      "size_bytes": 637037741
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/state/zero_pp_rank_7_mp_rank_00_optim_states.pt": {
+      "sha256": "7a426784aceef1c37e4e110265f0d98f4292b33fe70ddc8163c67f62fc58f512",
+      "size_bytes": 637037741
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2/zero_to_fp32.py": {
+      "sha256": "46497565ccf2b4a8b1f6f18c8341042f3749605a94335c81f69df1bd268af64f",
+      "size_bytes": 33272
+    }
+  },
+  "artifact_inventory_sha256": "049d49d2dc636aa79af411e0631bcec4aaef03ef17124539f68d3448a73d8c04",
+  "automatic_admission_emitted": false,
+  "cpu_only": true,
+  "project_helpers_imported": false,
+  "raw_state": {
+    "components": [
+      "raw FP16 trainable model",
+      "all eight raw FP32 master partitions",
+      "all Adam states and scaler fields",
+      "raw scheduler",
+      "raw rank RNG",
+      "raw engine global/skipped counters",
+      "rank-saved micro-step cursor"
+    ],
+    "fp32_partition_reassembly_matches_visible_model": true,
+    "manifest_sha256": "18e1fee396b0e42b8e4c5eb2aa793e2c541bd72a6a5f8637a1926a447a59fc22",
+    "mode": "old_format_reconstruction_probe",
+    "next_step": 2,
+    "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2",
+    "ranks": [
+      {
+        "adam_moment_nonzero": {
+          "0": {
+            "exp_avg_nonzero": false,
+            "exp_avg_sq_nonzero": false,
+            "step": 2
+          }
+        },
+        "global_steps": 2,
+        "micro_steps_from_rank_checkpoint": 4,
+        "model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+        "optimizer_scaler": "8b696f95da35b09e53b13ce6d5c184a258f527df923c3dad3c2a773b1fe05632",
+        "rank": 0,
+        "rng": "6601e0a857e1876c40562ae2857d7431c15cf89478d9ac183b718bd91b55202d",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0
+      },
+      {
+        "adam_moment_nonzero": {
+          "0": {
+            "exp_avg_nonzero": false,
+            "exp_avg_sq_nonzero": false,
+            "step": 2
+          }
+        },
+        "global_steps": 2,
+        "micro_steps_from_rank_checkpoint": 4,
+        "model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+        "optimizer_scaler": "7d5b143d984fdcbba3c67c48b4b0870c630daaa63c41548ef109bed0b8d1d482",
+        "rank": 1,
+        "rng": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0
+      },
+      {
+        "adam_moment_nonzero": {
+          "0": {
+            "exp_avg_nonzero": false,
+            "exp_avg_sq_nonzero": false,
+            "step": 2
+          }
+        },
+        "global_steps": 2,
+        "micro_steps_from_rank_checkpoint": 4,
+        "model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+        "optimizer_scaler": "836a1c4fae197aa7e3c42c1fa7a4c56d3ed3d527530646ff1753e81e369429dd",
+        "rank": 2,
+        "rng": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0
+      },
+      {
+        "adam_moment_nonzero": {
+          "0": {
+            "exp_avg_nonzero": false,
+            "exp_avg_sq_nonzero": false,
+            "step": 2
+          }
+        },
+        "global_steps": 2,
+        "micro_steps_from_rank_checkpoint": 4,
+        "model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+        "optimizer_scaler": "e09b6e4c670e9156cb81dcdeefa6d9a09fbb6d3ea6d4bd15ff1a3ef87b3bd91a",
+        "rank": 3,
+        "rng": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0
+      },
+      {
+        "adam_moment_nonzero": {
+          "0": {
+            "exp_avg_nonzero": true,
+            "exp_avg_sq_nonzero": true,
+            "step": 2
+          }
+        },
+        "global_steps": 2,
+        "micro_steps_from_rank_checkpoint": 4,
+        "model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+        "optimizer_scaler": "46e936ccbef610a43e472e1fd4841cfd48f31441cab2e81ad8d5a0789858922f",
+        "rank": 4,
+        "rng": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0
+      },
+      {
+        "adam_moment_nonzero": {
+          "0": {
+            "exp_avg_nonzero": true,
+            "exp_avg_sq_nonzero": true,
+            "step": 2
+          }
+        },
+        "global_steps": 2,
+        "micro_steps_from_rank_checkpoint": 4,
+        "model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+        "optimizer_scaler": "1163466287371923e1cb402abe19e864f6c69edd577ff5376ef1cbbb775f04c5",
+        "rank": 5,
+        "rng": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0
+      },
+      {
+        "adam_moment_nonzero": {
+          "0": {
+            "exp_avg_nonzero": true,
+            "exp_avg_sq_nonzero": true,
+            "step": 2
+          }
+        },
+        "global_steps": 2,
+        "micro_steps_from_rank_checkpoint": 4,
+        "model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+        "optimizer_scaler": "696a17dae210b59563f0c71abfb423dd7794dca5ae27c7ca2025095ee7c90b13",
+        "rank": 6,
+        "rng": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0
+      },
+      {
+        "adam_moment_nonzero": {
+          "0": {
+            "exp_avg_nonzero": true,
+            "exp_avg_sq_nonzero": true,
+            "step": 2
+          }
+        },
+        "global_steps": 2,
+        "micro_steps_from_rank_checkpoint": 4,
+        "model": "9902621e3a9ac6de12b93971eb331d5c5b48636bc093a98cf6d575b65bf95775",
+        "optimizer_scaler": "02c492de416ed76c52234fd688a71054e2ad2505cc96e3784aecbd6ee4f81eb7",
+        "rank": 7,
+        "rng": "683c27a62d6b03059b094103b7b6144342eb732e6882bfa730d690a3656a97b6",
+        "scheduler": "8522cac2a3c47df4f26b3d50601dabac805bd259fce3984552217c4622a2d44d",
+        "skipped_steps": 0
+      }
+    ],
+    "scientific_training_admitted": false,
+    "status": "passed_raw_state_reconstruction"
+  },
+  "runtime_packages": {
+    "accelerate": "0.26.0",
+    "deepspeed": "0.17.1",
+    "numpy": "1.26.4",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.53.1"
+  },
+  "scientific_training_admitted": false,
+  "scope": "format_validation_only_not_new_pilot_qualification",
+  "slurm_job_id": "2216722",
+  "status": "passed_old_format_raw_reconstruction_probe",
+  "wall_seconds": 18.90427892236039
+}

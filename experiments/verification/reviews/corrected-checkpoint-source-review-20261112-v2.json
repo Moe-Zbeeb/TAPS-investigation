@@ -1,0 +1,62 @@
+{
+  "actual_execution_pending": [
+    "Actual all13 named finite nonzero backward hooks and independently reconstructed raw Adam/master changes.",
+    "Corrected vs direct-function full-state/pre-step-partition/update parity, FP64 CE/logit-gradient and suffix invariance on both policies.",
+    "Fresh eight-rank4-vs2+2 restore, stock export compatibility, actual memory observations and runtime interval envelope.",
+    "Independent inspection of complete source-bound actual evidence before scientific training admission."
+  ],
+  "analyzer_scope": "Adds80 attempt-rank rotary recipe/priming/freeze bindings to preserved independent v1/v2/v3 analysis. No automatic admission.",
+  "blocking_findings_for_bounded_qualification": [],
+  "decision": "approved_for_bounded_primed_corrected_engineering_qualification_only",
+  "independent_v4_analyzer_sha256": "592ab1fcc7592b1b3d36e758126d3177b1a1dd34f6d119077876e180e8284a05",
+  "legacy_full_body_block_unchanged": true,
+  "local_validation": [
+    "Three source adapter routing tests passed without Torch execution.",
+    "Independent v4 analyzer syntax/import andsix negative rotary policy tests passed without Torch execution."
+  ],
+  "new_recipe_limit": "This source establishes a new immutable CPU-FP32-before-FP16 RoPE recipe. It does not claim numerical equivalence to the unprimed legacy path whose later heads extended from cast inv_freq. Target-only scan and token/cache identities are unchanged.",
+  "preserved_earlier_source_review_sha256": "22031a88a9712f1f2f2fb81dd28ad448af784e01897f9dc403d43b0b75c8dc06",
+  "reviewed_rotary_sources": {
+    "cnets.py": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+    "config.json": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f"
+  },
+  "reviewer": "independent-agent-validation-review",
+  "rotary_source_findings": [
+    {
+      "finding": "Plain native RoPE constructs inv_freq in FP32 and nonpersistent CPU caches at max_position_embeddings2048. Later cache extension uses current inv_freq dtype, which may have been cast to FP16.",
+      "line": 108,
+      "path": "cnets.py"
+    },
+    {
+      "finding": "Attention requests q_len+len(cache_hidden[0]); seven fixed2048 heads request at most2054. Cache lists are copied before appending, avoiding mutation of checkpoint input lists.",
+      "line": 253,
+      "path": "cnets.py"
+    },
+    {
+      "finding": "Prime before engine FP16/device conversion, assert CPUFP32 inv_freq and the expected seven-head geometry, rebuild to2054 and require exact original2048 prefix equality.",
+      "line": 34,
+      "path": "src/taps_rebuild/native_gradients.py"
+    },
+    {
+      "finding": "After successful priming, any later cache reconstruction or extension raises, including during checkpoint recomputation.",
+      "line": 43,
+      "path": "src/taps_rebuild/native_gradients.py"
+    },
+    {
+      "finding": "Both nonreentrant and direct-function reference prime identically after scandata and before deepspeed.initialize. Initial/complete observations retain source identity and priming policy.",
+      "line": 269,
+      "path": "src/taps_rebuild/pilot_train.py"
+    }
+  ],
+  "scientific_training_admitted": false,
+  "scope": "explicit_nonreentrant_checkpoint_adapter_with_immutable_rotary_cache_and_pilot_integration_source_review",
+  "source_jobs_production_admission_mutated_by_reviewer": false,
+  "source_sha256": {
+    "configs/rq1-pilot-24-20261112.json": "1cde2b4a239116ea825ab80e525bbadd4a745edd0704c68f42c58694ce478464",
+    "src/taps_rebuild/native_gradients.py": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+    "src/taps_rebuild/pilot_study.py": "8e9fb70fb92240d9253711cca23c0343d1f5b894c32b87eb12e0d2058872f882",
+    "src/taps_rebuild/pilot_train.py": "c351672151ce31d01b93e6fdf3071747506c8c4b67d8e0bb22935a937f8f06cc",
+    "tests/test_native_gradients.py": "4b7ea7de6eff5c1954a9ef9663fde46be81c5a9b9bea3367f122674d9e2f2986"
+  },
+  "supersedes_for_new_source_only": "experiments/verification/reviews/corrected-checkpoint-source-review-20261112.json"
+}

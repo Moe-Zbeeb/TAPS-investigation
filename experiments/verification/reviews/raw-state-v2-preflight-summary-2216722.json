@@ -1,0 +1,33 @@
+{
+  "scope": "old_native_checkpoint_raw_reconstruction_format_validation_only",
+  "job_id": "2216722",
+  "report_path": "experiments/verification/reviews/raw-state-v2-preflight-2216722.json",
+  "report_sha256": "8d67590389f6280c200ee6207881d78b806a30580e88d750fd2f0e48b7b3e6aa",
+  "analyzer_v2_sha256": "5e11dd792adb840be1e861f6a0f2e235d483b977e7dca3cfef31f78e3f0f4091",
+  "manifest_sha256": "18e1fee396b0e42b8e4c5eb2aa793e2c541bd72a6a5f8637a1926a447a59fc22",
+  "raw_components": [
+    "raw FP16 trainable model",
+    "all eight raw FP32 master partitions",
+    "all Adam states and scaler fields",
+    "raw scheduler",
+    "raw rank RNG",
+    "raw engine global/skipped counters",
+    "rank-saved micro-step cursor"
+  ],
+  "world_size": 8,
+  "all_optimizer_scaler_raw_hashes_reconstructed": true,
+  "fp32_master_partitions_match_visible_model": true,
+  "old_fixture_moment_nonzero_by_rank": [
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true,
+    true
+  ],
+  "sacct_pipe_output": "JobIDRaw|State|ExitCode|Elapsed|AllocCPUS|ReqMem|AllocTRES|NodeList\n2216722|COMPLETED|0:0|00:00:33|16|96G|billing=16,cpu=16,node=1|deep-chungus-6\n2216722.batch|COMPLETED|0:0|00:00:33|16||cpu=16,mem=0,node=1|deep-chungus-6\n",
+  "scientific_training_admitted": false,
+  "new_pilot_qualification_passed": false
+}

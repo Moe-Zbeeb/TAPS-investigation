@@ -1,0 +1,31 @@
+{
+  "job_id": "2216728",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=high-priority",
+    "--qos=spec-priority",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=16",
+    "--mem=96G",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--time=04:00:00",
+    "--job-name=taps-teacher-replay",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-teacher-replay-20261112-v1/replay-%j.log",
+    "--wrap",
+    "env CUDA_VISIBLE_DEVICES= PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-teacher-replay-20261112-v1/independent_teacher_replay.py --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --config /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/configs/pilot-cache-20261112.json --config-sha256 9231678ae3427ae7abfaf56cc1b18eea098ce6e0b979c12bc89a025a3bf04cdb --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v1/teacher-replay.json"
+  ],
+  "verified_slurm": "JobId=2216728 JobName=taps-teacher-replay UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=04:00:00 TimeMin=N/A SubmitTime=2026-11-12T09:34:49 EligibleTime=2026-11-12T09:34:49 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T09:34:49 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4083341 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=96G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=96G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-teacher-replay-20261112-v1/replay-2216728.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-teacher-replay-20261112-v1/replay-2216728.log Power= \n",
+  "source_sha256": "c8dbbe8dca831e45f896e7bd0eb8ebc6de203d47f91ee393d41175d2f75110b8",
+  "output": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v1/teacher-replay.json",
+  "bundle": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-teacher-replay-20261112-v1",
+  "training_dependency_override": {
+    "job_id": "2216699",
+    "dependency": "afterok:2216698:2216701:2216711:2216724:2216728",
+    "verified_slurm": "JobId=2216699 JobName=taps-pilot24-train UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=None Dependency=afterok:2216698(unfulfilled),afterok:2216701(unfulfilled),afterok:2216711(unfulfilled),afterok:2216724(unfulfilled),afterok:2216728(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=2-00:00:00 TimeMin=N/A SubmitTime=2026-11-12T08:37:43 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T08:37:43 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4008294 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* TRES=cpu=1,mem=8G,node=1,billing=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=8G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v1/train-2216699.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v1/train-2216699.log Power= KillOInInvalidDependent=Yes \n"
+  },
+  "scope": "independent replay of both generated-context corpora; no automatic training admission"
+}

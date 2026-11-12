@@ -1,0 +1,99 @@
+{
+  "decision": "approved",
+  "reviewer": "independent-agent-validation-review",
+  "scope": "both_registered_teacher_worker_canonical_native_populations_only",
+  "scientific_training_admitted": false,
+  "audit_job_id": "2216728",
+  "audit_job_state": "COMPLETED",
+  "audit_job_exit_code": "0:0",
+  "report": {
+    "path": "experiments/verification/reviews/direct-teacher-replay.json",
+    "sha256": "f2d8052ef1a5903d6912a83ced8159a59b19cebbb7ec5d675c0ffa40d79ce495"
+  },
+  "audit_source_sha256": "c8dbbe8dca831e45f896e7bd0eb8ebc6de203d47f91ee393d41175d2f75110b8",
+  "artifact_inventory_sha256": "0c9f77c9525052e2ea8ae35b0024c5bb95c3fb4057ff281cd60f29d45633a5cf",
+  "bound_artifact_count": 100,
+  "source_examples": 580107,
+  "accepted_examples": 525570,
+  "population_results": [
+    {
+      "accepted_examples": 487823,
+      "all_source_user_fields_and_canonical_native_records_match": true,
+      "configured_stop_token_ids": [
+        128001,
+        128008,
+        128009
+      ],
+      "counts": {
+        "accepted:dev": 5009,
+        "accepted:test": 5009,
+        "accepted:train": 477805,
+        "excluded:prompt_exceeds_generation_context": 1076,
+        "excluded:response_censored_at_generation_limit": 51208,
+        "processed": 540107
+      },
+      "generated_completion_sha256": "94eeea149a025fdc7d08bfde4d9cb91403c89ed929738f9d8f0e86a424e830c6",
+      "historical_gpu_ownership_requeried": false,
+      "original_completion_sha256": "42f408593e5d5774bd859e75fc11bc73ce69153d105a6b789b555e1ee743604c",
+      "output_last_token_ids_independently_verified": false,
+      "plan_identity_sha256": "dbf6acd428977385aa98b2f302241086764f28eb9e1cda1005af0f45ed3331af",
+      "population": "chat",
+      "prompt_token_hashes_recomputed": false,
+      "retained_output_tokens_including_rejected_outcomes": 978988311,
+      "status": "passed",
+      "termination_metadata_counts": {
+        "default_eos_metadata": 1653305,
+        "nonstop:length": 51208
+      },
+      "worker_batch_slurm_job_counts": {
+        "2212576": 4991,
+        "2212580": 3449
+      }
+    },
+    {
+      "accepted_examples": 37747,
+      "all_source_user_fields_and_canonical_native_records_match": true,
+      "configured_stop_token_ids": [
+        128001,
+        128008,
+        128009
+      ],
+      "counts": {
+        "accepted:dev": 361,
+        "accepted:test": 418,
+        "accepted:train": 36968,
+        "excluded:response_censored_at_generation_limit": 2253,
+        "processed": 40000
+      },
+      "generated_completion_sha256": "9e96390ec1c075367b09dfcdd7978f29937d6a1ff141abdb74b22bab3bc96187",
+      "historical_gpu_ownership_requeried": false,
+      "original_completion_sha256": "c132befc2a0d4be999d42e771a7163ed3dad9a8b6220d09ff0fc344ce7a45d57",
+      "output_last_token_ids_independently_verified": false,
+      "plan_identity_sha256": "97dde81997dabd002466d6952b202d919bad2aba46aa324b4beececabc975961",
+      "population": "math_code",
+      "prompt_token_hashes_recomputed": false,
+      "retained_output_tokens_including_rejected_outcomes": 17682741,
+      "status": "passed",
+      "termination_metadata_counts": {
+        "default_eos_metadata": 37747,
+        "nonstop:length": 2253
+      },
+      "worker_batch_slurm_job_counts": {
+        "2212580": 632
+      }
+    }
+  ],
+  "all_input_bytes_stable": true,
+  "blocking_data_replay_findings": [],
+  "limitations": [
+    "Termination evidence is finish_reason/stop_reason under the hash-pinned stock-vLLM sampling source and target stop configuration, not an independent last-token-ID proof.",
+    "Raw journals retain output token counts rather than output token sequences; prompt-token hashes are checked for format and binding but not retokenized/recomputed.",
+    "Rejected-response text and failed next-turn prompts are not retained, so corresponding exclusion reasons are validated structurally and counted, not independently re-evaluated from missing text.",
+    "Retained batch token counts exclude uncommitted/lost work and model startup. Full physical cost needs separate scheduler/attempt accounting.",
+    "Model weights, plan/source/shard bytes and accepted output identity are verified; this does not regenerate responses, assert mathematical/code answer quality or establish new inference losslessness."
+  ],
+  "native_postgeneration_length_gate": "Separate paired CPU cache/native preprocessing and eligibility evidence; this raw worker replay does not retokenize every accepted record.",
+  "inference_or_training_quality_claimed": false,
+  "gradient_path_bug_affects_this_data_evidence": false,
+  "raw_text_or_tensors_downloaded": false
+}

@@ -1,0 +1,490 @@
+{
+  "all_bound_input_bytes_stable": true,
+  "artifact_inventory": {
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/LICENSE": {
+      "sha256": "64e1b2889b7892e6bbe7a7ed5bfe6ff793c61f9d584345f8f41cf9f5cb30a369",
+      "size_bytes": 7627
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/USE_POLICY.md": {
+      "sha256": "a568f2ebc73cec3fd74ba2afd992d4e945a8c7a9d851f9b66163aac834b7b859",
+      "size_bytes": 4691
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/config.json": {
+      "sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "size_bytes": 855
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/generation_config.json": {
+      "sha256": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd",
+      "size_bytes": 184
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00001-of-00004.safetensors": {
+      "sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+      "size_bytes": 4976698672
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00002-of-00004.safetensors": {
+      "sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+      "size_bytes": 4999802720
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00003-of-00004.safetensors": {
+      "sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+      "size_bytes": 4915916176
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00004-of-00004.safetensors": {
+      "sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+      "size_bytes": 1168138808
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model.safetensors.index.json": {
+      "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+      "size_bytes": 23950
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/special_tokens_map.json": {
+      "sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "size_bytes": 296
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/tokenizer.json": {
+      "sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+      "size_bytes": 9085657
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/tokenizer_config.json": {
+      "sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "size_bytes": 55351
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/completion.json": {
+      "sha256": "c132befc2a0d4be999d42e771a7163ed3dad9a8b6220d09ff0fc344ce7a45d57",
+      "size_bytes": 5194
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/dev.jsonl": {
+      "sha256": "c59df46364c1cbea0c4ddf860c051e8b8d7c8ff2642f3265e68ee4f1a10cc493",
+      "size_bytes": 484246
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/excluded.jsonl": {
+      "sha256": "56d394e4a907fc6525e484db84863d7524973a7846676a7f180e00e0e966a1ae",
+      "size_bytes": 4697580
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/original/dev.jsonl": {
+      "sha256": "98b18f1a8d247cf2be5e8e96b444ef643ee6b2f9707b8ba36460e328e997cda5",
+      "size_bytes": 241196
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/original/test.jsonl": {
+      "sha256": "e5267a28e6154ddd09b4d9ec73b69a488ddc5b25806d9c47f81a312e21ec6e82",
+      "size_bytes": 310977
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/original/train.jsonl": {
+      "sha256": "0f28bf53da39b06caa9fecff3c26e9dc2aad797d45cf478560865a547cc80bf6",
+      "size_bytes": 25819319
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/test.jsonl": {
+      "sha256": "48f4a226a2717d90fc513b92696fdae84d29ca1b4f98a4a9a8f635179bc37bc0",
+      "size_bytes": 597354
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/train.jsonl": {
+      "sha256": "090022261332a8e8e7ea5e737ac0cf6184557b8af8a4e9d644fa306c59f01d6c",
+      "size_bytes": 50796065
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/completion.json": {
+      "sha256": "9e96390ec1c075367b09dfcdd7978f29937d6a1ff141abdb74b22bab3bc96187",
+      "size_bytes": 1714
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/dev.jsonl": {
+      "sha256": "b21f42aaa385af4266931c20c34175116dfc2ea943852f795e850fd35c64813a",
+      "size_bytes": 805895
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/native-dev.jsonl": {
+      "sha256": "6c2bb908f27655952d4e463a40dda3179f009fbc783ab18a1b3b231d201c3dcb",
+      "size_bytes": 574358
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/native-test.jsonl": {
+      "sha256": "e5bd9f282d892c9ccdc09ef8c08b405627f13e28375fd1ca0c1fe142ee5fab5c",
+      "size_bytes": 690707
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/native-train.jsonl": {
+      "sha256": "8df95448c72cef1c445b179a95e18778960e689c0001bf2b15e49957eec49a81",
+      "size_bytes": 61257546
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/test.jsonl": {
+      "sha256": "a1d6f81e244b8c6de55eee6383f15e0c8397f52fcfe887c7f41ca21c906fc081",
+      "size_bytes": 959979
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/train.jsonl": {
+      "sha256": "09c6e679b426dc098612712b2122b6eed4cbeec95e131a2d9a86152411c77718",
+      "size_bytes": 85078843
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/completion.json": {
+      "sha256": "42f408593e5d5774bd859e75fc11bc73ce69153d105a6b789b555e1ee743604c",
+      "size_bytes": 4965
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/dev.jsonl": {
+      "sha256": "520406889ed356fd1564ae36d9d4d6375933232c387368ca49bb9f6b78d179e3",
+      "size_bytes": 33728335
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/excluded.jsonl": {
+      "sha256": "498c454a7f2f7ac333e69bfad39469b069567e4e506bbd9b18797b173cc3d586",
+      "size_bytes": 2521231
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/original/dev.jsonl": {
+      "sha256": "e636cb8d419dce26ba51b3ca425abadba4d711f5d2810396397f946961672b8f",
+      "size_bytes": 17336057
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/original/test.jsonl": {
+      "sha256": "7ab52b8b85a6a7ab3ec540222d3f726ae969c93ab3047b45a02266e8457eb521",
+      "size_bytes": 17775433
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/original/train.jsonl": {
+      "sha256": "b7bdce3793ca710f5445100a1e9bc409174ac2d5077c3e06b40419f2b453e5de",
+      "size_bytes": 1674030394
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/test.jsonl": {
+      "sha256": "871c4f30911098a27c1b9405e9575bd4d474dc063e98f81664338de0f1b0ad3f",
+      "size_bytes": 33863338
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/train.jsonl": {
+      "sha256": "827de82f6ec6df938f88078ff0528493cca327f78b9554ddf901d56abbfd3991",
+      "size_bytes": 3221863512
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/completion.json": {
+      "sha256": "94eeea149a025fdc7d08bfde4d9cb91403c89ed929738f9d8f0e86a424e830c6",
+      "size_bytes": 1792
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/dev.jsonl": {
+      "sha256": "8408f87ff049d878f2686603cd4e0ef057d726443f479ebb60b8aa68dc7daf9e",
+      "size_bytes": 51105263
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/native-dev.jsonl": {
+      "sha256": "6bccf32f970e0fd75f3e64d6f9badf125e0cd9b15dc867d6c33a225a5b0530f7",
+      "size_bytes": 47180878
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/native-test.jsonl": {
+      "sha256": "50b95658835a4bc92b9345a3f49a5156d3e41913aff55314a731923dcc07a1b5",
+      "size_bytes": 47199091
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/native-train.jsonl": {
+      "sha256": "9425a337fc350eddf4b8dcc0acb505ad12781021f21e67bc864f4aa51c19991c",
+      "size_bytes": 4458747409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/test.jsonl": {
+      "sha256": "1a9fa8040aee692dd1d60cdc868836f9ae76439d67a97da050aceda34c393f81",
+      "size_bytes": 51132560
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/train.jsonl": {
+      "sha256": "391ffb376e40d9684ef917bb307e8a43429952c586d231c8e157d51ce925cdd5",
+      "size_bytes": 4834537176
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/configs/pilot-cache-20261112.json": {
+      "sha256": "9231678ae3427ae7abfaf56cc1b18eea098ce6e0b979c12bc89a025a3bf04cdb",
+      "size_bytes": 1455
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/corpus_generate.py": {
+      "sha256": "7725c7e6b0a9769d5614d2d357ca4e8af2bc6f641cc2de47f38602676af9ee9f",
+      "size_bytes": 20180
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/native_training.py": {
+      "sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "size_bytes": 70884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-0.jsonl": {
+      "sha256": "d325a60af5ce7fd38b571e397edc30fc1d04d53f224dc5eaa23f235711bf4bac",
+      "size_bytes": 6605890
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-1.jsonl": {
+      "sha256": "8d4a3490a98f3369f4ee4f32186c9dd29a7309285272214562ae563a33f8e1d5",
+      "size_bytes": 6677446
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-2.jsonl": {
+      "sha256": "eb3184a4fa36fff46554bddcfc4a128739b5bcdf565a3024e69b3f3d0e4243f5",
+      "size_bytes": 6640627
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-3.jsonl": {
+      "sha256": "3333053ea278d1087db123d7406b2ce7b4ab829bc9e2a8d0da0f5f1556c50b4a",
+      "size_bytes": 6604884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-4.jsonl": {
+      "sha256": "7c7610399c831e3c205538145cbdd033debe66e621aea67078d3600b7f87beee",
+      "size_bytes": 6609141
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-5.jsonl": {
+      "sha256": "dd28912b05ff7efdf59ffa34287848e3deb8eba54b1d1cf10757dbea7e74184a",
+      "size_bytes": 6626593
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-6.jsonl": {
+      "sha256": "1a68b5ad323af646d1adfe3ac27668776ae0b949de4b3213d76e75d1bcf20133",
+      "size_bytes": 6597409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-7.jsonl": {
+      "sha256": "c72369fcd644200283de1c99c55881e36cb07c66465618c8d6f3e5bf0a4a9edc",
+      "size_bytes": 6584565
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/plan.json": {
+      "sha256": "3533168601e74a9e1cde1c653a0223ac125eeceb7a7512f069a8b9ec0e859812",
+      "size_bytes": 10513
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-0-receipt.json": {
+      "sha256": "3cfe2468f626528cbaf2c0821bfe849ae6c301f78800885db993331725d04936",
+      "size_bytes": 267
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-0.jsonl": {
+      "sha256": "b4b1368d3a8a92a840fa6df42907954ca15bb2247852072cc09582d2e769abb8",
+      "size_bytes": 12645178
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-1-receipt.json": {
+      "sha256": "f30c1d52a5eff5e0ef8026d7581fa3d6d0350ba37520dd6c8ce784c686961fbd",
+      "size_bytes": 267
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-1.jsonl": {
+      "sha256": "0e6025a411b7da40415927b99a82c2a072d3e1613955234663b4a72876a80215",
+      "size_bytes": 12736859
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-2-receipt.json": {
+      "sha256": "52a0c8d6b4c3d84433813ea35c8700ebc9162c1df3fbc6f1732709bbdf94264d",
+      "size_bytes": 267
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-2.jsonl": {
+      "sha256": "c3fdfbeb35e66513c2efb53e4a2172e57d4575c3d3141e1751c163cbd401095a",
+      "size_bytes": 12586567
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-3-receipt.json": {
+      "sha256": "9d3feb3b5bbef45c58f8f7b880e770b5af396f72c509782e30843f23f133343d",
+      "size_bytes": 267
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-3.jsonl": {
+      "sha256": "0f59b9991b3ebcba457d720c5db740371f481784a2a18129918b5beda0f4e818",
+      "size_bytes": 12583621
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-4-receipt.json": {
+      "sha256": "1028cfe51fec18e250ff00a3b3c7c42f8fd22665f22b48be90b5236f1baebf96",
+      "size_bytes": 267
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-4.jsonl": {
+      "sha256": "7b989a551f39024ae0d3252a156ce613b427f0ed82fcc755fae1da763693b2e2",
+      "size_bytes": 12378962
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-5-receipt.json": {
+      "sha256": "0db5c1716f30592e8eb8cf16b2902510bbb5693212427a854fd2fe9efddf1b4b",
+      "size_bytes": 267
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-5.jsonl": {
+      "sha256": "8a4be5f04961baa381d245f8213917f00e306b4fa4bd46449f1ad0c3e9170468",
+      "size_bytes": 12523664
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-6-receipt.json": {
+      "sha256": "e78a869eae68f5716ff9423d366232613342ed5af2054ee93e54cc78d73693f2",
+      "size_bytes": 267
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-6.jsonl": {
+      "sha256": "8041ff192720e93ddceae5f25e48ca8b5799c4259717f18160be970ea94cca1f",
+      "size_bytes": 12563502
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-7-receipt.json": {
+      "sha256": "eadcdff24ad4d97bcd6e9ea90b5adb696362306b03e7e4512e67e167cfdb2c2f",
+      "size_bytes": 267
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/worker-7.jsonl": {
+      "sha256": "5c4d5932a4158d94e220d4620e20c585d39b732e1c91bfde983ba5f6541d5e47",
+      "size_bytes": 12573274
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/corpus_generate.py": {
+      "sha256": "7725c7e6b0a9769d5614d2d357ca4e8af2bc6f641cc2de47f38602676af9ee9f",
+      "size_bytes": 20180
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/native_training.py": {
+      "sha256": "60259b4b4ffb3132c3036e391243ee33967cd8fa4f9ba3444075fade798478cd",
+      "size_bytes": 63298
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-0.jsonl": {
+      "sha256": "5231abd6ac4f5f292eb7c3c7bf71041e44de9a0d9bc92cec60b052fd400f4007",
+      "size_bytes": 413952457
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-1.jsonl": {
+      "sha256": "d7ee965c8590e9a6cf9160faa695d29f3713a3254d76b258293e0bca2e7b9f6d",
+      "size_bytes": 413470995
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-2.jsonl": {
+      "sha256": "b448b1c935d70fbe90c31295926670dd3155aecd21656c69da3e4eda384c8ff5",
+      "size_bytes": 412526722
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-3.jsonl": {
+      "sha256": "84ab49659164bbd8aa105e3a0819a5d41d90e0ac4e8b584488476703ca3a6534",
+      "size_bytes": 412517647
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-4.jsonl": {
+      "sha256": "f0551f1e430daa1e355069a9bc83e7b9eea74720d1e6ce154a691d906a81c061",
+      "size_bytes": 412640753
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-5.jsonl": {
+      "sha256": "e007ccd098e537a5a7f332ea2a79e8298f3bb85d4b7da304a97593fab3820a90",
+      "size_bytes": 413283237
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-6.jsonl": {
+      "sha256": "58c97ef1c10f256e2c913a7fb40dc5294f79bacbca10647e3090ea36eb8a17c4",
+      "size_bytes": 414239894
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-7.jsonl": {
+      "sha256": "ee5b805bc8586ff573d558233553267ca9b1b59921d1132a053abb6651575bac",
+      "size_bytes": 411835366
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/plan.json": {
+      "sha256": "e0e850f329378c8d1f9ac352faa24a166f20fb57a0567eacadf9e7ec8114af58",
+      "size_bytes": 10954
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-0-receipt.json": {
+      "sha256": "31201792c1019e9658b022811aa12b0c187fb9deef193daf7a8fbb6dc366fe0d",
+      "size_bytes": 268
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-0.jsonl": {
+      "sha256": "3d2d458442b447f3ae05e3f9295e7c52284fae717e065c2f89978780006e8226",
+      "size_bytes": 664985020
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-1-receipt.json": {
+      "sha256": "ddc281466bb54598aa6335b7ba62dcad55c00d207fac490763bad05fa5810f73",
+      "size_bytes": 268
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-1.jsonl": {
+      "sha256": "ce40756c8fc5a22fd811f69380cc717478646f8c8e63e6a917a02e64e6e597a0",
+      "size_bytes": 665992255
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-2-receipt.json": {
+      "sha256": "528009c47216e942a9b7130308bb0514c6fddd2de204ec6af6e55f9b9416b5c1",
+      "size_bytes": 268
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-2.jsonl": {
+      "sha256": "0d40e238b7631eb922ba3b196163e85eb83fdb4423ff584627be9fe421d120a3",
+      "size_bytes": 664500572
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-3-receipt.json": {
+      "sha256": "6a7944ec3b4841b36055523332c5f58b771488655d3983dfaacea1edc03c5cca",
+      "size_bytes": 268
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-3.jsonl": {
+      "sha256": "f41ec9ec90466ed15f89607774448e1bad3ba519bbef18da79442b6ecb9136b2",
+      "size_bytes": 666958978
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-4-receipt.json": {
+      "sha256": "4a4fec9aa461be54acd6942a1a39c6ff8923c8e4609f92e9e693b5c221ed7494",
+      "size_bytes": 268
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-4.jsonl": {
+      "sha256": "27a06c7d92e5c6abbfbb7a0551fb70a8ae6c442fca69ca1f8234bacbf71fe4e0",
+      "size_bytes": 666787297
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-5-receipt.json": {
+      "sha256": "7b1b71e876e5c5252f6464f08867228ba55e2970df909a95b3248531bf69df03",
+      "size_bytes": 268
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-5.jsonl": {
+      "sha256": "e7b20a3ddde0ed062d49f3709260e1981506a685127ee6291e667c33b9bb69d6",
+      "size_bytes": 666863955
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-6-receipt.json": {
+      "sha256": "9dcd645587a26fa923bf4647c15e95c47fb0ac1b5cbb5da1cd03e9477c22e5bd",
+      "size_bytes": 268
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-6.jsonl": {
+      "sha256": "130b365b21680d272347aa27c43f216a312ecfe69b92e449c2095d82f4a3448d",
+      "size_bytes": 668198395
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-7-receipt.json": {
+      "sha256": "09c3d3f2479891d2c6aa2ce2623b6031aaa19a4f1618c549993b3bc5c74c8ab5",
+      "size_bytes": 268
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/worker-7.jsonl": {
+      "sha256": "97a6635031ccde56757e6fef31eae19c207a025c902d37b470c6690f637a6c6b",
+      "size_bytes": 665336666
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/traineagle3/main.py": {
+      "sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+      "size_bytes": 14195
+    }
+  },
+  "artifact_inventory_sha256": "0c9f77c9525052e2ea8ae35b0024c5bb95c3fb4057ff281cd60f29d45633a5cf",
+  "audit_script_sha256": "c8dbbe8dca831e45f896e7bd0eb8ebc6de203d47f91ee393d41175d2f75110b8",
+  "cpu_only": true,
+  "limitations": [
+    "Termination evidence is finish_reason/stop_reason under the hash-pinned stock-vLLM sampling source and target stop configuration, not an independent last-token-ID proof.",
+    "Raw journals retain output token counts rather than output token sequences; prompt-token hashes are checked for format and binding but not retokenized/recomputed.",
+    "Rejected-response text and failed next-turn prompts are not retained, so corresponding exclusion reasons are validated structurally and counted, not independently re-evaluated from missing text.",
+    "Retained batch token counts exclude uncommitted/lost work and model startup. Full physical cost needs separate scheduler/attempt accounting.",
+    "Model weights, plan/source/shard bytes and accepted output identity are verified; this does not regenerate responses, assert mathematical/code answer quality or establish new inference losslessness."
+  ],
+  "populations": [
+    {
+      "accepted_examples": 487823,
+      "all_source_user_fields_and_canonical_native_records_match": true,
+      "configured_stop_token_ids": [
+        128001,
+        128008,
+        128009
+      ],
+      "counts": {
+        "accepted:dev": 5009,
+        "accepted:test": 5009,
+        "accepted:train": 477805,
+        "excluded:prompt_exceeds_generation_context": 1076,
+        "excluded:response_censored_at_generation_limit": 51208,
+        "processed": 540107
+      },
+      "generated_completion_sha256": "94eeea149a025fdc7d08bfde4d9cb91403c89ed929738f9d8f0e86a424e830c6",
+      "historical_gpu_ownership_requeried": false,
+      "original_completion_sha256": "42f408593e5d5774bd859e75fc11bc73ce69153d105a6b789b555e1ee743604c",
+      "output_last_token_ids_independently_verified": false,
+      "plan_identity_sha256": "dbf6acd428977385aa98b2f302241086764f28eb9e1cda1005af0f45ed3331af",
+      "population": "chat",
+      "prompt_token_hashes_recomputed": false,
+      "retained_output_tokens_including_rejected_outcomes": 978988311,
+      "status": "passed",
+      "termination_metadata_counts": {
+        "default_eos_metadata": 1653305,
+        "nonstop:length": 51208
+      },
+      "worker_batch_slurm_job_counts": {
+        "2212576": 4991,
+        "2212580": 3449
+      }
+    },
+    {
+      "accepted_examples": 37747,
+      "all_source_user_fields_and_canonical_native_records_match": true,
+      "configured_stop_token_ids": [
+        128001,
+        128008,
+        128009
+      ],
+      "counts": {
+        "accepted:dev": 361,
+        "accepted:test": 418,
+        "accepted:train": 36968,
+        "excluded:response_censored_at_generation_limit": 2253,
+        "processed": 40000
+      },
+      "generated_completion_sha256": "9e96390ec1c075367b09dfcdd7978f29937d6a1ff141abdb74b22bab3bc96187",
+      "historical_gpu_ownership_requeried": false,
+      "original_completion_sha256": "c132befc2a0d4be999d42e771a7163ed3dad9a8b6220d09ff0fc344ce7a45d57",
+      "output_last_token_ids_independently_verified": false,
+      "plan_identity_sha256": "97dde81997dabd002466d6952b202d919bad2aba46aa324b4beececabc975961",
+      "population": "math_code",
+      "prompt_token_hashes_recomputed": false,
+      "retained_output_tokens_including_rejected_outcomes": 17682741,
+      "status": "passed",
+      "termination_metadata_counts": {
+        "default_eos_metadata": 37747,
+        "nonstop:length": 2253
+      },
+      "worker_batch_slurm_job_counts": {
+        "2212580": 632
+      }
+    }
+  ],
+  "project_helpers_imported": false,
+  "scientific_training_admitted": false,
+  "scope": "both_registered_full_teacher_populations_and_configured_stop_metadata",
+  "slurm_job_id": "2216728",
+  "status": "passed_independent_teacher_worker_canonical_native_replay",
+  "unique_original_example_ids": 580107,
+  "wall_seconds": 523.2686158800498
+}

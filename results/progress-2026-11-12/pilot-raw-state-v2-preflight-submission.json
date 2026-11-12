@@ -1,0 +1,29 @@
+{
+  "job_id": "2216722",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=high-priority",
+    "--qos=spec-priority",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=16",
+    "--mem=96G",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--time=02:00:00",
+    "--job-name=taps-raw-state-replay",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v2/preflight-%j.log",
+    "--wrap",
+    "env CUDA_VISIBLE_DEVICES= PYTHONDONTWRITEBYTECODE=1 PYTHONNOUSERSITE=1 OMP_NUM_THREADS=16 MKL_NUM_THREADS=16 /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v2/independent_pilot_qualification_audit_v2_20261112.py --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --raw-checkpoint /mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2 --manifest-sha256 18e1fee396b0e42b8e4c5eb2aa793e2c541bd72a6a5f8637a1926a447a59fc22 --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v1/raw-state-v2-preflight.json"
+  ],
+  "verified_slurm": "JobId=2216722 JobName=taps-raw-state-replay UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-11-12T09:23:33 EligibleTime=2026-11-12T09:23:33 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T09:23:33 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4068320 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=96G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=96G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v2/preflight-2216722.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v2/preflight-2216722.log Power= \n",
+  "source_files_sha256": {
+    "independent_pilot_qualification_audit_20261112.py": "32f142ee0142b54d6dd2cd4f0650656ff06d3fba609f55b40ab7ad3f87bce85b",
+    "independent_pilot_qualification_audit_v2_20261112.py": "5e11dd792adb840be1e861f6a0f2e235d483b977e7dca3cfef31f78e3f0f4091"
+  },
+  "bundle": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v2",
+  "output": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v1/raw-state-v2-preflight.json",
+  "training_admitted": false
+}

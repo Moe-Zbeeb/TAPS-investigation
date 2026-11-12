@@ -1,0 +1,88 @@
+{
+  "decision": "changes_required_scientific_full_body_training_blocked",
+  "reviewer": "independent-agent-validation-review",
+  "scope": "unadapted_legacy_default_reentrant_checkpoint_training_path",
+  "scientific_training_admitted": false,
+  "old_training_approval_sufficient_for_full_body_learning": false,
+  "revocation_scope": "Any prior interpretation that the legacy native recipe or its restart/export/profile receipts establish intended full-drafter gradient flow is superseded. Unadapted default reentrant scientific training is not approved. Utility reuse under a separately reviewed explicit full-gradient adapter is not prohibited.",
+  "evidence": {
+    "actual_full_run_named_adam": {
+      "job_id": "2216735",
+      "path": "experiments/verification/reviews/direct-current-generalist-named-adam.json",
+      "sha256": "c08e2ad0b3bea6aab841cd711901d1963001b907d4b10fbaf5f52b27bc5db589",
+      "checkpoint_manifest_sha256": "857e4eb1f9ea262ea55ab0837791084e29baa53016f1486e72d4ba8eec8051cf",
+      "checkpoint": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/sharegpt-ultrachat-full-pipeline-20261111-v2-preparation-0/recovery/attempt-1-step-7005",
+      "observed_global_step": 7005,
+      "all13_named_fragments_covered": true
+    },
+    "exact_decoder_ast_mechanism": {
+      "job_id": "2216737",
+      "path": "experiments/verification/reviews/direct-checkpoint-gradient-mechanism.json",
+      "sha256": "a162f3ec242bbc190a1ffac42a82d58a28116c1c79cf773a4ccb366ca8d43333",
+      "status": "reproduced_nested_reentrant_gradient_cut",
+      "default_and_true_cut": {
+        "default_unspecified": true,
+        "explicit_reentrant": true
+      },
+      "off_and_false_connected": {
+        "explicit_nonreentrant": true,
+        "off": true
+      },
+      "scope": "CPU exact decoder-forward AST with tiny substitute modules; not full8B execution"
+    },
+    "accounting": {
+      "path": "experiments/verification/reviews/gradient-and-teacher-diagnostics-accounting-20261112.json",
+      "sha256": "3d54e9ba07dc41d5cb1e9547e13bb78cfe546d20274a39397bb9e5350f978460"
+    }
+  },
+  "affected_source": {
+    "native_training_helper_sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "native_cnets_sha256": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+    "torch_checkpoint_sha256": "7a05799e678085df1b81d512bed679c35053fb6225ea90c96661306f93140f6c",
+    "torch_version": "2.6.0+cu124",
+    "deepspeed_version": "0.17.1"
+  },
+  "zero_moment_parameters": [
+    "fc.weight",
+    "midlayer.hidden_norm.weight",
+    "midlayer.input_layernorm.weight",
+    "midlayer.mlp.down_proj.weight",
+    "midlayer.mlp.gate_proj.weight",
+    "midlayer.mlp.up_proj.weight",
+    "midlayer.post_attention_layernorm.weight",
+    "midlayer.self_attn.k_proj.weight",
+    "midlayer.self_attn.o_proj.weight",
+    "midlayer.self_attn.q_proj.weight",
+    "midlayer.self_attn.v_proj.weight"
+  ],
+  "nonzero_moment_parameters": [
+    "lm_head.weight",
+    "norm.weight"
+  ],
+  "finding": "Pinned decoder returns nested tuple/list outputs. The pinned default reentrant checkpoint runs them under no_grad and does not attach their nested tensors to autograd. Outer norm/head remain trainable, hiding loss of fc/midlayer gradients behind finite losses and successful optimizer counters.",
+  "exact_source_locations": [
+    "cnets.py:441",
+    "cnets.py:444",
+    "cnets.py:806",
+    "cnets.py:827",
+    "torch/utils/checkpoint.py:263",
+    "torch/utils/checkpoint.py:409",
+    "torch/utils/checkpoint.py:474"
+  ],
+  "required_repair_evidence": [
+    "New isolated explicit nonreentrant checkpoint adapter reviewed against a direct-function full-gradient reference with identical pinned branch/arguments.",
+    "Per-parameter backward-hook participation for all13 intended trainables; finite meaningful gradient/moment coverage, not only per-rank nonzero aggregate.",
+    "New exact-source real-data numerical/objective/full-parameter update, memory, eight-rank checkpoint restore and stock export qualifications.",
+    "New study/source/recipe bindings and genuine independent actual-evidence review before scientific admission."
+  ],
+  "unaffected_evidence": [
+    "Reviewed inference/residual proof and original source-bound sampling/numerical screens retain their stated model/state/precision scope.",
+    "Original and regenerated data inventories, generation, canonical/native replay and native tokenization evidence are unaffected by this training-only graph bug.",
+    "Old restart/export/profile receipts remain retained observations of what the legacy path did; they do not establish full-body learning.",
+    "Historical failed paper-comparison reports and their false statuses remain unchanged; paper agreement remains nonblocking."
+  ],
+  "historical_reports_edited": false,
+  "production_gates_or_registries_edited": false,
+  "jobs_or_active_sources_modified_by_reviewer": false,
+  "corrected_training_admitted": false
+}
