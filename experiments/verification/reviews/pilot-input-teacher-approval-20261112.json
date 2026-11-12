@@ -1,0 +1,68 @@
+{
+  "status": "approved",
+  "scope": "input_data_and_teacher_generation_only",
+  "review_type": "local_source_review",
+  "reviewed_base_commit": "d0172c170b49b44e15e4aa57efa28fea20c287a6",
+  "uncommitted_candidates_reviewed": true,
+  "adapter_sha256": "3657939301561abc17c2312f197e2f598710a68a07968c1defdcc56cbbe94ffd",
+  "corpus_sha256": "a058e587d6cb42477e654a043cf58ba1924594f3aee97e08696f85474773ead2",
+  "tests_sha256": "464897e6375591575736d485db6544cd20e741b4fbf07ada0f10cf3b4e3c3261",
+  "config_sha256": "48d1e400ad8c4e89cb76e2b457e4633f63417a4b570e69ead0505900cf5bebf4",
+  "source_hashes": {
+    "src/taps_rebuild/pilot_data.py": "3657939301561abc17c2312f197e2f598710a68a07968c1defdcc56cbbe94ffd",
+    "src/taps_rebuild/corpus.py": "a058e587d6cb42477e654a043cf58ba1924594f3aee97e08696f85474773ead2",
+    "tests/test_corpus.py": "464897e6375591575736d485db6544cd20e741b4fbf07ada0f10cf3b4e3c3261",
+    "configs/pilot-math-code-inputs-20261112.json": "48d1e400ad8c4e89cb76e2b457e4633f63417a4b570e69ead0505900cf5bebf4",
+    "src/taps_rebuild/corpus_generate.py": "7725c7e6b0a9769d5614d2d357ca4e8af2bc6f641cc2de47f38602676af9ee9f",
+    "src/taps_rebuild/native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "src/taps_rebuild/admission_v2.py": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49"
+  },
+  "blocking_issues": [],
+  "findings": [
+    {
+      "file": "src/taps_rebuild/pilot_data.py",
+      "line": 22,
+      "decision": "CPU-Slurm-only preparation requires a fresh derived source configuration. CodeAlpaca bytes must match pinned size and Git blob before a derived SHA256 is written; corpus preparation then verifies all source sizes and SHA256 hashes."
+    },
+    {
+      "file": "src/taps_rebuild/corpus.py",
+      "line": 37,
+      "decision": "Alpaca original answers and nonempty instruction/context text are preserved; instruction and context are joined by two newlines. Canonical rows retain domain, source row/revision and available upstream source labels."
+    },
+    {
+      "file": "src/taps_rebuild/corpus.py",
+      "line": 205,
+      "decision": "Prior chat exclusions rehash the pinned completion and all three canonical split files before excluding exact normalized individual user turns."
+    },
+    {
+      "file": "src/taps_rebuild/corpus.py",
+      "line": 101,
+      "decision": "Deterministic seeded selection operates on complete single-turn connected groups after exclusions and prompt deduplication. Cross-source retained families fail closed. Group splitting precedes teacher generation."
+    }
+  ],
+  "approved_use": "Prepare the exact configured bounded math/code input population and produce target-only teacher responses using the existing separately frozen generation pipeline. Preserve original-response files and source provenance.",
+  "scientific_training_authorized": false,
+  "matched_budget_pilot_admitted": false,
+  "runtime_evidence_reviewed": false,
+  "checks": [
+    "Read all new pilot adapter/config and full corpus implementation, diff, tests and teacher input/output propagation.",
+    "Independently ran PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests -p test_corpus.py -v on the final tests hash: eleven tests passed, including end-to-end prior-chat/reference exclusion and bounded selection plus Git-blob mismatch rejection before config publication.",
+    "Parsed reviewed Python sources and verified unchanged approved native_training/admission_v2 hashes. No network or cluster access."
+  ],
+  "execution_evidence_still_required": [
+    "Freeze a separate hash-bound source/config bundle without changing active run bundles or their source paths.",
+    "Retain downloaded upstream sizes and pinned SHA256/Git-blob checks, derived configuration hash, preparation adapter identity and raw source provenance.",
+    "Retain per-source schema/exclusion/dedup/selection counts, realized group/row counts and split membership; independently validate prompt/group disjointness and the claimed exact-overlap exclusions.",
+    "Retain teacher plan/input hashes, actual eight-GPU hardware/runtime/settings receipts, every selected ordinal outcome and rejection reason, EOS-completion evidence and final corpus hashes.",
+    "Apply unchanged native tokenization/length QA to generated corpora before any later training admission. Input group limits are not post-filter dataset-size conditions.",
+    "Review the actual new teacher launch/dependency attachment separately; this source receipt does not attest to a submitted job, scheduling safety or successful generation."
+  ],
+  "limitations": [
+    "The configured cap is twenty thousand connected groups per source, not a universal twenty-thousand-row cap; whole families may contain multiple records.",
+    "Exclusion is exact NFKC/casefold/whitespace-normalized individual user-turn overlap against the pinned reference-panel and chat-corpus records. It is not semantic, paraphrase, code-clone or full-benchmark decontamination.",
+    "The review verifies enforcement of configured immutable identities. It does not independently authenticate upstream ownership, license declarations or dataset content through network inspection.",
+    "Selection is defined before target generation and length filtering. No response-quality selection, matched-budget training comparison, completed ten-thousand post-filter condition or trained-quality result is approved.",
+    "Original and target-generated responses must retain paired input/split identities for later comparisons; differing teacher or length-filter survival must be reported rather than silently treated as matched populations.",
+    "Download/preparation failures can leave partial local artifacts or a derived config without a completion receipt. Such artifacts are not completed inputs; retry using verified raw bytes and fresh derived/output paths."
+  ]
+}

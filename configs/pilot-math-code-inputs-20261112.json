@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "scope": "training_data_preparation",
+  "split": {
+    "seed": 20261112,
+    "train_fraction": 0.98,
+    "dev_fraction": 0.01,
+    "test_fraction": 0.01,
+    "grouping": "Transitive original instruction identity and normalized first-user prompt across both pinned sources"
+  },
+  "deduplication": "normalized complete user-prompt sequence; retain first record in pinned source/file/row order",
+  "benchmark_exclusion": "exact normalized individual user-turn overlap against all pinned reference-panel turns; not a semantic-contamination claim",
+  "native_max_length": 2048,
+  "target_id": "llama31_instruct_8b",
+  "response_regimes": [
+    "original",
+    "target_generated"
+  ],
+  "target_generation": {
+    "backend": "stock_vllm_target_only",
+    "runtime_python": "envs/serving-vllm/bin/python",
+    "dtype": "float16",
+    "max_context": 4096,
+    "max_new_tokens": 2048,
+    "temperature": 0,
+    "top_p": 1,
+    "seed": 20261112,
+    "batch_conversations_per_worker": 64,
+    "include_only_complete_eos_terminated_conversations": true,
+    "truncated_prompt_policy": "reject_and_record",
+    "native_length_policy": "apply_unchanged_official_max2048_filter_after_regeneration"
+  },
+  "prompt_only_policy": "Preserve odd-length alternating prompt sequences for target completion; write only complete conversations to original-response native files.",
+  "study_id": "rq1-math-code-inputs-20261112-v1",
+  "sources": [
+    {
+      "id": "pilot_mathinstruct",
+      "repo_id": "TIGER-Lab/MathInstruct",
+      "revision": "b4fdc323a7be1379c9c7c0b67b1de72dfee2111a",
+      "format": "alpaca",
+      "domain": "math",
+      "license_as_reported_by_source": "mit",
+      "files": [
+        {
+          "path": "MathInstruct.json",
+          "size_bytes": 212488891,
+          "sha256": "15b8be9824c31d619078f43baf67f7243c53f475ae4de5f8346b6d3ea9c269dd"
+        }
+      ]
+    },
+    {
+      "id": "pilot_codealpaca",
+      "repo_id": "sahil2801/CodeAlpaca-20k",
+      "revision": "152bb5e9a29651266b018106053980070a0521a1",
+      "format": "alpaca",
+      "domain": "code",
+      "license_as_reported_by_source": "cc-by-4.0",
+      "files": [
+        {
+          "path": "code_alpaca_20k.json",
+          "size_bytes": 8057896,
+          "git_blob_sha1": "4599591b17572755907bd945e34d25a956dcab09"
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "seed": 20261112,
+    "max_groups_by_source": {
+      "pilot_mathinstruct": 20000,
+      "pilot_codealpaca": 20000
+    },
+    "policy": "Seeded SHA256 priority over whole connected conversation groups after schema, reference-overlap and prior-chat exclusion and prompt deduplication; before target generation; no answer-quality selection"
+  },
+  "exclusion_corpora": [
+    {
+      "path": "data/corpora/sharegpt-ultrachat-20261110-v2",
+      "completion_sha256": "42f408593e5d5774bd859e75fc11bc73ce69153d105a6b789b555e1ee743604c"
+    }
+  ],
+  "qualification": "Bounded math/code input preparation for the PDF core pilot, not the registered matched-budget training grid or a completed 10k post-filter data-scale condition."
+}

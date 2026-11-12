@@ -34,6 +34,12 @@ def canonical_row(row, source, ordinal, filename, allow_prompt_only=False):
     if not isinstance(original_id, (str, int)) or not str(original_id):
         original_id = filename + ':' + str(ordinal)
     messages = row.get('conversations', row.get('messages'))
+    if source.get('format') == 'alpaca':
+        instruction, context, answer = row.get('instruction'), row.get('input', ''), row.get('output')
+        if not all(isinstance(value, str) for value in (instruction, context, answer)) or not instruction.strip() or not answer.strip():
+            raise CorpusError('invalid_instruction_pair')
+        prompt = instruction + ('\n\n' + context if context.strip() else '')
+        messages = [{'role': 'user', 'content': prompt}, {'role': 'assistant', 'content': answer}]
     if not isinstance(messages, list) or not messages:
         raise CorpusError('missing_conversation')
     converted = []
@@ -57,7 +63,13 @@ def canonical_row(row, source, ordinal, filename, allow_prompt_only=False):
     prompts = [normalized(item['content']) for item in converted if item['role'] == 'user']
     prompt_id = pool.identity(prompts)
     root_id = re.sub(r'_[0-9]+$', '', str(original_id)) if source['id'] == 'sharegpt_v3' else str(original_id)
-    return {'example_id': pool.identity([source['id'], source['revision'], filename, ordinal, str(original_id)]), 'prompt_id': prompt_id, 'first_prompt_id': text_id(converted[0]['content']), 'source_group_id': source['id'] + ':' + root_id, 'domain': 'general_chat', 'messages': converted, 'response_regime': 'original' if complete else 'original_prompt_only', 'original_response_complete': complete, 'initial_assistant_removed': dropped, 'source': {'id': source['id'], 'repo_id': source['repo_id'], 'revision': source['revision'], 'file': filename, 'row': ordinal, 'original_id': str(original_id)}}
+    domain = source.get('domain', 'general_chat')
+    if not isinstance(domain, str) or not re.fullmatch('[a-z][a-z0-9_]*', domain):
+        raise CorpusError('invalid_domain')
+    provenance = {'id': source['id'], 'repo_id': source['repo_id'], 'revision': source['revision'], 'file': filename, 'row': ordinal, 'original_id': str(original_id)}
+    if source.get('format') == 'alpaca' and 'source' in row:
+        provenance['upstream_source'] = row['source']
+    return {'example_id': pool.identity([source['id'], source['revision'], filename, ordinal, str(original_id)]), 'prompt_id': prompt_id, 'first_prompt_id': text_id(converted[0]['content']), 'source_group_id': source['id'] + ':' + root_id, 'domain': domain, 'messages': converted, 'response_regime': 'original' if complete else 'original_prompt_only', 'original_response_complete': complete, 'initial_assistant_removed': dropped, 'source': provenance}
 
 
 class Groups:
@@ -84,6 +96,31 @@ def split_for(group, specification):
     value = int(pool.identity([specification['seed'], group])[:16], 16) / 2 ** 64
     train, dev = specification['train_fraction'], specification['dev_fraction']
     return 'train' if value < train else 'dev' if value < train + dev else 'test'
+
+
+def selected_groups(connection, groups, selection):
+    if selection is None:
+        return None
+    if type(selection.get('seed')) is not int or not selection.get('max_groups_by_source') or any(type(value) is not int or value < 1 for value in selection['max_groups_by_source'].values()):
+        raise CorpusError('Invalid bounded pilot selection')
+    candidates, owners = {}, {}
+    for group, encoded in connection.execute('SELECT group_key,value FROM records ORDER BY ordinal'):
+        row, group = json.loads(encoded), groups.find(group)
+        if len(row['messages']) != 2:
+            raise CorpusError('Bounded pilot selection requires complete single-turn instruction pairs')
+        source = row['source']['id']
+        if group in owners and owners[group] != source:
+            raise CorpusError('Bounded pilot selection cannot separate a cross-source conversation family')
+        owners[group] = source
+        candidates.setdefault(source, set()).add(group)
+    if set(selection['max_groups_by_source']) - set(candidates):
+        raise CorpusError('Pilot selection refers to an absent source')
+    selected = set()
+    for source, values in candidates.items():
+        limit = selection['max_groups_by_source'].get(source, len(values))
+        ordered = sorted(values, key=lambda group: (pool.identity([selection['seed'], source, group]), group))
+        selected.update(ordered[:limit])
+    return selected
 
 
 def download(source, descriptor, destination):
@@ -164,6 +201,27 @@ def prepare(root, config_path, output):
             if relative.is_absolute() or '..' in relative.parts or not re.fullmatch(r'[0-9a-f]{64}', descriptor['sha256']) or descriptor['size_bytes'] < 1:
                 raise CorpusError('Unsafe or unpinned dataset file')
     excluded, benchmark_proofs = benchmark_exclusions(root)
+    anchor_excluded = set()
+    for descriptor in config.get('exclusion_corpora', []):
+        directory = (root / descriptor['path']).resolve()
+        completion_path = directory / 'completion.json'
+        if not directory.is_relative_to(root / 'data') or pool.digest(completion_path) != descriptor['completion_sha256']:
+            raise CorpusError('Pinned conversation-exclusion corpus changed')
+        anchor = json.loads(completion_path.read_bytes())
+        if anchor['status'] != 'complete' or anchor['scope'] != 'real_training_corpus_preparation':
+            raise CorpusError('Conversation-exclusion corpus is not complete canonical input data')
+        files = {}
+        for split_name in ('train', 'dev', 'test'):
+            path = directory / (split_name + '.jsonl')
+            if pool.digest(path) != anchor['files'][path.name]['sha256']:
+                raise CorpusError('Pinned conversation-exclusion input changed')
+            with path.open() as stream:
+                for line in stream:
+                    for turn in json.loads(line)['messages']:
+                        if turn['role'] == 'user':
+                            anchor_excluded.add(text_id(turn['content']))
+            files[path.name] = anchor['files'][path.name]
+        benchmark_proofs.append({'kind': 'canonical_conversation_exclusion', 'path': str(directory), 'completion_sha256': descriptor['completion_sha256'], 'files': files})
     output.mkdir(parents=True)
     pool.atomic_json(output / 'intent.json', {'config_sha256': pool.digest(config_path), 'source_sha256': pool.digest(__file__), 'status': 'preparing', 'slurm_job_id': os.environ['SLURM_JOB_ID'], 'created_at_utc': datetime.now(timezone.utc).isoformat()})
     groups, seen, counts = Groups(), set(), Counter()
@@ -184,6 +242,8 @@ def prepare(root, config_path, output):
                             row = canonical_row(original, source, ordinal, filename, allow_prompt_only=True)
                             if any(text_id(item['content']) in excluded for item in row['messages'] if item['role'] == 'user'):
                                 raise CorpusError('exact_reference_benchmark_overlap')
+                            if any(text_id(item['content']) in anchor_excluded for item in row['messages'] if item['role'] == 'user'):
+                                raise CorpusError('prior_corpus_prompt_overlap')
                             group = 'source:' + row['source_group_id']
                             groups.join(group, 'prompt:' + row['first_prompt_id'])
                             if row['prompt_id'] in seen:
@@ -198,6 +258,7 @@ def prepare(root, config_path, output):
                             connection.commit()
                     connection.commit()
                     print(json.dumps({'stage': 'normalized', 'source': source['id'], 'counts': dict(counts)}), flush=True)
+        selection = selected_groups(connection, groups, config.get('selection'))
         with ExitStack() as streams:
             handles = {}
             for split in ('train', 'dev', 'test'):
@@ -212,7 +273,11 @@ def prepare(root, config_path, output):
                     raise CorpusError('Conversation group crossed splits')
                 split_groups[group] = split
                 row = json.loads(value)
+                if selection is not None and group not in selection:
+                    counts['selection_excluded:' + row['source']['id']] += 1
+                    continue
                 row.update(split=split, group_id=pool.identity(group))
+                counts['selected_source:' + row['source']['id']] += 1
                 handles[split][0].write(native_training.canonical(row).decode() + '\n')
                 if row['original_response_complete']:
                     native = native_training.native_row(row, canonical_messages=True, split=split)
@@ -229,6 +294,8 @@ def prepare(root, config_path, output):
             raise CorpusError('Every registered split must be nonempty')
         files = {str(path.relative_to(output)): {'sha256': pool.digest(path), 'size_bytes': path.stat().st_size} for path in output.rglob('*.jsonl')}
         receipt = {'status': 'complete', 'scope': 'real_training_corpus_preparation', 'config_sha256': pool.digest(config_path), 'source_sha256': pool.digest(__file__), 'sources': config['sources'], 'counts': dict(counts), 'files': files, 'benchmark_exclusion_proofs': benchmark_proofs, 'splits_grouped': True, 'response_regime': 'original_and_prompt_only_inputs', 'native_original_files_contain_complete_pairs_only': True, 'target_regeneration_performed': False, 'native_tokenization_filter_performed': False, 'teacher_features': 'online native training; offline prototype tensors not required', 'training_started': False, 'completed_at_utc': datetime.now(timezone.utc).isoformat()}
+        if config.get('selection') is not None:
+            receipt['selection'] = config['selection']
         pool.atomic_json(output / 'completion.json', receipt)
     finally:
         connection.close()
