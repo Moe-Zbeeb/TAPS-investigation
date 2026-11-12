@@ -21,13 +21,15 @@
       "original": "data/corpora/sharegpt-ultrachat-20261110-v2",
       "original_completion_sha256": "42f408593e5d5774bd859e75fc11bc73ce69153d105a6b789b555e1ee743604c",
       "generated": "data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated",
-      "teacher_plan_identity_sha256": "dbf6acd428977385aa98b2f302241086764f28eb9e1cda1005af0f45ed3331af"
+      "teacher_plan_identity_sha256": "dbf6acd428977385aa98b2f302241086764f28eb9e1cda1005af0f45ed3331af",
+      "generated_completion_sha256": "94eeea149a025fdc7d08bfde4d9cb91403c89ed929738f9d8f0e86a424e830c6"
     },
     {
       "original": "data/corpora/rq1-math-code-original-20261112-v1",
       "original_completion_sha256": "c132befc2a0d4be999d42e771a7163ed3dad9a8b6220d09ff0fc344ce7a45d57",
       "generated": "data/corpora/rq1-math-code-teacher-20261112-v1-target-generated",
-      "teacher_plan_identity_sha256": "97dde81997dabd002466d6952b202d919bad2aba46aa324b4beececabc975961"
+      "teacher_plan_identity_sha256": "97dde81997dabd002466d6952b202d919bad2aba46aa324b4beececabc975961",
+      "generated_completion_sha256": "9e96390ec1c075367b09dfcdd7978f29937d6a1ff141abdb74b22bab3bc96187"
     }
   ]
 }

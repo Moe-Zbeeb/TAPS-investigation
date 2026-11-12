@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 import sqlite3
+import tempfile
 
 from . import native_training as native, pool
 
@@ -104,10 +105,20 @@ def verified_corpus(root, descriptor, target_identity):
     source_path, target_path = original / 'completion.json', generated / 'completion.json'
     source, target = read(source_path), read(target_path)
     require(pool.digest(source_path) == descriptor['original_completion_sha256'] and source['status'] == 'complete' and source['scope'] == 'real_training_corpus_preparation', 'Original pilot corpus identity differs')
-    require(target['status'] == 'complete' and target['scope'] == 'full_training_data_preparation' and target['plan_identity_sha256'] == descriptor['teacher_plan_identity_sha256'] and target['target_identity_sha256'] == target_identity and target['response_regime'] == 'target_generated', 'Generated pilot corpus identity differs')
-    generation_plan = read(target['plan_path'])
+    require(pool.digest(target_path) == descriptor['generated_completion_sha256'] and target['status'] == 'complete' and target['scope'] == 'full_training_data_preparation' and target['plan_identity_sha256'] == descriptor['teacher_plan_identity_sha256'] and target['target_identity_sha256'] == target_identity and target['response_regime'] == 'target_generated', 'Generated pilot corpus identity differs')
+    plan_path = Path(target['plan_path'])
+    generation_plan = read(plan_path)
+    identity = dict(generation_plan)
+    require(identity.pop('identity_sha256') == pool.identity(identity) == descriptor['teacher_plan_identity_sha256'] and generation_plan['target']['model_identity_sha256'] == target_identity and Path(generation_plan['corpus']).resolve() == original.resolve() and generation_plan['scope'] == 'full_training_data_preparation', 'Actual teacher plan identity differs')
     require(generation_plan['config_sha256'] == source['config_sha256'] and generation_plan['corpus_completion_sha256'] == pool.digest(source_path), 'Original/generated corpus binding differs')
-    proofs = []
+    proofs = [{'path': str(plan_path), 'sha256': pool.digest(plan_path)}]
+    for name, expected in generation_plan['scripts'].items():
+        path = plan_path.parent / 'inputs' / name
+        require(pool.digest(path) == expected, 'Frozen teacher source differs')
+        proofs.append({'path': str(path), 'sha256': expected})
+    for item in generation_plan['shards']:
+        require(pool.digest(item['path']) == item['sha256'], 'Frozen teacher input shard differs')
+        proofs.append({'path': item['path'], 'sha256': item['sha256']})
     for directory, receipt in ((original, source), (generated, target)):
         for split in ('train', 'dev', 'test'):
             path = directory / (split + '.jsonl')
@@ -143,7 +154,9 @@ def prepare(root, config_path, output):
     sizes = [0] * 8
     domains = {}
     try:
-        with closing(sqlite3.connect(output / 'pairs.sqlite')) as database:
+        with tempfile.TemporaryDirectory(prefix='taps-pilot-cache-') as scratch, closing(sqlite3.connect(Path(scratch) / 'pairs.sqlite')) as database:
+            database.execute('PRAGMA journal_mode=OFF')
+            database.execute('PRAGMA synchronous=OFF')
             database.execute('CREATE TABLE original (id TEXT PRIMARY KEY, domain TEXT, split TEXT, family TEXT, rep TEXT, priority TEXT, payload TEXT)')
             database.execute('CREATE TABLE targets (id TEXT PRIMARY KEY, payload TEXT)')
             for descriptor in config['corpora']:
@@ -169,6 +182,7 @@ def prepare(root, config_path, output):
                     database.commit()
                 for split in ('train', 'dev', 'test'):
                     for row in records(generated / (split + '.jsonl')):
+                        require(row['split'] == split, 'Generated row crossed physical split files')
                         database.execute('INSERT INTO targets VALUES (?,?)', (row['example_id'], json.dumps(row)))
                     database.commit()
             selected = 'SELECT id,domain,split,family,priority,payload FROM (SELECT *,ROW_NUMBER() OVER(PARTITION BY domain,family ORDER BY rep,id) AS representative FROM original) WHERE representative=1'
