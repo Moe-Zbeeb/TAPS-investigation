@@ -1,0 +1,52 @@
+{
+  "status": "approved",
+  "scope": "parallel_teacher_migration_only",
+  "reviewer": "independent-agent-validation-review",
+  "review_kind": "exact_source_implementation_review",
+  "reviewed_commit": "0293812",
+  "adapter_sha256": "7e7d6787b2e6e57e384b2eb5890b9247d35a6df714002926b6ff92cb90f57b5b",
+  "deploy_sha256": "37a91316ce090c5ebcdc8f6d3892f43e8719903520f91d754032dad7146c0a23",
+  "tests_sha256": "04ae85117e9827d8590acb974ae21a5c74ad03c6493e599ec0620eee78716573",
+  "scientific_training_authorized": false,
+  "blocking_issues": [],
+  "required_unchanged_core": {
+    "native_training_sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "validator_sha256": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49",
+    "scientific_evidence_review_sha256": "8c4d1d716c6f120559417c36b2ef813bb6e599908d6491d3f76954e8caede9c7"
+  },
+  "focused_tests": {
+    "command": "PYTHONPATH=src python3 -B -Werror -m unittest tests/test_corpus_parallel.py -q",
+    "tests": 13,
+    "skipped": 0,
+    "status": "passed",
+    "independently_executed": true
+  },
+  "resolved_findings": [
+    "Isolated hash-pinned original teacher package and stable per-example turn seeds",
+    "Source-field and user-turn validation, original-wins overlap policy, complete unique ordinal coverage",
+    "Preserved copied journals and incomplete-tail identities; immutable preparation attempts and migration intent",
+    "Migration and merge locks, no-clobber durable publication, busy-versus-complete distinction",
+    "Disk-backed outcome indexing and resumable merge publication",
+    "Bound bootstrap proofs, runtime/device attempt metadata and nonce-specific cross-node lock observations",
+    "Bounded retryable recovery, mixed CPU/GPU allowance counting and submitted-job/history crash adoption",
+    "Bounded NFS visibility grace for completed second-node jobs",
+    "New successor DAG queued before releasing migration; old pending successors retired in reverse dependency order"
+  ],
+  "limits": [
+    "This approves exact source, not an executed migration or completed corpus.",
+    "The protected holder and holding successor must remain untouched; only reverified owned data coordinator/workload steps and exact pending superseded jobs are in scope.",
+    "Live state must be refreshed. If the original corpus or coordinator has already completed, do not force the stale migration recipe.",
+    "Recovery is bounded and excludes user cancellation, ordinary computation failure and out-of-memory failure. Those states retain chunks and block successors.",
+    "The in-process supervisor uses a seven-day bound, while the reviewed deployment requests two-day CPU supervisor/merge limits; Slurm time limits remain an earlier operational bound.",
+    "Changed batching, hardware and cache history do not imply byte-identical FP16 teacher responses or a guaranteed twofold speedup.",
+    "No native scientific admission, numerical policy, proof or historical comparison is overridden. Existing data QA, profile and full-training gates remain required."
+  ],
+  "execution_evidence_still_required": [
+    "Fresh live holder/successor, coordinator/workload-step, pending-job ownership and total high-priority GPU-usage verification",
+    "Eight actual second-node GPU proofs covering 512 registered outcomes with positive generation and a completed response on every GPU, matching model/tokenizer/runtime/settings and physical bindings before old work is stopped",
+    "Actual two-node NFS lock proof and immutable stopped-boundary snapshot/plan publication",
+    "Complete validated chunk provenance and exactly 540107 original ordinals once in a fresh merged corpus, with preserved exclusions and original responses",
+    "Successful existing native corpus/vocabulary QA and subsequent unchanged guarded training stages"
+  ],
+  "reported_execution_status": "SSH/Duo timed out; parent reports no deployment or cluster-job changes. No new network query was used for this final decision."
+}
