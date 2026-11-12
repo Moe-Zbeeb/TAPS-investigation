@@ -1,0 +1,60 @@
+{
+  "status": "approved",
+  "scope": "protected_profile_calibration_only",
+  "review_type": "local_source_review",
+  "reviewed_commit": "c985ea15be60517d3012e496d7b2ae8a2d775df4",
+  "adapter_sha256": "8f03015a042ef5a8d712cf08a735557f6b89ffbe9ae2f477c14aec8b1a745415",
+  "source_hashes": {
+    "experiments/protected-training-20261112/profile.py": "8f03015a042ef5a8d712cf08a735557f6b89ffbe9ae2f477c14aec8b1a745415",
+    "src/taps_rebuild/data_queue.py": "ac436e15f94a5ac40263db9d4fe87d1cf40d4f32fab43805469bc4b7d1c0970d",
+    "src/taps_rebuild/attach.py": "376d2e5eb8936812b1b53e45adac8983bd6ceed226329fa355fd0e50a1868b6b",
+    "src/taps_rebuild/training_queue.py": "4576e22bd456e6e51e2fcf5bb09b2dde74f074d57fcda202c3eed5cd4ffc4e01",
+    "src/taps_rebuild/native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "src/taps_rebuild/admission_v2.py": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49",
+    "src/taps_rebuild/numerical_validation.py": "cb0546c268c09d73e15f62bde6d55a9a3437d26cce24ef464c14a9138d84629a"
+  },
+  "blocking_issues": [],
+  "findings": [
+    {
+      "file": "experiments/protected-training-20261112/profile.py",
+      "line": 17,
+      "decision": "CPU-Slurm admission, frozen bundle hashes, config hash and native-plan hash are checked before attachment."
+    },
+    {
+      "file": "src/taps_rebuild/data_queue.py",
+      "line": 12,
+      "decision": "Live current-holder authority checks bind owned RUNNING deep10 eight-GPU high-priority allocation; no saved job ID alone is trusted."
+    },
+    {
+      "file": "experiments/protected-training-20261112/profile.py",
+      "line": 26,
+      "decision": "Requires at least eight hours remaining after a sixty-second reserve, then requests an exclusive eight-GPU step bounded to seven hours fifty minutes. No holder or successor mutation is issued."
+    },
+    {
+      "file": "src/taps_rebuild/admission_v2.py",
+      "line": 267,
+      "decision": "Unchanged scientific gate enforces the exact 200-update profile contract; unchanged native launch rejects duplicate active or previously launched plans."
+    }
+  ],
+  "approved_use": "Separate fresh-run real-data 200-update engineering calibration using the already approved pipeline core, existing audited corpus and distinct output/model paths.",
+  "scientific_training_authorized": false,
+  "runtime_evidence_reviewed": false,
+  "checks": [
+    "Read local source and supporting admission/holder/launch safeguards.",
+    "Verified approved native/validator/numerical hashes remain unchanged.",
+    "Parsed wrapper with Python ast.parse; no execution or network access."
+  ],
+  "execution_evidence_still_required": [
+    "Retain exact frozen calibration bundle, fresh run/config/native-plan identities and original audited corpus/vocabulary bindings.",
+    "Retain actual protected-holder step identity, all eight physical GPU/rank bindings, terminal launch receipt and all eight successful 200-update rank receipts.",
+    "Retain timing phases, processed-token counts and telemetry, including missing samples or errors; queued or RUNNING state is not proof of optimizer progress.",
+    "Keep original primary profile and full-training dependency chain authoritative and unchanged; this calibration does not authorize another forty-epoch run."
+  ],
+  "limitations": [
+    "This is source approval only; supplied cluster status was not independently queried or certified in this review.",
+    "Same recipe, seed and corpus make this an engineering calibration, not an independent scientific seed, trained-quality result or completed full training.",
+    "Whole-device sampled memory is not an exact allocator peak. Concurrent shared storage, startup and cache effects limit isolated throughput comparisons.",
+    "The fixed time guard bounds the requested step, not completion: delayed step start, external cancellation or coordinator failure can interrupt it and leave an incomplete receipt.",
+    "Rough full-recipe projections must retain startup and evaluation/checkpoint/sequence-mix caveats."
+  ]
+}

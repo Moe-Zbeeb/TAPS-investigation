@@ -1,0 +1,74 @@
+{
+  "code_commit": "c985ea1",
+  "jobs": {
+    "prepare": {
+      "job_id": "2216594",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--partition=high-priority",
+        "--qos=spec-priority",
+        "--nodes=1",
+        "--ntasks=1",
+        "--nodelist=deep-chungus-6",
+        "--cpus-per-task=16",
+        "--mem=64G",
+        "--kill-on-invalid-dep=yes",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--time=04:00:00",
+        "--job-name=taps-calibration-prep",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/protected-calibration-20261112-v1/prepare-%j.log",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/protected-calibration-20261112-v1/prepare.sh"
+      ]
+    },
+    "bind": {
+      "job_id": "2216595",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--partition=high-priority",
+        "--qos=spec-priority",
+        "--nodes=1",
+        "--ntasks=1",
+        "--nodelist=deep-chungus-6",
+        "--cpus-per-task=16",
+        "--mem=64G",
+        "--kill-on-invalid-dep=yes",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--time=04:00:00",
+        "--job-name=taps-calibration-bind",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/protected-calibration-20261112-v1/bind-%j.log",
+        "--dependency=afterok:2216594",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/protected-calibration-20261112-v1/bind.sh"
+      ]
+    },
+    "attach": {
+      "job_id": "2216596",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--partition=high-priority",
+        "--qos=spec-priority",
+        "--nodes=1",
+        "--ntasks=1",
+        "--nodelist=deep-chungus-6",
+        "--cpus-per-task=16",
+        "--mem=64G",
+        "--kill-on-invalid-dep=yes",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--time=08:00:00",
+        "--job-name=taps-calibration-profile",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/protected-calibration-20261112-v1/attach-%j.log",
+        "--dependency=afterok:2216595",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/protected-calibration-20261112-v1/attach.sh"
+      ]
+    }
+  },
+  "protected_holder_and_main_training_queue_modified": false
+}

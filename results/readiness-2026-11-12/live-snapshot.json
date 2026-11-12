@@ -1,0 +1,69 @@
+{
+  "checked_at_utc": "2026-11-12T10:48:29.381015+00:00",
+  "jobs": "2216035|high-priority|spec-priority|taps-full-train|PENDING|gres:gpu:a100:8|(Dependency)\n2215920|high-priority|spec-priority|deep10-hold|PENDING|gres:gpu:a100:8|(Dependency)\n2216596|high-priority|spec-priority|taps-calibration-profile|PENDING|N/A|(Dependency)\n2216595|high-priority|spec-priority|taps-calibration-bind|PENDING|N/A|(Dependency)\n2216036|high-priority|spec-priority|taps-full-continue|PENDING|N/A|(Dependency)\n2216034|high-priority|spec-priority|taps-v2-full-prep|PENDING|N/A|(Dependency)\n2216033|high-priority|spec-priority|taps-v2-profile|RUNNING|gres:gpu:a100:8|deep-chungus-11\n2212580|high-priority|spec-priority|deep10-hold|RUNNING|gres:gpu:a100:8|deep-chungus-10\n2216594|high-priority|spec-priority|taps-calibration-prep|RUNNING|N/A|deep-chungus-6\n",
+  "protected_holder_steps": "StepId=2212580.batch UserId=29562 StartTime=2026-11-11T07:41:58 TimeLimit=UNLIMITED State=RUNNING Partition=high-priority NodeList=deep-chungus-10 Nodes=1 CPUs=0 Tasks=1 Name=batch Network=(null) TRES=(null) ResvPorts=(null) CPUFreqReq=Default SrunHost:Pid=(null):0\n",
+  "primary_profile_latest_gpu_sample": {
+    "elapsed_seconds": 436.4089102167636,
+    "at_utc": "2026-11-12T10:48:26.728667+00:00",
+    "gpus": [
+      {
+        "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c",
+        "utilization_percent": 0.0,
+        "used_memory_mib": 1.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 47.55
+      },
+      {
+        "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2",
+        "utilization_percent": 0.0,
+        "used_memory_mib": 1.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 47.04
+      },
+      {
+        "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19",
+        "utilization_percent": 0.0,
+        "used_memory_mib": 1.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 52.44
+      },
+      {
+        "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c",
+        "utilization_percent": 0.0,
+        "used_memory_mib": 1.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 47.22
+      },
+      {
+        "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c",
+        "utilization_percent": 0.0,
+        "used_memory_mib": 1.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 48.54
+      },
+      {
+        "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed",
+        "utilization_percent": 0.0,
+        "used_memory_mib": 1.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 43.26
+      },
+      {
+        "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c",
+        "utilization_percent": 0.0,
+        "used_memory_mib": 1.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 45.03
+      },
+      {
+        "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8",
+        "utilization_percent": 0.0,
+        "used_memory_mib": 10044.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 82.64
+      }
+    ]
+  },
+  "full_training_started": false,
+  "note": "A Slurm running profile may still be performing CPU preflight; GPU allocations are distinct from active computation. No second-node migration was needed because original generation completed."
+}

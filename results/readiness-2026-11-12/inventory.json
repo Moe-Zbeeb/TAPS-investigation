@@ -1,0 +1,26 @@
+{
+  "generation-completion.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/completion.json",
+    "sha256": "7697ae22c30235a6ad07cb052b17110319cb7f47a8f52bb5b23442d6ab94df8f"
+  },
+  "native-data-qa.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-data-qa/full-20261111-v1/report.json",
+    "sha256": "c8a7ce71b81c5a7e7e5b4ac38c35cf453e116d6ec59d111aff03114454b0ffc3"
+  },
+  "profile-preparation.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-pipeline-20261111-v2/status.json",
+    "sha256": "24272253ec06da362575cf22871d77922af3ff49686895216f88dc8055b96418"
+  },
+  "calibration-submission.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/protected-calibration-20261112-v1/submission.json",
+    "sha256": "60e8bb25087e7b191ed862d3ea1c9f7c4d154047717b4673f2889e6aa0af0887"
+  },
+  "calibration-bundle.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/protected-calibration-20261112-v1/bundle.json",
+    "sha256": "283d9328c06d825dac3cd82e52580a7eeb96e6c8c1bb95d6fa9fea7d5998040a"
+  },
+  "live-snapshot.json": {
+    "remote_path": null,
+    "sha256": "901974b08ab012f413bc06e0a287f6b47f4d7653470b770af113b6fdfb18f696"
+  }
+}

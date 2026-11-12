@@ -1,0 +1,48 @@
+{
+  "completed_at_utc": "2026-11-12T06:41:57.304345+00:00",
+  "corpus_output": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated",
+  "counts": {
+    "accepted:dev": 5009,
+    "accepted:test": 5009,
+    "accepted:train": 477805,
+    "excluded:prompt_exceeds_generation_context": 1076,
+    "excluded:response_censored_at_generation_limit": 51208,
+    "processed": 540107
+  },
+  "files": {
+    "dev.jsonl": {
+      "sha256": "8408f87ff049d878f2686603cd4e0ef057d726443f479ebb60b8aa68dc7daf9e",
+      "size_bytes": 51105263
+    },
+    "native-dev.jsonl": {
+      "sha256": "6bccf32f970e0fd75f3e64d6f9badf125e0cd9b15dc867d6c33a225a5b0530f7",
+      "size_bytes": 47180878
+    },
+    "native-test.jsonl": {
+      "sha256": "50b95658835a4bc92b9345a3f49a5156d3e41913aff55314a731923dcc07a1b5",
+      "size_bytes": 47199091
+    },
+    "native-train.jsonl": {
+      "sha256": "9425a337fc350eddf4b8dcc0acb505ad12781021f21e67bc864f4aa51c19991c",
+      "size_bytes": 4458747409
+    },
+    "test.jsonl": {
+      "sha256": "1a9fa8040aee692dd1d60cdc868836f9ae76439d67a97da050aceda34c393f81",
+      "size_bytes": 51132560
+    },
+    "train.jsonl": {
+      "sha256": "391ffb376e40d9684ef917bb307e8a43429952c586d231c8e157d51ce925cdd5",
+      "size_bytes": 4834537176
+    }
+  },
+  "native_tokenization_filter_performed": false,
+  "plan_identity_sha256": "dbf6acd428977385aa98b2f302241086764f28eb9e1cda1005af0f45ed3331af",
+  "plan_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/plan.json",
+  "response_regime": "target_generated",
+  "scope": "full_training_data_preparation",
+  "status": "complete",
+  "target_id": "llama31_instruct_8b",
+  "target_identity_sha256": "7c3d0c33c2a43a10ba658bdca906de7412050d8c094083a34e0d6fced7c94b6c",
+  "teacher_features": "online native training",
+  "training_started": false
+}
