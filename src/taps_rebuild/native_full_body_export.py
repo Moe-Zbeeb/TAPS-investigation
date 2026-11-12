@@ -37,7 +37,7 @@ def prepare(plan_path, output):
     require(native.tensor_state_identity(state, torch) == native.tensor_state_identity({name: raw['module'][name].to(value.dtype) for name, value in state.items()}, torch), 'Native export does not byte-exactly match its complete raw checkpoint')
     require(native.digest(directory / 'config.json') == native.UPSTREAM['config.json'], 'Native export configuration differs')
     files = {name: {'sha256': native.digest(directory / name), 'size_bytes': (directory / name).stat().st_size} for name in ('config.json', 'pytorch_model.bin')}
-    receipt = {'status': 'complete_corrected_native_export_inventory_requires_stock_inference', 'plan': {'path': str(Path(plan_path).resolve()), 'sha256': native.digest(plan_path)}, 'plan_identity_sha256': plan['plan_identity_sha256'], 'source_sha256': corrected.sources(), 'export_directory': str(directory), 'files': files, 'trainable_state_identity_sha256': native.tensor_state_identity(source, torch), 'vocabulary_cache_sha256': plan['config']['full_body_v3']['vocabulary_cache']['sha256'], 'trainable_names': sorted(source), 'raw_model_source': {'path': str(raw_path), 'sha256': native.digest(raw_path)}, 'raw_checkpoint_manifest': {'path': str(checkpoint / 'manifest.json'), 'sha256': latest['manifest_sha256']}, 'scientific_training_admitted': False}
+    receipt = {'status': 'complete_corrected_native_export_inventory_requires_stock_inference', 'plan': {'path': str(Path(plan_path).resolve()), 'sha256': native.digest(plan_path)}, 'plan_identity_sha256': plan['plan_identity_sha256'], 'source_sha256': corrected.sources(), 'helper': {'path': str(Path(__file__).resolve()), 'sha256': native.digest(__file__)}, 'export_directory': str(directory), 'files': files, 'trainable_state_identity_sha256': native.tensor_state_identity(source, torch), 'vocabulary_cache_sha256': plan['config']['full_body_v3']['vocabulary_cache']['sha256'], 'trainable_names': sorted(source), 'raw_model_source': {'path': str(raw_path), 'sha256': native.digest(raw_path)}, 'raw_checkpoint_manifest': {'path': str(checkpoint / 'manifest.json'), 'sha256': latest['manifest_sha256']}, 'scientific_training_admitted': False}
     require(not Path(output).exists(), 'Native export receipt already exists')
     pool.atomic_json(output, receipt)
     return receipt
@@ -48,12 +48,13 @@ def stock(plan_path, receipt_path, output):
     corrected.install()
     plan = native.load_plan(plan_path)
     receipt = read(receipt_path)
-    require(receipt['plan']['sha256'] == native.digest(plan_path) and receipt['source_sha256'] == corrected.sources(), 'Native export receipt belongs to other source/plan')
+    require(receipt['status'] == 'complete_corrected_native_export_inventory_requires_stock_inference' and receipt['plan_identity_sha256'] == plan['plan_identity_sha256'] and receipt['plan']['sha256'] == native.digest(plan_path) and receipt['source_sha256'] == corrected.sources() and receipt['helper'] == {'path': str(Path(__file__).resolve()), 'sha256': native.digest(__file__)}, 'Native export receipt belongs to other source/plan/helper')
     export = Path(receipt['export_directory'])
     require(all(native.digest(export / name) == item['sha256'] for name, item in receipt['files'].items()), 'Native export bytes changed')
     import torch
     from transformers import AutoTokenizer
     rank = int(os.environ['LOCAL_RANK'])
+    require(int(os.environ['RANK']) == rank and not (Path(output) / ('rank-' + str(rank) + '.json')).exists(), 'Native stock evidence rank is mismatched or already recorded')
     require(torch.cuda.device_count() == 8 and torch.cuda.get_device_capability(rank) == (8, 0), 'Native stock export requires all eight A100 GPUs')
     torch.cuda.set_device(rank)
     checkout = Path(plan['project_root']) / 'repos/EAGLE'
@@ -69,7 +70,7 @@ def stock(plan_path, receipt_path, output):
         autoregressive = model.naivegenerate(prompt.clone(), temperature=0, max_new_tokens=16, max_length=2048, is_llama3=True)
     torch.cuda.synchronize(rank)
     require(speculative.ndim == autoregressive.ndim == 2 and speculative.shape[0] == autoregressive.shape[0] == 1 and min(speculative.shape[1], autoregressive.shape[1]) > prompt.shape[1] and torch.equal(speculative[:, :prompt.shape[1]], prompt) and torch.equal(autoregressive[:, :prompt.shape[1]], prompt), 'Native stock export did not produce genuine continuations')
-    result = {'status': 'passed_stock_corrected_native_export_generation', 'scope': 'one synthetic-prompt compatibility test; no quality/speed/losslessness claim', 'rank': rank, 'plan_identity_sha256': plan['plan_identity_sha256'], 'source_sha256': corrected.sources(), 'export_receipt': {'path': str(Path(receipt_path).resolve()), 'sha256': pool.digest(receipt_path)}, 'stock_source_files': sources, 'prompt_ids': prompt[0].tolist(), 'speculative_ids': speculative[0].tolist(), 'autoregressive_ids': autoregressive[0].tolist(), 'tokens_equal': torch.equal(speculative, autoregressive), 'generation_wall_seconds': time.monotonic() - started}
+    result = {'status': 'passed_stock_corrected_native_export_generation', 'scope': 'one synthetic-prompt compatibility test; no quality/speed/losslessness claim', 'rank': rank, 'plan_identity_sha256': plan['plan_identity_sha256'], 'source_sha256': corrected.sources(), 'helper': {'path': str(Path(__file__).resolve()), 'sha256': native.digest(__file__)}, 'export_receipt': {'path': str(Path(receipt_path).resolve()), 'sha256': pool.digest(receipt_path)}, 'stock_source_files': sources, 'prompt_ids': prompt[0].tolist(), 'speculative_ids': speculative[0].tolist(), 'autoregressive_ids': autoregressive[0].tolist(), 'tokens_equal': torch.equal(speculative, autoregressive), 'generation_wall_seconds': time.monotonic() - started}
     pool.atomic_json(Path(output) / ('rank-' + str(rank) + '.json'), result)
     return result
 

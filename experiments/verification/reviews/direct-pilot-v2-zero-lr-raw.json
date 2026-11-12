@@ -1,0 +1,1649 @@
+{
+  "artifact_inventory": {
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/eagle3-llama31-8b/pytorch_model.bin": {
+      "sha256": "16d5bf9524108d59f68c7af196edd69018c29316cb6a2fb491cfd2a393ee1cf4",
+      "size_bytes": 849768795
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/latest": {
+      "sha256": "4ba69735ca53765ed6a709edb56c6ea236b7193a3b29a6b390c346f0f4340e4e",
+      "size_bytes": 5
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/manifest.json": {
+      "sha256": "0fe6b34868d11ce61c2dedcda1143651b377a2dbba533ba51b4c9c263f0ff4c2",
+      "size_bytes": 4476
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/rank-0.pt": {
+      "sha256": "5d5e199987c6135a52ce8f9343d0150cc3b5059b6790fac022d66dda58fc856e",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/rank-1.pt": {
+      "sha256": "5b090340e86d28930bc1dca62c5f30d163b312f0d487860497750f9832e1aa8d",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/rank-2.pt": {
+      "sha256": "c5f536810bd392e8a4eb92f6937e68902f8b208b480ee41f5700f514b22a5795",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/rank-3.pt": {
+      "sha256": "3a06826fd665f614498da193741db065e55b1aaf24efbf984af7a008b68ba14e",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/rank-4.pt": {
+      "sha256": "80a230b0796e5e0b307a375e3142cedf0e5e205581a52f5aa26d51649501a227",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/rank-5.pt": {
+      "sha256": "252f1379ab924e917c0cff9e8a8f5d73e83baae5b912bc774ce40df0fbd68fe1",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/rank-6.pt": {
+      "sha256": "845a1441bc13cef2e40f8be3e0f8e8a4dca09406f21e03f6d6991538a3c3dee2",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/rank-7.pt": {
+      "sha256": "2440b52395dee8358503cd129b53bb52946724451287969035554f275743fcc2",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/state/mp_rank_00_model_states.pt": {
+      "sha256": "a8a8839f6c6fc375edef42108fed5612629df1c0b96f0cee3436eb7fdc5ecf4a",
+      "size_bytes": 849798212
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/state/zero_pp_rank_0_mp_rank_00_optim_states.pt": {
+      "sha256": "5bb37f6b1984d9fd4c56a16582fba4aa1ec150c22a7e1bdc23e84265c2b5182f",
+      "size_bytes": 637038317
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/state/zero_pp_rank_1_mp_rank_00_optim_states.pt": {
+      "sha256": "5c640409d6cfbb5bf2c10f589691b0584bdbbc48e18f612ba2a418506a6d0ef6",
+      "size_bytes": 637038189
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/state/zero_pp_rank_2_mp_rank_00_optim_states.pt": {
+      "sha256": "6f11540c814cd5db6e80df3f181979464ca71908f7fdc76880cb2b93aeae119b",
+      "size_bytes": 637038189
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/state/zero_pp_rank_3_mp_rank_00_optim_states.pt": {
+      "sha256": "b2fb512e7a86b1ee5b2e86faedfb1d010cf08d41eca6d744e4e2b7b8143f815c",
+      "size_bytes": 637038189
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/state/zero_pp_rank_4_mp_rank_00_optim_states.pt": {
+      "sha256": "68e2b59ddffefa427a38871276c9073e44df5beb11cf3def89ebc69c793bc06b",
+      "size_bytes": 637038381
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/state/zero_pp_rank_5_mp_rank_00_optim_states.pt": {
+      "sha256": "9ea57da8ca9c6bbda5077a5df5a809c37b485b6ade1695420abd8eb004d1e5c2",
+      "size_bytes": 637038189
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/state/zero_pp_rank_6_mp_rank_00_optim_states.pt": {
+      "sha256": "d082c0abcbb0fc0a8547b24aca2a1f3672f494c24d664de14de555dcc4849eb5",
+      "size_bytes": 637038125
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/state/zero_pp_rank_7_mp_rank_00_optim_states.pt": {
+      "sha256": "aed5007d58eb288d883a785033501058de74634195937a7728863766690bef87",
+      "size_bytes": 637038125
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2/zero_to_fp32.py": {
+      "sha256": "46497565ccf2b4a8b1f6f18c8341042f3749605a94335c81f69df1bd268af64f",
+      "size_bytes": 33272
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/latest": {
+      "sha256": "4ba69735ca53765ed6a709edb56c6ea236b7193a3b29a6b390c346f0f4340e4e",
+      "size_bytes": 5
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/manifest.json": {
+      "sha256": "06eb391101a71bd6f62b5b76afdc735ed1d3916dfb3bb675b7acbc2b76f761fe",
+      "size_bytes": 4474
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/rank-0.pt": {
+      "sha256": "85d6a8314b3380130ff6184a09a2cdae19b3397b1a810fef84898810de561074",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/rank-1.pt": {
+      "sha256": "8f742dab5b664fde4e3f815c4827c3843b8df45b70fe08908f9a06faafa2893a",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/rank-2.pt": {
+      "sha256": "fc6426558e20c7be62b2590c3437611a0ff81bcb5f8d5f7732bf9534b5b607f2",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/rank-3.pt": {
+      "sha256": "96e0dbba94694bca0062289f3dc45afa8457f48497d7213b867034156cb2a7c4",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/rank-4.pt": {
+      "sha256": "84776ff5a9c4929846605a2919e450078fab6378fac9a5b878d23169082ef9eb",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/rank-5.pt": {
+      "sha256": "8ceeb5c34d18657bed0590b4ba6511ff385a4b6d5a7f3bdc9ec8f625b89d04df",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/rank-6.pt": {
+      "sha256": "53c6227081a8e3c48fa6ccf9f2e57e2ca1efc01b0a84c290f4b279888a29758e",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/rank-7.pt": {
+      "sha256": "023a3563ccf22c6c297645dc6ef9868a979b43430b829b2d4d458ad4f62a5f0d",
+      "size_bytes": 14674
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/state/mp_rank_00_model_states.pt": {
+      "sha256": "7eaa77bb30fccbaa16d07ec1f8f7fbff35eb0d0eb46f2bd2ebaea4f9b660c1a6",
+      "size_bytes": 849798212
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/state/zero_pp_rank_0_mp_rank_00_optim_states.pt": {
+      "sha256": "c27d407ef743667294ba1c286356ab518663f8d6e23022f5406aaa8c93842df7",
+      "size_bytes": 637038317
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/state/zero_pp_rank_1_mp_rank_00_optim_states.pt": {
+      "sha256": "9aa22d2b7339005c0c27fdc539df0e0c19d8cf3e4cdeab967de751f84e15ca2e",
+      "size_bytes": 637038189
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/state/zero_pp_rank_2_mp_rank_00_optim_states.pt": {
+      "sha256": "76bfd8431ebcea72c65cf7262e167e1081e0a56c0f6ce9a84a06174a09ffc41c",
+      "size_bytes": 637038189
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/state/zero_pp_rank_3_mp_rank_00_optim_states.pt": {
+      "sha256": "eaa5e39c9599723248b9200a6c6e80e910886b2e95c9bb2c6ec89fc97031b846",
+      "size_bytes": 637038189
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/state/zero_pp_rank_4_mp_rank_00_optim_states.pt": {
+      "sha256": "a227e0dc7e72ed13b21b0946378eb7142b3ef73911bcb5a04213dbf1ad9282eb",
+      "size_bytes": 637038381
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/state/zero_pp_rank_5_mp_rank_00_optim_states.pt": {
+      "sha256": "e84e3196b3e40f436406355f864acd5fd663bff242789107f0fe846c40fe7369",
+      "size_bytes": 637038189
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/state/zero_pp_rank_6_mp_rank_00_optim_states.pt": {
+      "sha256": "fb476634d016fec5f7c39fceaa6d6c32ebaf659a6604c67f212173384defa6aa",
+      "size_bytes": 637038125
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/state/zero_pp_rank_7_mp_rank_00_optim_states.pt": {
+      "sha256": "96ce91d51b47b61afaff4c8e6efc29b23a9658d9ff24137ea2b4f9cdc925e6d8",
+      "size_bytes": 637038125
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2/zero_to_fp32.py": {
+      "sha256": "46497565ccf2b4a8b1f6f18c8341042f3749605a94335c81f69df1bd268af64f",
+      "size_bytes": 33272
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/manifest.json": {
+      "sha256": "edd77dcdc0e91ce53c38506044a6e992fa601ca5d105a34bd3d2ffd83147c7b5",
+      "size_bytes": 105842
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-original-s0.json": {
+      "sha256": "f76010bfadefb12fe559ac3c384e3e478078c4e1f8284497c07691466732d6b8",
+      "size_bytes": 15436
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-original-s1.json": {
+      "sha256": "d6e967e17d25e88f0210dd304fcf883d6dd61be1a0e8c7d2530525f34d8a739b",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-original-s2.json": {
+      "sha256": "0336591d77ceb624d447539296fcb1878358b667916aeb904d1f8c5c99ce863d",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-target-s0.json": {
+      "sha256": "1915ee323361ad841376347b1293adb5c72d1de5151f4390afc3ab3af09cccd5",
+      "size_bytes": 15428
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-target-s1.json": {
+      "sha256": "fb62b8d96883a64c4aa59c31b3ff6aeafada7cbe6dd6613cadaa00f7e1794f13",
+      "size_bytes": 15429
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-target-s2.json": {
+      "sha256": "71c3f164f298e18dfd08bfff07d7e6781a81623e299db79d2f140f2d242dea6b",
+      "size_bytes": 15429
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-original-s0.json": {
+      "sha256": "195e3357520276749c57ed7e7c5799ed8bff8ec269bc4bd498876adceec6d258",
+      "size_bytes": 15436
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-original-s1.json": {
+      "sha256": "44e9b052a5ec38f7731e98c9be5797bcecd50d519b7d6a1fd4080f68fcee0215",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-original-s2.json": {
+      "sha256": "6ff14f13639bbf82db963088c0b409be51fd4f2c43d0c5139243a84295aaa426",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-target-s0.json": {
+      "sha256": "670510da519e955b0e3ea32c908a8fe6ffcdc6e405827ab1463084d5cf54c213",
+      "size_bytes": 15428
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-target-s1.json": {
+      "sha256": "8cc335a4772b5270303362bbf370439acef88eba4a0ace1a3628f7f757e6df50",
+      "size_bytes": 15429
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-target-s2.json": {
+      "sha256": "1850b8d12eab2e6f5e98e06501e0f696150c5df9e86c3173218ae6f00ea234a5",
+      "size_bytes": 15429
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-original-s0.json": {
+      "sha256": "b9a8cf22050c7ad0c3244b2273514b4015af1c07c56c24aff868478870a5b2c1",
+      "size_bytes": 15508
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-original-s1.json": {
+      "sha256": "f28bda0387394bebaa736e239800b10699102726164975a3adc24fbb7e22e7b3",
+      "size_bytes": 15509
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-original-s2.json": {
+      "sha256": "d1885a3d9f7fdf6b8b2f98afc572e6ea1d97aed16ae6a87c9597642eb1de3742",
+      "size_bytes": 15509
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-target-s0.json": {
+      "sha256": "d4ccbe7b0ed79734e6205a8a071bbd28efa02913fdcbbc90872b7da0258b9983",
+      "size_bytes": 15500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-target-s1.json": {
+      "sha256": "ecc56cc7f0f2541ebd26d92e4863b7bb40b30e2c9d56b68faac76b968a92fa2e",
+      "size_bytes": 15500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-target-s2.json": {
+      "sha256": "9366a25cb7529dacc7fff80e8df384a3275c76b4625f8735cbe518909b30931b",
+      "size_bytes": 15501
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-original-s0.json": {
+      "sha256": "43a3f01dc1c2cccc44cd5a65a1a5df392f506c14e5edaaff29aef6b9100ebc66",
+      "size_bytes": 15436
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-original-s1.json": {
+      "sha256": "6b1af68bd0bcdfaefadafb0969cc942f94c598b96afb3cccf57e6f78d7a6e773",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-original-s2.json": {
+      "sha256": "aa3a6d6c84fd9da0453e4fd0e76db94c4858bf2f64399d5e2bd222340d5ee926",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-target-s0.json": {
+      "sha256": "b9015eabf31b4cfe860ace42e956987bc0393aa12aaf56c15b03312f4b3d69d7",
+      "size_bytes": 15428
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-target-s1.json": {
+      "sha256": "df5d45d460d6b0f5f6358e45b8d9b0a9ac01f9610b50bf906c478f20faa7b921",
+      "size_bytes": 15428
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-target-s2.json": {
+      "sha256": "fbc82f4acfe44442e8c6dc04c34b4781b567d0da059902c3600ed1ef0cc7ec9d",
+      "size_bytes": 15429
+    }
+  },
+  "artifact_inventory_sha256": "017c09e43feaa59ac06595ced4e317082e532ec2139826c60ce9050224b952f6",
+  "automatic_admission_emitted": false,
+  "cpu_only": true,
+  "diagnostic_source_sha256": "4de754a2067f5d23274435e7b276e87c85cae5e56295c2a00ee8c96451e29166",
+  "prefixes": [
+    {
+      "all13_named_adam_first_second_nonzero": true,
+      "all13_numeric_masters_unchanged": true,
+      "all_master_bit_changes_are_signed_zero": true,
+      "all_master_casts_bitwise_match_visible": true,
+      "all_visible_bit_changes_are_signed_zero": true,
+      "checkpoint": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/checkpoints/step-2",
+      "fp32_master_and_adam_differences": {
+        "fc.weight": {
+          "all_finite": true,
+          "bitwise_changed": 17,
+          "elements": 50331648,
+          "first_moment_nonzero": 50331648,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 6,
+              "elements": 22145024,
+              "first_moment_nonzero": 22145024,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 30941184,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 4,
+              "second_moment_nonzero": 22145024,
+              "signed_zero_only_bit_changes": 6
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 11,
+              "elements": 28186624,
+              "first_moment_nonzero": 28186624,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 22145024,
+              "rank": 5,
+              "second_moment_nonzero": 28186624,
+              "signed_zero_only_bit_changes": 11
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 50331648,
+          "signed_zero_only_bit_changes": 17
+        },
+        "lm_head.weight": {
+          "all_finite": true,
+          "bitwise_changed": 94,
+          "elements": 131072000,
+          "first_moment_nonzero": 131072000,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 17,
+              "elements": 24899584,
+              "first_moment_nonzero": 24899584,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 28186624,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 5,
+              "second_moment_nonzero": 24899584,
+              "signed_zero_only_bit_changes": 17
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 32,
+              "elements": 53086208,
+              "first_moment_nonzero": 53086208,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 24899584,
+              "rank": 6,
+              "second_moment_nonzero": 53086208,
+              "signed_zero_only_bit_changes": 32
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 45,
+              "elements": 53086208,
+              "first_moment_nonzero": 53086208,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 77985792,
+              "rank": 7,
+              "second_moment_nonzero": 53086208,
+              "signed_zero_only_bit_changes": 45
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 131072000,
+          "signed_zero_only_bit_changes": 94
+        },
+        "midlayer.hidden_norm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "elements": 4096,
+          "first_moment_nonzero": 4096,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 0,
+              "elements": 4096,
+              "first_moment_nonzero": 4096,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 30924800,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 4,
+              "second_moment_nonzero": 4096,
+              "signed_zero_only_bit_changes": 0
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 4096,
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.input_layernorm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "elements": 4096,
+          "first_moment_nonzero": 4096,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 0,
+              "elements": 4096,
+              "first_moment_nonzero": 4096,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 30928896,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 4,
+              "second_moment_nonzero": 4096,
+              "signed_zero_only_bit_changes": 0
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 4096,
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.mlp.down_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 21,
+          "elements": 58720256,
+          "first_moment_nonzero": 58720256,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 12,
+              "elements": 27795456,
+              "first_moment_nonzero": 27795456,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 25290752,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 3,
+              "second_moment_nonzero": 27795456,
+              "signed_zero_only_bit_changes": 12
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 9,
+              "elements": 30924800,
+              "first_moment_nonzero": 30924800,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 27795456,
+              "rank": 4,
+              "second_moment_nonzero": 30924800,
+              "signed_zero_only_bit_changes": 9
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 58720256,
+          "signed_zero_only_bit_changes": 21
+        },
+        "midlayer.mlp.gate_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 24,
+          "elements": 58720256,
+          "first_moment_nonzero": 58720256,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 16,
+              "elements": 39063552,
+              "first_moment_nonzero": 39063552,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 14022656,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 1,
+              "second_moment_nonzero": 39063552,
+              "signed_zero_only_bit_changes": 16
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 8,
+              "elements": 19656704,
+              "first_moment_nonzero": 19656704,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 39063552,
+              "rank": 2,
+              "second_moment_nonzero": 19656704,
+              "signed_zero_only_bit_changes": 8
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 58720256,
+          "signed_zero_only_bit_changes": 24
+        },
+        "midlayer.mlp.up_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 31,
+          "elements": 58720256,
+          "first_moment_nonzero": 58720255,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 16,
+              "elements": 33429504,
+              "first_moment_nonzero": 33429503,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 19656704,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 2,
+              "second_moment_nonzero": 33429503,
+              "signed_zero_only_bit_changes": 16
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 15,
+              "elements": 25290752,
+              "first_moment_nonzero": 25290752,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 33429504,
+              "rank": 3,
+              "second_moment_nonzero": 25290752,
+              "signed_zero_only_bit_changes": 15
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 58720255,
+          "signed_zero_only_bit_changes": 31
+        },
+        "midlayer.post_attention_layernorm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "elements": 4096,
+          "first_moment_nonzero": 4096,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 0,
+              "elements": 4096,
+              "first_moment_nonzero": 4096,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 30932992,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 4,
+              "second_moment_nonzero": 4096,
+              "signed_zero_only_bit_changes": 0
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 4096,
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.self_attn.k_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 6,
+          "elements": 8388608,
+          "first_moment_nonzero": 8388608,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 6,
+              "elements": 8388608,
+              "first_moment_nonzero": 8388608,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 33554432,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 0,
+              "second_moment_nonzero": 8388608,
+              "signed_zero_only_bit_changes": 6
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 8388608,
+          "signed_zero_only_bit_changes": 6
+        },
+        "midlayer.self_attn.o_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 10,
+          "elements": 16777216,
+          "first_moment_nonzero": 16777216,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 0,
+              "elements": 2754560,
+              "first_moment_nonzero": 2754560,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 50331648,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 0,
+              "second_moment_nonzero": 2754560,
+              "signed_zero_only_bit_changes": 0
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 10,
+              "elements": 14022656,
+              "first_moment_nonzero": 14022656,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 2754560,
+              "rank": 1,
+              "second_moment_nonzero": 14022656,
+              "signed_zero_only_bit_changes": 10
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 16777216,
+          "signed_zero_only_bit_changes": 10
+        },
+        "midlayer.self_attn.q_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 18,
+          "elements": 33554432,
+          "first_moment_nonzero": 33554432,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 18,
+              "elements": 33554432,
+              "first_moment_nonzero": 33554432,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 0,
+              "second_moment_nonzero": 33554432,
+              "signed_zero_only_bit_changes": 18
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 33554432,
+          "signed_zero_only_bit_changes": 18
+        },
+        "midlayer.self_attn.v_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 4,
+          "elements": 8388608,
+          "first_moment_nonzero": 8388608,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 4,
+              "elements": 8388608,
+              "first_moment_nonzero": 8388608,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 41943040,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 0,
+              "second_moment_nonzero": 8388608,
+              "signed_zero_only_bit_changes": 4
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 8388608,
+          "signed_zero_only_bit_changes": 4
+        },
+        "norm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "elements": 4096,
+          "first_moment_nonzero": 4096,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 0,
+              "elements": 4096,
+              "first_moment_nonzero": 4096,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 30937088,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 4,
+              "second_moment_nonzero": 4096,
+              "signed_zero_only_bit_changes": 0
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 4096,
+          "signed_zero_only_bit_changes": 0
+        }
+      },
+      "initial_dtype_cast_model_sha256": "70ac5d3ad0a39a4a71c72a39402b255ed6aa40bb71bb06199a3fa279c1b7a6ce",
+      "manifest_sha256": "0fe6b34868d11ce61c2dedcda1143651b377a2dbba533ba51b4c9c263f0ff4c2",
+      "policy": "original",
+      "raw_global_steps": 2,
+      "raw_prefix_model_sha256": "f0c9ebcab1cc9f4fe70ef7564538e7937e3633c1ee05d28c897a7b7e5bda725e",
+      "raw_scheduler": {
+        "last_batch_iteration": 1
+      },
+      "raw_skipped_steps": 0,
+      "registered_plan_identity_sha256": "bdaec9e2c9d748d0d588053e1f1c7759db480989cb14a793328df24918fdbf6a",
+      "visible_trainable_differences": {
+        "fc.weight": {
+          "all_finite": true,
+          "bitwise_changed": 17,
+          "dtype": "torch.float16",
+          "elements": 50331648,
+          "numeric_changed": 0,
+          "shape": [
+            4096,
+            12288
+          ],
+          "signed_zero_only_bit_changes": 17
+        },
+        "lm_head.weight": {
+          "all_finite": true,
+          "bitwise_changed": 94,
+          "dtype": "torch.float16",
+          "elements": 131072000,
+          "numeric_changed": 0,
+          "shape": [
+            32000,
+            4096
+          ],
+          "signed_zero_only_bit_changes": 94
+        },
+        "midlayer.hidden_norm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "dtype": "torch.float16",
+          "elements": 4096,
+          "numeric_changed": 0,
+          "shape": [
+            4096
+          ],
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.input_layernorm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "dtype": "torch.float16",
+          "elements": 4096,
+          "numeric_changed": 0,
+          "shape": [
+            4096
+          ],
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.mlp.down_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 21,
+          "dtype": "torch.float16",
+          "elements": 58720256,
+          "numeric_changed": 0,
+          "shape": [
+            4096,
+            14336
+          ],
+          "signed_zero_only_bit_changes": 21
+        },
+        "midlayer.mlp.gate_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 24,
+          "dtype": "torch.float16",
+          "elements": 58720256,
+          "numeric_changed": 0,
+          "shape": [
+            14336,
+            4096
+          ],
+          "signed_zero_only_bit_changes": 24
+        },
+        "midlayer.mlp.up_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 31,
+          "dtype": "torch.float16",
+          "elements": 58720256,
+          "numeric_changed": 0,
+          "shape": [
+            14336,
+            4096
+          ],
+          "signed_zero_only_bit_changes": 31
+        },
+        "midlayer.post_attention_layernorm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "dtype": "torch.float16",
+          "elements": 4096,
+          "numeric_changed": 0,
+          "shape": [
+            4096
+          ],
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.self_attn.k_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 6,
+          "dtype": "torch.float16",
+          "elements": 8388608,
+          "numeric_changed": 0,
+          "shape": [
+            1024,
+            8192
+          ],
+          "signed_zero_only_bit_changes": 6
+        },
+        "midlayer.self_attn.o_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 10,
+          "dtype": "torch.float16",
+          "elements": 16777216,
+          "numeric_changed": 0,
+          "shape": [
+            4096,
+            4096
+          ],
+          "signed_zero_only_bit_changes": 10
+        },
+        "midlayer.self_attn.q_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 18,
+          "dtype": "torch.float16",
+          "elements": 33554432,
+          "numeric_changed": 0,
+          "shape": [
+            4096,
+            8192
+          ],
+          "signed_zero_only_bit_changes": 18
+        },
+        "midlayer.self_attn.v_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 4,
+          "dtype": "torch.float16",
+          "elements": 8388608,
+          "numeric_changed": 0,
+          "shape": [
+            1024,
+            8192
+          ],
+          "signed_zero_only_bit_changes": 4
+        },
+        "norm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "dtype": "torch.float16",
+          "elements": 4096,
+          "numeric_changed": 0,
+          "shape": [
+            4096
+          ],
+          "signed_zero_only_bit_changes": 0
+        }
+      },
+      "vocabulary": {
+        "d2t": {
+          "bitwise_identity_equal": true,
+          "dtype": "torch.int64",
+          "dtype_equal": true,
+          "shape": [
+            32000
+          ],
+          "shape_equal": true,
+          "tensor_equal": true
+        },
+        "t2d": {
+          "bitwise_identity_equal": true,
+          "dtype": "torch.bool",
+          "dtype_equal": true,
+          "shape": [
+            128256
+          ],
+          "shape_equal": true,
+          "tensor_equal": true
+        }
+      }
+    },
+    {
+      "all13_named_adam_first_second_nonzero": true,
+      "all13_numeric_masters_unchanged": true,
+      "all_master_bit_changes_are_signed_zero": true,
+      "all_master_casts_bitwise_match_visible": true,
+      "all_visible_bit_changes_are_signed_zero": true,
+      "checkpoint": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/checkpoints/step-2",
+      "fp32_master_and_adam_differences": {
+        "fc.weight": {
+          "all_finite": true,
+          "bitwise_changed": 18,
+          "elements": 50331648,
+          "first_moment_nonzero": 50331648,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 6,
+              "elements": 22145024,
+              "first_moment_nonzero": 22145024,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 30941184,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 4,
+              "second_moment_nonzero": 22145024,
+              "signed_zero_only_bit_changes": 6
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 12,
+              "elements": 28186624,
+              "first_moment_nonzero": 28186624,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 22145024,
+              "rank": 5,
+              "second_moment_nonzero": 28186624,
+              "signed_zero_only_bit_changes": 12
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 50331648,
+          "signed_zero_only_bit_changes": 18
+        },
+        "lm_head.weight": {
+          "all_finite": true,
+          "bitwise_changed": 99,
+          "elements": 131072000,
+          "first_moment_nonzero": 131071990,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 15,
+              "elements": 24899584,
+              "first_moment_nonzero": 24899583,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 28186624,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 5,
+              "second_moment_nonzero": 24899583,
+              "signed_zero_only_bit_changes": 15
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 36,
+              "elements": 53086208,
+              "first_moment_nonzero": 53086206,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 24899584,
+              "rank": 6,
+              "second_moment_nonzero": 53086206,
+              "signed_zero_only_bit_changes": 36
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 48,
+              "elements": 53086208,
+              "first_moment_nonzero": 53086201,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 77985792,
+              "rank": 7,
+              "second_moment_nonzero": 53086201,
+              "signed_zero_only_bit_changes": 48
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 131071990,
+          "signed_zero_only_bit_changes": 99
+        },
+        "midlayer.hidden_norm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "elements": 4096,
+          "first_moment_nonzero": 4096,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 0,
+              "elements": 4096,
+              "first_moment_nonzero": 4096,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 30924800,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 4,
+              "second_moment_nonzero": 4096,
+              "signed_zero_only_bit_changes": 0
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 4096,
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.input_layernorm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "elements": 4096,
+          "first_moment_nonzero": 4096,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 0,
+              "elements": 4096,
+              "first_moment_nonzero": 4096,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 30928896,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 4,
+              "second_moment_nonzero": 4096,
+              "signed_zero_only_bit_changes": 0
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 4096,
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.mlp.down_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 22,
+          "elements": 58720256,
+          "first_moment_nonzero": 58720256,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 14,
+              "elements": 27795456,
+              "first_moment_nonzero": 27795456,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 25290752,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 3,
+              "second_moment_nonzero": 27795456,
+              "signed_zero_only_bit_changes": 14
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 8,
+              "elements": 30924800,
+              "first_moment_nonzero": 30924800,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 27795456,
+              "rank": 4,
+              "second_moment_nonzero": 30924800,
+              "signed_zero_only_bit_changes": 8
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 58720256,
+          "signed_zero_only_bit_changes": 22
+        },
+        "midlayer.mlp.gate_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 20,
+          "elements": 58720256,
+          "first_moment_nonzero": 58720255,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 13,
+              "elements": 39063552,
+              "first_moment_nonzero": 39063551,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 14022656,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 1,
+              "second_moment_nonzero": 39063551,
+              "signed_zero_only_bit_changes": 13
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 7,
+              "elements": 19656704,
+              "first_moment_nonzero": 19656704,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 39063552,
+              "rank": 2,
+              "second_moment_nonzero": 19656704,
+              "signed_zero_only_bit_changes": 7
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 58720255,
+          "signed_zero_only_bit_changes": 20
+        },
+        "midlayer.mlp.up_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 29,
+          "elements": 58720256,
+          "first_moment_nonzero": 58720256,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 15,
+              "elements": 33429504,
+              "first_moment_nonzero": 33429504,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 19656704,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 2,
+              "second_moment_nonzero": 33429504,
+              "signed_zero_only_bit_changes": 15
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 14,
+              "elements": 25290752,
+              "first_moment_nonzero": 25290752,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 33429504,
+              "rank": 3,
+              "second_moment_nonzero": 25290752,
+              "signed_zero_only_bit_changes": 14
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 58720256,
+          "signed_zero_only_bit_changes": 29
+        },
+        "midlayer.post_attention_layernorm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "elements": 4096,
+          "first_moment_nonzero": 4096,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 0,
+              "elements": 4096,
+              "first_moment_nonzero": 4096,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 30932992,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 4,
+              "second_moment_nonzero": 4096,
+              "signed_zero_only_bit_changes": 0
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 4096,
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.self_attn.k_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 6,
+          "elements": 8388608,
+          "first_moment_nonzero": 8388608,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 6,
+              "elements": 8388608,
+              "first_moment_nonzero": 8388608,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 33554432,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 0,
+              "second_moment_nonzero": 8388608,
+              "signed_zero_only_bit_changes": 6
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 8388608,
+          "signed_zero_only_bit_changes": 6
+        },
+        "midlayer.self_attn.o_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 9,
+          "elements": 16777216,
+          "first_moment_nonzero": 16777216,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 2,
+              "elements": 2754560,
+              "first_moment_nonzero": 2754560,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 50331648,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 0,
+              "second_moment_nonzero": 2754560,
+              "signed_zero_only_bit_changes": 2
+            },
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 7,
+              "elements": 14022656,
+              "first_moment_nonzero": 14022656,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 2754560,
+              "rank": 1,
+              "second_moment_nonzero": 14022656,
+              "signed_zero_only_bit_changes": 7
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 16777216,
+          "signed_zero_only_bit_changes": 9
+        },
+        "midlayer.self_attn.q_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 16,
+          "elements": 33554432,
+          "first_moment_nonzero": 33554431,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 16,
+              "elements": 33554432,
+              "first_moment_nonzero": 33554431,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 0,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 0,
+              "second_moment_nonzero": 33554431,
+              "signed_zero_only_bit_changes": 16
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 33554431,
+          "signed_zero_only_bit_changes": 16
+        },
+        "midlayer.self_attn.v_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 5,
+          "elements": 8388608,
+          "first_moment_nonzero": 8388608,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 5,
+              "elements": 8388608,
+              "first_moment_nonzero": 8388608,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 41943040,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 0,
+              "second_moment_nonzero": 8388608,
+              "signed_zero_only_bit_changes": 5
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 8388608,
+          "signed_zero_only_bit_changes": 5
+        },
+        "norm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "elements": 4096,
+          "first_moment_nonzero": 4096,
+          "fp32_master_numeric_delta_l2": 0.0,
+          "fragments": [
+            {
+              "adam_step": 2,
+              "all_finite": true,
+              "bitwise_changed": 0,
+              "elements": 4096,
+              "first_moment_nonzero": 4096,
+              "fp32_master_delta_squared": 0.0,
+              "group": 0,
+              "local_start": 30937088,
+              "master_cast_visible_bitwise_changes": 0,
+              "numeric_changed": 0,
+              "parameter_start": 0,
+              "rank": 4,
+              "second_moment_nonzero": 4096,
+              "signed_zero_only_bit_changes": 0
+            }
+          ],
+          "master_cast_visible_bitwise_changes": 0,
+          "numeric_changed": 0,
+          "second_moment_nonzero": 4096,
+          "signed_zero_only_bit_changes": 0
+        }
+      },
+      "initial_dtype_cast_model_sha256": "70ac5d3ad0a39a4a71c72a39402b255ed6aa40bb71bb06199a3fa279c1b7a6ce",
+      "manifest_sha256": "06eb391101a71bd6f62b5b76afdc735ed1d3916dfb3bb675b7acbc2b76f761fe",
+      "policy": "target",
+      "raw_global_steps": 2,
+      "raw_prefix_model_sha256": "949e760a5dbbaebcd65a777a27860ab857a2396e58130d3abaab9d1b0ad342da",
+      "raw_scheduler": {
+        "last_batch_iteration": 1
+      },
+      "raw_skipped_steps": 0,
+      "registered_plan_identity_sha256": "eeb57054b8619a367fd4fef5220ce41757975289ec5425304d4fe3f8ce0e1e6d",
+      "visible_trainable_differences": {
+        "fc.weight": {
+          "all_finite": true,
+          "bitwise_changed": 18,
+          "dtype": "torch.float16",
+          "elements": 50331648,
+          "numeric_changed": 0,
+          "shape": [
+            4096,
+            12288
+          ],
+          "signed_zero_only_bit_changes": 18
+        },
+        "lm_head.weight": {
+          "all_finite": true,
+          "bitwise_changed": 99,
+          "dtype": "torch.float16",
+          "elements": 131072000,
+          "numeric_changed": 0,
+          "shape": [
+            32000,
+            4096
+          ],
+          "signed_zero_only_bit_changes": 99
+        },
+        "midlayer.hidden_norm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "dtype": "torch.float16",
+          "elements": 4096,
+          "numeric_changed": 0,
+          "shape": [
+            4096
+          ],
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.input_layernorm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "dtype": "torch.float16",
+          "elements": 4096,
+          "numeric_changed": 0,
+          "shape": [
+            4096
+          ],
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.mlp.down_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 22,
+          "dtype": "torch.float16",
+          "elements": 58720256,
+          "numeric_changed": 0,
+          "shape": [
+            4096,
+            14336
+          ],
+          "signed_zero_only_bit_changes": 22
+        },
+        "midlayer.mlp.gate_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 20,
+          "dtype": "torch.float16",
+          "elements": 58720256,
+          "numeric_changed": 0,
+          "shape": [
+            14336,
+            4096
+          ],
+          "signed_zero_only_bit_changes": 20
+        },
+        "midlayer.mlp.up_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 29,
+          "dtype": "torch.float16",
+          "elements": 58720256,
+          "numeric_changed": 0,
+          "shape": [
+            14336,
+            4096
+          ],
+          "signed_zero_only_bit_changes": 29
+        },
+        "midlayer.post_attention_layernorm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "dtype": "torch.float16",
+          "elements": 4096,
+          "numeric_changed": 0,
+          "shape": [
+            4096
+          ],
+          "signed_zero_only_bit_changes": 0
+        },
+        "midlayer.self_attn.k_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 6,
+          "dtype": "torch.float16",
+          "elements": 8388608,
+          "numeric_changed": 0,
+          "shape": [
+            1024,
+            8192
+          ],
+          "signed_zero_only_bit_changes": 6
+        },
+        "midlayer.self_attn.o_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 9,
+          "dtype": "torch.float16",
+          "elements": 16777216,
+          "numeric_changed": 0,
+          "shape": [
+            4096,
+            4096
+          ],
+          "signed_zero_only_bit_changes": 9
+        },
+        "midlayer.self_attn.q_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 16,
+          "dtype": "torch.float16",
+          "elements": 33554432,
+          "numeric_changed": 0,
+          "shape": [
+            4096,
+            8192
+          ],
+          "signed_zero_only_bit_changes": 16
+        },
+        "midlayer.self_attn.v_proj.weight": {
+          "all_finite": true,
+          "bitwise_changed": 5,
+          "dtype": "torch.float16",
+          "elements": 8388608,
+          "numeric_changed": 0,
+          "shape": [
+            1024,
+            8192
+          ],
+          "signed_zero_only_bit_changes": 5
+        },
+        "norm.weight": {
+          "all_finite": true,
+          "bitwise_changed": 0,
+          "dtype": "torch.float16",
+          "elements": 4096,
+          "numeric_changed": 0,
+          "shape": [
+            4096
+          ],
+          "signed_zero_only_bit_changes": 0
+        }
+      },
+      "vocabulary": {
+        "d2t": {
+          "bitwise_identity_equal": true,
+          "dtype": "torch.int64",
+          "dtype_equal": true,
+          "shape": [
+            32000
+          ],
+          "shape_equal": true,
+          "tensor_equal": true
+        },
+        "t2d": {
+          "bitwise_identity_equal": true,
+          "dtype": "torch.bool",
+          "dtype_equal": true,
+          "shape": [
+            128256
+          ],
+          "shape_equal": true,
+          "tensor_equal": true
+        }
+      }
+    }
+  ],
+  "scientific_training_admitted": false,
+  "semantic_hasher_v2_sha256": "5e11dd792adb840be1e861f6a0f2e235d483b977e7dca3cfef31f78e3f0f4091",
+  "slurm_job_id": "2216794",
+  "status": "raw_zero_lr_prefix_mechanism_diagnostic_complete_not_admission",
+  "wall_seconds": 77.34293605200946
+}
