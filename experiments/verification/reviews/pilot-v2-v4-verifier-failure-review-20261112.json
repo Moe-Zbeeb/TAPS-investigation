@@ -1,0 +1,32 @@
+{
+  "cluster_jobs_sources_or_admission_mutated_by_reviewer": false,
+  "decision": "verifier_defect_repaired_actual_downstream_replay_pending",
+  "downstream_checks": "Original v4 terminated before numerical/state analysis; no downstream success inferred from this failure repair. A fresh complete CPU replay is mandatory.",
+  "failed_job_id": "2216755",
+  "failure": {
+    "cause": "The exact hash-pinned Torch checkpoint source resolves inside the external native environment, outside the project/model-only artifact path policy inherited from v1.",
+    "error_code": "artifact_outside_project_or_model_storage",
+    "phase": "corrected_checkpoint_policy_and_named_hooks"
+  },
+  "independent_interim_json_observations": {
+    "all13_finite_nonzero_callback_records": 3328,
+    "attempt_rank_initial_complete_pairs": 80,
+    "committed_update_records": 256,
+    "direct_reference_pairs": 16,
+    "execution_phases_returned_zero": 12,
+    "nonreentrant_pairs": 64,
+    "raw_tensor_states_replayed_by_this_metadata_sweep": false,
+    "stock_generation_receipts_passed": 16,
+    "stock_receipts_token_equal": 16
+  },
+  "local_checks": "Syntax/import andonepositive+fournegative runtime-file path/hash predicates passed; no Torch execution.",
+  "observed_reviewed_checkpoint_sha256": "7a05799e678085df1b81d512bed679c35053fb6225ea90c96661306f93140f6c",
+  "observed_runtime_checkpoint_path": "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/utils/checkpoint.py",
+  "original_failed_evidence_preserved": true,
+  "original_failed_report_path": "experiments/verification/reviews/direct-pilot-v2-full-v4-failed.json",
+  "original_failed_report_sha256": "6f6766710563da4c8a91ecd457ba1d26736577896bba5539ec09f0a854c71a6b",
+  "repair_scope": "Only allow the exact reviewed utils/checkpoint.py resolved from the actual imported Torch package inside the resolved declared native environment; require its reviewed hash and rehash before/after. No generic external data/model/source exception.",
+  "repair_sha256": "82a4668211870e124a7b434500b038dce75447fb63650d26a8ed10eb60c097c5",
+  "scientific_training_admitted": false,
+  "scope": "independent_pilot_v4_external_runtime_path_failure_only"
+}
