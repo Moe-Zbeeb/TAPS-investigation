@@ -1,0 +1,62 @@
+{
+  "code_commit": "7866f6d",
+  "audit_source_sha256": "32f142ee0142b54d6dd2cd4f0650656ff06d3fba609f55b40ab7ad3f87bce85b",
+  "bundle": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1",
+  "jobs": {
+    "schedules": {
+      "job_id": "2216701",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--partition=high-priority",
+        "--qos=spec-priority",
+        "--nodes=1",
+        "--ntasks=1",
+        "--nodelist=deep-chungus-6",
+        "--cpus-per-task=16",
+        "--mem=64G",
+        "--kill-on-invalid-dep=yes",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--time=06:00:00",
+        "--job-name=taps-independent-schedules",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1/schedules-%j.log",
+        "--dependency=afterok:2216697",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1/schedules.sh"
+      ],
+      "verified_slurm": "JobId=2216701 JobName=taps-independent-schedules UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216697(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-11-12T08:44:15 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T08:44:15 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4016960 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=64G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1/schedules-2216701.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1/schedules-2216701.log Power= KillOInInvalidDependent=Yes \n"
+    },
+    "qualification": {
+      "job_id": "2216702",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--partition=high-priority",
+        "--qos=spec-priority",
+        "--nodes=1",
+        "--ntasks=1",
+        "--nodelist=deep-chungus-6",
+        "--cpus-per-task=16",
+        "--mem=64G",
+        "--kill-on-invalid-dep=yes",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--time=06:00:00",
+        "--job-name=taps-independent-qualification",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1/qualification-%j.log",
+        "--dependency=afterok:2216698",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1/qualification.sh"
+      ],
+      "verified_slurm": "JobId=2216702 JobName=taps-independent-qualification UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216698(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-11-12T08:44:16 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T08:44:16 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4016960 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=64G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1/qualification-2216702.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1/qualification-2216702.log Power= KillOInInvalidDependent=Yes \n"
+    }
+  },
+  "training_dependency_override": {
+    "job_id": "2216699",
+    "dependency": "afterok:2216698:2216701:2216702",
+    "verified_slurm": "JobId=2216699 JobName=taps-pilot24-train UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=None Dependency=afterok:2216698(unfulfilled),afterok:2216701(unfulfilled),afterok:2216702(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=2-00:00:00 TimeMin=N/A SubmitTime=2026-11-12T08:37:43 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T08:37:43 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4008294 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* TRES=cpu=1,mem=8G,node=1,billing=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=8G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v1/train-2216699.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v1/train-2216699.log Power= KillOInInvalidDependent=Yes \n"
+  },
+  "scope": "independent CPU evidence analysis; no automatic scientific admission",
+  "training_admitted": false
+}

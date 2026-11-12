@@ -1,0 +1,190 @@
+{
+  "observed_at_utc": "2026-11-12T13:49:39.055315+00:00",
+  "scope": "operational snapshot; pilot science not admitted",
+  "allocated_high_priority_gpus": 16,
+  "gpu_samples": {
+    "deep-chungus-10": [
+      {
+        "gpu": 0,
+        "utilization_percent": 100,
+        "memory_used_mib": 19685
+      },
+      {
+        "gpu": 1,
+        "utilization_percent": 100,
+        "memory_used_mib": 19685
+      },
+      {
+        "gpu": 2,
+        "utilization_percent": 100,
+        "memory_used_mib": 19685
+      },
+      {
+        "gpu": 3,
+        "utilization_percent": 100,
+        "memory_used_mib": 19685
+      },
+      {
+        "gpu": 4,
+        "utilization_percent": 100,
+        "memory_used_mib": 19685
+      },
+      {
+        "gpu": 5,
+        "utilization_percent": 100,
+        "memory_used_mib": 19685
+      },
+      {
+        "gpu": 6,
+        "utilization_percent": 100,
+        "memory_used_mib": 19685
+      },
+      {
+        "gpu": 7,
+        "utilization_percent": 100,
+        "memory_used_mib": 19685
+      }
+    ],
+    "deep-chungus-11": [
+      {
+        "gpu": 0,
+        "utilization_percent": 25,
+        "memory_used_mib": 40699
+      },
+      {
+        "gpu": 1,
+        "utilization_percent": 1,
+        "memory_used_mib": 36703
+      },
+      {
+        "gpu": 2,
+        "utilization_percent": 0,
+        "memory_used_mib": 37949
+      },
+      {
+        "gpu": 3,
+        "utilization_percent": 84,
+        "memory_used_mib": 40713
+      },
+      {
+        "gpu": 4,
+        "utilization_percent": 6,
+        "memory_used_mib": 31639
+      },
+      {
+        "gpu": 5,
+        "utilization_percent": 13,
+        "memory_used_mib": 37099
+      },
+      {
+        "gpu": 6,
+        "utilization_percent": 30,
+        "memory_used_mib": 31527
+      },
+      {
+        "gpu": 7,
+        "utilization_percent": 15,
+        "memory_used_mib": 44569
+      }
+    ]
+  },
+  "generalist": {
+    "global_step": 5417,
+    "optimizer_step": 5413,
+    "skipped_steps": 4,
+    "loss": 7.361791610717773
+  },
+  "paired_cache": {
+    "identity_sha256": "14828911fed6987d4de047b2e7ecc1e7f998a1abe1398a9231ec5b1be4fda4b1",
+    "counts": {
+      "chat:candidates": 40757,
+      "chat:dev": 199,
+      "chat:incomplete_original": 255992,
+      "chat:no_target_completion": 3867,
+      "chat:original:native_length_excluded": 2189,
+      "chat:original:raw_contexts_excluded": 121,
+      "chat:paired_native_eligible": 20000,
+      "chat:target:native_length_excluded": 14553,
+      "chat:target:raw_contexts_excluded": 27,
+      "chat:test": 191,
+      "chat:train": 19610,
+      "code:candidates": 20000,
+      "code:dev": 107,
+      "code:no_target_completion": 69,
+      "code:original:raw_contexts_excluded": 8307,
+      "code:paired_native_eligible": 11590,
+      "code:target:native_length_excluded": 3,
+      "code:target:raw_contexts_excluded": 31,
+      "code:test": 125,
+      "code:train": 11358,
+      "math:candidates": 20000,
+      "math:dev": 154,
+      "math:no_target_completion": 2184,
+      "math:original:raw_contexts_excluded": 724,
+      "math:paired_native_eligible": 17065,
+      "math:target:native_length_excluded": 24,
+      "math:target:raw_contexts_excluded": 3,
+      "math:test": 195,
+      "math:train": 16716
+    },
+    "rank_examples": [
+      6141,
+      6010,
+      6131,
+      5957,
+      6133,
+      6052,
+      6095,
+      6136
+    ],
+    "native_parity_cases": 48,
+    "evaluation_counts": {
+      "chat": 80,
+      "code": 80,
+      "math": 80
+    }
+  },
+  "eligibility_scan": {
+    "rank-4.progress.json": 3232,
+    "rank-1.progress.json": 2880,
+    "rank-3.progress.json": 2624,
+    "rank-6.progress.json": 3232,
+    "rank-7.progress.json": 3232,
+    "rank-2.progress.json": 2560,
+    "rank-0.progress.json": 3232,
+    "rank-5.progress.json": 3232
+  },
+  "queue": "JOBID                       NAME STATE NODELIST(REASON)\n2215920                deep10-hold PENDING (Dependency)\n2216702 taps-independent-qualifica PENDING (Dependency)\n2216701 taps-independent-schedules PENDING (Dependency)\n2216699         taps-pilot24-train PENDING (Dependency)\n2216698       taps-pilot24-qualify PENDING (Dependency)\n2216697       taps-pilot24-prepare PENDING (Dependency)\n2216036         taps-full-continue PENDING (Dependency)\n2216035            taps-full-train RUNNING deep-chungus-11\n2212580                deep10-hold RUNNING deep-chungus-10\n2216684         taps-pilot-scan-v2 RUNNING deep-chungus-6\n",
+  "pilot_scientific_trainings_started": 0,
+  "protected_holder": {
+    "job_id": "2212580",
+    "node": "deep-chungus-10",
+    "successor": "2215920",
+    "partition": "high-priority",
+    "qos": "spec-priority",
+    "gpus": 8,
+    "mode": "hold-for-user",
+    "started_at": "2026-11-11T12:41:59.547979+00:00",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodes=1",
+      "--exclusive",
+      "--nodelist=deep-chungus-10",
+      "--gres=gpu:a100:8",
+      "--ntasks=1",
+      "--cpus-per-task=64",
+      "--time=2-00:00:00",
+      "--dependency=afterany:2212580",
+      "--job-name=deep10-hold",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold-%j.log",
+      "--wrap",
+      "python3 /mnt/nfs/home/mohamadzbib/projects/rl-infra/cluster/deep10/hold.py"
+    ]
+  },
+  "protected_holders_or_generalist_modified": false
+}

@@ -1,0 +1,70 @@
+{
+  "source_sha256": "46573f893aff54ab1606040facc098e4a98f961c460621a4348bd28cb065d431",
+  "bundle": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-runtime-envelope-20261112-v1",
+  "jobs": {
+    "pre": {
+      "job_id": "2216710",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--partition=high-priority",
+        "--qos=spec-priority",
+        "--nodes=1",
+        "--ntasks=1",
+        "--nodelist=deep-chungus-6",
+        "--cpus-per-task=4",
+        "--mem=32G",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--kill-on-invalid-dep=yes",
+        "--time=02:00:00",
+        "--job-name=taps-runtime-pre",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-runtime-envelope-20261112-v1/pre-%j.log",
+        "--dependency=afterok:2216697",
+        "--wrap",
+        "env CUDA_VISIBLE_DEVICES= PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v1/src PYTHONNOUSERSITE=1 PYTHONDONTWRITEBYTECODE=1 CUBLAS_WORKSPACE_CONFIG=:4096:8 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-runtime-envelope-20261112-v1/observer.py --study /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v1 --phase pre --extension-root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/deep-chungus-10/torch-extensions --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v1/runtime/pre.json"
+      ],
+      "verified_slurm": "JobId=2216710 JobName=taps-runtime-pre UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216697(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-11-12T08:55:30 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T08:55:30 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4031608 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* TRES=cpu=4,mem=32G,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-runtime-envelope-20261112-v1/pre-2216710.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-runtime-envelope-20261112-v1/pre-2216710.log Power= KillOInInvalidDependent=Yes \n"
+    },
+    "post": {
+      "job_id": "2216711",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--partition=high-priority",
+        "--qos=spec-priority",
+        "--nodes=1",
+        "--ntasks=1",
+        "--nodelist=deep-chungus-6",
+        "--cpus-per-task=4",
+        "--mem=32G",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--kill-on-invalid-dep=yes",
+        "--time=02:00:00",
+        "--job-name=taps-runtime-post",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-runtime-envelope-20261112-v1/post-%j.log",
+        "--dependency=afterok:2216698",
+        "--wrap",
+        "env CUDA_VISIBLE_DEVICES= PYTHONPATH=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v1/src PYTHONNOUSERSITE=1 PYTHONDONTWRITEBYTECODE=1 CUBLAS_WORKSPACE_CONFIG=:4096:8 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-runtime-envelope-20261112-v1/observer.py --study /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v1 --phase post --extension-root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/deep-chungus-10/torch-extensions --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v1/runtime/post.json"
+      ],
+      "verified_slurm": "JobId=2216711 JobName=taps-runtime-post UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216698(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-11-12T08:55:30 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T08:55:30 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4031608 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* TRES=cpu=4,mem=32G,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-runtime-envelope-20261112-v1/post-2216711.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-runtime-envelope-20261112-v1/post-2216711.log Power= KillOInInvalidDependent=Yes \n"
+    }
+  },
+  "dependency_overrides": {
+    "2216698": {
+      "dependency": "afterok:2216697:2216710",
+      "verified_slurm": "JobId=2216698 JobName=taps-pilot24-qualify UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216697(unfulfilled),afterok:2216710(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=12:00:00 TimeMin=N/A SubmitTime=2026-11-12T08:37:43 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T08:37:43 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4008294 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* TRES=cpu=1,mem=8G,node=1,billing=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=8G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v1/qualify-2216698.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v1/qualify-2216698.log Power= KillOInInvalidDependent=Yes \n"
+    },
+    "2216702": {
+      "dependency": "afterok:2216698:2216711",
+      "verified_slurm": "JobId=2216702 JobName=taps-independent-qualification UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=None Dependency=afterok:2216698(unfulfilled),afterok:2216711(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-11-12T08:44:16 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T08:44:16 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4016960 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=64G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1/qualification-2216702.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-independent-audit-20261112-v1/qualification-2216702.log Power= KillOInInvalidDependent=Yes \n"
+    },
+    "2216699": {
+      "dependency": "afterok:2216698:2216701:2216702:2216711",
+      "verified_slurm": "JobId=2216699 JobName=taps-pilot24-train UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=None Dependency=afterok:2216698(unfulfilled),afterok:2216701(unfulfilled),afterok:2216702(unfulfilled),afterok:2216711(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=2-00:00:00 TimeMin=N/A SubmitTime=2026-11-12T08:37:43 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T08:37:43 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4008294 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* TRES=cpu=1,mem=8G,node=1,billing=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=8G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v1/train-2216699.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v1/train-2216699.log Power= KillOInInvalidDependent=Yes \n"
+    }
+  },
+  "scope": "CPU pre/post runtime-library observation; GPU flags remain separately observed",
+  "training_admitted": false
+}

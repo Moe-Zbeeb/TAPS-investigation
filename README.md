@@ -4,6 +4,8 @@ Research code for studying specialist drafters under mixed traffic, following th
 
 [Getting started](docs/GETTING_STARTED.md) · [Reproduction protocol](experiments/official-reproduction-20261109/PREREGISTRATION.md) · [Implementation status](experiments/IMPLEMENTATION_STATUS.md) · [Current completion plan](experiments/finalization-20261111/COMPLETION_PLAN.md) · [References](references/README.md)
 
+The [12 November execution snapshot](results/progress-2026-11-12/README.md) records the running 40-epoch scratch generalist and the [24-run specialization pilot](experiments/rq1-pilot-24-20261112/README.md). Sixteen A100 80GB GPUs are working across two nodes. The pilot dependency chain prepares matched schedules, qualifies the new training loop and requires independent evidence admission before starting its scientific runs.
+
 ```mermaid
 flowchart LR
     inputs["Pinned inputs"] --> frozen["Frozen run"]
@@ -26,11 +28,11 @@ Engineering records dated 9 November 2026 document checks on eight A100 80GB GPU
 
 The [evidence index](results/README.md) contains selected machine-readable receipts, and the [engineering report](experiments/engineering-20261109/RESULTS.md) explains their limits. Large raw logs, preparation artifacts, weights and datasets are excluded from this Git snapshot. Paths to these artifacts in experiment documents identify external records. These small checks do not establish drafter quality, published-number reproduction or production speedup.
 
-The publication source check ran 368 tests with nine Torch-dependent tests skipped on macOS. CPU source checks and CUDA execution are separate evidence. CI runs the CPU suite on Python 3.10 and 3.12.
+The initial publication source check ran 368 tests with nine Torch-dependent tests skipped on macOS. CPU source checks and CUDA execution are separate evidence. CI runs the CPU suite on Python 3.10 and 3.12.
 
-The [11 November check](results/status-2026-11-11/README.md) confirms both independent replication jobs completed: 20/22 acceptance values were within 5%, while only 9/22 strict cells passed. Both full FP32 controls retained the same three mismatches among 1,120 pairs. Two are explained by context-stop lengths; the [completed eight-GPU logit diagnostic](results/fp32-decision-2026-11-11/README.md) now captures the remaining decision as a same-prefix near-tie argmax flip, with seven matched controls. A separate [1,600-generation seed-policy experiment](results/seed-policy-2026-11-11/README.md) found that upstream seed zero does not resolve the GSM8K outlier; its 800 hashed-seed replays matched the prior run exactly. The conditional audit and 61,440-continuation screen passed their registered checks. Scientific training remains blocked by reproduction and [validator review](experiments/verification/REVIEW_PACKET_20261111.md). Eight A100 80GB GPUs continue generating target responses after [verified allocation-timeout recovery](results/data-2026-11-11/README.md), with 320,128/540,107 source inputs processed at 14:49 Beirut. The [completion plan](experiments/finalization-20261111/COMPLETION_PLAN.md) maps the remaining work to every section of the memo.
+The [historical replication check](results/status-2026-11-11/README.md) found 20/22 acceptance values within 5%, while 9/22 strict cells passed. Both FP32 controls retained three mismatches among 1,120 pairs. Two are explained by context-stop lengths; the [eight-GPU logit diagnostic](results/fp32-decision-2026-11-11/README.md) captures the remaining decision as a same-prefix near-tie argmax flip, with seven matched controls. The [seed-policy experiment](results/seed-policy-2026-11-11/README.md) found that upstream seed zero does not resolve the GSM8K outlier. These historical failures remain recorded. The subsequent [pipeline replay](results/readiness-2026-11-11/pipeline-v3-replay.json), source-matched restart/export checks and independent review support the separate v2 training admission; matching published numbers is nonblocking.
 
-ShareGPT and UltraChat [source preparation](experiments/corpus-20261110/README.md) now contains 540,107 grouped conversations, including 284,115 with complete original answers. Target-response generation and a dependent eight-GPU native training profile have separate frozen launchers. Training remains blocked by the failed scientific checks and required validator review.
+ShareGPT and UltraChat [source preparation](experiments/corpus-20261110/README.md) contains 540,107 grouped conversations, including 284,115 with complete original answers. Target generation and both native profiles completed, and full scratch training is running. The pilot adds pinned math/code inputs and paired original/regenerated contexts; its new budget, objective and recovery checks remain mandatory.
 
 ## Start on CPU
 
@@ -58,7 +60,7 @@ The unchanged rebuild memo defines the following requirements. This is a map of 
 | 5.7 · Baselines | Compare with matched-compute generalists, selectors and other independently implemented baselines |
 | 5.8 · Statistics and reporting | Use three training seeds, paired comparisons, prompt-level intervals and repeated timings without warmup |
 
-After reviewed reproduction and full-model temperature-one validation, the next scientific experiment is a single-target chat/math/code pilot: one generalist and three specialists, target-generated and original responses, and three seeds, for **24 core drafter runs**. Data sources, held-out splits and matched token/compute budgets must be registered first. The measured specialization gap determines which composition experiments follow. See the [roadmap](experiments/ROADMAP.md) and [pilot analysis design](experiments/rq1/SPECIALIZATION_ANALYSIS.md).
+The [registered core pilot](experiments/rq1-pilot-24-20261112/README.md) has one union generalist and three specialists, original and target-generated response contexts, and three seeds: **24 drafter runs**. All fine-tune the same released EAGLE3 ancestor while the separate scratch generalist runs. The fixed-budget plans and guarded Slurm chain are prepared; their source-matched qualification and independent admission precede training. The measured specialization gap will guide composition experiments. See the [roadmap](experiments/ROADMAP.md) and [pilot analysis design](experiments/rq1/SPECIALIZATION_ANALYSIS.md).
 
 ## Repository layout
 

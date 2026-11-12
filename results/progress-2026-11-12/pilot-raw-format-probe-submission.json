@@ -1,0 +1,27 @@
+{
+  "job_id": "2216707",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=high-priority",
+    "--qos=spec-priority",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=16",
+    "--mem=64G",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--time=01:00:00",
+    "--job-name=taps-raw-format-probe",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-raw-format-20261112-v1/probe-%j.log",
+    "--wrap",
+    "env CUDA_VISIBLE_DEVICES= PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=16 MKL_NUM_THREADS=16 /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python -B /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-raw-format-20261112-v1/probe.py --checkpoint /mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2 --manifest-sha256 18e1fee396b0e42b8e4c5eb2aa793e2c541bd72a6a5f8637a1926a447a59fc22 --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v1/raw-format-probe.json --optimizer-files 2"
+  ],
+  "verified_slurm": "JobId=2216707 JobName=taps-raw-format-probe UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-11-12T08:50:14 EligibleTime=2026-11-12T08:50:14 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T08:50:14 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4024966 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=64G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=64G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-raw-format-20261112-v1/probe-2216707.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-raw-format-20261112-v1/probe-2216707.log Power= \n",
+  "source_sha256": "1cd9f7d5a7987cafc36ba55a5d070a4a80d1000689d779a4240a446fee046e31",
+  "checkpoint": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-restart-20261111-v4-attempt-0-interrupted/recovery/attempt-2-step-2",
+  "manifest_sha256": "18e1fee396b0e42b8e4c5eb2aa793e2c541bd72a6a5f8637a1926a447a59fc22",
+  "output": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v1/raw-format-probe.json",
+  "scope": "read-only CPU inspection of completed engineering checkpoint; no training admission"
+}

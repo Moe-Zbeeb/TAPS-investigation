@@ -1,0 +1,70 @@
+{
+  "decision": "approved_for_bounded_engineering_qualification_only",
+  "scope": "pilot_schedule_preparation_and_at_most_four_update_engineering_processes",
+  "scientific_training_admitted": false,
+  "evidence_admission": false,
+  "review_type": "independent_source_review_with_prospective_checks",
+  "reviewed_commit": "7866f6de224bc5abda5b2e93fede787d46adcc16",
+  "source_hashes": {
+    "src/taps_rebuild/native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "src/taps_rebuild/pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+    "src/taps_rebuild/pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+    "src/taps_rebuild/pilot_gate.py": "81526515203af4a0386680b79f091d4f0166aae170a12a23d1b209d9a3028470",
+    "src/taps_rebuild/pilot_study.py": "53987a6c84afc1ba5188ac524fb1a5a9729aae8b6db9456b89f69f39af60f3c1",
+    "src/taps_rebuild/pilot_train.py": "b7b41795ac987ca63c0bad6f4da6e74dc0ec670c9a924aee90cdebe60ee90059",
+    "src/taps_rebuild/pilot_queue.py": "0c2ec34b25496f793338abbd3495ea9553f13dde8928c4b9777f5d565506a80f",
+    "src/taps_rebuild/pilot_pipeline.py": "45a813eb3f7063ac8224665ca8397f5a1efd390e25035b23b4c667436f320cf6",
+    "src/taps_rebuild/pilot_smoke.py": "026aa0d7473c7adbd4df3c59bad4677847ff5fbec234aa5badf4ee6f23bd7a13",
+    "configs/rq1-pilot-24-20261112.json": "a759f85db0d1feca1c6974b0e922d186995f3467ac13108d5a62e71edb2a7911",
+    "experiments/verification/reviews/independent_pilot_qualification_audit_20261112.py": "32f142ee0142b54d6dd2cd4f0650656ff06d3fba609f55b40ab7ad3f87bce85b"
+  },
+  "blocking_issues_for_bounded_diagnostics": [],
+  "resolved_source_findings": [
+    "Independent review and qualification now bind the exact study/recipe/cache/eligibility/hardware/vocabulary contract and retained evidence hashes; no scientific approval artifact exists from this source review.",
+    "Scientific output directory is fixed, attempts are sanitized, rank0 holds a run lock and checkpoint trajectories distinguish qualification/reference/alternate-padding namespaces.",
+    "Checkpoint data are fsynced in staging before immutable publication and latest-pointer update. Automatic controller continuation is limited to clean completed segments, with unique segment attempts and live successor attachment.",
+    "The custom objective matches the pinned raw-native seven-head step algebra after2048/Q normalization. Target eval/no-grad and frozen target/embedding trainability are guarded, and initial trainable/vocabulary content is compared to the released ancestor.",
+    "Study preparation explicitly filters training pools, preserves paired IDs/occurrences/masks and records repeated/unique exposure statistics. Evaluation selection remains a separate original-test-family prompt population.",
+    "Retained qualification data now include complete sparse-row gradients, selected logits/gradients, actual padded inputs and real lengths, native/reference flags, LR, owned pre-step gradient hashes and FP32-master update norms."
+  ],
+  "checks_performed": [
+    "Read planner, training engine, raw-native AST reference step, guard/evidence path, checkpoint save/restore and serial qualification/training controllers with the fixed recipe.",
+    "Parsed all nine runtime Python sources and the independent analyzer. Local focused mask/rank tests and small synthetic negative trace tests passed.",
+    "Verified pinned upstream teacher code returns FP32 logits after FP16 compute; the independent analyzer distinguishes those units.",
+    "Read-only prepared asset metadata confirms the released ancestor configuration SHA equals the pinned native configuration SHA. No GPU jobs or active source mutations were performed by the reviewer."
+  ],
+  "analyzer": {
+    "path": "experiments/verification/reviews/independent_pilot_qualification_audit_20261112.py",
+    "sha256": "32f142ee0142b54d6dd2cd4f0650656ff06d3fba609f55b40ab7ad3f87bce85b",
+    "interface": "--study STUDYDIR --qualification QUALDIR --output REPORT.json",
+    "execution_requirement": "CPU Slurm with explicitly hidden GPUs",
+    "available_checks": [
+      "source/model/cache/gate/provenance file inventory and final rehash",
+      "all96 rank schedules, masks, repeated/unique exposure statistics and seed-block ordering",
+      "FP64 seven-head CE and FP16 scaled-logit gradient references",
+      "full sparse-row outside-mask support",
+      "eight-rank native/update state/gradient/LR/norm trace parity",
+      "eight-rank four-versus-two-plus-two state trace parity"
+    ],
+    "unavailable_checks": [
+      "independent suffix-probe comparison",
+      "independent stock-export compatibility",
+      "independent full raw ZeRO Adam/scaler reconstruction"
+    ],
+    "numerical_execution_performed": false,
+    "scientific_admission_emitted": false
+  },
+  "pending_before_scientific_admission": [
+    "Actual completed gate scan, final paired populations and all independent schedule/provenance checks on the exact frozen study.",
+    "Actual source-matched FP64 CE/gradient, suffix causality, native optimizer-update, positive-LR update, eight-rank process restart and stock export/generation qualifications.",
+    "Exact complete source/runtime/data/evidence inventory, including existing scoped pipeline validation and its limitations, with rehashed retained artifacts.",
+    "Independent inspection of actual reports and coverage; first-scope partial/unavailable analyzer results cannot authorize training.",
+    "A distinct exact-evidence approval, deployed unchanged into the reviewed admission path. This receipt cannot satisfy scientific_training_admitted=true."
+  ],
+  "operational_limits": [
+    "The fixed20-minute allocation reserve is a clean-stop policy, not a proved upper bound for cold loading plus128 updates plus checkpointing. Retain failures; do not automatically rewind an unclean segment or claim exact physical exposure after replay.",
+    "Engineering qualification interruption may require a fresh preserved qualification namespace/controller attempt; immutable logs must not be overwritten to appear successful.",
+    "CUDA-event intervals and8xloop wall time are elapsed cost measures with the registered synchronization scope, not exact hardware-active compute or full-study cost.",
+    "Three seed blocks and the conditioned repeated-exposure population do not imply scratch training, native full-mask equivalence, universal losslessness or completed PDF results."
+  ]
+}
