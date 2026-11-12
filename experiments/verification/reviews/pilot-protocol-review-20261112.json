@@ -1,0 +1,24 @@
+{
+  "decision": "changes_required",
+  "scope": "proposed_24_run_pilot_protocol_only",
+  "implementation_reviewed": false,
+  "scientific_training_authorized": false,
+  "existing_jobs_modified": false,
+  "source_hashes": {
+    "upstream/cnets.py": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+    "upstream/main.py": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+    "src/taps_rebuild/native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "src/taps_rebuild/admission_v2.py": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49"
+  },
+  "required_protocol_changes": [
+    "Guard base mask indices s>=6 and s+1<L_real and explicitly define assistant eligibility with the native shift alignment.",
+    "Distinguish raw mask counts from reduced-vocabulary-gated effective counts; choose transparent raw-position matching or explicitly conditioned exact effective matching.",
+    "Account for the B*T loss denominator in padding parity and identify the sparse-mask objective as a new pilot objective.",
+    "Reconcile successful-update and processed-example budgets under skipped/overflow steps; freeze optimizer schedule and failure policy.",
+    "Freeze common population size only after paired length/mask eligibility counts; preserve original group-to-split membership and exclude held-out data from budget completion.",
+    "Name partial seed-block counterbalancing honestly and predefine compute tolerance, cost scopes, evaluation and final-checkpoint selection.",
+    "Require a separate source-bound pilot admission with new numerical/mask/update/recovery/export evidence; preserve active core contracts and bundles."
+  ],
+  "feasibility": "Feasible as separately admitted common-ancestor fine-tuning. Causal suffix padding is mathematically valid for guarded contributions, but runtime parity, effective counts and total wall cost remain qualification evidence.",
+  "detailed_review": "experiments/verification/reviews/pilot-protocol-review-20261112.md"
+}

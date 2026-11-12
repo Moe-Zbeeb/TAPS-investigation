@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "study_id": "rq1-pilot-24-20261112-v1",
+  "target_id": "llama31_instruct_8b",
+  "ancestor_id": "eagle3_llama31_8b",
+  "world_size": 8,
+  "length": 2048,
+  "minimum_raw_contexts": 32,
+  "selection_seed": 20261112,
+  "candidate_groups": {
+    "chat": 50000,
+    "math": 20000,
+    "code": 20000
+  },
+  "maximum_cached_groups_per_domain": 20000,
+  "evaluation_questions_per_domain": 80,
+  "evaluation_prefix_limit": 1536,
+  "corpora": [
+    {
+      "domain": "chat",
+      "original": "data/corpora/sharegpt-ultrachat-20261110-v2",
+      "original_completion_sha256": "42f408593e5d5774bd859e75fc11bc73ce69153d105a6b789b555e1ee743604c",
+      "generated": "data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated",
+      "teacher_plan_identity_sha256": "dbf6acd428977385aa98b2f302241086764f28eb9e1cda1005af0f45ed3331af"
+    },
+    {
+      "original": "data/corpora/rq1-math-code-original-20261112-v1",
+      "original_completion_sha256": "c132befc2a0d4be999d42e771a7163ed3dad9a8b6220d09ff0fc344ce7a45d57",
+      "generated": "data/corpora/rq1-math-code-teacher-20261112-v1-target-generated",
+      "teacher_plan_identity_sha256": "97dde81997dabd002466d6952b202d919bad2aba46aa324b4beececabc975961"
+    }
+  ]
+}

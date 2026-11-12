@@ -1,0 +1,66 @@
+{
+  "decision": "approved_as_prospective_design",
+  "scope": "24_run_common_ancestor_finetuning_pilot_design_only",
+  "evidence_admission": false,
+  "scientific_training_authorized": false,
+  "implementation_reviewed": false,
+  "qualification_evidence_reviewed": false,
+  "new_jobs_submitted": false,
+  "existing_jobs_or_active_sources_modified": false,
+  "supersedes_protocol_assessment": "experiments/verification/reviews/pilot-protocol-review-20261112.json",
+  "source_hashes": {
+    "upstream/cnets.py": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+    "upstream/main.py": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+    "approved/native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "approved/admission_v2.py": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49"
+  },
+  "design_assessment": {
+    "ancestry": "All 24 runs fine-tune identical complete released-ancestor trainables with one identical released 32000-token vocabulary; they are not scratch or native-full-mask runs.",
+    "cohort": "Four domain conditions times two response-context policies times three prespecified randomized seed blocks, sequential on the same protected eight physical GPUs.",
+    "q_rule": "Before training choose 64 if every domain/rank has at least128 pairs eligible in both policies at64, otherwise32 if every domain/rank meets the same threshold at32, otherwise fail or separately register and audit data expansion.",
+    "logical_exposure": "12288 global committed examples per run:1536 per rank, with512 per domain/rank in the balanced union. Deterministic cycles and repeat multiplicities are explicit.",
+    "objective": "For B=1,T=2048, multiply each native head mean by2048/Q and sum with weights0.8**k; each head is the mean CE over Q effective contexts, with ordinary global DP averaging.",
+    "causality": "Select distinct native-mask base indices s>=6 and s+1<L_real. Head k uses grid s-k and original teacher logits s+1. Right suffix content cannot mathematically reach guarded contributions under the pinned causal/diagonal recurrence source.",
+    "counted_work": "Logical dense slots are25165824/run; base effective contexts are786432 forQ64 or393216 forQ32. Each of seven heads has that count only if all online invariants hold.",
+    "step_policy": "Microbatch1/world8/GAS1,1536 committed attempted-and-successful steps; static FP16 loss scale128, with any optimizer overflow/skip invalidating the strict run.",
+    "cpu_preparation": "Preparing paired native-token caches with guarded native-mask count>=32 is suitable as CPU pre-eligibility only; GPU gate eligibility, chosen Q, final schedules and training admission remain pending."
+  },
+  "mandatory_prospective_release_checks": [
+    {
+      "id": "freeze_complete_recipe",
+      "requirement": "Before qualification freeze exact source/runtime/model/tokenizer/ancestor/vocabulary/cache inventories; trainable/frozen parameter sets; LR, warmup, Adam settings, clipping, weight decay, scheduler total; static scale128; mask/seed/cycle algorithms; target eval/no-grad and dtype/backend; ordered rank-to-UUID mapping; and evaluation/final-checkpoint policy. Every run must start from identical trainable content and fresh optimizer state. model.train() must not silently return the target to training mode."
+    },
+    {
+      "id": "exact_gate_and_mask_definition",
+      "requirement": "Define g[s]=t2d[argmax over the FULL target vocabulary of target_logits_original[s+1]]. Do not use a restricted-vocabulary argmax. Eligibility is native_mask[s] AND g[s] AND s>=6 AND s+1<L_real, plus any explicitly registered assistant-context boundary rule. Bind each scan to exact padded input IDs/masks, target and vocabulary content, production B1/T2048/dtype/backend and ordered physical device mapping. Quantile sampling must select Q distinct positions without advancing training RNG; original/target share paired variates and occurrence indices. Verify Q effective positions for each head/rank online before backward."
+    },
+    {
+      "id": "independent_native_and_padding_parity",
+      "requirement": "Alternate future-pad tokens at fixed shape with restored RNG must leave guarded teacher/draft prefix outputs, losses and trainable gradients invariant within prespecified dtype-aware bounds, with finite whole computation. Also compare an isolated pinned-native forward and a reference optimizer step against the new loop on identical inputs, selected masks, initialized weights and schedule after the explicit2048/Q scaling. Changing suffix content alone does not prove native-loop or optimizer parity. Include short/multiturn/end-boundary cases and verify inappropriate boundary positions are rejected."
+    },
+    {
+      "id": "fp64_ce_and_logit_gradient_reference",
+      "requirement": "Independent CPU FP64 reconstruction must use retained native head logits, original-index teacher logits restricted by the frozen vocabulary, selected index maps and actual head weights. Require absolute CE error<=5e-5 for every head and total weighted objective. Explicitly define the gradient hook tensor/dtype and whether scaling/unscaling/DP reduction has occurred. For an FP16 logit-output hook before cast-to-FP32 and before unscale/DP reduction, expected gradient is round_FP16(128*(0.8**k)/Q*(softmax(draft)-softmax(target))) at selected grid indices and zero elsewhere. Apply element error<=max(4FP16_ULP(expected),2e-6), and additionally relative L2 error<=0.005 on prespecified signal-bearing cases so the absolute floor cannot admit erased gradients. Include such a case for every head and domain/policy: expected selected-gradient L2 norm must exceed100*2e-6*sqrt(Q*32000). Low-signal inside-mask cases use the element bound; do not demand relative accuracy below quantization/noise or exact mathematical cancellation. Outside-mask exact zero applies to logit gradients, not causal hidden-state or parameter gradients. Retain complete full-vocabulary argmax evidence for qualification cases. The old decoder near-tie policy supplies none of these training tolerances."
+    },
+    {
+      "id": "full_schedule_and_budget_replay",
+      "requirement": "Independently replay every one of24 full1536-step rank schedules before training. Check per-rank/domain counts, common paired IDs/occurrence variates across response policies, deterministic cycling, eligibility, repeat multiplicities, group-to-split membership and exact Q masks. Original holdout membership cannot be borrowed to fill quotas. Record unique examples and unique context coverage separately from repeated exposures. Exact budget totals refer to the committed trajectory. If checkpoint recovery replays lost work, separately count physical attempts/replayed exposure and charge their compute; do not call such a run1536 total physical attempts or exactly25165824 total physically processed slots. If exact physical exposure is the intended requirement, a lost-work replay invalidates it."
+    },
+    {
+      "id": "fresh_recovery_and_export",
+      "requirement": "Qualify actual eight-rank4-step uninterrupted versus2+2 restored trajectories with exact model/Adam/scaler/scheduler/RNG/schedule/mask/counter identities, ordered GPU bindings and no changed trainables/vocabulary. CPU schedule tests must also exercise cycle/occurrence boundaries, which a four-step prefix of a128-pair pool does not cover. Export must preserve frozen vocabulary/buffer mappings and load the resulting draft in the stock inference path with genuine generation. These are source-matched engineering qualifications, not pilot-quality outcomes."
+    },
+    {
+      "id": "compute_and_inference_scope",
+      "requirement": "Define the seed-block-median +/-10percent criterion precisely before outcomes: reference, aggregation, included phases, restarts and failures. A +/-10percent band around a median does not imply every pair differs by<=10percent. Report max/min too. Record CUDA-event elapsed time with its stream/synchronization meaning,8xtraining-loop wall time, whole-stage allocated GPU time and all attempt costs. Report offline regeneration/eligibility scan costs separately and in total study cost. Withdraw a compute-matched claim if its criterion fails; never fill the difference with sleep or extra learning. Freeze common evaluation traffic, released-ancestor/union baselines, contrasts, uncertainty and final-step checkpoint selection before outcomes."
+    }
+  ],
+  "scientific_interpretation_limits": [
+    "Original versus regenerated changes the response contexts. Both conditions receive the same online teacher's soft target distribution on their respective contexts; this is not original versus teacher hard-label supervision.",
+    "The estimand is conditional on paired completion/native-length/vocabulary-covered eligibility and at least Q eligible contexts. Report survival and length/coverage distributions rather than generalizing to all source examples.",
+    "Exposure matching does not match unique IDs, unique contexts or real nonpadding tokens. Rank-stratified cycling can weight examples differently when eligible pool sizes differ; report pool sizes and multiplicities.",
+    "The balanced union has one third of the specialist's exposure per domain under the same total budget. This is a resource-allocation contrast, not an isolated domain-mixture effect holding in-domain exposure fixed.",
+    "Three seed blocks yield limited uncertainty and partial ordering balance. No complete Latin-square, scratch-training,40-epoch,trained-quality or universal-losslessness conclusion follows.",
+    "New source, completed data/gate scans, prospective qualifications and exact independent evidence approval remain required before the24 scientific jobs may run. Existing approvals and active generalist contracts remain separate."
+  ]
+}
