@@ -1,0 +1,41 @@
+{
+  "job_id": "2216769",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=high-priority",
+    "--qos=spec-priority",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=48",
+    "--mem=128G",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--time=03:00:00",
+    "--job-name=taps-corrected-native-prep",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-source-20261112-v1/prepare-%j.log",
+    "--wrap",
+    "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-source-20261112-v1/prepare.sh"
+  ],
+  "verified_slurm": "JobId=2216769 JobName=taps-corrected-native-prep UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=03:00:00 TimeMin=N/A SubmitTime=2026-11-12T10:59:17 EligibleTime=2026-11-12T10:59:17 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T10:59:17 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:4193314 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=48 NumTasks=1 CPUs/Task=48 ReqB:S:C:T=0:0:*:* TRES=cpu=48,mem=128G,node=1,billing=48 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=48 MinMemoryNode=128G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-source-20261112-v1/prepare-2216769.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-source-20261112-v1/prepare-2216769.log Power= \n",
+  "manifest": {
+    "commit": "8999a93",
+    "source_files_sha256": {
+      "__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "native_full_body.py": "40109aae2cdd5b06fa601220175569823f94e0e63d69c44942e93854740046c1",
+      "native_full_body_queue.py": "aecfaa61dd9a461785ffd63298c8ba530cacd9a4abefd714704ef05b28138f22",
+      "native_gradients.py": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+      "native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "native_recovery.py": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+      "pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+      "pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "admission.py": "028747152f4c4bbbeca49120aaa72100b6d5293439411840d9546815a6ec3c0b",
+      "admission_v2.py": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49",
+      "numerical_validation.py": "cb0546c268c09d73e15f62bde6d55a9a3437d26cce24ef464c14a9138d84629a"
+    },
+    "scope": "corrected native bounded engineering preparation; fullscience requires new evidence"
+  },
+  "bundle": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-source-20261112-v1",
+  "preparation": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-20261112-v1"
+}
