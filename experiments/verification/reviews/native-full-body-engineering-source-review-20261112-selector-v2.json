@@ -1,0 +1,19 @@
+{
+  "blocking_findings": [],
+  "decision": "approved_for_bounded_native_full_body_engineering_only",
+  "native_full_body_queue_sha256": "1cbd366356bfcfe308aa2cdbd02c4a839b0abcb3b45b6b07db68312c58a95d5b",
+  "native_full_body_sha256": "40109aae2cdd5b06fa601220175569823f94e0e63d69c44942e93854740046c1",
+  "prior_source_review_sha256": "3182647f005662720101a1906b4052fd921e102ca553eab27e0242a2b7934961",
+  "reviewed_behavior": [
+    "Fork8CPU workers only after verifying CUDA uninitialized, Torch threads1 and tokenizer parallelismfalse.",
+    "Ordered imap chunks128 returns matching row offsets in original order; first64 and logical prefix agree with serialselection.",
+    "Later prefetched work is explicitly distinguished from logical prefix and charged as CPU allocation work. No claim of exact encoded-row count.",
+    "GPU execution, stage gates, full-body observations, data/vocabulary identities and successful/attempted budgets unchanged. New source inventories/plans must bind the amended queue bytes."
+  ],
+  "scientific_full_training_or_pilot_admission_granted": false,
+  "scientific_training_admitted": false,
+  "scope": "parallel_cpu_selector_amendment_preserving_first64_maximum_shape_order",
+  "source_or_jobs_mutated_by_reviewer": false,
+  "tests_sha256": "804349991c3fe4e3e02370b2784c55123733264c31c9b8c507da96be626fa9aa",
+  "validation": "Eight focused source tests passed, including ordered first64/exactprefix andpartialfinalchunk; tests use fake tokenizer tensors and do not establish actual CUDA/nativepreprocessing execution."
+}

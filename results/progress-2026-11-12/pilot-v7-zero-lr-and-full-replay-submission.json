@@ -1,0 +1,73 @@
+{
+  "prefix": {
+    "job_id": "2216787",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodes=1",
+      "--ntasks=1",
+      "--nodelist=deep-chungus-6",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+      "--kill-on-invalid-dep=yes",
+      "--time=03:00:00",
+      "--cpus-per-task=16",
+      "--mem=96G",
+      "--job-name=taps-pilot-v7-prefix",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/prefix-%j.log",
+      "--wrap",
+      "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/prefix.sh"
+    ],
+    "verified_slurm": "JobId=2216787 JobName=taps-pilot-v7-prefix UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=03:00:00 TimeMin=N/A SubmitTime=2026-11-12T11:48:48 EligibleTime=2026-11-12T11:48:48 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T11:48:48 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:62668 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=96G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=96G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/prefix-2216787.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/prefix-2216787.log Power= KillOInInvalidDependent=Yes \n"
+  },
+  "full": {
+    "job_id": "2216788",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodes=1",
+      "--ntasks=1",
+      "--nodelist=deep-chungus-6",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+      "--kill-on-invalid-dep=yes",
+      "--time=03:00:00",
+      "--cpus-per-task=16",
+      "--mem=96G",
+      "--job-name=taps-pilot-v7-full",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/full-%j.log",
+      "--dependency=afterok:2216787",
+      "--wrap",
+      "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/full.sh"
+    ],
+    "verified_slurm": "JobId=2216788 JobName=taps-pilot-v7-full UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216787(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=03:00:00 TimeMin=N/A SubmitTime=2026-11-12T11:48:48 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T11:48:48 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:62668 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=96G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=96G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/full-2216788.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/full-2216788.log Power= KillOInInvalidDependent=Yes \n"
+  },
+  "compile": {
+    "job_id": "2216789",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodes=1",
+      "--ntasks=1",
+      "--nodelist=deep-chungus-6",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+      "--kill-on-invalid-dep=yes",
+      "--time=03:00:00",
+      "--cpus-per-task=4",
+      "--mem=32G",
+      "--job-name=taps-pilot-v7-compile",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/compile-%j.log",
+      "--dependency=afterok:2216788",
+      "--wrap",
+      "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-admission-20261112-v3/prepare.sh"
+    ],
+    "verified_slurm": "JobId=2216789 JobName=taps-pilot-v7-compile UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216788(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=03:00:00 TimeMin=N/A SubmitTime=2026-11-12T11:48:49 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T11:48:49 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:62668 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* TRES=cpu=4,mem=32G,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/compile-2216789.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-audit-20261112-v7/compile-2216789.log Power= KillOInInvalidDependent=Yes \n"
+  }
+}
