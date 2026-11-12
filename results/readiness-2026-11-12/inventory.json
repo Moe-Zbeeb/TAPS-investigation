@@ -22,5 +22,9 @@
   "live-snapshot.json": {
     "remote_path": null,
     "sha256": "901974b08ab012f413bc06e0a287f6b47f4d7653470b770af113b6fdfb18f696"
+  },
+  "comparison-submission.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/profile-comparison-20261112-v1/submission.json",
+    "sha256": "8ec25ff1139ceb92eaf41569bab54a169e31f46fd3fdbd2b96d89546021f5d20"
   }
 }

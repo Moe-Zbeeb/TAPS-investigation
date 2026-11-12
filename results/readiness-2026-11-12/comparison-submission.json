@@ -1,0 +1,26 @@
+{
+  "job_id": "2216602",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=high-priority",
+    "--qos=spec-priority",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=16",
+    "--mem=16G",
+    "--time=01:00:00",
+    "--kill-on-invalid-dep=yes",
+    "--dependency=afterok:2216033:2216596",
+    "--job-name=taps-profile-compare",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/profile-comparison-20261112-v1/compare-%j.log",
+    "--wrap",
+    "env CUDA_VISIBLE_DEVICES= PYTHONDONTWRITEBYTECODE=1 PYTHONNOUSERSITE=1 /usr/bin/python3 -B -S /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/profile-comparison-20261112-v1/compare_profiles.py --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild --primary sharegpt-ultrachat-pipeline-20261111-v2 --calibration sharegpt-ultrachat-protected-calibration-20261112-v1 --output /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-calibration/20261112-v1/comparison.json"
+  ],
+  "code_commit": "8ca5f08",
+  "source_sha256": "8343c380c4b0272bdc5714818f15470661f67de5327af2838fb58d345ef5cbde",
+  "scope": "Completed engineering profiles only; generates no training jobs or quality claim"
+}

@@ -24,8 +24,14 @@ The calibration bundle is `outputs/preparation/protected-calibration-20261112-v1
 
 The primary path remains job 2216033 → full preparation 2216034 → full training 2216035 → conditional continuation 2216036. Total high-priority allocation is sixteen GPUs, including the protected eight, within the eighteen-GPU allowance. All computation and dependencies run remotely through Slurm.
 
+CPU comparison job **2216602** depends on both profiles succeeding. Its frozen `compare_profiles.py` verifies their native plans, eight-rank 200-update completions, physical mapping and token counters before writing `outputs/training-calibration/20261112-v1/comparison.json`. It submits no training jobs.
+
 ## Measurement interpretation
 
 Record startup separately when interpreting cost. The existing profile wall time includes source/model hashing, native preprocessing, model loading and actual updates. Its linear full-recipe projection is deliberately rough; do not treat multiplied startup as a precise completion estimate. Compare token counts, elapsed training phases, per-GPU telemetry and physical identities before choosing later placement or experiment budgets.
+
+The comparison isolates the recorded native-launcher interval from the rest of each profile. That interval still includes model initialization and dataset work. Its alternative full-recipe scenario includes one outside-launcher startup cost and repeated native-launcher cost; it is not a steady-state training-time estimate.
+
+The first primary startup exposes an important scaling cost: the unchanged upstream program calls `build_dataset_rank` in every distributed rank after the launcher has already performed its separate native audit. The eight interleaved map progress streams are preprocessing, not eight optimizer progress streams. Later runs should qualify a source-bound prepared-dataset loader before a large pilot: compare complete ordered token/mask rows against the pinned upstream function, preserve formatting, collation, shuffling and RNG behavior, then repeat loss/update, restart and export checks and obtain a new exact-source review. That optimization is not implemented or admitted here, and active training bundles remain unchanged.
 
 The GPU telemetry includes a known stale driver context on deep11. Whole-device memory samples are not exact framework peak-memory measurements. A Slurm RUNNING profile can still be performing CPU preprocessing; report actual utilization and optimizer progress separately from allocated GPU counts.
