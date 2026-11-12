@@ -19,7 +19,7 @@ def collect(root, submission, output):
     if not output.is_relative_to(root / 'outputs') or output.exists():
         raise ValueError('Choose a fresh interval receipt under outputs/')
     source = json.loads(submission.read_bytes())
-    mapping = {'pre_job': source['jobs']['pre']['job_id'], 'qualification_job': '2216698', 'post_job': source['jobs']['post']['job_id']}
+    mapping = {'pre_job': source['jobs']['pre']['job_id'], 'qualification_job': source['qualification_job_id'], 'post_job': source['jobs']['post']['job_id']}
     environment = dict(os.environ, TZ='UTC', SLURM_TIME_FORMAT='standard')
     command = ['sacct', '-X', '-n', '-P', '-j', ','.join(mapping.values()), '--format=JobIDRaw,JobName,User,Account,Partition,QOS,State,ExitCode,Start,End,ElapsedRaw']
     expected = {'pre_job': 'taps-runtime-pre', 'qualification_job': 'taps-pilot24-qualify', 'post_job': 'taps-runtime-post'}
@@ -36,7 +36,7 @@ def collect(root, submission, output):
         row = rows[job]
         if row[1] != expected[name] or row[2:8] != ['mohamadzbib', 'grad-students', 'high-priority', 'spec-priority', 'COMPLETED', '0:0']:
             raise ValueError('Runtime interval Slurm ownership, class or completion differs')
-        fields = source['jobs']['pre' if name == 'pre_job' else 'post']['verified_slurm'] if name != 'qualification_job' else source['dependency_overrides']['2216698']['verified_slurm']
+        fields = source['jobs']['pre' if name == 'pre_job' else 'post']['verified_slurm'] if name != 'qualification_job' else source['dependency_overrides'][mapping['qualification_job']]['verified_slurm']
         dependency = fields.split('Dependency=', 1)[1].split()[0]
         afterok = []
         for part in dependency.split(','):
@@ -45,7 +45,9 @@ def collect(root, submission, output):
         jobs[name] = {'job_id': job, 'state': row[6], 'exit_code': row[7], 'start_utc': datetime.fromisoformat(row[8]).replace(tzinfo=timezone.utc).isoformat(), 'end_utc': datetime.fromisoformat(row[9]).replace(tzinfo=timezone.utc).isoformat(), 'afterok_jobs': afterok}
     if mapping['pre_job'] not in jobs['qualification_job']['afterok_jobs'] or mapping['qualification_job'] not in jobs['post_job']['afterok_jobs'] or not (jobs['pre_job']['end_utc'] <= jobs['qualification_job']['start_utc'] <= jobs['qualification_job']['end_utc'] <= jobs['post_job']['start_utc']):
         raise ValueError('Runtime envelope does not bracket actual qualification')
-    qualifier = root / 'outputs/pilot-qualifications/rq1-pilot-24-20261112-v1'
+    qualifier = Path(source['qualification_directory']).resolve()
+    if not qualifier.is_relative_to(root / 'outputs/pilot-qualifications'):
+        raise ValueError('Qualification directory is outside the project')
     launch = json.loads((qualifier / 'launch.json').read_bytes())
     step_command = ['sacct', '-n', '-P', '-j', launch['hardware']['job_id'], '--format=JobIDRaw,JobName,State,ExitCode,Start,End,NodeList,AllocTRES']
     steps = subprocess.check_output(step_command, env=environment, text=True, timeout=30)

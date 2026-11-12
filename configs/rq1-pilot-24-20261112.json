@@ -84,7 +84,6 @@
     "eight_rank_four_vs_two_plus_two_exact_restore",
     "stock_trained_checkpoint_inference",
     "independent_full_schedule_and_provenance_audit",
-    "independent_explicit_evidence_approval",
     "all_thirteen_trainables_gradient_and_adam_coverage"
   ],
   "ds_config": {
@@ -145,5 +144,6 @@
     "capacity": 2054,
     "construction": "CPU FP32 before engine FP16/device conversion; preserve existing2048-position prefix",
     "requirement": "no rotary cache extension during forward or checkpoint recomputation"
-  }
+  },
+  "independent_evidence_review": "Mandatory separate evidence-and-study-bound approval after qualification; never a self-approved numerical check."
 }
