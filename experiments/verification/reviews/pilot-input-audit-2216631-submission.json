@@ -1,0 +1,26 @@
+{
+  "job_id": "2216631",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=high-priority",
+    "--qos=spec-priority",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=16",
+    "--mem=64G",
+    "--time=01:00:00",
+    "--job-name=taps-independent-pilot-input-audit",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-input-audit/20261112-v1/audit-%j.log",
+    "--export=ALL,CUDA_VISIBLE_DEVICES=,PYTHONDONTWRITEBYTECODE=1,PYTHONNOUSERSITE=1",
+    "--wrap",
+    "/usr/bin/python3 -B -S /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-input-audit/20261112-v1/audit.py --root /mnt/nfs/home/mohamadzbib/projects/taps-rebuild"
+  ],
+  "audit_script_sha256": "813818807271418c97c0ad80bc24899a1b7d20e2bad28dc72ab75eb2af6778f5",
+  "scope": "actual_pilot_input_population_only",
+  "cpu_only": true,
+  "no_existing_jobs_modified": true
+}

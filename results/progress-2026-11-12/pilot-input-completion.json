@@ -1,0 +1,145 @@
+{
+  "benchmark_exclusion_proofs": [
+    {
+      "benchmark": "alpaca",
+      "sha256": "8ad3e5a7fc61b88d8e25edb81a52a2ce00a04494d5694c122cb11a5cc26a00df"
+    },
+    {
+      "benchmark": "cnn_dm",
+      "sha256": "916876f0c42f938a944de96eed16e51425f29f27438cca5c9ef4737c0fedf771"
+    },
+    {
+      "benchmark": "gsm8k",
+      "sha256": "a55920b2f2aac724241124c59e5b8e8168dbbeb2ab0fdbee17d5b0ab6db5ff27"
+    },
+    {
+      "benchmark": "humaneval",
+      "sha256": "ce0244e2b228339e9a11afc63a151719beede1e389fdaec7cd9751d33902180e"
+    },
+    {
+      "benchmark": "mt_bench",
+      "sha256": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7"
+    },
+    {
+      "completion_sha256": "42f408593e5d5774bd859e75fc11bc73ce69153d105a6b789b555e1ee743604c",
+      "files": {
+        "dev.jsonl": {
+          "sha256": "520406889ed356fd1564ae36d9d4d6375933232c387368ca49bb9f6b78d179e3",
+          "size_bytes": 33728335
+        },
+        "test.jsonl": {
+          "sha256": "871c4f30911098a27c1b9405e9575bd4d474dc063e98f81664338de0f1b0ad3f",
+          "size_bytes": 33863338
+        },
+        "train.jsonl": {
+          "sha256": "827de82f6ec6df938f88078ff0528493cca327f78b9554ddf901d56abbfd3991",
+          "size_bytes": 3221863512
+        }
+      },
+      "kind": "canonical_conversation_exclusion",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2"
+    }
+  ],
+  "completed_at_utc": "2026-11-12T11:54:12.153870+00:00",
+  "config_sha256": "0ce2fbfa26518c6162bc2ba44c41bfdeb0e1a5df8b6bccbd9a1e5e518db3fae1",
+  "counts": {
+    "excluded:duplicate_complete_prompt_sequence": 37609,
+    "excluded:invalid_instruction_pair": 7,
+    "excluded:prior_corpus_prompt_overlap": 40,
+    "native_original:dev": 383,
+    "native_original:test": 449,
+    "native_original:train": 39168,
+    "pilot_codealpaca:accepted_before_split": 20014,
+    "pilot_codealpaca:read": 20022,
+    "pilot_mathinstruct:accepted_before_split": 224391,
+    "pilot_mathinstruct:read": 262039,
+    "selected_source:pilot_codealpaca": 20000,
+    "selected_source:pilot_mathinstruct": 20000,
+    "selection_excluded:pilot_codealpaca": 14,
+    "selection_excluded:pilot_mathinstruct": 204391,
+    "split:dev": 383,
+    "split:test": 449,
+    "split:train": 39168
+  },
+  "files": {
+    "dev.jsonl": {
+      "sha256": "c59df46364c1cbea0c4ddf860c051e8b8d7c8ff2642f3265e68ee4f1a10cc493",
+      "size_bytes": 484246
+    },
+    "excluded.jsonl": {
+      "sha256": "56d394e4a907fc6525e484db84863d7524973a7846676a7f180e00e0e966a1ae",
+      "size_bytes": 4697580
+    },
+    "original/dev.jsonl": {
+      "sha256": "98b18f1a8d247cf2be5e8e96b444ef643ee6b2f9707b8ba36460e328e997cda5",
+      "size_bytes": 241196
+    },
+    "original/test.jsonl": {
+      "sha256": "e5267a28e6154ddd09b4d9ec73b69a488ddc5b25806d9c47f81a312e21ec6e82",
+      "size_bytes": 310977
+    },
+    "original/train.jsonl": {
+      "sha256": "0f28bf53da39b06caa9fecff3c26e9dc2aad797d45cf478560865a547cc80bf6",
+      "size_bytes": 25819319
+    },
+    "test.jsonl": {
+      "sha256": "48f4a226a2717d90fc513b92696fdae84d29ca1b4f98a4a9a8f635179bc37bc0",
+      "size_bytes": 597354
+    },
+    "train.jsonl": {
+      "sha256": "090022261332a8e8e7ea5e737ac0cf6184557b8af8a4e9d644fa306c59f01d6c",
+      "size_bytes": 50796065
+    }
+  },
+  "native_original_files_contain_complete_pairs_only": true,
+  "native_tokenization_filter_performed": false,
+  "response_regime": "original_and_prompt_only_inputs",
+  "scope": "real_training_corpus_preparation",
+  "selection": {
+    "max_groups_by_source": {
+      "pilot_codealpaca": 20000,
+      "pilot_mathinstruct": 20000
+    },
+    "policy": "Seeded SHA256 priority over whole connected conversation groups after schema, reference-overlap and prior-chat exclusion and prompt deduplication; before target generation; no answer-quality selection",
+    "seed": 20261112
+  },
+  "source_sha256": "a058e587d6cb42477e654a043cf58ba1924594f3aee97e08696f85474773ead2",
+  "sources": [
+    {
+      "domain": "math",
+      "files": [
+        {
+          "path": "MathInstruct.json",
+          "sha256": "15b8be9824c31d619078f43baf67f7243c53f475ae4de5f8346b6d3ea9c269dd",
+          "size_bytes": 212488891
+        }
+      ],
+      "format": "alpaca",
+      "id": "pilot_mathinstruct",
+      "license_as_reported_by_source": "mit",
+      "repo_id": "TIGER-Lab/MathInstruct",
+      "revision": "b4fdc323a7be1379c9c7c0b67b1de72dfee2111a"
+    },
+    {
+      "domain": "code",
+      "files": [
+        {
+          "git_blob_sha1": "4599591b17572755907bd945e34d25a956dcab09",
+          "path": "code_alpaca_20k.json",
+          "sha256": "58d136bb7ea8e4b7c5b6ef08831da905d0abfafeb56f8fa519083089dd6a210e",
+          "size_bytes": 8057896
+        }
+      ],
+      "format": "alpaca",
+      "id": "pilot_codealpaca",
+      "license_as_reported_by_source": "cc-by-4.0",
+      "repo_id": "sahil2801/CodeAlpaca-20k",
+      "revision": "152bb5e9a29651266b018106053980070a0521a1"
+    }
+  ],
+  "splits_grouped": true,
+  "status": "complete",
+  "target_regeneration_performed": false,
+  "teacher_features": "online native training; offline prototype tensors not required",
+  "training_started": false
+}

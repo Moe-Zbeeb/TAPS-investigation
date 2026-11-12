@@ -1,0 +1,247 @@
+{
+  "checked_at_utc": "2026-11-12T12:02:44.073788+00:00",
+  "node_usage": [
+    {
+      "node": "deep-chungus-10",
+      "allocation_job_id": "2212580",
+      "gpus": [
+        {
+          "index": 0,
+          "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434",
+          "utilization_percent": 93.0,
+          "memory_used_mib": 68369.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 1,
+          "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641",
+          "utilization_percent": 93.0,
+          "memory_used_mib": 68125.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 2,
+          "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a",
+          "utilization_percent": 94.0,
+          "memory_used_mib": 68365.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 3,
+          "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95",
+          "utilization_percent": 94.0,
+          "memory_used_mib": 69325.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 4,
+          "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8",
+          "utilization_percent": 92.0,
+          "memory_used_mib": 68651.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 5,
+          "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797",
+          "utilization_percent": 93.0,
+          "memory_used_mib": 68405.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 6,
+          "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a",
+          "utilization_percent": 93.0,
+          "memory_used_mib": 68131.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 7,
+          "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d",
+          "utilization_percent": 93.0,
+          "memory_used_mib": 68227.0,
+          "memory_total_mib": 81920.0
+        }
+      ],
+      "sampled_at_utc": "2026-11-12T12:02:43.230282+00:00"
+    },
+    {
+      "node": "deep-chungus-11",
+      "allocation_job_id": "2216035",
+      "gpus": [
+        {
+          "index": 0,
+          "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c",
+          "utilization_percent": 100.0,
+          "memory_used_mib": 40633.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 1,
+          "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2",
+          "utilization_percent": 99.0,
+          "memory_used_mib": 36635.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 2,
+          "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19",
+          "utilization_percent": 100.0,
+          "memory_used_mib": 37879.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 3,
+          "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c",
+          "utilization_percent": 99.0,
+          "memory_used_mib": 40645.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 4,
+          "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c",
+          "utilization_percent": 100.0,
+          "memory_used_mib": 31571.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 5,
+          "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed",
+          "utilization_percent": 100.0,
+          "memory_used_mib": 37031.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 6,
+          "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c",
+          "utilization_percent": 100.0,
+          "memory_used_mib": 31457.0,
+          "memory_total_mib": 81920.0
+        },
+        {
+          "index": 7,
+          "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8",
+          "utilization_percent": 100.0,
+          "memory_used_mib": 44521.0,
+          "memory_total_mib": 81920.0
+        }
+      ],
+      "sampled_at_utc": "2026-11-12T12:02:43.646884+00:00"
+    }
+  ],
+  "sampled_active_gpus": 16,
+  "running_high_priority_gpu_allocations": 16,
+  "full_training_batch_cursors": [
+    {
+      "rank": 0,
+      "epoch": 0,
+      "batch_index": 1511,
+      "modified_at_utc": "2026-11-12T12:02:43.011750+00:00"
+    },
+    {
+      "rank": 1,
+      "epoch": 0,
+      "batch_index": 1511,
+      "modified_at_utc": "2026-11-12T12:02:43.011750+00:00"
+    },
+    {
+      "rank": 2,
+      "epoch": 0,
+      "batch_index": 1512,
+      "modified_at_utc": "2026-11-12T12:02:43.731746+00:00"
+    },
+    {
+      "rank": 3,
+      "epoch": 0,
+      "batch_index": 1511,
+      "modified_at_utc": "2026-11-12T12:02:43.735746+00:00"
+    },
+    {
+      "rank": 4,
+      "epoch": 0,
+      "batch_index": 1512,
+      "modified_at_utc": "2026-11-12T12:02:43.679747+00:00"
+    },
+    {
+      "rank": 5,
+      "epoch": 0,
+      "batch_index": 1512,
+      "modified_at_utc": "2026-11-12T12:02:43.703747+00:00"
+    },
+    {
+      "rank": 6,
+      "epoch": 0,
+      "batch_index": 1512,
+      "modified_at_utc": "2026-11-12T12:02:43.771746+00:00"
+    },
+    {
+      "rank": 7,
+      "epoch": 0,
+      "batch_index": 1512,
+      "modified_at_utc": "2026-11-12T12:02:43.771746+00:00"
+    }
+  ],
+  "train_batches_per_rank_per_epoch": 32062,
+  "native_epochs": 40,
+  "note": "Batch cursor is written before that batch executes; it is not an exact successful optimizer-update counter. No completed epoch or trained-quality result is claimed.",
+  "pilot_teacher_workers": [
+    {
+      "worker": "worker-0-progress.json",
+      "completed_examples": 640,
+      "elapsed_seconds_this_attempt": 304.7802477683872,
+      "expected_examples": 5000,
+      "generated_tokens_this_attempt": 341475
+    },
+    {
+      "worker": "worker-1-progress.json",
+      "completed_examples": 576,
+      "elapsed_seconds_this_attempt": 290.47339114919305,
+      "expected_examples": 5000,
+      "generated_tokens_this_attempt": 322886
+    },
+    {
+      "worker": "worker-2-progress.json",
+      "completed_examples": 576,
+      "elapsed_seconds_this_attempt": 291.19030138105154,
+      "expected_examples": 5000,
+      "generated_tokens_this_attempt": 300129
+    },
+    {
+      "worker": "worker-3-progress.json",
+      "completed_examples": 576,
+      "elapsed_seconds_this_attempt": 295.6173782236874,
+      "expected_examples": 5000,
+      "generated_tokens_this_attempt": 326514
+    },
+    {
+      "worker": "worker-4-progress.json",
+      "completed_examples": 640,
+      "elapsed_seconds_this_attempt": 307.71832919400185,
+      "expected_examples": 5000,
+      "generated_tokens_this_attempt": 349438
+    },
+    {
+      "worker": "worker-5-progress.json",
+      "completed_examples": 640,
+      "elapsed_seconds_this_attempt": 301.14774430915713,
+      "expected_examples": 5000,
+      "generated_tokens_this_attempt": 310206
+    },
+    {
+      "worker": "worker-6-progress.json",
+      "completed_examples": 640,
+      "elapsed_seconds_this_attempt": 304.79741000011563,
+      "expected_examples": 5000,
+      "generated_tokens_this_attempt": 334251
+    },
+    {
+      "worker": "worker-7-progress.json",
+      "completed_examples": 640,
+      "elapsed_seconds_this_attempt": 299.550605985336,
+      "expected_examples": 5000,
+      "generated_tokens_this_attempt": 309147
+    }
+  ],
+  "pilot_processed_inputs": 4928,
+  "pilot_total_inputs": 40000,
+  "jobs": "2215920|high-priority|spec-priority|deep10-hold|PENDING|gres:gpu:a100:8|(Dependency)\n2216036|high-priority|spec-priority|taps-full-continue|PENDING|N/A|(Dependency)\n2216035|high-priority|spec-priority|taps-full-train|RUNNING|gres:gpu:a100:8|deep-chungus-11\n2212580|high-priority|spec-priority|deep10-hold|RUNNING|gres:gpu:a100:8|deep-chungus-10\n2216631|high-priority|spec-priority|taps-independent-pilot-input-audit|RUNNING|N/A|deep-chungus-6\n2216626|high-priority|spec-priority|taps-pilot-teacher|RUNNING|N/A|deep-chungus-6\n"
+}

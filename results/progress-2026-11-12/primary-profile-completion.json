@@ -1,0 +1,20 @@
+{
+  "completed_at_utc": "2026-11-12T11:08:13.201152+00:00",
+  "forty_epoch_reproduction_complete": false,
+  "mid_epoch_resume_validated": false,
+  "native_plan_sha256": "3482ec7884ef8d51f764a6c50c67d54038c703dd5038ec2eb99ea90266f6a4e4",
+  "scope": "200-update scratch-native real-data profiling only",
+  "status": "complete",
+  "successful_optimizer_steps_by_rank": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+  ],
+  "training_quality_result": false,
+  "wall_seconds": 1492.9855017969385
+}

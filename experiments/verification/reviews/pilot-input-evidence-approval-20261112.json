@@ -1,0 +1,92 @@
+{
+  "status": "approved",
+  "review_decision": "approved",
+  "scope": "actual_pilot_input_population_only",
+  "review_type": "independent_stdlib_raw_data_replay",
+  "audit_job_id": "2216631",
+  "audit_job_state": "COMPLETED",
+  "audit_job_exit_code": "0:0",
+  "audit_cpu_resources": {
+    "node": "deep-chungus-6",
+    "cpus": 16,
+    "memory_request": "64G",
+    "gpu_count": 0,
+    "partition": "high-priority",
+    "account": "grad-students",
+    "qos": "spec-priority"
+  },
+  "report_sha256": "a9820c77a8d73cd379f89af82b3c07da8da26943fad1c200eeec4f9690664632",
+  "audit_script_sha256": "813818807271418c97c0ad80bc24899a1b7d20e2bad28dc72ab75eb2af6778f5",
+  "artifact_inventory_sha256": "67d0a800247f508baff116606ff2493631a1794f9ccee996df91376806111536",
+  "artifact_inventory_count": 64,
+  "population_path": "data/corpora/rq1-math-code-original-20261112-v1",
+  "population_completion_sha256": "c132befc2a0d4be999d42e771a7163ed3dad9a8b6220d09ff0fc344ce7a45d57",
+  "derived_config_sha256": "0ce2fbfa26518c6162bc2ba44c41bfdeb0e1a5df8b6bccbd9a1e5e518db3fae1",
+  "frozen_bundle_sha256": "1a2cc6d99dafb8e430cbff504c25c8ae5c81eeb0c924da29e7d583cd5ab2a8d9",
+  "retained_review_artifacts": {
+    "experiments/verification/reviews/independent_pilot_input_audit_20261112.py": "813818807271418c97c0ad80bc24899a1b7d20e2bad28dc72ab75eb2af6778f5",
+    "experiments/verification/reviews/pilot-input-audit-2216631-report.json": "a9820c77a8d73cd379f89af82b3c07da8da26943fad1c200eeec4f9690664632",
+    "experiments/verification/reviews/pilot-input-audit-2216631-submission.json": "1a9a3cdf5c49e463fa979a4e340886fa0b00dabd3913ff6603dc5fb87c729861",
+    "experiments/verification/reviews/pilot-input-audit-2216631-accounting.json": "85b125915b52c34b4be5b62c521aafe4ff757e25927af581e5c99055982e43b6"
+  },
+  "blocking_issues": [],
+  "findings": [
+    "The audit imports only Python standard-library modules; it does not import the implementation corpus, pilot or generation helpers.",
+    "Both raw sources match pinned sizes and SHA256 identities; CodeAlpaca additionally matches its pinned Git blob. Raw original prompts, answers, source rows/revisions/domain and available upstream-source labels reproduce every retained canonical and native-original pair exactly.",
+    "An independent graph traversal reproduced whole conversation components, prompt deduplication, seeded priority selection and grouped split assignment. All selected rows, file order and exclusion journal entries match exactly.",
+    "The audit scanned all 540107 pinned prior-chat conversations and 1735763 user turns, plus all 400 reference-panel records and 480 user turns. No selected exact normalized overlap was found.",
+    "Every one of the 64 bound input/source artifacts was rehashed after the replay and remained byte-identical. All recorded preparation counts matched the independent reconstruction."
+  ],
+  "selected_rows": 40000,
+  "selected_groups": 40000,
+  "source_split_counts": {
+    "pilot_codealpaca": {
+      "dev": 199,
+      "test": 215,
+      "train": 19586
+    },
+    "pilot_mathinstruct": {
+      "dev": 184,
+      "test": 234,
+      "train": 19582
+    }
+  },
+  "split_counts": {
+    "train": 39168,
+    "dev": 383,
+    "test": 449
+  },
+  "excluded_counts": {
+    "excluded:duplicate_complete_prompt_sequence": 37609,
+    "excluded:invalid_instruction_pair": 7,
+    "excluded:prior_corpus_prompt_overlap": 40
+  },
+  "all_replayed_mismatch_counts": {
+    "exact_benchmark_prompt_overlaps": 0,
+    "exact_prior_chat_prompt_overlaps": 0,
+    "duplicate_selected_examples_or_prompts": 0,
+    "group_split_conflicts": 0,
+    "raw_prompt_answer_and_provenance_mismatches": 0,
+    "selection_split_or_order_mismatches": 0,
+    "native_original_pair_mismatches": 0,
+    "exclusion_journal_mismatches": 0
+  },
+  "scientific_training_authorized": false,
+  "teacher_outputs_reviewed": false,
+  "native_postgeneration_length_qa_reviewed": false,
+  "remaining_execution_evidence": [
+    "Teacher model/runtime/settings and actual eight-GPU proof; exact selected-ordinal outcome coverage, complete EOS-terminated responses and explicit generation rejection reasons.",
+    "Generated corpus hashes, preserved original/target input and split identities, response-regime survival counts and unchanged official native tokenization/length QA.",
+    "Separate reviewed matched-budget design and training admission before any pilot training or comparative quality claim."
+  ],
+  "limitations": [
+    "Exact normalized reference-panel/prior-chat exclusion only; no semantic, paraphrase, code-clone or full-benchmark contamination claim.",
+    "This is the pre-teacher input population. Teacher EOS completion, runtime/model/settings, generated coverage and postgeneration native length QA require separate evidence.",
+    "Original upstream license declarations and network ownership were not independently authenticated.",
+    "No matched-budget pilot training or completed post-filter data-scale condition is admitted."
+  ],
+  "repository_or_cluster_implementation_changed": false,
+  "existing_jobs_modified": false,
+  "raw_inputs_or_text_downloaded": false,
+  "git_commit_created": false
+}

@@ -1,0 +1,328 @@
+{
+  "all_inventory_bytes_stable_before_and_after": true,
+  "all_receipt_counts_match": true,
+  "artifact_inventory": {
+    "data/corpora/rq1-math-code-original-20261112-v1/completion.json": {
+      "sha256": "c132befc2a0d4be999d42e771a7163ed3dad9a8b6220d09ff0fc344ce7a45d57",
+      "size_bytes": 5194
+    },
+    "data/corpora/rq1-math-code-original-20261112-v1/dev.jsonl": {
+      "sha256": "c59df46364c1cbea0c4ddf860c051e8b8d7c8ff2642f3265e68ee4f1a10cc493",
+      "size_bytes": 484246
+    },
+    "data/corpora/rq1-math-code-original-20261112-v1/excluded.jsonl": {
+      "sha256": "56d394e4a907fc6525e484db84863d7524973a7846676a7f180e00e0e966a1ae",
+      "size_bytes": 4697580
+    },
+    "data/corpora/rq1-math-code-original-20261112-v1/original/dev.jsonl": {
+      "sha256": "98b18f1a8d247cf2be5e8e96b444ef643ee6b2f9707b8ba36460e328e997cda5",
+      "size_bytes": 241196
+    },
+    "data/corpora/rq1-math-code-original-20261112-v1/original/test.jsonl": {
+      "sha256": "e5267a28e6154ddd09b4d9ec73b69a488ddc5b25806d9c47f81a312e21ec6e82",
+      "size_bytes": 310977
+    },
+    "data/corpora/rq1-math-code-original-20261112-v1/original/train.jsonl": {
+      "sha256": "0f28bf53da39b06caa9fecff3c26e9dc2aad797d45cf478560865a547cc80bf6",
+      "size_bytes": 25819319
+    },
+    "data/corpora/rq1-math-code-original-20261112-v1/test.jsonl": {
+      "sha256": "48f4a226a2717d90fc513b92696fdae84d29ca1b4f98a4a9a8f635179bc37bc0",
+      "size_bytes": 597354
+    },
+    "data/corpora/rq1-math-code-original-20261112-v1/train.jsonl": {
+      "sha256": "090022261332a8e8e7ea5e737ac0cf6184557b8af8a4e9d644fa306c59f01d6c",
+      "size_bytes": 50796065
+    },
+    "data/corpora/sharegpt-ultrachat-20261110-v2/completion.json": {
+      "sha256": "42f408593e5d5774bd859e75fc11bc73ce69153d105a6b789b555e1ee743604c",
+      "size_bytes": 4965
+    },
+    "data/corpora/sharegpt-ultrachat-20261110-v2/dev.jsonl": {
+      "sha256": "520406889ed356fd1564ae36d9d4d6375933232c387368ca49bb9f6b78d179e3",
+      "size_bytes": 33728335
+    },
+    "data/corpora/sharegpt-ultrachat-20261110-v2/test.jsonl": {
+      "sha256": "871c4f30911098a27c1b9405e9575bd4d474dc063e98f81664338de0f1b0ad3f",
+      "size_bytes": 33863338
+    },
+    "data/corpora/sharegpt-ultrachat-20261110-v2/train.jsonl": {
+      "sha256": "827de82f6ec6df938f88078ff0528493cca327f78b9554ddf901d56abbfd3991",
+      "size_bytes": 3221863512
+    },
+    "data/raw/pilot_codealpaca/152bb5e9a29651266b018106053980070a0521a1/code_alpaca_20k.json": {
+      "sha256": "58d136bb7ea8e4b7c5b6ef08831da905d0abfafeb56f8fa519083089dd6a210e",
+      "size_bytes": 8057896
+    },
+    "data/raw/pilot_mathinstruct/b4fdc323a7be1379c9c7c0b67b1de72dfee2111a/MathInstruct.json": {
+      "sha256": "15b8be9824c31d619078f43baf67f7243c53f475ae4de5f8346b6d3ea9c269dd",
+      "size_bytes": 212488891
+    },
+    "data/reference/alpaca.jsonl": {
+      "sha256": "8ad3e5a7fc61b88d8e25edb81a52a2ce00a04494d5694c122cb11a5cc26a00df",
+      "size_bytes": 31220
+    },
+    "data/reference/cnn_dm.jsonl": {
+      "sha256": "916876f0c42f938a944de96eed16e51425f29f27438cca5c9ef4737c0fedf771",
+      "size_bytes": 304676
+    },
+    "data/reference/gsm8k.jsonl": {
+      "sha256": "a55920b2f2aac724241124c59e5b8e8168dbbeb2ab0fdbee17d5b0ab6db5ff27",
+      "size_bytes": 48188
+    },
+    "data/reference/humaneval.jsonl": {
+      "sha256": "ce0244e2b228339e9a11afc63a151719beede1e389fdaec7cd9751d33902180e",
+      "size_bytes": 63176
+    },
+    "data/reference/mt_bench.jsonl": {
+      "sha256": "119565adbab82227089cefdb44c8d7e2cf04dc0a0ec233634c82e7d4e2a944f7",
+      "size_bytes": 48929
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/bundle.json": {
+      "sha256": "1a2cc6d99dafb8e430cbff504c25c8ae5c81eeb0c924da29e7d583cd5ab2a8d9",
+      "size_bytes": 4762
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/configs/pilot-inputs.json": {
+      "sha256": "48d1e400ad8c4e89cb76e2b457e4633f63417a4b570e69ead0505900cf5bebf4",
+      "size_bytes": 3097
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/derived-corpus-config.json": {
+      "sha256": "0ce2fbfa26518c6162bc2ba44c41bfdeb0e1a5df8b6bccbd9a1e5e518db3fae1",
+      "size_bytes": 3628
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/prepare.sh": {
+      "sha256": "80d25e738a822e6d65197526ea76180fadda701ad8f4007e9ee3052fb6263b58",
+      "size_bytes": 835
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/review.json": {
+      "sha256": "a1b23c5764d27db8b34f5fed323dbc9ff7e01108f3b48577a2ac985721320cb3",
+      "size_bytes": 5894
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/__init__.py": {
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "size_bytes": 22
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/__main__.py": {
+      "sha256": "b2663b7425569c81aa530431d163a016dc86dbe3748818f472b9acc508c8b0ba",
+      "size_bytes": 3319
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/admission.py": {
+      "sha256": "028747152f4c4bbbeca49120aaa72100b6d5293439411840d9546815a6ec3c0b",
+      "size_bytes": 15144
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/admission_v2.py": {
+      "sha256": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49",
+      "size_bytes": 27753
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/assets.py": {
+      "sha256": "2a312ec52618ab335fcda435e47406c568f55d14e48baf2193b1bd364755ee32",
+      "size_bytes": 13071
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/attach.py": {
+      "sha256": "376d2e5eb8936812b1b53e45adac8983bd6ceed226329fa355fd0e50a1868b6b",
+      "size_bytes": 17145
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/backends/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/backends/official.py": {
+      "sha256": "e5a6863d3a387fe4a91d30b7b368358a6195e222a3a4ac3ab2958df539175d4a",
+      "size_bytes": 20470
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/backends/pooled.py": {
+      "sha256": "3518af70d7c71e27710ac5a66c72816dfc7257ab5013a35c983ccd6375dabc64",
+      "size_bytes": 13650
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/composition.py": {
+      "sha256": "e4c428f11468b6231c12156822a6c68b7e4a0bdf3e8bc59493b8dd79b398f69d",
+      "size_bytes": 33218
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/composition_cli.py": {
+      "sha256": "edafe0e34d10f77c780cb25c350bd29f41692c65163597ce164cb16dbbfc437a",
+      "size_bytes": 16185
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/corpus.py": {
+      "sha256": "a058e587d6cb42477e654a043cf58ba1924594f3aee97e08696f85474773ead2",
+      "size_bytes": 17940
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/corpus_continue.py": {
+      "sha256": "e2e197b60ad1a0411261721a3c52fbc50d6ae475147d82c3e41cd808bc472b5d",
+      "size_bytes": 5505
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/corpus_generate.py": {
+      "sha256": "7725c7e6b0a9769d5614d2d357ca4e8af2bc6f641cc2de47f38602676af9ee9f",
+      "size_bytes": 20180
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/data.py": {
+      "sha256": "ca070ff7bba2526d83a44a00d972ea7694fbd63c53539f244528cf2fc32b0608",
+      "size_bytes": 18114
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/data_pool.py": {
+      "sha256": "21fedaacbf6e9ce0e9c0b9f143bcf8827d714429712aa57deee834ff05d121a4",
+      "size_bytes": 35996
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/data_queue.py": {
+      "sha256": "ac436e15f94a5ac40263db9d4fe87d1cf40d4f32fab43805469bc4b7d1c0970d",
+      "size_bytes": 4658
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/engineering.py": {
+      "sha256": "5d0f1f8758265e9914899069213f42105dd41ddceea58e3e0682ee05f19be941",
+      "size_bytes": 15723
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/learning.py": {
+      "sha256": "bf46a60595b3f46829f0211e429aca2c0d48818e36c07121582b229e3e35f79d",
+      "size_bytes": 50019
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/metrics.py": {
+      "sha256": "1a168810154a7c0f0d5fc46037997f461d8daf6999ce23b6ef8fca9db68ca508",
+      "size_bytes": 30972
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/native_data_qa.py": {
+      "sha256": "58b188c47fef3e8044d2134bbaaba0af8458b2e9ab91569e8566c272163a01db",
+      "size_bytes": 11509
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/native_recovery.py": {
+      "sha256": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+      "size_bytes": 12809
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/native_runtime.py": {
+      "sha256": "328626fef96ca9f40b288ab49c832f14a26ff3fc9b182ba78938b3b8239446df",
+      "size_bytes": 39167
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/native_training.py": {
+      "sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "size_bytes": 70884
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/numerical_validation.py": {
+      "sha256": "cb0546c268c09d73e15f62bde6d55a9a3437d26cce24ef464c14a9138d84629a",
+      "size_bytes": 10750
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/pilot_data.py": {
+      "sha256": "3657939301561abc17c2312f197e2f598710a68a07968c1defdcc56cbbe94ffd",
+      "size_bytes": 4175
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/reference_group.py": {
+      "sha256": "47c7d4c4b2ded3d61c3ea14c3d01644dce688bdbe983607135ced7ea1c2e4cd7",
+      "size_bytes": 20979
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/runner.py": {
+      "sha256": "7cc2327f83d76238a28e7539f094e1d8c387c0496c0c8ad13f6c079f84794d3c",
+      "size_bytes": 30798
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/runtime.py": {
+      "sha256": "ade8973206220550ec275b73c3a0fe7e33b7869b653cdfba700ee72117d41d3e",
+      "size_bytes": 29563
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/serving.py": {
+      "sha256": "af74b16b5aa281671b2338e7fbba2517234cb91ab6a317ac8eed616cd21a6d07",
+      "size_bytes": 48210
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/serving_pool.py": {
+      "sha256": "f40e8f8efe5ef64e5cee4326451970fcd185a34333b30e7a4b1e10e013c07e33",
+      "size_bytes": 21929
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/sources.py": {
+      "sha256": "9aeb3df80bb81b856c114f753698caa2410074153e265aaa76a1e81a24be7faf",
+      "size_bytes": 15006
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/specialization.py": {
+      "sha256": "7510c8e8d6960c117b8dbc7017176e8f3a9171b53215ac5f0157886b7c050bae",
+      "size_bytes": 34043
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/training_handoff.py": {
+      "sha256": "3e3ea9b80c6c81bd91e8fcecf8e46006cdb08f4f6b2ca9a5e1495f427f211a9e",
+      "size_bytes": 9083
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/training_queue.py": {
+      "sha256": "4576e22bd456e6e51e2fcf5bb09b2dde74f074d57fcda202c3eed5cd4ffc4e01",
+      "size_bytes": 5533
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/validation_budget.py": {
+      "sha256": "7ccfd76f3e3d9b657cd310f10417fd2c2c608e1fb49ce53012e31993f669d8ff",
+      "size_bytes": 1193
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/src/taps_rebuild/verification.py": {
+      "sha256": "2f20b91dbf33aa101135f3b3199ce0542f764d3d41a5e8332c11c38920fc5d31",
+      "size_bytes": 15445
+    },
+    "outputs/preparation/rq1-pilot-inputs-20261112-v1/teacher.sh": {
+      "sha256": "d5b1ddb6cc040991357cda107666f81ab2deb96cfe70373c09ae0191f9936803",
+      "size_bytes": 745
+    },
+    "outputs/preparation/sources.json": {
+      "sha256": "452fb3ff49e64eb0cd2e4f3625e5190fad8ee03b1d4bd9b6e0ae461406366dc1",
+      "size_bytes": 35967
+    }
+  },
+  "artifact_inventory_sha256": "67d0a800247f508baff116606ff2493631a1794f9ccee996df91376806111536",
+  "audit_script_sha256": "813818807271418c97c0ad80bc24899a1b7d20e2bad28dc72ab75eb2af6778f5",
+  "completed_at_utc": "2026-11-12T12:03:18.493371+00:00",
+  "counts": {
+    "excluded:duplicate_complete_prompt_sequence": 37609,
+    "excluded:invalid_instruction_pair": 7,
+    "excluded:prior_corpus_prompt_overlap": 40,
+    "native_original:dev": 383,
+    "native_original:test": 449,
+    "native_original:train": 39168,
+    "pilot_codealpaca:accepted_before_split": 20014,
+    "pilot_codealpaca:read": 20022,
+    "pilot_mathinstruct:accepted_before_split": 224391,
+    "pilot_mathinstruct:read": 262039,
+    "selected_source:pilot_codealpaca": 20000,
+    "selected_source:pilot_mathinstruct": 20000,
+    "selection_excluded:pilot_codealpaca": 14,
+    "selection_excluded:pilot_mathinstruct": 204391,
+    "split:dev": 383,
+    "split:test": 449,
+    "split:train": 39168
+  },
+  "cpu_only": true,
+  "duplicate_selected_examples_or_prompts": 0,
+  "exact_benchmark_prompt_overlaps": 0,
+  "exact_prior_chat_prompt_overlaps": 0,
+  "exclusion_journal_mismatches": 0,
+  "group_split_conflicts": 0,
+  "imports_project_helpers": false,
+  "limitations": [
+    "Exact normalized reference-panel/prior-chat exclusion only; no semantic, paraphrase, code-clone or full-benchmark contamination claim.",
+    "This is the pre-teacher input population. Teacher EOS completion, runtime/model/settings, generated coverage and postgeneration native length QA require separate evidence.",
+    "Original upstream license declarations and network ownership were not independently authenticated.",
+    "No matched-budget pilot training or completed post-filter data-scale condition is admitted."
+  ],
+  "maximum_raw_component_nodes": 42,
+  "native_original_pair_mismatches": 0,
+  "prior_chat_rows": 540107,
+  "prior_chat_unique_prompts": 1706596,
+  "prior_chat_user_turns": 1735763,
+  "raw_connected_components": 244405,
+  "raw_prompt_answer_and_provenance_mismatches": 0,
+  "reference_panel_rows": 400,
+  "reference_panel_unique_prompts": 480,
+  "reference_panel_user_turns": 480,
+  "scientific_training_authorized": false,
+  "scope": "actual_pilot_input_population_only",
+  "selected_groups": 40000,
+  "selected_rows": 40000,
+  "selection_split_or_order_mismatches": 0,
+  "slurm_job_id": "2216631",
+  "source_split_counts": {
+    "pilot_codealpaca": {
+      "dev": 199,
+      "test": 215,
+      "train": 19586
+    },
+    "pilot_mathinstruct": {
+      "dev": 184,
+      "test": 234,
+      "train": 19582
+    }
+  },
+  "status": "passed",
+  "teacher_outputs_reviewed": false,
+  "wall_seconds": 42.19587430777028
+}

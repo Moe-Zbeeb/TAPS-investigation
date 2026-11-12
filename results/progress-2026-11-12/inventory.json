@@ -1,0 +1,50 @@
+{
+  "primary-profile-completion.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-pipeline-20261111-v2/profile-completion.json",
+    "sha256": "190f0e485ec66e36dce189b96839e383a836fc2eb00d1ea963b655297ad8a426"
+  },
+  "primary-profile-cost.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-pipeline-20261111-v2/profile-cost.json",
+    "sha256": "cba7476ddbee0af4c65b56d743b428cc54ca988d3fa5bd29b80d484507aa78a3"
+  },
+  "protected-profile-completion.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-protected-calibration-20261112-v1/profile-completion.json",
+    "sha256": "aeec90504ecdf8423d4fec4c5df902175a14105b354e64833a90aeda6aa7f083"
+  },
+  "protected-profile-cost.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-protected-calibration-20261112-v1/profile-cost.json",
+    "sha256": "978f53d587460a5e420251d9da975e7dda566ee5c7ae051b154456c9d20093de"
+  },
+  "profile-comparison.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-calibration/20261112-v1/comparison.json",
+    "sha256": "05fe1523a975ad35a15a357705fc79cfc4b937d3d874dadf3de46ea6e722fd63"
+  },
+  "full-training-preparation.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-handoff/sharegpt-ultrachat-full-pipeline-20261111-v2/status.json",
+    "sha256": "7e2579045b9f75bf4c7d0367e7bdc70b89abfd3948ac5333b55351cdd7935322"
+  },
+  "full-training-launch.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/sharegpt-ultrachat-full-pipeline-20261111-v2-preparation-0/launch.json",
+    "sha256": "f21b61b96ab5d013924398410c288dcd375f05f9858d160af72f003997ba3be8"
+  },
+  "pilot-input-completion.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/completion.json",
+    "sha256": "c132befc2a0d4be999d42e771a7163ed3dad9a8b6220d09ff0fc344ce7a45d57"
+  },
+  "pilot-submission.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-inputs-20261112-v1/submission.json",
+    "sha256": "3930f1f3f643243e125567e8a1ace3b5c3e09195d345ca6bedf384dce9a223b7"
+  },
+  "pilot-bundle.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-inputs-20261112-v1/bundle.json",
+    "sha256": "1a2cc6d99dafb8e430cbff504c25c8ae5c81eeb0c924da29e7d583cd5ab2a8d9"
+  },
+  "pilot-deployed-source-verification.json": {
+    "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-inputs-20261112-v1/deployed-source-verification.json",
+    "sha256": "75a13b6a9e33389bd1fdcd496a9b4da2a95b7e93836d33c44d88e3b0061c2099"
+  },
+  "live-progress.json": {
+    "remote_path": null,
+    "sha256": "be93a6b5c9fef4525a3b39fa69fadc75704c4d9f115e0a87e8115c9b9193752c"
+  }
+}

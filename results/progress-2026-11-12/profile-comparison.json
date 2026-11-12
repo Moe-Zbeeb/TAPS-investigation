@@ -1,0 +1,125 @@
+{
+  "status": "complete",
+  "scope": "Same-seed engineering calibration; no quality result or isolated causal hardware comparison",
+  "profiles": [
+    {
+      "run_id": "sharegpt-ultrachat-pipeline-20261111-v2",
+      "node": "deep-chungus-11",
+      "hardware_identity_sha256": "47811704de2166adcf61e573d434222a9a66d7498c4b9c6b36001201ac2a60a2",
+      "input_identity": {
+        "target": "7c3d0c33c2a43a10ba658bdca906de7412050d8c094083a34e0d6fced7c94b6c",
+        "train": "9425a337fc350eddf4b8dcc0acb505ad12781021f21e67bc864f4aa51c19991c",
+        "validation": "6bccf32f970e0fd75f3e64d6f9badf125e0cd9b15dc867d6c33a225a5b0530f7",
+        "native_helper": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+        "upstream_revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+        "world_size": 8,
+        "max_length": 2048,
+        "seed": 0
+      },
+      "phases": {
+        "whole_profile_wall_seconds": 1623.0692869909108,
+        "native_launcher_wall_seconds": 890.983279,
+        "outside_native_launcher_wall_seconds": 732.0860079909107,
+        "scope": "Native launcher interval includes model initialization and dataset work; it is not steady-state update time"
+      },
+      "processed_tokens": {
+        "input_assistant_mask_tokens": 2975675,
+        "input_slots": 4204630,
+        "microbatches": 3200,
+        "nonpadding_tokens": 4204630
+      },
+      "whole_profile_nonpadding_tokens_per_second": 2590.5425194725813,
+      "native_launcher_nonpadding_tokens_per_second": 4719.089683387874,
+      "duration_weighted_eight_gpu_hours": 3.6068206377575796,
+      "original_rough_linear_full_recipe_hours": 1445.523541097294,
+      "one_preflight_plus_repeated_native_launcher_scenario_hours": 793.722965316053,
+      "telemetry_errors": [],
+      "evidence": {
+        "status": {
+          "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-pipeline-20261111-v2/status.json",
+          "sha256": "24272253ec06da362575cf22871d77922af3ff49686895216f88dc8055b96418"
+        },
+        "cost": {
+          "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-pipeline-20261111-v2/profile-cost.json",
+          "sha256": "cba7476ddbee0af4c65b56d743b428cc54ca988d3fa5bd29b80d484507aa78a3"
+        },
+        "completion": {
+          "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-pipeline-20261111-v2/profile-completion.json",
+          "sha256": "190f0e485ec66e36dce189b96839e383a836fc2eb00d1ea963b655297ad8a426"
+        },
+        "native_plan": {
+          "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/sharegpt-ultrachat-pipeline-20261111-v2-profile/plan.json",
+          "sha256": "3482ec7884ef8d51f764a6c50c67d54038c703dd5038ec2eb99ea90266f6a4e4"
+        },
+        "native_launch": {
+          "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/sharegpt-ultrachat-pipeline-20261111-v2-profile/launch.json",
+          "sha256": "df607a860bae10b1e9ddc567267a345d90d614b816b282bb6d158c9eef42d597"
+        }
+      }
+    },
+    {
+      "run_id": "sharegpt-ultrachat-protected-calibration-20261112-v1",
+      "node": "deep-chungus-10",
+      "hardware_identity_sha256": "66213a48e5871bb4862329bdca15100ec3e9161400c0b9482b3716f755f912d9",
+      "input_identity": {
+        "target": "7c3d0c33c2a43a10ba658bdca906de7412050d8c094083a34e0d6fced7c94b6c",
+        "train": "9425a337fc350eddf4b8dcc0acb505ad12781021f21e67bc864f4aa51c19991c",
+        "validation": "6bccf32f970e0fd75f3e64d6f9badf125e0cd9b15dc867d6c33a225a5b0530f7",
+        "native_helper": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+        "upstream_revision": "cb7e0841fe0c206c6ed74a197ad5e2a1f13f5a2b",
+        "world_size": 8,
+        "max_length": 2048,
+        "seed": 0
+      },
+      "phases": {
+        "whole_profile_wall_seconds": 2242.354389395565,
+        "native_launcher_wall_seconds": 1418.583644,
+        "outside_native_launcher_wall_seconds": 823.7707453955647,
+        "scope": "Native launcher interval includes model initialization and dataset work; it is not steady-state update time"
+      },
+      "processed_tokens": {
+        "input_assistant_mask_tokens": 2975675,
+        "input_slots": 4204630,
+        "microbatches": 3200,
+        "nonpadding_tokens": 4204630
+      },
+      "whole_profile_nonpadding_tokens_per_second": 1875.096113212227,
+      "native_launcher_nonpadding_tokens_per_second": 2963.963399538533,
+      "duration_weighted_eight_gpu_hours": 4.983009754212366,
+      "original_rough_linear_full_recipe_hours": 1997.0657342444608,
+      "one_preflight_plus_repeated_native_launcher_scenario_hours": 1263.6351805939432,
+      "telemetry_errors": [],
+      "evidence": {
+        "status": {
+          "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-protected-calibration-20261112-v1/status.json",
+          "sha256": "cfa6abccd5134c6b180fda4460c5e84a8c22c9261fbe0f2db74f1e1d9eccf3f3"
+        },
+        "cost": {
+          "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-protected-calibration-20261112-v1/profile-cost.json",
+          "sha256": "978f53d587460a5e420251d9da975e7dda566ee5c7ae051b154456c9d20093de"
+        },
+        "completion": {
+          "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/training-queue/sharegpt-ultrachat-protected-calibration-20261112-v1/profile-completion.json",
+          "sha256": "aeec90504ecdf8423d4fec4c5df902175a14105b354e64833a90aeda6aa7f083"
+        },
+        "native_plan": {
+          "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/sharegpt-ultrachat-protected-calibration-20261112-v1-profile/plan.json",
+          "sha256": "d6736b31605d20f124aa8829a4621247621776b619334c32ec3eb5cc07e8ee43"
+        },
+        "native_launch": {
+          "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/sharegpt-ultrachat-protected-calibration-20261112-v1-profile/launch.json",
+          "sha256": "bbdd5d4211fdf09331ddb68e4721a17c6ec3377cb1017a42db8ad915783bd9eb"
+        }
+      }
+    }
+  ],
+  "native_launcher_rate_primary_over_calibration": 1.5921551811748422,
+  "limitations": [
+    "Native launcher duration includes model loading and dataset work, not solely optimizer updates.",
+    "Both full-recipe scenarios remain rough and omit changes in sequence mix, evaluation and checkpoint cost.",
+    "Shared storage, cold/warm caches and the recorded stale deep11 driver context can affect this single comparison.",
+    "The protected-node allocation predates calibration; duration-weighted GPU hours are not incremental billing.",
+    "Keep the original primary profile/full-training chain authoritative; no new training is submitted by this report."
+  ],
+  "created_at_utc": "2026-11-12T11:49:37.151118+00:00"
+}

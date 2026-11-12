@@ -1,0 +1,56 @@
+{
+  "status": "approved",
+  "scope": "teacher_generation_only",
+  "review_type": "four_file_frozen_launch_recipe_review",
+  "reviewed_commit": "fde8338",
+  "files": {
+    "outputs/pilot-launch-review-20261112/bundle.json": "1a2cc6d99dafb8e430cbff504c25c8ae5c81eeb0c924da29e7d583cd5ab2a8d9",
+    "outputs/pilot-launch-review-20261112/submission.json": "3930f1f3f643243e125567e8a1ace3b5c3e09195d345ca6bedf384dce9a223b7",
+    "outputs/pilot-launch-review-20261112/prepare.sh": "80d25e738a822e6d65197526ea76180fadda701ad8f4007e9ee3052fb6263b58",
+    "outputs/pilot-launch-review-20261112/teacher.sh": "d5b1ddb6cc040991357cda107666f81ab2deb96cfe70373c09ae0191f9936803"
+  },
+  "bundle_sha256": "1a2cc6d99dafb8e430cbff504c25c8ae5c81eeb0c924da29e7d583cd5ab2a8d9",
+  "input_source_review_sha256": "a1b23c5764d27db8b34f5fed323dbc9ff7e01108f3b48577a2ac985721320cb3",
+  "blocking_issues": [],
+  "findings": [
+    {
+      "file": "outputs/pilot-launch-review-20261112/submission.json",
+      "line": 45,
+      "decision": "Teacher controller requests CPU resources only and is held with afterok dependencies on both input preparation2216625 and protected calibration2216596."
+    },
+    {
+      "file": "outputs/pilot-launch-review-20261112/prepare.sh",
+      "line": 10,
+      "decision": "Preparation uses the separate frozen package/config and fresh derived configuration/corpus output. It invokes no training stage."
+    },
+    {
+      "file": "outputs/pilot-launch-review-20261112/teacher.sh",
+      "line": 10,
+      "decision": "Teacher dispatch uses the declared original hash-pinned data_queue launcher and a fresh teacher run ID. This script requests no new GPU allocation and issues no holder, successor, legacy-controller or active-training mutation."
+    },
+    {
+      "file": "outputs/pilot-launch-review-20261112/bundle.json",
+      "line": 6,
+      "decision": "Both shell script contents match their declared manifest hashes. Pilot adapter/corpus/config and scientific core identities match the preceding source review."
+    }
+  ],
+  "checks": [
+    "Read exactly the four supplied local launch-review files.",
+    "Validated JSON and matched both shell script SHA256 hashes against bundle.json.",
+    "Both scripts passed bash -n. No network, cluster access or execution was performed."
+  ],
+  "scientific_training_authorized": false,
+  "runtime_evidence_reviewed": false,
+  "execution_evidence_still_required": [
+    "Retain verification that every deployed package/config/review file matches this exact manifest; preserve the frozen bundle throughout preparation and generation.",
+    "Retain actual successful input preparation and protected calibration outcomes and the live teacher dependency state before release/execution.",
+    "The existing declared launcher must verify the current owned protected deep10 holder and physical eight-GPU bindings at attachment. These live checks were not independently executed in this review.",
+    "Retain smoke and full-generation plan/outcome/coverage/EOS receipts, corpus hashes, exclusions and native postgeneration QA before any later scientific admission."
+  ],
+  "limitations": [
+    "This decision covers the exact four-file launch recipe and its declared pre-reviewed source identities, not independent rehashing of remote source/model files or verification of live Slurm state.",
+    "The two shell scripts do not themselves rehash the entire bundle at startup; deployed-bundle verification and strict source freezing remain required provenance evidence.",
+    "No new GPU allocation is requested by the recorded CPU submissions. Actual GPU attachment behavior is delegated to the declared existing launcher, whose source was not reopened in this four-file review.",
+    "No pilot training, matched-budget comparison, additional forty-epoch run or successful generation is approved or asserted."
+  ]
+}
