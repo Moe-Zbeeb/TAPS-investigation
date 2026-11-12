@@ -1,0 +1,2753 @@
+{
+  "analyzer_v1_sha256": "32f142ee0142b54d6dd2cd4f0650656ff06d3fba609f55b40ab7ad3f87bce85b",
+  "analyzer_v2_sha256": "5e11dd792adb840be1e861f6a0f2e235d483b977e7dca3cfef31f78e3f0f4091",
+  "analyzer_v3_sha256": "a0749cf04cdbaab39fec1c29eff7d3654fe39a7cb88667f116f270f4ec4346aa",
+  "analyzer_v4_sha256": "592ab1fcc7592b1b3d36e758126d3177b1a1dd34f6d119077876e180e8284a05",
+  "artifact_inventory": {
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/eagle3-llama31-8b/LICENSE": {
+      "sha256": "ab6a3bfbc8aacdac7132f4c919aa0fb938cf6b6a2df384d295ee332107a96f41",
+      "size_bytes": 557
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/eagle3-llama31-8b/config.json": {
+      "sha256": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f",
+      "size_bytes": 591
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/eagle3-llama31-8b/pytorch_model.bin": {
+      "sha256": "16d5bf9524108d59f68c7af196edd69018c29316cb6a2fb491cfd2a393ee1cf4",
+      "size_bytes": 849768795
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/LICENSE": {
+      "sha256": "64e1b2889b7892e6bbe7a7ed5bfe6ff793c61f9d584345f8f41cf9f5cb30a369",
+      "size_bytes": 7627
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/USE_POLICY.md": {
+      "sha256": "a568f2ebc73cec3fd74ba2afd992d4e945a8c7a9d851f9b66163aac834b7b859",
+      "size_bytes": 4691
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/config.json": {
+      "sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "size_bytes": 855
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/generation_config.json": {
+      "sha256": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd",
+      "size_bytes": 184
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00001-of-00004.safetensors": {
+      "sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+      "size_bytes": 4976698672
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00002-of-00004.safetensors": {
+      "sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+      "size_bytes": 4999802720
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00003-of-00004.safetensors": {
+      "sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+      "size_bytes": 4915916176
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00004-of-00004.safetensors": {
+      "sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+      "size_bytes": 1168138808
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model.safetensors.index.json": {
+      "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+      "size_bytes": 23950
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/special_tokens_map.json": {
+      "sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "size_bytes": 296
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/tokenizer.json": {
+      "sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+      "size_bytes": 9085657
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/tokenizer_config.json": {
+      "sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "size_bytes": 55351
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/completion.json": {
+      "sha256": "c132befc2a0d4be999d42e771a7163ed3dad9a8b6220d09ff0fc344ce7a45d57",
+      "size_bytes": 5194
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/dev.jsonl": {
+      "sha256": "c59df46364c1cbea0c4ddf860c051e8b8d7c8ff2642f3265e68ee4f1a10cc493",
+      "size_bytes": 484246
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/test.jsonl": {
+      "sha256": "48f4a226a2717d90fc513b92696fdae84d29ca1b4f98a4a9a8f635179bc37bc0",
+      "size_bytes": 597354
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-original-20261112-v1/train.jsonl": {
+      "sha256": "090022261332a8e8e7ea5e737ac0cf6184557b8af8a4e9d644fa306c59f01d6c",
+      "size_bytes": 50796065
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/completion.json": {
+      "sha256": "9e96390ec1c075367b09dfcdd7978f29937d6a1ff141abdb74b22bab3bc96187",
+      "size_bytes": 1714
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/dev.jsonl": {
+      "sha256": "b21f42aaa385af4266931c20c34175116dfc2ea943852f795e850fd35c64813a",
+      "size_bytes": 805895
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/test.jsonl": {
+      "sha256": "a1d6f81e244b8c6de55eee6383f15e0c8397f52fcfe887c7f41ca21c906fc081",
+      "size_bytes": 959979
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/rq1-math-code-teacher-20261112-v1-target-generated/train.jsonl": {
+      "sha256": "09c6e679b426dc098612712b2122b6eed4cbeec95e131a2d9a86152411c77718",
+      "size_bytes": 85078843
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/completion.json": {
+      "sha256": "42f408593e5d5774bd859e75fc11bc73ce69153d105a6b789b555e1ee743604c",
+      "size_bytes": 4965
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/dev.jsonl": {
+      "sha256": "520406889ed356fd1564ae36d9d4d6375933232c387368ca49bb9f6b78d179e3",
+      "size_bytes": 33728335
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/test.jsonl": {
+      "sha256": "871c4f30911098a27c1b9405e9575bd4d474dc063e98f81664338de0f1b0ad3f",
+      "size_bytes": 33863338
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-20261110-v2/train.jsonl": {
+      "sha256": "827de82f6ec6df938f88078ff0528493cca327f78b9554ddf901d56abbfd3991",
+      "size_bytes": 3221863512
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/completion.json": {
+      "sha256": "94eeea149a025fdc7d08bfde4d9cb91403c89ed929738f9d8f0e86a424e830c6",
+      "size_bytes": 1792
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/dev.jsonl": {
+      "sha256": "8408f87ff049d878f2686603cd4e0ef057d726443f479ebb60b8aa68dc7daf9e",
+      "size_bytes": 51105263
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/test.jsonl": {
+      "sha256": "1a9fa8040aee692dd1d60cdc868836f9ae76439d67a97da050aceda34c393f81",
+      "size_bytes": 51132560
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/corpora/sharegpt-ultrachat-teacher-20261110-v3-target-generated/train.jsonl": {
+      "sha256": "391ffb376e40d9684ef917bb307e8a43429952c586d231c8e157d51ce925cdd5",
+      "size_bytes": 4834537176
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/completion.json": {
+      "sha256": "cc51d68334960225805d681106104f389dd24e4c10aa1d6bfaebca44e2f5e77f",
+      "size_bytes": 18613
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/evaluation.jsonl": {
+      "sha256": "ef5119669da5509b71cc0497d54e9a5cbc8b9125d9fcf03620178718e7b05d06",
+      "size_bytes": 373392
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/native-parity.jsonl": {
+      "sha256": "1b43ec62ad1d4d76edb2b4f9cdad0f9fa73166d8ddf1b95929d2a919b41ef133",
+      "size_bytes": 100491
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-0.ids": {
+      "sha256": "35abd37d5b693ad92a9f08348cc43038c03fb8caa78d98b76e19322d0103e78f",
+      "size_bytes": 100614144
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-0.jsonl": {
+      "sha256": "535491ef6d163d4936dbca8accbdc6b7d1fdbc1ae7e3e33ee58cd6e202bc7426",
+      "size_bytes": 1438552
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-0.masks": {
+      "sha256": "a3c522e3973a5bb84aac197a21f95bb138056012f122c3a1ba80f7e74dbf0874",
+      "size_bytes": 25153536
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-1.ids": {
+      "sha256": "0f330b4b58d1fa141fa3a4638889cdf1d2de39428e6faf27b9ae235c1b598379",
+      "size_bytes": 98467840
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-1.jsonl": {
+      "sha256": "89bef4a781d3b5c3b52c0928609725fc4c3e52e82a267fac4bcccc8d5c7da2ae",
+      "size_bytes": 1407745
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-1.masks": {
+      "sha256": "140acde55b53488805bf9ea476577ce66fdae05875ab8441289eb2110149543c",
+      "size_bytes": 24616960
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-2.ids": {
+      "sha256": "f714b18e5bc510c6157e5d79263c13719eb3a9d33f6960eca832e981465f815d",
+      "size_bytes": 100450304
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-2.jsonl": {
+      "sha256": "d73411904062afc7b4722e82568d2f853f5ba9b48a643eb69913d9abb1634710",
+      "size_bytes": 1436115
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-2.masks": {
+      "sha256": "66ffcb14fb4210b76234c4847b5073768c8f03d92d071767f32d33a64a8d6ccc",
+      "size_bytes": 25112576
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-3.ids": {
+      "sha256": "f055011c3ad83d5a0df1c3baeead497d3c3a32cc0f43412e0a71b121d31803f7",
+      "size_bytes": 97599488
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-3.jsonl": {
+      "sha256": "3bf63f4aa665a706900553e6cbdcf3490120fbc9b9d3c7c1449bde90443bec53",
+      "size_bytes": 1395380
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-3.masks": {
+      "sha256": "e0612f05c87ed1a2b6dbd41e5df50e4088ab8b61c8f51888b2d8444f677ad3ae",
+      "size_bytes": 24399872
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-4.ids": {
+      "sha256": "f264a4f228195ac91be1c5014b66c53b051a4c723e71e78d799ed86af1e22bd9",
+      "size_bytes": 100483072
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-4.jsonl": {
+      "sha256": "3c0fc36ffdea072ec61e32fcd8f2a5b15057c2b8050e5a4d074df199f1aba8cf",
+      "size_bytes": 1436598
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-4.masks": {
+      "sha256": "41769b77d11d2e4738495242435c1ce819c0ceceade24cf80bd12f60cdabe5a1",
+      "size_bytes": 25120768
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-5.ids": {
+      "sha256": "e99571bb53dfc3ca16ac89a1d374f01c3d5502d71c88f95c355e0295bfa404e6",
+      "size_bytes": 99155968
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-5.jsonl": {
+      "sha256": "c3c03078b62cebf535242597b3fd94c1a856beb09ceff158471396070585cb3d",
+      "size_bytes": 1417518
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-5.masks": {
+      "sha256": "c756024033096c5fb9bf7bd7a87544c7b2091c990b228e7bc9d70973ab85f15e",
+      "size_bytes": 24788992
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-6.ids": {
+      "sha256": "a71a40a2bb72b0146e2d0d08a49f58a5a1a74fd55535c74d02dfba7b04f6b791",
+      "size_bytes": 99860480
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-6.jsonl": {
+      "sha256": "92c90ea83daff361d2c4400582a83a70e232e582937fcc2fb92df365073bfa4e",
+      "size_bytes": 1427752
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-6.masks": {
+      "sha256": "f285178fe71e93f1179ede5552aac1f1bcd17c2f2afc0cc999841cc7cd970a08",
+      "size_bytes": 24965120
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-7.ids": {
+      "sha256": "933b53dbb76ba7c74a2b5e43d402320f070fec82ad4c273cf1230b4a5a5909c2",
+      "size_bytes": 100532224
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-7.jsonl": {
+      "sha256": "58aac4905fac1d7e0548147103dc6dad95a85ab6dcf9304eb08453506c1f8fc4",
+      "size_bytes": 1437262
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2/rank-7.masks": {
+      "sha256": "08926b8c76aa6e4bd44ccf401ed48307dc6b5e77089481dc0b35d6d52159b14d",
+      "size_bytes": 25133056
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/completion.json": {
+      "sha256": "7b6f62e8d40758d527884b8ff6b3e504f3fbc78314f2d886c2ed258e8250b576",
+      "size_bytes": 20449
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-0.complete.json": {
+      "sha256": "79afab27e072537d43f68a9b0c4d0e007a92bd3eb30f4f8ae88bf2ceff7f553a",
+      "size_bytes": 3157
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-0.eligible.jsonl": {
+      "sha256": "6b2e694800740672aa181753b2ed416068058977f4fe1904a0efdf5b448fea8c",
+      "size_bytes": 24013448
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-0.gates": {
+      "sha256": "8e23ff1c2b398cb85f88597d726f619501269a729e8c6069d81292a8aba62abc",
+      "size_bytes": 25153536
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-1.complete.json": {
+      "sha256": "6833b845ec592f35987edc114d50999e2b0981a156ee0fa259d5f49ea93ab3cf",
+      "size_bytes": 3156
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-1.eligible.jsonl": {
+      "sha256": "cef6b9fd501e8e6b4386efe2441dee31df59b7b5d6594a9d0fd21d22837c0db4",
+      "size_bytes": 23159885
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-1.gates": {
+      "sha256": "6a4826501c0a6e9ed4994aa8bc6f56e3cb430be6eed2c3e885d84f707dc4eaf5",
+      "size_bytes": 24616960
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-2.complete.json": {
+      "sha256": "c86539aad49f77cbe0fcf7dcc606a41af14ab4e31f463adec6c670f56391a1c8",
+      "size_bytes": 3155
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-2.eligible.jsonl": {
+      "sha256": "9cd3c02ae3221e2c5655ba5595ae702b927c25cd630ae87afc86c6c160727790",
+      "size_bytes": 23446353
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-2.gates": {
+      "sha256": "b0ea3745ed305e4f14002ff111df5c193ac76693c8b6018f8e59fd0faadc403c",
+      "size_bytes": 25112576
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-3.complete.json": {
+      "sha256": "001a617ecb4c0999c35331f0a284c11f4e7dc1f41f458e565c1f7f48911f8827",
+      "size_bytes": 3156
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-3.eligible.jsonl": {
+      "sha256": "ff7544eddb2bdc4177a61c4375acd9085ce91d0c383f8d0d2b829bb32ecbb64d",
+      "size_bytes": 23151948
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-3.gates": {
+      "sha256": "2fa132fa4ca69bdea53cf6a7fb5a7546ef87ec73d19fe20fb88e8513cd320069",
+      "size_bytes": 24399872
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-4.complete.json": {
+      "sha256": "101101d4a67a920665fc333ec046651ad7c6905547bc2787ccd86c3e5dae8968",
+      "size_bytes": 3157
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-4.eligible.jsonl": {
+      "sha256": "a2cb6b3b5eafce98d6ab6ef29c5f49cddc9ab081c12f864531f7b305d53f965a",
+      "size_bytes": 23816976
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-4.gates": {
+      "sha256": "ad77107fbc30ba5b734acb3bddb27d1bd6a31967512379251b47531981c5819d",
+      "size_bytes": 25120768
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-5.complete.json": {
+      "sha256": "4638003b0103caee9dabde9c52cc20b74ee2c1cb1af1fb8b0e3f0440e29af18d",
+      "size_bytes": 3157
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-5.eligible.jsonl": {
+      "sha256": "9566db3183c8b9958a77551958117e54a5d673ee93ca05b24951e537e9223866",
+      "size_bytes": 23134804
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-5.gates": {
+      "sha256": "1efef443085ed9fd81d2bbd648576203e6d53d738ef95c50c21b1fdff28972f2",
+      "size_bytes": 24788992
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-6.complete.json": {
+      "sha256": "9315593c15137b937068cbc2dd36f0d35a47a4649dfd21acd70541edc71a8695",
+      "size_bytes": 3156
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-6.eligible.jsonl": {
+      "sha256": "de2ad27ba211ed6a72f69605702774bdf2e06f61b74a5f96c0d97626d13e9b29",
+      "size_bytes": 23727376
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-6.gates": {
+      "sha256": "bb8774e7dc289d4c592ece9758f5985687de631843fd73fdf99234c53afaa346",
+      "size_bytes": 24965120
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-7.complete.json": {
+      "sha256": "4555cce2cbf5b6018c95b70faae6b08cc77c93a63225b62922a3b787ccf73126",
+      "size_bytes": 3157
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-7.eligible.jsonl": {
+      "sha256": "44115db87fc36dc8f60ef6884fdac949dee32dac496938012f3a134df8bb98aa",
+      "size_bytes": 23695531
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2/rank-7.gates": {
+      "sha256": "a519ad09994457b30eaee99528272510742cb4a271b53a9f9ce79bc5d69f52ce",
+      "size_bytes": 25133056
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/execution.json": {
+      "sha256": "203a7dad79a4a44c0103c09b05e723d5cc57d8bb20cc97ff442e07c9acd0280f",
+      "size_bytes": 19536
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/launch.json": {
+      "sha256": "7f7d6cfd823e3504b843ff0dc043373c5198dfd92da70f84d40825c9591dc372",
+      "size_bytes": 7288
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-alternate-pad-alternate.log": {
+      "sha256": "01d9a519914e13dc9dedf338147273b19d5e93e8f06f5109a7bf64cd580d9d7f",
+      "size_bytes": 84296
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-alternate-pad-alternate.receipt.json": {
+      "sha256": "b53e0f44644d518daffc55a37d2340a71aaaea1c9f9cdafa667cc8e388405f6c",
+      "size_bytes": 1057
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-native-reference-reference.log": {
+      "sha256": "2320ebe734c33b2c0f45e85a6be16973ca0c05f7c29515d5022e390859448d12",
+      "size_bytes": 84286
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-native-reference-reference.receipt.json": {
+      "sha256": "729290a1d476eb7c43d8eea3a59af427a217f9cdac57948cc63c2c48f54610bc",
+      "size_bytes": 1041
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-split-prefix.log": {
+      "sha256": "95ef30c8f76c9cd3311f8a8dd5a56394932185ce925ebe432edf7fda85f85bb1",
+      "size_bytes": 84061
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-split-prefix.receipt.json": {
+      "sha256": "a0dbc50515e99861be5d8195bf0c253f09a1922acd0a7ff7b255350207ae5cab",
+      "size_bytes": 993
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-split-restore.log": {
+      "sha256": "fc50ee674e99c00feaa8f3cd33586bf2410c1e9b3831240417891c098fbc78ec",
+      "size_bytes": 87935
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-split-restore.receipt.json": {
+      "sha256": "84c06d5265344b8fd8bc168c910f643007e70402a5c54dcd9cb9c533d726345d",
+      "size_bytes": 1184
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-stock-inference.log": {
+      "sha256": "b8c45109b0aea932871c0d0dc70a454920ef875658fa9bd53e19f72cbcb2b795",
+      "size_bytes": 52816
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-stock-inference.receipt.json": {
+      "sha256": "c1fa31a87ce190dd48d262f4eb0d349e1465fdf3758e52d9b186a6435d80e838",
+      "size_bytes": 1117
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-uninterrupted-full.log": {
+      "sha256": "cf0be190527a67bb48997cda77a00201737eb95542af64f3f27fa25c8dff4a0a",
+      "size_bytes": 84287
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/original-uninterrupted-full.receipt.json": {
+      "sha256": "a326261a2f517aa38d16978b1198fb2ad39a23fcad3eaabc9d7f7c718011cf4d",
+      "size_bytes": 1022
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-alternate-pad-alternate.log": {
+      "sha256": "7d6e1bc60c4e7ed6473c1b065b3488bf458639054870793537e096163500a220",
+      "size_bytes": 84286
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-alternate-pad-alternate.receipt.json": {
+      "sha256": "b2a78f32c08e922a6da1457d6f9fdbcc06097cc1bb13e2b79b42d2130bb10d04",
+      "size_bytes": 1050
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-native-reference-reference.log": {
+      "sha256": "d73c4c819088558733d8c2955570fdc3f3f5f67d052d804ae787c696a46d5ad5",
+      "size_bytes": 84289
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-native-reference-reference.receipt.json": {
+      "sha256": "52719f07a6658b4e24c14960985c8e4f770360705d0d309d1093650e52e2cc89",
+      "size_bytes": 1035
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-split-prefix.log": {
+      "sha256": "3911902ba5808054ff29e568935b23dacb1b1c17500f30b94a383f00092d459a",
+      "size_bytes": 84046
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-split-prefix.receipt.json": {
+      "sha256": "41700eff34c48f059fcb1e7cc4a565dcb34198fe7f8f5065468b20cc343b6c23",
+      "size_bytes": 986
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-split-restore.log": {
+      "sha256": "d11df9245870b0cda7c1c4459f5e935b4670d4e56dc7ce11aac7e85b5c2dca80",
+      "size_bytes": 87915
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-split-restore.receipt.json": {
+      "sha256": "dc97bb01daa905b30755cded6ae983c1e57bb22240ab0585a90dd47d630f8693",
+      "size_bytes": 1175
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-stock-inference.log": {
+      "sha256": "ab02c532e577abe3d40f1c6c395cd77859ebee9719d6e5010da1ec49a774ba2c",
+      "size_bytes": 52799
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-stock-inference.receipt.json": {
+      "sha256": "cc6874e708ee682156f97e2368c42358ddf998c38d02def4873781b3d71e86df",
+      "size_bytes": 1111
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-uninterrupted-full.log": {
+      "sha256": "f474db8d5e9b602091c56de2f629f096938927ab94272324b170b7f8dc42bd9d",
+      "size_bytes": 84275
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/logs/target-uninterrupted-full.receipt.json": {
+      "sha256": "d6d31bcfd61ba7b82e832f8efd535ab38e1a6611bd21b7f076217a943bc05c79",
+      "size_bytes": 1017
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-0-step-0-gradients.pt": {
+      "sha256": "43c0e83c8d200b4f6924045965dc16953ae0be66d521ae3a94f466ecfe12935f",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-0-step-1-gradients.pt": {
+      "sha256": "20a8a05b522d0903b60909318b74e7972fe527e4721b6ab48e2ad5f4f2fc12f0",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-0-step-2-gradients.pt": {
+      "sha256": "4b7986ca4855dc9697feea6e73eb7cced2565de9bebb94c5a9709eb6ca3212b8",
+      "size_bytes": 119009961
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-0-step-3-gradients.pt": {
+      "sha256": "64c588945002bae252921c9fc6203e5748dcce23bec696e8cbcce7aef8b77090",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-0.complete.json": {
+      "sha256": "00df865654f7644775148eb940bf4d5f252e3babc53abd22e58ea73cc176b2d9",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-0.initial.json": {
+      "sha256": "9f3f7ef2e9d04d1c8ef777b7bb066c67b9e2617f19ca02dcaddec377b2e8e397",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-0.jsonl": {
+      "sha256": "0ec4db3d01149a88fc4fa5fe5df9dedc360c564414811701b6a0fb4d68191dd0",
+      "size_bytes": 13820
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-1-step-0-gradients.pt": {
+      "sha256": "d6e6d3fcb5bc469462180d3e73fd2f1b8cebc91321f2e39d82f226b0d8e74f36",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-1-step-1-gradients.pt": {
+      "sha256": "d9c2875eb5cc3ce0d4efe04f9c7c6231e5476df366c4a3209b39e441a8c2cdcf",
+      "size_bytes": 119010153
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-1-step-2-gradients.pt": {
+      "sha256": "b317e252079336e5ab9454d79f61cc39539b4fe9ea73089594039e72e5cf21ac",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-1-step-3-gradients.pt": {
+      "sha256": "10ba3bc79f1f9f82d94b84c24b7efa555818cd2aed1582cc59c02e3a3d34fa74",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-1.complete.json": {
+      "sha256": "e17a07dc5289e3e74b63a345bec4571a40e57012ceef8ac68d583202fcd225bd",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-1.initial.json": {
+      "sha256": "f49fb272bbf5b9e9a2fbe327cc349b40a73718146e2d7c9c0a9e89f797e5bf09",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-1.jsonl": {
+      "sha256": "e7a90a5455f1eba8c9eb7c202dc2ad0ec3d9c5c478dc15bc683e0d7ea7414cbe",
+      "size_bytes": 13825
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-2-step-0-gradients.pt": {
+      "sha256": "5b962f3da85d57f5f7eeaaadbf28dbf8715b37b062a6c2ad02ba792d2dc3bfb7",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-2-step-1-gradients.pt": {
+      "sha256": "03a54ced212b92f01875f66be604e5f4f4974b2ac013ed17bc341d3191afe0fa",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-2-step-2-gradients.pt": {
+      "sha256": "1f49711aa76f6c334e3b18601181c6e75cd8a6c53870d96f525dab26fa514963",
+      "size_bytes": 119010025
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-2-step-3-gradients.pt": {
+      "sha256": "0f96792c858f92031854c8292996bca9e6e72470fd9dc302ae166940b1d58c9a",
+      "size_bytes": 119010089
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-2.complete.json": {
+      "sha256": "c622f9e65b2dbe65d6db73550ac0f2a4b9c635134969b3ef12ff8ecb86ef9c53",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-2.initial.json": {
+      "sha256": "de9ba82765fee1daa7142568ffb618f7658322793bc404716338a325047bcd81",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-2.jsonl": {
+      "sha256": "afbfec5a0416253718aef728dfe0a084f1d46b8918e2e7b2aef635a868c7e71d",
+      "size_bytes": 13837
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-3-step-0-gradients.pt": {
+      "sha256": "0cd8d9c561a02790e16aef84743362d21710f54ecb3e975f5fe319bc6b2b1607",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-3-step-1-gradients.pt": {
+      "sha256": "27c5d80959be07b2e911841b5c0873a65461279b5e9c4faa67d4c37e4638fc36",
+      "size_bytes": 119010089
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-3-step-2-gradients.pt": {
+      "sha256": "d72d98ebc215f5a28d1d8592a3d9357ccf7cfbb77eeecb35e0291f65717d14c6",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-3-step-3-gradients.pt": {
+      "sha256": "a734a0f7897c622a6db6e229a18b70fe66888709bfb92a20ec27ac342edd00cd",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-3.complete.json": {
+      "sha256": "7b4ab5299b1607083ce8913b913b0999d7e568d10776560eddab6b18497db046",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-3.initial.json": {
+      "sha256": "052d14e46e9c0968e78a0e60803135944784328c002175d35b47da73bb246a57",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-3.jsonl": {
+      "sha256": "5c76845fba7082802d38c9df64d973245fcdc47293958dac31fb8ad67eee1f30",
+      "size_bytes": 13815
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-4-step-0-gradients.pt": {
+      "sha256": "be937292495c92b11c5c6ac58ad64ce9b750136bc627fcad398e6186e325ee12",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-4-step-1-gradients.pt": {
+      "sha256": "0a56a174275d96a2ea85f55ce59fa186d125e46c050794b40f5af24d5f1c50e3",
+      "size_bytes": 119010089
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-4-step-2-gradients.pt": {
+      "sha256": "0e525565ead87a4a0958809314671a27cbbbcbf8f6974f36995f757e0362684f",
+      "size_bytes": 119010217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-4-step-3-gradients.pt": {
+      "sha256": "620e11fd675aa38977253268013accd08c294fe1738886f686eb9e83857d699d",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-4.complete.json": {
+      "sha256": "5b8ffb8be1972ed49fbb05a6d21e104e93a4df9be68004983031c167cd309c46",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-4.initial.json": {
+      "sha256": "6d02448ee9286759a295bc564094400e0ab4b127e59c1e99f902e7b0a5f5caf3",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-4.jsonl": {
+      "sha256": "2ad79e69dc0287f0419e64a55b23f0769a47d40e981c68ad1aad87c5c3ea5bbe",
+      "size_bytes": 13812
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-5-step-0-gradients.pt": {
+      "sha256": "6dda116a7c391a102a6ab029dcb52ddefe6312ea9d94045c4ae1994b01f6c23a",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-5-step-1-gradients.pt": {
+      "sha256": "31f57a191cc425b60d1cc98a2da1274bd8e5d783391f583860cd1b1c59cdb0f8",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-5-step-2-gradients.pt": {
+      "sha256": "7836c975928d820ac6175d82207d004ca67722adef321303e9a07a0cfa518a43",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-5-step-3-gradients.pt": {
+      "sha256": "40a90cd6b8f7cc8b34a4cc2f57dd0a7c15c9cf3dd61d2a96ec6863d9e969fe19",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-5.complete.json": {
+      "sha256": "28ae8928b51b31dfa51eafc36ff98c6bba6b855578c73135ce31aa600989d260",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-5.initial.json": {
+      "sha256": "b094802c28c35e71d578a28b6705921a80117b2f7bb0e7272fb74bd795467c00",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-5.jsonl": {
+      "sha256": "2d46e961992593cd24cea2017d46a6228944c1fb8d48116f64ae7df31a3a6297",
+      "size_bytes": 13834
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-6-step-0-gradients.pt": {
+      "sha256": "018df02d45b716e1a26bf3c187f0f55ffcae7c57c71a3b3939660c47b3db85b1",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-6-step-1-gradients.pt": {
+      "sha256": "c7226baddcdf27a59ded50cb2d7a5570ceec91a4fd1a1af1fd43a9a33e98aec6",
+      "size_bytes": 119010217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-6-step-2-gradients.pt": {
+      "sha256": "4d180dfbb0025f78ce81e8e5c83199b717e2560c5c45aef4ad407dbf9ca86a5e",
+      "size_bytes": 119009961
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-6-step-3-gradients.pt": {
+      "sha256": "035f45b8be452ec737e5a81f925895355e7b1576f3c8cb8ee209499cbb2a32db",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-6.complete.json": {
+      "sha256": "fb941f370069630fdb33345ea8743448ea7b3cbc40f912b2ff4f03bd0f4b6690",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-6.initial.json": {
+      "sha256": "4cb52e31771ecd3e7ce4f9fa1bfa1d6133986aff750b53f192d360478560103d",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-6.jsonl": {
+      "sha256": "ea9b1c43ba5edf36744775435a2db18860a27abb64688ae92d569f86d728b674",
+      "size_bytes": 13830
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-7-step-0-gradients.pt": {
+      "sha256": "2fe097344f66466ddbef26c0e11811a4a6dca4c2055cc355ec5a40de0102ccad",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-7-step-1-gradients.pt": {
+      "sha256": "a4d85c219d46e468e679c02eba394feae4612d39658fe3d4d854ead7c3c8eed2",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-7-step-2-gradients.pt": {
+      "sha256": "5349fc37cebc2c26a4c9785bae7310d0a7c3eb9571d26fb46c67f4f35079aec2",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-7-step-3-gradients.pt": {
+      "sha256": "696cff7dff9afa0905df5ab98d61e8ff81d50abf8eb418dd4179503f52220bd4",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-7.complete.json": {
+      "sha256": "f0cb673b1d0b1b0f224be5522cd2f9e776b449a5a7e030fbcce37d63a9964797",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-7.initial.json": {
+      "sha256": "30895632e5f6c74a28b4b41d537d6fb4a0f0fff1c15397b5faf5295d0f6524e4",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/attempts/alternate/rank-7.jsonl": {
+      "sha256": "70ece6b03e8a73592aa85d09c13a84e7c73a990add1b9816b3a9e521912c6dcb",
+      "size_bytes": 13785
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/latest.json": {
+      "sha256": "b1f512ce0b490a073bc9addd241f2d1ab1d0db14171e83b184c01917a7b64011",
+      "size_bytes": 295
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/alternate-pad/vocabulary.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-0.complete.json": {
+      "sha256": "1b6af7447959c7d002c667db33ac11da945e9e2cc7210a97e2edce40a8cba067",
+      "size_bytes": 3212
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-0.initial.json": {
+      "sha256": "56c6008ed964f7f72e19031d124b3a1a21a5060978efb9c56e92a08ebb3e5452",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-0.jsonl": {
+      "sha256": "4ec09581e7c637cd9394c5d92f80828ab83a976d0d76a6c63336abf5bf4c6635",
+      "size_bytes": 13825
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-1.complete.json": {
+      "sha256": "093be38d163ebb1c671bd73cd1a08cf8a28d3880ad9ae38aceed7e6f7ca1b10b",
+      "size_bytes": 3214
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-1.initial.json": {
+      "sha256": "432953ceee1214bc4434b92d6b32c6a42e7b81918247be3827d6f69ccc773b4f",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-1.jsonl": {
+      "sha256": "0b0599020f3569b7fc47fcf89929f82fc84fec01c40733ca43cfdd84b9fe41ae",
+      "size_bytes": 13821
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-2.complete.json": {
+      "sha256": "8be46eecdecaa424c025c8a1a76210430acfbd69541b7481d785cd17d807ce11",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-2.initial.json": {
+      "sha256": "c4328d0f18985da0c3873d6bb7662be10ba717e32978561dc1555b5e0b3b6e62",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-2.jsonl": {
+      "sha256": "2b62cc3ba2749a8f9912e41744439820a09ec4f8bab8286febdedf6a09bcfb00",
+      "size_bytes": 13836
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-3.complete.json": {
+      "sha256": "2044161bd8217dfe95cc32dee0dff8c98b6ccd1758bac60432f026bffd3eb943",
+      "size_bytes": 3213
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-3.initial.json": {
+      "sha256": "aa8f59180d2dbc514d39701ade616d28b5cff16515983ada46c7be64897e90f3",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-3.jsonl": {
+      "sha256": "52d7a6c4b8b4c1e24f0cd25bc3dfab585d3306c9b012d48383bdfc50020808b1",
+      "size_bytes": 13812
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-4.complete.json": {
+      "sha256": "1482ecef7d608c4572cc8d29ae4f3a3de25c0a576f85e1334c009ee095083129",
+      "size_bytes": 3213
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-4.initial.json": {
+      "sha256": "d2feab2c7abb4791778868373ef98cae54acd4cb1424f70ec74684b9787bdad1",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-4.jsonl": {
+      "sha256": "56ce2b27bd8c25537142a43d2938179e97f14fb7ff18f27b25364d3228c2c17b",
+      "size_bytes": 13812
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-5.complete.json": {
+      "sha256": "d6ebbcbec0edfa2c8a553be64ca5130f0a3e6829595519fcc3f466510f9224d0",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-5.initial.json": {
+      "sha256": "fdef7b7b6dd6747a01c415e3f9308ddcc1bdb681ba6985504145bb91d80b2eeb",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-5.jsonl": {
+      "sha256": "766720038da12758dfcf605c6b4537fcdf57a815411de338cfd7790d3dae3788",
+      "size_bytes": 13832
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-6.complete.json": {
+      "sha256": "7446880c98a09d46166b485c875a9a3ff5c23940afcef79709f330560607b0d7",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-6.initial.json": {
+      "sha256": "705ee4c072aff9d3345858fe01e90c831f5b642da8ee36d4b389dc04b175c306",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-6.jsonl": {
+      "sha256": "9467445724e2814dbcdab550b3d09a339720be1eb88e037a21372da7395e9a26",
+      "size_bytes": 13817
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-7.complete.json": {
+      "sha256": "b7410d7c89f2fd33b57fb094810b6c09272f5a716a2e0b85140ec64f20be4140",
+      "size_bytes": 3214
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-7.initial.json": {
+      "sha256": "1f78cb999dd7cfbcced8030dba5e67f0c30f4ddbfbc84d417b42145dfcea7545",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/attempts/reference/rank-7.jsonl": {
+      "sha256": "1e05dd8aa6756099490bc5cd81ed6156799eb824f1bcadc7ed0d9d87ccddd372",
+      "size_bytes": 13786
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/latest.json": {
+      "sha256": "3942b81a9a9a5517b964edf3052865ff4e8bc48a36158991e4f0f6f7b9c03b81",
+      "size_bytes": 298
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/native-reference/vocabulary.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-0.complete.json": {
+      "sha256": "46fabc0e0db26841d14180e54319fd40348ff99d1a7079d234dd46a65227cccf",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-0.initial.json": {
+      "sha256": "9f3f7ef2e9d04d1c8ef777b7bb066c67b9e2617f19ca02dcaddec377b2e8e397",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-0.jsonl": {
+      "sha256": "5e576d0108354d4b48c43c6a6cecd331efb8e71519bdfa2df04ffddf73017a6e",
+      "size_bytes": 6872
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-1.complete.json": {
+      "sha256": "da8b4a70fc26cee21f8721a38c639730600c66d1383754909ed8fd1007ea2ae9",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-1.initial.json": {
+      "sha256": "f49fb272bbf5b9e9a2fbe327cc349b40a73718146e2d7c9c0a9e89f797e5bf09",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-1.jsonl": {
+      "sha256": "1e2b4e394a6816a21661c498d60bd269ddd6ca73515bc339442ae0c95192fac6",
+      "size_bytes": 6868
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-2.complete.json": {
+      "sha256": "bff41608783d1a1784338ce1475ea1ba4958e912274ae2df9203e4739a001ec2",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-2.initial.json": {
+      "sha256": "de9ba82765fee1daa7142568ffb618f7658322793bc404716338a325047bcd81",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-2.jsonl": {
+      "sha256": "937ab75cb847f9fae2b5ee5cbeaf4175535e9fef4f40581cbd73ce08f0cd8af5",
+      "size_bytes": 6877
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-3.complete.json": {
+      "sha256": "442471e1ba73a048ffd28250ea308907c2e773d5fba58180e0cd847361e3e0eb",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-3.initial.json": {
+      "sha256": "052d14e46e9c0968e78a0e60803135944784328c002175d35b47da73bb246a57",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-3.jsonl": {
+      "sha256": "6205e5da237ef64983835a894210a3591ada1758bf5e2319c77ed3771c1a859b",
+      "size_bytes": 6867
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-4.complete.json": {
+      "sha256": "dfb46bd501b8d96c010ee1ef62b99fb0f898d7cad8a498b8eb1e80bcbadbffb9",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-4.initial.json": {
+      "sha256": "6d02448ee9286759a295bc564094400e0ab4b127e59c1e99f902e7b0a5f5caf3",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-4.jsonl": {
+      "sha256": "85433b2ca646e48fafa5ce94adf15af025dcfc73909608f2b47c0fa2b8f3c658",
+      "size_bytes": 6865
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-5.complete.json": {
+      "sha256": "5f52426d6e3d1dfac39917a6526f1082548129bdf894ad481a3a6639729a0b53",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-5.initial.json": {
+      "sha256": "b094802c28c35e71d578a28b6705921a80117b2f7bb0e7272fb74bd795467c00",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-5.jsonl": {
+      "sha256": "7421258977bab49b07f6a92b2e6b10074b331f26b2a3ff42bc2d843882d15d85",
+      "size_bytes": 6882
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-6.complete.json": {
+      "sha256": "40e7b46ad30570931ff8b0bb48def86f19e8dc09049c1a91dff6936399910019",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-6.initial.json": {
+      "sha256": "4cb52e31771ecd3e7ce4f9fa1bfa1d6133986aff750b53f192d360478560103d",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-6.jsonl": {
+      "sha256": "31e67a5308461ed5a2d32e27304e72b6177f5740a847ae05c8cd05ed3be90469",
+      "size_bytes": 6872
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-7.complete.json": {
+      "sha256": "6bce0bee6ccc827911f44d5a0c00fcd8b41460fd89bc41a94df269347a15399c",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-7.initial.json": {
+      "sha256": "30895632e5f6c74a28b4b41d537d6fb4a0f0fff1c15397b5faf5295d0f6524e4",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/prefix/rank-7.jsonl": {
+      "sha256": "685e142e41c15c6525d3625500986598c0ca3dacce857218e01e53f28eded463",
+      "size_bytes": 6862
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-0.complete.json": {
+      "sha256": "7f6784ea510122bd109c0c3953f465a232113b6765e14552fc631f2fea946487",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-0.initial.json": {
+      "sha256": "9f3f7ef2e9d04d1c8ef777b7bb066c67b9e2617f19ca02dcaddec377b2e8e397",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-0.jsonl": {
+      "sha256": "0c31130a24288ef1cd2c605769c5f9374460527a48cb9e3d71875b641ea84e41",
+      "size_bytes": 6931
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-1.complete.json": {
+      "sha256": "3b886bbd3eb2f6394dfb4cdc6354972ec79a05f7aa620d276ebf2db50f1f2c92",
+      "size_bytes": 3213
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-1.initial.json": {
+      "sha256": "f49fb272bbf5b9e9a2fbe327cc349b40a73718146e2d7c9c0a9e89f797e5bf09",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-1.jsonl": {
+      "sha256": "7ef980f92ee33ea6b5a8300aa3f14f317c4a36c4c46e9b9ee5149c432a41cf70",
+      "size_bytes": 6934
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-2.complete.json": {
+      "sha256": "acf6bbcc7b4f5aedb2cca64bc3bdd5204cf2560f440969f88d0409bf18120439",
+      "size_bytes": 3213
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-2.initial.json": {
+      "sha256": "de9ba82765fee1daa7142568ffb618f7658322793bc404716338a325047bcd81",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-2.jsonl": {
+      "sha256": "03a814481c3b46e663b7f3978d1f6c447fc257aabb1e928a5a22a24afa8fc11a",
+      "size_bytes": 6935
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-3.complete.json": {
+      "sha256": "2aa5bf011daf3a0012104d770dd544f211175206bf45a355fed1344c733c1b20",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-3.initial.json": {
+      "sha256": "052d14e46e9c0968e78a0e60803135944784328c002175d35b47da73bb246a57",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-3.jsonl": {
+      "sha256": "e8a160d57b26fb0c7d0c1dc929d4624cbe0d848a3f0d29b9e36d93ff5d92eaa0",
+      "size_bytes": 6929
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-4.complete.json": {
+      "sha256": "2e695f68f1fcb1dc91e0d22c0758bd91d6b837acb48be3308f748e439283f0a8",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-4.initial.json": {
+      "sha256": "6d02448ee9286759a295bc564094400e0ab4b127e59c1e99f902e7b0a5f5caf3",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-4.jsonl": {
+      "sha256": "0e30b5f172e12e76c40bfacbdb46002e979c5822dc508d897fb45b4dd7442a37",
+      "size_bytes": 6924
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-5.complete.json": {
+      "sha256": "dd6dbbf75f1bb763c0c38eedf0735ba74a48c2391193e8a545b8ec9f5ad92dce",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-5.initial.json": {
+      "sha256": "b094802c28c35e71d578a28b6705921a80117b2f7bb0e7272fb74bd795467c00",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-5.jsonl": {
+      "sha256": "ea29a951b35811bb57bbacc58bd85724b19876f21ab2bea34b843e7af13ea615",
+      "size_bytes": 6931
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-6.complete.json": {
+      "sha256": "8465d03b4a3d35fa4ca742722d814fdaa898de8d10e14704b1fa790a67e358c7",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-6.initial.json": {
+      "sha256": "4cb52e31771ecd3e7ce4f9fa1bfa1d6133986aff750b53f192d360478560103d",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-6.jsonl": {
+      "sha256": "512960db72cf2c5f05d348d2f73723e36e7072c2a5fea502e91e10f3016b2877",
+      "size_bytes": 6932
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-7.complete.json": {
+      "sha256": "7d4fe7ab5be0bff3df1574d7cb214ce85fb2ace2b42309133eebb2181003c1a3",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-7.initial.json": {
+      "sha256": "30895632e5f6c74a28b4b41d537d6fb4a0f0fff1c15397b5faf5295d0f6524e4",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/attempts/restore/rank-7.jsonl": {
+      "sha256": "0c1988166f7ffb995a843fdf787e57183f0f99055d7bf7a4a86bad934b00c1b8",
+      "size_bytes": 6902
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/latest.json": {
+      "sha256": "c90a7414ece7ab80f4e2e14a26827779b8fa5390c316f4a4730d6a128cd6359f",
+      "size_bytes": 287
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/split/vocabulary.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/stock-inference/rank-0.json": {
+      "sha256": "ef2b4ae7d57a942a5809e57882108191fda8dad029ba66c05da94e6c9ba198e4",
+      "size_bytes": 3582
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/stock-inference/rank-1.json": {
+      "sha256": "779ce79f922419b45d5d9600604ceae6b70be0b7802cb8d02169c1470accb750",
+      "size_bytes": 3582
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/stock-inference/rank-2.json": {
+      "sha256": "80c845c03a1cd7cbe9767d95c3af8769910bd888682835018263312539abc2d3",
+      "size_bytes": 3582
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/stock-inference/rank-3.json": {
+      "sha256": "5db32dbcddbf4df0a52100512506d67b7aa7085ca57d778e01507f544225969e",
+      "size_bytes": 3582
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/stock-inference/rank-4.json": {
+      "sha256": "01122a132fd47d3ee7b36b3deb956c9d82dc8f2904799d8d407aaf53020dd554",
+      "size_bytes": 3582
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/stock-inference/rank-5.json": {
+      "sha256": "292de22f01d340d473aaa0221816de558095f901cdc232e470b9b3b3af90b3c1",
+      "size_bytes": 3582
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/stock-inference/rank-6.json": {
+      "sha256": "4c8517374e196e55d3077fe2a6517a5c592c7724fd668c97f7cee92fa2d5335e",
+      "size_bytes": 3582
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/stock-inference/rank-7.json": {
+      "sha256": "7eec4363f4d483bafe50801d19da9473cb2ea24e94d70f085139b226e228e36b",
+      "size_bytes": 3582
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-0-step-0-gradients.pt": {
+      "sha256": "0f322b34f52800efeb75124b0ddcb5d0bb15b9b5fa33e37bd04c9aa0e1e027fb",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-0-step-1-gradients.pt": {
+      "sha256": "09eddeb80262c5652ac9900fb4b53c090bc9c4fd3fc0d78e28a261bb28de097a",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-0-step-2-gradients.pt": {
+      "sha256": "29d80293d89074f1171658bae9f40ef39d47a0ee261a6af94f6a74998721825d",
+      "size_bytes": 119009961
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-0-step-3-gradients.pt": {
+      "sha256": "3c517ad5343f4f62994db0127fe3806817f0255d7e8d73ac8c4f1af489f00f72",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-0.complete.json": {
+      "sha256": "9ca0856cfb7a62e26fa239dc490667de0aad9af76248fd602f3dd6fe85069782",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-0.initial.json": {
+      "sha256": "9f3f7ef2e9d04d1c8ef777b7bb066c67b9e2617f19ca02dcaddec377b2e8e397",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-0.jsonl": {
+      "sha256": "fda0d878b35369c675ada78734d7eaa4e505421fc9fafc6b650ce533e890faae",
+      "size_bytes": 13776
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-1-step-0-gradients.pt": {
+      "sha256": "d4175f4ebb466e9c160ff4a8d0936b8111650d73b4556171c4db459785b8e3b0",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-1-step-1-gradients.pt": {
+      "sha256": "b0695248fc4bb3882e7e81410d0da831d2d05a1418b35f28a8520cf42ac8bba5",
+      "size_bytes": 119010153
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-1-step-2-gradients.pt": {
+      "sha256": "00a9204d7ec66a25c8448bd93f39f1c4fd3f7fd44e447d3a62735d066d2e49ee",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-1-step-3-gradients.pt": {
+      "sha256": "33c56ea91164f6d80ea548292ccbc44b54d2d53533def93836ac435f16f53446",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-1.complete.json": {
+      "sha256": "fcd3f81a8326a2edecf2bfe94024e81d4407c2c8a04f55dad331daea6c4ec692",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-1.initial.json": {
+      "sha256": "f49fb272bbf5b9e9a2fbe327cc349b40a73718146e2d7c9c0a9e89f797e5bf09",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-1.jsonl": {
+      "sha256": "ba02bf7e29c55d42ec250d8852827ee76e16628a6ce5ace50f5471d7c6126776",
+      "size_bytes": 13785
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-2-step-0-gradients.pt": {
+      "sha256": "b65dc1ece7905fbe631e552e3aa1938e4c3c6a770a8ee79b6bc896d73f2a12ec",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-2-step-1-gradients.pt": {
+      "sha256": "95c3452ca27ad98f058207811b3be1ca429f5e094e83fc3f9b7106997ed15124",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-2-step-2-gradients.pt": {
+      "sha256": "41f126b53421fac2177bd48c18975d4983ca9ccb89e439d9f2efd847042e8e20",
+      "size_bytes": 119010025
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-2-step-3-gradients.pt": {
+      "sha256": "af5aaff1ba5a17e9f022eac4b229bf71e6090069c900fbaee50f3532a1232597",
+      "size_bytes": 119010089
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-2.complete.json": {
+      "sha256": "36e22e6588203c07e63a874f41b1042d818056902e20ec8bad2559e31f02b034",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-2.initial.json": {
+      "sha256": "de9ba82765fee1daa7142568ffb618f7658322793bc404716338a325047bcd81",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-2.jsonl": {
+      "sha256": "2828d5824b3aa32ddfe6926bf19606f22d5dcde3d3cc0a82642ba1faa3738b0d",
+      "size_bytes": 13799
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-3-step-0-gradients.pt": {
+      "sha256": "1a221aa1a6f7279e13e07be14079c916ded992a87fde1dbb7452202706a36d47",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-3-step-1-gradients.pt": {
+      "sha256": "2e4d0b4db4cde370081676ac18c30c112b52237f845cfa27bc2bbb09d68786ed",
+      "size_bytes": 119010089
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-3-step-2-gradients.pt": {
+      "sha256": "0c419c4345f3dd317fccc3b81fc20382bcb6c4ecbc96a9a832a339ae5b23ac5b",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-3-step-3-gradients.pt": {
+      "sha256": "38ba7698ab51ea945f85aefeb83204b33d0b5daec8665ca1271f48d15e274ad8",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-3.complete.json": {
+      "sha256": "5bfe850b866272c365b215218f518ad870ab238d506fac74dfc3465f51e77240",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-3.initial.json": {
+      "sha256": "052d14e46e9c0968e78a0e60803135944784328c002175d35b47da73bb246a57",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-3.jsonl": {
+      "sha256": "c12266c87365387983a5d4f852b646edc50dea9428a1e7e343a5890fd4f713b3",
+      "size_bytes": 13773
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-4-step-0-gradients.pt": {
+      "sha256": "a6acb3247872a59a13810c7073889d8e9ab473d809377de2878b9855ce54c19c",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-4-step-1-gradients.pt": {
+      "sha256": "0fe920ae57c3dd236e180a1ad3e364346c368ef41cdf9b23c5e4e5f3454b2afd",
+      "size_bytes": 119010089
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-4-step-2-gradients.pt": {
+      "sha256": "0efa9b6bb8b3bf90f44e50dc18a2881bc46f93b029777338b2f2f2ef51bcad02",
+      "size_bytes": 119010217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-4-step-3-gradients.pt": {
+      "sha256": "0aa8d3274e9336911cd1f06e6b1f3f8b1c2313aa364583aff3434a6d2687ad13",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-4.complete.json": {
+      "sha256": "be8a9bc05307d76ea5cd4286b2449e36c58b15a74e8ad6e275a3488dfbdc879b",
+      "size_bytes": 3212
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-4.initial.json": {
+      "sha256": "6d02448ee9286759a295bc564094400e0ab4b127e59c1e99f902e7b0a5f5caf3",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-4.jsonl": {
+      "sha256": "19b4279c2d639680091c830269d8c3a57d4a6a76fa1f0c3ab83a3e9826606ec1",
+      "size_bytes": 13772
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-5-step-0-gradients.pt": {
+      "sha256": "e03770351f42ddba8cccdcf85ce98c653813e3a3201fd6ea0a8d661b57603bc5",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-5-step-1-gradients.pt": {
+      "sha256": "b4028c95233f897c10b2c37a95e722e894874b1ccd4212442e11b6d527365bde",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-5-step-2-gradients.pt": {
+      "sha256": "89c114f663a41edef8b47a3ec1ce4b7ffc9a9e8c9646dd7026c662ccad16fa87",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-5-step-3-gradients.pt": {
+      "sha256": "4897da378ea368af70f0efd0f8ffea79e0cb69129a08387b14931a4eeafb4900",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-5.complete.json": {
+      "sha256": "d2ee702d464d03a8f3a15957a18440a47e1d5ca89ed6f003f8411034405c43dc",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-5.initial.json": {
+      "sha256": "b094802c28c35e71d578a28b6705921a80117b2f7bb0e7272fb74bd795467c00",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-5.jsonl": {
+      "sha256": "4778f42c69de4d251338f9838a343c988f469dfb6c1e934dadedea680c1990b1",
+      "size_bytes": 13793
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-6-step-0-gradients.pt": {
+      "sha256": "55c4177bccd1f8e4b8d0ab22ea1d087dfcd707edbadbc4486af911b0f66febad",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-6-step-1-gradients.pt": {
+      "sha256": "a87716729dd27199be61acee271c688d590626d5bbc6c427ab8d4486007d1888",
+      "size_bytes": 119010217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-6-step-2-gradients.pt": {
+      "sha256": "5c319457ea90ba7ec626de1fec0f399275ae8b7ea7838d3b7b6cca209e458615",
+      "size_bytes": 119009961
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-6-step-3-gradients.pt": {
+      "sha256": "7f9fb8a20b1c408b9842a2899e082ceec0eb220a94a654183222e7fe0a9bca5f",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-6.complete.json": {
+      "sha256": "4b0bd7f69f6f0c51297f1240bed975eb4a9588b67320938a4373b68b84f5fecb",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-6.initial.json": {
+      "sha256": "4cb52e31771ecd3e7ce4f9fa1bfa1d6133986aff750b53f192d360478560103d",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-6.jsonl": {
+      "sha256": "0a0c21e072ceb676aaaa54081dae7390b527b9abef5cf903079f75040093b411",
+      "size_bytes": 13785
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-7-step-0-gradients.pt": {
+      "sha256": "add4f5746cfc58742625bd180bd1d1268a2162f2b4b6131e271a36063dd3ac7b",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-7-step-1-gradients.pt": {
+      "sha256": "66cb55e3f9fccb2ff1d7aa99e7ea3007c0ccdcb607c26a4140944259d234c6be",
+      "size_bytes": 119009897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-7-step-2-gradients.pt": {
+      "sha256": "ee03e04ca460c8db33787b231fcb8c42867922e0d6a043707f9422af303feede",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-7-step-3-gradients.pt": {
+      "sha256": "d90b166b501007245ff15355a0fb713f462e9220a695c0af6f83f667723216a2",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-7.complete.json": {
+      "sha256": "34207101a687445c5bb8619c4aec133c249a0923a8464cc138a01c0e16eec3da",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-7.initial.json": {
+      "sha256": "30895632e5f6c74a28b4b41d537d6fb4a0f0fff1c15397b5faf5295d0f6524e4",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/attempts/full/rank-7.jsonl": {
+      "sha256": "e790d3615042e3772effb7075790c191e61f342e83ceebe1f1d8ca2acc26fbea",
+      "size_bytes": 13748
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/latest.json": {
+      "sha256": "e0c1ef8259b98659b14c1628ab07165bf264cab1f2540e3e99de5dd1b753a247",
+      "size_bytes": 295
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/vocabulary.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/runtime/interval-accounting.json": {
+      "sha256": "ad8f84f0bb01dbb977343a56d4018040a7f2738fee07af266bf9816bd2361d1b",
+      "size_bytes": 11082
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/runtime/post.json": {
+      "sha256": "294ebee0ea18ca229ad8f8a9e8e8a27f2e708b15e3f629c283b9dca4d30a8401",
+      "size_bytes": 74701
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/runtime/pre.json": {
+      "sha256": "8758965a44c15bbde682a67b4b9bd8454a05b9586600428fc4f4ea7545b949ea",
+      "size_bytes": 74700
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-0-step-0-gradients.pt": {
+      "sha256": "3bd450f4168bce01a5a1fd638b367cb6b85846bbacc641214717680973597a2a",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-0-step-1-gradients.pt": {
+      "sha256": "cc95b0e5843a751fd5db90ae3bbb2cf945d32667ea877e0b7e04e05f063e46f7",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-0-step-2-gradients.pt": {
+      "sha256": "f2818dc700c781d5a0c65426f3fd9af174cdeb9846754288479417bb32ba63b5",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-0-step-3-gradients.pt": {
+      "sha256": "afa3d0dfdeef9ee3835a0983bc83d31e9ad9fc1f512c6000b4765520e7db6ea6",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-0.complete.json": {
+      "sha256": "e40ea61352377bd3e5ec99f77e9532e2d3ec3c68e8730bb399f676f6697e7dc8",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-0.initial.json": {
+      "sha256": "0517c4d9d7884e8ae3a466518e064060fbc8573ca774cb61141eb5a13c5d9c73",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-0.jsonl": {
+      "sha256": "a6c99ec2d359d2c1dfaab82382b689d6f0a7a897c8ed688bf1caf62a8b3dcb88",
+      "size_bytes": 13859
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-1-step-0-gradients.pt": {
+      "sha256": "a7cefc8269dc73516f0fdb97fd58087d28a3470a930cb66141d4f5b751a7c31c",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-1-step-1-gradients.pt": {
+      "sha256": "2a8e62e357a64506210621b6a4ff1ff1a790b2aa7af71320470e5e274a7911c8",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-1-step-2-gradients.pt": {
+      "sha256": "0640b7b5b4997b2bda428a84859ae60ccf91844080270cbdffc208c904bf522f",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-1-step-3-gradients.pt": {
+      "sha256": "9168fe4686c918402c2001d1db2bc1babe3f2ec91a4e92dee07a4034bc85043a",
+      "size_bytes": 119010217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-1.complete.json": {
+      "sha256": "06a270870f6275c7fb63dbc9f3d5af18db0cef7ff9de08e7b9988feeaa4ff176",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-1.initial.json": {
+      "sha256": "dc2d808287996ad64f6b51ea63384dced2722661467227484421cde3ae68da13",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-1.jsonl": {
+      "sha256": "c38e3ef2d057b056005f0514504531dcb3930f9e65d8bf76f354df9ba7880a0b",
+      "size_bytes": 13824
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-2-step-0-gradients.pt": {
+      "sha256": "1385ca8970acbb51fbf840ceac56e2befbe4365fb9d2c435b7ba0cc60c4fd6de",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-2-step-1-gradients.pt": {
+      "sha256": "63fa1c6a1b9865518cae81e079a8f1676ec98d49488a0d28ea1f9aef3d9ac7aa",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-2-step-2-gradients.pt": {
+      "sha256": "32686fc7cd3ac64965fc32e4602c5d5055bc4797cb67918e8eaed10720e10649",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-2-step-3-gradients.pt": {
+      "sha256": "0522185f081877b75a9d4723132afe63a9482e98d840d22abdcef48fd033e6da",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-2.complete.json": {
+      "sha256": "14f86a482e12588ee38bcad4d490b898ce79a31f68af413088f6223ea7584d9b",
+      "size_bytes": 3214
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-2.initial.json": {
+      "sha256": "39f07a1ff812adb75b7c9a81b1a6de5f49441004c5563ddedb84b1027d950543",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-2.jsonl": {
+      "sha256": "3a03dd61c2eb757c9fe54c5d0379516f025774b04cf0a98385e4f34c7e53d40d",
+      "size_bytes": 13870
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-3-step-0-gradients.pt": {
+      "sha256": "321f601afe94fb620c0c550146d79e253947adde1a5b3135cbe1152019d51e6b",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-3-step-1-gradients.pt": {
+      "sha256": "6a6a8dc2e9e47747e202f1a0073093ad3baf5dd66dc583a77c4a41addfdd4fd3",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-3-step-2-gradients.pt": {
+      "sha256": "d7bfbc8db067e3c8aecb132b074f826104ed9002fa6aea2d92ff48a44454563b",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-3-step-3-gradients.pt": {
+      "sha256": "63d2b53d42d41e1cf93f5eee9b91501e47f46418f10078a9ead78e576cafac51",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-3.complete.json": {
+      "sha256": "aba5f657d16732f89144d33c4b3d5576b95f67278a0a072bbbfab88aacf53eb5",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-3.initial.json": {
+      "sha256": "fcc4359b9511e69740527ef46d77f144d8b64fb0a4311b1019cd873706f57bbd",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-3.jsonl": {
+      "sha256": "f8f40ebf16b6730155f2e163db0819a15ad5be1d67d4de2346ee9a679d7b2ee6",
+      "size_bytes": 13844
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-4-step-0-gradients.pt": {
+      "sha256": "bbfa8a5814c91333c327a3dff553e85debad5e752fac5ab5a3ac695d1ebb2a59",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-4-step-1-gradients.pt": {
+      "sha256": "5d0d5f9144181f099846e725d1c85af5a838666d86afcda4d3c4f18b057b9505",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-4-step-2-gradients.pt": {
+      "sha256": "d2d0beb9acdbddebbaa4d9cb15c400ab5ce8633826932003c1ef464599e6f234",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-4-step-3-gradients.pt": {
+      "sha256": "cb864bd1f24d540c594531f714b85da56e78f79b204d3222be09a455785359be",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-4.complete.json": {
+      "sha256": "00f647e1381f8194f1daf81cc75d2ab86276b6cdba2a252bf9145b26adbe32bc",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-4.initial.json": {
+      "sha256": "e51edfa680a1006a679fdaca7586be3af66587625d1c4ffb1352f0f9b8b174b0",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-4.jsonl": {
+      "sha256": "5172584b2cfa14ed49cc937c02a7ea6cb0ad1bf4f0802116a7ee590cfe740d54",
+      "size_bytes": 13852
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-5-step-0-gradients.pt": {
+      "sha256": "fcf422eeace1a21f5aefd1b9b3ac68cc6415ae790a4e1e3120ae3840f33ac214",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-5-step-1-gradients.pt": {
+      "sha256": "398457a856f488e1b1ca65781f77d4774e7f56ecd67c98dda1347a8772c5fa9d",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-5-step-2-gradients.pt": {
+      "sha256": "61133882901c2c8346a80ca9c6fcc757d1289a7308adf2f2189e2f069962997f",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-5-step-3-gradients.pt": {
+      "sha256": "cc6b5bdc6c33066d3eb381823022479f706ba060e10b2f3c307cc6d853540328",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-5.complete.json": {
+      "sha256": "8d4df9be010ad27e6e899d91becc63b66968aa63c935ec0ffc94819a7b064095",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-5.initial.json": {
+      "sha256": "48b9056b7933484d707d17d2ff62479923976a7636b19811b0ffc4530d14682d",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-5.jsonl": {
+      "sha256": "87771078b304dc3a9e4d4cb423d2662ee023bab0820e6ad5860585dac1acd1f2",
+      "size_bytes": 13853
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-6-step-0-gradients.pt": {
+      "sha256": "c721440fceeea3fdce0e5d3e94b9b37e1485a533f0fab0ed39fb70c2933daa3a",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-6-step-1-gradients.pt": {
+      "sha256": "69c85b997468d25f8e65455692303e2f272d6cef81587d726ddd75f73311adaa",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-6-step-2-gradients.pt": {
+      "sha256": "f90492775fc0aedf39a775a8029a832c3ef75ac842700938ab7d9420ff1a404e",
+      "size_bytes": 118946345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-6-step-3-gradients.pt": {
+      "sha256": "52bc69be09c74f49a0c53dbd16ec08815fd09e44417f8d150f26b8e95345e047",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-6.complete.json": {
+      "sha256": "f1463df108cf34ec441bf197b0d4db506bf9e7cee4eda78993b9bcf45b440eb3",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-6.initial.json": {
+      "sha256": "5e0b187b745c0a856be4d9f50d00ca77d8ad533a19cad744a68ba14e925cdca6",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-6.jsonl": {
+      "sha256": "9a279c461ab3e99afbe72defd2f7a5f4061e0ed24cb69c1c98a4f4b490dd186e",
+      "size_bytes": 13856
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-7-step-0-gradients.pt": {
+      "sha256": "884721d2c5bc922eb6702101e53716b8206c1f57404a8a133aeb11d786171f42",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-7-step-1-gradients.pt": {
+      "sha256": "6926e0034c7fc112b02e0691aa2e67a9e2c8da9d28ec58ff7b259572a7d497dd",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-7-step-2-gradients.pt": {
+      "sha256": "728b53900eb6b8b7aaeec48a1c9204f67506aa717cd5981fd0bb782b0f257049",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-7-step-3-gradients.pt": {
+      "sha256": "2eb26e9b81836691bc1257cbdd169d6675545e63c14f8902c8c6278025fb4b40",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-7.complete.json": {
+      "sha256": "90261934d270b10da2b6179b51ab006bdb13264419fa9fbb025edea5177ab7d4",
+      "size_bytes": 3218
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-7.initial.json": {
+      "sha256": "2d252cb39c0b56ea8fe4f6aecd6b689d48af65f532e975d218490d3bc5609d41",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/attempts/alternate/rank-7.jsonl": {
+      "sha256": "76ed65ba4ff559d3a95daa723f1207b071a396b57e823988854503fc247bf35b",
+      "size_bytes": 13843
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/latest.json": {
+      "sha256": "81ce47d181ee88eb8199b630a8e4e825cb07f626c434838a6a59870979080567",
+      "size_bytes": 293
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/alternate-pad/vocabulary.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-0.complete.json": {
+      "sha256": "51500dbd741e4864d94d2b30185ee71bff177bbd2e34c8f231152ca5e2a889d6",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-0.initial.json": {
+      "sha256": "7f69af0c3831c66c67c4220e4d0d8f03f150b3304ac45a1cbf5574b579299c36",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-0.jsonl": {
+      "sha256": "4bb0a73ddb7523cd4dcee16a9b1404e566f7feea30281d2c671c0247b20796f2",
+      "size_bytes": 13862
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-1.complete.json": {
+      "sha256": "65d577f9db17a6c7aa4fb366fd5a5e53971264b706f5ae7a1ff02cb6ef4c388d",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-1.initial.json": {
+      "sha256": "cc7341adf07dc5b61c35975eff91db572c739937f2432f8f4586e95cdf4460da",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-1.jsonl": {
+      "sha256": "efe4a8db2373e66d98352679d111a71e8f57681d3271582ec037b14164bb20b8",
+      "size_bytes": 13819
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-2.complete.json": {
+      "sha256": "e7f4048c90f6d2a2f78389cb0b08a63e85e638089d9daa897df6144d9ac16cf1",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-2.initial.json": {
+      "sha256": "6b946218871ccd0cd03f9607ebd4122c574c15be394171a84fe1d22d4e2be4c6",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-2.jsonl": {
+      "sha256": "03abfe3980d0bfeb9eed2de7f2f91f91c3746ef692c299b017bbbaefa5e68462",
+      "size_bytes": 13870
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-3.complete.json": {
+      "sha256": "f060078ff84e6405d776210564ee154766ac6d104b7d451337e8cc2a676a27e2",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-3.initial.json": {
+      "sha256": "1458425c9b90bbddc91b60f19ac12a3347a3dce28fa8326f1edcc90fcaa06336",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-3.jsonl": {
+      "sha256": "d97ffcce872d8c5be95f5865a5e4db25b8f6496d6ed0672af78ef45688710752",
+      "size_bytes": 13844
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-4.complete.json": {
+      "sha256": "af2b4d4366bdba278476f8a05e0747992eadd81e41c391386014f6805a706576",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-4.initial.json": {
+      "sha256": "9d8baff668540b4c8ee486bd6cb37090cbb0ca3a9bc1a52ffc611dd02873c7d1",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-4.jsonl": {
+      "sha256": "2aa1c00489748e943404d5e6764acb4e9114c00c4c285f323dfde894ca520549",
+      "size_bytes": 13852
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-5.complete.json": {
+      "sha256": "e9fb04b8e987bda8c399664bd42f3e274e5cd5aaac34e0b6008c3ee5198f0e60",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-5.initial.json": {
+      "sha256": "22d50bd91df4bacb6ec9d2a959b3014e4e94c6c264dccbedb26e2eca8bc859db",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-5.jsonl": {
+      "sha256": "aa3c03b6c8af4ef8b1685330b3c37a098edd05780319606e241893140ab9eb96",
+      "size_bytes": 13851
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-6.complete.json": {
+      "sha256": "fe872a6444f0b39544053ef201f8c2409ff0314e96c9e956dd2b84f4eda09248",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-6.initial.json": {
+      "sha256": "c4ed9341dd99a5b23810b354571d3261bdf8c64414b8b4e847d8a904b838be56",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-6.jsonl": {
+      "sha256": "0b70e7f79945db2bfaef7e97389977cab923833e4bef53647cb4cae81ae12904",
+      "size_bytes": 13860
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-7.complete.json": {
+      "sha256": "8b85f1761ce8a2c1bfd5289390cca2c70aa3c8ef4d522ec8b0b44bcf1543fa28",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-7.initial.json": {
+      "sha256": "3d2e497051466d38e2037732c0f7c0546321212aca8a8b7c133dfcce29a05c78",
+      "size_bytes": 1981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/attempts/reference/rank-7.jsonl": {
+      "sha256": "8384e266b325f6a340724a43c7426393be359d399566eef63fc1c69a72ccda98",
+      "size_bytes": 13838
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/latest.json": {
+      "sha256": "09c36aeb43a8e3a6baebcdbe44c8cd268aeb9beee6ba8dbdd6b5ded9d54ecf3e",
+      "size_bytes": 296
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/native-reference/vocabulary.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-0.complete.json": {
+      "sha256": "2c509d14c1cb3c645f05e94839d49c91c339905115ca9e07958fe47144d0ccd7",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-0.initial.json": {
+      "sha256": "0517c4d9d7884e8ae3a466518e064060fbc8573ca774cb61141eb5a13c5d9c73",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-0.jsonl": {
+      "sha256": "e7f26ba287dac5f1f4d53cf79d39dfb955d1d039824b66d5f85edd73d4ff3e79",
+      "size_bytes": 6893
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-1.complete.json": {
+      "sha256": "fff06b75ac4554721371256cdae6078519a8ffaf7a066e4fa4956558a07fbb8e",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-1.initial.json": {
+      "sha256": "dc2d808287996ad64f6b51ea63384dced2722661467227484421cde3ae68da13",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-1.jsonl": {
+      "sha256": "d63d30e6421fa6825fcf367bfdb11a0255d6eb92110e619cc144bc7a72dc5841",
+      "size_bytes": 6864
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-2.complete.json": {
+      "sha256": "523fc005dfc3f0781078f9733b97453124c8ca3e914dc791a24618893c75a128",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-2.initial.json": {
+      "sha256": "39f07a1ff812adb75b7c9a81b1a6de5f49441004c5563ddedb84b1027d950543",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-2.jsonl": {
+      "sha256": "f894a86d9d9250e38d7ad5e4d68088c7587abf36cdffd8a0d348188c27aa2234",
+      "size_bytes": 6899
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-3.complete.json": {
+      "sha256": "bcb693555546657a21239c1b1f77360ef9266df85e0a3add1f3555c9b397e0a3",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-3.initial.json": {
+      "sha256": "fcc4359b9511e69740527ef46d77f144d8b64fb0a4311b1019cd873706f57bbd",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-3.jsonl": {
+      "sha256": "7f378d51e4d81eb29ff02b496cf06d4edc11dba735ac48726f9df1f3aa5c59bb",
+      "size_bytes": 6885
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-4.complete.json": {
+      "sha256": "603c4dd46c8e0ca63a40150c38380390a12cb37198de86384123579f15a48ae3",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-4.initial.json": {
+      "sha256": "e51edfa680a1006a679fdaca7586be3af66587625d1c4ffb1352f0f9b8b174b0",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-4.jsonl": {
+      "sha256": "e7c9023904cbd36cfb11241519d037bfc5ed1a81e06436ddb3150344f1872b89",
+      "size_bytes": 6894
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-5.complete.json": {
+      "sha256": "2c5f2749d698d9817d149f6172789da9a3cd7fff3748d41da2ca06190b514b43",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-5.initial.json": {
+      "sha256": "48b9056b7933484d707d17d2ff62479923976a7636b19811b0ffc4530d14682d",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-5.jsonl": {
+      "sha256": "1144695dfea954e2f03313a97465eda95f5c949295d0db48502833a14407dfc8",
+      "size_bytes": 6897
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-6.complete.json": {
+      "sha256": "a634e3086c518cd84bcecf39c963ececb5956d47babd69df90b71bc8795a320c",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-6.initial.json": {
+      "sha256": "5e0b187b745c0a856be4d9f50d00ca77d8ad533a19cad744a68ba14e925cdca6",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-6.jsonl": {
+      "sha256": "05b85ec120f9d47be9e2e1d1bc1337ec81eb5c870b615f34979752d60970c79a",
+      "size_bytes": 6881
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-7.complete.json": {
+      "sha256": "e3fb681b5eb76b8fa023c41d9808e8c5928c4e15751d251ecfeac414657bb85e",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-7.initial.json": {
+      "sha256": "2d252cb39c0b56ea8fe4f6aecd6b689d48af65f532e975d218490d3bc5609d41",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/prefix/rank-7.jsonl": {
+      "sha256": "6a93685754113b68ec4519ea51e8efd150ef810dc96c25910800e50c40dc9547",
+      "size_bytes": 6885
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-0.complete.json": {
+      "sha256": "5784dd9ff019379ce2549d59e9620c64e0f02bd1f46fee2ff2c7a99073f65959",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-0.initial.json": {
+      "sha256": "0517c4d9d7884e8ae3a466518e064060fbc8573ca774cb61141eb5a13c5d9c73",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-0.jsonl": {
+      "sha256": "0b8b9d778d1618c5c50bab266586cbde709ed800f5fd48df7c05632f550590c5",
+      "size_bytes": 6949
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-1.complete.json": {
+      "sha256": "07e5de26ac79adf435b75df71f752750335d395f7c7cac5f64ca679019e86ce7",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-1.initial.json": {
+      "sha256": "dc2d808287996ad64f6b51ea63384dced2722661467227484421cde3ae68da13",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-1.jsonl": {
+      "sha256": "d2f0957ece82daa8d45e254d3e8c09c4dc9710e8b5670032e423aa738ce4cbb4",
+      "size_bytes": 6936
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-2.complete.json": {
+      "sha256": "905d24914e54fbee46dffa260a718e111e23469ef8dd80b82a6cdc5ffecf7b72",
+      "size_bytes": 3212
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-2.initial.json": {
+      "sha256": "39f07a1ff812adb75b7c9a81b1a6de5f49441004c5563ddedb84b1027d950543",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-2.jsonl": {
+      "sha256": "c0ae9231d6a771a9300102960d85cd8cb2ebe25889a108d1a08b679f7fd92465",
+      "size_bytes": 6948
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-3.complete.json": {
+      "sha256": "1c43b4c3c7b4f7e459308fc6d8d8a5c8742e2d014986ac343c2ad7e847fecf2b",
+      "size_bytes": 3214
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-3.initial.json": {
+      "sha256": "fcc4359b9511e69740527ef46d77f144d8b64fb0a4311b1019cd873706f57bbd",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-3.jsonl": {
+      "sha256": "2045da908f8ee47ef828cd8646514fe1aeae850705743e3b35a7559ecf225e25",
+      "size_bytes": 6942
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-4.complete.json": {
+      "sha256": "e05e66040833aa1fc67f00f6ba9b32efe9472e560f77ff29295cb75118bc5479",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-4.initial.json": {
+      "sha256": "e51edfa680a1006a679fdaca7586be3af66587625d1c4ffb1352f0f9b8b174b0",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-4.jsonl": {
+      "sha256": "5461ff37e9d8b8004a096eb46062ea5f52f04a842d831bb29700f37fffe292f8",
+      "size_bytes": 6939
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-5.complete.json": {
+      "sha256": "6719b2bfa8e1dc0421d9bc1f995e6d0d703c9b849a74d0d5481960e2b50171e4",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-5.initial.json": {
+      "sha256": "48b9056b7933484d707d17d2ff62479923976a7636b19811b0ffc4530d14682d",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-5.jsonl": {
+      "sha256": "0dcb48c911e85ccedbe316e15ad933156dab2c8b77ebe5a057f47c1e3e426874",
+      "size_bytes": 6935
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-6.complete.json": {
+      "sha256": "bea1e1de50d03c4d97077e878db9f30aa3e66b6d2bd68d214dc077ee17a7ccdf",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-6.initial.json": {
+      "sha256": "5e0b187b745c0a856be4d9f50d00ca77d8ad533a19cad744a68ba14e925cdca6",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-6.jsonl": {
+      "sha256": "6affb4bb977b0149c2df601a1b1f4ccf93275ac9426901fc7a3ea05d19ddac85",
+      "size_bytes": 6953
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-7.complete.json": {
+      "sha256": "dab6bb8b8ad6bb362ac3600c055de817f1befb8f7101a1c6cd20a5bedf039e82",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-7.initial.json": {
+      "sha256": "2d252cb39c0b56ea8fe4f6aecd6b689d48af65f532e975d218490d3bc5609d41",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/attempts/restore/rank-7.jsonl": {
+      "sha256": "b9bf4fc85224f857459431549b3ba5eec88dee4202375e82a033c88db7f349b4",
+      "size_bytes": 6942
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/latest.json": {
+      "sha256": "6a3d99e5a2c09e70c849f13caee82b35c372e2c2f2e12175eaca9742f1ce6dae",
+      "size_bytes": 285
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/split/vocabulary.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/stock-inference/rank-0.json": {
+      "sha256": "0252c88419d3eb7c7d22e513976025646464fb0a5760594f4b52faff7d1266ac",
+      "size_bytes": 3580
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/stock-inference/rank-1.json": {
+      "sha256": "b6f28e3fb5f2b47b6b7589965b2db8249a5e100b57fae69b903c9bc84b091aa4",
+      "size_bytes": 3580
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/stock-inference/rank-2.json": {
+      "sha256": "bb25e809937873efb45c81a9e2048a9e2a2eaf5c3ab237896787554ab229e950",
+      "size_bytes": 3580
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/stock-inference/rank-3.json": {
+      "sha256": "3e67c7d0885c7eb1e785fe76f0211cc8d7658cfc78a86b94e7d271d7cd6b329c",
+      "size_bytes": 3579
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/stock-inference/rank-4.json": {
+      "sha256": "6a0b5caa4bc07a169607a06fd9c5ae980ced592322ab3617442c7f310be672f3",
+      "size_bytes": 3580
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/stock-inference/rank-5.json": {
+      "sha256": "4503cd676c319cbcded855c92f889425d3d08076d0e9be4305d56e2965121611",
+      "size_bytes": 3580
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/stock-inference/rank-6.json": {
+      "sha256": "0a6c0f0e318ece48746547d68c2911399241f7cfb9c577120efee3a36f764422",
+      "size_bytes": 3580
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/stock-inference/rank-7.json": {
+      "sha256": "b849f44fce08854f7d0d0d6463bb8b629dc622baee85272c3537677f183f9a90",
+      "size_bytes": 3580
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-0-step-0-gradients.pt": {
+      "sha256": "dcf4e227dcf7f05ed13ad531dbb469f7992a78ac0b47e65a02b423d0a4519a3f",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-0-step-1-gradients.pt": {
+      "sha256": "1960b514a39f59157bb9496f46f74747b1971244553e3f8cc4d2f0441f49eeb2",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-0-step-2-gradients.pt": {
+      "sha256": "6e8e5dbc58ef2c008e21920aea70df2ae7aa243abaf97966de68d0557a070b38",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-0-step-3-gradients.pt": {
+      "sha256": "ccf6fd22803d2da42ec687cf8c01f330301a65776d5fc17dcbb9c4ce6f07c366",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-0.complete.json": {
+      "sha256": "66dfcb3ae015a9a65d3b406cb16fc16effc50d2741363c1dbfe5695a44eae1cf",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-0.initial.json": {
+      "sha256": "0517c4d9d7884e8ae3a466518e064060fbc8573ca774cb61141eb5a13c5d9c73",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-0.jsonl": {
+      "sha256": "42f2d860309494c4871396da4bd96c7f4b3c3900b1b7cb0ecf6142179b0b9bc6",
+      "size_bytes": 13820
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-1-step-0-gradients.pt": {
+      "sha256": "f0dfa69b6c3e113ab569dd801b4352b5016b4f1361034f0186c750370c39b0ab",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-1-step-1-gradients.pt": {
+      "sha256": "23c88c7ced0f7ffd7769ad0068bb43bd945736efe022af997ce7df89fb7b0342",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-1-step-2-gradients.pt": {
+      "sha256": "b544baee4b9bd38d25f1ebfd6a50eb1cfb95532ad3d2460c74eaccbfbb92bf7e",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-1-step-3-gradients.pt": {
+      "sha256": "2f025316a7d9a413ddd2aece5011cdfd731a014190c06a1b6edc3c3c68aa87b3",
+      "size_bytes": 119010217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-1.complete.json": {
+      "sha256": "a036d139d27f4d2bc6d45f5d9ba8bc847e9f5a4f5040c367b013f499b593021c",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-1.initial.json": {
+      "sha256": "dc2d808287996ad64f6b51ea63384dced2722661467227484421cde3ae68da13",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-1.jsonl": {
+      "sha256": "4f2888673438b44852a00af8aa5af195c3d91d175c8119d5eec554cfbf4f91b1",
+      "size_bytes": 13775
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-2-step-0-gradients.pt": {
+      "sha256": "fd5ef2289de4b14b9562462e66bd8462281c68ed0b91bd2f1a1c9a0d1debacc9",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-2-step-1-gradients.pt": {
+      "sha256": "ce2fc5590e12767bad71a8c39d257f772166b32d9bbbe79800cb1586db227121",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-2-step-2-gradients.pt": {
+      "sha256": "47ec9340290e8dde99a83964dfa4ec1bb5b9268f333e3460e55d4107761d4cbf",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-2-step-3-gradients.pt": {
+      "sha256": "85bbe6ddbf9b71bfb87d8ca265bfa64068f9f8ed5df9fe1818e5013dc14ef29a",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-2.complete.json": {
+      "sha256": "84ffff6c37c11d02dd3dc08bcca0587b64ba1da54c0652341e4a16928462741b",
+      "size_bytes": 3209
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-2.initial.json": {
+      "sha256": "39f07a1ff812adb75b7c9a81b1a6de5f49441004c5563ddedb84b1027d950543",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-2.jsonl": {
+      "sha256": "9e7c60953c57491dfd2e9913ee91f8b55da81212d7126d3a4bbd23309967bcc0",
+      "size_bytes": 13823
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-3-step-0-gradients.pt": {
+      "sha256": "a6bc30fdd3c9708f32736415a384f2955895420b0fb7ac46ede9b6b13dc02713",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-3-step-1-gradients.pt": {
+      "sha256": "04b6561680b4f06ebb5fee1656b07bc24834bf9b17e61739104b352617822b65",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-3-step-2-gradients.pt": {
+      "sha256": "b6687caa509d4df409f0890d086cec4084dd1b38ebe2f8c0eba08453b7032a5f",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-3-step-3-gradients.pt": {
+      "sha256": "837a7a462630d560234e04752be8a7b776d38d9fb34a7bf3e12f497ba7d91385",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-3.complete.json": {
+      "sha256": "ee900c5ca972c00d77af99b371dc27955123f344331adfc9b663abab5980d6f9",
+      "size_bytes": 3216
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-3.initial.json": {
+      "sha256": "fcc4359b9511e69740527ef46d77f144d8b64fb0a4311b1019cd873706f57bbd",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-3.jsonl": {
+      "sha256": "a46012e7433c129ffd916fd7dd707d3267931c58576a748cd06b6ca9ae0b376d",
+      "size_bytes": 13807
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-4-step-0-gradients.pt": {
+      "sha256": "0c8977a0b88a4e915f5ebcc1a53d30bc64d41a113f32760d380ea879aa3d344b",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-4-step-1-gradients.pt": {
+      "sha256": "7ce0609c1f7a5348dcc2e6ef8b6ecc154ff2d688903ffd9d82ed1f8acc05893e",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-4-step-2-gradients.pt": {
+      "sha256": "6fef55fe220bb7813e9a1bb01b0513d63e431cc52a4a5611c20770f272dbe528",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-4-step-3-gradients.pt": {
+      "sha256": "f93c01a1ac9109274ff8cbdd0e2702f7469d393c4f99ba8a35a3cb9bc161f3be",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-4.complete.json": {
+      "sha256": "595a12956408e70494313293175298d9bb46eff527881590abd44cf2358ae183",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-4.initial.json": {
+      "sha256": "e51edfa680a1006a679fdaca7586be3af66587625d1c4ffb1352f0f9b8b174b0",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-4.jsonl": {
+      "sha256": "3be6201a900cd0c287a2d50b654cac4e51fa7da0a3b4163fa5321b1604f0b2eb",
+      "size_bytes": 13808
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-5-step-0-gradients.pt": {
+      "sha256": "7ff8d21f0fe56492d70fefa3887a9d81d8d5d4e58595ffe7b2c6f59b3e44fdc4",
+      "size_bytes": 119010281
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-5-step-1-gradients.pt": {
+      "sha256": "ee85d9908e715da7bec1dfe8d7ae8d002c1f82a7f5aa8717cb0bb71ead1eceef",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-5-step-2-gradients.pt": {
+      "sha256": "c85c7b0e56f5dee17bac2cf7437d333e597b0f4c18729033fd464fccfac05c9c",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-5-step-3-gradients.pt": {
+      "sha256": "a93e90e5ed882a2966cca20317686e207daa4217139a8bb7aafc0db0903f2b9c",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-5.complete.json": {
+      "sha256": "3651753ff5448ee7765a394f780385bdd17efd069d29f2ac9b7c76920f612091",
+      "size_bytes": 3217
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-5.initial.json": {
+      "sha256": "48b9056b7933484d707d17d2ff62479923976a7636b19811b0ffc4530d14682d",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-5.jsonl": {
+      "sha256": "49157e3cd551a88838946748833975e82f909ec200599eb8fa80d9106a637438",
+      "size_bytes": 13812
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-6-step-0-gradients.pt": {
+      "sha256": "a4e3339ed9f1a0adfff08d5aaf1540fb9606c48f63cd1c44c5a7b231cad7754d",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-6-step-1-gradients.pt": {
+      "sha256": "6d67ac6cd49b46ef58a291bf2a1c25e1fb6d2f4e33898292ce06db81d7e7ad18",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-6-step-2-gradients.pt": {
+      "sha256": "25268a28a93183326babae6d5938ee7d361d1d2bc882fea9816ed2e151ef729f",
+      "size_bytes": 118946345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-6-step-3-gradients.pt": {
+      "sha256": "5d2a7376d7162f169efbb0439feb69540c18b7ea3f57a8b226c74d86dc24cce1",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-6.complete.json": {
+      "sha256": "94555bd6c2736f8dc08aa24524602e58723cf2e0cd5bcfc3e487f32f9340c1d0",
+      "size_bytes": 3215
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-6.initial.json": {
+      "sha256": "5e0b187b745c0a856be4d9f50d00ca77d8ad533a19cad744a68ba14e925cdca6",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-6.jsonl": {
+      "sha256": "96af8299a3cb1a02564eaf2717e95d5523f0f6d8a6b4feded65915b99ab7a88b",
+      "size_bytes": 13823
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-7-step-0-gradients.pt": {
+      "sha256": "e9de2d750f7c87cdb8f736bbb8476406ede45b1f7bd3048a8680f8f7836af00f",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-7-step-1-gradients.pt": {
+      "sha256": "df777592ebf4b1d39be92d77ca3b4466379926438f95bc259ca0cdf2134e5782",
+      "size_bytes": 119010345
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-7-step-2-gradients.pt": {
+      "sha256": "6e305aea7eb742b082edfca00cc753476bfc22ef1fbe3237bac4f4296aeb3635",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-7-step-3-gradients.pt": {
+      "sha256": "d086e67602a854fd9ecd51b5701189d99f80384e58287bedd4c319ceb7b2ecc8",
+      "size_bytes": 119010409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-7.complete.json": {
+      "sha256": "965007f416adcb801734084241d915b2f4b990854039d2c1a5ec66c476fc3c71",
+      "size_bytes": 3218
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-7.initial.json": {
+      "sha256": "2d252cb39c0b56ea8fe4f6aecd6b689d48af65f532e975d218490d3bc5609d41",
+      "size_bytes": 1982
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/attempts/full/rank-7.jsonl": {
+      "sha256": "ae081d3e50dcf526c79552a8c4d715dd14fcec8ba585072693a12d484f70958d",
+      "size_bytes": 13808
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/latest.json": {
+      "sha256": "156ecb14580ef8a445abac18b74bf943290b7a00999ee45ace73d09be3e78360",
+      "size_bytes": 293
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261112-v2/target/uninterrupted/vocabulary.lock": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/manifest.json": {
+      "sha256": "edd77dcdc0e91ce53c38506044a6e992fa601ca5d105a34bd3d2ffd83147c7b5",
+      "size_bytes": 105842
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-original-s0.json": {
+      "sha256": "f76010bfadefb12fe559ac3c384e3e478078c4e1f8284497c07691466732d6b8",
+      "size_bytes": 15436
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-original-s1.json": {
+      "sha256": "d6e967e17d25e88f0210dd304fcf883d6dd61be1a0e8c7d2530525f34d8a739b",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-original-s2.json": {
+      "sha256": "0336591d77ceb624d447539296fcb1878358b667916aeb904d1f8c5c99ce863d",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-target-s0.json": {
+      "sha256": "1915ee323361ad841376347b1293adb5c72d1de5151f4390afc3ab3af09cccd5",
+      "size_bytes": 15428
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-target-s1.json": {
+      "sha256": "fb62b8d96883a64c4aa59c31b3ff6aeafada7cbe6dd6613cadaa00f7e1794f13",
+      "size_bytes": 15429
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-chat-target-s2.json": {
+      "sha256": "71c3f164f298e18dfd08bfff07d7e6781a81623e299db79d2f140f2d242dea6b",
+      "size_bytes": 15429
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-original-s0.json": {
+      "sha256": "195e3357520276749c57ed7e7c5799ed8bff8ec269bc4bd498876adceec6d258",
+      "size_bytes": 15436
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-original-s1.json": {
+      "sha256": "44e9b052a5ec38f7731e98c9be5797bcecd50d519b7d6a1fd4080f68fcee0215",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-original-s2.json": {
+      "sha256": "6ff14f13639bbf82db963088c0b409be51fd4f2c43d0c5139243a84295aaa426",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-target-s0.json": {
+      "sha256": "670510da519e955b0e3ea32c908a8fe6ffcdc6e405827ab1463084d5cf54c213",
+      "size_bytes": 15428
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-target-s1.json": {
+      "sha256": "8cc335a4772b5270303362bbf370439acef88eba4a0ace1a3628f7f757e6df50",
+      "size_bytes": 15429
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-target-s2.json": {
+      "sha256": "1850b8d12eab2e6f5e98e06501e0f696150c5df9e86c3173218ae6f00ea234a5",
+      "size_bytes": 15429
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-original-s0.json": {
+      "sha256": "b9a8cf22050c7ad0c3244b2273514b4015af1c07c56c24aff868478870a5b2c1",
+      "size_bytes": 15508
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-original-s1.json": {
+      "sha256": "f28bda0387394bebaa736e239800b10699102726164975a3adc24fbb7e22e7b3",
+      "size_bytes": 15509
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-original-s2.json": {
+      "sha256": "d1885a3d9f7fdf6b8b2f98afc572e6ea1d97aed16ae6a87c9597642eb1de3742",
+      "size_bytes": 15509
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-target-s0.json": {
+      "sha256": "d4ccbe7b0ed79734e6205a8a071bbd28efa02913fdcbbc90872b7da0258b9983",
+      "size_bytes": 15500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-target-s1.json": {
+      "sha256": "ecc56cc7f0f2541ebd26d92e4863b7bb40b30e2c9d56b68faac76b968a92fa2e",
+      "size_bytes": 15500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-generalist-target-s2.json": {
+      "sha256": "9366a25cb7529dacc7fff80e8df384a3275c76b4625f8735cbe518909b30931b",
+      "size_bytes": 15501
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-original-s0.json": {
+      "sha256": "43a3f01dc1c2cccc44cd5a65a1a5df392f506c14e5edaaff29aef6b9100ebc66",
+      "size_bytes": 15436
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-original-s1.json": {
+      "sha256": "6b1af68bd0bcdfaefadafb0969cc942f94c598b96afb3cccf57e6f78d7a6e773",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-original-s2.json": {
+      "sha256": "aa3a6d6c84fd9da0453e4fd0e76db94c4858bf2f64399d5e2bd222340d5ee926",
+      "size_bytes": 15437
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-target-s0.json": {
+      "sha256": "b9015eabf31b4cfe860ace42e956987bc0393aa12aaf56c15b03312f4b3d69d7",
+      "size_bytes": 15428
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-target-s1.json": {
+      "sha256": "df5d45d460d6b0f5f6358e45b8d9b0a9ac01f9610b50bf906c478f20faa7b921",
+      "size_bytes": 15428
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-math-target-s2.json": {
+      "sha256": "fbc82f4acfe44442e8c6dc04c34b4781b567d0da059902c3600ed1ef0cc7ec9d",
+      "size_bytes": 15429
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed0-rank0.jsonl": {
+      "sha256": "dffb49054de54b7c297421df50ecc48813629c5431dc2c571c074c3d9a9e9f13",
+      "size_bytes": 546682
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed0-rank1.jsonl": {
+      "sha256": "761526da11ca88a288912db2b0745fc47e7766c34ed7aaca7ecd2f2abc0ad971",
+      "size_bytes": 546609
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed0-rank2.jsonl": {
+      "sha256": "c0f5f7982b8047646ca742959e76c68d2d4c0e8c28289c679b21b8ddfb7fdc2d",
+      "size_bytes": 546648
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed0-rank3.jsonl": {
+      "sha256": "624391adeba1aa9f9dacf706a5ee65bde609666e624c8a45828890391d4e0c4c",
+      "size_bytes": 546663
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed0-rank4.jsonl": {
+      "sha256": "5dceb251e373e88cccb75c1165e62d5bb0f9615067aa751e3311c06b20c2ee30",
+      "size_bytes": 546608
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed0-rank5.jsonl": {
+      "sha256": "5b32297af52d9c3b3810fc566c8d72aeaa85de83c7ea9f4e03aa028c24cb01d7",
+      "size_bytes": 546596
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed0-rank6.jsonl": {
+      "sha256": "866038e346e9f39d91b2839f2e46c1fad830c3adf969833faf169a2887a9df89",
+      "size_bytes": 546612
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed0-rank7.jsonl": {
+      "sha256": "66d3c2da1d3b1f59be9b7c988daecd1ceaa8eb454e0800ef6e7570035e1ae80e",
+      "size_bytes": 546596
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed1-rank0.jsonl": {
+      "sha256": "dff0ba8986dc352daa12cdfd7283a471da536be4f26338806ca8c6a8139c3978",
+      "size_bytes": 546677
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed1-rank1.jsonl": {
+      "sha256": "a9ff673a62e76e5cfbf4dfab309a84cc11c76fc31a4f112eda589952ebf3e82a",
+      "size_bytes": 546592
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed1-rank2.jsonl": {
+      "sha256": "83bc4d56e26616d9385fe039150a3971d84c2a2afee72a694dbd9dd030a37f19",
+      "size_bytes": 546619
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed1-rank3.jsonl": {
+      "sha256": "ffc5a778e01683dac6341276fc4bddda28bb3dc7d7d002f30d8699ce00a1b8db",
+      "size_bytes": 546628
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed1-rank4.jsonl": {
+      "sha256": "a6675fff223fd1c64cde5e93b8fcaba00cd3d5b91b946c40f10c8b284221e9a8",
+      "size_bytes": 546665
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed1-rank5.jsonl": {
+      "sha256": "7b350d93c771c10383d4a10b4136dda0b399df0a1390ccb4289f6992395e5aba",
+      "size_bytes": 546551
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed1-rank6.jsonl": {
+      "sha256": "11f8307d6b98d189d8d7d710a84a331558bc5c5c43fdd30a49bc1695e62f69ba",
+      "size_bytes": 546624
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed1-rank7.jsonl": {
+      "sha256": "fa481faf5730b72ebdae72982badbea354700ed2b6381e1bb736622ee3251f73",
+      "size_bytes": 546564
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed2-rank0.jsonl": {
+      "sha256": "32aa672cc014b0d61d0171f58b419df527ef3b2f3582379e29eb838f9183f1a9",
+      "size_bytes": 546696
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed2-rank1.jsonl": {
+      "sha256": "c3909b9ec0acc5d4e705ba758f9261d1106eea1a8f603caa6cfc4c660ac230e3",
+      "size_bytes": 546605
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed2-rank2.jsonl": {
+      "sha256": "572814c0d6dd7e3cf4566443ab21f78f1b2967725f75d483b9577e566dc87b92",
+      "size_bytes": 546656
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed2-rank3.jsonl": {
+      "sha256": "0edb69bd53ec821fb266318901b0e43f5a3deecfac4616161262abb082054398",
+      "size_bytes": 546634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed2-rank4.jsonl": {
+      "sha256": "58b3ccc22f2e7e6ed8055dcc4cac1e6c0dd67f12319e17050e5a4c23227c2445",
+      "size_bytes": 546616
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed2-rank5.jsonl": {
+      "sha256": "9ca3ea177062995209364fdcb7e5a309e7ac99aefaa9f80dc2c89425014a7b4b",
+      "size_bytes": 546510
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed2-rank6.jsonl": {
+      "sha256": "8b2fd452087aa1a2f4ed38ac99c2613b870beae58b6a094a7ba4de4e93735188",
+      "size_bytes": 546624
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/chat-seed2-rank7.jsonl": {
+      "sha256": "6f4ceed2fc92a2107da536a9a44a68ef1d63be2e220aa02fb035b2a7f4dd9ee4",
+      "size_bytes": 546545
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed0-rank0.jsonl": {
+      "sha256": "2002327f06097e270018085c770fd889a5539a894152dd3a637f754e6519f684",
+      "size_bytes": 545772
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed0-rank1.jsonl": {
+      "sha256": "787a86c255dafcf200b833d8001e08a86fe3b8e4c8f1e885f448809c79eea3a7",
+      "size_bytes": 545756
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed0-rank2.jsonl": {
+      "sha256": "ff24c008605abe523902027d9e68a57db940bbd68ed33f9f8e49696a5d1c8e8f",
+      "size_bytes": 545773
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed0-rank3.jsonl": {
+      "sha256": "6ccc70e6291f02f9611d9cb6cef855db3439874a9cbb6de524ffe76f2c031b39",
+      "size_bytes": 545765
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed0-rank4.jsonl": {
+      "sha256": "00f975c9e0db48ce93f0f3eb4c0f102799e3de992f095ba6111e2f3e4bc1d22a",
+      "size_bytes": 545767
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed0-rank5.jsonl": {
+      "sha256": "6b292547e55f16ca7faecb6c957a7b4c26c3ea9e2dee923dd699b326559af6c3",
+      "size_bytes": 545810
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed0-rank6.jsonl": {
+      "sha256": "115063bc1f3d3b4440bbf9b3f665715d1269bce4f4a37d55f21bf6a61c02c47f",
+      "size_bytes": 545782
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed0-rank7.jsonl": {
+      "sha256": "fa941c3130dfb8947854420aa01b34e885a2a6ee44cabbc296d1a53668e87bdd",
+      "size_bytes": 545779
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed1-rank0.jsonl": {
+      "sha256": "c55ff42f05e4089558720c433bc8286fc761b3f17f1a17de8eede455b6dc5f3e",
+      "size_bytes": 545770
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed1-rank1.jsonl": {
+      "sha256": "2017bf12d83c0769bc4ea3ca9fe6835fc6eff19a31b503a1e5e6d22d503be188",
+      "size_bytes": 545761
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed1-rank2.jsonl": {
+      "sha256": "dda619467216ce90ac87ed1cb71b1be4169a802c0833bcd373789ff70e4f2b88",
+      "size_bytes": 545768
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed1-rank3.jsonl": {
+      "sha256": "f797ea9fad612fcbb4d378180735874218d96b850ff2691c9e6b50d3467e9437",
+      "size_bytes": 545767
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed1-rank4.jsonl": {
+      "sha256": "46a76fcb27863dfb0fba0ff14c3a2dac42e3970e2f93f20575551f2b68104f6b",
+      "size_bytes": 545765
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed1-rank5.jsonl": {
+      "sha256": "d8602f591766141f7121edf25c46fd99a1dbdeceb45fb77b11ecd7979ac6dd17",
+      "size_bytes": 545809
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed1-rank6.jsonl": {
+      "sha256": "342a1030a241624681e5e59b1d944a93e1551257bc64393ff766be5588b899c7",
+      "size_bytes": 545781
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed1-rank7.jsonl": {
+      "sha256": "75fec16af3dc32468537d79462c3dfea31aba77b46e80c60ef8d33e36b9b9619",
+      "size_bytes": 545784
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed2-rank0.jsonl": {
+      "sha256": "9aa3f3bac5f9363a328a24abdb951ec6a233fca2979f819654e0e94acc407b42",
+      "size_bytes": 545769
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed2-rank1.jsonl": {
+      "sha256": "269df45bdb471483158ebb2c81867e8f88f2349f0e9a5f1dc881d0599bf8138d",
+      "size_bytes": 545764
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed2-rank2.jsonl": {
+      "sha256": "689c355e22fc7fc3657e54e8e4057460ea730db4538c815a96b927173a1855da",
+      "size_bytes": 545766
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed2-rank3.jsonl": {
+      "sha256": "6c365a254513fd58310a64d1f098e35537c06cd34fd77deebab05a760cdc1baa",
+      "size_bytes": 545770
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed2-rank4.jsonl": {
+      "sha256": "e012109974dd888934aaa52cc9dad743c5b9bc234d45b3bc929321c664d978fb",
+      "size_bytes": 545768
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed2-rank5.jsonl": {
+      "sha256": "b28b5b2e94b4dca88f135e713b88096493252cb117e5066e7874bbfae0723995",
+      "size_bytes": 545806
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed2-rank6.jsonl": {
+      "sha256": "583895d012068e9cdf64b121a2997e3a7e7d31827b73cd068717a02390eb2d70",
+      "size_bytes": 545780
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/code-seed2-rank7.jsonl": {
+      "sha256": "15a3bf5c7df994f843987a873a91f450b165f99f57f17c5469e8e4e49949dc3d",
+      "size_bytes": 545780
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed0-rank0.jsonl": {
+      "sha256": "6b987b1df6d56883b489dc31e06fed111bbb7dfaebb34909384ea02b50153ae8",
+      "size_bytes": 546119
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed0-rank1.jsonl": {
+      "sha256": "632b5734e38d8911be86878374013dad810e1bdb30c0c2610bfbe48ab8c2d5e9",
+      "size_bytes": 546068
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed0-rank2.jsonl": {
+      "sha256": "1e77abb1f50fd022ba526ff29851deb7bdb06e7d95fbedea1b9723826cdafac2",
+      "size_bytes": 546124
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed0-rank3.jsonl": {
+      "sha256": "52a87b0bcbbefd4ca5f6ee61bdc18b683e353f3e91b8d77a564290ee37bee2a7",
+      "size_bytes": 546113
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed0-rank4.jsonl": {
+      "sha256": "8dffe9ff239aee0fbf4e29023693cefd2e1321ce84115fd37d22cdbf6b50a3d6",
+      "size_bytes": 546072
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed0-rank5.jsonl": {
+      "sha256": "d59d1f22131b28d532ad9348094d04782e637e44375d98c46b0785acd220fcb4",
+      "size_bytes": 546047
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed0-rank6.jsonl": {
+      "sha256": "7e9ff01172cc3cef3944b1f42941ebfbd6136cabab608e6e44bf012c3c84aef3",
+      "size_bytes": 546077
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed0-rank7.jsonl": {
+      "sha256": "88c69bd302c273b69ced7e8b2d2b40587b96465ae22d19bb5343973f4800de3c",
+      "size_bytes": 546081
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed1-rank0.jsonl": {
+      "sha256": "6a0895fe706c01faa966b55f2d0da936b25accf36a64c565b9afc80b156a0ef9",
+      "size_bytes": 546094
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed1-rank1.jsonl": {
+      "sha256": "cf2090b7e7e28b3b8ce3f5123d4d102019d4cf9b84b93ef118c206dab00f5679",
+      "size_bytes": 546025
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed1-rank2.jsonl": {
+      "sha256": "f3e516a98b84f24924c9c282a4ecfa7f12e42bef9d889c8f849b1d422cbccdf6",
+      "size_bytes": 546076
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed1-rank3.jsonl": {
+      "sha256": "22273ab16ad09140d434558f2410922099bbef0035d2f438bae1d392392bd02b",
+      "size_bytes": 546103
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed1-rank4.jsonl": {
+      "sha256": "a32f71a7fab9826b69e957f1ad5afd3e89bc202bc996f8b0684c736fc2340742",
+      "size_bytes": 546102
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed1-rank5.jsonl": {
+      "sha256": "a3ba0c5a8a2b01d7085220937b347011ea26d16e066049e5bd3b17d3d4c3d4b6",
+      "size_bytes": 546057
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed1-rank6.jsonl": {
+      "sha256": "87d786264e239e404d0f4b2e85800f1eb4ad30c1b41780d35efa9a2b578f7c1f",
+      "size_bytes": 546080
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed1-rank7.jsonl": {
+      "sha256": "a68e3d4ef779a482da6e9a99e564c54fc62d97b6c2fc80a1d7b3faa4cd809842",
+      "size_bytes": 546066
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed2-rank0.jsonl": {
+      "sha256": "bb30e63270b4891995642c6876c42261f91312a8a190f7677fa310635a22572c",
+      "size_bytes": 546111
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed2-rank1.jsonl": {
+      "sha256": "3ee7a01ddb9388e5ce3c154efaf949e34a77f08be45e6e4b9c16c1d80d80bfbe",
+      "size_bytes": 546123
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed2-rank2.jsonl": {
+      "sha256": "450474d7f4c31cc73260571a641e154e20f821386e853ffa22747b585cf7e299",
+      "size_bytes": 546093
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed2-rank3.jsonl": {
+      "sha256": "e9acd4e30d181ae72fbb80c75c3eeb5917ee1a3ce06cbb42c9f0e7e83fd051c2",
+      "size_bytes": 546127
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed2-rank4.jsonl": {
+      "sha256": "875255d7834c1d404a2eaa2256749c7afcde59a77a089c43956dd6bc442392bd",
+      "size_bytes": 546094
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed2-rank5.jsonl": {
+      "sha256": "dd04784fd23390e80a6d66e61ddeb21c864344c3c14f1a0c48cc956d967aae9d",
+      "size_bytes": 546051
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed2-rank6.jsonl": {
+      "sha256": "239ad96340cdf100c0fd8f1228b8b526f05ba412d7c3736510ab6851e1db7f51",
+      "size_bytes": 546115
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/generalist-seed2-rank7.jsonl": {
+      "sha256": "ec5ea707debcd28f9fa473ae9750f7dd4f716c61aaee320f9111d88687754998",
+      "size_bytes": 546079
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed0-rank0.jsonl": {
+      "sha256": "0a59a91ac5f28683de087b5e3111ba37722b76fd627ce1ef4e564ad9fe94b5bf",
+      "size_bytes": 545841
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed0-rank1.jsonl": {
+      "sha256": "30c0d213455658b7e562509924c47c35bbe4627c0c2c86ca05ab5382ca794cc3",
+      "size_bytes": 545839
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed0-rank2.jsonl": {
+      "sha256": "dffb010e1a8bf574d8ea01e66b197d412840b2631d89f8d6d8e26c5201c4c912",
+      "size_bytes": 545863
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed0-rank3.jsonl": {
+      "sha256": "ad3994b1274a954206f4976a32a6609e09b6d456da8db413d287d7ee5b0bd807",
+      "size_bytes": 545840
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed0-rank4.jsonl": {
+      "sha256": "aac69174efb78fd0e5161953f52497e72dd5aead3e8daf1ae411bb6d18fba43c",
+      "size_bytes": 545859
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed0-rank5.jsonl": {
+      "sha256": "548251a48a58e85315618c802ddec76b0d19d9bc8c28ba779bdd52f33b2eb9ac",
+      "size_bytes": 545837
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed0-rank6.jsonl": {
+      "sha256": "86e97800973cb2ada688bb58b650794c45fbb4cd09c94930b227f899b6cd2482",
+      "size_bytes": 545859
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed0-rank7.jsonl": {
+      "sha256": "c1da2f599899c2a0c6e8b7a1870f6316f05b206e1f057f759b52e358d931778d",
+      "size_bytes": 545856
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed1-rank0.jsonl": {
+      "sha256": "977c274a68181a1a9b2c3f7978161971d0f7c76fe426ea802e2b7f13834b44c8",
+      "size_bytes": 545839
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed1-rank1.jsonl": {
+      "sha256": "d8e089b4da16c3416c4914706932a9d3dea59738f54e356a9d63950433102aad",
+      "size_bytes": 545838
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed1-rank2.jsonl": {
+      "sha256": "35d5877ce163ff5b1cf0d05f436a0ef5feba90e2075ee2eb264cd8d6025b89bd",
+      "size_bytes": 545867
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed1-rank3.jsonl": {
+      "sha256": "0e9bdcbdcefa89f96d321a9f37a15494fee397acad20913fc8f8610cec80b315",
+      "size_bytes": 545840
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed1-rank4.jsonl": {
+      "sha256": "a34d9b14a9dd86a1af8a64b656beb1cbe008108a259fab7da08c27810fb5d590",
+      "size_bytes": 545857
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed1-rank5.jsonl": {
+      "sha256": "2e258bd5e2a03d28920cfc1791dd59a3b75fd44c7d4b536ff4e69c1b82169ac1",
+      "size_bytes": 545837
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed1-rank6.jsonl": {
+      "sha256": "5c3ec0bc118c49db342223faea806c7fa68bc92cfb03c6490ab4fc99431fe168",
+      "size_bytes": 545859
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed1-rank7.jsonl": {
+      "sha256": "baf56acc1d60d22639f36414832c471ab22b389fe0d30b9017486a70c9f3e66d",
+      "size_bytes": 545857
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed2-rank0.jsonl": {
+      "sha256": "ad68d7664bf1630e29cbb83e4ea305e452991a789f6fcefb0b49014b5ed42c37",
+      "size_bytes": 545839
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed2-rank1.jsonl": {
+      "sha256": "3b5dea460382e1ff47045d8cec1fdd29f9c52dd71a3c222bb70dfc0b862c1564",
+      "size_bytes": 545840
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed2-rank2.jsonl": {
+      "sha256": "15a5560789c35783f6015a7a9c48be0751a53399d4291677d3803a0270d324d6",
+      "size_bytes": 545865
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed2-rank3.jsonl": {
+      "sha256": "bcd9863469403d9a7a05a01536ca43706a1abe0824c0bc79ce35b6ccd2999ff9",
+      "size_bytes": 545840
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed2-rank4.jsonl": {
+      "sha256": "1abc964cbf96408e5a6d6dcaaf6f2ff21ae23269a177fe83f83cc1ba41ce007f",
+      "size_bytes": 545857
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed2-rank5.jsonl": {
+      "sha256": "57440d008a918e25f4c8e7ff2910594d0d2d03091254bcd2b42d1e57639b059a",
+      "size_bytes": 545839
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed2-rank6.jsonl": {
+      "sha256": "88d431ff4e3e30361cc197d1bbff4fe0b0af603ba1f5bd5a5ffa64e10d814e81",
+      "size_bytes": 545862
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/schedules/math-seed2-rank7.jsonl": {
+      "sha256": "4a51d492aad587c5a452c5ddd6661c0ef4ee8db5fbbc33292f052bf9e72309c4",
+      "size_bytes": 545861
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/configs/pilot-cache-20261112.json": {
+      "sha256": "9231678ae3427ae7abfaf56cc1b18eea098ce6e0b979c12bc89a025a3bf04cdb",
+      "size_bytes": 1455
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/configs/rq1-pilot-24-20261112.json": {
+      "sha256": "51f60b3cc2ec9501088eb304f2438b4951ea592ff0aafc1ff80d915edbdb812d",
+      "size_bytes": 5994
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/experiments/verification/reviews/collect_pilot_interval_20261112.py": {
+      "sha256": "2baa54d581d90dc43fd9496f10eb030d6f6ffeeff82d6581b0eb3e1d0ca60d2d",
+      "size_bytes": 4889
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/experiments/verification/reviews/independent_pilot_qualification_audit_20261112.py": {
+      "sha256": "32f142ee0142b54d6dd2cd4f0650656ff06d3fba609f55b40ab7ad3f87bce85b",
+      "size_bytes": 38289
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/experiments/verification/reviews/independent_pilot_qualification_audit_v2_20261112.py": {
+      "sha256": "5e11dd792adb840be1e861f6a0f2e235d483b977e7dca3cfef31f78e3f0f4091",
+      "size_bytes": 34075
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/experiments/verification/reviews/independent_pilot_qualification_audit_v3_20261112.py": {
+      "sha256": "a0749cf04cdbaab39fec1c29eff7d3654fe39a7cb88667f116f270f4ec4346aa",
+      "size_bytes": 18634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/experiments/verification/reviews/independent_pilot_qualification_audit_v4_20261112.py": {
+      "sha256": "592ab1fcc7592b1b3d36e758126d3177b1a1dd34f6d119077876e180e8284a05",
+      "size_bytes": 7363
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/experiments/verification/reviews/pilot_runtime_observer_20261112.py": {
+      "sha256": "46573f893aff54ab1606040facc098e4a98f961c460621a4348bd28cb065d431",
+      "size_bytes": 7833
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/__init__.py": {
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "size_bytes": 22
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/native_gradients.py": {
+      "sha256": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+      "size_bytes": 4703
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/native_training.py": {
+      "sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "size_bytes": 70884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/pilot_cache.py": {
+      "sha256": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+      "size_bytes": 18634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/pilot_gate.py": {
+      "sha256": "81526515203af4a0386680b79f091d4f0166aae170a12a23d1b209d9a3028470",
+      "size_bytes": 16944
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/pilot_pipeline.py": {
+      "sha256": "45a813eb3f7063ac8224665ca8397f5a1efd390e25035b23b4c667436f320cf6",
+      "size_bytes": 14560
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/pilot_queue.py": {
+      "sha256": "0c2ec34b25496f793338abbd3495ea9553f13dde8928c4b9777f5d565506a80f",
+      "size_bytes": 4464
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/pilot_smoke.py": {
+      "sha256": "026aa0d7473c7adbd4df3c59bad4677847ff5fbec234aa5badf4ee6f23bd7a13",
+      "size_bytes": 3525
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/pilot_study.py": {
+      "sha256": "8e9fb70fb92240d9253711cca23c0343d1f5b894c32b87eb12e0d2058872f882",
+      "size_bytes": 9942
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/pilot_train.py": {
+      "sha256": "c351672151ce31d01b93e6fdf3071747506c8c4b67d8e0bb22935a937f8f06cc",
+      "size_bytes": 31290
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261112-v2/src/taps_rebuild/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/corpus_generate.py": {
+      "sha256": "7725c7e6b0a9769d5614d2d357ca4e8af2bc6f641cc2de47f38602676af9ee9f",
+      "size_bytes": 20180
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/native_training.py": {
+      "sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "size_bytes": 70884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-0.jsonl": {
+      "sha256": "d325a60af5ce7fd38b571e397edc30fc1d04d53f224dc5eaa23f235711bf4bac",
+      "size_bytes": 6605890
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-1.jsonl": {
+      "sha256": "8d4a3490a98f3369f4ee4f32186c9dd29a7309285272214562ae563a33f8e1d5",
+      "size_bytes": 6677446
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-2.jsonl": {
+      "sha256": "eb3184a4fa36fff46554bddcfc4a128739b5bcdf565a3024e69b3f3d0e4243f5",
+      "size_bytes": 6640627
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-3.jsonl": {
+      "sha256": "3333053ea278d1087db123d7406b2ce7b4ab829bc9e2a8d0da0f5f1556c50b4a",
+      "size_bytes": 6604884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-4.jsonl": {
+      "sha256": "7c7610399c831e3c205538145cbdd033debe66e621aea67078d3600b7f87beee",
+      "size_bytes": 6609141
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-5.jsonl": {
+      "sha256": "dd28912b05ff7efdf59ffa34287848e3deb8eba54b1d1cf10757dbea7e74184a",
+      "size_bytes": 6626593
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-6.jsonl": {
+      "sha256": "1a68b5ad323af646d1adfe3ac27668776ae0b949de4b3213d76e75d1bcf20133",
+      "size_bytes": 6597409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/inputs/shard-7.jsonl": {
+      "sha256": "c72369fcd644200283de1c99c55881e36cb07c66465618c8d6f3e5bf0a4a9edc",
+      "size_bytes": 6584565
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/rq1-math-code-teacher-20261112-v1/plan.json": {
+      "sha256": "3533168601e74a9e1cde1c653a0223ac125eeceb7a7512f069a8b9ec0e859812",
+      "size_bytes": 10513
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/corpus_generate.py": {
+      "sha256": "7725c7e6b0a9769d5614d2d357ca4e8af2bc6f641cc2de47f38602676af9ee9f",
+      "size_bytes": 20180
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/native_training.py": {
+      "sha256": "60259b4b4ffb3132c3036e391243ee33967cd8fa4f9ba3444075fade798478cd",
+      "size_bytes": 63298
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-0.jsonl": {
+      "sha256": "5231abd6ac4f5f292eb7c3c7bf71041e44de9a0d9bc92cec60b052fd400f4007",
+      "size_bytes": 413952457
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-1.jsonl": {
+      "sha256": "d7ee965c8590e9a6cf9160faa695d29f3713a3254d76b258293e0bca2e7b9f6d",
+      "size_bytes": 413470995
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-2.jsonl": {
+      "sha256": "b448b1c935d70fbe90c31295926670dd3155aecd21656c69da3e4eda384c8ff5",
+      "size_bytes": 412526722
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-3.jsonl": {
+      "sha256": "84ab49659164bbd8aa105e3a0819a5d41d90e0ac4e8b584488476703ca3a6534",
+      "size_bytes": 412517647
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-4.jsonl": {
+      "sha256": "f0551f1e430daa1e355069a9bc83e7b9eea74720d1e6ce154a691d906a81c061",
+      "size_bytes": 412640753
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-5.jsonl": {
+      "sha256": "e007ccd098e537a5a7f332ea2a79e8298f3bb85d4b7da304a97593fab3820a90",
+      "size_bytes": 413283237
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-6.jsonl": {
+      "sha256": "58c97ef1c10f256e2c913a7fb40dc5294f79bacbca10647e3090ea36eb8a17c4",
+      "size_bytes": 414239894
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/inputs/shard-7.jsonl": {
+      "sha256": "ee5b805bc8586ff573d558233553267ca9b1b59921d1132a053abb6651575bac",
+      "size_bytes": 411835366
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/teacher-generation/sharegpt-ultrachat-teacher-20261110-v3/plan.json": {
+      "sha256": "e0e850f329378c8d1f9ac352faa24a166f20fb57a0567eacadf9e7ec8114af58",
+      "size_bytes": 10954
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/traineagle3/cnets.py": {
+      "sha256": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+      "size_bytes": 38251
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/traineagle3/config.json": {
+      "sha256": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f",
+      "size_bytes": 591
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/traineagle3/configs.py": {
+      "sha256": "14ae62877cd9ab12c9076fc70fe940714b9ca980865b00ba974de340df2d1ac5",
+      "size_bytes": 7550
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/traineagle3/ds_config.json": {
+      "sha256": "02b432995b51d8fa1cce7685b7430de7ce14de0419a6729cd9ff0c324c1bec0b",
+      "size_bytes": 1263
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/traineagle3/main.py": {
+      "sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+      "size_bytes": 14195
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/traineagle3/modeling_llama_kv.py": {
+      "sha256": "18adff2c21e659755eb41d6804fa6dd4b4d486b70d3c749693fbb44cff3855b5",
+      "size_bytes": 62818
+    }
+  },
+  "artifact_inventory_sha256": "0d84a4a981ac1507fd0f1a466a5944d36cbdcff776829159b65fa8213d5ed639",
+  "automatic_admission_emitted": false,
+  "cpu_only": true,
+  "error_code": "artifact_outside_project_or_model_storage",
+  "phase": "corrected_checkpoint_policy_and_named_hooks",
+  "project_helpers_imported": false,
+  "runtime_packages": {
+    "accelerate": "0.26.0",
+    "deepspeed": "0.17.1",
+    "numpy": "1.26.4",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.53.1"
+  },
+  "scientific_training_admitted": false,
+  "slurm_job_id": "2216755",
+  "status": "failed",
+  "wall_seconds": 230.76426415890455
+}

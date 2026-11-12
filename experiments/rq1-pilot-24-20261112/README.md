@@ -1,6 +1,6 @@
 # RQ1: 24 common-ancestor pilot trainings
 
-The PDF's core pilot is four drafters × two response-context policies × three seeds. Chat, math and code specialists are compared with a balanced union generalist. Every run fine-tunes the same complete released EAGLE3 ancestor with the same released 32,000-token vocabulary. The separate ongoing 40-epoch scratch generalist continues independently.
+The PDF's core pilot is four drafters × two response-context policies × three seeds. Chat, math and code specialists are compared with a balanced union generalist. Every run fine-tunes the same complete released EAGLE3 ancestor with the same released 32,000-token vocabulary. The separate 40-epoch scratch generalist was stopped after a confirmed upstream decoder-gradient defect and requires a fresh corrected restart.
 
 Both policies use online, frozen Llama-3.1-8B-Instruct soft distributions. “Original” and “target” refer to the response text in the training context, not different hard-label sources. No teacher hidden-state feature cache is used.
 
@@ -20,7 +20,7 @@ Any overflow or skipped update invalidates the strict run. Logical committed wor
 
 1. Verify pinned source corpora, target generation plans and canonical output bytes.
 2. Prepare paired native token/mask caches on a CPU Slurm node. Native preprocessing parity covers both response policies in all three domains.
-3. Scan eligibility on all eight GPUs of the protected deep10 allocation. Preserve the separate generalist's eight GPUs on deep11.
+3. Scan eligibility on all eight GPUs of the protected deep10 allocation. Preserve the separate eight-GPU deep11 allocation for corrected native qualification and generalist training.
 4. Select Q and freeze all 24 plans, complete schedules and repeat/coverage statistics.
 5. Qualify the new source: independent FP64 loss/gradient reconstruction, native optimizer-step parity, alternate-future-suffix invariance, fresh eight-rank 4 versus 2+2 recovery and stock inference of the exported checkpoint.
 6. Independently review actual evidence and integrate a source-bound admission receipt. Design approval alone cannot release training.

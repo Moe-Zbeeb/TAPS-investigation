@@ -1,4 +1,14 @@
-# Execution snapshot: 12 November 2026
+# Execution record: 12 November 2026
+
+## Correction after the historical snapshot
+
+The original scratch generalist is stopped. Independent raw Adam inspection at7,000 successful updates showed zero moments for all11 fc/decoder tensors; only the outer norm and head were learning. A CPU replay of the actual nested decoder output confirmed the default reentrant checkpoint path cut those gradients. Both eight-GPU allocations remain held; the old training continuation is cancelled. Its earlier progress and timing cannot qualify full-body training.
+
+The corrected pilot uses explicit nonreentrant checkpointing and frozen CPU-FP32 RoPE tables primed to2,054 positions. Eight-GPU execution completed all12 qualification phases, including4 versus2+2 restart, direct native-function references, suffix probes and stock export inference. All13 trainables received finite nonzero callbacks. The24 scientific plans remain unadmitted pending independent numerical/raw-state replay. The first v4 replay stopped on an external runtime path allowlist defect; the separately frozen v5 verifier permits only the exact reviewed PyTorch checkpoint source file and is queued for fresh replay.
+
+Chat/math/code generation, independent source-to-teacher replay, paired caches, Q64 eligibility and all96 schedules are complete. A separate corrected native scratch wrapper is being prepared for the second node; full native GAS2/dynamic-scaler qualification and a new200-update profile remain required.
+
+## Historical13:49 UTC snapshot
 
 At 13:49 UTC / 15:49 Beirut, the [recorded cluster snapshot](pilot24-live-20261112T134939.json) showed 16 allocated high-priority A100 80GB GPUs with active work on both nodes. This is a dated operational record, not a continuously refreshed dashboard.
 

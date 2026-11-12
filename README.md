@@ -4,7 +4,7 @@ Research code for studying specialist drafters under mixed traffic, following th
 
 [Getting started](docs/GETTING_STARTED.md) · [Reproduction protocol](experiments/official-reproduction-20261109/PREREGISTRATION.md) · [Implementation status](experiments/IMPLEMENTATION_STATUS.md) · [Current completion plan](experiments/finalization-20261111/COMPLETION_PLAN.md) · [References](references/README.md)
 
-The [12 November execution snapshot](results/progress-2026-11-12/README.md) records the running 40-epoch scratch generalist and the [24-run specialization pilot](experiments/rq1-pilot-24-20261112/README.md). Sixteen A100 80GB GPUs are working across two nodes. The pilot dependency chain prepares matched schedules, qualifies the new training loop and requires independent evidence admission before starting its scientific runs.
+The [12 November execution record](results/progress-2026-11-12/README.md) covers the [24-run specialization pilot](experiments/rq1-pilot-24-20261112/README.md) and a stopped scratch generalist. A confirmed upstream checkpoint-gradient defect invalidated the old full-body training path. Both eight-A100 allocations are retained. Corrected pilot GPU qualifications completed; independent raw-state replay and a fresh corrected native generalist qualification precede scientific training.
 
 ```mermaid
 flowchart LR
@@ -32,7 +32,7 @@ The initial publication source check ran 368 tests with nine Torch-dependent tes
 
 The [historical replication check](results/status-2026-11-11/README.md) found 20/22 acceptance values within 5%, while 9/22 strict cells passed. Both FP32 controls retained three mismatches among 1,120 pairs. Two are explained by context-stop lengths; the [eight-GPU logit diagnostic](results/fp32-decision-2026-11-11/README.md) captures the remaining decision as a same-prefix near-tie argmax flip, with seven matched controls. The [seed-policy experiment](results/seed-policy-2026-11-11/README.md) found that upstream seed zero does not resolve the GSM8K outlier. These historical failures remain recorded. The subsequent [pipeline replay](results/readiness-2026-11-11/pipeline-v3-replay.json), source-matched restart/export checks and independent review support the separate v2 training admission; matching published numbers is nonblocking.
 
-ShareGPT and UltraChat [source preparation](experiments/corpus-20261110/README.md) contains 540,107 grouped conversations, including 284,115 with complete original answers. Target generation and both native profiles completed, and full scratch training is running. The pilot adds pinned math/code inputs and paired original/regenerated contexts; its new budget, objective and recovery checks remain mandatory.
+ShareGPT and UltraChat [source preparation](experiments/corpus-20261110/README.md) contains 540,107 grouped conversations, including 284,115 with complete original answers. Chat and math/code target generation completed. Earlier native profiles and the stopped scratch run used a defective decoder-gradient path and cannot qualify corrected full-body training. The paired pilot cache and eligibility scan completed; its new budget, objective and recovery checks remain mandatory.
 
 ## Start on CPU
 
@@ -60,7 +60,7 @@ The unchanged rebuild memo defines the following requirements. This is a map of 
 | 5.7 · Baselines | Compare with matched-compute generalists, selectors and other independently implemented baselines |
 | 5.8 · Statistics and reporting | Use three training seeds, paired comparisons, prompt-level intervals and repeated timings without warmup |
 
-The [registered core pilot](experiments/rq1-pilot-24-20261112/README.md) has one union generalist and three specialists, original and target-generated response contexts, and three seeds: **24 drafter runs**. All fine-tune the same released EAGLE3 ancestor while the separate scratch generalist runs. The fixed-budget plans and guarded Slurm chain are prepared; their source-matched qualification and independent admission precede training. The measured specialization gap will guide composition experiments. See the [roadmap](experiments/ROADMAP.md) and [pilot analysis design](experiments/rq1/SPECIALIZATION_ANALYSIS.md).
+The [registered core pilot](experiments/rq1-pilot-24-20261112/README.md) has one union generalist and three specialists, original and target-generated response contexts, and three seeds: **24 drafter runs**. All fine-tune the same released EAGLE3 ancestor. The separate scratch generalist requires a corrected restart. The fixed-budget plans and guarded Slurm chain are prepared; their source-matched qualification and independent admission precede training. The measured specialization gap will guide composition experiments. See the [roadmap](experiments/ROADMAP.md) and [pilot analysis design](experiments/rq1/SPECIALIZATION_ANALYSIS.md).
 
 ## Repository layout
 
