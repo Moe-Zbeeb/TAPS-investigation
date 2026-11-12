@@ -1,0 +1,21 @@
+{
+  "consequences": [
+    "Do not alter native recipe tolinear.",
+    "Replay actualLOG scheduler and dynamic scaler/counters in native qualification.",
+    "All13 positive raw moments required; actual per-parameter FP32 changes can be tested at4steps and must be established by corrected200profile."
+  ],
+  "decision": "correction_to_native_scheduler_design_note",
+  "earlier_design_review_sha256": "8169514ffa7f0a4dcca40e922b1ff0eb418fe536f1ab6eef6c3bddc945eb2ea0",
+  "example_scheduler_iteration1_lr": 3.6898335414202705e-06,
+  "pilot_behavior": "Pilot explicitlyregisterslinear warmup64 and is unchanged.",
+  "registered_native_behavior": "Native config omits warmup_type. WarmupDecayLR defaultslog, gamma=log(iteration+1)/log(12000) duringwarmup. Actual pre-step LRs depend on scheduler cursor and skipped-update behavior.",
+  "scientific_training_admitted": false,
+  "scope": "native_warmup_rate_estimate_only",
+  "source": "deepspeed/runtime/lr_schedules.py",
+  "source_lines": [
+    752,
+    765
+  ],
+  "source_sha256": "6482b41cc5bf6d8e883020ca8fa5e7a9b1aa44f27e6f93873d12e07e573945d2",
+  "superseded_note": "The earlier review estimated~1e-9 initial native learning rates by assuminglinear warmup. That estimate was incorrect for the exact native recipe."
+}

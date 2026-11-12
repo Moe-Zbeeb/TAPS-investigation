@@ -1,0 +1,55 @@
+{
+  "actual_metadata_observation": {
+    "checkpoint": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261112-v2/original/uninterrupted/checkpoints/step-4",
+    "checkpoint_pickle_metadata_bytes": 33055,
+    "method": "Read-only stdlib ZIP data.pkl opcode inspection; no tensor loading or GPU work on login.",
+    "only_registered_saved_recipe_difference": "optimizer.params.adam_w_mode=True absent from saved ds_config; optimizer.type remainsAdamW, weight_decay0 and allother supplied fields match."
+  },
+  "cluster_sources_jobs_or_admission_mutated_by_reviewer": false,
+  "decision": "source_bound_verifier_normalization_repaired_replay_required",
+  "failed_job_id": "2216766",
+  "failed_v5_report_path": "experiments/verification/reviews/direct-pilot-v2-full-v5-failed.json",
+  "failed_v5_report_sha256": "1a92fd02b990a8971e47ba597051186ca3643777ec0e760ff1a3662b9058d807",
+  "failure": {
+    "error_code": "raw_deepspeed_recipe_differs",
+    "phase": "raw_checkpoint_reconstruction"
+  },
+  "local_validation": "Syntax/import, original-recipe immutability,3 invalid-normalization policies and3 other-recipe mismatch probes passed; no Torch execution.",
+  "original_failures_preserved": true,
+  "raw_state_or_scientific_pass_inferred": false,
+  "repair": {
+    "additional_diagnostics": "Retain already completed analysis sections if a later phase fails.",
+    "analyzer_v6_sha256": "bb8c6eef947390535094cea39d009e5e1cd474856eb6ae84db03f86a972024b9",
+    "scope": "Only remove registered adam_w_modeTrue from the temporary saved-config comparison contract when optimizer.typeAdamW and registered weight_decay0, under the exact reviewed engine/FusedAdam source hashes. Original plan and all raw state bytes remain unchanged.",
+    "unchanged_checks": [
+      "Allother saved recipe entries",
+      "Complete raw model/master/Adam/scaler/scheduler/RNG/counter identities",
+      "All13 named moment/master update criteria",
+      "Numerical CE/gradient and suffix bounds",
+      "Stock/runtime/data/source inventories"
+    ]
+  },
+  "scientific_training_admitted": false,
+  "scope": "pilot_v2_raw_deepspeed_config_serialization_only",
+  "source_explanation": {
+    "ops/adam/fused_adam.py": {
+      "finding": "The pinned FusedAdam stores the constructor mode as1 and passes it to the fused update. This is source-derived algorithm-mode evidence, not a serialized optimizer attribute.",
+      "lines": [
+        91,
+        180,
+        192
+      ],
+      "sha256": "e7f24193f52f04572738bd3f84faf94951404e69a6287148955491d5a9beb017"
+    },
+    "runtime/engine.py": {
+      "finding": "The exact installed engine consumes adam_w_mode from the shared optimizer parameter dict, derives effectiveTrue whenever optimizer type isAdamW, and passes that mode to FusedAdam.",
+      "lines": [
+        1461,
+        1464,
+        1480,
+        1483
+      ],
+      "sha256": "3bb0e2af63f93c105d51f120bd56886b7d45e4ad33d9cd192e5c687c8673fde8"
+    }
+  }
+}

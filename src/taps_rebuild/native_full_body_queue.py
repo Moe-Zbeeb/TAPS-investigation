@@ -1,6 +1,7 @@
 import argparse
 import hashlib
 import json
+import multiprocessing
 import os
 from pathlib import Path
 import subprocess
@@ -8,6 +9,46 @@ import sys
 
 from . import native_full_body as corrected, native_training as native
 from .pilot_cache import preprocessor, read, records, require
+
+
+_PREPROCESS = None
+
+
+def chunks(iterator, size):
+    values = []
+    for value in iterator:
+        values.append(value)
+        if len(values) == size:
+            yield values
+            values = []
+    if values:
+        yield values
+
+
+def maximum_shapes(rows):
+    selected = []
+    for offset, row in enumerate(rows):
+        encoded = _PREPROCESS({key: [value] for key, value in row.items()})
+        if encoded['input_ids'] and encoded['input_ids'][0].shape == (1, 2048):
+            selected.append((offset, row))
+    return len(rows), selected
+
+
+def select_maximum_shapes(path, function, torch):
+    global _PREPROCESS
+    require(not torch.cuda.is_initialized(), 'CPU tokenization workers cannot fork an initialized CUDA runtime')
+    torch.set_num_threads(1)
+    os.environ['TOKENIZERS_PARALLELISM'] = 'false'
+    _PREPROCESS = function
+    selected, inspected = [], 0
+    with multiprocessing.get_context('fork').Pool(processes=8) as workers:
+        for count, values in workers.imap(maximum_shapes, chunks(records(path), 128), chunksize=1):
+            for offset, row in values:
+                selected.append(row)
+                if len(selected) == 64:
+                    return selected, inspected + offset + 1
+            inspected += count
+    return selected, inspected
 
 
 def descriptor(path):
@@ -31,14 +72,7 @@ def prepare(root, parent_path, output):
     from transformers import AutoTokenizer
     tokenizer = AutoTokenizer.from_pretrained(parent['target']['path'], local_files_only=True)
     function = preprocessor(Path(parent['workdir']) / 'main.py', tokenizer, torch)
-    selected, inspected = [], 0
-    for row in records(parent['train']['frozen_path']):
-        inspected += 1
-        encoded = function({key: [value] for key, value in row.items()})
-        if encoded['input_ids'] and encoded['input_ids'][0].shape == (1, 2048):
-            selected.append(row)
-            if len(selected) == 64:
-                break
+    selected, inspected = select_maximum_shapes(parent['train']['frozen_path'], function, torch)
     require(len(selected) == 64, 'The registered maximum-shape qualification requires64 distinct real native2048 examples')
     validation = []
     for row in records(parent['validation']['frozen_path']):
@@ -52,7 +86,7 @@ def prepare(root, parent_path, output):
         with (output / (name + '.jsonl')).open('x') as stream:
             for value in values:
                 stream.write(json.dumps(value, ensure_ascii=False) + '\n')
-    selection = {'scope': 'real-data maximum-shape native engineering subset; no scientific outcomes', 'parent_plan': descriptor(parent_path), 'full_train': descriptor(parent['train']['frozen_path']), 'full_validation': descriptor(parent['validation']['frozen_path']), 'inspected_train_rows': inspected, 'selection': 'first64 distinct native examples retained at exactly2048 tokens in frozen input order; first8 retained validation examples', 'train_ids': [value['id'] for value in selected], 'validation_ids': [value['id'] for value in validation], 'train_rows': 64, 'validation_rows': 8, 'all_training_rows_have2048_tokens': True}
+    selection = {'scope': 'real-data maximum-shape native engineering subset; no scientific outcomes', 'parent_plan': descriptor(parent_path), 'full_train': descriptor(parent['train']['frozen_path']), 'full_validation': descriptor(parent['validation']['frozen_path']), 'logical_selection_prefix_rows': inspected, 'parallel_cpu_workers': 8, 'physical_prefetch': 'Later rows can be encoded before worker termination; first64 selection is ordered by the original input; all CPU allocation time is charged separately', 'selection': 'first64 distinct native examples retained at exactly2048 tokens in frozen input order; first8 retained validation examples', 'train_ids': [value['id'] for value in selected], 'validation_ids': [value['id'] for value in validation], 'train_rows': 64, 'validation_rows': 8, 'all_training_rows_have2048_tokens': True}
     native.atomic_json(output / 'qualification-data.json', selection)
     base = {**parent['config']}
     base.pop('pipeline_stage_evidence', None)
