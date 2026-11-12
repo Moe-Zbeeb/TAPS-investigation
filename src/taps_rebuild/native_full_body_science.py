@@ -36,6 +36,7 @@ def run(root, preparation, approval, run_id, attached=False):
     if attached:
         status = read(Path(root) / 'outputs/native-full-body-science' / run_id / 'preparation.json')
         require(status['source_sha256'] == corrected.sources() and native.digest(status['plan']['path']) == status['plan']['sha256'], 'Corrected scientific prepared plan changed')
+        require(status['controller'] == descriptor(__file__) and status['approval'] == descriptor(approval), 'Corrected scientific controller or approval content changed')
         path = Path(status['plan']['path'])
         command = [str(Path(root) / 'envs/native-eagle3/bin/python'), '-B', str(path.parent / 'inputs/native_full_body.py'), 'launch', '--plan', str(path)]
         subprocess.run(command, check=True)
