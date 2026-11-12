@@ -26,5 +26,9 @@
   "comparison-submission.json": {
     "remote_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/profile-comparison-20261112-v1/submission.json",
     "sha256": "8ec25ff1139ceb92eaf41569bab54a169e31f46fd3fdbd2b96d89546021f5d20"
+  },
+  "latest-progress.json": {
+    "remote_path": null,
+    "sha256": "3354a3367e1bbc3ebd5adfd40278dc3a449f945467e1d9d36ebd90c32260568b"
   }
 }

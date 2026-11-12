@@ -1,0 +1,138 @@
+{
+  "checked_at_utc": "2026-11-12T11:05:55.862032+00:00",
+  "primary_profile_gpu_sample": {
+    "elapsed_seconds": 1482.3969847578555,
+    "at_utc": "2026-11-12T11:05:52.716742+00:00",
+    "gpus": [
+      {
+        "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c",
+        "utilization_percent": 97.0,
+        "used_memory_mib": 38629.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 297.36
+      },
+      {
+        "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2",
+        "utilization_percent": 100.0,
+        "used_memory_mib": 36635.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 294.65
+      },
+      {
+        "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19",
+        "utilization_percent": 99.0,
+        "used_memory_mib": 33875.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 327.04
+      },
+      {
+        "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c",
+        "utilization_percent": 97.0,
+        "used_memory_mib": 40645.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 204.73
+      },
+      {
+        "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c",
+        "utilization_percent": 97.0,
+        "used_memory_mib": 31571.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 282.28
+      },
+      {
+        "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed",
+        "utilization_percent": 97.0,
+        "used_memory_mib": 37031.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 299.28
+      },
+      {
+        "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c",
+        "utilization_percent": 97.0,
+        "used_memory_mib": 29453.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 299.87
+      },
+      {
+        "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8",
+        "utilization_percent": 97.0,
+        "used_memory_mib": 40489.0,
+        "total_memory_mib": 81920.0,
+        "power_watts": 289.86
+      }
+    ]
+  },
+  "primary_rank_statuses": [
+    {
+      "rank": 0,
+      "status": "running",
+      "plan_identity_sha256": "a4f08b7091986dd3fca8107dbe0dc75d8d783ab789f34296bf1c71c86bc9fe02",
+      "slurm_job_id": "2216033",
+      "successful_optimizer_steps": null,
+      "error": null
+    },
+    {
+      "rank": 1,
+      "status": "running",
+      "plan_identity_sha256": "a4f08b7091986dd3fca8107dbe0dc75d8d783ab789f34296bf1c71c86bc9fe02",
+      "slurm_job_id": "2216033",
+      "successful_optimizer_steps": null,
+      "error": null
+    },
+    {
+      "rank": 2,
+      "status": "running",
+      "plan_identity_sha256": "a4f08b7091986dd3fca8107dbe0dc75d8d783ab789f34296bf1c71c86bc9fe02",
+      "slurm_job_id": "2216033",
+      "successful_optimizer_steps": null,
+      "error": null
+    },
+    {
+      "rank": 3,
+      "status": "running",
+      "plan_identity_sha256": "a4f08b7091986dd3fca8107dbe0dc75d8d783ab789f34296bf1c71c86bc9fe02",
+      "slurm_job_id": "2216033",
+      "successful_optimizer_steps": null,
+      "error": null
+    },
+    {
+      "rank": 4,
+      "status": "running",
+      "plan_identity_sha256": "a4f08b7091986dd3fca8107dbe0dc75d8d783ab789f34296bf1c71c86bc9fe02",
+      "slurm_job_id": "2216033",
+      "successful_optimizer_steps": null,
+      "error": null
+    },
+    {
+      "rank": 5,
+      "status": "running",
+      "plan_identity_sha256": "a4f08b7091986dd3fca8107dbe0dc75d8d783ab789f34296bf1c71c86bc9fe02",
+      "slurm_job_id": "2216033",
+      "successful_optimizer_steps": null,
+      "error": null
+    },
+    {
+      "rank": 6,
+      "status": "running",
+      "plan_identity_sha256": "a4f08b7091986dd3fca8107dbe0dc75d8d783ab789f34296bf1c71c86bc9fe02",
+      "slurm_job_id": "2216033",
+      "successful_optimizer_steps": null,
+      "error": null
+    },
+    {
+      "rank": 7,
+      "status": "running",
+      "plan_identity_sha256": "a4f08b7091986dd3fca8107dbe0dc75d8d783ab789f34296bf1c71c86bc9fe02",
+      "slurm_job_id": "2216033",
+      "successful_optimizer_steps": null,
+      "error": null
+    }
+  ],
+  "jobs": "2216035|high-priority|spec-priority|taps-full-train|PENDING|gres:gpu:a100:8|(Dependency)\n2215920|high-priority|spec-priority|deep10-hold|PENDING|gres:gpu:a100:8|(Dependency)\n2216602|high-priority|spec-priority|taps-profile-compare|PENDING|N/A|(Dependency)\n2216596|high-priority|spec-priority|taps-calibration-profile|PENDING|N/A|(Dependency)\n2216036|high-priority|spec-priority|taps-full-continue|PENDING|N/A|(Dependency)\n2216034|high-priority|spec-priority|taps-v2-full-prep|PENDING|N/A|(Dependency)\n2216033|high-priority|spec-priority|taps-v2-profile|RUNNING|gres:gpu:a100:8|deep-chungus-11\n2212580|high-priority|spec-priority|deep10-hold|RUNNING|gres:gpu:a100:8|deep-chungus-10\n2216595|high-priority|spec-priority|taps-calibration-bind|RUNNING|N/A|deep-chungus-6\n",
+  "protected_holder_steps": "StepId=2212580.batch UserId=29562 StartTime=2026-11-11T07:41:58 TimeLimit=UNLIMITED State=RUNNING Partition=high-priority NodeList=deep-chungus-10 Nodes=1 CPUs=0 Tasks=1 Name=batch Network=(null) TRES=(null) ResvPorts=(null) CPUFreqReq=Default SrunHost:Pid=(null):0\n",
+  "running_high_priority_allocated_gpus": 16,
+  "primary_sampled_active_gpus": 8,
+  "full_forty_epoch_training_started": false,
+  "calibration_scope": "Same-recipe engineering profile, no additional full-training run or independent seed claim",
+  "original_generation_migration_deployed": false
+}
