@@ -1,0 +1,70 @@
+{
+  "code_commit": "cd2b66e",
+  "bundle": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2",
+  "bundle_files": {
+    "src/taps_rebuild/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "src/taps_rebuild/native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "src/taps_rebuild/pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+    "src/taps_rebuild/pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+    "src/taps_rebuild/pilot_gate.py": "81526515203af4a0386680b79f091d4f0166aae170a12a23d1b209d9a3028470",
+    "src/taps_rebuild/pilot_queue.py": "0c2ec34b25496f793338abbd3495ea9553f13dde8928c4b9777f5d565506a80f",
+    "configs/pilot-cache-20261112.json": "9231678ae3427ae7abfaf56cc1b18eea098ce6e0b979c12bc89a025a3bf04cdb"
+  },
+  "jobs": {
+    "prepare": {
+      "job_id": "2216683",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--partition=high-priority",
+        "--qos=spec-priority",
+        "--nodes=1",
+        "--ntasks=1",
+        "--nodelist=deep-chungus-6",
+        "--cpus-per-task=16",
+        "--mem=96G",
+        "--kill-on-invalid-dep=yes",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--time=06:00:00",
+        "--job-name=taps-pilot-prepare-v2",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/prepare-%j.log",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/prepare.sh"
+      ],
+      "verified_slurm": "JobId=2216683 JobName=taps-pilot-prepare-v2 UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-11-12T07:59:48 EligibleTime=2026-11-12T07:59:48 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T07:59:48 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:3959156 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=96G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=96G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/prepare-2216683.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/prepare-2216683.log Power= KillOInInvalidDependent=Yes \n"
+    },
+    "scan": {
+      "job_id": "2216684",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=grad-students",
+        "--partition=high-priority",
+        "--qos=spec-priority",
+        "--nodes=1",
+        "--ntasks=1",
+        "--nodelist=deep-chungus-6",
+        "--cpus-per-task=16",
+        "--mem=96G",
+        "--kill-on-invalid-dep=yes",
+        "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+        "--time=12:00:00",
+        "--job-name=taps-pilot-scan-v2",
+        "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/scan-%j.log",
+        "--dependency=afterok:2216683",
+        "--wrap",
+        "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/scan.sh"
+      ],
+      "verified_slurm": "JobId=2216684 JobName=taps-pilot-scan-v2 UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216683(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=12:00:00 TimeMin=N/A SubmitTime=2026-11-12T07:59:48 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T07:59:48 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:3959156 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=96G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=96G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/scan-2216684.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-cache-20261112-v2/scan-2216684.log Power= KillOInInvalidDependent=Yes \n"
+    },
+    "replaced_cache_job": {
+      "job_id": "2216647",
+      "reason": "replace NFS temporary SQLite index with node-local disposable index and strengthened provenance; partial files retained; no model training affected"
+    }
+  },
+  "cache": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2",
+  "eligibility": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2",
+  "new_gpu_allocations": 0,
+  "training_admitted": false
+}

@@ -1,0 +1,75 @@
+{
+  "decision": "split_scope_checkpoint",
+  "scientific_training_authorized": false,
+  "evidence_admission": false,
+  "jobs_submitted_or_modified": false,
+  "reviewed_source_snapshots": {
+    "1b9ee5e:src/taps_rebuild/pilot_cache.py": "e67991eea5d039b300b34a52a27a472ecfc5adeea9170d4a3dfb8fad6a24f3b5",
+    "1b9ee5e:configs/pilot-cache-20261112.json": "94424eb385961330a78d2c1c5075c3e87f9066dda30c0fea7a89e37dbcd9497a",
+    "revised/src/taps_rebuild/pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+    "revised/configs/pilot-cache-20261112.json": "9231678ae3427ae7abfaf56cc1b18eea098ce6e0b979c12bc89a025a3bf04cdb",
+    "tests/test_pilot_cache.py": "133cc7b86c37f2de32edd2b43ca4d04055baa896a6f1dc8bc21ef588d2eb5aec",
+    "checkpoint/src/taps_rebuild/pilot_gate.py": "71755306ad9daccc09af6ba5085f0fa8400e3153a190caf99ec6c9c21c13c628",
+    "checkpoint/src/taps_rebuild/pilot_queue.py": "0c2ec34b25496f793338abbd3495ea9553f13dde8928c4b9777f5d565506a80f"
+  },
+  "cpu_cache_decision": {
+    "status": "approved_for_cpu_preeligibility_only",
+    "source_sha256": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+    "config_sha256": "9231678ae3427ae7abfaf56cc1b18eea098ce6e0b979c12bc89a025a3bf04cdb",
+    "basis": "Paired immutable source/user fields, native AST capture and geometry checks, guarded raw-context filtering, fixed rank indexing and separate original/target token arrays are coherent. Evaluation takes one seeded original-test family representative and does not depend on generated answer eligibility. Disposable temporary SQLite with durable NFS token-file fsync is suitable.",
+    "conditions": [
+      "The original1b9ee5e cache has an actual generated-plan provenance gap: only a receipt identity string was checked. Preserve it as pre-eligibility, and bind unchanged token/mask/metadata/evaluation bytes to a completed strengthened provenance audit before further evidence admission.",
+      "The revised helper pins generated completion bytes and verifies actual plan self-identity, target/corpus/config and frozen scripts/shards. Final provenance must additionally validate generated physical split, response regime, completeness and native schema for every row.",
+      "Default TemporaryDirectory honors TMPDIR. Use explicitly local scratch if the performance guarantee requires compute-node/tmp.",
+      "Rank cache files contain train/dev/test metadata. Every downstream population builder must explicitly filter train and preserve group-to-split membership.",
+      "Integer disjoint strata have equal stratum weight, not uniform per-context inclusion when eligible count is not divisible by Q. Register that objective and do not claim uniform contexts. A common-phase systematic sampler is an alternative if uniform marginal inclusion is desired.",
+      "This does not select final Q, validate GPU gate eligibility, authorize training or attest to actual cache execution."
+    ]
+  },
+  "scan_queue_decision": {
+    "status": "changes_required_before_evidence_approval",
+    "queue_safety": "The reviewed intended launch path verifies the frozen bundle, current owned protected holder and live full-node allocation, and requests an exclusive eight-GPU step. It issues no holder/successor/full-training mutation or new GPU allocation.",
+    "findings": [
+      {
+        "file": "src/taps_rebuild/pilot_gate.py",
+        "line": 151,
+        "priority": "P1",
+        "issue": "Finalization records scan binding IDs and eligible outputs, but omits complete.json and gate byte hashes from the final bound input inventory. Bind every scan completion and gate file, and rehash consumed cache/scan/provenance inputs after finalization."
+      },
+      {
+        "file": "src/taps_rebuild/pilot_gate.py",
+        "line": 153,
+        "priority": "P1",
+        "issue": "Mutual agreement between ranks is insufficient. Require current expected scan/helper/upstream/model identities, completed_examples and binding.examples equal to the cache rank count, exact gate/cache geometry and metadata row coverage, binary gate content and valid lengths/ranks/domains/splits."
+      },
+      {
+        "file": "src/taps_rebuild/pilot_gate.py",
+        "line": 164,
+        "priority": "P2",
+        "issue": "Direct immutable eligible-file creation is not finalizer crash recovery: interruption leaves a partial file that all retries reject. Add a global finalization lock, fsynced atomic publication, compatible completed-result reuse and an explicit policy for incomplete temporary files."
+      },
+      {
+        "file": "src/taps_rebuild/pilot_gate.py",
+        "line": 99,
+        "priority": "P2",
+        "issue": "Scan uses inference_mode while native dataprepare uses no_grad. Match the native mode or explicitly record and qualify the difference against the production forward before relying on exact membership parity."
+      },
+      {
+        "file": "src/taps_rebuild/pilot_queue.py",
+        "line": 39,
+        "priority": "P2",
+        "issue": "launch.json is overwritten and has no terminal/attempt timing record. Retain immutable attempt IDs, Slurm job/step identity and elapsed allocation/loop costs, including replayed or interrupted scan work, for total-study cost accounting. This is not a holder-safety defect."
+      }
+    ]
+  },
+  "checks": [
+    "Read complete cache/config/tests, scan and queue source, and compared immutable1b9ee5e with revised cache bytes.",
+    "Independently ran five focused pilot-cache tests; all passed. These test mask/rank helpers, not plan/provenance or finalization failure cases.",
+    "No GPU/CPU jobs, source mutations, active-bundle changes or network queries were performed during this source review."
+  ],
+  "additional_required_tests": [
+    "Plan identity substitution, mismatched pinned generated completion, changed script/shard and physical split/regime rejection.",
+    "Final scan geometry/coverage/source-binding mismatch rejection, binary gate validation, consumed-input mutation and CPU finalizer interruption/retry.",
+    "Actual source-bound native preprocessing parity remains an execution check; training numerical/recovery/export admission remains separate."
+  ]
+}
