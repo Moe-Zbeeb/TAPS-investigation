@@ -1,0 +1,16 @@
+{
+  "job_id": "2217646",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "scientific_review_decision": "approved_for_exact_fresh_24_pilot_training",
+  "approval_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261113-v3/side-final-approval-20261113.json",
+  "approval_sha256": "4c51a7addc82394d01e23c77de0048b6ccbb3c2614154704b0c899af7b2f6494",
+  "qualification_report_sha256": "8bb13bef08ef73121affe85bfcc51f8d56fadeb486b117339f3a1396c3b70783",
+  "all_14_checks_passed": true,
+  "retained_artifacts_rehashed": 1237,
+  "bytes_rehashed": 128196991088,
+  "reviewed_at_utc": "2026-11-13T14:59:44.899474+00:00",
+  "compiler_integration_observed": false,
+  "pilot_training_started_observed": false,
+  "scope": "Observed independent review completion only; deployment and training require a fresh authenticated live-state check."
+}
