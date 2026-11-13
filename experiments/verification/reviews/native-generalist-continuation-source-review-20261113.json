@@ -1,0 +1,47 @@
+{
+  "blocking_source_findings": [],
+  "decision": "approved_source_only_for_bound_fresh_generalist_operational_continuation",
+  "deployment_conditions": [
+    "Freeze this exact operational source and bind the actual new plan SHA before scheduling its owned full8GPU successor after the exact current holder. Preserve all holders and current source bundles.",
+    "If actual worker/accounting/checkpoint/source/admission conditions fail, stop; do not automatically reinterpret a scientific failure as allocation interruption.",
+    "This source supports the first continuation from the named original held allocation; further successor lifecycle policy and jobs must remain explicitly bound and reviewed."
+  ],
+  "limitations": [
+    "Mocked tests establish lifecycle guards and argv, not real Slurm startup or successful checkpoint restoration; the unchanged qualified frozen launcher/recovery must perform those actual checks.",
+    "Recorded nonfailed worker receipts and terminal accounting are source-bound operational evidence, not an adversarial guarantee that no unrecorded transient or log-only error ever occurred.",
+    "Checkpoint replay/lost work must be charged separately from logical committed training exposure. No quality, completion or new numerical recipe is approved."
+  ],
+  "new_numerical_or_research_scope_admitted": false,
+  "production_source_jobs_or_admission_mutated_by_reviewer": false,
+  "reviewed_at_utc": "2026-11-13T14:21:16.803400+00:00",
+  "reviewed_boundaries": [
+    "Requires the caller-bound exact plan bytes, corrected-full-v4 stage and fresh sharegpt-ultrachat-corrected-full-20261113-v4 namespace. It cannot resume the retired generalist or old cancelled continuation.",
+    "Verifies a live owned grad-students/high-priority/spec-priority full8GPU deep11 allocation and total running high-priority GPU usage<=18. The frozen native launcher independently rechecks complete device exposure, runtime, source, admission and exact physical topology.",
+    "Requires terminal accounting for the exact prior owned taps-deep11-hold allocation in TIMEOUT/PREEMPTED/NODE_FAIL state and exact launch plan/allocation binding. No holder, successor, frozen process or scheduling entitlement is changed.",
+    "Before creating continuation outputs or changing launch metadata, validates all8root worker receipts against rank/world/plan/previous allocation and rejects failed/error/missing/wrong-binding receipts. Any retained same-attempt full-body receipt must also match rank/plan/core7 and successful nonerror status. Their hashes remain in continuation evidence.",
+    "Requires a positive identified prior attempt and the same-attempt committed latest checkpoint with exact manifest bytes, plan/world/positive cursor and matching prior physical hardware. Actual frozen recovery verifies every raw file, all model/optimizer/scaler/scheduler/counter/RNG/cursor state and current topology before training.",
+    "A completed run is skipped. A stale running launch is archived and reconciled only after the preceding terminal accounting and worker checks. An already failed launch is retryable only for the exact frozen NativeTrainingError launcher-signal interruption within120seconds of the prior terminal event; numerical/data/other failures are rejected.",
+    "The only resumed entry is the exact source-hashed frozen native_full_body_bridge.py resume command inside the new allocation. The script schedules no jobs, does not modify numerical code/data or metadata from another run, and preserves the original stale launch evidence."
+  ],
+  "reviewer": "independent-agent-native-evidence-review",
+  "scientific_training_admitted": false,
+  "scope": "exact_new13November_v4_generalist_plan_committed_checkpoint_resume_after_prior_allocation_terminal_event_only",
+  "source_sha256": {
+    "experiments/verification/resume_corrected_generalist_20261113.py": "4b8e00d2c9947a670efe39b01325c45ab3ad32cb5466ba49117af85ac2e47fac",
+    "tests/test_native_continuation.py": "fe921b525022b284abb132d6865c91d4ee0658a54b9b2409b48f234a4e499f58"
+  },
+  "validation": {
+    "actual_slurm_or_checkpoint_resume_execution_claimed": false,
+    "ast_parse": "passed",
+    "command": "PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests -p test_native_continuation.py",
+    "important_regressions": [
+      "stale-running launch plus recorded numerical worker failure rejects without any launch/rank mutation or continuation directory",
+      "wrong-allocation or missing rank receipt rejects",
+      "same-attempt full-body failure rejects despite running root rank receipt",
+      "numerical launch failure at expiry rejects",
+      "changed physical checkpoint binding/plan bytes/retired stage/24GPUusage reject",
+      "terminal stale-launch reconciliation, exact expiry interruption, frozen resume argv and complete-run skip pass"
+    ],
+    "tests_passed": 12
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "blocking_source_findings": [],
+  "decision": "approved_source_only_for_fresh_cpu_independent_audit",
+  "deployment_requirements": [
+    "Stage V9 plus exact original V1-V8 files, unchanged zero-lr diagnostic source and new ec0da interval collector in the same immutable audit directory; verify all source hashes before CPU Slurm execution.",
+    "Use the retained native-eagle3 interpreter and CPU-only Slurm after successful new208prefix/all12phases, fresh zero diagnostic, runtime post and interval accounting. Supply the actual newly generated zero report SHA explicitly; do not use the old study report/hash.",
+    "Require actual full V9 analysis success with every old and both new teacher checks passed, complete retained inventory, separate actual evidence-level review and explicit root integration before scientific training. This source receipt admits no scientific work."
+  ],
+  "limitations": [
+    "The new auditor has not yet executed on the real new qualification data. Local tests do not establish Torch numerical/raw replay or runtime closure.",
+    "Source-bound callbacks and teacher policy observations complement raw tensor reconstruction; no universal derivative/losslessness, GPU-driver-binary attestation, quality, speed or PDF-completion claim is made.",
+    "The failed old scientific pilot and all prior failed analyses remain preserved. The new scientific study must start atstep0 from the released common ancestor."
+  ],
+  "predecessor_analyzer_v8_sha256": "3edbf557a8f564cf0c84b1735f37ee23aa2e1fb3d61c597e6d7425ebcda9b65e",
+  "production_training_source_jobs_or_admission_mutated_by_reviewer": false,
+  "required_cli": [
+    "--study",
+    "--qualification",
+    "--zero-diagnostic",
+    "--zero-diagnostic-sha256",
+    "--runtime-pre",
+    "--runtime-post",
+    "--execution-envelope",
+    "--output"
+  ],
+  "reviewed_at_utc": "2026-11-13T10:34:36.789304+00:00",
+  "reviewed_behavior": [
+    "Imports the exact frozen V8 analyzer and its complete hash-pinned predecessor chain; preserves numerical CE/logit-gradient/outside-mask tolerances, direct/native/restart/suffix checks, raw state/scaler/RNG/mapping/Adam checks, all13 positive FP32 changes at every four-step final, checkpoint-source exception and strict AdamW config normalization. No existing verifier file is modified.",
+    "Requires an explicit fresh zero-diagnostic path and SHA256. The report must lie in the new study audit namespace, bind the new manifest hash and both exact registered new seed0 generalist prefix plan identities, retain a self-consistent rehashed inventory, and satisfy unchanged V8 signed-zero classification. The original V8 zero_facts method is overridden so the historical report is never loaded. Only inherited result metadata is rewritten to the actual new descriptor.",
+    "Pins the exact ten final producer sources, recipe, pristine-buffer policy, source review and preparation/qualification wrappers; checks actual successful fresh preparation, all96unchanged schedules and the actual v3collector/producer/helper AST and all40complete selected-logit/gate cases.",
+    "Checks all80standard initialization/completion teacher-buffer policies against actual standalone-equivalent v3 pristine identities. Post-checkpoint frozen/eval/buffer enforcement is bound to the exact reviewed f700 worker source and successful source-bound attempt completion.",
+    "Independently reconstructs all8\u00d7208fresh-prefix begin/committed records against previously independently rebuilt schedules/masks, exact counts/rates/finite weighted losses/all13hook coverage, fresh released initialization, and the exact clean final208raw model/Adam/master/scaler/scheduler/RNG state with positive named changes. It retains the finite/source-bound online Q guard interpretation without claiming another208GPUforward replay.",
+    "Retains full runtime pre/post dependency/time/completion criteria. The new interval collector differs from the historical source only in expected CPU partition/QoS low-priority/normal. V9 also verifies collector identity and raw CPU accounting owner/account/job names/class/COMPLETED0 records; actual parent GPU step accounting remains retained separately.",
+    "Every consumed artifact remains included in the audit inventory and rehashed at finish. The output is analysis only, always scientific_training_admitted=False and automatic_admission_emitted=False. Failures retain phase/error details."
+  ],
+  "reviewer": "independent-agent-native-evidence-review",
+  "scientific_training_admitted": false,
+  "scope": "independently_authored_new_study_v9_auditor_preserving_frozen_v8_numerical_raw_signed_zero_criteria",
+  "source_sha256": {
+    "experiments/verification/reviews/collect_pilot_interval_20261113.py": "ec0da5da75253a26d1c8139d89dc22cccb9573203fff3fec86964dde437a0501",
+    "experiments/verification/reviews/independent_pilot_qualification_audit_v9_20261113.py": "a65a4848ef351860c87a1ed1d4f911bc7c724e58e33411b709fb6e73398ff3b6",
+    "tests/test_independent_pilot_v9.py": "c3a843c5343336941b8e8c7ba1f71f8cc601c1b4dd62b3c493c83503c3ae2464"
+  },
+  "study_id": "rq1-pilot-24-20261113-v3",
+  "test_scope": "JSON fact-provenance boundary tests use temporary files and the unchanged V1 project/model artifact policy to avoid importing unavailable local Torch. They validate stale/rehashed-old/missing-manifest/numeric-change/missing-moment rejection and pristine teacher policy; they do not execute raw Torch/GPU analysis.",
+  "unchanged_zero_diagnostic_source_sha256": "4de754a2067f5d23274435e7b276e87c85cae5e56295c2a00ee8c96451e29166",
+  "validation": {
+    "cli_help_and_full_predecessor_hash_import": "passed",
+    "collector_byte_comparison": "exact one expected CPU partition/QoS substitution; no other bytes differ",
+    "focused_command": "PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests -p test_independent_pilot_v9.py",
+    "focused_json_and_teacher_policy_tests": 7,
+    "full_suite_command": "PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests",
+    "full_suite_result": "OK",
+    "full_suite_tests": 452,
+    "full_suite_torch_dependent_skips": 9,
+    "git_diff_check": "passed",
+    "torch_or_cluster_audit_execution_claimed": false
+  }
+}

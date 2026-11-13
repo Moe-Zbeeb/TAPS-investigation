@@ -1,0 +1,35 @@
+{
+  "job_id": "2217629",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=low-priority",
+    "--qos=normal",
+    "--nodes=1",
+    "--exclusive",
+    "--nodelist=deep-chungus-11",
+    "--gres=gpu:a100:8",
+    "--ntasks=1",
+    "--cpus-per-task=48",
+    "--mem=0",
+    "--time=48:00:00",
+    "--dependency=afterany:2216035",
+    "--kill-on-invalid-dep=yes",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--job-name=taps-corrected-resume",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/corrected-generalist-continuation-20261113-v1/resume-%j.log",
+    "--wrap",
+    "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/corrected-generalist-continuation-20261113-v1/resume.sh"
+  ],
+  "verified_slurm": "JobId=2217629 JobName=taps-corrected-resume UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=50 Nice=0 Account=grad-students QOS=normal JobState=PENDING Reason=Resources Dependency=afterany:2216035(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=2-00:00:00 TimeMin=N/A SubmitTime=2026-11-13T09:24:55 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-13T09:24:55 Scheduler=Main Partition=low-priority AllocNode:Sid=mslurm:1123329 ReqNodeList=deep-chungus-11 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=48 NumTasks=1 CPUs/Task=48 ReqB:S:C:T=0:0:*:* TRES=cpu=48,mem=500000M,node=1,billing=48,gres/gpu=8,gres/gpu:a100=8 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=48 MinMemoryNode=0 MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/corrected-generalist-continuation-20261113-v1/resume-2217629.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/corrected-generalist-continuation-20261113-v1/resume-2217629.log Power= KillOInInvalidDependent=Yes TresPerNode=gres:gpu:a100:8 \n",
+  "source_sha256": "5b9eb4f5023f1575a32e7093d0fd42c5db195a02b8d44989ca25e3b348bc2157",
+  "review_sha256": "2e0712abea0ae1dc9b79c4578ccdb33d8d3b896976f67c4f38445aa99ad24a15",
+  "plan": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/sharegpt-ultrachat-corrected-full-20261113-v4/plan.json",
+    "sha256": "84f12d8ee7aefad0923613e20615f0b7e1ba3f52c5f95ad3a46a44c09a077ba6",
+    "identity_sha256": "38938a5a693576e18885c0f85c5b3b00ce5ce7e8a576e41159c39911c0651784"
+  },
+  "scope": "Exact fresh corrected-generalist same-node committed-checkpoint continuation after current holder expires; no oldG0resume, numerical retry or holder mutation",
+  "scheduling_reason": "Authorized normal fallback avoids current high-priority group barrier; preserves protected high-priority deep10 successor and live deep11 allocation"
+}

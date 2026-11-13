@@ -1,0 +1,39 @@
+{
+  "blocking_source_findings": [],
+  "decision": "approved_source_only_for_bound_generalist_continuation_authorized_priority_fallback",
+  "deployment_conditions": [
+    "Freeze this exact source, bind the actual new generalist plan SHA and prior allocation, and preserve existing protected holders and successor.",
+    "Keep complete worker/checkpoint/raw-source/admission/hardware checks enforced by the guard and frozen native launcher. Recorded numerical/data errors remain nonretryable.",
+    "This source is operational approval for the first bound continuation only, not evidence of actual future allocation or checkpoint restoration and not new scientific admission."
+  ],
+  "new_numerical_or_research_scope_admitted": false,
+  "prior_review": {
+    "path": "experiments/verification/reviews/native-generalist-continuation-source-review-20261113.json",
+    "sha256": "f22cab2654691b553007ea6b66e76c2cf5ae961fbb4411a3676396a2066f7da2"
+  },
+  "production_source_jobs_or_admission_mutated_by_reviewer": false,
+  "reviewed_at_utc": "2026-11-13T14:23:16.608763+00:00",
+  "reviewed_change": [
+    "The only permitted scheduling pairs are high-priority/spec-priority and the user-authorized low-priority/normal fallback, both under grad-students on the same owned full8GPU deep11 node. Unknown QoS or cross-pair combinations reject.",
+    "Actual Account/Partition/QOS fields are retained in the continuation receipt. The total high-priority running GPU count<=18 check is retained.",
+    "All prior exact new-plan/source/checkpoint/attempt/physical-GPU/worker-failure/terminal-accounting/interruption-time checks remain intact; the frozen native bridge already independently permits both exact scheduling classes. No tensor, model, data, update or recovery method is changed.",
+    "The script still allocates no jobs and changes no holder/successor/frozen process. Root may queue the single exact new-plan same-node full8GPU normal successor after the original allocation ends, with actual startup validation required."
+  ],
+  "reviewer": "independent-agent-native-evidence-review",
+  "scientific_training_admitted": false,
+  "scope": "operational_continuation_v2_scheduling_class_allowlist_only",
+  "source_sha256": {
+    "experiments/verification/resume_corrected_generalist_20261113.py": "5b9eb4f5023f1575a32e7093d0fd42c5db195a02b8d44989ca25e3b348bc2157",
+    "tests/test_native_continuation.py": "d2783b5969dc49182989bfdc74be34e113e5cee2b7754bd3acc655de7ba2c2ee"
+  },
+  "validation": {
+    "actual_slurm_or_checkpoint_resume_execution_claimed": false,
+    "ast_parse": "passed",
+    "command": "PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests -p test_native_continuation.py",
+    "new_tests": [
+      "authorized normal-priority same-node continuation accepted",
+      "unregistered scheduling class rejected"
+    ],
+    "tests_passed": 14
+  }
+}

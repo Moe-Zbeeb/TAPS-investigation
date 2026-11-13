@@ -1,0 +1,40 @@
+{
+  "job_id": "2217628",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=low-priority",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=16",
+    "--mem=96G",
+    "--time=06:00:00",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--job-name=taps-pilot-v9-replay",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-independent-audit-20261113-v9/audit-%j.log",
+    "--wrap",
+    "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-independent-audit-20261113-v9/run.sh"
+  ],
+  "verified_slurm": "JobId=2217628 JobName=taps-pilot-v9-replay UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-11-13T09:23:17 EligibleTime=2026-11-13T09:23:17 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-13T09:23:17 Scheduler=Main Partition=low-priority AllocNode:Sid=mslurm:1121486 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=96G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=96G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-independent-audit-20261113-v9/audit-2217628.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-independent-audit-20261113-v9/audit-2217628.log Power= \n",
+  "source_sha256": {
+    "independent_pilot_qualification_audit_20261112.py": "32f142ee0142b54d6dd2cd4f0650656ff06d3fba609f55b40ab7ad3f87bce85b",
+    "independent_pilot_qualification_audit_v2_20261112.py": "5e11dd792adb840be1e861f6a0f2e235d483b977e7dca3cfef31f78e3f0f4091",
+    "independent_pilot_qualification_audit_v3_20261112.py": "a0749cf04cdbaab39fec1c29eff7d3654fe39a7cb88667f116f270f4ec4346aa",
+    "independent_pilot_qualification_audit_v4_20261112.py": "592ab1fcc7592b1b3d36e758126d3177b1a1dd34f6d119077876e180e8284a05",
+    "independent_pilot_qualification_audit_v5_20261112.py": "82a4668211870e124a7b434500b038dce75447fb63650d26a8ed10eb60c097c5",
+    "independent_pilot_qualification_audit_v6_20261112.py": "bb8c6eef947390535094cea39d009e5e1cd474856eb6ae84db03f86a972024b9",
+    "independent_pilot_qualification_audit_v7_20261112.py": "c13b08f0b62c9e1990423627906f2a98bfe1e666bfcbb6ea31781eef5cf50254",
+    "independent_pilot_qualification_audit_v8_20261112.py": "3edbf557a8f564cf0c84b1735f37ee23aa2e1fb3d61c597e6d7425ebcda9b65e",
+    "independent_pilot_qualification_audit_v9_20261113.py": "a65a4848ef351860c87a1ed1d4f911bc7c724e58e33411b709fb6e73398ff3b6",
+    "pilot_zero_lr_raw_diagnostic_20261112.py": "4de754a2067f5d23274435e7b276e87c85cae5e56295c2a00ee8c96451e29166",
+    "collect_pilot_interval_20261113.py": "ec0da5da75253a26d1c8139d89dc22cccb9573203fff3fec86964dde437a0501",
+    "source-review.json": "bbc698438bdd771079f443f55b6d8b1005fde4f95059968ab1985a6cf034a067"
+  },
+  "output": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261113-v3/full-v9.json",
+  "verified_completed_prerequisites": "2217519|COMPLETED|0:0|mohamadzbib|taps-pilot24-qualify\n2217521|COMPLETED|0:0|mohamadzbib|taps-pilot-v3-zero\n2217523|COMPLETED|0:0|mohamadzbib|taps-pilot-v3-interval\n",
+  "checked_at_utc": "2026-11-13T14:23:17.587965+00:00",
+  "scope": "Independent fresh V9 CPU replay, all14strictchecks, new study zero facts; no scientific admission emitted"
+}

@@ -1,0 +1,44 @@
+{
+  "blocking_source_findings": [],
+  "decision": "approved_source_only_for_new_teacher_pilot_evidence_compilation_and_exact_review_integration",
+  "deployment_conditions": [
+    "Freeze this exact wrapper plus unchanged base compiler and supporting package in a separate CPU compilation bundle; verify all source pins.",
+    "Queue preparation only after actual new V9 audit success and fresh zero/runtime evidence; retain full artifact rehash.",
+    "Do not integrate or start new scientific pilots until a separate reviewer has read actual new V9/compiled evidence, verified exact descriptors and approved the complete new binding. This receipt supplies no scientific admission."
+  ],
+  "limitations": [
+    "Unit fixtures exercise metadata predicates and do not substitute for actual retained raw data/numerical/runtime evidence or full merged inventory hashing.",
+    "Counting and passed-status metadata are accepted only within the exact source-bound V9 report whose algorithm checks underlying cases; actual independent review of those source-bound results remains mandatory."
+  ],
+  "production_training_source_jobs_or_admission_mutated_by_reviewer": false,
+  "reviewed_at_utc": "2026-11-13T14:27:04.166288+00:00",
+  "reviewed_boundaries": [
+    "Preserves the old compiler and all frozen ten producer/core7 source bytes. The new wrapper requires exact fresh study/recipe/f700 worker and V9a65source binding; it cannot compile the old12check report or old producer study as new evidence.",
+    "Requires all14checks passed including teacher_buffer_policy and teacher_gate_prefix208, actual V9 source in a self-consistent inventory, actual helper/source40case coverage,96unchanged schedules,8ranks with208commits and80standard teacher-policy receipts. All new details remain independently validated by the exact V9 algorithm and must be reviewed in actual output.",
+    "Binds both exact new study manifest and first registered plan hashes to the independent audit retained inventory; retains existing independently approved chat/math_code teacher provenance and rejects inventory conflicts.",
+    "Rehashes the complete merged audit/teacher inventory and retains original report/source/compiler descriptors before emitting qualification-report statuspassed with scientific_training_admitted=False and independent_review_still_required=True.",
+    "Integration requires the pristine-teacher schema, exact14passed check set, exact V9/newstudy/source binding, then delegates to the unchanged strict base integration requiring an exact report/study-bound separate scientific review and complete artifact rehash. It writes no automatic self-approval."
+  ],
+  "reviewer": "independent-agent-native-evidence-review",
+  "scientific_training_admitted": false,
+  "scope": "separately_versioned_exact14check_V9_newstudy_compiler_no_actual_evidence_approval",
+  "source_sha256": {
+    "src/taps_rebuild/pilot_admission.py": "c15e032fb84946feeba020a609a5365b052261d80c08b7e459c4f47b188b77b7",
+    "src/taps_rebuild/pilot_teacher_admission.py": "44b8030bba92e71cf30c038481d433ab41b5f38f957807c09ba5d067bf656e12",
+    "tests/test_pilot_teacher_admission.py": "38852a6b0a10a4051b0522a8fbacbf5f9799335ab62b37e98e363ade5924f1e9"
+  },
+  "validation": {
+    "actual_new_audit_or_compilation_or_integration_execution_claimed": false,
+    "ast_parse": "passed",
+    "command": "PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests -p test_pilot_teacher_admission.py",
+    "covered_boundaries": [
+      "exact14acceptedforcompilationonly",
+      "old12andfailednewteachercheckrejected",
+      "oldproducerrejected",
+      "207ratherthan208prefixrejected",
+      "staleinventoryidentityrejected",
+      "auditselfadmissionrejected"
+    ],
+    "focused_tests_passed": 7
+  }
+}
