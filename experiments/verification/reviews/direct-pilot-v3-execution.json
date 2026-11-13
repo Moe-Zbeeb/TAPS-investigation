@@ -1,0 +1,491 @@
+{
+  "hardware": {
+    "device_bindings": [
+      {
+        "index": "0",
+        "shard_index": 0,
+        "token": "0",
+        "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434"
+      },
+      {
+        "index": "1",
+        "shard_index": 1,
+        "token": "1",
+        "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641"
+      },
+      {
+        "index": "2",
+        "shard_index": 2,
+        "token": "2",
+        "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a"
+      },
+      {
+        "index": "3",
+        "shard_index": 3,
+        "token": "3",
+        "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95"
+      },
+      {
+        "index": "4",
+        "shard_index": 4,
+        "token": "4",
+        "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8"
+      },
+      {
+        "index": "5",
+        "shard_index": 5,
+        "token": "5",
+        "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797"
+      },
+      {
+        "index": "6",
+        "shard_index": 6,
+        "token": "6",
+        "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a"
+      },
+      {
+        "index": "7",
+        "shard_index": 7,
+        "token": "7",
+        "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d"
+      }
+    ],
+    "gpu_inventory": [
+      {
+        "driver_version": "580.65.06",
+        "index": "0",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "1",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "2",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "3",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-1870ead3-a098-9d90-ed88-aac3941baf95"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "4",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "5",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "6",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a"
+      },
+      {
+        "driver_version": "580.65.06",
+        "index": "7",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d"
+      }
+    ],
+    "hardware_identity_sha256": "66213a48e5871bb4862329bdca15100ec3e9161400c0b9482b3716f755f912d9",
+    "job_id": "2212580",
+    "node": "deep-chungus-10",
+    "slurm": {
+      "job": {
+        "Account": "grad-students",
+        "EndTime": "2026-11-13T07:41:58",
+        "JobId": "2212580",
+        "JobName": "deep10-hold",
+        "NodeList": "deep-chungus-10",
+        "NumCPUs": "128",
+        "NumNodes": "1",
+        "Partition": "high-priority",
+        "QOS": "spec-priority",
+        "StartTime": "2026-11-11T07:41:58",
+        "TRES": "cpu=128,node=1,billing=128,gres/gpu=8,gres/gpu:a100=8",
+        "UserId": "mohamadzbib(29562)"
+      },
+      "job_record_sha256": "94c7dec2b850b7e10c4d9faf9ec9dbfcc5d2694862cfacd3d99188b93fcfca4f",
+      "node": {
+        "AllocTRES": "cpu=128,gres/gpu=8,gres/gpu:a100=8",
+        "CPUTot": "128",
+        "CfgTRES": "cpu=128,mem=1000000M,billing=128,gres/gpu=8,gres/gpu:a100=8",
+        "Gres": "gpu:a100:8",
+        "NodeName": "deep-chungus-10",
+        "RealMemory": "1000000",
+        "State": "ALLOCATED",
+        "Version": "21.08.8"
+      },
+      "node_record_sha256": "8343b78ee0684357bef982cc3bc4532d49004fafbe8327f5045d1672b0cddcd1"
+    }
+  },
+  "phases": [
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_train",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-original-s0.json",
+        "--directory",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/original/uninterrupted",
+        "--attempt",
+        "full",
+        "--stop",
+        "4",
+        "--qualification",
+        "--capture"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/original-uninterrupted-full.log",
+      "log_sha256": "7b8ef125e554394a99efde91c98c554bb56612db83e61ab8ea47b4268393391f",
+      "occupied_node_gpu_seconds": 1104.8701914399862,
+      "returncode": 0,
+      "wall_seconds": 138.10877212695777
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_train",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-original-s0.json",
+        "--directory",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/original/native-reference",
+        "--attempt",
+        "reference",
+        "--stop",
+        "4",
+        "--qualification",
+        "--reference"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/original-native-reference-reference.log",
+      "log_sha256": "1abb986648f6af9d0025a7fa05edf1b0465e74184c137deb901ffd45eef295bc",
+      "occupied_node_gpu_seconds": 928.7797537147999,
+      "returncode": 0,
+      "wall_seconds": 116.09746676962823
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_train",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-original-s0.json",
+        "--directory",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/original/split",
+        "--attempt",
+        "prefix",
+        "--stop",
+        "2",
+        "--qualification"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/original-split-prefix.log",
+      "log_sha256": "d83d1764c947e8e8301044d2b5e8d606852cc4203eeb8f1136213b3232821666",
+      "occupied_node_gpu_seconds": 898.8927113115788,
+      "returncode": 0,
+      "wall_seconds": 112.3615873111412
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_train",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-original-s0.json",
+        "--directory",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/original/split",
+        "--attempt",
+        "restore",
+        "--stop",
+        "4",
+        "--qualification",
+        "--resume",
+        "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261113-v3/original/split/checkpoints/step-2"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/original-split-restore.log",
+      "log_sha256": "6423dc71d7983a98e29423f66b8118723d20a39381ce00556901af867070037b",
+      "occupied_node_gpu_seconds": 926.0994923338294,
+      "returncode": 0,
+      "wall_seconds": 115.76243455801159
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_train",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-original-s0.json",
+        "--directory",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/original/alternate-pad",
+        "--attempt",
+        "alternate",
+        "--stop",
+        "4",
+        "--qualification",
+        "--capture",
+        "--alternate-pad"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/original-alternate-pad-alternate.log",
+      "log_sha256": "59bedd091e5e98675c625c37347e946f6ede2336f21ef5f164a71828989a074f",
+      "occupied_node_gpu_seconds": 1086.2141027227044,
+      "returncode": 0,
+      "wall_seconds": 135.77676108572632
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_smoke",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-original-s0.json",
+        "--export",
+        "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261113-v3/original/uninterrupted/exports/step-4",
+        "--output",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/original/stock-inference"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/original-stock-inference.log",
+      "log_sha256": "1ed3af696f57e22ff0795839cecbdeb9da775ba77b576184e07c798ba17dceca",
+      "occupied_node_gpu_seconds": 273.00003580749035,
+      "returncode": 0,
+      "wall_seconds": 34.125002382323146
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_train",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-target-s0.json",
+        "--directory",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/target/uninterrupted",
+        "--attempt",
+        "full",
+        "--stop",
+        "4",
+        "--qualification",
+        "--capture"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/target-uninterrupted-full.log",
+      "log_sha256": "92ca94bd8ca3b46e34ff47cb12424fafab2b64b51b523fd56fc9369b7896551b",
+      "occupied_node_gpu_seconds": 966.7981458380818,
+      "returncode": 0,
+      "wall_seconds": 120.84976565465331
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_train",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-target-s0.json",
+        "--directory",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/target/native-reference",
+        "--attempt",
+        "reference",
+        "--stop",
+        "4",
+        "--qualification",
+        "--reference"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/target-native-reference-reference.log",
+      "log_sha256": "f4fd84886683b247574d16bd00adc7e220af24928eaedc1d30c4a78d83dd6148",
+      "occupied_node_gpu_seconds": 948.329704284668,
+      "returncode": 0,
+      "wall_seconds": 118.54121006093919
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_train",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-target-s0.json",
+        "--directory",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/target/split",
+        "--attempt",
+        "prefix",
+        "--stop",
+        "2",
+        "--qualification"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/target-split-prefix.log",
+      "log_sha256": "42250c5e97dbc6ff05409f5f87630524efb3e21f857810dd40b938ebe1c4fc20",
+      "occupied_node_gpu_seconds": 820.6928290575743,
+      "returncode": 0,
+      "wall_seconds": 102.58660177979618
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_train",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-target-s0.json",
+        "--directory",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/target/split",
+        "--attempt",
+        "restore",
+        "--stop",
+        "4",
+        "--qualification",
+        "--resume",
+        "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261113-v3/target/split/checkpoints/step-2"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/target-split-restore.log",
+      "log_sha256": "f8627a6b2ae7678ca0fda65439ef0d5963c53da45740980ad7fdc078e3ac4729",
+      "occupied_node_gpu_seconds": 987.2930177897215,
+      "returncode": 0,
+      "wall_seconds": 123.41162414755672
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_train",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-target-s0.json",
+        "--directory",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/target/alternate-pad",
+        "--attempt",
+        "alternate",
+        "--stop",
+        "4",
+        "--qualification",
+        "--capture",
+        "--alternate-pad"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/target-alternate-pad-alternate.log",
+      "log_sha256": "5f230f5414dd46e7e7106a4aa8324eb2a51e3e8005750f21a8f6104ae27925f0",
+      "occupied_node_gpu_seconds": 958.5963851884007,
+      "returncode": 0,
+      "wall_seconds": 119.8245448525995
+    },
+    {
+      "command": [
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/envs/native-eagle3/bin/python",
+        "-B",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nnodes=1",
+        "--nproc-per-node=8",
+        "-m",
+        "taps_rebuild.pilot_smoke",
+        "--plan",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-target-s0.json",
+        "--export",
+        "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-qualifications/pilot-qualifications/rq1-pilot-24-20261113-v3/target/uninterrupted/exports/step-4",
+        "--output",
+        "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/target/stock-inference"
+      ],
+      "log": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-qualifications/rq1-pilot-24-20261113-v3/logs/target-stock-inference.log",
+      "log_sha256": "8dbfa685f862eb8ce9b61bae66bf6c4fa4d10f31d28b08f87506b316e1eb6a47",
+      "occupied_node_gpu_seconds": 284.0199813991785,
+      "returncode": 0,
+      "wall_seconds": 35.50249569024891
+    }
+  ],
+  "scientific_training_admitted": false,
+  "scope": "engineering qualifications, no pilot outcomes or training admission",
+  "source_sha256": {
+    "native_gradients.py": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+    "native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+    "pilot_gate.py": "81526515203af4a0386680b79f091d4f0166aae170a12a23d1b209d9a3028470",
+    "pilot_pipeline.py": "45a813eb3f7063ac8224665ca8397f5a1efd390e25035b23b4c667436f320cf6",
+    "pilot_queue.py": "0c2ec34b25496f793338abbd3495ea9553f13dde8928c4b9777f5d565506a80f",
+    "pilot_smoke.py": "026aa0d7473c7adbd4df3c59bad4677847ff5fbec234aa5badf4ee6f23bd7a13",
+    "pilot_study.py": "8e9fb70fb92240d9253711cca23c0343d1f5b894c32b87eb12e0d2058872f882",
+    "pilot_train.py": "f700df226d9bd0ea3391868c24e6780efcfde0be3967bda2dba354e7cc699a4a",
+    "pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7"
+  },
+  "status": "gpu_qualification_execution_complete_requires_independent_replay",
+  "study_manifest_sha256": "b26599d4644a33c054f6a24853eedae9241ee0f3d6473cbd5fb6a3ef3fbcbdd9"
+}

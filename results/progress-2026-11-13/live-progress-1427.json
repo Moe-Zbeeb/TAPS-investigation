@@ -1,0 +1,146 @@
+{
+  "checked_at_utc": "2026-11-13T14:27:00.695943+00:00",
+  "generalist": {
+    "run_id": "sharegpt-ultrachat-corrected-full-20261113-v4",
+    "ranks": [
+      {
+        "rank": 0,
+        "global_step": 6192,
+        "successful_updates": 6185,
+        "skipped_steps": 7,
+        "loop_wall_seconds": 12239.178780973889,
+        "loss_scale_after_step": 65536.0
+      },
+      {
+        "rank": 1,
+        "global_step": 6192,
+        "successful_updates": 6185,
+        "skipped_steps": 7,
+        "loop_wall_seconds": 12240.971526667476,
+        "loss_scale_after_step": 65536.0
+      },
+      {
+        "rank": 2,
+        "global_step": 6192,
+        "successful_updates": 6185,
+        "skipped_steps": 7,
+        "loop_wall_seconds": 12240.943812042475,
+        "loss_scale_after_step": 65536.0
+      },
+      {
+        "rank": 3,
+        "global_step": 6192,
+        "successful_updates": 6185,
+        "skipped_steps": 7,
+        "loop_wall_seconds": 12240.935857472941,
+        "loss_scale_after_step": 65536.0
+      },
+      {
+        "rank": 4,
+        "global_step": 6192,
+        "successful_updates": 6185,
+        "skipped_steps": 7,
+        "loop_wall_seconds": 12240.893925081939,
+        "loss_scale_after_step": 65536.0
+      },
+      {
+        "rank": 5,
+        "global_step": 6192,
+        "successful_updates": 6185,
+        "skipped_steps": 7,
+        "loop_wall_seconds": 12240.835809801705,
+        "loss_scale_after_step": 65536.0
+      },
+      {
+        "rank": 6,
+        "global_step": 6192,
+        "successful_updates": 6185,
+        "skipped_steps": 7,
+        "loop_wall_seconds": 12241.061125025153,
+        "loss_scale_after_step": 65536.0
+      },
+      {
+        "rank": 7,
+        "global_step": 6192,
+        "successful_updates": 6185,
+        "skipped_steps": 7,
+        "loop_wall_seconds": 12240.916865826584,
+        "loss_scale_after_step": 65536.0
+      }
+    ],
+    "latest_batch": {
+      "attention_mask_sha256": "303357ca95a3ad5c84a46775949bac144fd3122ba0046d425a14aefef4d949f6",
+      "batch_index": 12385,
+      "epoch": 0,
+      "input_ids_sha256": "f3970f67891f770ca64cb13ada1f251c6597bd988cb9fa6f533769c83ef6fc42"
+    },
+    "committed_checkpoint": {
+      "manifest_sha256": "df45a6a16f894b134d54d4d9bf9de1ca9c95530f81f97b8fabc7eba871e2a8ff",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/sharegpt-ultrachat-corrected-full-20261113-v4/recovery/attempt-1-step-6006",
+      "plan_identity_sha256": "38938a5a693576e18885c0f85c5b3b00ce5ce7e8a576e41159c39911c0651784"
+    },
+    "gpu_sample": "0, NVIDIA A100 80GB PCIe, 9 %, 32261 MiB\n1, NVIDIA A100 80GB PCIe, 73 %, 34649 MiB\n2, NVIDIA A100 80GB PCIe, 24 %, 33817 MiB\n3, NVIDIA A100 80GB PCIe, 68 %, 32545 MiB\n4, NVIDIA A100 80GB PCIe, 20 %, 33953 MiB\n5, NVIDIA A100 80GB PCIe, 50 %, 36179 MiB\n6, NVIDIA A100 80GB PCIe, 66 %, 33517 MiB\n7, NVIDIA A100 80GB PCIe, 25 %, 45769 MiB\n"
+  },
+  "pilot": {
+    "study_id": "rq1-pilot-24-20261113-v3",
+    "prefix_complete_ranks": 8,
+    "core_runs_completed": 0
+  },
+  "queues": {
+    "2215920": {
+      "JobName": "deep10-hold",
+      "JobState": "PENDING",
+      "Reason": "QOSGrpJobsLimit",
+      "Partition": "high-priority",
+      "QOS": "spec-priority",
+      "NodeList": "(null)",
+      "ReqNodeList": "deep-chungus-10",
+      "Dependency": "(null)",
+      "TRES": "cpu=64,mem=500000M,node=1,billing=64,gres/gpu=8,gres/gpu:a100=8"
+    },
+    "2216035": {
+      "JobName": "taps-deep11-hold",
+      "JobState": "RUNNING",
+      "Reason": "None",
+      "Partition": "high-priority",
+      "QOS": "spec-priority",
+      "NodeList": "deep-chungus-11",
+      "ReqNodeList": "deep-chungus-11",
+      "Dependency": "(null)",
+      "TRES": "cpu=128,node=1,billing=128,gres/gpu=8,gres/gpu:a100=8"
+    },
+    "2217628": {
+      "JobName": "taps-pilot-v9-replay",
+      "JobState": "RUNNING",
+      "Reason": "None",
+      "Partition": "low-priority",
+      "QOS": "normal",
+      "NodeList": "deep-chungus-6",
+      "ReqNodeList": "deep-chungus-6",
+      "Dependency": "(null)",
+      "TRES": "cpu=16,node=1,billing=16"
+    },
+    "2217629": {
+      "JobName": "taps-corrected-resume",
+      "JobState": "PENDING",
+      "Reason": "Dependency",
+      "Partition": "low-priority",
+      "QOS": "normal",
+      "NodeList": "(null)",
+      "ReqNodeList": "deep-chungus-11",
+      "Dependency": "afterany:2216035(unfulfilled)",
+      "TRES": "cpu=48,mem=500000M,node=1,billing=48,gres/gpu=8,gres/gpu:a100=8"
+    },
+    "2217522": {
+      "JobName": "taps-pilot-v3-train",
+      "JobState": "RUNNING",
+      "Reason": "None",
+      "Partition": "low-priority",
+      "QOS": "normal",
+      "NodeList": "deep-chungus-6",
+      "ReqNodeList": "deep-chungus-6",
+      "Dependency": "(null)",
+      "TRES": "cpu=2,node=1,billing=2"
+    }
+  }
+}

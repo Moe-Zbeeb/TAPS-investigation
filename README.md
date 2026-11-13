@@ -4,7 +4,7 @@ Research code for studying specialist drafters under mixed traffic, following th
 
 [Getting started](docs/GETTING_STARTED.md) · [Reproduction protocol](experiments/official-reproduction-20261109/PREREGISTRATION.md) · [Implementation status](experiments/IMPLEMENTATION_STATUS.md) · [Current completion plan](experiments/finalization-20261111/COMPLETION_PLAN.md) · [References](references/README.md)
 
-The [13 November status](experiments/STATUS_20261113.md) supersedes earlier live snapshots. Both eight-A100 allocations are retained. The corrected generalist passed its 200-update profile and independent numerical, runtime and stock-export checks; its fresh scientific launch is admitted and undergoing startup checks. The first pilot stopped after 207 updates because DeepSpeed converted teacher buffers to FP16 relative to the eligibility scan. Restoring pristine FP32 buffers matched all 40 diagnostic cases exactly. A fresh pilot study is queued through bounded requalification and independent admission. No fixed-budget pilot or forty-epoch generalist has completed.
+The [13 November status](experiments/STATUS_20261113.md) supersedes earlier live snapshots. The corrected generalist is training on eight A100 80GB GPUs with a committed 7,000-update checkpoint. Deep10's allocation reached its deadline; its protected high-priority successor remains queued. The pilot's pristine-teacher-buffer fix passed its fresh 208-update failure-case test and all 12 GPU qualification phases; all 14 independent replay checks and actual evidence review passed. The automatic handoff waits for deep10 before final integration and training. No fixed-budget pilot or forty-epoch generalist has completed.
 
 ```mermaid
 flowchart LR
@@ -16,7 +16,7 @@ flowchart LR
 
 ## Evidence and current scope
 
-This snapshot contains research infrastructure, full baseline measurements and recorded engineering evidence. The full **22-cell released-baseline panel completed 22,400 generations; its reproduction gate failed**. See the [historical full results](results/baselines-2026-11-10/README.md) and [current execution status](experiments/STATUS_20261111.md). The user's 11 November instruction makes matching published paper numbers nonblocking. The [versioned pipeline policy](experiments/verification/PIPELINE_VALIDATION_V2.md) retains correctness, independent evidence review, data QA and source-matched engineering gates. Scientific generalist/specialist results and custom pooled-tree serving remain outstanding.
+This snapshot contains research infrastructure, full baseline measurements and recorded engineering evidence. The full **22-cell released-baseline panel completed 22,400 generations; its reproduction gate failed**. See the [historical full results](results/baselines-2026-11-10/README.md) and [current execution status](experiments/STATUS_20261113.md). The user's 11 November instruction makes matching published paper numbers nonblocking. The [versioned pipeline policy](experiments/verification/PIPELINE_VALIDATION_V2.md) retains correctness, independent evidence review, data QA and source-matched engineering gates. Scientific generalist/specialist results and custom pooled-tree serving remain outstanding.
 
 Engineering records dated 9 November 2026 document checks on eight A100 80GB GPUs:
 

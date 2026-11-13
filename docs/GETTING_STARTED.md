@@ -50,7 +50,7 @@ The complete reference panel has 22 method/benchmark/temperature cells. Every ce
 
 Numeric agreement alone does not establish losslessness. The [verification rule](../experiments/verification/LOSSLESS_RULE.md) states the fixed-tree argument; the [temperature-one audit plan](../experiments/verification/TEMPERATURE_ONE_AUDIT_PLAN.md) describes the remaining full-model sampling check. The finite-vocabulary audits and 48 matched greedy smoke pairs are supporting engineering evidence.
 
-Scientific native training remains gated on reviewed full reproduction and full-model temperature-one validation. The next planned pilot has chat, math and code, a generalist plus three specialists, two response policies and three seeds. Actual datasets, held-out splits and equal token/compute budgets must be registered before those 24 core runs. The [implementation status](../experiments/IMPLEMENTATION_STATUS.md) lists the remaining research work.
+The [versioned pipeline-v2 policy](../experiments/verification/PIPELINE_VALIDATION_V2.md) makes matching historical published numbers nonblocking. Scientific training still requires actual source-bound correctness, data, numerical, restart and export evidence plus independent review. The registered core pilot has chat, math and code, a generalist plus three specialists, two response policies and three seeds. Its sealed data, held-out splits and matched budgets precede the 24 runs; new source requires fresh qualification. Read the [latest stage status](../experiments/STATUS_20261113.md) before treating any prepared or queued run as admitted or complete.
 
 ## Locate inputs and evidence
 

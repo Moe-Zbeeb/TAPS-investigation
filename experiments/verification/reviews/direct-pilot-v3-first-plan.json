@@ -1,0 +1,378 @@
+{
+  "ancestor": {
+    "files": {
+      "LICENSE": {
+        "sha256": "ab6a3bfbc8aacdac7132f4c919aa0fb938cf6b6a2df384d295ee332107a96f41",
+        "size_bytes": 557
+      },
+      "config.json": {
+        "sha256": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f",
+        "size_bytes": 591
+      },
+      "pytorch_model.bin": {
+        "sha256": "16d5bf9524108d59f68c7af196edd69018c29316cb6a2fb491cfd2a393ee1cf4",
+        "size_bytes": 849768795
+      }
+    },
+    "model_identity_sha256": "799ec84004c49f8e82acf43c849a64596f47a2f28d3516a810e951798de99fcf",
+    "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/eagle3-llama31-8b",
+    "source": {
+      "repo_id": "yuhuili/EAGLE3-LLaMA3.1-Instruct-8B",
+      "revision": "ada412b672e293d682423de84a095447bf38a637"
+    }
+  },
+  "cache": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2",
+  "cache_identity_sha256": "14828911fed6987d4de047b2e7ecc1e7f998a1abe1398a9231ec5b1be4fda4b1",
+  "cohort": "code",
+  "eligibility": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2",
+  "eligibility_identity_sha256": "90866e9deb36dd2a560857e9fad554f1d0a89c8b245b1cc64d57d9b3ef661ff8",
+  "hardware": [
+    [
+      "0",
+      "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "1",
+      "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "2",
+      "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "3",
+      "GPU-1870ead3-a098-9d90-ed88-aac3941baf95",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "4",
+      "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "5",
+      "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "6",
+      "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "7",
+      "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ]
+  ],
+  "identity_sha256": "c44bc34194f4030c629b7d161ec1d1abb6d5122a95e75e1bce494583dae64a27",
+  "initialization": "released_common_ancestor",
+  "ordinal": 0,
+  "output": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/runs/rq1-pilot-24-20261113-v3-code-original-s0",
+  "policy": "original",
+  "policy_index": 0,
+  "project_root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+  "quota": 64,
+  "recipe": {
+    "admission_required": [
+      "source_bound_numerical_and_native_update_parity",
+      "eight_rank_four_vs_two_plus_two_exact_restore",
+      "stock_trained_checkpoint_inference",
+      "independent_full_schedule_and_provenance_audit",
+      "all_thirteen_trainables_gradient_and_adam_coverage"
+    ],
+    "checkpoint_interval": 128,
+    "checkpoint_mode": "non_reentrant",
+    "checkpoint_retention": 2,
+    "cohorts": [
+      "chat",
+      "math",
+      "code",
+      "generalist"
+    ],
+    "compute_matching": {
+      "criterion": "each of eight runs must be within +/-10% of that median; also publish max/min ratio",
+      "cuda_events": "per-rank default-stream event intervals with synchronize after each update; auxiliary-stream work included only when joined by the default stream",
+      "include": "online teacher, draft forward/backward, optimizer, cache-to-device input, loop journaling and synchronization; checkpoint/export time measured separately",
+      "offline": "report regeneration, eligibility, qualification and total allocation costs separately",
+      "reference": "median of the eight per-run8x synchronized training-loop wall times within each seed block",
+      "replays": "all physical attempts charged separately, including lost work; no padding with sleep or extra learning"
+    },
+    "cublas_workspace_config": ":4096:8",
+    "ds_config": {
+      "fp16": {
+        "auto_cast": true,
+        "enabled": true,
+        "loss_scale": 128
+      },
+      "gradient_accumulation_steps": 1,
+      "gradient_clipping": 0.5,
+      "optimizer": {
+        "params": {
+          "adam_w_mode": true,
+          "betas": [
+            0.9,
+            0.95
+          ],
+          "eps": 1e-08,
+          "lr": 0,
+          "weight_decay": 0.0
+        },
+        "type": "AdamW"
+      },
+      "scheduler": {
+        "params": {
+          "total_num_steps": 1536,
+          "warmup_max_lr": 5e-05,
+          "warmup_min_lr": 0,
+          "warmup_num_steps": 64,
+          "warmup_type": "linear"
+        },
+        "type": "WarmupDecayLR"
+      },
+      "steps_per_print": 2000,
+      "train_micro_batch_size_per_gpu": 1,
+      "wall_clock_breakdown": false,
+      "zero_optimization": {
+        "allgather_bucket_size": 200000000,
+        "allgather_partitions": true,
+        "contiguous_gradients": true,
+        "overlap_comm": true,
+        "reduce_bucket_size": 200000000,
+        "reduce_scatter": true,
+        "stage": 2
+      }
+    },
+    "effective_context_quota_priority": [
+      64,
+      32
+    ],
+    "eligibility": "native_mask[s] and released_t2d[argmax_full_vocab(target_logits_original[s+1])] and s>=6 and s+1<real_length; both policies must have at leastQ",
+    "evaluation": {
+      "baselines": [
+        "autoregressive target",
+        "released EAGLE3 ancestor",
+        "same-seed trained union generalist"
+      ],
+      "heldout_prompts_per_domain": 80,
+      "max_new_tokens": 128,
+      "metrics": [
+        "paired wall-clock tokens/sec and speedup",
+        "accepted draft tokens per verification",
+        "reject rate",
+        "per-head agreement",
+        "memory and GPU time"
+      ],
+      "oracle": "per-domain best fixed drafter selected on dev only; report routing cost separately",
+      "selection": "fixed final step; no tuning on test prompts",
+      "temperatures": [
+        0,
+        1
+      ],
+      "timing_repeats": 5,
+      "traffic": [
+        "chat",
+        "math",
+        "code",
+        "equal_domain_mixture"
+      ],
+      "uncertainty": "paired prompt bootstrap plus all three seed values; only three seed blocks"
+    },
+    "examples_per_rank": 1536,
+    "final_checkpoint": "fixed successful step1536; no validation-selected checkpoints",
+    "gradient_checkpointing": true,
+    "independent_evidence_review": "Mandatory separate evidence-and-study-bound approval after qualification; never a self-approved numerical check.",
+    "initialization": "identical complete released EAGLE3 trainable state and frozen32000 vocabulary; fresh optimizer for every run",
+    "labels": "online frozen Llama3.1-8B-Instruct soft distributions for both response context policies",
+    "length": 2048,
+    "limitations": [
+      "Legacy default reentrant checkpoint path disconnects nested decoder outputs; corrected non-reentrant path requires new source-bound qualification against a direct uncheckpointed native-function reference.",
+      "The12November pilot stopped at step207 because DeepSpeed half-converted teacher inv_freq buffers relative to the eligibility scan. Preserve that failed study; fresh study uses exact pristine teacher buffer restoration and must pass new qualification and independent admission."
+    ],
+    "matmul_tf32": false,
+    "minimum_train_pairs_per_domain_rank": 128,
+    "node": "deep-chungus-10",
+    "objective": "sum_k(0.8**k * native_head_mean_CE_k *2048/Q), k=0..6",
+    "pipeline_prerequisite": {
+      "path": "outputs/pipeline-validation/pipeline-20261111-v3/replay.json",
+      "scope": "prior independently reviewed full-model EAGLE3/EAGLE2/HASS implementation validation; new pilot training and exports require additional qualification",
+      "sha256": "687ec4ac53f1ba3160db9891e592dce66cb384e69f516551d2e7745be7426295"
+    },
+    "positions": "Q disjoint integer strata of sorted eligible base positions; a SHA256 variate chooses uniformly within each stratum; paired policies share variates; nonuniform inclusion when strata sizes differ",
+    "recovery": "source-bound clean checkpoint resume; log logical committed exposure separately from all physical attempts and replayed work; exact physical-match claim invalid after lost-work replay",
+    "response_context_policies": [
+      "original",
+      "target"
+    ],
+    "rotary_cache": {
+      "capacity": 2054,
+      "construction": "CPU FP32 before engine FP16/device conversion; preserve existing2048-position prefix",
+      "requirement": "no rotary cache extension during forward or checkpoint recomputation"
+    },
+    "schedule": "deterministic domain/rank/seed/cycle hash permutation; explicit per-example repeat occurrence; generalist cycles domains with rank offset,512 per domain/rank; policy pairs share schedule",
+    "schema_version": 1,
+    "scope": "common_ancestor_matched_budget_finetuning_pilot",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "skipped_step_policy": "any optimizer overflow/skip invalidates the run; no extra updates to compensate",
+    "study_id": "rq1-pilot-24-20261113-v3",
+    "target_dtype": "float16",
+    "target_eval": true,
+    "teacher_buffer_policy": {
+      "capture": "exact32 pristine CPUFP32 inv_freq buffers before DeepSpeed initialization",
+      "restore": "original bytes and dtype on each current CUDA device after engine initialization; verify full buffer identity again after checkpoint restoration",
+      "scope": "new source-bound pilot qualification and scientific study only; old failed run and native scratch recipe unchanged"
+    },
+    "world_size": 8
+  },
+  "recipe_sha256": "2e0e7d0a685d6b29271676cd7ffbcbdc5b42d977df97d8eb398dbf4a73939773",
+  "run_id": "rq1-pilot-24-20261113-v3-code-original-s0",
+  "scan_runtime": {
+    "attention": "unchanged pinned custom LlamaAttention",
+    "attention_mask": "all ones",
+    "batch": 1,
+    "cublas_workspace_config": ":4096:8",
+    "cuda": "12.4",
+    "cudnn_tf32": false,
+    "length": 2048,
+    "matmul_tf32": false,
+    "target_dtype": "float16",
+    "torch": "2.6.0+cu124"
+  },
+  "schedules": [
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/schedules/code-seed0-rank0.jsonl",
+      "sha256": "2002327f06097e270018085c770fd889a5539a894152dd3a637f754e6519f684"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/schedules/code-seed0-rank1.jsonl",
+      "sha256": "787a86c255dafcf200b833d8001e08a86fe3b8e4c8f1e885f448809c79eea3a7"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/schedules/code-seed0-rank2.jsonl",
+      "sha256": "ff24c008605abe523902027d9e68a57db940bbd68ed33f9f8e49696a5d1c8e8f"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/schedules/code-seed0-rank3.jsonl",
+      "sha256": "6ccc70e6291f02f9611d9cb6cef855db3439874a9cbb6de524ffe76f2c031b39"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/schedules/code-seed0-rank4.jsonl",
+      "sha256": "00f975c9e0db48ce93f0f3eb4c0f102799e3de992f095ba6111e2f3e4bc1d22a"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/schedules/code-seed0-rank5.jsonl",
+      "sha256": "6b292547e55f16ca7faecb6c957a7b4c26c3ea9e2dee923dd699b326559af6c3"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/schedules/code-seed0-rank6.jsonl",
+      "sha256": "115063bc1f3d3b4440bbf9b3f665715d1269bce4f4a37d55f21bf6a61c02c47f"
+    },
+    {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/schedules/code-seed0-rank7.jsonl",
+      "sha256": "fa941c3130dfb8947854420aa01b34e885a2a6ee44cabbc296d1a53668e87bdd"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "scientific_pilot_requires_admission",
+  "seed": 0,
+  "source_directory": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261113-v4/src/taps_rebuild",
+  "source_sha256": {
+    "native_gradients.py": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+    "native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+    "pilot_gate.py": "81526515203af4a0386680b79f091d4f0166aae170a12a23d1b209d9a3028470",
+    "pilot_pipeline.py": "45a813eb3f7063ac8224665ca8397f5a1efd390e25035b23b4c667436f320cf6",
+    "pilot_queue.py": "0c2ec34b25496f793338abbd3495ea9553f13dde8928c4b9777f5d565506a80f",
+    "pilot_smoke.py": "026aa0d7473c7adbd4df3c59bad4677847ff5fbec234aa5badf4ee6f23bd7a13",
+    "pilot_study.py": "8e9fb70fb92240d9253711cca23c0343d1f5b894c32b87eb12e0d2058872f882",
+    "pilot_train.py": "f700df226d9bd0ea3391868c24e6780efcfde0be3967bda2dba354e7cc699a4a",
+    "pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7"
+  },
+  "status": "prepared_waiting_source_matched_qualification",
+  "steps": 1536,
+  "study_directory": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3",
+  "study_id": "rq1-pilot-24-20261113-v3",
+  "target": {
+    "files": {
+      "LICENSE": {
+        "sha256": "64e1b2889b7892e6bbe7a7ed5bfe6ff793c61f9d584345f8f41cf9f5cb30a369",
+        "size_bytes": 7627
+      },
+      "USE_POLICY.md": {
+        "sha256": "a568f2ebc73cec3fd74ba2afd992d4e945a8c7a9d851f9b66163aac834b7b859",
+        "size_bytes": 4691
+      },
+      "config.json": {
+        "sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+        "size_bytes": 855
+      },
+      "generation_config.json": {
+        "sha256": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd",
+        "size_bytes": 184
+      },
+      "model-00001-of-00004.safetensors": {
+        "sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+        "size_bytes": 4976698672
+      },
+      "model-00002-of-00004.safetensors": {
+        "sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+        "size_bytes": 4999802720
+      },
+      "model-00003-of-00004.safetensors": {
+        "sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+        "size_bytes": 4915916176
+      },
+      "model-00004-of-00004.safetensors": {
+        "sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+        "size_bytes": 1168138808
+      },
+      "model.safetensors.index.json": {
+        "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+        "size_bytes": 23950
+      },
+      "special_tokens_map.json": {
+        "sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+        "size_bytes": 296
+      },
+      "tokenizer.json": {
+        "sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+        "size_bytes": 9085657
+      },
+      "tokenizer_config.json": {
+        "sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+        "size_bytes": 55351
+      }
+    },
+    "model_identity_sha256": "7c3d0c33c2a43a10ba658bdca906de7412050d8c094083a34e0d6fced7c94b6c",
+    "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b",
+    "source": {
+      "repo_id": "positron-ai/Llama-3.1-8B-Instruct",
+      "revision": "e63e9c4ae3b9074207cd49331b36a7d998eba86a"
+    }
+  },
+  "trained_models": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/pilot-24/rq1-pilot-24-20261113-v3-code-original-s0",
+  "vocabulary_identity_sha256": "ebda1bdcf33fa6034bc7345190514303a2accbb61f85e77a7f839141d2c7b125"
+}

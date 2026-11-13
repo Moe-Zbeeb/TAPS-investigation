@@ -1,0 +1,3952 @@
+{
+  "common": {
+    "ancestor": {
+      "files": {
+        "LICENSE": {
+          "sha256": "ab6a3bfbc8aacdac7132f4c919aa0fb938cf6b6a2df384d295ee332107a96f41",
+          "size_bytes": 557
+        },
+        "config.json": {
+          "sha256": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f",
+          "size_bytes": 591
+        },
+        "pytorch_model.bin": {
+          "sha256": "16d5bf9524108d59f68c7af196edd69018c29316cb6a2fb491cfd2a393ee1cf4",
+          "size_bytes": 849768795
+        }
+      },
+      "model_identity_sha256": "799ec84004c49f8e82acf43c849a64596f47a2f28d3516a810e951798de99fcf",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/eagle3-llama31-8b",
+      "source": {
+        "repo_id": "yuhuili/EAGLE3-LLaMA3.1-Instruct-8B",
+        "revision": "ada412b672e293d682423de84a095447bf38a637"
+      }
+    },
+    "cache": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-cache/rq1-pilot-24-20261112-v2",
+    "cache_identity_sha256": "14828911fed6987d4de047b2e7ecc1e7f998a1abe1398a9231ec5b1be4fda4b1",
+    "eligibility": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/data/pilot-eligibility/rq1-pilot-24-20261112-v2",
+    "eligibility_identity_sha256": "90866e9deb36dd2a560857e9fad554f1d0a89c8b245b1cc64d57d9b3ef661ff8",
+    "hardware": [
+      [
+        "0",
+        "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "1",
+        "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "2",
+        "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "3",
+        "GPU-1870ead3-a098-9d90-ed88-aac3941baf95",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "4",
+        "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "5",
+        "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "6",
+        "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "7",
+        "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ]
+    ],
+    "project_root": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "quota": 64,
+    "recipe": {
+      "admission_required": [
+        "source_bound_numerical_and_native_update_parity",
+        "eight_rank_four_vs_two_plus_two_exact_restore",
+        "stock_trained_checkpoint_inference",
+        "independent_full_schedule_and_provenance_audit",
+        "all_thirteen_trainables_gradient_and_adam_coverage"
+      ],
+      "checkpoint_interval": 128,
+      "checkpoint_mode": "non_reentrant",
+      "checkpoint_retention": 2,
+      "cohorts": [
+        "chat",
+        "math",
+        "code",
+        "generalist"
+      ],
+      "compute_matching": {
+        "criterion": "each of eight runs must be within +/-10% of that median; also publish max/min ratio",
+        "cuda_events": "per-rank default-stream event intervals with synchronize after each update; auxiliary-stream work included only when joined by the default stream",
+        "include": "online teacher, draft forward/backward, optimizer, cache-to-device input, loop journaling and synchronization; checkpoint/export time measured separately",
+        "offline": "report regeneration, eligibility, qualification and total allocation costs separately",
+        "reference": "median of the eight per-run8x synchronized training-loop wall times within each seed block",
+        "replays": "all physical attempts charged separately, including lost work; no padding with sleep or extra learning"
+      },
+      "cublas_workspace_config": ":4096:8",
+      "ds_config": {
+        "fp16": {
+          "auto_cast": true,
+          "enabled": true,
+          "loss_scale": 128
+        },
+        "gradient_accumulation_steps": 1,
+        "gradient_clipping": 0.5,
+        "optimizer": {
+          "params": {
+            "adam_w_mode": true,
+            "betas": [
+              0.9,
+              0.95
+            ],
+            "eps": 1e-08,
+            "lr": 0,
+            "weight_decay": 0.0
+          },
+          "type": "AdamW"
+        },
+        "scheduler": {
+          "params": {
+            "total_num_steps": 1536,
+            "warmup_max_lr": 5e-05,
+            "warmup_min_lr": 0,
+            "warmup_num_steps": 64,
+            "warmup_type": "linear"
+          },
+          "type": "WarmupDecayLR"
+        },
+        "steps_per_print": 2000,
+        "train_micro_batch_size_per_gpu": 1,
+        "wall_clock_breakdown": false,
+        "zero_optimization": {
+          "allgather_bucket_size": 200000000,
+          "allgather_partitions": true,
+          "contiguous_gradients": true,
+          "overlap_comm": true,
+          "reduce_bucket_size": 200000000,
+          "reduce_scatter": true,
+          "stage": 2
+        }
+      },
+      "effective_context_quota_priority": [
+        64,
+        32
+      ],
+      "eligibility": "native_mask[s] and released_t2d[argmax_full_vocab(target_logits_original[s+1])] and s>=6 and s+1<real_length; both policies must have at leastQ",
+      "evaluation": {
+        "baselines": [
+          "autoregressive target",
+          "released EAGLE3 ancestor",
+          "same-seed trained union generalist"
+        ],
+        "heldout_prompts_per_domain": 80,
+        "max_new_tokens": 128,
+        "metrics": [
+          "paired wall-clock tokens/sec and speedup",
+          "accepted draft tokens per verification",
+          "reject rate",
+          "per-head agreement",
+          "memory and GPU time"
+        ],
+        "oracle": "per-domain best fixed drafter selected on dev only; report routing cost separately",
+        "selection": "fixed final step; no tuning on test prompts",
+        "temperatures": [
+          0,
+          1
+        ],
+        "timing_repeats": 5,
+        "traffic": [
+          "chat",
+          "math",
+          "code",
+          "equal_domain_mixture"
+        ],
+        "uncertainty": "paired prompt bootstrap plus all three seed values; only three seed blocks"
+      },
+      "examples_per_rank": 1536,
+      "final_checkpoint": "fixed successful step1536; no validation-selected checkpoints",
+      "gradient_checkpointing": true,
+      "independent_evidence_review": "Mandatory separate evidence-and-study-bound approval after qualification; never a self-approved numerical check.",
+      "initialization": "identical complete released EAGLE3 trainable state and frozen32000 vocabulary; fresh optimizer for every run",
+      "labels": "online frozen Llama3.1-8B-Instruct soft distributions for both response context policies",
+      "length": 2048,
+      "limitations": [
+        "Legacy default reentrant checkpoint path disconnects nested decoder outputs; corrected non-reentrant path requires new source-bound qualification against a direct uncheckpointed native-function reference.",
+        "The12November pilot stopped at step207 because DeepSpeed half-converted teacher inv_freq buffers relative to the eligibility scan. Preserve that failed study; fresh study uses exact pristine teacher buffer restoration and must pass new qualification and independent admission."
+      ],
+      "matmul_tf32": false,
+      "minimum_train_pairs_per_domain_rank": 128,
+      "node": "deep-chungus-10",
+      "objective": "sum_k(0.8**k * native_head_mean_CE_k *2048/Q), k=0..6",
+      "pipeline_prerequisite": {
+        "path": "outputs/pipeline-validation/pipeline-20261111-v3/replay.json",
+        "scope": "prior independently reviewed full-model EAGLE3/EAGLE2/HASS implementation validation; new pilot training and exports require additional qualification",
+        "sha256": "687ec4ac53f1ba3160db9891e592dce66cb384e69f516551d2e7745be7426295"
+      },
+      "positions": "Q disjoint integer strata of sorted eligible base positions; a SHA256 variate chooses uniformly within each stratum; paired policies share variates; nonuniform inclusion when strata sizes differ",
+      "recovery": "source-bound clean checkpoint resume; log logical committed exposure separately from all physical attempts and replayed work; exact physical-match claim invalid after lost-work replay",
+      "response_context_policies": [
+        "original",
+        "target"
+      ],
+      "rotary_cache": {
+        "capacity": 2054,
+        "construction": "CPU FP32 before engine FP16/device conversion; preserve existing2048-position prefix",
+        "requirement": "no rotary cache extension during forward or checkpoint recomputation"
+      },
+      "schedule": "deterministic domain/rank/seed/cycle hash permutation; explicit per-example repeat occurrence; generalist cycles domains with rank offset,512 per domain/rank; policy pairs share schedule",
+      "schema_version": 1,
+      "scope": "common_ancestor_matched_budget_finetuning_pilot",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "skipped_step_policy": "any optimizer overflow/skip invalidates the run; no extra updates to compensate",
+      "study_id": "rq1-pilot-24-20261113-v3",
+      "target_dtype": "float16",
+      "target_eval": true,
+      "teacher_buffer_policy": {
+        "capture": "exact32 pristine CPUFP32 inv_freq buffers before DeepSpeed initialization",
+        "restore": "original bytes and dtype on each current CUDA device after engine initialization; verify full buffer identity again after checkpoint restoration",
+        "scope": "new source-bound pilot qualification and scientific study only; old failed run and native scratch recipe unchanged"
+      },
+      "world_size": 8
+    },
+    "recipe_sha256": "2e0e7d0a685d6b29271676cd7ffbcbdc5b42d977df97d8eb398dbf4a73939773",
+    "scan_runtime": {
+      "attention": "unchanged pinned custom LlamaAttention",
+      "attention_mask": "all ones",
+      "batch": 1,
+      "cublas_workspace_config": ":4096:8",
+      "cuda": "12.4",
+      "cudnn_tf32": false,
+      "length": 2048,
+      "matmul_tf32": false,
+      "target_dtype": "float16",
+      "torch": "2.6.0+cu124"
+    },
+    "schema_version": 1,
+    "source_directory": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261113-v4/src/taps_rebuild",
+    "source_sha256": {
+      "native_gradients.py": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+      "native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+      "pilot_gate.py": "81526515203af4a0386680b79f091d4f0166aae170a12a23d1b209d9a3028470",
+      "pilot_pipeline.py": "45a813eb3f7063ac8224665ca8397f5a1efd390e25035b23b4c667436f320cf6",
+      "pilot_queue.py": "0c2ec34b25496f793338abbd3495ea9553f13dde8928c4b9777f5d565506a80f",
+      "pilot_smoke.py": "026aa0d7473c7adbd4df3c59bad4677847ff5fbec234aa5badf4ee6f23bd7a13",
+      "pilot_study.py": "8e9fb70fb92240d9253711cca23c0343d1f5b894c32b87eb12e0d2058872f882",
+      "pilot_train.py": "f700df226d9bd0ea3391868c24e6780efcfde0be3967bda2dba354e7cc699a4a",
+      "pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7"
+    },
+    "study_directory": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3",
+    "study_id": "rq1-pilot-24-20261113-v3",
+    "target": {
+      "files": {
+        "LICENSE": {
+          "sha256": "64e1b2889b7892e6bbe7a7ed5bfe6ff793c61f9d584345f8f41cf9f5cb30a369",
+          "size_bytes": 7627
+        },
+        "USE_POLICY.md": {
+          "sha256": "a568f2ebc73cec3fd74ba2afd992d4e945a8c7a9d851f9b66163aac834b7b859",
+          "size_bytes": 4691
+        },
+        "config.json": {
+          "sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+          "size_bytes": 855
+        },
+        "generation_config.json": {
+          "sha256": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd",
+          "size_bytes": 184
+        },
+        "model-00001-of-00004.safetensors": {
+          "sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+          "size_bytes": 4976698672
+        },
+        "model-00002-of-00004.safetensors": {
+          "sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+          "size_bytes": 4999802720
+        },
+        "model-00003-of-00004.safetensors": {
+          "sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+          "size_bytes": 4915916176
+        },
+        "model-00004-of-00004.safetensors": {
+          "sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+          "size_bytes": 1168138808
+        },
+        "model.safetensors.index.json": {
+          "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+          "size_bytes": 23950
+        },
+        "special_tokens_map.json": {
+          "sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+          "size_bytes": 296
+        },
+        "tokenizer.json": {
+          "sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+          "size_bytes": 9085657
+        },
+        "tokenizer_config.json": {
+          "sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+          "size_bytes": 55351
+        }
+      },
+      "model_identity_sha256": "7c3d0c33c2a43a10ba658bdca906de7412050d8c094083a34e0d6fced7c94b6c",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b",
+      "source": {
+        "repo_id": "positron-ai/Llama-3.1-8B-Instruct",
+        "revision": "e63e9c4ae3b9074207cd49331b36a7d998eba86a"
+      }
+    },
+    "vocabulary_identity_sha256": "ebda1bdcf33fa6034bc7345190514303a2accbb61f85e77a7f839141d2c7b125"
+  },
+  "files": {
+    "plans/rq1-pilot-24-20261113-v3-chat-original-s0.json": {
+      "sha256": "db4e65f75261619b07679330760b5a05610ea36cef79ec8e756aa9f7352a864e",
+      "size_bytes": 16151
+    },
+    "plans/rq1-pilot-24-20261113-v3-chat-original-s1.json": {
+      "sha256": "313848e3df1be5f26b94a6d0f8d478b8850576dca6d2f655236bcecadd23d91c",
+      "size_bytes": 16152
+    },
+    "plans/rq1-pilot-24-20261113-v3-chat-original-s2.json": {
+      "sha256": "82eb746396791c011d05ab4db5b0b2e6f958c935ea30d711521c300b89db2c5a",
+      "size_bytes": 16152
+    },
+    "plans/rq1-pilot-24-20261113-v3-chat-target-s0.json": {
+      "sha256": "ec403d3a77e8420a058fe21e36dc41049b1182cb06faaa5d25f0de2708dc2edb",
+      "size_bytes": 16143
+    },
+    "plans/rq1-pilot-24-20261113-v3-chat-target-s1.json": {
+      "sha256": "34abf8cd33b5417ad04139a68c506307a294079d39ffb5338fcea5c59219a55d",
+      "size_bytes": 16144
+    },
+    "plans/rq1-pilot-24-20261113-v3-chat-target-s2.json": {
+      "sha256": "17553675d27b201400e9309f98d42dd3d38fb39bcec63ba68787e833ab8c400d",
+      "size_bytes": 16144
+    },
+    "plans/rq1-pilot-24-20261113-v3-code-original-s0.json": {
+      "sha256": "ad9992b4b2a4250b09ae2e8fba41640f5af66fd1ab3259c0cfa2d548810bf165",
+      "size_bytes": 16151
+    },
+    "plans/rq1-pilot-24-20261113-v3-code-original-s1.json": {
+      "sha256": "d34809dda6fdc80189fd46660b176132771e054e94558dde81ed5faa0bb17255",
+      "size_bytes": 16152
+    },
+    "plans/rq1-pilot-24-20261113-v3-code-original-s2.json": {
+      "sha256": "2e64c3adcd8ca192013d2ac0a5e02f75ba82746bd296b802aafcf6aab9303fcb",
+      "size_bytes": 16152
+    },
+    "plans/rq1-pilot-24-20261113-v3-code-target-s0.json": {
+      "sha256": "e2dac373ed4f5a1b62e706ce4819982e41242096f6239de83e1844680b400669",
+      "size_bytes": 16143
+    },
+    "plans/rq1-pilot-24-20261113-v3-code-target-s1.json": {
+      "sha256": "a2de307d2e1dfa051ad314ec6d412740fe60be6ff227cd7a334c1e6361931146",
+      "size_bytes": 16144
+    },
+    "plans/rq1-pilot-24-20261113-v3-code-target-s2.json": {
+      "sha256": "c1c0483357f73a3fba97b50a74e6654fd2b2ce3191a05af3ab25d3f70784bc42",
+      "size_bytes": 16144
+    },
+    "plans/rq1-pilot-24-20261113-v3-generalist-original-s0.json": {
+      "sha256": "5f0196423cc35cb2376466b223c3b2b12a41a625be77b4e6dc09c8f5164f939e",
+      "size_bytes": 16223
+    },
+    "plans/rq1-pilot-24-20261113-v3-generalist-original-s1.json": {
+      "sha256": "3a63f2e02bcff099cdd05249af4e17651615ab7027dccc2a3781de4c15a14703",
+      "size_bytes": 16224
+    },
+    "plans/rq1-pilot-24-20261113-v3-generalist-original-s2.json": {
+      "sha256": "bb5940c695d531e4666d9cc0a1143b4657e1defdeb90b924380b55d26aa57b47",
+      "size_bytes": 16224
+    },
+    "plans/rq1-pilot-24-20261113-v3-generalist-target-s0.json": {
+      "sha256": "a65dcee7f459d62ecbf168cf7e3582653b100aef20a72463e7c70aa2a83a19d5",
+      "size_bytes": 16215
+    },
+    "plans/rq1-pilot-24-20261113-v3-generalist-target-s1.json": {
+      "sha256": "a63922c57ec4ef8d95666cc14015b0c4d3db5ae9b24b991272a3719d9ab5c114",
+      "size_bytes": 16215
+    },
+    "plans/rq1-pilot-24-20261113-v3-generalist-target-s2.json": {
+      "sha256": "5971bcf8fc8e1ca42b8f2fe4679feed1e99823a830e8df4a7f6868cfe29d5716",
+      "size_bytes": 16216
+    },
+    "plans/rq1-pilot-24-20261113-v3-math-original-s0.json": {
+      "sha256": "531ec39affdaf7ca2ea726d8e89a06a25bc25ac8c92e19e06641934fd1ecee28",
+      "size_bytes": 16151
+    },
+    "plans/rq1-pilot-24-20261113-v3-math-original-s1.json": {
+      "sha256": "fca98741fe37508c9ae5369936aa8531e340d26e1932ad742dcc0b9f595bff55",
+      "size_bytes": 16152
+    },
+    "plans/rq1-pilot-24-20261113-v3-math-original-s2.json": {
+      "sha256": "9157fc0b8e6f631afe817a51b8d58bd7870d2c597aa4695f2e24cb4dcf0b4b9d",
+      "size_bytes": 16152
+    },
+    "plans/rq1-pilot-24-20261113-v3-math-target-s0.json": {
+      "sha256": "0c7020f672d3eb74dccae7e14065de55687c935b088d480b21deca0e52bbf3c4",
+      "size_bytes": 16143
+    },
+    "plans/rq1-pilot-24-20261113-v3-math-target-s1.json": {
+      "sha256": "0ad1cfd54bd2cc9d4316a35981987953f822e96e3ee43630c9b0673df428dfee",
+      "size_bytes": 16143
+    },
+    "plans/rq1-pilot-24-20261113-v3-math-target-s2.json": {
+      "sha256": "a04f3effe5e0df3e27c8a3897970d8ccd604344236ca394fb5ee2e02443fc976",
+      "size_bytes": 16144
+    },
+    "schedules/chat-seed0-rank0.jsonl": {
+      "sha256": "dffb49054de54b7c297421df50ecc48813629c5431dc2c571c074c3d9a9e9f13",
+      "size_bytes": 546682
+    },
+    "schedules/chat-seed0-rank1.jsonl": {
+      "sha256": "761526da11ca88a288912db2b0745fc47e7766c34ed7aaca7ecd2f2abc0ad971",
+      "size_bytes": 546609
+    },
+    "schedules/chat-seed0-rank2.jsonl": {
+      "sha256": "c0f5f7982b8047646ca742959e76c68d2d4c0e8c28289c679b21b8ddfb7fdc2d",
+      "size_bytes": 546648
+    },
+    "schedules/chat-seed0-rank3.jsonl": {
+      "sha256": "624391adeba1aa9f9dacf706a5ee65bde609666e624c8a45828890391d4e0c4c",
+      "size_bytes": 546663
+    },
+    "schedules/chat-seed0-rank4.jsonl": {
+      "sha256": "5dceb251e373e88cccb75c1165e62d5bb0f9615067aa751e3311c06b20c2ee30",
+      "size_bytes": 546608
+    },
+    "schedules/chat-seed0-rank5.jsonl": {
+      "sha256": "5b32297af52d9c3b3810fc566c8d72aeaa85de83c7ea9f4e03aa028c24cb01d7",
+      "size_bytes": 546596
+    },
+    "schedules/chat-seed0-rank6.jsonl": {
+      "sha256": "866038e346e9f39d91b2839f2e46c1fad830c3adf969833faf169a2887a9df89",
+      "size_bytes": 546612
+    },
+    "schedules/chat-seed0-rank7.jsonl": {
+      "sha256": "66d3c2da1d3b1f59be9b7c988daecd1ceaa8eb454e0800ef6e7570035e1ae80e",
+      "size_bytes": 546596
+    },
+    "schedules/chat-seed1-rank0.jsonl": {
+      "sha256": "dff0ba8986dc352daa12cdfd7283a471da536be4f26338806ca8c6a8139c3978",
+      "size_bytes": 546677
+    },
+    "schedules/chat-seed1-rank1.jsonl": {
+      "sha256": "a9ff673a62e76e5cfbf4dfab309a84cc11c76fc31a4f112eda589952ebf3e82a",
+      "size_bytes": 546592
+    },
+    "schedules/chat-seed1-rank2.jsonl": {
+      "sha256": "83bc4d56e26616d9385fe039150a3971d84c2a2afee72a694dbd9dd030a37f19",
+      "size_bytes": 546619
+    },
+    "schedules/chat-seed1-rank3.jsonl": {
+      "sha256": "ffc5a778e01683dac6341276fc4bddda28bb3dc7d7d002f30d8699ce00a1b8db",
+      "size_bytes": 546628
+    },
+    "schedules/chat-seed1-rank4.jsonl": {
+      "sha256": "a6675fff223fd1c64cde5e93b8fcaba00cd3d5b91b946c40f10c8b284221e9a8",
+      "size_bytes": 546665
+    },
+    "schedules/chat-seed1-rank5.jsonl": {
+      "sha256": "7b350d93c771c10383d4a10b4136dda0b399df0a1390ccb4289f6992395e5aba",
+      "size_bytes": 546551
+    },
+    "schedules/chat-seed1-rank6.jsonl": {
+      "sha256": "11f8307d6b98d189d8d7d710a84a331558bc5c5c43fdd30a49bc1695e62f69ba",
+      "size_bytes": 546624
+    },
+    "schedules/chat-seed1-rank7.jsonl": {
+      "sha256": "fa481faf5730b72ebdae72982badbea354700ed2b6381e1bb736622ee3251f73",
+      "size_bytes": 546564
+    },
+    "schedules/chat-seed2-rank0.jsonl": {
+      "sha256": "32aa672cc014b0d61d0171f58b419df527ef3b2f3582379e29eb838f9183f1a9",
+      "size_bytes": 546696
+    },
+    "schedules/chat-seed2-rank1.jsonl": {
+      "sha256": "c3909b9ec0acc5d4e705ba758f9261d1106eea1a8f603caa6cfc4c660ac230e3",
+      "size_bytes": 546605
+    },
+    "schedules/chat-seed2-rank2.jsonl": {
+      "sha256": "572814c0d6dd7e3cf4566443ab21f78f1b2967725f75d483b9577e566dc87b92",
+      "size_bytes": 546656
+    },
+    "schedules/chat-seed2-rank3.jsonl": {
+      "sha256": "0edb69bd53ec821fb266318901b0e43f5a3deecfac4616161262abb082054398",
+      "size_bytes": 546634
+    },
+    "schedules/chat-seed2-rank4.jsonl": {
+      "sha256": "58b3ccc22f2e7e6ed8055dcc4cac1e6c0dd67f12319e17050e5a4c23227c2445",
+      "size_bytes": 546616
+    },
+    "schedules/chat-seed2-rank5.jsonl": {
+      "sha256": "9ca3ea177062995209364fdcb7e5a309e7ac99aefaa9f80dc2c89425014a7b4b",
+      "size_bytes": 546510
+    },
+    "schedules/chat-seed2-rank6.jsonl": {
+      "sha256": "8b2fd452087aa1a2f4ed38ac99c2613b870beae58b6a094a7ba4de4e93735188",
+      "size_bytes": 546624
+    },
+    "schedules/chat-seed2-rank7.jsonl": {
+      "sha256": "6f4ceed2fc92a2107da536a9a44a68ef1d63be2e220aa02fb035b2a7f4dd9ee4",
+      "size_bytes": 546545
+    },
+    "schedules/code-seed0-rank0.jsonl": {
+      "sha256": "2002327f06097e270018085c770fd889a5539a894152dd3a637f754e6519f684",
+      "size_bytes": 545772
+    },
+    "schedules/code-seed0-rank1.jsonl": {
+      "sha256": "787a86c255dafcf200b833d8001e08a86fe3b8e4c8f1e885f448809c79eea3a7",
+      "size_bytes": 545756
+    },
+    "schedules/code-seed0-rank2.jsonl": {
+      "sha256": "ff24c008605abe523902027d9e68a57db940bbd68ed33f9f8e49696a5d1c8e8f",
+      "size_bytes": 545773
+    },
+    "schedules/code-seed0-rank3.jsonl": {
+      "sha256": "6ccc70e6291f02f9611d9cb6cef855db3439874a9cbb6de524ffe76f2c031b39",
+      "size_bytes": 545765
+    },
+    "schedules/code-seed0-rank4.jsonl": {
+      "sha256": "00f975c9e0db48ce93f0f3eb4c0f102799e3de992f095ba6111e2f3e4bc1d22a",
+      "size_bytes": 545767
+    },
+    "schedules/code-seed0-rank5.jsonl": {
+      "sha256": "6b292547e55f16ca7faecb6c957a7b4c26c3ea9e2dee923dd699b326559af6c3",
+      "size_bytes": 545810
+    },
+    "schedules/code-seed0-rank6.jsonl": {
+      "sha256": "115063bc1f3d3b4440bbf9b3f665715d1269bce4f4a37d55f21bf6a61c02c47f",
+      "size_bytes": 545782
+    },
+    "schedules/code-seed0-rank7.jsonl": {
+      "sha256": "fa941c3130dfb8947854420aa01b34e885a2a6ee44cabbc296d1a53668e87bdd",
+      "size_bytes": 545779
+    },
+    "schedules/code-seed1-rank0.jsonl": {
+      "sha256": "c55ff42f05e4089558720c433bc8286fc761b3f17f1a17de8eede455b6dc5f3e",
+      "size_bytes": 545770
+    },
+    "schedules/code-seed1-rank1.jsonl": {
+      "sha256": "2017bf12d83c0769bc4ea3ca9fe6835fc6eff19a31b503a1e5e6d22d503be188",
+      "size_bytes": 545761
+    },
+    "schedules/code-seed1-rank2.jsonl": {
+      "sha256": "dda619467216ce90ac87ed1cb71b1be4169a802c0833bcd373789ff70e4f2b88",
+      "size_bytes": 545768
+    },
+    "schedules/code-seed1-rank3.jsonl": {
+      "sha256": "f797ea9fad612fcbb4d378180735874218d96b850ff2691c9e6b50d3467e9437",
+      "size_bytes": 545767
+    },
+    "schedules/code-seed1-rank4.jsonl": {
+      "sha256": "46a76fcb27863dfb0fba0ff14c3a2dac42e3970e2f93f20575551f2b68104f6b",
+      "size_bytes": 545765
+    },
+    "schedules/code-seed1-rank5.jsonl": {
+      "sha256": "d8602f591766141f7121edf25c46fd99a1dbdeceb45fb77b11ecd7979ac6dd17",
+      "size_bytes": 545809
+    },
+    "schedules/code-seed1-rank6.jsonl": {
+      "sha256": "342a1030a241624681e5e59b1d944a93e1551257bc64393ff766be5588b899c7",
+      "size_bytes": 545781
+    },
+    "schedules/code-seed1-rank7.jsonl": {
+      "sha256": "75fec16af3dc32468537d79462c3dfea31aba77b46e80c60ef8d33e36b9b9619",
+      "size_bytes": 545784
+    },
+    "schedules/code-seed2-rank0.jsonl": {
+      "sha256": "9aa3f3bac5f9363a328a24abdb951ec6a233fca2979f819654e0e94acc407b42",
+      "size_bytes": 545769
+    },
+    "schedules/code-seed2-rank1.jsonl": {
+      "sha256": "269df45bdb471483158ebb2c81867e8f88f2349f0e9a5f1dc881d0599bf8138d",
+      "size_bytes": 545764
+    },
+    "schedules/code-seed2-rank2.jsonl": {
+      "sha256": "689c355e22fc7fc3657e54e8e4057460ea730db4538c815a96b927173a1855da",
+      "size_bytes": 545766
+    },
+    "schedules/code-seed2-rank3.jsonl": {
+      "sha256": "6c365a254513fd58310a64d1f098e35537c06cd34fd77deebab05a760cdc1baa",
+      "size_bytes": 545770
+    },
+    "schedules/code-seed2-rank4.jsonl": {
+      "sha256": "e012109974dd888934aaa52cc9dad743c5b9bc234d45b3bc929321c664d978fb",
+      "size_bytes": 545768
+    },
+    "schedules/code-seed2-rank5.jsonl": {
+      "sha256": "b28b5b2e94b4dca88f135e713b88096493252cb117e5066e7874bbfae0723995",
+      "size_bytes": 545806
+    },
+    "schedules/code-seed2-rank6.jsonl": {
+      "sha256": "583895d012068e9cdf64b121a2997e3a7e7d31827b73cd068717a02390eb2d70",
+      "size_bytes": 545780
+    },
+    "schedules/code-seed2-rank7.jsonl": {
+      "sha256": "15a3bf5c7df994f843987a873a91f450b165f99f57f17c5469e8e4e49949dc3d",
+      "size_bytes": 545780
+    },
+    "schedules/generalist-seed0-rank0.jsonl": {
+      "sha256": "6b987b1df6d56883b489dc31e06fed111bbb7dfaebb34909384ea02b50153ae8",
+      "size_bytes": 546119
+    },
+    "schedules/generalist-seed0-rank1.jsonl": {
+      "sha256": "632b5734e38d8911be86878374013dad810e1bdb30c0c2610bfbe48ab8c2d5e9",
+      "size_bytes": 546068
+    },
+    "schedules/generalist-seed0-rank2.jsonl": {
+      "sha256": "1e77abb1f50fd022ba526ff29851deb7bdb06e7d95fbedea1b9723826cdafac2",
+      "size_bytes": 546124
+    },
+    "schedules/generalist-seed0-rank3.jsonl": {
+      "sha256": "52a87b0bcbbefd4ca5f6ee61bdc18b683e353f3e91b8d77a564290ee37bee2a7",
+      "size_bytes": 546113
+    },
+    "schedules/generalist-seed0-rank4.jsonl": {
+      "sha256": "8dffe9ff239aee0fbf4e29023693cefd2e1321ce84115fd37d22cdbf6b50a3d6",
+      "size_bytes": 546072
+    },
+    "schedules/generalist-seed0-rank5.jsonl": {
+      "sha256": "d59d1f22131b28d532ad9348094d04782e637e44375d98c46b0785acd220fcb4",
+      "size_bytes": 546047
+    },
+    "schedules/generalist-seed0-rank6.jsonl": {
+      "sha256": "7e9ff01172cc3cef3944b1f42941ebfbd6136cabab608e6e44bf012c3c84aef3",
+      "size_bytes": 546077
+    },
+    "schedules/generalist-seed0-rank7.jsonl": {
+      "sha256": "88c69bd302c273b69ced7e8b2d2b40587b96465ae22d19bb5343973f4800de3c",
+      "size_bytes": 546081
+    },
+    "schedules/generalist-seed1-rank0.jsonl": {
+      "sha256": "6a0895fe706c01faa966b55f2d0da936b25accf36a64c565b9afc80b156a0ef9",
+      "size_bytes": 546094
+    },
+    "schedules/generalist-seed1-rank1.jsonl": {
+      "sha256": "cf2090b7e7e28b3b8ce3f5123d4d102019d4cf9b84b93ef118c206dab00f5679",
+      "size_bytes": 546025
+    },
+    "schedules/generalist-seed1-rank2.jsonl": {
+      "sha256": "f3e516a98b84f24924c9c282a4ecfa7f12e42bef9d889c8f849b1d422cbccdf6",
+      "size_bytes": 546076
+    },
+    "schedules/generalist-seed1-rank3.jsonl": {
+      "sha256": "22273ab16ad09140d434558f2410922099bbef0035d2f438bae1d392392bd02b",
+      "size_bytes": 546103
+    },
+    "schedules/generalist-seed1-rank4.jsonl": {
+      "sha256": "a32f71a7fab9826b69e957f1ad5afd3e89bc202bc996f8b0684c736fc2340742",
+      "size_bytes": 546102
+    },
+    "schedules/generalist-seed1-rank5.jsonl": {
+      "sha256": "a3ba0c5a8a2b01d7085220937b347011ea26d16e066049e5bd3b17d3d4c3d4b6",
+      "size_bytes": 546057
+    },
+    "schedules/generalist-seed1-rank6.jsonl": {
+      "sha256": "87d786264e239e404d0f4b2e85800f1eb4ad30c1b41780d35efa9a2b578f7c1f",
+      "size_bytes": 546080
+    },
+    "schedules/generalist-seed1-rank7.jsonl": {
+      "sha256": "a68e3d4ef779a482da6e9a99e564c54fc62d97b6c2fc80a1d7b3faa4cd809842",
+      "size_bytes": 546066
+    },
+    "schedules/generalist-seed2-rank0.jsonl": {
+      "sha256": "bb30e63270b4891995642c6876c42261f91312a8a190f7677fa310635a22572c",
+      "size_bytes": 546111
+    },
+    "schedules/generalist-seed2-rank1.jsonl": {
+      "sha256": "3ee7a01ddb9388e5ce3c154efaf949e34a77f08be45e6e4b9c16c1d80d80bfbe",
+      "size_bytes": 546123
+    },
+    "schedules/generalist-seed2-rank2.jsonl": {
+      "sha256": "450474d7f4c31cc73260571a641e154e20f821386e853ffa22747b585cf7e299",
+      "size_bytes": 546093
+    },
+    "schedules/generalist-seed2-rank3.jsonl": {
+      "sha256": "e9acd4e30d181ae72fbb80c75c3eeb5917ee1a3ce06cbb42c9f0e7e83fd051c2",
+      "size_bytes": 546127
+    },
+    "schedules/generalist-seed2-rank4.jsonl": {
+      "sha256": "875255d7834c1d404a2eaa2256749c7afcde59a77a089c43956dd6bc442392bd",
+      "size_bytes": 546094
+    },
+    "schedules/generalist-seed2-rank5.jsonl": {
+      "sha256": "dd04784fd23390e80a6d66e61ddeb21c864344c3c14f1a0c48cc956d967aae9d",
+      "size_bytes": 546051
+    },
+    "schedules/generalist-seed2-rank6.jsonl": {
+      "sha256": "239ad96340cdf100c0fd8f1228b8b526f05ba412d7c3736510ab6851e1db7f51",
+      "size_bytes": 546115
+    },
+    "schedules/generalist-seed2-rank7.jsonl": {
+      "sha256": "ec5ea707debcd28f9fa473ae9750f7dd4f716c61aaee320f9111d88687754998",
+      "size_bytes": 546079
+    },
+    "schedules/math-seed0-rank0.jsonl": {
+      "sha256": "0a59a91ac5f28683de087b5e3111ba37722b76fd627ce1ef4e564ad9fe94b5bf",
+      "size_bytes": 545841
+    },
+    "schedules/math-seed0-rank1.jsonl": {
+      "sha256": "30c0d213455658b7e562509924c47c35bbe4627c0c2c86ca05ab5382ca794cc3",
+      "size_bytes": 545839
+    },
+    "schedules/math-seed0-rank2.jsonl": {
+      "sha256": "dffb010e1a8bf574d8ea01e66b197d412840b2631d89f8d6d8e26c5201c4c912",
+      "size_bytes": 545863
+    },
+    "schedules/math-seed0-rank3.jsonl": {
+      "sha256": "ad3994b1274a954206f4976a32a6609e09b6d456da8db413d287d7ee5b0bd807",
+      "size_bytes": 545840
+    },
+    "schedules/math-seed0-rank4.jsonl": {
+      "sha256": "aac69174efb78fd0e5161953f52497e72dd5aead3e8daf1ae411bb6d18fba43c",
+      "size_bytes": 545859
+    },
+    "schedules/math-seed0-rank5.jsonl": {
+      "sha256": "548251a48a58e85315618c802ddec76b0d19d9bc8c28ba779bdd52f33b2eb9ac",
+      "size_bytes": 545837
+    },
+    "schedules/math-seed0-rank6.jsonl": {
+      "sha256": "86e97800973cb2ada688bb58b650794c45fbb4cd09c94930b227f899b6cd2482",
+      "size_bytes": 545859
+    },
+    "schedules/math-seed0-rank7.jsonl": {
+      "sha256": "c1da2f599899c2a0c6e8b7a1870f6316f05b206e1f057f759b52e358d931778d",
+      "size_bytes": 545856
+    },
+    "schedules/math-seed1-rank0.jsonl": {
+      "sha256": "977c274a68181a1a9b2c3f7978161971d0f7c76fe426ea802e2b7f13834b44c8",
+      "size_bytes": 545839
+    },
+    "schedules/math-seed1-rank1.jsonl": {
+      "sha256": "d8e089b4da16c3416c4914706932a9d3dea59738f54e356a9d63950433102aad",
+      "size_bytes": 545838
+    },
+    "schedules/math-seed1-rank2.jsonl": {
+      "sha256": "35d5877ce163ff5b1cf0d05f436a0ef5feba90e2075ee2eb264cd8d6025b89bd",
+      "size_bytes": 545867
+    },
+    "schedules/math-seed1-rank3.jsonl": {
+      "sha256": "0e9bdcbdcefa89f96d321a9f37a15494fee397acad20913fc8f8610cec80b315",
+      "size_bytes": 545840
+    },
+    "schedules/math-seed1-rank4.jsonl": {
+      "sha256": "a34d9b14a9dd86a1af8a64b656beb1cbe008108a259fab7da08c27810fb5d590",
+      "size_bytes": 545857
+    },
+    "schedules/math-seed1-rank5.jsonl": {
+      "sha256": "2e258bd5e2a03d28920cfc1791dd59a3b75fd44c7d4b536ff4e69c1b82169ac1",
+      "size_bytes": 545837
+    },
+    "schedules/math-seed1-rank6.jsonl": {
+      "sha256": "5c3ec0bc118c49db342223faea806c7fa68bc92cfb03c6490ab4fc99431fe168",
+      "size_bytes": 545859
+    },
+    "schedules/math-seed1-rank7.jsonl": {
+      "sha256": "baf56acc1d60d22639f36414832c471ab22b389fe0d30b9017486a70c9f3e66d",
+      "size_bytes": 545857
+    },
+    "schedules/math-seed2-rank0.jsonl": {
+      "sha256": "ad68d7664bf1630e29cbb83e4ea305e452991a789f6fcefb0b49014b5ed42c37",
+      "size_bytes": 545839
+    },
+    "schedules/math-seed2-rank1.jsonl": {
+      "sha256": "3b5dea460382e1ff47045d8cec1fdd29f9c52dd71a3c222bb70dfc0b862c1564",
+      "size_bytes": 545840
+    },
+    "schedules/math-seed2-rank2.jsonl": {
+      "sha256": "15a5560789c35783f6015a7a9c48be0751a53399d4291677d3803a0270d324d6",
+      "size_bytes": 545865
+    },
+    "schedules/math-seed2-rank3.jsonl": {
+      "sha256": "bcd9863469403d9a7a05a01536ca43706a1abe0824c0bc79ce35b6ccd2999ff9",
+      "size_bytes": 545840
+    },
+    "schedules/math-seed2-rank4.jsonl": {
+      "sha256": "1abc964cbf96408e5a6d6dcaaf6f2ff21ae23269a177fe83f83cc1ba41ce007f",
+      "size_bytes": 545857
+    },
+    "schedules/math-seed2-rank5.jsonl": {
+      "sha256": "57440d008a918e25f4c8e7ff2910594d0d2d03091254bcd2b42d1e57639b059a",
+      "size_bytes": 545839
+    },
+    "schedules/math-seed2-rank6.jsonl": {
+      "sha256": "88d431ff4e3e30361cc197d1bbff4fe0b0af603ba1f5bd5a5ffa64e10d814e81",
+      "size_bytes": 545862
+    },
+    "schedules/math-seed2-rank7.jsonl": {
+      "sha256": "4a51d492aad587c5a452c5ddd6661c0ef4ee8db5fbbc33292f052bf9e72309c4",
+      "size_bytes": 545861
+    }
+  },
+  "identity_sha256": "7bc55fcce7f947950cb152ef4e561fa0967281f53df7804f4dbad3cdd033a048",
+  "logical_budget_per_run": {
+    "attempted_and_successful_updates": 1536,
+    "dense_slots": 25165824,
+    "effective_base_contexts": 786432,
+    "examples": 12288,
+    "per_head_effective_contexts": [
+      786432,
+      786432,
+      786432,
+      786432,
+      786432,
+      786432,
+      786432
+    ]
+  },
+  "plans": [
+    {
+      "identity_sha256": "c44bc34194f4030c629b7d161ec1d1abb6d5122a95e75e1bce494583dae64a27",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-code-original-s0.json",
+      "run_id": "rq1-pilot-24-20261113-v3-code-original-s0",
+      "sha256": "ad9992b4b2a4250b09ae2e8fba41640f5af66fd1ab3259c0cfa2d548810bf165"
+    },
+    {
+      "identity_sha256": "f03ea85483d4ab54382dd3b82e5c976b0bc43274daeeefcb8faa6f1f3cc8b1de",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-original-s0.json",
+      "run_id": "rq1-pilot-24-20261113-v3-generalist-original-s0",
+      "sha256": "5f0196423cc35cb2376466b223c3b2b12a41a625be77b4e6dc09c8f5164f939e"
+    },
+    {
+      "identity_sha256": "208694a87bff41f3fd41d82690757a7015c921bbc94b1ec6b4d4ee9db8b57bdb",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-target-s0.json",
+      "run_id": "rq1-pilot-24-20261113-v3-generalist-target-s0",
+      "sha256": "a65dcee7f459d62ecbf168cf7e3582653b100aef20a72463e7c70aa2a83a19d5"
+    },
+    {
+      "identity_sha256": "4e85682d9a2650f91c2a6516e147b256d726e39ae0eb5b2a5169b45fa74c8f4a",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-chat-original-s0.json",
+      "run_id": "rq1-pilot-24-20261113-v3-chat-original-s0",
+      "sha256": "db4e65f75261619b07679330760b5a05610ea36cef79ec8e756aa9f7352a864e"
+    },
+    {
+      "identity_sha256": "75b723c5806f54ad118abe890a3a3fbe0b584eebcf55aa30706155b87c5efee9",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-math-original-s0.json",
+      "run_id": "rq1-pilot-24-20261113-v3-math-original-s0",
+      "sha256": "531ec39affdaf7ca2ea726d8e89a06a25bc25ac8c92e19e06641934fd1ecee28"
+    },
+    {
+      "identity_sha256": "3a26c8008320b761b0df1b79d836f2e8f1ac1e7117b437a06c2ad3dd1986dedc",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-chat-target-s0.json",
+      "run_id": "rq1-pilot-24-20261113-v3-chat-target-s0",
+      "sha256": "ec403d3a77e8420a058fe21e36dc41049b1182cb06faaa5d25f0de2708dc2edb"
+    },
+    {
+      "identity_sha256": "ad80efafe3bd29d88b507a60a7e833157eb35a06d4de1793707620fa0cb1e166",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-math-target-s0.json",
+      "run_id": "rq1-pilot-24-20261113-v3-math-target-s0",
+      "sha256": "0c7020f672d3eb74dccae7e14065de55687c935b088d480b21deca0e52bbf3c4"
+    },
+    {
+      "identity_sha256": "102c8d66bbe9cf190f8068098727493826d96b530e8d705705873f0ee0f33953",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-code-target-s0.json",
+      "run_id": "rq1-pilot-24-20261113-v3-code-target-s0",
+      "sha256": "e2dac373ed4f5a1b62e706ce4819982e41242096f6239de83e1844680b400669"
+    },
+    {
+      "identity_sha256": "ee907ed26a62fee2b9ef762d0a434c7cdbf5e620370f598f661a68443e7f8395",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-target-s1.json",
+      "run_id": "rq1-pilot-24-20261113-v3-generalist-target-s1",
+      "sha256": "a63922c57ec4ef8d95666cc14015b0c4d3db5ae9b24b991272a3719d9ab5c114"
+    },
+    {
+      "identity_sha256": "aa7a9f93590b533c6155d3c7d58b1400be4ae9a9a8e4b2f5d6512f7455237cab",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-math-target-s1.json",
+      "run_id": "rq1-pilot-24-20261113-v3-math-target-s1",
+      "sha256": "0ad1cfd54bd2cc9d4316a35981987953f822e96e3ee43630c9b0673df428dfee"
+    },
+    {
+      "identity_sha256": "ce951a1e25d75db35385581754337af841ca0ac5ba6a1e81dc0d6e273490d6b2",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-math-original-s1.json",
+      "run_id": "rq1-pilot-24-20261113-v3-math-original-s1",
+      "sha256": "fca98741fe37508c9ae5369936aa8531e340d26e1932ad742dcc0b9f595bff55"
+    },
+    {
+      "identity_sha256": "399e083805ddc528b22707ea73bd755bfd8dd2d6d902c47adae737401f32b384",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-code-target-s1.json",
+      "run_id": "rq1-pilot-24-20261113-v3-code-target-s1",
+      "sha256": "a2de307d2e1dfa051ad314ec6d412740fe60be6ff227cd7a334c1e6361931146"
+    },
+    {
+      "identity_sha256": "c4b07390cc75dfee1a9f512128b2fc87fc5cb07c2eb1fd57205fc2b495868b13",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-original-s1.json",
+      "run_id": "rq1-pilot-24-20261113-v3-generalist-original-s1",
+      "sha256": "3a63f2e02bcff099cdd05249af4e17651615ab7027dccc2a3781de4c15a14703"
+    },
+    {
+      "identity_sha256": "efa820ee421722c8f4b64e3bf6b3faf78d8d51fc705c013ec9611fb83d012e11",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-chat-original-s1.json",
+      "run_id": "rq1-pilot-24-20261113-v3-chat-original-s1",
+      "sha256": "313848e3df1be5f26b94a6d0f8d478b8850576dca6d2f655236bcecadd23d91c"
+    },
+    {
+      "identity_sha256": "516c13cb44c7358deae4a209d3dc9adf27ac900c0179d5eef18fcfc7b135f0d9",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-chat-target-s1.json",
+      "run_id": "rq1-pilot-24-20261113-v3-chat-target-s1",
+      "sha256": "34abf8cd33b5417ad04139a68c506307a294079d39ffb5338fcea5c59219a55d"
+    },
+    {
+      "identity_sha256": "00715c24b7bc44013338dca8ebeaef2c0dbd48041b481848fabf760bdfef6adb",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-code-original-s1.json",
+      "run_id": "rq1-pilot-24-20261113-v3-code-original-s1",
+      "sha256": "d34809dda6fdc80189fd46660b176132771e054e94558dde81ed5faa0bb17255"
+    },
+    {
+      "identity_sha256": "5ece673979491cef64174262df950213c60893f7119818d7910329a6e2e325d8",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-math-target-s2.json",
+      "run_id": "rq1-pilot-24-20261113-v3-math-target-s2",
+      "sha256": "a04f3effe5e0df3e27c8a3897970d8ccd604344236ca394fb5ee2e02443fc976"
+    },
+    {
+      "identity_sha256": "243836157f86542ce5ab8c2299aa1f5157ca4d8d832e64f72a1285580293ae94",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-code-target-s2.json",
+      "run_id": "rq1-pilot-24-20261113-v3-code-target-s2",
+      "sha256": "c1c0483357f73a3fba97b50a74e6654fd2b2ce3191a05af3ab25d3f70784bc42"
+    },
+    {
+      "identity_sha256": "1bde4cc9face86ab2b7ec79af84bffe086af4c7db94523275161ebdb33699fe9",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-code-original-s2.json",
+      "run_id": "rq1-pilot-24-20261113-v3-code-original-s2",
+      "sha256": "2e64c3adcd8ca192013d2ac0a5e02f75ba82746bd296b802aafcf6aab9303fcb"
+    },
+    {
+      "identity_sha256": "d188e5bfef9f077fa54bbafd8ea0f7b18c3cd4c605e3dd04f4987f13b3823f9d",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-target-s2.json",
+      "run_id": "rq1-pilot-24-20261113-v3-generalist-target-s2",
+      "sha256": "5971bcf8fc8e1ca42b8f2fe4679feed1e99823a830e8df4a7f6868cfe29d5716"
+    },
+    {
+      "identity_sha256": "bc34fc523bf0647270299f49b0ad92bcf5ee7627856a55cbc6325bae8afe4af9",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-chat-original-s2.json",
+      "run_id": "rq1-pilot-24-20261113-v3-chat-original-s2",
+      "sha256": "82eb746396791c011d05ab4db5b0b2e6f958c935ea30d711521c300b89db2c5a"
+    },
+    {
+      "identity_sha256": "8a6a1308d48d520c767968041b88172d727777d5e3c9a80f73543274505cdfde",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-generalist-original-s2.json",
+      "run_id": "rq1-pilot-24-20261113-v3-generalist-original-s2",
+      "sha256": "bb5940c695d531e4666d9cc0a1143b4657e1defdeb90b924380b55d26aa57b47"
+    },
+    {
+      "identity_sha256": "ca54e97589ab1a0e514a16ea2cc0a88a4913968539eefcceaa088ba44cf32b29",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-chat-target-s2.json",
+      "run_id": "rq1-pilot-24-20261113-v3-chat-target-s2",
+      "sha256": "17553675d27b201400e9309f98d42dd3d38fb39bcec63ba68787e833ab8c400d"
+    },
+    {
+      "identity_sha256": "05c0d7c6738958fbd4e377b9a3b73be3d25485fe81e64753bd6473f1cf7d404e",
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/plans/rq1-pilot-24-20261113-v3-math-original-s2.json",
+      "run_id": "rq1-pilot-24-20261113-v3-math-original-s2",
+      "sha256": "9157fc0b8e6f631afe817a51b8d58bd7870d2c597aa4695f2e24cb4dcf0b4b9d"
+    }
+  ],
+  "schedule_statistics": {
+    "chat-seed0-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed0-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed0-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed0-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed0-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed0-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed0-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed0-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed1-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed1-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed1-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed1-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed1-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed1-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed1-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed1-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed2-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed2-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed2-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed2-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed2-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed2-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed2-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "chat-seed2-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "code-seed0-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 528,
+        "3": 160
+      },
+      "repeated_exposures": 848,
+      "unique_base_contexts_original_target": [
+        58923,
+        87381
+      ],
+      "unique_examples": 688
+    },
+    "code-seed0-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 414,
+        "3": 236
+      },
+      "repeated_exposures": 886,
+      "unique_base_contexts_original_target": [
+        55887,
+        86121
+      ],
+      "unique_examples": 650
+    },
+    "code-seed0-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 516,
+        "3": 168
+      },
+      "repeated_exposures": 852,
+      "unique_base_contexts_original_target": [
+        57541,
+        86951
+      ],
+      "unique_examples": 684
+    },
+    "code-seed0-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 450,
+        "3": 212
+      },
+      "repeated_exposures": 874,
+      "unique_base_contexts_original_target": [
+        57516,
+        86840
+      ],
+      "unique_examples": 662
+    },
+    "code-seed0-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 510,
+        "3": 172
+      },
+      "repeated_exposures": 854,
+      "unique_base_contexts_original_target": [
+        58546,
+        87551
+      ],
+      "unique_examples": 682
+    },
+    "code-seed0-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 558,
+        "3": 140
+      },
+      "repeated_exposures": 838,
+      "unique_base_contexts_original_target": [
+        59295,
+        87859
+      ],
+      "unique_examples": 698
+    },
+    "code-seed0-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 459,
+        "3": 206
+      },
+      "repeated_exposures": 871,
+      "unique_base_contexts_original_target": [
+        57679,
+        87391
+      ],
+      "unique_examples": 665
+    },
+    "code-seed0-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 624,
+        "3": 96
+      },
+      "repeated_exposures": 816,
+      "unique_base_contexts_original_target": [
+        60733,
+        88343
+      ],
+      "unique_examples": 720
+    },
+    "code-seed1-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 528,
+        "3": 160
+      },
+      "repeated_exposures": 848,
+      "unique_base_contexts_original_target": [
+        58745,
+        87488
+      ],
+      "unique_examples": 688
+    },
+    "code-seed1-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 414,
+        "3": 236
+      },
+      "repeated_exposures": 886,
+      "unique_base_contexts_original_target": [
+        55880,
+        86130
+      ],
+      "unique_examples": 650
+    },
+    "code-seed1-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 516,
+        "3": 168
+      },
+      "repeated_exposures": 852,
+      "unique_base_contexts_original_target": [
+        57741,
+        87050
+      ],
+      "unique_examples": 684
+    },
+    "code-seed1-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 450,
+        "3": 212
+      },
+      "repeated_exposures": 874,
+      "unique_base_contexts_original_target": [
+        57473,
+        87025
+      ],
+      "unique_examples": 662
+    },
+    "code-seed1-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 510,
+        "3": 172
+      },
+      "repeated_exposures": 854,
+      "unique_base_contexts_original_target": [
+        57984,
+        87219
+      ],
+      "unique_examples": 682
+    },
+    "code-seed1-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 558,
+        "3": 140
+      },
+      "repeated_exposures": 838,
+      "unique_base_contexts_original_target": [
+        59638,
+        87898
+      ],
+      "unique_examples": 698
+    },
+    "code-seed1-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 459,
+        "3": 206
+      },
+      "repeated_exposures": 871,
+      "unique_base_contexts_original_target": [
+        57762,
+        87324
+      ],
+      "unique_examples": 665
+    },
+    "code-seed1-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 624,
+        "3": 96
+      },
+      "repeated_exposures": 816,
+      "unique_base_contexts_original_target": [
+        60706,
+        88305
+      ],
+      "unique_examples": 720
+    },
+    "code-seed2-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 528,
+        "3": 160
+      },
+      "repeated_exposures": 848,
+      "unique_base_contexts_original_target": [
+        58886,
+        87342
+      ],
+      "unique_examples": 688
+    },
+    "code-seed2-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 414,
+        "3": 236
+      },
+      "repeated_exposures": 886,
+      "unique_base_contexts_original_target": [
+        56058,
+        85975
+      ],
+      "unique_examples": 650
+    },
+    "code-seed2-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 516,
+        "3": 168
+      },
+      "repeated_exposures": 852,
+      "unique_base_contexts_original_target": [
+        57654,
+        87148
+      ],
+      "unique_examples": 684
+    },
+    "code-seed2-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 450,
+        "3": 212
+      },
+      "repeated_exposures": 874,
+      "unique_base_contexts_original_target": [
+        57749,
+        87043
+      ],
+      "unique_examples": 662
+    },
+    "code-seed2-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 510,
+        "3": 172
+      },
+      "repeated_exposures": 854,
+      "unique_base_contexts_original_target": [
+        58285,
+        87465
+      ],
+      "unique_examples": 682
+    },
+    "code-seed2-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 558,
+        "3": 140
+      },
+      "repeated_exposures": 838,
+      "unique_base_contexts_original_target": [
+        59247,
+        87494
+      ],
+      "unique_examples": 698
+    },
+    "code-seed2-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 459,
+        "3": 206
+      },
+      "repeated_exposures": 871,
+      "unique_base_contexts_original_target": [
+        57753,
+        87162
+      ],
+      "unique_examples": 665
+    },
+    "code-seed2-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "code": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "2": 624,
+        "3": 96
+      },
+      "repeated_exposures": 816,
+      "unique_base_contexts_original_target": [
+        60613,
+        88415
+      ],
+      "unique_examples": 720
+    },
+    "generalist-seed0-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed0-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed0-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed0-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed0-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed0-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed0-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed0-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed1-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed1-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed1-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed1-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed1-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed1-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed1-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed1-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed2-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed2-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed2-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed2-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed2-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed2-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed2-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "generalist-seed2-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "chat": 512,
+        "code": 512,
+        "math": 512
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "math-seed0-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1388,
+        "2": 74
+      },
+      "repeated_exposures": 74,
+      "unique_base_contexts_original_target": [
+        95265,
+        97262
+      ],
+      "unique_examples": 1462
+    },
+    "math-seed0-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "math-seed0-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1486,
+        "2": 25
+      },
+      "repeated_exposures": 25,
+      "unique_base_contexts_original_target": [
+        97243,
+        97915
+      ],
+      "unique_examples": 1511
+    },
+    "math-seed0-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1330,
+        "2": 103
+      },
+      "repeated_exposures": 103,
+      "unique_base_contexts_original_target": [
+        94640,
+        96929
+      ],
+      "unique_examples": 1433
+    },
+    "math-seed0-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "math-seed0-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1460,
+        "2": 38
+      },
+      "repeated_exposures": 38,
+      "unique_base_contexts_original_target": [
+        96758,
+        97795
+      ],
+      "unique_examples": 1498
+    },
+    "math-seed0-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1366,
+        "2": 85
+      },
+      "repeated_exposures": 85,
+      "unique_base_contexts_original_target": [
+        95131,
+        97120
+      ],
+      "unique_examples": 1451
+    },
+    "math-seed0-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1422,
+        "2": 57
+      },
+      "repeated_exposures": 57,
+      "unique_base_contexts_original_target": [
+        96168,
+        97473
+      ],
+      "unique_examples": 1479
+    },
+    "math-seed1-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1388,
+        "2": 74
+      },
+      "repeated_exposures": 74,
+      "unique_base_contexts_original_target": [
+        95345,
+        97324
+      ],
+      "unique_examples": 1462
+    },
+    "math-seed1-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "math-seed1-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1486,
+        "2": 25
+      },
+      "repeated_exposures": 25,
+      "unique_base_contexts_original_target": [
+        97379,
+        98002
+      ],
+      "unique_examples": 1511
+    },
+    "math-seed1-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1330,
+        "2": 103
+      },
+      "repeated_exposures": 103,
+      "unique_base_contexts_original_target": [
+        94087,
+        96762
+      ],
+      "unique_examples": 1433
+    },
+    "math-seed1-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "math-seed1-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1460,
+        "2": 38
+      },
+      "repeated_exposures": 38,
+      "unique_base_contexts_original_target": [
+        96826,
+        97749
+      ],
+      "unique_examples": 1498
+    },
+    "math-seed1-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1366,
+        "2": 85
+      },
+      "repeated_exposures": 85,
+      "unique_base_contexts_original_target": [
+        94951,
+        97138
+      ],
+      "unique_examples": 1451
+    },
+    "math-seed1-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1422,
+        "2": 57
+      },
+      "repeated_exposures": 57,
+      "unique_base_contexts_original_target": [
+        96305,
+        97588
+      ],
+      "unique_examples": 1479
+    },
+    "math-seed2-rank0.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2493,
+        "code": 688,
+        "math": 1462
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1388,
+        "2": 74
+      },
+      "repeated_exposures": 74,
+      "unique_base_contexts_original_target": [
+        95291,
+        97321
+      ],
+      "unique_examples": 1462
+    },
+    "math-seed2-rank1.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2366,
+        "code": 650,
+        "math": 1539
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "math-seed2-rank2.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2392,
+        "code": 684,
+        "math": 1511
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1486,
+        "2": 25
+      },
+      "repeated_exposures": 25,
+      "unique_base_contexts_original_target": [
+        97451,
+        98009
+      ],
+      "unique_examples": 1511
+    },
+    "math-seed2-rank3.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2426,
+        "code": 662,
+        "math": 1433
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1330,
+        "2": 103
+      },
+      "repeated_exposures": 103,
+      "unique_base_contexts_original_target": [
+        94493,
+        96905
+      ],
+      "unique_examples": 1433
+    },
+    "math-seed2-rank4.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2415,
+        "code": 682,
+        "math": 1575
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1536
+      },
+      "repeated_exposures": 0,
+      "unique_base_contexts_original_target": [
+        98304,
+        98304
+      ],
+      "unique_examples": 1536
+    },
+    "math-seed2-rank5.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2330,
+        "code": 698,
+        "math": 1498
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1460,
+        "2": 38
+      },
+      "repeated_exposures": 38,
+      "unique_base_contexts_original_target": [
+        96893,
+        97748
+      ],
+      "unique_examples": 1498
+    },
+    "math-seed2-rank6.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2448,
+        "code": 665,
+        "math": 1451
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1366,
+        "2": 85
+      },
+      "repeated_exposures": 85,
+      "unique_base_contexts_original_target": [
+        95184,
+        97238
+      ],
+      "unique_examples": 1451
+    },
+    "math-seed2-rank7.jsonl": {
+      "dense_slots": 3145728,
+      "domain_examples": {
+        "math": 1536
+      },
+      "effective_contexts": 98304,
+      "per_head_effective_contexts": [
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304,
+        98304
+      ],
+      "pool_examples": {
+        "chat": 2410,
+        "code": 720,
+        "math": 1479
+      },
+      "repeat_multiplicity_histogram": {
+        "1": 1422,
+        "2": 57
+      },
+      "repeated_exposures": 57,
+      "unique_base_contexts_original_target": [
+        96431,
+        97618
+      ],
+      "unique_examples": 1479
+    }
+  },
+  "scope": "common_ancestor_matched_budget_finetuning_pilot",
+  "status": "prepared_24_waiting_qualification",
+  "training_admitted": false
+}

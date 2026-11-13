@@ -1,0 +1,44 @@
+{
+  "blocking_source_findings": [],
+  "decision": "approved_source_only_for_actual_review_and_live_resource_gated_pilot_handoff",
+  "deployment_conditions": [
+    "Deploy only after the separate actual V9/compiled scientific review exists and its exact SHA is known. This source receipt provides no scientific approval.",
+    "Freeze this guard and the exact approved compiler/base/supporting package, and use the unchanged complete original producer bundle identified by the reviewed new study.",
+    "Ensure the replaced old CPU waiter has no admission and no attached GPU work before stopping only that CPU coordinator; preserve every protected allocation/holding continuation.",
+    "If the holder changes/disappears during integration, the second resource check stops before training. Preserve any already written valid scientific admission and diagnose the handoff; do not delete/reinterpret it or bypass the producer resource checks."
+  ],
+  "limitations": [
+    "Mocked tests establish lifecycle ordering and artifact checks, not actual resource availability or scientific evidence.",
+    "An allocation can change after any read; the postintegration check and unchanged frozen pipeline revalidate ownership. This guard does not promise atomic resource ownership across a long evidence rehash.",
+    "No numerical, data, optimizer, hardware mapping, budget or scientific policy change is introduced."
+  ],
+  "production_training_source_jobs_or_admission_mutated_by_reviewer": false,
+  "reviewed_at_utc": "2026-11-13T14:34:40.368586+00:00",
+  "reviewed_boundaries": [
+    "Requires CPU Slurm, the exact fresh study path, caller-pinned actual independent review SHA with scientific approval, exact44b803new14check compiler, report SHA and matching report/review/manifest binding. A source-only review or unseen analysis cannot satisfy this entry condition.",
+    "Checks the original producer source directory matches the manifest, requires a nonempty retained producer file manifest and rehashes every listed file. Actual source/model/data completeness and integrity remain enforced by strict evidence integration and the unchanged frozen producer worker gates.",
+    "Waits up to48hours for the existing holder verifier to confirm a live owned high-priority/spec-priority full8GPU protected allocation. During the wait it writes only a resource-wait receipt and no scientific admission or GPU work. It allocates/cancels no jobs and mutates no holder/successor.",
+    "Rechecks approval/report bytes after resource availability, invokes the strict separately reviewed14check compiler integration with independent review and complete artifact rehash, then verifies the same live holder again before handing off.",
+    "The only training entry is the unchanged source-frozen pilot_pipeline in its original producer PYTHONPATH. Its allocation, source, scientific review and run/controller locks remain active."
+  ],
+  "reviewer": "independent-agent-native-evidence-review",
+  "scientific_training_admitted": false,
+  "scope": "separate_cpu_resource_wait_integration_and_unchanged_frozen_pipeline_handoff_only",
+  "source_sha256": {
+    "experiments/verification/release_pilot_when_allocated_20261113.py": "c55e90e55aac6539a2f93474f2b4a0b20d5139645370641bd87c6698044ac8b3",
+    "tests/test_pilot_resource_handoff.py": "a41cedf2359b27803aa69932d9554a7aa69aa115f3ea282ea99467158ae0ee4f"
+  },
+  "validation": {
+    "actual_resource_wait_or_integration_or_gpu_launch_claimed": false,
+    "ast_parse": "passed",
+    "command": "PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests -p test_pilot_resource_handoff.py",
+    "focused_tests_passed": 5,
+    "important_cases": [
+      "no integration/launch until holder becomes valid",
+      "changed review rejected before resource wait",
+      "changed report during wait rejected before integration",
+      "resource timeout creates no admission",
+      "empty producer file manifest rejected"
+    ]
+  }
+}

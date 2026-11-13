@@ -1,0 +1,33 @@
+{
+  "job_id": "2217640",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--hold",
+    "--account=grad-students",
+    "--partition=low-priority",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=2",
+    "--mem=16G",
+    "--time=96:00:00",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--job-name=taps-pilot-v3-resource",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-resource-handoff-20261113-v1/release-%j.log",
+    "--wrap",
+    "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-resource-handoff-20261113-v1/release.sh"
+  ],
+  "verified_slurm": "JobId=2217640 JobName=taps-pilot-v3-resource UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=4-00:00:00 TimeMin=N/A SubmitTime=2026-11-13T09:55:09 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-13T09:55:09 Scheduler=Main Partition=low-priority AllocNode:Sid=mslurm:1156157 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=2 NumTasks=1 CPUs/Task=2 ReqB:S:C:T=0:0:*:* TRES=cpu=2,mem=16G,node=1,billing=2 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=2 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-resource-handoff-20261113-v1/release-2217640.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-resource-handoff-20261113-v1/release-2217640.log Power= \n",
+  "review_sha256": "14c8fc4b831724f19c3c93fc72fa246b5691e062958a7a47f964ef19736ab8a5",
+  "qualification_report_sha256": "8bb13bef08ef73121affe85bfcc51f8d56fadeb486b117339f3a1396c3b70783",
+  "source_sha256": "c55e90e55aac6539a2f93474f2b4a0b20d5139645370641bd87c6698044ac8b3",
+  "replaced_cpu_waiter": {
+    "job_id": "2217522",
+    "cancelled": true,
+    "prior_verified_slurm": "JobId=2217522 JobName=taps-pilot-v3-train UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=normal JobState=RUNNING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=03:47:32 TimeLimit=1-12:00:00 TimeMin=N/A SubmitTime=2026-11-13T05:27:04 EligibleTime=2026-11-13T06:07:10 AccrueTime=2026-11-13T06:07:10 StartTime=2026-11-13T06:07:37 EndTime=2026-11-14T18:07:37 Deadline=N/A PreemptEligibleTime=2026-11-13T06:07:37 PreemptTime=None SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-13T06:07:37 Scheduler=Backfill Partition=low-priority AllocNode:Sid=mslurm:924357 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=deep-chungus-6 BatchHost=deep-chungus-6 NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* TRES=cpu=2,node=1,billing=2 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=8G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261113-v4/train-2217522.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-training-20261113-v4/train-2217522.log Power= KillOInInvalidDependent=Yes \n"
+  },
+  "scope": "Actualindependentapprovalcomplete; CPUresourceguard waitsverifiedprotectedHP8holder beforeartifactrehash/admission and unchanged24pilotcontroller; allGPUholders/successorsuntouched",
+  "submitted_at_utc": "2026-11-13T14:55:10.578058+00:00"
+}

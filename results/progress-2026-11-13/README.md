@@ -1,11 +1,13 @@
 # 13 November execution evidence
 
-The [stage status](../../experiments/STATUS_20261113.md) records the live inspection and outstanding work. Submission receipts describe scheduler intent and verified settings, not successful training.
+At the [14:57 UTC snapshot](live-progress-latest.json), all eight A100 80GB GPUs on deep11 were training the corrected generalist: 7,107 successful updates per rank and a committed 7,000-update checkpoint. The protected deep10 successor remained pending. No fixed-budget pilot has completed.
 
-- [Native admission compilation](native-v4-compilation-submission.json): frozen independently reviewed admission-only bridge and compiler; actual report review is still required.
-- [Pilot teacher diagnostic](pilot-teacher-gate-probe-submission.json): exact frozen failing schedule, eight physical pilot GPUs, no optimizer updates or scientific resume.
-- [Integrated native admission](native-v4-admission.json) and [fresh native coordinator](native-v4-science-submission.json): independently reviewed actual evidence; startup is distinct from successful optimizer execution.
-- [Replacement pilot chain](pilot-v3-guard-v2-full-queue.json): exact-helper/source/schedule guard, prospective runtime envelope,208-update engineering prefix,12 qualification phases and fresh zero-LR replay. Scientific admission remains required.
-- [Exact diagnostic records](teacher-diagnostics/): retained v1 failure reproduction, v2 buffer intervention and v3 production-helper proof, with all eight rank records and their original completion hashes.
+The fresh pilot passed its 208-update regression on all eight ranks, all 12 standard qualification phases, all 14 independent replay checks and separate actual evidence review. Its [resource handoff](pilot-reviewed-resource-handoff-submission.json) is running in Slurm and waits for the verified owned high-priority allocation before rehash, integration and training.
 
-Original native raw/runtime/stock and pilot qualification receipts are retained under [independent reviews](../../experiments/verification/reviews/). Historical failed evidence remains present. The corrected generalist has completed an engineering profile, not its forty-epoch scientific recipe. The pilot has no completed fixed-budget run.
+- [Stage status](../../experiments/STATUS_20261113.md) maps observed progress to the PDF requirements.
+- [Native admission](native-v4-admission.json), [fresh generalist coordinator](native-v4-science-submission.json) and [same-node continuation](corrected-generalist-continuation-submission.json) retain the exact source/checkpoint and scheduling boundaries.
+- [Teacher diagnostics](teacher-diagnostics/) retain the failure reproduction, buffer intervention and production-helper proof with all eight rank records and original completion hashes.
+- [Independent V9 replay](pilot-v9-independent-replay-submission.json) and [14-check report compilation](pilot-v9-qualification-compilation-submission.json) completed successfully. Their [actual replay](../../experiments/verification/reviews/direct-pilot-v3-full-v9.json), [compiled report](../../experiments/verification/reviews/direct-pilot-v3-qualification-report.json) and [separate scientific approval](../../experiments/verification/reviews/pilot-v3-scientific-evidence-approval-20261113.json) preserve the complete evidence bindings.
+- [Replacement preparation and qualification chain](pilot-v3-guard-v2-full-queue.json) preserves the sealed original data, vocabulary, Q and all 96 schedule/mask files. Failed earlier preparations and the old 207-update scientific attempt remain recorded.
+
+Source review, completed engineering, scientific approval, actual training and held-out results are separate states. The full forty-epoch generalist, 24 completed pilots, evaluated quality/speed and later PDF studies remain outstanding. Queued jobs are not completed results.

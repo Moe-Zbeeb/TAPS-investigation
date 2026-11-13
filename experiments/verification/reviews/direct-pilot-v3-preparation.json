@@ -1,0 +1,32 @@
+{
+  "all40_complete_selected_logit_identities_match": true,
+  "all96_schedule_file_sha256_unchanged": true,
+  "exact_gpu_helper_ast_sha256": {
+    "restore_teacher_buffers": "8cd17e23ce0a4e0f4dfff7a8fa5f291103e4ada9c11789920db902b2b767e37b",
+    "teacher_buffer_snapshot": "0d97237271b12ea302b66e92279aad1471074f45a17f08eab959b3c25fa60a85"
+  },
+  "failed_scientific_run_resumed": false,
+  "helper_equivalence": "Exact independently reviewed full worker bytes plus same-interpreter AST equality between retained executed GPU helpers and final worker; AST display hashes from different Python versions are retained separately",
+  "manifest": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261113-v3/manifest.json",
+    "sha256": "b26599d4644a33c054f6a24853eedae9241ee0f3d6473cbd5fb6a3ef3fbcbdd9"
+  },
+  "probe_completion_sha256": "e551c801c35e4c0da8c60679ba066d02ca9e2a114fb5028db29b654e6b20cf6a",
+  "probe_rank_json_sha256": {
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/diagnostics/pilot-teacher-gate-20261113-v3/rank-0.json": "20f516526ef5c9285e23f4da428baab7e968f02c1e5c2f761655eb56a8fe3f72",
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/diagnostics/pilot-teacher-gate-20261113-v3/rank-1.json": "dbebe48bf60d2aa55f2fda238f403e7461aade18f04db68ac862dc346081dd77",
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/diagnostics/pilot-teacher-gate-20261113-v3/rank-2.json": "942ea96937c27b52bc3b48e84d05581855aef31bd6419d0287f4c1aa2772bce7",
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/diagnostics/pilot-teacher-gate-20261113-v3/rank-3.json": "9a430fc76ff698fe72ceccf6bbd0d7b17206538daf813c8af37016ddd1cc22d5",
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/diagnostics/pilot-teacher-gate-20261113-v3/rank-4.json": "39217643b3457d4df353ae51e6213ef066009b06ae914de85aac6d4449fb6cb9",
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/diagnostics/pilot-teacher-gate-20261113-v3/rank-5.json": "f6256d8b2d8fe2462ab64aa630c22d2be21e03a50d3a21a43ab3c9cadc241abe",
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/diagnostics/pilot-teacher-gate-20261113-v3/rank-6.json": "6a45ceaa2a779fd445bb2ce9e2a48dcfc6eba742927f5e183dbc6bc900e98aa0",
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/diagnostics/pilot-teacher-gate-20261113-v3/rank-7.json": "90467232244acdb153de6992404e46a9d7e45ea4c68b8a59af18fa241d9ed78a"
+  },
+  "reviewed_helper_ast_sha256_python314": {
+    "restore_teacher_buffers": "5b7e2386e09c91714de0778f6805a5b9c3cb73048b80c86bf053505b6e146a54",
+    "teacher_buffer_snapshot": "1fc92dc524bdc28792ef2b08bf38d6d3a4db1ba3714ea1678465a0254b13d303"
+  },
+  "scientific_training_admitted": false,
+  "source_review_sha256": "fa1485adffbd5494c196ba08efc204448af2da758511fe285f314ea4ced3162c",
+  "status": "prepared_fresh_teacher_policy_study_for_bounded_engineering"
+}
