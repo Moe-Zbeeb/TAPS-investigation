@@ -7,6 +7,7 @@ import sys
 import time
 
 from . import native_full_body as corrected, native_training as native
+from . import native_full_body_bridge as bridge
 from .native_full_body_queue import descriptor, verify_holder
 from .pilot_cache import read, require
 
@@ -21,12 +22,14 @@ def prepare(root, preparation, approval, run_id):
     require(native.digest(profile_path) == queue['plans']['profile']['sha256'], 'Corrected profile plan changed')
     profile = read(profile_path)
     require(read(profile_path.parent / 'launch.json')['status'] == 'complete', 'Corrected full-data profile has not completed')
-    config = {**profile['config'], 'pipeline_stage': 'corrected-full-v3', 'budget': {'optimizer_steps': None}, 'recovery': {'checkpoint_interval': 1000, 'stop_after_optimizer_step': None}, 'qualification': 'Fresh corrected scratch generalist; forty native epochs; independent scientific admission required', 'full_body_v3': {**profile['config']['full_body_v3'], 'maximum_attempted_optimizer_steps': None, 'capture_gradient_partitions': False, 'scientific_admission': descriptor(approval)}}
+    approval_value = read(approval)
+    require(approval_value['admission_bridge']['sha256'] == native.digest(bridge.__file__), 'Corrected full bridge source differs from actual independent approval')
+    config = {**profile['config'], 'pipeline_stage': bridge.STAGE, 'budget': {'optimizer_steps': None}, 'recovery': {'checkpoint_interval': 1000, 'stop_after_optimizer_step': None}, 'qualification': 'Fresh corrected scratch generalist; forty native epochs; separately reviewed exact-interpreter admission bridge', 'full_body_v3': {**profile['config']['full_body_v3'], 'maximum_attempted_optimizer_steps': None, 'capture_gradient_partitions': False, 'scientific_admission': descriptor(approval), 'admission_bridge': approval_value['admission_bridge']}}
     output = Path(root) / 'outputs/native-full-body-science' / run_id
     require(not output.exists(), 'Corrected scientific preparation already exists')
     output.mkdir(parents=True)
     native.atomic_json(output / 'config.json', config)
-    plan = corrected.prepare(root, output / 'config.json', profile['train']['frozen_path'], profile['validation']['frozen_path'], Path(root) / 'outputs/native-training' / run_id)
+    plan = bridge.prepare(root, output / 'config.json', profile['train']['frozen_path'], profile['validation']['frozen_path'], Path(root) / 'outputs/native-training' / run_id)
     status = {'status': 'prepared_fresh_corrected_scientific_generalist', 'plan': descriptor(Path(plan['run_dir']) / 'plan.json'), 'approval': descriptor(approval), 'source_sha256': corrected.sources(), 'controller': descriptor(__file__), 'old_generalist_never_resumed': True}
     native.atomic_json(output / 'preparation.json', status)
     return status
@@ -38,7 +41,7 @@ def run(root, preparation, approval, run_id, attached=False):
         require(status['source_sha256'] == corrected.sources() and native.digest(status['plan']['path']) == status['plan']['sha256'], 'Corrected scientific prepared plan changed')
         require(status['controller'] == descriptor(__file__) and status['approval'] == descriptor(approval), 'Corrected scientific controller or approval content changed')
         path = Path(status['plan']['path'])
-        command = [str(Path(root) / 'envs/native-eagle3/bin/python'), '-B', str(path.parent / 'inputs/native_full_body.py'), 'launch', '--plan', str(path)]
+        command = [str(Path(root) / 'envs/native-eagle3/bin/python'), '-B', str(path.parent / 'inputs/native_full_body_bridge.py'), 'launch', '--plan', str(path)]
         subprocess.run(command, check=True)
         return
     native.require_slurm()

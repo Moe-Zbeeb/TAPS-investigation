@@ -1,0 +1,30 @@
+{
+  "controller_pid": 117432,
+  "command": [
+    "srun",
+    "--jobid=2212580",
+    "--account=grad-students",
+    "--partition=high-priority",
+    "--qos=spec-priority",
+    "--overlap",
+    "--nodes=1",
+    "--ntasks=1",
+    "--cpus-per-task=16",
+    "--gres=none",
+    "--mem=0",
+    "--immediate=5",
+    "--time=00:20:00",
+    "--job-name=taps-evidence-prefetch",
+    "/usr/bin/env",
+    "CUDA_VISIBLE_DEVICES=",
+    "/usr/bin/python3",
+    "-B",
+    "-S",
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-evidence-prefetch-20261112-v1/evidence_prefetch.py",
+    "--report",
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/qualification-report.json"
+  ],
+  "holder_job_id": "2212580",
+  "source_path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-evidence-prefetch-20261112-v1/evidence_prefetch.py",
+  "scope": "readonlyparallelCPUevidenceprefetch; nohashverificationbypassornoGPUwork"
+}

@@ -1,0 +1,1735 @@
+{
+  "analyzer_sha256": "21683ef5a41505cb73d9db59570a55752835309e65995fc283cfb4f7edefb709",
+  "artifact_inventory": {
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/LICENSE": {
+      "sha256": "64e1b2889b7892e6bbe7a7ed5bfe6ff793c61f9d584345f8f41cf9f5cb30a369",
+      "size_bytes": 7627
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/USE_POLICY.md": {
+      "sha256": "a568f2ebc73cec3fd74ba2afd992d4e945a8c7a9d851f9b66163aac834b7b859",
+      "size_bytes": 4691
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/config.json": {
+      "sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "size_bytes": 855
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/generation_config.json": {
+      "sha256": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd",
+      "size_bytes": 184
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00001-of-00004.safetensors": {
+      "sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+      "size_bytes": 4976698672
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00002-of-00004.safetensors": {
+      "sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+      "size_bytes": 4999802720
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00003-of-00004.safetensors": {
+      "sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+      "size_bytes": 4915916176
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model-00004-of-00004.safetensors": {
+      "sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+      "size_bytes": 1168138808
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/model.safetensors.index.json": {
+      "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+      "size_bytes": 23950
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/special_tokens_map.json": {
+      "sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "size_bytes": 296
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/tokenizer.json": {
+      "sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+      "size_bytes": 9085657
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/llama31-instruct-8b/tokenizer_config.json": {
+      "sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "size_bytes": 55351
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/latest": {
+      "sha256": "4ba69735ca53765ed6a709edb56c6ea236b7193a3b29a6b390c346f0f4340e4e",
+      "size_bytes": 5
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/manifest.json": {
+      "sha256": "42895b901417cdc9060b7ba137b1e92667a2e2b05737e21ee00e00a523be0938",
+      "size_bytes": 2132
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/rank-0.pt": {
+      "sha256": "09ad55fd9d158061a166be2ff5cd7f880578c748ae3c177fa7031c43aa622e9b",
+      "size_bytes": 16146
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/rank-1.pt": {
+      "sha256": "e2d9bd08ba17c7a20e27f3e0116007b99335c80eb5d9c69401ad60dd62b87961",
+      "size_bytes": 16146
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/rank-2.pt": {
+      "sha256": "8c1a6591383b580c7616cc89174831ef9e521e761c607d014cada77b7a694331",
+      "size_bytes": 16146
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/rank-3.pt": {
+      "sha256": "983f67784e42bb683538bf296007161bd8734cdb1bc15817986c62e69fb0f038",
+      "size_bytes": 16146
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/rank-4.pt": {
+      "sha256": "dd2987723e984f792a5fb793ac9141b385787da6830c2ab28be51f90b88b2d71",
+      "size_bytes": 16146
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/rank-5.pt": {
+      "sha256": "adc7e01cffd89735da00e2994b1e713e789360ad3ed45939315110c05c3decaf",
+      "size_bytes": 16146
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/rank-6.pt": {
+      "sha256": "3df509cc92ae0ce210250add32520e562d5d94ccc7691fc7f80c1b1e88732bb3",
+      "size_bytes": 16146
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/rank-7.pt": {
+      "sha256": "91ab0bd6060a4df23fb20a55a5d83a4a0eaaa05c131316a5262905fcc83d70c3",
+      "size_bytes": 16146
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/state/mp_rank_00_model_states.pt": {
+      "sha256": "ba29506f2c42eaccd7030fc5383efb13735a55378fb1453c6a40b6b7d0e67a58",
+      "size_bytes": 849797252
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/state/zero_pp_rank_0_mp_rank_00_optim_states.pt": {
+      "sha256": "c695381e370feb55d5bcf170e3e312764bee871eb9665485ece6a3593b1213b7",
+      "size_bytes": 637037997
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/state/zero_pp_rank_1_mp_rank_00_optim_states.pt": {
+      "sha256": "bada53daa37b2e15472292de4145d92e77d95759a346a73ee0a0119f5f140063",
+      "size_bytes": 637037805
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/state/zero_pp_rank_2_mp_rank_00_optim_states.pt": {
+      "sha256": "c82f6b1e730a46035aae86abf6841ac944278d396b80ac8e12b2b4f374a6b2ae",
+      "size_bytes": 637037805
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/state/zero_pp_rank_3_mp_rank_00_optim_states.pt": {
+      "sha256": "194dca1632c0f534ea5d05efe1ec8229e3b7e370ed293c5e5e1bb4ed1acae5ad",
+      "size_bytes": 637037805
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/state/zero_pp_rank_4_mp_rank_00_optim_states.pt": {
+      "sha256": "e829e8c04cd032cada746d490e08bd2182656597ac2f4877e3609cf3260b9be9",
+      "size_bytes": 637038061
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/state/zero_pp_rank_5_mp_rank_00_optim_states.pt": {
+      "sha256": "3080cb61dac32c25495773373024a7fc96acdb0bd4cccba7482f19dcc4cd60a2",
+      "size_bytes": 637037805
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/state/zero_pp_rank_6_mp_rank_00_optim_states.pt": {
+      "sha256": "57425cebd4bb759837ae863c4a40456034eb762877cfb5b8189482670f3f3861",
+      "size_bytes": 637037741
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/state/zero_pp_rank_7_mp_rank_00_optim_states.pt": {
+      "sha256": "969612f4b7c08a1d6bac8a192b60bf77d27e8bb0fd11cb07bc4f9bf868ecfc91",
+      "size_bytes": 637037741
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/attempt-1-step-4/zero_to_fp32.py": {
+      "sha256": "46497565ccf2b4a8b1f6f18c8341042f3749605a94335c81f69df1bd268af64f",
+      "size_bytes": 33272
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-direct-reference/recovery/latest.json": {
+      "sha256": "cfd88cb3e41ca3313c6bb54383a4b84fbac0c095d8eef21c7891b7767e177c83",
+      "size_bytes": 335
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-0.json": {
+      "sha256": "e225fad857bffc56923cfc5cc8b122150a64dcced401f2a7cfc00de8b8540c81",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-0.jsonl": {
+      "sha256": "8f3fed75a2892490e6479661ded8046b5dde95e8d75066892ff9243c756d3081",
+      "size_bytes": 22035
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-1.json": {
+      "sha256": "25c03db6e35262581e3a28302f62f74c8015782797cf6fbc666bcbe6a14ac90f",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-1.jsonl": {
+      "sha256": "f444047e9b99460891cdb3959596db51f67b6626fbfb0d0bdbb0e7e57f8ea23d",
+      "size_bytes": 22028
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-2.json": {
+      "sha256": "c5850a6e05a0829527fd11a5acb740f5e05ca04154a591e06ce7f4081c013258",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-2.jsonl": {
+      "sha256": "ffe44c2c29e70ccef1b2017bca2aa46bdfd2d2b80fab20fb838a3dd35b37168b",
+      "size_bytes": 22052
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-3.json": {
+      "sha256": "7cfcff8a3070e33f9a693a8ecd03196e259258e3d912c2090b0aa6b1fbd6fef6",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-3.jsonl": {
+      "sha256": "f4f8bd1172d2d719b7e5039814f25e230d691e7196d257b49df7b69a6df65c5a",
+      "size_bytes": 22044
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-4.json": {
+      "sha256": "52e21e025e0905ec255b7da188d72dbfe024d373847abf0c0c0854acb4bb098b",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-4.jsonl": {
+      "sha256": "61878a3098bf1579defdfcc5725645dc3cc4a99d17303a84918dff1e3b3107b4",
+      "size_bytes": 22044
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-5.json": {
+      "sha256": "8f8b9b4fb23bb1a45bcabbbc6c868488ab38f5aa91ba3b2a0f55e2b700b59697",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-5.jsonl": {
+      "sha256": "16f17152e62815f8c4f4ac751f36a23280a68a2215d73b454ed583e5e0d11da8",
+      "size_bytes": 22047
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-6.json": {
+      "sha256": "616b6b83f9d28c65b8363c6449c684fdc729599c9a21260be9d3894be4d1cb94",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-6.jsonl": {
+      "sha256": "69f148a40a39799c71a9edaffba978168aa52553365c12c9246c81eb720736e4",
+      "size_bytes": 22044
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-7.json": {
+      "sha256": "fc20eb944c25e6e591c4f843eefeb832f3ffc8516a309f5a653d1e2a5746deac",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-7.jsonl": {
+      "sha256": "78822ba18720ea1ad490781b0789382124697983e3d4f76b5cb29faf8104e24e",
+      "size_bytes": 22042
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-0-global-0.pt": {
+      "sha256": "0dd49dd2e9f2d8ed1b5c38e08a37bf00e7d0330f81677a2d9c63c493188450f3",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-0-global-1.pt": {
+      "sha256": "82044c5a537179c7f5202a53a4a16ce0b30b91fa055b0ae6472e169f635e2d13",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-0-global-2.pt": {
+      "sha256": "7b5d8da97c27a2c9e2c3259f4e66eaefbab70200284fd06d9d62698452eea167",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-0-global-3.pt": {
+      "sha256": "27d64b6f307b15a1ee4a5b43e0f5f342179776a243d3208ef1e5e8b91c4777f4",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-1-global-0.pt": {
+      "sha256": "e4423ead58a806738b5051e7618d181d483d5778bf3f2fe6b4950ffcfa116717",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-1-global-1.pt": {
+      "sha256": "9e2230e05790d4d23d695120f5647b7f7aa0570796c69b90c35591c3547bcd39",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-1-global-2.pt": {
+      "sha256": "38e65c1a1cc9c3c61a4f985959014184f65336d16ea2045f62befec939cf3895",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-1-global-3.pt": {
+      "sha256": "f47dea6cd254b8cdb2196dbf7afe88a69fc5040e375aea3eb5608397b3f99cf0",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-2-global-0.pt": {
+      "sha256": "d95472fe35520118e973dbe12ec510d9ee9fa6d79cb65c96fcc300eedb5c7a4d",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-2-global-1.pt": {
+      "sha256": "b42ae5d12a85eab916333ae8cbde97a29c60ddc9056988e9b255c7d40982aea3",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-2-global-2.pt": {
+      "sha256": "fb2dfb418cc53ab3b3f729b8cec1cf63969277cc92c18269d3ea579e182022dd",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-2-global-3.pt": {
+      "sha256": "d55068ae4a3204a99b4bd7aed326155d9728a39710c95f52079f75af44629741",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-3-global-0.pt": {
+      "sha256": "755b6b30a68eb378adbd0c7005e46d0b7529818ae73ccfecfae32e5a3913345f",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-3-global-1.pt": {
+      "sha256": "501eb28250a98ab3885193b91eaa208409b2aa7e21d88da1d948031071a8afc7",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-3-global-2.pt": {
+      "sha256": "5c453cdb3f7d6231eaf7e348e31b770b43c1a1238aac53420d1a3b13cbd7a335",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-3-global-3.pt": {
+      "sha256": "16c107e752a3104c8280d469f79d86e7165b48c4520e27119bd7bcdd0d0d646c",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-4-global-0.pt": {
+      "sha256": "14d28a789d04f7a2965f776a895b44ee965b9adc5b606ea43c7112e2edf85efd",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-4-global-1.pt": {
+      "sha256": "36050eb8fb2a9f530859919ca1a0e499c876e64d69b945c5e5cfb2c0151c78f4",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-4-global-2.pt": {
+      "sha256": "96d2a548748985cf23b75563ff918edc9893eaf12760599c9782ce22c64d1fe8",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-4-global-3.pt": {
+      "sha256": "7a4c2b53c5ce54e21f348dca0a17f7644e713ca0a8127311b1f08f40f7883384",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-5-global-0.pt": {
+      "sha256": "eb230c467594d789db9b2535cb23bac8790381161587e5002cde3fd209e96294",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-5-global-1.pt": {
+      "sha256": "a641c493e40d7c17c5335e53594eaf0294564e2b4173ee8c84f092a1c6189731",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-5-global-2.pt": {
+      "sha256": "32499417a511cbd5839ec94a51bd17ac80409d5b88a7d104e3f49b96f5a132af",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-5-global-3.pt": {
+      "sha256": "802f711cbce9d0b4270048ced7cda61e8091f5c48b21ce791c58c4aa4d573da1",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-6-global-0.pt": {
+      "sha256": "4061730962c88c3a62db21b80b4f4e73addc8cad8220de39f26f3092eaf4ed10",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-6-global-1.pt": {
+      "sha256": "db076113958784a274d5371a9457723b51be3390495637f36b838c8a8c38324b",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-6-global-2.pt": {
+      "sha256": "ab25ba9f2b8623e499c42eee35a11eb86746d1d770a08391ca37c801ea52a04b",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-6-global-3.pt": {
+      "sha256": "456db07bd2fc1679acb62116fab6f94bd550e7388e606bd5ea5394ab96642533",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-7-global-0.pt": {
+      "sha256": "fe47f7213867294a94adc3bc2d2f575d09e7441c1d520a1a76de75382bc7f91c",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-7-global-1.pt": {
+      "sha256": "67ce4715a40c15760ac60d77959ca052230500e318f8f0e4a1d12b14a270dd42",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-7-global-2.pt": {
+      "sha256": "896e6623fa0b8552ed7bd597cd487a93ca8d53e04ea27ff32816f29a3ffad1fb",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/gradients-rank-7-global-3.pt": {
+      "sha256": "b83109443a184f43b401005eb156640f57ded032e48296f6e2a522b84dbd7ec9",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/initial-masters-rank-0.pt": {
+      "sha256": "97ea7c9b0ddae30a30ae20d26264844b0972bea4f4a571f7afacbb834f35218b",
+      "size_bytes": 212346535
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/initial-masters-rank-1.pt": {
+      "sha256": "446fd3672bdb3426a895f047ed86a2cd0234ddf4f1bdd29e450ddc8058300c39",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/initial-masters-rank-2.pt": {
+      "sha256": "2fd5191f7d51c67c9678f64719ffb2b7ecb9491258112314863f4def8e1b1809",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/initial-masters-rank-3.pt": {
+      "sha256": "c15825dbd43b080014ce7cae03a33304c31e274a09d3634eef606992b384c0fe",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/initial-masters-rank-4.pt": {
+      "sha256": "6bb3fd3fcb1454b258b14a2a07f5fc73297bb0382fdb21ac996547e48c019de8",
+      "size_bytes": 212346599
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/initial-masters-rank-5.pt": {
+      "sha256": "a5df8a8f1142057e8111159ac98d4a67061b5d4e84e6562264e2ebfe802f4197",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/initial-masters-rank-6.pt": {
+      "sha256": "19df2316d3f3840c399cfb5668befff3963cd3c0b99222e33f7875d9f9b9a0aa",
+      "size_bytes": 212346343
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/initial-masters-rank-7.pt": {
+      "sha256": "0d6c763d52c5c9191b53d86b1ab73e213bec766f66b3dc7e709b4f3ffc14a6ef",
+      "size_bytes": 212346343
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/steps-rank-0.jsonl": {
+      "sha256": "551a54b7e05c714245201ba988bd1368f07181c8005ce1b3b232347fa9d904ce",
+      "size_bytes": 1983
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/steps-rank-1.jsonl": {
+      "sha256": "f5b30ceef97def8736bd0d5c6de99e04daa3505c675cea021ee0af0cc06914a6",
+      "size_bytes": 1984
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/steps-rank-2.jsonl": {
+      "sha256": "49bb4d2024679ca68bfcebd179f7632c8e633c7935731ba36d84c9f8913fd863",
+      "size_bytes": 1983
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/steps-rank-3.jsonl": {
+      "sha256": "b29f9a152a521f11964823b344ec4056595c5e13731539aa5039a0af4ab0ba48",
+      "size_bytes": 1983
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/steps-rank-4.jsonl": {
+      "sha256": "ed1ab4a48f6493591f79d16e0a955ba895e9375408e92b2844a2dc09178a53f0",
+      "size_bytes": 1984
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/steps-rank-5.jsonl": {
+      "sha256": "ec6cd75375a6ad7877e20b6774a758955963bebfecf53dfe2bcd0ddc039043e4",
+      "size_bytes": 1983
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/steps-rank-6.jsonl": {
+      "sha256": "ef53cd3d73007912a6e50ec034010e3d18902f96e85a55b38632677dbfab043d",
+      "size_bytes": 1983
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/steps-rank-7.jsonl": {
+      "sha256": "e3156470928f1039424181765de68bcd7878c4f6638d9f6d3079d39adcdf3e99",
+      "size_bytes": 1986
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/admission.py": {
+      "sha256": "028747152f4c4bbbeca49120aaa72100b6d5293439411840d9546815a6ec3c0b",
+      "size_bytes": 15144
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/admission_v2.py": {
+      "sha256": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49",
+      "size_bytes": 27753
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/assets.json": {
+      "sha256": "da62f1ca8001cc3be7ed6604c783987afe8f27d5ad281c6874d9ec55c3ad1b07",
+      "size_bytes": 15838
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/config.json": {
+      "sha256": "ed96545954f7f55076d0ed7cf87a75961320e87496865d544e2c150346249c70",
+      "size_bytes": 3874
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/native_full_body.py": {
+      "sha256": "40109aae2cdd5b06fa601220175569823f94e0e63d69c44942e93854740046c1",
+      "size_bytes": 21528
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/native_full_body_queue.py": {
+      "sha256": "1cbd366356bfcfe308aa2cdbd02c4a839b0abcb3b45b6b07db68312c58a95d5b",
+      "size_bytes": 12147
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/native_gradients.py": {
+      "sha256": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+      "size_bytes": 4703
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/native_recovery.py": {
+      "sha256": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+      "size_bytes": 12809
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/native_training.py": {
+      "sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "size_bytes": 70884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/numerical_validation.py": {
+      "sha256": "cb0546c268c09d73e15f62bde6d55a9a3437d26cce24ef464c14a9138d84629a",
+      "size_bytes": 10750
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/pilot_cache.py": {
+      "sha256": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+      "size_bytes": 18634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/sources.json": {
+      "sha256": "452fb3ff49e64eb0cd2e4f3625e5190fad8ee03b1d4bd9b6e0ae461406366dc1",
+      "size_bytes": 35967
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/train.jsonl": {
+      "sha256": "d2830918bcecc55105f83aab09702d95a01e1ada4513d9ca74f4cdc8566c8354",
+      "size_bytes": 599068
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/inputs/validation.jsonl": {
+      "sha256": "68c11d743800585eb33e9b4849681750e5a017c58ee1d957bdb5570470c88557",
+      "size_bytes": 20497
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/launch.json": {
+      "sha256": "cba2a0e96223eaea2fcb17653bcf62267705dc3a1ada288923da7f0fa8836e9f",
+      "size_bytes": 4957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/plan.json": {
+      "sha256": "d1cdabe48eda16bda8991ba27da0ea30914b2decc688d68acf4a672c5b5f6f05",
+      "size_bytes": 25270
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-0.json": {
+      "sha256": "ab5fd6b7b46018f104518dee3121c62f8a70f9136753f2c84ee360bd294d5c5c",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-1.json": {
+      "sha256": "e30fa6ea6e2e186d4b1940df9752085af2a42709f4357a91d1a707d683822654",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-2.json": {
+      "sha256": "78119d13aa0dd3bf0f070a9bbe519c7760bab4ff576c565c81503d44bc607c3b",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-3.json": {
+      "sha256": "6bc820da38e905d75fc5fa196034ebb34bbf83519259200ac52b5cbce84d44cd",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-4.json": {
+      "sha256": "48648233307b6b594b7f456c3ff23378cd971a84f7077e725bbc21112b57e38a",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-5.json": {
+      "sha256": "acc808e1968fed81437d1a77ca1c19cbb5bfc9d3cd066c235ed2aad9a0239562",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-6.json": {
+      "sha256": "81f093d6f18f437d68451b0c43003b63e7b8a831925648c75fab63214d419a75",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-7.json": {
+      "sha256": "41fa8e3ddba6a9bc5add2870dde806b89f065adea37c2272a3370391a7f519f6",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/tokenization-audit.json": {
+      "sha256": "249814a94642a7d3aba3ffffe4cb2bc6b9123272b9c86783983301748f5d60b2",
+      "size_bytes": 825
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/work/cache.pt": {
+      "sha256": "721e69e9ad00105f47f1c5e5bcd95e0aebff4acdadd405ca697a314ed1cc8def",
+      "size_bytes": 385548
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/work/cnets.py": {
+      "sha256": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+      "size_bytes": 38251
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/work/config.json": {
+      "sha256": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f",
+      "size_bytes": 591
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/work/configs.py": {
+      "sha256": "14ae62877cd9ab12c9076fc70fe940714b9ca980865b00ba974de340df2d1ac5",
+      "size_bytes": 7550
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/work/ds_config.json": {
+      "sha256": "02b432995b51d8fa1cce7685b7430de7ce14de0419a6729cd9ff0c324c1bec0b",
+      "size_bytes": 1263
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/work/main.py": {
+      "sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+      "size_bytes": 14195
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/work/modeling_llama_kv.py": {
+      "sha256": "18adff2c21e659755eb41d6804fa6dd4b4d486b70d3c749693fbb44cff3855b5",
+      "size_bytes": 62818
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-0.json": {
+      "sha256": "ad2d97c7225588712056e0679381cc014b938d0547288b2249d614ccdcfeb348",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-0.jsonl": {
+      "sha256": "f932ec939e2eb17ff93161fc771534e52ebe5ffeb2381ca4a62e673a14d1cddb",
+      "size_bytes": 987266
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-1.json": {
+      "sha256": "d1eb7b29f4687a277df9a6f0e30649f860fd657113037ec3006c35067599830c",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-1.jsonl": {
+      "sha256": "96f6cbef25220ab84dd74cb30f2f45bf1e2c7a166575ce2b822a06b2a31d9db1",
+      "size_bytes": 987331
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-2.json": {
+      "sha256": "a15ccaf273800e1e777b4b32c170cd75426f81ba2e9bdf98ff114577f331a891",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-2.jsonl": {
+      "sha256": "de303c30526ea191b12abacb0b7c8c6460d2be9bb12778b76480663f692f7bfd",
+      "size_bytes": 987205
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-3.json": {
+      "sha256": "e9f3cc4ccd2e21ee5fafdd6db930550e0c34279ea83005479263ce8b8d618be1",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-3.jsonl": {
+      "sha256": "8296010ecd9c98370fc4e4dad066ea2af275884ef787d7be5614ed34948818cc",
+      "size_bytes": 987219
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-4.json": {
+      "sha256": "8a5514fe5535b4057b3020510d7d0a25e33f24c3b68bff42761c6399e98470dd",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-4.jsonl": {
+      "sha256": "892d9ffd6769c35d491f1a52ae57e1383afca59ed9897c282573d21c769167a3",
+      "size_bytes": 987172
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-5.json": {
+      "sha256": "e70e20f82c38e90f140418a390608ab9d12f269e08dd35612995376d4faf5329",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-5.jsonl": {
+      "sha256": "dddd953970c8dca7ed4e0b1c26c1a32efbb2247896bec70c4b967bc06430b269",
+      "size_bytes": 987284
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-6.json": {
+      "sha256": "5d927a8278275dcf0f580fba0eba0803dfa8b97d03fecc9414d6091e102162be",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-6.jsonl": {
+      "sha256": "2fbfd8c0850ee608a1206df1fa18ef34d730fdcd654582d35e1cdfb8ecfae4c8",
+      "size_bytes": 987418
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-7.json": {
+      "sha256": "9f391b7ae592b4f6020803288748919b7880a4b421109742beb9eb12f2aa92da",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-7.jsonl": {
+      "sha256": "6bbec332e28491e54621a2e37befab04d0d9038c1b6ce561ffb77f5775d39d3e",
+      "size_bytes": 987006
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/initial-masters-rank-0.pt": {
+      "sha256": "97ea7c9b0ddae30a30ae20d26264844b0972bea4f4a571f7afacbb834f35218b",
+      "size_bytes": 212346535
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/initial-masters-rank-1.pt": {
+      "sha256": "446fd3672bdb3426a895f047ed86a2cd0234ddf4f1bdd29e450ddc8058300c39",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/initial-masters-rank-2.pt": {
+      "sha256": "2fd5191f7d51c67c9678f64719ffb2b7ecb9491258112314863f4def8e1b1809",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/initial-masters-rank-3.pt": {
+      "sha256": "c15825dbd43b080014ce7cae03a33304c31e274a09d3634eef606992b384c0fe",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/initial-masters-rank-4.pt": {
+      "sha256": "6bb3fd3fcb1454b258b14a2a07f5fc73297bb0382fdb21ac996547e48c019de8",
+      "size_bytes": 212346599
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/initial-masters-rank-5.pt": {
+      "sha256": "a5df8a8f1142057e8111159ac98d4a67061b5d4e84e6562264e2ebfe802f4197",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/initial-masters-rank-6.pt": {
+      "sha256": "19df2316d3f3840c399cfb5668befff3963cd3c0b99222e33f7875d9f9b9a0aa",
+      "size_bytes": 212346343
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/initial-masters-rank-7.pt": {
+      "sha256": "0d6c763d52c5c9191b53d86b1ab73e213bec766f66b3dc7e709b4f3ffc14a6ef",
+      "size_bytes": 212346343
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/steps-rank-0.jsonl": {
+      "sha256": "cf051f472b40970508421501c8fd42ff6debfdd7bf258418fc19edf44dacc366",
+      "size_bytes": 101810
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/steps-rank-1.jsonl": {
+      "sha256": "15da3ae815a3d66c8e6386e539c00d751beb1c2cd79e39f4428eeafc341da74f",
+      "size_bytes": 101822
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/steps-rank-2.jsonl": {
+      "sha256": "ca974ff686375ec2a2f7a58f2481977e2dddabf53489134d33dd28ebb8ee0e9d",
+      "size_bytes": 101803
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/steps-rank-3.jsonl": {
+      "sha256": "0a9cf7b7ff14f141e85afeff7a0f726b7521b5eed4e65f81bc21394d2f44a7b8",
+      "size_bytes": 101825
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/steps-rank-4.jsonl": {
+      "sha256": "6e455a3cdf11677d0ca2f4c4c3a59354c191181da9825504314e0f557a925775",
+      "size_bytes": 101803
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/steps-rank-5.jsonl": {
+      "sha256": "f5edbda9f38820592f85a3776ac6cdd7f2877ff111ce11468daac7bbaf76a5b4",
+      "size_bytes": 101824
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/steps-rank-6.jsonl": {
+      "sha256": "f514b72b034c37e1739536f37e4a8c3c600544846b1f5860f52685a3f4c88c1d",
+      "size_bytes": 101808
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/steps-rank-7.jsonl": {
+      "sha256": "24dd2795a16320cff588953d98b8b43f7c2e9dbf999383e0890d7ff82331268f",
+      "size_bytes": 101808
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/admission.py": {
+      "sha256": "028747152f4c4bbbeca49120aaa72100b6d5293439411840d9546815a6ec3c0b",
+      "size_bytes": 15144
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/admission_v2.py": {
+      "sha256": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49",
+      "size_bytes": 27753
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/assets.json": {
+      "sha256": "da62f1ca8001cc3be7ed6604c783987afe8f27d5ad281c6874d9ec55c3ad1b07",
+      "size_bytes": 15838
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/config.json": {
+      "sha256": "41e5e3642f87fb8f7126508dabc744ad7af4817f80d891fb9af66ebc8803efb8",
+      "size_bytes": 3874
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/native_full_body.py": {
+      "sha256": "40109aae2cdd5b06fa601220175569823f94e0e63d69c44942e93854740046c1",
+      "size_bytes": 21528
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/native_full_body_queue.py": {
+      "sha256": "1cbd366356bfcfe308aa2cdbd02c4a839b0abcb3b45b6b07db68312c58a95d5b",
+      "size_bytes": 12147
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/native_gradients.py": {
+      "sha256": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+      "size_bytes": 4703
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/native_recovery.py": {
+      "sha256": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+      "size_bytes": 12809
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/native_training.py": {
+      "sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "size_bytes": 70884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/numerical_validation.py": {
+      "sha256": "cb0546c268c09d73e15f62bde6d55a9a3437d26cce24ef464c14a9138d84629a",
+      "size_bytes": 10750
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/pilot_cache.py": {
+      "sha256": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+      "size_bytes": 18634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/sources.json": {
+      "sha256": "452fb3ff49e64eb0cd2e4f3625e5190fad8ee03b1d4bd9b6e0ae461406366dc1",
+      "size_bytes": 35967
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/train.jsonl": {
+      "sha256": "9425a337fc350eddf4b8dcc0acb505ad12781021f21e67bc864f4aa51c19991c",
+      "size_bytes": 4458747409
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/validation.jsonl": {
+      "sha256": "6bccf32f970e0fd75f3e64d6f9badf125e0cd9b15dc867d6c33a225a5b0530f7",
+      "size_bytes": 47180878
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/launch.json": {
+      "sha256": "eb43ea346d858d7b6145d0736bed1f62561caabb2b6e18d3d74f898c48a4b841",
+      "size_bytes": 4960
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/plan.json": {
+      "sha256": "fb9812b7bce2ca3a72f85d5358d6915d07986a08a260c3a2a5f88d26c0583db1",
+      "size_bytes": 64712662
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-0.json": {
+      "sha256": "b84f98034c18ba0b0988968938224a0629ae377bafc9c5f205960a4cf331b321",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-1.json": {
+      "sha256": "c3b87173cc64a77442e68fe5ed20a8bb194f5abd336f2281c5df18eafb40083c",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-2.json": {
+      "sha256": "9b1494d497b79ee6e210118496cf34fc32552b9bdbfdad9653a0096017755c90",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-3.json": {
+      "sha256": "14c5720977a25edc74d8865528217e35779c8f425a8aee2fd5de5756412ce7a1",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-4.json": {
+      "sha256": "3dbb3f9351701c94475450c1a97cf6f90a18fe4d9424aab6688a2c6bb50315f9",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-5.json": {
+      "sha256": "9f37f49d1076ccddd1ca9733a181d6e153ea3794170c3fb27507aa0246aa1c8e",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-6.json": {
+      "sha256": "16bebd871546a0b82dffdafbdff69f77204c3e22d9c77be3906449e0219c8e72",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-7.json": {
+      "sha256": "23d7968a42d0533e2f5d2e0b41a40d0c9e8889a1648d5eef2d8647cec7b12ed9",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/tokenization-audit.json": {
+      "sha256": "c6a85223df82b1f6070139c7b1a8153afde8550bdf327483e12ce8147ec11c7f",
+      "size_bytes": 850
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/cache.pt": {
+      "sha256": "721e69e9ad00105f47f1c5e5bcd95e0aebff4acdadd405ca697a314ed1cc8def",
+      "size_bytes": 385548
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/cnets.py": {
+      "sha256": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+      "size_bytes": 38251
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/config.json": {
+      "sha256": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f",
+      "size_bytes": 591
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/configs.py": {
+      "sha256": "14ae62877cd9ab12c9076fc70fe940714b9ca980865b00ba974de340df2d1ac5",
+      "size_bytes": 7550
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/ds_config.json": {
+      "sha256": "02b432995b51d8fa1cce7685b7430de7ce14de0419a6729cd9ff0c324c1bec0b",
+      "size_bytes": 1263
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/main.py": {
+      "sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+      "size_bytes": 14195
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/modeling_llama_kv.py": {
+      "sha256": "18adff2c21e659755eb41d6804fa6dd4b4d486b70d3c749693fbb44cff3855b5",
+      "size_bytes": 62818
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-0.json": {
+      "sha256": "00ec8ab52fe821534e41514415210e05290564a2a931e1dafe047976c03c7d5a",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-0.jsonl": {
+      "sha256": "9ab7dcdc8b70db3fcff4c15ac77f8c6e8e30d3a515f1f496820026504720cc0b",
+      "size_bytes": 10978
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-1.json": {
+      "sha256": "5aa984cf6946fb41c037214c075a8abe4a04c9453114822f56655fd0962e3ff6",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-1.jsonl": {
+      "sha256": "42742b40aa36135aa055e1059dfd1001dd4bcad2a80576fc7578a911ea086af0",
+      "size_bytes": 10979
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-2.json": {
+      "sha256": "51d7c8b3f2aa560466e9a63b4387849131a1692f6b68b129fb0b80d5b8e65152",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-2.jsonl": {
+      "sha256": "af457eb2cfd64b56f3a76e007dddbbc1efd6566527ccadfd4ed4d521de7a324a",
+      "size_bytes": 10987
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-3.json": {
+      "sha256": "e2d3dfdb063faa7a433c1732971fb6aae1246008ba312898553edf3156c9c8b5",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-3.jsonl": {
+      "sha256": "1f0019a049c860011834dec2b3dd786d46c63d2944931546006e40934df76f52",
+      "size_bytes": 10962
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-4.json": {
+      "sha256": "4a318ecdb535847e962198f6284020ece42077eb9b94badbed5d63ca9492f21d",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-4.jsonl": {
+      "sha256": "f00d0a97e4523b9cf4b803a6d87ec855c20e7a6915a66e20c0abc93de1c1c893",
+      "size_bytes": 10987
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-5.json": {
+      "sha256": "fec2c300c20dc62c0eb3d57df3206a9c4f764f135991911e8db405ce0f970078",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-5.jsonl": {
+      "sha256": "d5fe92121a54e96485cfa67b1c70516e70a641b551be469273ce7c4ff22bdb20",
+      "size_bytes": 10981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-6.json": {
+      "sha256": "b69c0a70f21ab526257223423f8a3a2c6f00ac068c5a6cbea5f164079e5d56f2",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-6.jsonl": {
+      "sha256": "31a3cf1f8587ef44349493957dba9ce31961b7218411c964e6d736a19094b8ec",
+      "size_bytes": 10978
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-7.json": {
+      "sha256": "956fca419cdb2d76780302da1a11ab269a2f89d6dadbf5f2f8ceb314dec7d398",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/full-body-rank-7.jsonl": {
+      "sha256": "59be852c3037585c6611504ae3b0bb81a7f40013b47ef67f1608fd70456f56b9",
+      "size_bytes": 10980
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-0-global-0.pt": {
+      "sha256": "0dd49dd2e9f2d8ed1b5c38e08a37bf00e7d0330f81677a2d9c63c493188450f3",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-0-global-1.pt": {
+      "sha256": "82044c5a537179c7f5202a53a4a16ce0b30b91fa055b0ae6472e169f635e2d13",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-1-global-0.pt": {
+      "sha256": "e4423ead58a806738b5051e7618d181d483d5778bf3f2fe6b4950ffcfa116717",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-1-global-1.pt": {
+      "sha256": "9e2230e05790d4d23d695120f5647b7f7aa0570796c69b90c35591c3547bcd39",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-2-global-0.pt": {
+      "sha256": "d95472fe35520118e973dbe12ec510d9ee9fa6d79cb65c96fcc300eedb5c7a4d",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-2-global-1.pt": {
+      "sha256": "b42ae5d12a85eab916333ae8cbde97a29c60ddc9056988e9b255c7d40982aea3",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-3-global-0.pt": {
+      "sha256": "755b6b30a68eb378adbd0c7005e46d0b7529818ae73ccfecfae32e5a3913345f",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-3-global-1.pt": {
+      "sha256": "501eb28250a98ab3885193b91eaa208409b2aa7e21d88da1d948031071a8afc7",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-4-global-0.pt": {
+      "sha256": "14d28a789d04f7a2965f776a895b44ee965b9adc5b606ea43c7112e2edf85efd",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-4-global-1.pt": {
+      "sha256": "36050eb8fb2a9f530859919ca1a0e499c876e64d69b945c5e5cfb2c0151c78f4",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-5-global-0.pt": {
+      "sha256": "eb230c467594d789db9b2535cb23bac8790381161587e5002cde3fd209e96294",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-5-global-1.pt": {
+      "sha256": "a641c493e40d7c17c5335e53594eaf0294564e2b4173ee8c84f092a1c6189731",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-6-global-0.pt": {
+      "sha256": "4061730962c88c3a62db21b80b4f4e73addc8cad8220de39f26f3092eaf4ed10",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-6-global-1.pt": {
+      "sha256": "db076113958784a274d5371a9457723b51be3390495637f36b838c8a8c38324b",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-7-global-0.pt": {
+      "sha256": "fe47f7213867294a94adc3bc2d2f575d09e7441c1d520a1a76de75382bc7f91c",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/gradients-rank-7-global-1.pt": {
+      "sha256": "67ce4715a40c15760ac60d77959ca052230500e318f8f0e4a1d12b14a270dd42",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/initial-masters-rank-0.pt": {
+      "sha256": "97ea7c9b0ddae30a30ae20d26264844b0972bea4f4a571f7afacbb834f35218b",
+      "size_bytes": 212346535
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/initial-masters-rank-1.pt": {
+      "sha256": "446fd3672bdb3426a895f047ed86a2cd0234ddf4f1bdd29e450ddc8058300c39",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/initial-masters-rank-2.pt": {
+      "sha256": "2fd5191f7d51c67c9678f64719ffb2b7ecb9491258112314863f4def8e1b1809",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/initial-masters-rank-3.pt": {
+      "sha256": "c15825dbd43b080014ce7cae03a33304c31e274a09d3634eef606992b384c0fe",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/initial-masters-rank-4.pt": {
+      "sha256": "6bb3fd3fcb1454b258b14a2a07f5fc73297bb0382fdb21ac996547e48c019de8",
+      "size_bytes": 212346599
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/initial-masters-rank-5.pt": {
+      "sha256": "a5df8a8f1142057e8111159ac98d4a67061b5d4e84e6562264e2ebfe802f4197",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/initial-masters-rank-6.pt": {
+      "sha256": "19df2316d3f3840c399cfb5668befff3963cd3c0b99222e33f7875d9f9b9a0aa",
+      "size_bytes": 212346343
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/initial-masters-rank-7.pt": {
+      "sha256": "0d6c763d52c5c9191b53d86b1ab73e213bec766f66b3dc7e709b4f3ffc14a6ef",
+      "size_bytes": 212346343
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/steps-rank-0.jsonl": {
+      "sha256": "f12260cd438648687213295642de2436d611fecc0c9be9dee552ae68c24ccc77",
+      "size_bytes": 981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/steps-rank-1.jsonl": {
+      "sha256": "4ec97540bf8dfeb48c5fbfc476031da307fee384bbced16eaf80accc80769954",
+      "size_bytes": 981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/steps-rank-2.jsonl": {
+      "sha256": "c90121b2ea24eec56daa861ade006e8f7ffe660f9ee258e7c3c1677025a4c132",
+      "size_bytes": 980
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/steps-rank-3.jsonl": {
+      "sha256": "f4663192620b5eca378b34a4c8bf3afc66b902c7827574e86a763675dfa4402a",
+      "size_bytes": 980
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/steps-rank-4.jsonl": {
+      "sha256": "f7c26824ebb49406e0294a88302fc623da6b6184fadef47dba8297a5d48ad02e",
+      "size_bytes": 981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/steps-rank-5.jsonl": {
+      "sha256": "770cde0a142e951eaa52e9f1ad64fb73acc9ad01938a54da174a57a5433bd48c",
+      "size_bytes": 981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/steps-rank-6.jsonl": {
+      "sha256": "76933f618a54950aec3172c66a789ae8e166a5986a6bc657372db3eec96ece18",
+      "size_bytes": 980
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-1/steps-rank-7.jsonl": {
+      "sha256": "a92fd09d6c72e512f7659e9328c3070e205775f0042c609443de61ac8a07d98f",
+      "size_bytes": 981
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-0.json": {
+      "sha256": "c6b08f45c360989694de079a66beecd47b89822a9ad2420844968cd49d2211f2",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-0.jsonl": {
+      "sha256": "ad9f397adbad425f953b7580f3f8737d52aa197668ca4b2314c1f1396fdee26d",
+      "size_bytes": 11058
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-1.json": {
+      "sha256": "1f8bf2293b72bb18792ea6973e703d0675c7c50b996e783f00e60dc0cd48f9ab",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-1.jsonl": {
+      "sha256": "52b1fbf7bf6ab423bf3540898b3f2bad75ec4618c671eeceeaab20febdcafe67",
+      "size_bytes": 11048
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-2.json": {
+      "sha256": "d27bfd70bbf39c11dfd512cdbb73546eba96308d94129834ac0d2f70a1d1e99e",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-2.jsonl": {
+      "sha256": "f7725788d0fa41c33abe47b1be5b0481b7209211ee7da6e3f4b47608b35fae72",
+      "size_bytes": 11066
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-3.json": {
+      "sha256": "1336bfa36430a410919dd794bb2b6e3ecae410bdb0f217526966127c1135ae2e",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-3.jsonl": {
+      "sha256": "87e6ac7a1423e947c2d911e8d8537be1cbad01dc56fab9c58f3cafedf9d66b55",
+      "size_bytes": 11083
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-4.json": {
+      "sha256": "dd9f6d4426fde8748f34b1a4b4020b2d943b9611abc460fe0f3fbccaa8b89184",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-4.jsonl": {
+      "sha256": "9a7a08733a49bc57a3619e76cc9d3073b144e22389bf5e41dc8abd2a04d76b28",
+      "size_bytes": 11059
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-5.json": {
+      "sha256": "32073dadb0e10066721e9c395291cbe065a21f294c66f98cb1550c3459a609b9",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-5.jsonl": {
+      "sha256": "5bcdc33caf20d1841603a6f2dd4b74b93406935192b69645aee9fd760804ef60",
+      "size_bytes": 11066
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-6.json": {
+      "sha256": "dc7d5be65ba9bdabb3d6d1d35ed9a29ea465054c54a53f7a3f1a5e714c355bc7",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-6.jsonl": {
+      "sha256": "d1b9da0c70d8d2fc503f7c3eb7fbf0d13425382947d8d29e1bb098dab4ee00a4",
+      "size_bytes": 11067
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-7.json": {
+      "sha256": "899d7d1c72bd03c9f43232a4162949e0d3e0268dc46407e445f970e543ec1255",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-7.jsonl": {
+      "sha256": "6255d7ef88100fef4a1613b78ac6931bcb0f62731b34e977796da5424750be7d",
+      "size_bytes": 11064
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-0-global-2.pt": {
+      "sha256": "7b5d8da97c27a2c9e2c3259f4e66eaefbab70200284fd06d9d62698452eea167",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-0-global-3.pt": {
+      "sha256": "27d64b6f307b15a1ee4a5b43e0f5f342179776a243d3208ef1e5e8b91c4777f4",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-1-global-2.pt": {
+      "sha256": "38e65c1a1cc9c3c61a4f985959014184f65336d16ea2045f62befec939cf3895",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-1-global-3.pt": {
+      "sha256": "f47dea6cd254b8cdb2196dbf7afe88a69fc5040e375aea3eb5608397b3f99cf0",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-2-global-2.pt": {
+      "sha256": "fb2dfb418cc53ab3b3f729b8cec1cf63969277cc92c18269d3ea579e182022dd",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-2-global-3.pt": {
+      "sha256": "d55068ae4a3204a99b4bd7aed326155d9728a39710c95f52079f75af44629741",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-3-global-2.pt": {
+      "sha256": "5c453cdb3f7d6231eaf7e348e31b770b43c1a1238aac53420d1a3b13cbd7a335",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-3-global-3.pt": {
+      "sha256": "16c107e752a3104c8280d469f79d86e7165b48c4520e27119bd7bcdd0d0d646c",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-4-global-2.pt": {
+      "sha256": "96d2a548748985cf23b75563ff918edc9893eaf12760599c9782ce22c64d1fe8",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-4-global-3.pt": {
+      "sha256": "7a4c2b53c5ce54e21f348dca0a17f7644e713ca0a8127311b1f08f40f7883384",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-5-global-2.pt": {
+      "sha256": "32499417a511cbd5839ec94a51bd17ac80409d5b88a7d104e3f49b96f5a132af",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-5-global-3.pt": {
+      "sha256": "802f711cbce9d0b4270048ced7cda61e8091f5c48b21ce791c58c4aa4d573da1",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-6-global-2.pt": {
+      "sha256": "ab25ba9f2b8623e499c42eee35a11eb86746d1d770a08391ca37c801ea52a04b",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-6-global-3.pt": {
+      "sha256": "456db07bd2fc1679acb62116fab6f94bd550e7388e606bd5ea5394ab96642533",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-7-global-2.pt": {
+      "sha256": "896e6623fa0b8552ed7bd597cd487a93ca8d53e04ea27ff32816f29a3ffad1fb",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/gradients-rank-7-global-3.pt": {
+      "sha256": "b83109443a184f43b401005eb156640f57ded032e48296f6e2a522b84dbd7ec9",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/initial-masters-rank-0.pt": {
+      "sha256": "356c70437abff985b7f362b60c359c2bd97b5b85daa471ab8bd3f90ea4d9c4f0",
+      "size_bytes": 212346535
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/initial-masters-rank-1.pt": {
+      "sha256": "a8e73a090a7b4109dfc36d650e1d92f00f3067b215f1cb6b38aed6cfd095639a",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/initial-masters-rank-2.pt": {
+      "sha256": "124d89e0b544453e333f70a0567407f2a466dc582710daa8737eeb0479c9d716",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/initial-masters-rank-3.pt": {
+      "sha256": "d724e389335ff02c978d684d8d72cd28be340b5fd3c746c3fa13dc5f7ce76aa0",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/initial-masters-rank-4.pt": {
+      "sha256": "6caf624c4bc38a85d4fb102b7d1887c4340a444f12e8565f6bf144ed6fe805ad",
+      "size_bytes": 212346599
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/initial-masters-rank-5.pt": {
+      "sha256": "9ef0dba2cf1eb3d75e9f5d38549fb7849d1bba27935113bc05a49bce880400f8",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/initial-masters-rank-6.pt": {
+      "sha256": "ce6536b9ea61876bf9b03a11fee9d2edd8671f6ff052e6e04d091288fcd70541",
+      "size_bytes": 212346343
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/initial-masters-rank-7.pt": {
+      "sha256": "5815f923735f09af3472fcfa6c7b8096356edffe0592cc9ce682100a8df68743",
+      "size_bytes": 212346343
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/steps-rank-0.jsonl": {
+      "sha256": "a051f47c78ab97045364cab8fd978d32ad338788226556ad8596f32f4e53930e",
+      "size_bytes": 1002
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/steps-rank-1.jsonl": {
+      "sha256": "54678d37ecc3f59ac594e3aa5669284017d67222561c762d8b7c092ba89ebab6",
+      "size_bytes": 1003
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/steps-rank-2.jsonl": {
+      "sha256": "5aaf31d85d17d0af9eeaab2dfccb9e7a5ff18844966361cfcfbfde755c6b493b",
+      "size_bytes": 1003
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/steps-rank-3.jsonl": {
+      "sha256": "de6e8e5271f036dd73553b6a54247afc53148c1bf5a1659f0701a15257d56a7b",
+      "size_bytes": 1003
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/steps-rank-4.jsonl": {
+      "sha256": "a6f227457ee678da89f28529579ab4c1fc5e2f6ee5ed370183b4180d57f10fe1",
+      "size_bytes": 1003
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/steps-rank-5.jsonl": {
+      "sha256": "9481b699a937411c73e60388771c93d6dea705a29915be1ea42de4ddd81819aa",
+      "size_bytes": 1002
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/steps-rank-6.jsonl": {
+      "sha256": "88440d20821d96bbec2f5d8a6a21957f6ba2438a82c970a9cfcd11d103b72ab2",
+      "size_bytes": 1003
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/steps-rank-7.jsonl": {
+      "sha256": "1502047d8933665f086f1f5a0cf581092cdb81ed91b3a313a5670ef673d1c7d0",
+      "size_bytes": 1005
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/admission.py": {
+      "sha256": "028747152f4c4bbbeca49120aaa72100b6d5293439411840d9546815a6ec3c0b",
+      "size_bytes": 15144
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/admission_v2.py": {
+      "sha256": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49",
+      "size_bytes": 27753
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/assets.json": {
+      "sha256": "da62f1ca8001cc3be7ed6604c783987afe8f27d5ad281c6874d9ec55c3ad1b07",
+      "size_bytes": 15838
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/config.json": {
+      "sha256": "a8f4a7c68f38172a7ccb58b5bf4dcbb92a27b174aff59c9bb278426d7c28b8a2",
+      "size_bytes": 3871
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/native_full_body.py": {
+      "sha256": "40109aae2cdd5b06fa601220175569823f94e0e63d69c44942e93854740046c1",
+      "size_bytes": 21528
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/native_full_body_queue.py": {
+      "sha256": "1cbd366356bfcfe308aa2cdbd02c4a839b0abcb3b45b6b07db68312c58a95d5b",
+      "size_bytes": 12147
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/native_gradients.py": {
+      "sha256": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+      "size_bytes": 4703
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/native_recovery.py": {
+      "sha256": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+      "size_bytes": 12809
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/native_training.py": {
+      "sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "size_bytes": 70884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/numerical_validation.py": {
+      "sha256": "cb0546c268c09d73e15f62bde6d55a9a3437d26cce24ef464c14a9138d84629a",
+      "size_bytes": 10750
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/pilot_cache.py": {
+      "sha256": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+      "size_bytes": 18634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/sources.json": {
+      "sha256": "452fb3ff49e64eb0cd2e4f3625e5190fad8ee03b1d4bd9b6e0ae461406366dc1",
+      "size_bytes": 35967
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/train.jsonl": {
+      "sha256": "d2830918bcecc55105f83aab09702d95a01e1ada4513d9ca74f4cdc8566c8354",
+      "size_bytes": 599068
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/inputs/validation.jsonl": {
+      "sha256": "68c11d743800585eb33e9b4849681750e5a017c58ee1d957bdb5570470c88557",
+      "size_bytes": 20497
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/launch.json": {
+      "sha256": "15dd9399daaf8a14daa0aacbf5be562d386003da2678e3d1db23be900cf1ddd7",
+      "size_bytes": 5070
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/plan.json": {
+      "sha256": "f117d55ade5f0c19347c62a6a63a09fbf3fe33da1c692a004aae4389a95a7d45",
+      "size_bytes": 25132
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-0.json": {
+      "sha256": "3bae837d7438ad69bd6bc6e4c5c75bd937e35290133d3707dac08fc5d26345fa",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-1.json": {
+      "sha256": "0336676899ffb16cbe1ab9b896ff8f3712d41a8defb0b8f3197d1cf787aaffb4",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-2.json": {
+      "sha256": "0627fbced28e82ad90b47f21e992c160b8be09077579a5176e37dced1f72f741",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-3.json": {
+      "sha256": "e0c7fa0605d941d44e6e091d1e5c6f47c65a6a6c112bfb73d3a47f26093d0fd5",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-4.json": {
+      "sha256": "b06764fd124aa44e8c7e95c76b15783ee7e33eb300c73730bafdfddc13e70960",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-5.json": {
+      "sha256": "30611b60ee9efc71bf5f8aa9df9ca714a532748ad300bdea77612da6161503c0",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-6.json": {
+      "sha256": "6bc78118ef2616ec6643cc97578ef70797743de8414ac4d8811eeb839286c4a1",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-7.json": {
+      "sha256": "47a69aebebf1ebf20331629281eeb9074bcaaeda8007add1967c9c3e1919f05e",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/tokenization-audit.json": {
+      "sha256": "1164be718e95c5a99971308212880146942b58f692f56297bb335b4a9f7e1559",
+      "size_bytes": 825
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/work/cache.pt": {
+      "sha256": "721e69e9ad00105f47f1c5e5bcd95e0aebff4acdadd405ca697a314ed1cc8def",
+      "size_bytes": 385548
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/work/cnets.py": {
+      "sha256": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+      "size_bytes": 38251
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/work/config.json": {
+      "sha256": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f",
+      "size_bytes": 591
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/work/configs.py": {
+      "sha256": "14ae62877cd9ab12c9076fc70fe940714b9ca980865b00ba974de340df2d1ac5",
+      "size_bytes": 7550
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/work/ds_config.json": {
+      "sha256": "02b432995b51d8fa1cce7685b7430de7ce14de0419a6729cd9ff0c324c1bec0b",
+      "size_bytes": 1263
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/work/main.py": {
+      "sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+      "size_bytes": 14195
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/work/modeling_llama_kv.py": {
+      "sha256": "18adff2c21e659755eb41d6804fa6dd4b4d486b70d3c749693fbb44cff3855b5",
+      "size_bytes": 62818
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-0.json": {
+      "sha256": "1f6f29420e715243c6909656d61fabacdfd810acb94534d9704218a631f6e530",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-0.jsonl": {
+      "sha256": "f0449cc1f196217353ecc00fe024ee382910012c9303629e4707914c5b11c71c",
+      "size_bytes": 22036
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-1.json": {
+      "sha256": "a6af7922a56eacee237773b111bb44902bc06ece7fff0445a0f3492a0bd8a59a",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-1.jsonl": {
+      "sha256": "452923f4bd420894d649e25eea1531d28de81348f73c10ddb65cdf7b6184c7d2",
+      "size_bytes": 22027
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-2.json": {
+      "sha256": "2ba07af2008a68a6e6597016609c6261e2703386127684e9199f989023ed577a",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-2.jsonl": {
+      "sha256": "5a32fa892f5eeae6cd0bb4efb3e64ac6e93bf84b2b6159492ad420869c862f85",
+      "size_bytes": 22052
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-3.json": {
+      "sha256": "5dfccf3439e3326e0e10747c3bbc6c07a2f835845eb8a52d5be89f4ceb643a3f",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-3.jsonl": {
+      "sha256": "49928f84c76a596801f49a6555377a1ed0a28e44a39de5d5415ec0de50ac381a",
+      "size_bytes": 22041
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-4.json": {
+      "sha256": "7395b088e5a69c90d7967a957516fe1a6fd075cc9b7b9142f4ace8ccadcf0ce4",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-4.jsonl": {
+      "sha256": "68a78440d3c9a6d681bf096cd27a9c376b900200ab288952cff5ddaeca370e65",
+      "size_bytes": 22044
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-5.json": {
+      "sha256": "ed8d836e68c9291bf181800e4db2b6fa9bcbf69951d76cafcbb29af0f445315c",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-5.jsonl": {
+      "sha256": "e45f4434c6e218c1cd8a2e4b62782908eb19b6cf2a80b4cd7c7c4cc2f00d121b",
+      "size_bytes": 22046
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-6.json": {
+      "sha256": "4b04f9d380c2106c69500c1441b03a578eec16dd058c6215209e9c6dafd52a3b",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-6.jsonl": {
+      "sha256": "f70ce88e973cea65cd6287ae608a0260b57dbb7f6b3a9423ed60344188985518",
+      "size_bytes": 22044
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-7.json": {
+      "sha256": "629e13118e69afcc52f37d3ffc1b72e7ce56fd18a7ba041ebdd685d3c676b8e5",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-7.jsonl": {
+      "sha256": "81e58688eabb66b30eaad8dbf8cd84fcbbdd505909f571f240fc2c7a2e50776a",
+      "size_bytes": 22044
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-0-global-0.pt": {
+      "sha256": "0dd49dd2e9f2d8ed1b5c38e08a37bf00e7d0330f81677a2d9c63c493188450f3",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-0-global-1.pt": {
+      "sha256": "82044c5a537179c7f5202a53a4a16ce0b30b91fa055b0ae6472e169f635e2d13",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-0-global-2.pt": {
+      "sha256": "7b5d8da97c27a2c9e2c3259f4e66eaefbab70200284fd06d9d62698452eea167",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-0-global-3.pt": {
+      "sha256": "27d64b6f307b15a1ee4a5b43e0f5f342179776a243d3208ef1e5e8b91c4777f4",
+      "size_bytes": 134219318
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-1-global-0.pt": {
+      "sha256": "e4423ead58a806738b5051e7618d181d483d5778bf3f2fe6b4950ffcfa116717",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-1-global-1.pt": {
+      "sha256": "9e2230e05790d4d23d695120f5647b7f7aa0570796c69b90c35591c3547bcd39",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-1-global-2.pt": {
+      "sha256": "38e65c1a1cc9c3c61a4f985959014184f65336d16ea2045f62befec939cf3895",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-1-global-3.pt": {
+      "sha256": "f47dea6cd254b8cdb2196dbf7afe88a69fc5040e375aea3eb5608397b3f99cf0",
+      "size_bytes": 150996342
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-2-global-0.pt": {
+      "sha256": "d95472fe35520118e973dbe12ec510d9ee9fa6d79cb65c96fcc300eedb5c7a4d",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-2-global-1.pt": {
+      "sha256": "b42ae5d12a85eab916333ae8cbde97a29c60ddc9056988e9b255c7d40982aea3",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-2-global-2.pt": {
+      "sha256": "fb2dfb418cc53ab3b3f729b8cec1cf63969277cc92c18269d3ea579e182022dd",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-2-global-3.pt": {
+      "sha256": "d55068ae4a3204a99b4bd7aed326155d9728a39710c95f52079f75af44629741",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-3-global-0.pt": {
+      "sha256": "755b6b30a68eb378adbd0c7005e46d0b7529818ae73ccfecfae32e5a3913345f",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-3-global-1.pt": {
+      "sha256": "501eb28250a98ab3885193b91eaa208409b2aa7e21d88da1d948031071a8afc7",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-3-global-2.pt": {
+      "sha256": "5c453cdb3f7d6231eaf7e348e31b770b43c1a1238aac53420d1a3b13cbd7a335",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-3-global-3.pt": {
+      "sha256": "16c107e752a3104c8280d469f79d86e7165b48c4520e27119bd7bcdd0d0d646c",
+      "size_bytes": 234882422
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-4-global-0.pt": {
+      "sha256": "14d28a789d04f7a2965f776a895b44ee965b9adc5b606ea43c7112e2edf85efd",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-4-global-1.pt": {
+      "sha256": "36050eb8fb2a9f530859919ca1a0e499c876e64d69b945c5e5cfb2c0151c78f4",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-4-global-2.pt": {
+      "sha256": "96d2a548748985cf23b75563ff918edc9893eaf12760599c9782ce22c64d1fe8",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-4-global-3.pt": {
+      "sha256": "7a4c2b53c5ce54e21f348dca0a17f7644e713ca0a8127311b1f08f40f7883384",
+      "size_bytes": 218138230
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-5-global-0.pt": {
+      "sha256": "eb230c467594d789db9b2535cb23bac8790381161587e5002cde3fd209e96294",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-5-global-1.pt": {
+      "sha256": "a641c493e40d7c17c5335e53594eaf0294564e2b4173ee8c84f092a1c6189731",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-5-global-2.pt": {
+      "sha256": "32499417a511cbd5839ec94a51bd17ac80409d5b88a7d104e3f49b96f5a132af",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-5-global-3.pt": {
+      "sha256": "802f711cbce9d0b4270048ced7cda61e8091f5c48b21ce791c58c4aa4d573da1",
+      "size_bytes": 362808694
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-6-global-0.pt": {
+      "sha256": "4061730962c88c3a62db21b80b4f4e73addc8cad8220de39f26f3092eaf4ed10",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-6-global-1.pt": {
+      "sha256": "db076113958784a274d5371a9457723b51be3390495637f36b838c8a8c38324b",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-6-global-2.pt": {
+      "sha256": "ab25ba9f2b8623e499c42eee35a11eb86746d1d770a08391ca37c801ea52a04b",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-6-global-3.pt": {
+      "sha256": "456db07bd2fc1679acb62116fab6f94bd550e7388e606bd5ea5394ab96642533",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-7-global-0.pt": {
+      "sha256": "fe47f7213867294a94adc3bc2d2f575d09e7441c1d520a1a76de75382bc7f91c",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-7-global-1.pt": {
+      "sha256": "67ce4715a40c15760ac60d77959ca052230500e318f8f0e4a1d12b14a270dd42",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-7-global-2.pt": {
+      "sha256": "896e6623fa0b8552ed7bd597cd487a93ca8d53e04ea27ff32816f29a3ffad1fb",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/gradients-rank-7-global-3.pt": {
+      "sha256": "b83109443a184f43b401005eb156640f57ded032e48296f6e2a522b84dbd7ec9",
+      "size_bytes": 262145334
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/initial-masters-rank-0.pt": {
+      "sha256": "97ea7c9b0ddae30a30ae20d26264844b0972bea4f4a571f7afacbb834f35218b",
+      "size_bytes": 212346535
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/initial-masters-rank-1.pt": {
+      "sha256": "446fd3672bdb3426a895f047ed86a2cd0234ddf4f1bdd29e450ddc8058300c39",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/initial-masters-rank-2.pt": {
+      "sha256": "2fd5191f7d51c67c9678f64719ffb2b7ecb9491258112314863f4def8e1b1809",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/initial-masters-rank-3.pt": {
+      "sha256": "c15825dbd43b080014ce7cae03a33304c31e274a09d3634eef606992b384c0fe",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/initial-masters-rank-4.pt": {
+      "sha256": "6bb3fd3fcb1454b258b14a2a07f5fc73297bb0382fdb21ac996547e48c019de8",
+      "size_bytes": 212346599
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/initial-masters-rank-5.pt": {
+      "sha256": "a5df8a8f1142057e8111159ac98d4a67061b5d4e84e6562264e2ebfe802f4197",
+      "size_bytes": 212346407
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/initial-masters-rank-6.pt": {
+      "sha256": "19df2316d3f3840c399cfb5668befff3963cd3c0b99222e33f7875d9f9b9a0aa",
+      "size_bytes": 212346343
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/initial-masters-rank-7.pt": {
+      "sha256": "0d6c763d52c5c9191b53d86b1ab73e213bec766f66b3dc7e709b4f3ffc14a6ef",
+      "size_bytes": 212346343
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/steps-rank-0.jsonl": {
+      "sha256": "551a54b7e05c714245201ba988bd1368f07181c8005ce1b3b232347fa9d904ce",
+      "size_bytes": 1983
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/steps-rank-1.jsonl": {
+      "sha256": "f5b30ceef97def8736bd0d5c6de99e04daa3505c675cea021ee0af0cc06914a6",
+      "size_bytes": 1984
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/steps-rank-2.jsonl": {
+      "sha256": "49bb4d2024679ca68bfcebd179f7632c8e633c7935731ba36d84c9f8913fd863",
+      "size_bytes": 1983
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/steps-rank-3.jsonl": {
+      "sha256": "b29f9a152a521f11964823b344ec4056595c5e13731539aa5039a0af4ab0ba48",
+      "size_bytes": 1983
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/steps-rank-4.jsonl": {
+      "sha256": "ed1ab4a48f6493591f79d16e0a955ba895e9375408e92b2844a2dc09178a53f0",
+      "size_bytes": 1984
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/steps-rank-5.jsonl": {
+      "sha256": "ec6cd75375a6ad7877e20b6774a758955963bebfecf53dfe2bcd0ddc039043e4",
+      "size_bytes": 1983
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/steps-rank-6.jsonl": {
+      "sha256": "ef53cd3d73007912a6e50ec034010e3d18902f96e85a55b38632677dbfab043d",
+      "size_bytes": 1983
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/steps-rank-7.jsonl": {
+      "sha256": "e3156470928f1039424181765de68bcd7878c4f6638d9f6d3079d39adcdf3e99",
+      "size_bytes": 1986
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/admission.py": {
+      "sha256": "028747152f4c4bbbeca49120aaa72100b6d5293439411840d9546815a6ec3c0b",
+      "size_bytes": 15144
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/admission_v2.py": {
+      "sha256": "3a14cc3365513de02f6543ccae6299144cf343fad4b32b3d7fadf619703f2b49",
+      "size_bytes": 27753
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/assets.json": {
+      "sha256": "da62f1ca8001cc3be7ed6604c783987afe8f27d5ad281c6874d9ec55c3ad1b07",
+      "size_bytes": 15838
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/config.json": {
+      "sha256": "2ae0f10e522f543c829e1989796fb94649cc6a9da8cefafb72f2e8b449c082c0",
+      "size_bytes": 3874
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/native_full_body.py": {
+      "sha256": "40109aae2cdd5b06fa601220175569823f94e0e63d69c44942e93854740046c1",
+      "size_bytes": 21528
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/native_full_body_queue.py": {
+      "sha256": "1cbd366356bfcfe308aa2cdbd02c4a839b0abcb3b45b6b07db68312c58a95d5b",
+      "size_bytes": 12147
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/native_gradients.py": {
+      "sha256": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+      "size_bytes": 4703
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/native_recovery.py": {
+      "sha256": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+      "size_bytes": 12809
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/native_training.py": {
+      "sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "size_bytes": 70884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/numerical_validation.py": {
+      "sha256": "cb0546c268c09d73e15f62bde6d55a9a3437d26cce24ef464c14a9138d84629a",
+      "size_bytes": 10750
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/pilot_cache.py": {
+      "sha256": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+      "size_bytes": 18634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/sources.json": {
+      "sha256": "452fb3ff49e64eb0cd2e4f3625e5190fad8ee03b1d4bd9b6e0ae461406366dc1",
+      "size_bytes": 35967
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/train.jsonl": {
+      "sha256": "d2830918bcecc55105f83aab09702d95a01e1ada4513d9ca74f4cdc8566c8354",
+      "size_bytes": 599068
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/inputs/validation.jsonl": {
+      "sha256": "68c11d743800585eb33e9b4849681750e5a017c58ee1d957bdb5570470c88557",
+      "size_bytes": 20497
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/launch.json": {
+      "sha256": "2fc4824a37d7b2014347558efafc0c61aa0af2589c6a042ae2ecd8cb081028e4",
+      "size_bytes": 4951
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/plan.json": {
+      "sha256": "68af64bb24e446f2b2902e6e69aea3afdb983602bba9de9f80fe5ebe39099441",
+      "size_bytes": 25234
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-0.json": {
+      "sha256": "8c36179c8111a2a661aa8ed239dab92428dd4cea0b031c87accc2a9e1c4316b1",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-1.json": {
+      "sha256": "dd02e7ec94bcb0af287a7f59ffbef5cb83f84fe5c75395a7691506f7e0893f54",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-2.json": {
+      "sha256": "b3a55fdd94bbf0aaea0f4bc4420eeb3ae864c5b108aded81ccf615bdff300799",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-3.json": {
+      "sha256": "e50f36d8a4eaea86fdbf2dd08e2b0751d03d3176ee2eaf3621e5be204f1535a3",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-4.json": {
+      "sha256": "2e9e676faf52b0f988bf3e3128709d2b47fd43fd0519889ef4ff749429326264",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-5.json": {
+      "sha256": "436bf775d0a509a44a6be6ac82889d8a321f0063161f9f4641c1e5ef2b4e96e8",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-6.json": {
+      "sha256": "b55063b56d24043fbd65c5dcb151c696e5d21401d52b6ce5a6a5d930956ac4c4",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-7.json": {
+      "sha256": "2751f1855e49c914c01959d689b89afb841f84f02f5b7fcf8acb70b4d6c58280",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/tokenization-audit.json": {
+      "sha256": "f6bd4d166a9b9f5e29ba1f2261485b3bb5eccabe6e950187cc5c1676caf15d03",
+      "size_bytes": 825
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/work/cache.pt": {
+      "sha256": "721e69e9ad00105f47f1c5e5bcd95e0aebff4acdadd405ca697a314ed1cc8def",
+      "size_bytes": 385548
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/work/cnets.py": {
+      "sha256": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+      "size_bytes": 38251
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/work/config.json": {
+      "sha256": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f",
+      "size_bytes": 591
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/work/configs.py": {
+      "sha256": "14ae62877cd9ab12c9076fc70fe940714b9ca980865b00ba974de340df2d1ac5",
+      "size_bytes": 7550
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/work/ds_config.json": {
+      "sha256": "02b432995b51d8fa1cce7685b7430de7ce14de0419a6729cd9ff0c324c1bec0b",
+      "size_bytes": 1263
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/work/main.py": {
+      "sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+      "size_bytes": 14195
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/work/modeling_llama_kv.py": {
+      "sha256": "18adff2c21e659755eb41d6804fa6dd4b4d486b70d3c749693fbb44cff3855b5",
+      "size_bytes": 62818
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/sharegpt-ultrachat-full-pipeline-20261111-v2-preparation-0/inputs/vocabulary-audit.json": {
+      "sha256": "c8a7ce71b81c5a7e7e5b4ac38c35cf453e116d6ec59d111aff03114454b0ffc3",
+      "size_bytes": 2195
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/sharegpt-ultrachat-full-pipeline-20261111-v2-preparation-0/plan.json": {
+      "sha256": "ef5c2082ae209d10ecef1fb776bb96daa25f04adb128ac5f693b7f8014ccb567",
+      "size_bytes": 64711891
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/sharegpt-ultrachat-full-pipeline-20261111-v2-preparation-0/work/cache.pt": {
+      "sha256": "721e69e9ad00105f47f1c5e5bcd95e0aebff4acdadd405ca697a314ed1cc8def",
+      "size_bytes": 385548
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-20261112-v2/queue-plan.json": {
+      "sha256": "c48449d377389e9831bad9890ec23779bdf62caa9391616ea96a5bda9cb53280",
+      "size_bytes": 1884
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/deepspeed/ops/adam/fused_adam.py": {
+      "sha256": "e7f24193f52f04572738bd3f84faf94951404e69a6287148955491d5a9beb017",
+      "size_bytes": 8767
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/deepspeed/runtime/engine.py": {
+      "sha256": "3bb0e2af63f93c105d51f120bd56886b7d45e4ad33d9cd192e5c687c8673fde8",
+      "size_bytes": 192241
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/deepspeed/runtime/lr_schedules.py": {
+      "sha256": "6482b41cc5bf6d8e883020ca8fa5e7a9b1aa44f27e6f93873d12e07e573945d2",
+      "size_bytes": 38954
+    }
+  },
+  "artifact_inventory_sha256": "fa061219494f040c7a6e6d61f494230a7d3fb1325a36ee83b97faa0f2c6dafdc",
+  "automatic_admission_emitted": false,
+  "cpu_only": true,
+  "error_code": "native_saved_recipe_differs_beyond_source_proven_adamw_consumption",
+  "phase": "native_raw_dynamic_state_reconstruction",
+  "project_helpers_imported": false,
+  "runtime_packages": {
+    "accelerate": "0.26.0",
+    "deepspeed": "0.17.1",
+    "numpy": "1.26.4",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.53.1"
+  },
+  "scientific_training_admitted": false,
+  "semantic_hasher_v2_sha256": "5e11dd792adb840be1e861f6a0f2e235d483b977e7dca3cfef31f78e3f0f4091",
+  "slurm_job_id": "2216793",
+  "status": "failed",
+  "wall_seconds": 371.75402081757784
+}

@@ -4,7 +4,7 @@ Research code for studying specialist drafters under mixed traffic, following th
 
 [Getting started](docs/GETTING_STARTED.md) · [Reproduction protocol](experiments/official-reproduction-20261109/PREREGISTRATION.md) · [Implementation status](experiments/IMPLEMENTATION_STATUS.md) · [Current completion plan](experiments/finalization-20261111/COMPLETION_PLAN.md) · [References](references/README.md)
 
-The [12 November execution record](results/progress-2026-11-12/README.md) covers the [24-run specialization pilot](experiments/rq1-pilot-24-20261112/README.md) and a stopped scratch generalist. A confirmed upstream checkpoint-gradient defect invalidated the old full-body training path. Both eight-A100 allocations are retained. Corrected pilot GPU qualifications completed; independent raw-state replay and a fresh corrected native generalist qualification precede scientific training.
+The [13 November status](experiments/STATUS_20261113.md) supersedes earlier live snapshots. Both eight-A100 allocations are retained. The corrected generalist passed its 200-update profile and independent numerical, runtime and stock-export checks; fresh full training awaits exact evidence admission. The first admitted pilot stopped after 207 committed updates at its online teacher gate. No pilot has completed its fixed budget. The failed pilot is preserved and blocked while an isolated teacher-runtime diagnostic runs.
 
 ```mermaid
 flowchart LR

@@ -1,0 +1,1884 @@
+{
+  "actual_gpu_cases": [
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "direct-reference",
+      "rank": 0,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "direct-reference",
+      "rank": 1,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "direct-reference",
+      "rank": 2,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "direct-reference",
+      "rank": 3,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "direct-reference",
+      "rank": 4,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "direct-reference",
+      "rank": 5,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "direct-reference",
+      "rank": 6,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "direct-reference",
+      "rank": 7,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "profile",
+      "rank": 0,
+      "runtime_scope": "pre_post_profile_interval",
+      "successful_updates": 200
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "profile",
+      "rank": 1,
+      "runtime_scope": "pre_post_profile_interval",
+      "successful_updates": 200
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "profile",
+      "rank": 2,
+      "runtime_scope": "pre_post_profile_interval",
+      "successful_updates": 200
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "profile",
+      "rank": 3,
+      "runtime_scope": "pre_post_profile_interval",
+      "successful_updates": 200
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "profile",
+      "rank": 4,
+      "runtime_scope": "pre_post_profile_interval",
+      "successful_updates": 200
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "profile",
+      "rank": 5,
+      "runtime_scope": "pre_post_profile_interval",
+      "successful_updates": 200
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "profile",
+      "rank": 6,
+      "runtime_scope": "pre_post_profile_interval",
+      "successful_updates": 200
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "profile",
+      "rank": 7,
+      "runtime_scope": "pre_post_profile_interval",
+      "successful_updates": 200
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "split",
+      "rank": 0,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "split",
+      "rank": 1,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "split",
+      "rank": 2,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "split",
+      "rank": 3,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "split",
+      "rank": 4,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "split",
+      "rank": 5,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "split",
+      "rank": 6,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "split",
+      "rank": 7,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "uninterrupted",
+      "rank": 0,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "uninterrupted",
+      "rank": 1,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "uninterrupted",
+      "rank": 2,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "uninterrupted",
+      "rank": 3,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "uninterrupted",
+      "rank": 4,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "uninterrupted",
+      "rank": 5,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "uninterrupted",
+      "rank": 6,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    },
+    {
+      "backend": {
+        "capability": [
+          8,
+          0
+        ],
+        "cublas_workspace_config": ":4096:8",
+        "cudnn_benchmark": false,
+        "cudnn_tf32": true,
+        "deterministic_algorithms": false,
+        "device_memory_bytes": 85097971712,
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "gradient_accumulation_steps": 2,
+        "initial_observed_loss_scale": 16384.0,
+        "matmul_tf32": true
+      },
+      "label": "uninterrupted",
+      "rank": 7,
+      "runtime_scope": "retrospective_source_and_actual_worker_binding_outside_profile_interval",
+      "successful_updates": 4
+    }
+  ],
+  "actual_hardware_inventory": {
+    "device_bindings": [
+      {
+        "index": "0",
+        "shard_index": 0,
+        "token": "0",
+        "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c"
+      },
+      {
+        "index": "1",
+        "shard_index": 1,
+        "token": "1",
+        "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2"
+      },
+      {
+        "index": "2",
+        "shard_index": 2,
+        "token": "2",
+        "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19"
+      },
+      {
+        "index": "3",
+        "shard_index": 3,
+        "token": "3",
+        "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c"
+      },
+      {
+        "index": "4",
+        "shard_index": 4,
+        "token": "4",
+        "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c"
+      },
+      {
+        "index": "5",
+        "shard_index": 5,
+        "token": "5",
+        "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed"
+      },
+      {
+        "index": "6",
+        "shard_index": 6,
+        "token": "6",
+        "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c"
+      },
+      {
+        "index": "7",
+        "shard_index": 7,
+        "token": "7",
+        "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8"
+      }
+    ],
+    "gpu_inventory": [
+      {
+        "driver_version": "565.57.01",
+        "index": "0",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "1",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "2",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "3",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "4",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "5",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "6",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "7",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8"
+      }
+    ],
+    "hardware_identity_sha256": "47811704de2166adcf61e573d434222a9a66d7498c4b9c6b36001201ac2a60a2"
+  },
+  "actual_package_versions": {
+    "accelerate": "0.26.0",
+    "datasets": "3.6.0",
+    "deepspeed": "0.17.1",
+    "huggingface-hub": "0.33.4",
+    "ninja": "1.11.1.4",
+    "numpy": "1.26.4",
+    "protobuf": "3.19.0",
+    "pyarrow": "20.0.0",
+    "pydantic": "2.11.4",
+    "safetensors": "0.5.3",
+    "sentencepiece": "0.1.99",
+    "torch": "2.6.0+cu124",
+    "tqdm": "4.67.1",
+    "transformers": "4.53.1",
+    "wandb": "0.20.1"
+  },
+  "actual_rank_device_bindings": [
+    {
+      "index": "0",
+      "shard_index": 0,
+      "token": "0",
+      "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c"
+    },
+    {
+      "index": "1",
+      "shard_index": 1,
+      "token": "1",
+      "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2"
+    },
+    {
+      "index": "2",
+      "shard_index": 2,
+      "token": "2",
+      "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19"
+    },
+    {
+      "index": "3",
+      "shard_index": 3,
+      "token": "3",
+      "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c"
+    },
+    {
+      "index": "4",
+      "shard_index": 4,
+      "token": "4",
+      "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c"
+    },
+    {
+      "index": "5",
+      "shard_index": 5,
+      "token": "5",
+      "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed"
+    },
+    {
+      "index": "6",
+      "shard_index": 6,
+      "token": "6",
+      "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c"
+    },
+    {
+      "index": "7",
+      "shard_index": 7,
+      "token": "7",
+      "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8"
+    }
+  ],
+  "artifact_inventory": {
+    "/mnt/nfs/home/mohamadzbib/projects/rl-infra/python/cpython-3.10.21-linux-x86_64-gnu/bin/python3.10": {
+      "sha256": "ca420bd4614ae7757b4cd4938b3c663e98d2b631bda518610071d9a4ca0b509e",
+      "size_bytes": 18835288
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/deep-chungus-11/torch-extensions/fused_adam/build.ninja": {
+      "sha256": "08b26549712019f727b71fff94ec8270c698dd557b4ac3d8c5aa6f39df19f6a1",
+      "size_bytes": 4062
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/cache/native-eagle3/deep-chungus-11/torch-extensions/fused_adam/fused_adam.so": {
+      "sha256": "af1f2a63c5ce34516b6fe9b63745f377504ebd33bf1ab25f4beb9ac53c92e14d",
+      "size_bytes": 9940680
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-audit/native-full-body-20261112-v2/runtime/post.json": {
+      "sha256": "ea5c9578bbfae7b19558d735e2b2efa93b517b812d9a1839d6df8ca94284fe09",
+      "size_bytes": 83553
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-audit/native-full-body-20261112-v2/runtime/pre.json": {
+      "sha256": "284f6d0c173b09a61ba605dfd8be10feb9059691fd2c71602566267ecbb3cbca",
+      "size_bytes": 82926
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-0.json": {
+      "sha256": "e225fad857bffc56923cfc5cc8b122150a64dcced401f2a7cfc00de8b8540c81",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-1.json": {
+      "sha256": "25c03db6e35262581e3a28302f62f74c8015782797cf6fbc666bcbe6a14ac90f",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-2.json": {
+      "sha256": "c5850a6e05a0829527fd11a5acb740f5e05ca04154a591e06ce7f4081c013258",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-3.json": {
+      "sha256": "7cfcff8a3070e33f9a693a8ecd03196e259258e3d912c2090b0aa6b1fbd6fef6",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-4.json": {
+      "sha256": "52e21e025e0905ec255b7da188d72dbfe024d373847abf0c0c0854acb4bb098b",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-5.json": {
+      "sha256": "8f8b9b4fb23bb1a45bcabbbc6c868488ab38f5aa91ba3b2a0f55e2b700b59697",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-6.json": {
+      "sha256": "616b6b83f9d28c65b8363c6449c684fdc729599c9a21260be9d3894be4d1cb94",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/attempts/attempt-1/full-body-rank-7.json": {
+      "sha256": "fc20eb944c25e6e591c4f843eefeb832f3ffc8516a309f5a653d1e2a5746deac",
+      "size_bytes": 2154
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/launch.json": {
+      "sha256": "cba2a0e96223eaea2fcb17653bcf62267705dc3a1ada288923da7f0fa8836e9f",
+      "size_bytes": 4957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/plan.json": {
+      "sha256": "d1cdabe48eda16bda8991ba27da0ea30914b2decc688d68acf4a672c5b5f6f05",
+      "size_bytes": 25270
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-0.json": {
+      "sha256": "ab5fd6b7b46018f104518dee3121c62f8a70f9136753f2c84ee360bd294d5c5c",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-1.json": {
+      "sha256": "e30fa6ea6e2e186d4b1940df9752085af2a42709f4357a91d1a707d683822654",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-2.json": {
+      "sha256": "78119d13aa0dd3bf0f070a9bbe519c7760bab4ff576c565c81503d44bc607c3b",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-3.json": {
+      "sha256": "6bc820da38e905d75fc5fa196034ebb34bbf83519259200ac52b5cbce84d44cd",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-4.json": {
+      "sha256": "48648233307b6b594b7f456c3ff23378cd971a84f7077e725bbc21112b57e38a",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-5.json": {
+      "sha256": "acc808e1968fed81437d1a77ca1c19cbb5bfc9d3cd066c235ed2aad9a0239562",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-6.json": {
+      "sha256": "81f093d6f18f437d68451b0c43003b63e7b8a831925648c75fab63214d419a75",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-direct-reference/rank-7.json": {
+      "sha256": "41fa8e3ddba6a9bc5add2870dde806b89f065adea37c2272a3370391a7f519f6",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-0.json": {
+      "sha256": "ad2d97c7225588712056e0679381cc014b938d0547288b2249d614ccdcfeb348",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-1.json": {
+      "sha256": "d1eb7b29f4687a277df9a6f0e30649f860fd657113037ec3006c35067599830c",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-2.json": {
+      "sha256": "a15ccaf273800e1e777b4b32c170cd75426f81ba2e9bdf98ff114577f331a891",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-3.json": {
+      "sha256": "e9f3cc4ccd2e21ee5fafdd6db930550e0c34279ea83005479263ce8b8d618be1",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-4.json": {
+      "sha256": "8a5514fe5535b4057b3020510d7d0a25e33f24c3b68bff42761c6399e98470dd",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-5.json": {
+      "sha256": "e70e20f82c38e90f140418a390608ab9d12f269e08dd35612995376d4faf5329",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-6.json": {
+      "sha256": "5d927a8278275dcf0f580fba0eba0803dfa8b97d03fecc9414d6091e102162be",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/attempts/attempt-1/full-body-rank-7.json": {
+      "sha256": "9f391b7ae592b4f6020803288748919b7880a4b421109742beb9eb12f2aa92da",
+      "size_bytes": 2145
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/native_full_body.py": {
+      "sha256": "40109aae2cdd5b06fa601220175569823f94e0e63d69c44942e93854740046c1",
+      "size_bytes": 21528
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/native_full_body_queue.py": {
+      "sha256": "1cbd366356bfcfe308aa2cdbd02c4a839b0abcb3b45b6b07db68312c58a95d5b",
+      "size_bytes": 12147
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/native_gradients.py": {
+      "sha256": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+      "size_bytes": 4703
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/native_recovery.py": {
+      "sha256": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+      "size_bytes": 12809
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/native_training.py": {
+      "sha256": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "size_bytes": 70884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/pilot_cache.py": {
+      "sha256": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+      "size_bytes": 18634
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/inputs/pool.py": {
+      "sha256": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7",
+      "size_bytes": 34500
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/launch.json": {
+      "sha256": "eb43ea346d858d7b6145d0736bed1f62561caabb2b6e18d3d74f898c48a4b841",
+      "size_bytes": 4960
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/plan.json": {
+      "sha256": "fb9812b7bce2ca3a72f85d5358d6915d07986a08a260c3a2a5f88d26c0583db1",
+      "size_bytes": 64712662
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-0.json": {
+      "sha256": "b84f98034c18ba0b0988968938224a0629ae377bafc9c5f205960a4cf331b321",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-1.json": {
+      "sha256": "c3b87173cc64a77442e68fe5ed20a8bb194f5abd336f2281c5df18eafb40083c",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-2.json": {
+      "sha256": "9b1494d497b79ee6e210118496cf34fc32552b9bdbfdad9653a0096017755c90",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-3.json": {
+      "sha256": "14c5720977a25edc74d8865528217e35779c8f425a8aee2fd5de5756412ce7a1",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-4.json": {
+      "sha256": "3dbb3f9351701c94475450c1a97cf6f90a18fe4d9424aab6688a2c6bb50315f9",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-5.json": {
+      "sha256": "9f37f49d1076ccddd1ca9733a181d6e153ea3794170c3fb27507aa0246aa1c8e",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-6.json": {
+      "sha256": "16bebd871546a0b82dffdafbdff69f77204c3e22d9c77be3906449e0219c8e72",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/rank-7.json": {
+      "sha256": "23d7968a42d0533e2f5d2e0b41a40d0c9e8889a1648d5eef2d8647cec7b12ed9",
+      "size_bytes": 1973
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/cnets.py": {
+      "sha256": "71295b56d8bd5648a1c630af0995f6a23a13671c8e60fe92636fffd9ee786a9c",
+      "size_bytes": 38251
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/config.json": {
+      "sha256": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f",
+      "size_bytes": 591
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/configs.py": {
+      "sha256": "14ae62877cd9ab12c9076fc70fe940714b9ca980865b00ba974de340df2d1ac5",
+      "size_bytes": 7550
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/ds_config.json": {
+      "sha256": "02b432995b51d8fa1cce7685b7430de7ce14de0419a6729cd9ff0c324c1bec0b",
+      "size_bytes": 1263
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/main.py": {
+      "sha256": "439c4d8de398c8876f72806d7ba7e6436b5127a4751f3491505a3f51412a4eeb",
+      "size_bytes": 14195
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-profile/work/modeling_llama_kv.py": {
+      "sha256": "18adff2c21e659755eb41d6804fa6dd4b4d486b70d3c749693fbb44cff3855b5",
+      "size_bytes": 62818
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-0.json": {
+      "sha256": "c6b08f45c360989694de079a66beecd47b89822a9ad2420844968cd49d2211f2",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-1.json": {
+      "sha256": "1f8bf2293b72bb18792ea6973e703d0675c7c50b996e783f00e60dc0cd48f9ab",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-2.json": {
+      "sha256": "d27bfd70bbf39c11dfd512cdbb73546eba96308d94129834ac0d2f70a1d1e99e",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-3.json": {
+      "sha256": "1336bfa36430a410919dd794bb2b6e3ecae410bdb0f217526966127c1135ae2e",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-4.json": {
+      "sha256": "dd9f6d4426fde8748f34b1a4b4020b2d943b9611abc460fe0f3fbccaa8b89184",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-5.json": {
+      "sha256": "32073dadb0e10066721e9c395291cbe065a21f294c66f98cb1550c3459a609b9",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-6.json": {
+      "sha256": "dc7d5be65ba9bdabb3d6d1d35ed9a29ea465054c54a53f7a3f1a5e714c355bc7",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/attempts/attempt-2/full-body-rank-7.json": {
+      "sha256": "899d7d1c72bd03c9f43232a4162949e0d3e0268dc46407e445f970e543ec1255",
+      "size_bytes": 2143
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/launch.json": {
+      "sha256": "15dd9399daaf8a14daa0aacbf5be562d386003da2678e3d1db23be900cf1ddd7",
+      "size_bytes": 5070
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/plan.json": {
+      "sha256": "f117d55ade5f0c19347c62a6a63a09fbf3fe33da1c692a004aae4389a95a7d45",
+      "size_bytes": 25132
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-0.json": {
+      "sha256": "3bae837d7438ad69bd6bc6e4c5c75bd937e35290133d3707dac08fc5d26345fa",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-1.json": {
+      "sha256": "0336676899ffb16cbe1ab9b896ff8f3712d41a8defb0b8f3197d1cf787aaffb4",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-2.json": {
+      "sha256": "0627fbced28e82ad90b47f21e992c160b8be09077579a5176e37dced1f72f741",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-3.json": {
+      "sha256": "e0c7fa0605d941d44e6e091d1e5c6f47c65a6a6c112bfb73d3a47f26093d0fd5",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-4.json": {
+      "sha256": "b06764fd124aa44e8c7e95c76b15783ee7e33eb300c73730bafdfddc13e70960",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-5.json": {
+      "sha256": "30611b60ee9efc71bf5f8aa9df9ca714a532748ad300bdea77612da6161503c0",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-6.json": {
+      "sha256": "6bc78118ef2616ec6643cc97578ef70797743de8414ac4d8811eeb839286c4a1",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-split/rank-7.json": {
+      "sha256": "47a69aebebf1ebf20331629281eeb9074bcaaeda8007add1967c9c3e1919f05e",
+      "size_bytes": 2578
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-0.json": {
+      "sha256": "1f6f29420e715243c6909656d61fabacdfd810acb94534d9704218a631f6e530",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-1.json": {
+      "sha256": "a6af7922a56eacee237773b111bb44902bc06ece7fff0445a0f3492a0bd8a59a",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-2.json": {
+      "sha256": "2ba07af2008a68a6e6597016609c6261e2703386127684e9199f989023ed577a",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-3.json": {
+      "sha256": "5dfccf3439e3326e0e10747c3bbc6c07a2f835845eb8a52d5be89f4ceb643a3f",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-4.json": {
+      "sha256": "7395b088e5a69c90d7967a957516fe1a6fd075cc9b7b9142f4ace8ccadcf0ce4",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-5.json": {
+      "sha256": "ed8d836e68c9291bf181800e4db2b6fa9bcbf69951d76cafcbb29af0f445315c",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-6.json": {
+      "sha256": "4b04f9d380c2106c69500c1441b03a578eec16dd058c6215209e9c6dafd52a3b",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/attempts/attempt-1/full-body-rank-7.json": {
+      "sha256": "629e13118e69afcc52f37d3ffc1b72e7ce56fd18a7ba041ebdd685d3c676b8e5",
+      "size_bytes": 2151
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/launch.json": {
+      "sha256": "2fc4824a37d7b2014347558efafc0c61aa0af2589c6a042ae2ecd8cb081028e4",
+      "size_bytes": 4951
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/plan.json": {
+      "sha256": "68af64bb24e446f2b2902e6e69aea3afdb983602bba9de9f80fe5ebe39099441",
+      "size_bytes": 25234
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-0.json": {
+      "sha256": "8c36179c8111a2a661aa8ed239dab92428dd4cea0b031c87accc2a9e1c4316b1",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-1.json": {
+      "sha256": "dd02e7ec94bcb0af287a7f59ffbef5cb83f84fe5c75395a7691506f7e0893f54",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-2.json": {
+      "sha256": "b3a55fdd94bbf0aaea0f4bc4420eeb3ae864c5b108aded81ccf615bdff300799",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-3.json": {
+      "sha256": "e50f36d8a4eaea86fdbf2dd08e2b0751d03d3176ee2eaf3621e5be204f1535a3",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-4.json": {
+      "sha256": "2e9e676faf52b0f988bf3e3128709d2b47fd43fd0519889ef4ff749429326264",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-5.json": {
+      "sha256": "436bf775d0a509a44a6be6ac82889d8a321f0063161f9f4641c1e5ef2b4e96e8",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-6.json": {
+      "sha256": "b55063b56d24043fbd65c5dcb151c696e5d21401d52b6ce5a6a5d930956ac4c4",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/rank-7.json": {
+      "sha256": "2751f1855e49c914c01959d689b89afb841f84f02f5b7fcf8acb70b4d6c58280",
+      "size_bytes": 1957
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-20261112-v2/queue-plan.json": {
+      "sha256": "c48449d377389e9831bad9890ec23779bdf62caa9391616ea96a5bda9cb53280",
+      "size_bytes": 1884
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/PIL/_imaging.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "a98a5a999a98a80b5fc983c5d1e7c3b908bb7bb2fd63e958f798f337f318844c",
+      "size_bytes": 3345225
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/PIL/_imagingft.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "edbd7b4ebdb256658faee76146f44bba3b01123be80c423ed812be531446b45e",
+      "size_bytes": 298297
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/accelerate/__init__.py": {
+      "sha256": "38cfd229b005de13f2d7e5bbe67408b36aca82085d36ccd7839e9d0bade473d4",
+      "size_bytes": 784
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/aiohttp/_http_parser.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "aed2e31e80c0f47db713b07783777a3a912721a58e8e5cd19cd9b874d828891a",
+      "size_bytes": 2736176
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/aiohttp/_http_writer.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "64be0af6db218594034bb94838207e58f7dc620109b2c42d9c118b9480d84345",
+      "size_bytes": 476088
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/aiohttp/_websocket/mask.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "9ba3b822c194b04a0b164296557a23b7f6b4dd1ffb9fc787e66074b593ed74f6",
+      "size_bytes": 220664
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/aiohttp/_websocket/reader_c.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "84bb8ed741ef290d7575977ba13ade7133f7dc7e04cef7e6b72eabcdc9fcf736",
+      "size_bytes": 1694720
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/charset_normalizer/md.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "3af436fbbd4e8386833a4a9ac524e27c478bdd53cee2fb2d68fd1d5118ea9b8a",
+      "size_bytes": 16120
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/charset_normalizer/md__mypyc.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "f6bd1c8bea9eb8c8c898202a9bc79dec646e53c793dbd9d5f0af7a3018a295d0",
+      "size_bytes": 276736
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/cusparselt/lib/libcusparseLt.so.0": {
+      "sha256": "42385f413fe87ce1c844b13890f920b66873dbd36030a3b0fd2c143d722f6879",
+      "size_bytes": 212602113
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/datasets/__init__.py": {
+      "sha256": "dabf4f631df9d883c1a0c1c6337c85d54c95e03a44f993ca5ebdc745b23bfd12",
+      "size_bytes": 1606
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/deepspeed/__init__.py": {
+      "sha256": "b5c4b7797c761ef30baf7f3fa1f83ed910bd97d935b3702c617f93c89101ac95",
+      "size_bytes": 16832
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/deepspeed/ops/adam/fused_adam.py": {
+      "sha256": "e7f24193f52f04572738bd3f84faf94951404e69a6287148955491d5a9beb017",
+      "size_bytes": 8767
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/deepspeed/runtime/engine.py": {
+      "sha256": "3bb0e2af63f93c105d51f120bd56886b7d45e4ad33d9cd192e5c687c8673fde8",
+      "size_bytes": 192241
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/deepspeed/runtime/fp16/loss_scaler.py": {
+      "sha256": "ec4df2ccc2441736ca70847669e531f7ef46ac1ebfdac1afe70397f0d67a7b36",
+      "size_bytes": 11652
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/deepspeed/runtime/lr_schedules.py": {
+      "sha256": "6482b41cc5bf6d8e883020ca8fa5e7a9b1aa44f27e6f93873d12e07e573945d2",
+      "size_bytes": 38954
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/deepspeed/runtime/zero/stage_1_and_2.py": {
+      "sha256": "0002d3a8fcc47647efb0b812cd88b3c042987afd700772ad702a48fb965c36ba",
+      "size_bytes": 123351
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/frozenlist/_frozenlist.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "bad5f29d6075f26c17e1e78993a15487042b0e3c9239913561666dce735edea4",
+      "size_bytes": 722576
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/markupsafe/_speedups.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "c78468c56832a80128924f8066b5afacb0f12c4f9d9becd9499615fe03a22c90",
+      "size_bytes": 34976
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/msgpack/_cmsgpack.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "2f87ce97d46442abda5490c80742c2ce65e1c06782a94d0a03f60c4e678c5649",
+      "size_bytes": 1188120
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/multidict/_multidict.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "a8d90dd1df96183f5fdbb08fb78f641398d9a816c4835bd30d2902408f908e62",
+      "size_bytes": 788664
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy.libs/libgfortran-040039e1.so.5.0.0": {
+      "sha256": "14afb3129b1a8b50bc40a3b0820c7f1152ea9bc10121aab152943f7057472886",
+      "size_bytes": 2686065
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so": {
+      "sha256": "9254d0854dd7615e11de28d771ae408878ca8123a7ac204f21e4cc7a376cc2e5",
+      "size_bytes": 35123345
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy.libs/libquadmath-96973f99.so.0.0.0": {
+      "sha256": "934c22ded0e7d169c4d4678876c96051adf3d94545da962f60b41659b075da3b",
+      "size_bytes": 247609
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/__init__.py": {
+      "sha256": "22cd1535fa14d74ef6f457cca149ffdc80875f460be313b8f895273f78bc402e",
+      "size_bytes": 17005
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/core/_multiarray_tests.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "0de46f5496fc26171572adc200ca54ac5ee4703fc4cd9f6173e38eb2ee21c20b",
+      "size_bytes": 175912
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/core/_multiarray_umath.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "fe5efe31c55326b072c8fb239a225819211826cb45cd3c74ed0af0030e70f3a1",
+      "size_bytes": 7426841
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/fft/_pocketfft_internal.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "5f36850f3c48eacf11a9d1e3b5957a36b2b7dd3eb7d21f68c1017cfab4fd0006",
+      "size_bytes": 97008
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/linalg/_umath_linalg.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "0587df84ed9751090867a4a1441d2c394c39735420aa388b8bf698b7255f24bd",
+      "size_bytes": 216793
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/random/_bounded_integers.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "cc009884164d0c98b9ad76d899d8318cb2436e4caaa0034b48b6607b70efa5ad",
+      "size_bytes": 379216
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/random/_common.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "31a0a5cd1d83014366047940ae5a6c5466ebe0d6515d2e5e2311258f748d1706",
+      "size_bytes": 276192
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/random/_generator.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "605a4ece82853cac92e920eb9a8a6da2c4ef739e6f96e3cc1bf4aed71fe14e5f",
+      "size_bytes": 976328
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/random/_mt19937.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "d30bd4b7d986fc29800bd588c70d3223143932ddc802bdc46d72197fbc096c11",
+      "size_bytes": 120224
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/random/_pcg64.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "646d4a06bdf86066d285398a89f1f610601d755f9a774b25c7316db9ec404eab",
+      "size_bytes": 126400
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/random/_philox.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "278070939f2017a7ed1ae91833add65251e6f70e72b9d37964eb30bc383f6b05",
+      "size_bytes": 107384
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/random/_sfc64.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "339ec2d6621414d1abdf444acc43ccf2a1b683aa41fedeec3dc60b4c3e271df3",
+      "size_bytes": 76712
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/random/bit_generator.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "d4ee3d720f9eee0541548507dc7fe2f323ea481cdc33e37906fe78bc2e981a0d",
+      "size_bytes": 246536
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/numpy/random/mtrand.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "b917e2f0ada2ef00b0cc509b76f14d8bce4815e3643abd58481803bbb6b585fe",
+      "size_bytes": 783752
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/cublas/lib/libcublas.so.12": {
+      "sha256": "4cc45526449a95d3985389785e985b7832460ea3db178bc9e9963be2111fbee8",
+      "size_bytes": 109604768
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/cublas/lib/libcublasLt.so.12": {
+      "sha256": "44a813aa2da08830f9083f81d0eb73f1ae4052a4d9b0b0de480a8f6cd9eb3078",
+      "size_bytes": 441938896
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/cuda_cupti/lib/libcupti.so.12": {
+      "sha256": "fb2a7c5b15c84df9505dd47e553fe46f3121a57d30391fca24179d202f73f3f7",
+      "size_bytes": 7748112
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/cuda_nvrtc/lib/libnvrtc.so.12": {
+      "sha256": "466d6f14d6cfde99838a132cfa7a23f90ba08acfadaa4d9e4c9defe1277f7bf1",
+      "size_bytes": 60418376
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/cuda_runtime/lib/libcudart.so.12": {
+      "sha256": "8774224f5b11a73b15d074a3fcce7327322c5c4cfdfd924d6a826779eec968fe",
+      "size_bytes": 707904
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/cudnn/lib/libcudnn.so.9": {
+      "sha256": "74a4c495a26d5104150241e84a10842442c024c129cdc274ad8b6a7a8794980e",
+      "size_bytes": 104664
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/cufft/lib/libcufft.so.11": {
+      "sha256": "f3921c4133925242459ebfdbf7901db4ebfae6bbcfff9dc5ce53b1ff13fb42ff",
+      "size_bytes": 292889192
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/curand/lib/libcurand.so.10": {
+      "sha256": "dab8074b610b82a863a42eceda788e9b08364b545bab948509306b48c46018cf",
+      "size_bytes": 96525744
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/cusparse/lib/libcusparse.so.12": {
+      "sha256": "cb4288c965453a8020653c0fd92cdfcd12bb5a646843d663e9d4e5f520f8915c",
+      "size_bytes": 281313984
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/nccl/lib/libnccl.so.2": {
+      "sha256": "78df2f31f6db8142ec546a1e5a31cb066f7892d12d2f665b448f8069a08ef807",
+      "size_bytes": 251616632
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/nvidia/nvjitlink/lib/libnvJitLink.so.12": {
+      "sha256": "cbd1488bbef82b8d64c2dd51a9b6aef3f6b0bc3a7a80a9821be48d1c07f700e7",
+      "size_bytes": 53594512
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/algos.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "e428449e985790af8faa2227d6c2c989c54cc093110f476200d68f36b4a524df",
+      "size_bytes": 2194056
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/arrays.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "d7d4536852551fda02d7d1b2d2f4aaf559877db06a6a40e8d5fa73bc0e1d048c",
+      "size_bytes": 133184
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/groupby.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "41230fbdf558575fed8f6530dbc235130d3792987366204e2c417b04eb0da552",
+      "size_bytes": 2601544
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/hashing.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "aaa580f281abd4927103eb650b5862847f009d36cac26208f065eafec29d2fa4",
+      "size_bytes": 221160
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/hashtable.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "d4cc2ad0a28ef26e4e23045485710310dcf84e73fee57d8c23fb5f7d47e2855a",
+      "size_bytes": 2162216
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/index.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "b7c4ebb97b90fed30f3c3a62d1b4157dd99a13aad68363e8f4362f30baa1ba3c",
+      "size_bytes": 988040
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/indexing.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "2675cea0eef210701e545cc0aeeb88bd95bb7545e91851dec9962f60cc2dfa56",
+      "size_bytes": 66560
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/internals.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "6703cc1493b6d1ddd5d017acd97b822a3050a7b5939242111b8db20e3fc61cff",
+      "size_bytes": 415592
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/interval.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "55d89065c918f5d8eae09cc25b7b21479c288e1b5c7b1b4d0ef83bf08af8d521",
+      "size_bytes": 1528808
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/join.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "856bed7f712e3d4ae569141ebc462fa4488734e168bd42d43086b4b9342afed9",
+      "size_bytes": 1401736
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/json.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "5213b784732eaabbcac1a0fdf4a33fb5b9ba8e916e6c0e517b7bea7b9cb17457",
+      "size_bytes": 64272
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/lib.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "524c92ee2ccb5583f8ca8adac91ae0afa3f43db0ea0456ab0aece9ccacb87273",
+      "size_bytes": 933480
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/missing.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "fe110ce6b3b10095c1c4c2f7745c02223aec6fcd4aa6cbc6782f83df72e77620",
+      "size_bytes": 211400
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/ops.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "4c89028f0caa0df725cb3e89514edf7e8a4f4abdaace336d8bdf4040db291928",
+      "size_bytes": 270472
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/ops_dispatch.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "8d78c361946eb1ff76634fa3cb7fc4917cc0adec91a6d41a883ef6f46028bcc6",
+      "size_bytes": 61664
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/pandas_datetime.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "652cc8f8454737f4b56472766f83b695bf32a39ffb0adf9b0d69c20a8e0505ae",
+      "size_bytes": 39264
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/pandas_parser.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "f1e0a9773e1e6670d81a071e74f33d9e8fc7edba7574e40793767eaea6f0e0d7",
+      "size_bytes": 43424
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/parsers.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "c9e1a4899b63e3a9a6431882897273d1797a9c2d2baff27406c8b8211eceaf34",
+      "size_bytes": 594760
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/properties.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "d1344d52eda5830d74c49cb09ba727b71d12a39f84b6d48b0a769b1888c0ade6",
+      "size_bytes": 91904
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/reshape.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "379e0968c40307a1dd2ee93593b0ef888b1fcdffc9e7b4def9b6d41bcff80ce1",
+      "size_bytes": 309608
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/sparse.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "d9d4b81d1da2d284b1f61370c3e87b54de10f249a3debb14f7ad7bbf2c100523",
+      "size_bytes": 988968
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/testing.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "f5f7c4ecc85c1d9b0452ec4b031757c5e9aa0a893d46f47caead6a32115ffb73",
+      "size_bytes": 127456
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslib.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "f28ec212e94a75d6066e383be4243e1317de1339e61ad445b8a79f0aed216136",
+      "size_bytes": 340264
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/base.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "179c584c5baa2c34b215d5da45e293d54f8ddbeb764f051ccb4e6162d6bdbf43",
+      "size_bytes": 62272
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/ccalendar.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "b76056e509d8f99144a0acdce5626429df7c9c583fc330b5639ec711c29481f2",
+      "size_bytes": 102752
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/conversion.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "4de667c5e6dc7402d2a61c70093eb693db001c35ea4edcf80d92dfac382d3e40",
+      "size_bytes": 308168
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/dtypes.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "a7bfd05b7ddda111668cc65264b433f64bca56626e8f077954f53cbbe4423319",
+      "size_bytes": 202624
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/fields.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "ec8574945550f774a538695ccb3dac25ade35c419ec191d195dbe4919b73e2df",
+      "size_bytes": 345064
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/nattype.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "c6669ad3ce3c3efbda83d69097e963e85f8617d91a388da39b12bea940048b58",
+      "size_bytes": 237184
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/np_datetime.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "29ab31b54d469f383733886b6aae99fdbafeb751c965397bb8de8c035a7e0cb3",
+      "size_bytes": 152192
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/offsets.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "23bc30a2cb98e39d577634d9f4473ca93bc84d4e563dc8a06a050e41550333f6",
+      "size_bytes": 1175424
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/parsing.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "cdff336230ed9bb2d9b4528e5843165403b8c70565e4c7d980e68746013d8f4a",
+      "size_bytes": 457032
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/period.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "b08d39a4fb6d3dd4d20d5043a2029f6b4f1c380ef9c8b8a60322c919af50c687",
+      "size_bytes": 532232
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/strptime.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "660fa47e762ebd4cdf8f8f91727ebda18f66e69c93f58420f2abfca38c1c16f4",
+      "size_bytes": 410440
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/timedeltas.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "4e811c33884ce98d4a7c572dcadcdad8dbe09d124548b05bc47742ad7312a93e",
+      "size_bytes": 652008
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/timestamps.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "fe91ba0e49ec3818ec96f0dd02eef9cb95774573e2ff136b47dba565e35c0105",
+      "size_bytes": 660840
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/timezones.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "0fbc59c2ebd1d7d7b5c0b89c6808945394551beb92ab144d0980363edc2251de",
+      "size_bytes": 294952
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/tzconversion.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "7b587802ccc8a49d5c0bb70c1fc96c45915d6a2705787de833db44fb9860db90",
+      "size_bytes": 340840
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/tslibs/vectorized.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "bd4d02648a42773c6d606c8bbd05cbf05f7089455f1febe80be0208140bbce13",
+      "size_bytes": 249768
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/window/aggregations.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "1b0b9e0640326b6936fd308de3dbf5aa452b8f8b675298216935de8befd43b9e",
+      "size_bytes": 406552
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/window/indexers.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "51a5092e0bc89a708b80c9756ce07375979dfb44d81b67af3035207d9ba58119",
+      "size_bytes": 217032
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pandas/_libs/writers.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "c991c235b77eff83b7507b7c24e05df401c83bc4c7d8558a7fdb819bfc6cea6b",
+      "size_bytes": 258952
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/libXau-154567c4.so.6.0.0": {
+      "sha256": "05484d24bf78cb8ed03169f1cb067204d829cb7af21de8820400d29d115e4320",
+      "size_bytes": 22081
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/libbrotlicommon-c55a5f7a.so.1.1.0": {
+      "sha256": "1da2db326dd87a15fbe7dc2017b654d2457085d817e2e91fbd034acada1aaf0f",
+      "size_bytes": 144425
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/libbrotlidec-2ced2f3a.so.1.1.0": {
+      "sha256": "04ec1e9154e2462a6462eb270579b31868623ec070048e830d63cb92fc406d11",
+      "size_bytes": 62337
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/libfreetype-083ff72c.so.6.20.2": {
+      "sha256": "9d1ed08fcbc7998985a8f2ae755fee5888c6dcda18dd91081aac92b81dc5c62d",
+      "size_bytes": 1430825
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/libharfbuzz-fe5b8f8d.so.0.61121.0": {
+      "sha256": "ec1618623334334acdc44a35775caaa92a0e18b09c6ecf89aa2d4a5aac6fa263",
+      "size_bytes": 908081
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/libjpeg-8a13c6e0.so.62.4.0": {
+      "sha256": "2fd2cd3b79617a40ff920815e83ae0b25788fe05df97711f5b0029891c31cbd9",
+      "size_bytes": 832177
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/liblzma-64b7ab39.so.5.8.1": {
+      "sha256": "84dd81d913c433ac0e82f111fe0e377cd8db350fd2b2b7a75f6c2501f1d6fa70",
+      "size_bytes": 266369
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/libopenjp2-56811f71.so.2.5.3": {
+      "sha256": "686f62cbed321379e3e38be7ae94c56411d4345bde8d54e557b40472d9a7693a",
+      "size_bytes": 585849
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/libpng16-d00bd151.so.16.49.0": {
+      "sha256": "558882880a0307a7675a595b712a4ebbd0eb1ca4374e1e2d7a9896761760fe6c",
+      "size_bytes": 278001
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/libtiff-13a02c81.so.6.1.0": {
+      "sha256": "007f36ed9297e1fffe0e962feba0442dcce486455d6cd98b2c58a57bcbd15605",
+      "size_bytes": 746233
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pillow.libs/libxcb-64009ff3.so.1.1.0": {
+      "sha256": "b7437ed16bae7ac4498049fd14e10d1bd1c3e7d15d0e5eab1d2ead42a83a49d1",
+      "size_bytes": 251425
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/propcache/_helpers_c.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "2eba3fbf73e4cbb213c72e943c072bd6ec35d4484e77f3a557009163e2a4d2f0",
+      "size_bytes": 655664
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/psutil/_psutil_linux.abi3.so": {
+      "sha256": "6c2ebac21139007410080811a015c249ed6fb2f207b1a64e018e47ae19174081",
+      "size_bytes": 115336
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/psutil/_psutil_posix.abi3.so": {
+      "sha256": "2a5df9471ff35bcfcdd66361b38387ff2e19477b6af4fd9e1c2054592bba91c0",
+      "size_bytes": 71640
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_acero.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "0d9a745f8b842aae536134f37f9c3c6fb2c4a1da1ac8e4c5f485b0a1be1bbe9e",
+      "size_bytes": 321728
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_azurefs.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "eae7ff63831a7ad89ed57f75d3bdee9f3604d2b87efc137b120dc31a85a51e69",
+      "size_bytes": 112336
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_compute.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "886496e3b84d9baf2b05bcb194e1ce361b3f50386cb6c6c31bd26f3e78786de5",
+      "size_bytes": 1418264
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_csv.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "a79c2b3aa8f3e9597ef2da10828e7a45943993c4ee022f3cf631b5bca5272326",
+      "size_bytes": 366696
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_dataset.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "ef62cb09e54745994509a30b2430d280081bbed7d82cc5ad1ed46b1b82b89668",
+      "size_bytes": 1108056
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_dataset_orc.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "c25b2061b2acd8a77e9dac925585dbfd852d356fd00d3c4f3ed7edcf573a7e02",
+      "size_bytes": 79976
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_dataset_parquet.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "74c54e6ed8071faf9738e0e34c44c0e6d65dd57f3492c19bf20c5e9351dd8aea",
+      "size_bytes": 369656
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_dataset_parquet_encryption.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "cb7f2afaf840629a2a5b57f67526540b7bd1be1d30820d9023e153a3b8c756f9",
+      "size_bytes": 122384
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_fs.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "765901171b5cccbfe881b582bbee3f5e83d370fb32350ccce1a73b5eaac7c591",
+      "size_bytes": 500480
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_gcsfs.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "a4a0f8d2127fc928e68e1b7e928107c5acb51eb6aea4af12de09eb9ca3cdd974",
+      "size_bytes": 137640
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_hdfs.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "7887699be3017e594c7b12aba3e33908497e071150d47d329569ca099bc14919",
+      "size_bytes": 131824
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_json.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "ab5afe4bcc7fcc5230f0d753f3ffa4aace99291a2c8f025f99323002f3398b71",
+      "size_bytes": 139680
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_parquet.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "6220997e6842ae3b411f092436b6825a5cdf8eaffb4e4c5085b94561b6e907e0",
+      "size_bytes": 599088
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_parquet_encryption.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "565d65c46c150befc45625416e08715cf9312a9ca85ce94193cc133783a1d97a",
+      "size_bytes": 285488
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_s3fs.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "0ddba304b16afdd6d52fe987fc0dfef9ce14bd9f726bc85624e015ff0b5c2c98",
+      "size_bytes": 235952
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/_substrait.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "163032e1c65d5ea4c1942ef9036e270698e2996760b716497c8b591f9abd52ea",
+      "size_bytes": 219768
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/lib.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "b35c7cfc13f72f32f7fc65f39e8ec0e18c18d63bb35fac637c5caf77dc01e016",
+      "size_bytes": 4920856
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/libarrow.so.2000": {
+      "sha256": "31af1913270c5d9f81463128de2ba34239eb62cd6e91c1c8a5075245b8a5405e",
+      "size_bytes": 66239176
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/libarrow_acero.so.2000": {
+      "sha256": "284892cbe10fc0d79080b447caf0109c13b1cdb8b8ca3276c9c3b3952e558d1c",
+      "size_bytes": 2123672
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/libarrow_dataset.so.2000": {
+      "sha256": "024d29324442b7fdda7b690413e4f94262c4316569a4c9c0212913602836a478",
+      "size_bytes": 2767120
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/libarrow_python.so.2000": {
+      "sha256": "cfdc6f6cfc2e8b765fa44513674d854de0b493f1c279484854f2f33eafc6f89c",
+      "size_bytes": 2722576
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/libarrow_python_parquet_encryption.so.2000": {
+      "sha256": "e293af9f1dbfb74b5016cbb83dfcbdac0f26da692d146c7c517ec6bc39237279",
+      "size_bytes": 37432
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/libarrow_substrait.so.2000": {
+      "sha256": "73b1175ebebb0566f48d83d16386ce46fc1b7f0807344ce39fae6642bf4c1b47",
+      "size_bytes": 5346656
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pyarrow/libparquet.so.2000": {
+      "sha256": "16dd9e62766b0c87cee708d2b6f1c8af533874476103928be19f26560bd36768",
+      "size_bytes": 11112672
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/pydantic_core/_pydantic_core.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "ce6da7884708ca5c4dc7fbf156f4de5abfc5a92254cc7271a32a65127be66840",
+      "size_bytes": 4768792
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/regex/_regex.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "29dd755c12af2aebb0e796b4bdd3878ddecf511ecd096f2a0e534c6ad6860f2c",
+      "size_bytes": 2549016
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/safetensors/__init__.py": {
+      "sha256": "ac58595761c15432228d4db12a383ed2f8932c44dafb230b320142f7ee3b85d7",
+      "size_bytes": 171
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/safetensors/_safetensors_rust.abi3.so": {
+      "sha256": "b6e76bd9023344f6edeeffb935279f94ad8316bcb80857c0d91cf75a19c8f5c5",
+      "size_bytes": 1123056
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/tokenizers/tokenizers.abi3.so": {
+      "sha256": "8197d4510880a11b10ad8329a52783f34d8a6579284b9798040107c46cf75f54",
+      "size_bytes": 9354560
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/_C.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "e20f9618c6c917bd09509b067d7e182678ed0d1ace6974a3401ab04a39d2e47d",
+      "size_bytes": 37881
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/__init__.py": {
+      "sha256": "5a190666c3853aa236c4d48ed64e2d4bbcd23bd32c21e64c0867646a6852e43f",
+      "size_bytes": 100239
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/lib/libc10.so": {
+      "sha256": "9e8b46af9a5b5f1bf3200f2aabc3376597f1fb4787a179428e8c91f7253af78d",
+      "size_bytes": 1455209
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/lib/libc10_cuda.so": {
+      "sha256": "99caf7bd0183e53103a28a0d27d6c54e8be338dcf71e4444e51b1c9bf529ef11",
+      "size_bytes": 720929
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/lib/libgomp-a34b3233.so.1": {
+      "sha256": "aa9c09dd9d3b8f42b355048284f2894f1b4023f676843a69084276e754914206",
+      "size_bytes": 169113
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/lib/libshm.so": {
+      "sha256": "1bcc0868eaa8b49a3ae062d3dbb92f57e2fae521cbedf459a8cc0aeb887914a4",
+      "size_bytes": 52793
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/lib/libtorch.so": {
+      "sha256": "a5d97e6bd79ef3bed0d038f9847c89441b85f886d8ccce7e5ec96fa344f0381c",
+      "size_bytes": 196201
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so": {
+      "sha256": "8540b03a8324a5d22be7d7517c1ed1ed34e623abca7d8cbf12333b5ecb3bc165",
+      "size_bytes": 441856673
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so": {
+      "sha256": "dc1cd46ce856cc5935e4c81c482514f41803ef194bd112a838d2658b6181c1a7",
+      "size_bytes": 902652937
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/lib/libtorch_global_deps.so": {
+      "sha256": "4c08044712a9f1193d61f3d1449d0d82558c41baa2ec77aa4000d73be7c2e0ee",
+      "size_bytes": 21193
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/lib/libtorch_python.so": {
+      "sha256": "038f67325ba41acb8c58629f402524f9d922227b940cd8b069e688e46fa1a769",
+      "size_bytes": 29507297
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torch/utils/checkpoint.py": {
+      "sha256": "7a05799e678085df1b81d512bed679c35053fb6225ea90c96661306f93140f6c",
+      "size_bytes": 66112
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torchvision.libs/libcudart.41118559.so.12": {
+      "sha256": "8774224f5b11a73b15d074a3fcce7327322c5c4cfdfd924d6a826779eec968fe",
+      "size_bytes": 707904
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torchvision.libs/libjpeg.1c1c4b09.so.8": {
+      "sha256": "e20d3ffa71d6f4eee6c6ff5b5cbcc5a4e484faa87a47ea77baf964e3a5df269f",
+      "size_bytes": 664504
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torchvision.libs/libnvjpeg.02b6d700.so.12": {
+      "sha256": "6ed2eaa5a2cdff393bc95c543474b96117a67188bbea46ea74d12f7f83874797",
+      "size_bytes": 6722352
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torchvision.libs/libpng16.0364a1db.so.16": {
+      "sha256": "5c74f5de33bbec44095fc871b02470368ed91b727e835091b320ae66102fc67b",
+      "size_bytes": 279617
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torchvision.libs/libsharpyuv.5c41a003.so.0": {
+      "sha256": "f9e83822558d92ac5c8cf74b1f0e0fe4a45bbc2448a9d7b90fa2b053554e09bc",
+      "size_bytes": 33632
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torchvision.libs/libwebp.54a0d02a.so.7": {
+      "sha256": "1b6390d92a657a7355e1410ebc2529274f2cce4197635e5da178ad2e5e048fc5",
+      "size_bytes": 712281
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torchvision.libs/libz.d13a2644.so.1": {
+      "sha256": "0b0e682a9dc7fd4895a6783288f851b793dc89633f28714027974fa4d66f3914",
+      "size_bytes": 124744
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torchvision/_C.so": {
+      "sha256": "2d75af8b453522fdd3def6f9701cc50fc8e7a23c274f1b6de4a7733696ae315e",
+      "size_bytes": 7761160
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/torchvision/image.so": {
+      "sha256": "4de138172fad3731c312dcb196b62fd2c24724445337e2ddd714d64f737c7141",
+      "size_bytes": 667225
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/transformers/__init__.py": {
+      "sha256": "96d34392359dae717aac2157ac8305034713c769dcb7427cb60e19781e0aa26a",
+      "size_bytes": 34532
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/triton/_C/libtriton.so": {
+      "sha256": "b478719fdcd4bd17729b25047fd080f5aa3ccd60bb4333eb3238358a34a47959",
+      "size_bytes": 534321632
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/xxhash/_xxhash.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "9c1710f88e22573cce80026ec2ce4071563b4346eb536c7a52f8c567d0036a64",
+      "size_bytes": 830856
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/yaml/_yaml.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "db41d5f9c569205b8eb95513990d7e3d021bcadd27f1cb5f5eaec908c21f6eb5",
+      "size_bytes": 2383664
+    },
+    "/mnt/xfs/home/mohamadzbib/projects/.taps-rebuild-envs/native-eagle3/lib/python3.10/site-packages/yarl/_quoting_c.cpython-310-x86_64-linux-gnu.so": {
+      "sha256": "3fb919fa1e02cc7b6567f147537bbd3d2d3d2506c17d813c965791f560585b8f",
+      "size_bytes": 973272
+    }
+  },
+  "artifact_inventory_sha256": "cec4f92ea2152734c995eaeab702cbd570bbfc5cf034c7dc70f43cbde2e286d7",
+  "audit_source_sha256": "67465215bc09b8c23e04c967af9f6caa63f17b8ee5d445489657bc397d52c410",
+  "automatic_admission_emitted": false,
+  "cpu_only": true,
+  "limitations": [
+    "CPU pre/post observations cover all200 profile updates by source-ordered absence of initial master snapshots/journals atpre and completed launch atpost. They are observational filesystem/source evidence, not an adversarial machine attestation.",
+    "Short4/direct/2+2 qualification completed beforepre; their runtime is bound retrospectively to actual package/backend/launch/hardware receipts and pinned sources, not claimed inside the profile pre/post interval.",
+    "CPU observer does not claim independent GPU-node driver/system-library fingerprinting or direct observation of every loaded GPU process library."
+  ],
+  "new_fused_adam_artifacts": [],
+  "post": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-audit/native-full-body-20261112-v2/runtime/post.json",
+    "sha256": "ea5c9578bbfae7b19558d735e2b2efa93b517b812d9a1839d6df8ca94284fe09"
+  },
+  "pre": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-audit/native-full-body-20261112-v2/runtime/pre.json",
+    "sha256": "284f6d0c173b09a61ba605dfd8be10feb9059691fd2c71602566267ecbb3cbca"
+  },
+  "profile_started_after_pre_source_order_observation": true,
+  "scientific_training_admitted": false,
+  "scope": "profile_pre_post_shared_source_import_library_envelope_and_retrospective_short_qualification_worker_bindings",
+  "slurm_job_id": "2216818",
+  "status": "passed_source_bound_native_runtime_and_profile_interval",
+  "wall_seconds": 8.862707414198667
+}

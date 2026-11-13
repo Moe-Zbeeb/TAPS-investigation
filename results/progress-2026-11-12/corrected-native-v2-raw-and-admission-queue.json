@@ -1,0 +1,49 @@
+{
+  "raw": {
+    "job_id": "2216834",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodes=1",
+      "--ntasks=1",
+      "--nodelist=deep-chungus-6",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+      "--time=06:00:00",
+      "--kill-on-invalid-dep=yes",
+      "--cpus-per-task=16",
+      "--mem=96G",
+      "--job-name=taps-native-v2-raw",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-audit-20261112-v2/raw-%j.log",
+      "--wrap",
+      "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-audit-20261112-v2/audit.sh"
+    ],
+    "verified_slurm": "JobId=2216834 JobName=taps-native-v2-raw UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Priority Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-11-12T12:31:46 EligibleTime=2026-11-12T12:31:46 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T12:31:46 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:117873 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=16 NumTasks=1 CPUs/Task=16 ReqB:S:C:T=0:0:*:* TRES=cpu=16,mem=96G,node=1,billing=16 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=16 MinMemoryNode=96G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-audit-20261112-v2/raw-2216834.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-audit-20261112-v2/raw-2216834.log Power= KillOInInvalidDependent=Yes \n"
+  },
+  "compile": {
+    "job_id": "2216835",
+    "command": [
+      "sbatch",
+      "--parsable",
+      "--account=grad-students",
+      "--partition=high-priority",
+      "--qos=spec-priority",
+      "--nodes=1",
+      "--ntasks=1",
+      "--nodelist=deep-chungus-6",
+      "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+      "--time=06:00:00",
+      "--kill-on-invalid-dep=yes",
+      "--cpus-per-task=4",
+      "--mem=32G",
+      "--job-name=taps-native-v2-compile",
+      "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-audit-20261112-v2/compile-%j.log",
+      "--dependency=afterok:2216834:2216818:2216823",
+      "--wrap",
+      "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-admission-20261112-v2/prepare.sh"
+    ],
+    "verified_slurm": "JobId=2216835 JobName=taps-native-v2-compile UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=spec-priority JobState=PENDING Reason=Dependency Dependency=afterok:2216834(unfulfilled) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=06:00:00 TimeMin=N/A SubmitTime=2026-11-12T12:31:46 EligibleTime=Unknown AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-12T12:31:46 Scheduler=Main Partition=high-priority AllocNode:Sid=mslurm:117873 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* TRES=cpu=4,mem=32G,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-audit-20261112-v2/compile-2216835.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-audit-20261112-v2/compile-2216835.log Power= KillOInInvalidDependent=Yes \n"
+  }
+}

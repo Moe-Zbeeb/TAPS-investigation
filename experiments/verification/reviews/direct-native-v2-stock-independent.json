@@ -1,0 +1,356 @@
+{
+  "analyzer_sha256": "d41d6b551db0297a104cc257fcb1894b3c0bfe5df8b4d909716cf3a83dcfd2ca",
+  "artifact_inventory": {
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-uninterrupted/budget_step_4/config.json": {
+      "sha256": "5d7879bc4b6abc55169b2fef99b20d36dbaebc30465a45353d98efc5f3e92d8f",
+      "size_bytes": 591
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-uninterrupted/budget_step_4/pytorch_model.bin": {
+      "sha256": "69d7b05177288cb2b6c744f13ee758b7d2392b65d991930b09aab6b9006f4fc8",
+      "size_bytes": 849795390
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-uninterrupted/recovery/attempt-1-step-4/manifest.json": {
+      "sha256": "5f866e7766e2d55dc2a3573164a6413a16445fbf979254367dae61040a2ce697",
+      "size_bytes": 2132
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/models/taps-rebuild/trained/native-eagle3/native-full-body-20261112-v2-uninterrupted/recovery/attempt-1-step-4/state/mp_rank_00_model_states.pt": {
+      "sha256": "6f76179d78e17516ab22b9cd418f044c67803848c48368f8e9d26ca338914a6c",
+      "size_bytes": 849797252
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-export/native-full-body-20261112-v2/export.json": {
+      "sha256": "24103c98778f8bd285b5ce4face5ada2094b424f95c8a1ee83ef6763472395c2",
+      "size_bytes": 3133
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-export/native-full-body-20261112-v2/stock-launch.json": {
+      "sha256": "b0849434b92f1a31f168361799ba771a2da6ac75413ca78489059a94d45398b6",
+      "size_bytes": 5226
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-export/native-full-body-20261112-v2/stock/rank-0.json": {
+      "sha256": "5c6f05aa81f5cfd34cdfb99b2f8bfc916db46446e393124a6a8b66c3d8330050",
+      "size_bytes": 4384
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-export/native-full-body-20261112-v2/stock/rank-1.json": {
+      "sha256": "27e212c5a2fa646e8ac7e47a3aae9064f0bbc15947bd9e7569fe50c0e2719f37",
+      "size_bytes": 4384
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-export/native-full-body-20261112-v2/stock/rank-2.json": {
+      "sha256": "96435a7bd3726184bdffe718977c46520079338d72678029a5f300c788122aed",
+      "size_bytes": 4384
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-export/native-full-body-20261112-v2/stock/rank-3.json": {
+      "sha256": "5099048c1d28af5ac3e120ace88eeed8ce1c9adbb7e23842763916db47f7408e",
+      "size_bytes": 4384
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-export/native-full-body-20261112-v2/stock/rank-4.json": {
+      "sha256": "d28ecd0168ad53b1f34d1b0e6cccbf61f8ecbb0ba3e49901b9244090e4b9a987",
+      "size_bytes": 4384
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-export/native-full-body-20261112-v2/stock/rank-5.json": {
+      "sha256": "b9c980c80e35a6491f1d04550c36760a75fb343b7a06e85164a768413c0aeb20",
+      "size_bytes": 4384
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-export/native-full-body-20261112-v2/stock/rank-6.json": {
+      "sha256": "68616f2ccd94759e4fce755b2250c8c61557c38c02ec4c4b4dd5a632323a0cc1",
+      "size_bytes": 4384
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-export/native-full-body-20261112-v2/stock/rank-7.json": {
+      "sha256": "15158ec111ae58af3357f5bc560e0b87864f082c5e79fc9b741e0d546a479d9f",
+      "size_bytes": 4384
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/plan.json": {
+      "sha256": "68af64bb24e446f2b2902e6e69aea3afdb983602bba9de9f80fe5ebe39099441",
+      "size_bytes": 25234
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-training/native-full-body-20261112-v2-uninterrupted/work/cache.pt": {
+      "sha256": "721e69e9ad00105f47f1c5e5bcd95e0aebff4acdadd405ca697a314ed1cc8def",
+      "size_bytes": 385548
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-20261112-v2/queue-plan.json": {
+      "sha256": "c48449d377389e9831bad9890ec23779bdf62caa9391616ea96a5bda9cb53280",
+      "size_bytes": 1884
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-export-20261112-v1/src/taps_rebuild/native_full_body_export.py": {
+      "sha256": "7e63cfa11907eed11d8abaad091b639071bd35b9ea13d178943765678e368aa1",
+      "size_bytes": 8356
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-export-20261112-v1/src/taps_rebuild/native_full_body_export_queue.py": {
+      "sha256": "19951e9b498f06afe6f903d9057f5da2b4a5c1fe68c64bac281037a5c8c3e07e",
+      "size_bytes": 2772
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/choices.py": {
+      "sha256": "5ab95137f63b61f756057927b2af427ffa0bc351384d99e334a9da853fcbfa7e",
+      "size_bytes": 236
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/cnets.py": {
+      "sha256": "b0e2512db4529c9689ffd768e9a2812059a5715d786686a131a751c56fbf3292",
+      "size_bytes": 37403
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/cnets1.py": {
+      "sha256": "adf4cb86aba30610b05f3b78742d1e448c4523c8e96b92501b9de37419979261",
+      "size_bytes": 37084
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/configs.py": {
+      "sha256": "14ae62877cd9ab12c9076fc70fe940714b9ca980865b00ba974de340df2d1ac5",
+      "size_bytes": 7550
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/ea_model.py": {
+      "sha256": "f834fc37d350b9109ad91ac27a29eb2be59153dc0aac48ab753c6e43aa91d506",
+      "size_bytes": 20606
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/kv_cache.py": {
+      "sha256": "f41d85e0210583a25b2714fea78efceed1efcf68052bae7c156b1a477b0c337b",
+      "size_bytes": 5893
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/modeling_llama_kv.py": {
+      "sha256": "615ed5d1d0d702b69cab1383eeec1843bfa209273b8a8d90cd444f8a00a6c478",
+      "size_bytes": 61298
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/modeling_mixtral_kv.py": {
+      "sha256": "5758e029bac25ab4eaf564b62ea87a66bd71e50abc5b89f3bba29389df4e1fa0",
+      "size_bytes": 52286
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/modeling_qwen2_kv.py": {
+      "sha256": "a28ef08941952d894ca9cc0e726fd80ad9814283554f7775a82a5939db8db7d6",
+      "size_bytes": 72059
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/modeling_qwen3_kv.py": {
+      "sha256": "a3cc5ce2f78239da5d26c0dc19a5a6293a1ba330f0e43675fc857bb6a7957a46",
+      "size_bytes": 40686
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/utils.py": {
+      "sha256": "68dadf1977dd76624f87d0dc5ce9f840783ccaeb7554861f1206daa664367fe9",
+      "size_bytes": 18615
+    },
+    "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/repos/EAGLE/eagle/model/utils_c.py": {
+      "sha256": "fa7bee5ea870200756bd48bb27c1dbfb2e8f1d42f4e9c832d6b5d1681ca97f58",
+      "size_bytes": 6214
+    }
+  },
+  "artifact_inventory_sha256": "cab34fe18f0aa4a5687eaaa83fb28fb97a46da9df4385ed23aaf137f9cba97b6",
+  "automatic_admission_emitted": false,
+  "cpu_only": true,
+  "hardware": {
+    "device_bindings": [
+      {
+        "index": "0",
+        "shard_index": 0,
+        "token": "0",
+        "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c"
+      },
+      {
+        "index": "1",
+        "shard_index": 1,
+        "token": "1",
+        "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2"
+      },
+      {
+        "index": "2",
+        "shard_index": 2,
+        "token": "2",
+        "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19"
+      },
+      {
+        "index": "3",
+        "shard_index": 3,
+        "token": "3",
+        "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c"
+      },
+      {
+        "index": "4",
+        "shard_index": 4,
+        "token": "4",
+        "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c"
+      },
+      {
+        "index": "5",
+        "shard_index": 5,
+        "token": "5",
+        "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed"
+      },
+      {
+        "index": "6",
+        "shard_index": 6,
+        "token": "6",
+        "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c"
+      },
+      {
+        "index": "7",
+        "shard_index": 7,
+        "token": "7",
+        "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8"
+      }
+    ],
+    "gpu_inventory": [
+      {
+        "driver_version": "565.57.01",
+        "index": "0",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-a2515c5d-031e-cb1f-3e57-d6810637038c"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "1",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-794b32b6-9161-d56a-a86f-9b5d6e1a4be2"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "2",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-3c0bfaa1-3019-9f94-5a02-5fee9e599e19"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "3",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-756ddcc4-fe19-51ef-baa2-6f633b89829c"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "4",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-8ceb7e35-48da-9616-c892-129f3109918c"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "5",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-713f3893-df91-42ab-0810-d8b881f5bbed"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "6",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-669ea827-23e4-39f5-eed4-5feebc0c837c"
+      },
+      {
+        "driver_version": "565.57.01",
+        "index": "7",
+        "memory_total_mib": 81920.0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "uuid": "GPU-8700e8c0-2ab7-4c31-3e0a-bcfc35597de8"
+      }
+    ],
+    "hardware_identity_sha256": "47811704de2166adcf61e573d434222a9a66d7498c4b9c6b36001201ac2a60a2",
+    "job_id": "2216035",
+    "node": "deep-chungus-11",
+    "slurm": {
+      "job": {
+        "Account": "grad-students",
+        "EndTime": "2026-11-14T06:23:01",
+        "JobId": "2216035",
+        "JobName": "taps-deep11-hold",
+        "NodeList": "deep-chungus-11",
+        "NumCPUs": "128",
+        "NumNodes": "1",
+        "Partition": "high-priority",
+        "QOS": "spec-priority",
+        "StartTime": "2026-11-12T06:23:01",
+        "TRES": "cpu=128,node=1,billing=128,gres/gpu=8,gres/gpu:a100=8",
+        "UserId": "mohamadzbib(29562)"
+      },
+      "job_record_sha256": "b3d6946788fb4ed973ec0f931f27992001d35a5c23c2309f3ef783ad1f8a013f",
+      "node": {
+        "AllocTRES": "cpu=128,gres/gpu=8,gres/gpu:a100=8",
+        "CPUTot": "128",
+        "CfgTRES": "cpu=128,mem=1000000M,billing=128,gres/gpu=8,gres/gpu:a100=8",
+        "Gres": "gpu:a100:8",
+        "NodeName": "deep-chungus-11",
+        "RealMemory": "1000000",
+        "State": "ALLOCATED",
+        "Version": "21.08.8"
+      },
+      "node_record_sha256": "d9a60f3f6408d1f3bcde2cd0dfbe43b5cf6635e3a60694d91511ba41941e8d57"
+    }
+  },
+  "limits": [
+    "One synthetic prompt per rank is an engineering compatibility screen, not a quality, speedup or universal-losslessness result.",
+    "Different SD/AR length or token outputs are recorded honestly; this source does not register a common-budget greedy benchmark."
+  ],
+  "plan_identity_sha256": "85cfd1a1bdeae16d4a863e20f97415f16ca848d26290d164508c714f21b5a22c",
+  "ranks": [
+    {
+      "autoregressive_continuation_tokens": 9,
+      "rank": 0,
+      "speculative_continuation_tokens": 9,
+      "tokens_equal": true,
+      "wall_seconds": 1.3055453384295106
+    },
+    {
+      "autoregressive_continuation_tokens": 9,
+      "rank": 1,
+      "speculative_continuation_tokens": 9,
+      "tokens_equal": true,
+      "wall_seconds": 1.4783439682796597
+    },
+    {
+      "autoregressive_continuation_tokens": 9,
+      "rank": 2,
+      "speculative_continuation_tokens": 9,
+      "tokens_equal": true,
+      "wall_seconds": 1.7933824732899666
+    },
+    {
+      "autoregressive_continuation_tokens": 9,
+      "rank": 3,
+      "speculative_continuation_tokens": 9,
+      "tokens_equal": true,
+      "wall_seconds": 1.4732213271781802
+    },
+    {
+      "autoregressive_continuation_tokens": 9,
+      "rank": 4,
+      "speculative_continuation_tokens": 9,
+      "tokens_equal": true,
+      "wall_seconds": 1.3702044803649187
+    },
+    {
+      "autoregressive_continuation_tokens": 9,
+      "rank": 5,
+      "speculative_continuation_tokens": 9,
+      "tokens_equal": true,
+      "wall_seconds": 1.2756856940686703
+    },
+    {
+      "autoregressive_continuation_tokens": 9,
+      "rank": 6,
+      "speculative_continuation_tokens": 9,
+      "tokens_equal": true,
+      "wall_seconds": 1.3141889413818717
+    },
+    {
+      "autoregressive_continuation_tokens": 9,
+      "rank": 7,
+      "speculative_continuation_tokens": 9,
+      "tokens_equal": true,
+      "wall_seconds": 1.2717282650992274
+    }
+  ],
+  "scientific_training_admitted": false,
+  "scope": "complete_raw_model_export_vocabulary_identity_and_eight_rank_one_synthetic_prompt_compatibility_only",
+  "semantic_hasher_v2_sha256": "5e11dd792adb840be1e861f6a0f2e235d483b977e7dca3cfef31f78e3f0f4091",
+  "slurm_job_id": "2216823",
+  "source_sha256": {
+    "native_full_body.py": "40109aae2cdd5b06fa601220175569823f94e0e63d69c44942e93854740046c1",
+    "native_full_body_queue.py": "1cbd366356bfcfe308aa2cdbd02c4a839b0abcb3b45b6b07db68312c58a95d5b",
+    "native_gradients.py": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+    "native_recovery.py": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+    "native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+    "pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7"
+  },
+  "status": "passed_independent_corrected_native_export_and_stock_compatibility",
+  "trainable_state_identity_sha256": "678e3795440858f8079d289c3a63f3be6b86b543aa115cd4c4714ab9c29f83aa",
+  "wall_seconds": 6.999995972029865
+}

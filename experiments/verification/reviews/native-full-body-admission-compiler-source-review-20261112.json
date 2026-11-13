@@ -1,0 +1,25 @@
+{
+  "blocking_source_findings": [],
+  "compiler_sha256": "2cdb400b799301a1bc6eab7f5880fea9b68f1036d3fd6255dadb0d9140ecbe85",
+  "decision": "approved_source_compilation_and_integration_wiring_only",
+  "limitations": [
+    "No forty-epoch scientific approval is granted here.",
+    "Explicitpartial rawanalyzer scope is acceptedonlywhen its7implementedrequiredchecks pass anditsstock/runtimegaps areclosedbyactualseparate independentreports.",
+    "Sourcecompilationapproval cannot replace inspection of actualraw numerical/state evidence."
+  ],
+  "production_source_jobs_or_admission_mutated_by_reviewer": false,
+  "resolved_binding_findings": [
+    "Allfour exact queueplan descriptors must occur with matchingSHA in both raw andruntime evidence inventories.",
+    "Stock mustbindthe exact currentuninterruptedplanIDandplanfileSHA.",
+    "Allindependent reportinventory self-identities are recomputed beforeunion."
+  ],
+  "reviewed_behavior": [
+    "Pins independentraw/runtime/stock analyzer source SHAs andrequires actualpassing7rawchecks plusindependent runtime/stock/teacher evidence.",
+    "Checks fullprofiledata/vocabulary-source bindings and actualeight completed200-update ranks.",
+    "Builds qualification/profile outputs with exact40109core gatebinding, completeunionartifact rehash, sourcecompiler identity andexplicitpendingindependentreview.",
+    "Integration requires a separate scientificreview bindingboth exactqualification/profile descriptors,7sources/full data/vocab/commonbinding, then rehashes all artifacts beforewritingadmission."
+  ],
+  "scientific_training_admitted": false,
+  "scope": "compile_independent_native_raw_runtime_stock_teacher_evidence_and_require_separate_actual_review",
+  "validation": "ASTparse andread-onlysource review; actualraw/runtime/stockreports andcompiledidentities remain subjecttoindependent evidence-level review."
+}

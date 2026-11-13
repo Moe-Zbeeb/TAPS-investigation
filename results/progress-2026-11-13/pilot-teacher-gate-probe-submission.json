@@ -1,0 +1,36 @@
+{
+  "job_id": "2217507",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=low-priority",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=1",
+    "--mem=4G",
+    "--time=01:00:00",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--job-name=taps-teacher-gate-probe",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-teacher-gate-probe-20261113-v1/launch-%j.log",
+    "--wrap",
+    "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-teacher-gate-probe-20261113-v1/launch.sh"
+  ],
+  "verified_slurm": "JobId=2217507 JobName=taps-teacher-gate-probe UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-11-13T05:07:31 EligibleTime=2026-11-13T05:07:31 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-13T05:07:31 Scheduler=Main Partition=low-priority AllocNode:Sid=mslurm:902155 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* TRES=cpu=1,mem=4G,node=1,billing=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=4G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-teacher-gate-probe-20261113-v1/launch-2217507.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-teacher-gate-probe-20261113-v1/launch-2217507.log Power= \n",
+  "holder_job_id": "2212580",
+  "bundle": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-teacher-gate-probe-20261113-v1",
+  "output": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/diagnostics/pilot-teacher-gate-20261113-v1",
+  "plan": {
+    "identity_sha256": "2bb6337797e22b0b0a35604da0512d266e5de6856b4b7420177b4a88a3a42a99",
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-original-s0.json",
+    "run_id": "rq1-pilot-24-20261112-v2-code-original-s0",
+    "sha256": "195e3357520276749c57ed7e7c5799ed8bff8ec269bc4bd498876adceec6d258"
+  },
+  "scope": "Eight-GPU engineering teacher gate diagnosis, no optimizer updates, no scientific resume",
+  "source_sha256": {
+    "launch_teacher_gate_probe_20261113.py": "91b884a2a804367587faa19bf9dbac86929c0ff55c2f2f9d45be2dad5e14931a",
+    "pilot_teacher_gate_probe_20261113.py": "baf7ef57efb13795a5da76d5f7759d9604a871eea4b93e24116cf9b894257770"
+  }
+}

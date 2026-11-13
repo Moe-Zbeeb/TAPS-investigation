@@ -1,0 +1,181 @@
+{
+  "actual_evidence": {
+    "actual_qualification_updates": 256,
+    "dense_slots_per_run": 25165824,
+    "effective_contexts_per_head_per_run": 786432,
+    "elementwise_gradient_bound_violations": 0,
+    "finite_nonzero_named_parameters_per_backward": 13,
+    "head_checks": 896,
+    "logical_examples_per_run": 12288,
+    "maximum_normalized_head_ce_absolute_error": 4.0254404121142784e-07,
+    "maximum_relative_logit_gradient_l2_error": 0.00016525164093424052,
+    "maximum_scaled_fp16_logit_gradient_absolute_error": 0.00048828125,
+    "maximum_weighted_total_ce_absolute_error": 6.146420754582493e-07,
+    "minimum_changed_elements_in_weakest_named_tensor_at_four_step_final": 3787,
+    "minimum_named_tensor_numeric_master_delta_l2_at_four_step_final": 7.507446358251282e-05,
+    "minimum_train_pairs_per_domain_rank": 650,
+    "named_parameter_callback_records": 3328,
+    "numerical_cases": 128,
+    "outside_selected_mask_gradients_independently_verified": true,
+    "paired_cached_examples": 48655,
+    "parameter_callback_attempt_rank_pairs": 80,
+    "plans": 24,
+    "quota": 64,
+    "raw_checkpoints_independently_reconstructed": 10,
+    "raw_final_four_step_checkpoints_with_all13_positive_numeric_master_changes": 8,
+    "required_minimum_pairs_per_domain_rank": 128,
+    "runtime_temporal_accounting_verified": true,
+    "stock_actual_generation_cases": 16,
+    "stock_equal_smoke_cases": 16,
+    "successful_and_attempted_updates_per_rank": 1536,
+    "suffix_capture_pairs": 64,
+    "suffix_full_partition_state_pairs": 16,
+    "unchanged_preexisting_fused_adam_artifacts": 2,
+    "unique_rank_schedules": 96
+  },
+  "approval_conditions": [
+    "Admit only this exact study/source/recipe/data/vocabulary/ordered hardware binding and the registered24runs. Runtime admission must rehash every bound artifact.",
+    "Continue enforcing exactly1536 attemptedand successful updates perrank, staticFP16scale128, all13 gradient liveness, online teacher gate/Qcounts, source/model/hardware checks and failure stops. Any skip invalidates the strict matched-budget run.",
+    "Keep committed exposure and physical replay/cost accounting distinct. Apply the registered measured-compute tolerance after observing actual training; logical fixed shapes do not establish equal GPU seconds.",
+    "Fixed final-step selection and grouped heldout data remain mandatory. Evaluation, routing, trained-quality conclusions and further training need their own scoped protocol/evidence."
+  ],
+  "artifact_inventory_sha256": "167d4ccce47f29ab94f16ca1085722c568c00339d4f7b9893967b18b113b2d2b",
+  "binding": {
+    "cache_identity_sha256": "14828911fed6987d4de047b2e7ecc1e7f998a1abe1398a9231ec5b1be4fda4b1",
+    "eligibility_identity_sha256": "90866e9deb36dd2a560857e9fad554f1d0a89c8b245b1cc64d57d9b3ef661ff8",
+    "hardware": [
+      [
+        "0",
+        "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "1",
+        "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "2",
+        "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "3",
+        "GPU-1870ead3-a098-9d90-ed88-aac3941baf95",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "4",
+        "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "5",
+        "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "6",
+        "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ],
+      [
+        "7",
+        "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d",
+        "NVIDIA A100 80GB PCIe",
+        "81920",
+        "580.65.06"
+      ]
+    ],
+    "recipe_sha256": "51f60b3cc2ec9501088eb304f2438b4951ea592ff0aafc1ff80d915edbdb812d",
+    "source_sha256": {
+      "native_gradients.py": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+      "native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+      "pilot_gate.py": "81526515203af4a0386680b79f091d4f0166aae170a12a23d1b209d9a3028470",
+      "pilot_pipeline.py": "45a813eb3f7063ac8224665ca8397f5a1efd390e25035b23b4c667436f320cf6",
+      "pilot_queue.py": "0c2ec34b25496f793338abbd3495ea9553f13dde8928c4b9777f5d565506a80f",
+      "pilot_smoke.py": "026aa0d7473c7adbd4df3c59bad4677847ff5fbec234aa5badf4ee6f23bd7a13",
+      "pilot_study.py": "8e9fb70fb92240d9253711cca23c0343d1f5b894c32b87eb12e0d2058872f882",
+      "pilot_train.py": "c351672151ce31d01b93e6fdf3071747506c8c4b67d8e0bb22935a937f8f06cc",
+      "pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7"
+    },
+    "study_manifest_sha256": "edd77dcdc0e91ce53c38506044a6e992fa601ca5d105a34bd3d2ffd83147c7b5",
+    "vocabulary_identity_sha256": "ebda1bdcf33fa6034bc7345190514303a2accbb61f85e77a7f839141d2c7b125"
+  },
+  "blocking_findings": [],
+  "checks_reviewed": {
+    "all13_named_adam_and_fp32_updates": "passed",
+    "all13_named_hooks_and_corrected_policy": "passed",
+    "ce_gradients": "passed",
+    "native_step_parity": "passed",
+    "outside_mask_gradients": "passed",
+    "raw_zero_state_reconstruction": "passed",
+    "restart_parity": "passed",
+    "rotary_priming": "passed",
+    "runtime_envelope": "passed",
+    "schedules": "passed",
+    "stock_export_compatibility": "passed",
+    "suffix_probe": "passed"
+  },
+  "compiled_report_cpu_job_id": "2216803",
+  "compiler_sha256": "c15e032fb84946feeba020a609a5365b052261d80c08b7e459c4f47b188b77b7",
+  "decision": "approved",
+  "evidence_artifact_count": 1114,
+  "evidence_inventory_identity_sha256": "167d4ccce47f29ab94f16ca1085722c568c00339d4f7b9893967b18b113b2d2b",
+  "independent_analyzer_v8_sha256": "3edbf557a8f564cf0c84b1735f37ee23aa2e1fb3d61c597e6d7425ebcda9b65e",
+  "independent_cpu_job_id": "2216802",
+  "independent_numerical_audit": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v2/full-v8.json",
+    "sha256": "33c80c25c14fb5ae2cfeec67bd6e1f13d5b12561980e52923ffad898f35154d9"
+  },
+  "limitations": [
+    "This is common-ancestor fine-tuning with a fixed released32000 vocabulary and selected64 assistant contexts perexample. It is not native full-mask scratch training or a forty-epoch generalist admission.",
+    "Eligibility conditions on both policies fitting native2048 and target argmax lying in the vocabulary. Integer-stratum sampling is deliberately nonuniform at the context level; cycling/repeats and unique coverage must be reported.",
+    "Three randomized seedblocks provide limited independent seed evidence. No quality/speed/oracle conclusion is established by qualification.",
+    "Numerical CE/logit-gradient and suffix evidence is a source-bound finite qualification, not a universal floating-point derivative or losslessness proof. Stock generation is one synthetic prompt perrank, compatibilityonly.",
+    "Teacher termination is configured source-bound finish/stop metadata, not independently retained last-token proof. Raw teacher replay does not establish answer correctness. Exact normalized benchmark exclusion is not a proof of no semantic/paraphrase contamination.",
+    "CPU pre/post observations bind the shared runtime/source/library envelope; actual GPU flags/hardware are separate source-bound worker observations. No adversarial machine or GPU-driver-binary attestation is claimed.",
+    "The old default-reentrant full-body training block remains in force. Reuse of legacy helper2aad utilities is approved only under this separately qualified corrected adapter.",
+    "Historical failed paper comparisons and failed verifier reports remain unchanged. No paper-number agreement, universal TV bound, new trained-quality result or corrected native40epoch approval is asserted."
+  ],
+  "original_failed_reports_preserved": true,
+  "production_admission_or_jobs_modified_by_reviewer": false,
+  "qualification_report": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/qualification-report.json",
+    "sha256": "dd568fed30d8cfe73119ced8830210a46c9fb0a2dc8e52767c4786adcf6c4323"
+  },
+  "qualification_report_sha256": "dd568fed30d8cfe73119ced8830210a46c9fb0a2dc8e52767c4786adcf6c4323",
+  "review_type": "actual_evidence_level_review_after_independent_cpu_replay",
+  "reviewed_verifier_classifications": [
+    "Only the exact reviewed Torch checkpoint source in the resolved declared runtime may be outside the project/model artifact roots. Its bytes remain pinned and rehashed.",
+    "DeepSpeed source-proven in-place consumption of AdamW adam_w_modeTrue is normalized only under the reviewed engine/FusedAdam sources and weight_decay0; allother configuration and raw-state checks remain exact.",
+    "Only the exact two registered zero-learning-rate prefixes are classified as numerically unchanged with signed-zero-only representation changes. Actual initial/post-update hashes remain retained. All13 raw moments must be nonzero and allstep4finals must have13positive numeric FP32 updates."
+  ],
+  "reviewer": "independent-agent-validation-review",
+  "scientific_training_admitted": true,
+  "scope": "source_bound_24_common_ancestor_masked_matched_budget_finetuning_pilots_only",
+  "signed_zero_prefix_evidence_review_sha256": "452938fda83a69bbb9bb9291b0fb16d01a032249f6c848add38fd31d17a00178",
+  "teacher_provenance_audit": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v1/teacher-replay.json",
+    "sha256": "f2d8052ef1a5903d6912a83ced8159a59b19cebbb7ec5d675c0ffa40d79ce495"
+  },
+  "teacher_provenance_review": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-admission-20261112-v4/teacher-review.json",
+    "sha256": "23d8c7b1a3eec830468321c8d9e28959624d83b46f1f8e76a4dc76e0f8350bbe"
+  }
+}

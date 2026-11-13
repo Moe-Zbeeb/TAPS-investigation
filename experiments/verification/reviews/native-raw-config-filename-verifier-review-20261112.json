@@ -1,0 +1,54 @@
+{
+  "actual_metadata": "A read-only33KB ZIPpickle-metadata inspection found saved.ds_config is the exact registered work/ds_config.json filename, not a parsed dictionary. The native CLI passes the config by argument, unlike the pilot custom loop dictionary.",
+  "correction": "Require exact originalfilename, canonicalnonsymlink plannedpath andunchangedfrozen02bJSON; pinCLI/config-reader/engine sources. Keep independent raw optimizer/scaler/scheduler/hyperparameter/data/gradient/state checks. Report actualfilename representation honestly.",
+  "decision": "verifier_representation_defect_repaired_actual_replay_pending",
+  "failed_job_id": "2216793",
+  "failed_report_sha256": "8ae542a5a14dbe022502a5fa8ae84ee7c99c330dc4ef06692c2e36d6149d5db5",
+  "frozen_native_config_sha256": "02b432995b51d8fa1cce7685b7430de7ce14de0419a6729cd9ff0c324c1bec0b",
+  "jobs_or_production_admission_mutated_by_reviewer": false,
+  "not_changed": [
+    "Productioncore7",
+    "Source/config/model/data bytes",
+    "Rawtensoridentities",
+    "Gradientandupdateparityrequirements",
+    "Dynamic-scalerandsuccessful/attemptedbudgets",
+    "Fullindependentactualreviewrequirement"
+  ],
+  "original_failed_report_preserved": true,
+  "original_failure": {
+    "error_code": "native_saved_recipe_differs_beyond_source_proven_adamw_consumption",
+    "phase": "native_raw_dynamic_state_reconstruction"
+  },
+  "pinned_source_flow": {
+    "deepspeed/__init__.py": {
+      "behavior": "Maps args.deepspeed_config filename toconfig andconstructs DeepSpeedConfig fromit.",
+      "lines": [
+        174,
+        176,
+        179
+      ],
+      "sha256": "b5c4b7797c761ef30baf7f3fa1f83ed910bd97d935b3702c617f93c89101ac95"
+    },
+    "deepspeed/runtime/config.py": {
+      "behavior": "Loads the existing suppliedfilename withthe duplicate-key-rejecting JSONreader.",
+      "lines": [
+        623,
+        625,
+        626
+      ],
+      "sha256": "1ed3a84c5be3afff4efc07687de4113bec82e8df097a9f23de69b041f3cfb52e"
+    },
+    "deepspeed/runtime/engine.py": {
+      "behavior": "Stores originalconfig separatelyfromparsedconfig_class andserializes originalconfig inmodelcheckpoint.",
+      "lines": [
+        226,
+        227,
+        3604
+      ],
+      "sha256": "3bb0e2af63f93c105d51f120bd56886b7d45e4ad33d9cd192e5c687c8673fde8"
+    }
+  },
+  "raw_v2_analyzer_sha256": "a245225bd0d3da3bf6541a07713e700fe7c470ed0b26f1545fd3f1b457f9d69b",
+  "scientific_training_admitted": false,
+  "scope": "native_cli_saved_deepspeed_config_filename_only"
+}
