@@ -11,7 +11,7 @@ from taps_rebuild.pilot_gate import backend, devices, upstream, verify_cache
 from taps_rebuild.pilot_study import mask_positions, verify_identity
 
 
-def run(plan_path, output):
+def run(plan_path, output, restore_teacher_buffers=False, restore_preinitialization_buffers=False):
     import deepspeed
     import numpy as np
     import torch
@@ -54,12 +54,31 @@ def run(plan_path, output):
     model.scandata(None, plan['target']['path'])
     checkpoint_policy['rotary_cache'] = prime_rotary_cache(model, torch)
     before_buffers = {name: {'dtype': str(value.dtype), 'shape': list(value.shape), 'identity': native.tensor_state_identity(value, torch)} for name, value in model.target_model.named_buffers()}
+    pristine = None
+    if restore_preinitialization_buffers:
+        from taps_rebuild.pilot_train import teacher_buffer_snapshot
+        pristine = teacher_buffer_snapshot(model.target_model, torch)
     engine, _, _, _ = deepspeed.initialize(model=model, model_parameters=model.parameters(), config=plan['recipe']['ds_config'])
     engine.train()
     model.target_model.eval()
     after_buffers = {name: {'dtype': str(value.dtype), 'shape': list(value.shape), 'identity': native.tensor_state_identity(value, torch)} for name, value in model.target_model.named_buffers()}
     standalone = importlib.import_module('modeling_llama_kv').LlamaForCausalLM.from_pretrained(plan['target']['path'], torch_dtype=torch.float16).to(rank).eval()
     standalone_buffers = {name: {'dtype': str(value.dtype), 'shape': list(value.shape), 'identity': native.tensor_state_identity(value, torch)} for name, value in standalone.named_buffers()}
+    restoration = None
+    if restore_preinitialization_buffers:
+        from taps_rebuild.pilot_train import restore_teacher_buffers as restore_pristine
+        import taps_rebuild.pilot_train as producer
+        restoration = {**restore_pristine(model.target_model, pristine, torch), 'producer_source': {'path': producer.__file__, 'sha256': pool.digest(producer.__file__)}}
+        restored_buffers = {name: {'dtype': str(value.dtype), 'shape': list(value.shape), 'identity': native.tensor_state_identity(value, torch)} for name, value in model.target_model.named_buffers()}
+        require(restored_buffers == standalone_buffers, 'Production preinitialization restoration differs from standalone buffers')
+    if restore_teacher_buffers:
+        require(set(standalone_buffers) == set(after_buffers), 'Teacher buffer name sets differ')
+        for name, value in standalone.named_buffers():
+            parent, leaf = name.rsplit('.', 1)
+            model.target_model.get_submodule(parent)._buffers[leaf] = value.detach().clone()
+        restored_buffers = {name: {'dtype': str(value.dtype), 'shape': list(value.shape), 'identity': native.tensor_state_identity(value, torch)} for name, value in model.target_model.named_buffers()}
+        require(restored_buffers == standalone_buffers, 'Restored teacher buffers differ from exact standalone buffers')
+        restoration = {'scope': 'Isolated engineering intervention after native initialization; no scientific source or run changed', 'buffers': restored_buffers, 'all_exact_standalone_buffers_restored': True}
     differences = []
     actual_parameters = dict(model.target_model.named_parameters())
     for name, value in standalone.named_parameters():
@@ -88,12 +107,12 @@ def run(plan_path, output):
                 covered = model.t2d[prediction]
                 require(bool(torch.isfinite(selected).all()), 'Probe selected logits are nonfinite')
                 predictions[label] = prediction.detach().cpu()
-                values[label] = {'argmax': predictions[label].tolist(), 'covered': covered.cpu().tolist(), 'uncovered_positions': [position for position, keep in zip(positions, covered.cpu().tolist()) if not keep], 'top5_ids': top.indices.cpu().tolist(), 'top5_logits': top.values.float().cpu().tolist()}
+                values[label] = {'argmax': predictions[label].tolist(), 'covered': covered.cpu().tolist(), 'uncovered_positions': [position for position, keep in zip(positions, covered.cpu().tolist()) if not keep], 'top5_ids': top.indices.cpu().tolist(), 'top5_logits': top.values.float().cpu().tolist(), 'selected_logits_identity': native.tensor_state_identity(selected, torch)}
                 torch.save(selected.detach().cpu(), output / ('rank-' + str(rank) + '-step-' + str(step) + '-' + label + '.pt'))
                 del result, selected, top
             torch.cuda.synchronize(rank)
         cases.append({'step': step, 'example_id': item['example_id'], 'index': item['index'], 'positions': positions, 'argmax_disagreements': int((predictions['standalone_scan'] != predictions['native_after_deepspeed']).sum()), 'predictions': values})
-    result = {'status': 'completed_engineering_teacher_gate_probe', 'scientific_training_admitted': False, 'scientific_run_resumed': False, 'optimizer_updates': 0, 'rank': rank, 'plan': {'path': str(plan_path), 'sha256': pool.digest(plan_path)}, 'probe_sha256': pool.digest(__file__), 'hardware': hardware, 'runtime': runtime, 'checkpoint_policy': checkpoint_policy, 'teacher_parameter_differences': differences, 'native_before_deepspeed_buffers': before_buffers, 'native_after_deepspeed_buffers': after_buffers, 'standalone_scan_buffers': standalone_buffers, 'cases': cases}
+    result = {'status': 'completed_engineering_teacher_gate_probe', 'scientific_training_admitted': False, 'scientific_run_resumed': False, 'optimizer_updates': 0, 'rank': rank, 'plan': {'path': str(plan_path), 'sha256': pool.digest(plan_path)}, 'probe_sha256': pool.digest(__file__), 'hardware': hardware, 'runtime': runtime, 'checkpoint_policy': checkpoint_policy, 'teacher_parameter_differences': differences, 'native_before_deepspeed_buffers': before_buffers, 'native_after_deepspeed_buffers': after_buffers, 'standalone_scan_buffers': standalone_buffers, 'engineering_buffer_restoration': restoration, 'cases': cases}
     pool.atomic_json(destination, result)
     print(json.dumps({'rank': rank, 'status': result['status'], 'cases': [{'step': case['step'], 'disagreements': case['argmax_disagreements'], 'native_uncovered': case['predictions']['native_after_deepspeed']['uncovered_positions']} for case in cases]}), flush=True)
     torch.distributed.barrier()
@@ -103,5 +122,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--plan', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--restore-teacher-buffers', action='store_true')
+    parser.add_argument('--restore-preinitialization-buffers', action='store_true')
     args = parser.parse_args()
-    run(args.plan, args.output)
+    require(not (args.restore_teacher_buffers and args.restore_preinitialization_buffers), 'Choose one engineering intervention')
+    run(args.plan, args.output, args.restore_teacher_buffers, args.restore_preinitialization_buffers)

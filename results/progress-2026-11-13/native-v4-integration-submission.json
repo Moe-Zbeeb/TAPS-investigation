@@ -1,0 +1,24 @@
+{
+  "job_id": "2217510",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=low-priority",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=4",
+    "--mem=32G",
+    "--time=02:00:00",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--job-name=taps-native-v4-integrate",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-admission-20261113-v1/integrate-%j.log",
+    "--wrap",
+    "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-admission-20261113-v1/integrate.sh"
+  ],
+  "verified_slurm": "JobId=2217510 JobName=taps-native-v4-integrate UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=02:00:00 TimeMin=N/A SubmitTime=2026-11-13T05:11:22 EligibleTime=2026-11-13T05:11:22 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-13T05:11:22 Scheduler=Main Partition=low-priority AllocNode:Sid=mslurm:905607 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* TRES=cpu=4,mem=32G,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=32G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-admission-20261113-v1/integrate-2217510.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-admission-20261113-v1/integrate-2217510.log Power= \n",
+  "review_sha256": "663734432753184423930b84254dc5e281f6bb68ab05fd2aef9741c6c1490bef",
+  "scope": "Root actual evidence rehash and integration of independent native scientific approval; waiting science coordinator gated on resulting admission.json"
+}

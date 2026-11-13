@@ -1,0 +1,103 @@
+{
+  "actual_v3_json_evidence_inspected": {
+    "all32_pristine_fp32_buffers_equal_standalone": true,
+    "all_selected_logit_identities_match": true,
+    "all_teacher_parameters_equal_standalone": true,
+    "cases": 40,
+    "collector_sha256": "1f3ab82da730bac154d34909101624aa0d912b6bd5d7593ded4bdbb8b770ab2c",
+    "files": {
+      "results/progress-2026-11-13/teacher-diagnostics/v3/completion.json": {
+        "sha256": "e551c801c35e4c0da8c60679ba066d02ca9e2a114fb5028db29b654e6b20cf6a",
+        "size_bytes": 1080
+      },
+      "results/progress-2026-11-13/teacher-diagnostics/v3/launch.json": {
+        "sha256": "e4138bbb4c293adc4ef2d9670b3497b7ef31997d0c8444effd651140f13ba9ac",
+        "size_bytes": 5566
+      },
+      "results/progress-2026-11-13/teacher-diagnostics/v3/rank-0.json": {
+        "sha256": "20f516526ef5c9285e23f4da428baab7e968f02c1e5c2f761655eb56a8fe3f72",
+        "size_bytes": 232883
+      },
+      "results/progress-2026-11-13/teacher-diagnostics/v3/rank-1.json": {
+        "sha256": "dbebe48bf60d2aa55f2fda238f403e7461aade18f04db68ac862dc346081dd77",
+        "size_bytes": 232739
+      },
+      "results/progress-2026-11-13/teacher-diagnostics/v3/rank-2.json": {
+        "sha256": "942ea96937c27b52bc3b48e84d05581855aef31bd6419d0287f4c1aa2772bce7",
+        "size_bytes": 233333
+      },
+      "results/progress-2026-11-13/teacher-diagnostics/v3/rank-3.json": {
+        "sha256": "9a430fc76ff698fe72ceccf6bbd0d7b17206538daf813c8af37016ddd1cc22d5",
+        "size_bytes": 233465
+      },
+      "results/progress-2026-11-13/teacher-diagnostics/v3/rank-4.json": {
+        "sha256": "39217643b3457d4df353ae51e6213ef066009b06ae914de85aac6d4449fb6cb9",
+        "size_bytes": 233041
+      },
+      "results/progress-2026-11-13/teacher-diagnostics/v3/rank-5.json": {
+        "sha256": "f6256d8b2d8fe2462ab64aa630c22d2be21e03a50d3a21a43ab3c9cadc241abe",
+        "size_bytes": 232921
+      },
+      "results/progress-2026-11-13/teacher-diagnostics/v3/rank-6.json": {
+        "sha256": "6a45ceaa2a779fd445bb2ce9e2a48dcfc6eba742927f5e183dbc6bc900e98aa0",
+        "size_bytes": 232739
+      },
+      "results/progress-2026-11-13/teacher-diagnostics/v3/rank-7.json": {
+        "sha256": "90467232244acdb153de6992404e46a9d7e45ea4c68b8a59af18fa241d9ed78a",
+        "size_bytes": 233209
+      }
+    },
+    "optimizer_updates": 0,
+    "producer_sha256": "09b3eb2d4bbdae9a894eecd4e420594dcefed36df9ed6c0a61deba7da686f548",
+    "ranks": 8,
+    "selected_contexts_per_case": 64
+  },
+  "blocking_source_findings": [],
+  "bounded_engineering_source_review": {
+    "path": "experiments/verification/reviews/pilot-teacher-buffer-engineering-source-review-20261113.json",
+    "sha256": "fa1485adffbd5494c196ba08efc204448af2da758511fe285f314ea4ced3162c"
+  },
+  "decision": "approved_source_only_for_cpu_preparation_and_bounded_engineering_release",
+  "limitations": [
+    "Source approval does not assert that the new CPU guard,96schedule equality,208prefix or12qualification phases have executed; their actual release receipts remain required.",
+    "Reviewer checked actual v3 report fingerprints and reviewed collector source, not an additional independent raw-logit tensor replay or GPU forward rerun."
+  ],
+  "production_source_jobs_or_admission_mutated_by_reviewer": false,
+  "release_conditions": [
+    "Freeze this exact guard in the new bundle and verify its reviewed source hash before CPU execution; preserve the active/failed immutable bundles.",
+    "The actual CPU guard must succeed, including retained producer AST equality and all96schedule comparisons, before attaching the bounded208prefix plus12qualification chain.",
+    "Preserve existing holders and allocation verification; use all8registered GPUs without changing high-priority allowance.",
+    "Scientific release remains blocked on completed fresh208prefix/all12qualification evidence, new source-bound independent audit/review and explicit root integration with full retained artifact rehash."
+  ],
+  "reviewed_at_utc": "2026-11-13T10:22:05.970908+00:00",
+  "reviewed_behavior": [
+    "Requires CPU Slurm with no CUDA visibility and exact immutable source bundle plus source-only reviewfa1485 and every six reviewed source pin; separately checks the actual root qualification wrapper against its reviewed hash.",
+    "Pins actual retained v3 collector1f3ab82d source, launch and each rank report, and requires the preinitialization-buffer intervention command. Verifies complete8rank completion and exact rank JSON hashes.",
+    "Hashes and validates the old failed condition plan against its registered manifest before using its exact cache/runtime/hardware/Q identities.",
+    "Compares helper ASTs across final source, independent source review and the actual v3 executed producer with its exact retained source hash/path. It checks zero updates/no scientific resume, frozen/eval parameters, equal complete pristine buffers, actual runtime/hardware/plan and all40case complete selected-logit identities/Qcoverage.",
+    "Prepares a fresh new source-bound study only after these checks, retains sealed cache/eligibility/vocabulary provenance through existing prepare(), and compares every one of96schedule/mask file hashes to the original registered study.",
+    "Emits only a preparation receipt with scientific_training_admitted=False. It does not create admission, resume old science, waive gates or alter the native generalist recipe."
+  ],
+  "reviewer": "independent-agent-native-evidence-review",
+  "scientific_failed_run_resume_authorized": false,
+  "scientific_training_admitted": false,
+  "scope": "exact_v3_helper_proof_guard_and_fresh_teacher_policy_study_preparation_only",
+  "source_sha256": {
+    "experiments/verification/prepare_teacher_study_20261113.py": "b46c940e017eeccebe777c014e83d4476fe804d0cc2ac3e813614ae14410bbbe"
+  },
+  "unchanged_reviewed_source_sha256": {
+    "configs/rq1-pilot-24-20261113.json": "2e0e7d0a685d6b29271676cd7ffbcbdc5b42d977df97d8eb398dbf4a73939773",
+    "experiments/verification/qualify_teacher_buffers_20261113.py": "1a27103dab4faa14f6ead30dc5e5c1fee457e3d98783c4e86e5b61a2a121833e",
+    "src/taps_rebuild/pilot_pipeline.py": "45a813eb3f7063ac8224665ca8397f5a1efd390e25035b23b4c667436f320cf6",
+    "src/taps_rebuild/pilot_queue.py": "0c2ec34b25496f793338abbd3495ea9553f13dde8928c4b9777f5d565506a80f",
+    "src/taps_rebuild/pilot_study.py": "8e9fb70fb92240d9253711cca23c0343d1f5b894c32b87eb12e0d2058872f882",
+    "src/taps_rebuild/pilot_train.py": "f700df226d9bd0ea3391868c24e6780efcfde0be3967bda2dba354e7cc699a4a"
+  },
+  "validation": {
+    "actual_v3_completion_all8rank_json_hashes_and40selected_logit_checks": "passed",
+    "cpu_guard_execution_claimed": false,
+    "guard_ast_parse": "passed",
+    "new_gpu_execution_claimed": false,
+    "six_prior_reviewed_sources_and_review_digest_unchanged": "passed"
+  }
+}

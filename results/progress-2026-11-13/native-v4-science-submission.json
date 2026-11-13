@@ -1,0 +1,25 @@
+{
+  "job_id": "2217508",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=low-priority",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=4",
+    "--mem=16G",
+    "--time=36:00:00",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--job-name=taps-corrected-generalist",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-admission-20261113-v1/science-%j.log",
+    "--wrap",
+    "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-admission-20261113-v1/science.sh"
+  ],
+  "verified_slurm": "JobId=2217508 JobName=taps-corrected-generalist UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=1-12:00:00 TimeMin=N/A SubmitTime=2026-11-13T05:08:40 EligibleTime=2026-11-13T05:08:40 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-13T05:08:40 Scheduler=Main Partition=low-priority AllocNode:Sid=mslurm:903079 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=4 NumTasks=1 CPUs/Task=4 ReqB:S:C:T=0:0:*:* TRES=cpu=4,mem=16G,node=1,billing=4 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=4 MinMemoryNode=16G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-admission-20261113-v1/science-2217508.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-admission-20261113-v1/science-2217508.log Power= \n",
+  "approval": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-admission/native-full-body-20261113-v1/admission.json",
+  "run_id": "sharegpt-ultrachat-corrected-full-20261113-v4",
+  "scope": "CPU waiting coordinator; fresh eight-GPU native scientific launch only after exact independent admission; no legacy resume"
+}

@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "study_id": "rq1-pilot-24-20261113-v3",
+  "scope": "common_ancestor_matched_budget_finetuning_pilot",
+  "cohorts": [
+    "chat",
+    "math",
+    "code",
+    "generalist"
+  ],
+  "response_context_policies": [
+    "original",
+    "target"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "world_size": 8,
+  "node": "deep-chungus-10",
+  "length": 2048,
+  "examples_per_rank": 1536,
+  "effective_context_quota_priority": [
+    64,
+    32
+  ],
+  "minimum_train_pairs_per_domain_rank": 128,
+  "initialization": "identical complete released EAGLE3 trainable state and frozen32000 vocabulary; fresh optimizer for every run",
+  "labels": "online frozen Llama3.1-8B-Instruct soft distributions for both response context policies",
+  "objective": "sum_k(0.8**k * native_head_mean_CE_k *2048/Q), k=0..6",
+  "positions": "Q disjoint integer strata of sorted eligible base positions; a SHA256 variate chooses uniformly within each stratum; paired policies share variates; nonuniform inclusion when strata sizes differ",
+  "eligibility": "native_mask[s] and released_t2d[argmax_full_vocab(target_logits_original[s+1])] and s>=6 and s+1<real_length; both policies must have at leastQ",
+  "schedule": "deterministic domain/rank/seed/cycle hash permutation; explicit per-example repeat occurrence; generalist cycles domains with rank offset,512 per domain/rank; policy pairs share schedule",
+  "skipped_step_policy": "any optimizer overflow/skip invalidates the run; no extra updates to compensate",
+  "recovery": "source-bound clean checkpoint resume; log logical committed exposure separately from all physical attempts and replayed work; exact physical-match claim invalid after lost-work replay",
+  "checkpoint_interval": 128,
+  "final_checkpoint": "fixed successful step1536; no validation-selected checkpoints",
+  "gradient_checkpointing": true,
+  "target_eval": true,
+  "target_dtype": "float16",
+  "matmul_tf32": false,
+  "cublas_workspace_config": ":4096:8",
+  "compute_matching": {
+    "reference": "median of the eight per-run8x synchronized training-loop wall times within each seed block",
+    "criterion": "each of eight runs must be within +/-10% of that median; also publish max/min ratio",
+    "include": "online teacher, draft forward/backward, optimizer, cache-to-device input, loop journaling and synchronization; checkpoint/export time measured separately",
+    "cuda_events": "per-rank default-stream event intervals with synchronize after each update; auxiliary-stream work included only when joined by the default stream",
+    "replays": "all physical attempts charged separately, including lost work; no padding with sleep or extra learning",
+    "offline": "report regeneration, eligibility, qualification and total allocation costs separately"
+  },
+  "evaluation": {
+    "heldout_prompts_per_domain": 80,
+    "traffic": [
+      "chat",
+      "math",
+      "code",
+      "equal_domain_mixture"
+    ],
+    "temperatures": [
+      0,
+      1
+    ],
+    "max_new_tokens": 128,
+    "timing_repeats": 5,
+    "baselines": [
+      "autoregressive target",
+      "released EAGLE3 ancestor",
+      "same-seed trained union generalist"
+    ],
+    "metrics": [
+      "paired wall-clock tokens/sec and speedup",
+      "accepted draft tokens per verification",
+      "reject rate",
+      "per-head agreement",
+      "memory and GPU time"
+    ],
+    "selection": "fixed final step; no tuning on test prompts",
+    "uncertainty": "paired prompt bootstrap plus all three seed values; only three seed blocks",
+    "oracle": "per-domain best fixed drafter selected on dev only; report routing cost separately"
+  },
+  "admission_required": [
+    "source_bound_numerical_and_native_update_parity",
+    "eight_rank_four_vs_two_plus_two_exact_restore",
+    "stock_trained_checkpoint_inference",
+    "independent_full_schedule_and_provenance_audit",
+    "all_thirteen_trainables_gradient_and_adam_coverage"
+  ],
+  "ds_config": {
+    "fp16": {
+      "enabled": true,
+      "auto_cast": true,
+      "loss_scale": 128
+    },
+    "optimizer": {
+      "type": "AdamW",
+      "params": {
+        "lr": 0,
+        "weight_decay": 0.0,
+        "adam_w_mode": true,
+        "betas": [
+          0.9,
+          0.95
+        ],
+        "eps": 1e-08
+      }
+    },
+    "scheduler": {
+      "type": "WarmupDecayLR",
+      "params": {
+        "warmup_min_lr": 0,
+        "warmup_max_lr": 5e-05,
+        "warmup_num_steps": 64,
+        "total_num_steps": 1536,
+        "warmup_type": "linear"
+      }
+    },
+    "zero_optimization": {
+      "stage": 2,
+      "allgather_partitions": true,
+      "allgather_bucket_size": 200000000,
+      "overlap_comm": true,
+      "reduce_scatter": true,
+      "reduce_bucket_size": 200000000,
+      "contiguous_gradients": true
+    },
+    "gradient_accumulation_steps": 1,
+    "gradient_clipping": 0.5,
+    "steps_per_print": 2000,
+    "train_micro_batch_size_per_gpu": 1,
+    "wall_clock_breakdown": false
+  },
+  "checkpoint_retention": 2,
+  "pipeline_prerequisite": {
+    "path": "outputs/pipeline-validation/pipeline-20261111-v3/replay.json",
+    "sha256": "687ec4ac53f1ba3160db9891e592dce66cb384e69f516551d2e7745be7426295",
+    "scope": "prior independently reviewed full-model EAGLE3/EAGLE2/HASS implementation validation; new pilot training and exports require additional qualification"
+  },
+  "checkpoint_mode": "non_reentrant",
+  "limitations": [
+    "Legacy default reentrant checkpoint path disconnects nested decoder outputs; corrected non-reentrant path requires new source-bound qualification against a direct uncheckpointed native-function reference.",
+    "The12November pilot stopped at step207 because DeepSpeed half-converted teacher inv_freq buffers relative to the eligibility scan. Preserve that failed study; fresh study uses exact pristine teacher buffer restoration and must pass new qualification and independent admission."
+  ],
+  "rotary_cache": {
+    "capacity": 2054,
+    "construction": "CPU FP32 before engine FP16/device conversion; preserve existing2048-position prefix",
+    "requirement": "no rotary cache extension during forward or checkpoint recomputation"
+  },
+  "independent_evidence_review": "Mandatory separate evidence-and-study-bound approval after qualification; never a self-approved numerical check.",
+  "teacher_buffer_policy": {
+    "capture": "exact32 pristine CPUFP32 inv_freq buffers before DeepSpeed initialization",
+    "restore": "original bytes and dtype on each current CUDA device after engine initialization; verify full buffer identity again after checkpoint restoration",
+    "scope": "new source-bound pilot qualification and scientific study only; old failed run and native scratch recipe unchanged"
+  }
+}

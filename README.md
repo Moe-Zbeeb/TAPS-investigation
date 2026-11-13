@@ -4,7 +4,7 @@ Research code for studying specialist drafters under mixed traffic, following th
 
 [Getting started](docs/GETTING_STARTED.md) · [Reproduction protocol](experiments/official-reproduction-20261109/PREREGISTRATION.md) · [Implementation status](experiments/IMPLEMENTATION_STATUS.md) · [Current completion plan](experiments/finalization-20261111/COMPLETION_PLAN.md) · [References](references/README.md)
 
-The [13 November status](experiments/STATUS_20261113.md) supersedes earlier live snapshots. Both eight-A100 allocations are retained. The corrected generalist passed its 200-update profile and independent numerical, runtime and stock-export checks; fresh full training awaits exact evidence admission. The first admitted pilot stopped after 207 committed updates at its online teacher gate. No pilot has completed its fixed budget. The failed pilot is preserved and blocked while an isolated teacher-runtime diagnostic runs.
+The [13 November status](experiments/STATUS_20261113.md) supersedes earlier live snapshots. Both eight-A100 allocations are retained. The corrected generalist passed its 200-update profile and independent numerical, runtime and stock-export checks; its fresh scientific launch is admitted and undergoing startup checks. The first pilot stopped after 207 updates because DeepSpeed converted teacher buffers to FP16 relative to the eligibility scan. Restoring pristine FP32 buffers matched all 40 diagnostic cases exactly. A fresh pilot study is queued through bounded requalification and independent admission. No fixed-budget pilot or forty-epoch generalist has completed.
 
 ```mermaid
 flowchart LR

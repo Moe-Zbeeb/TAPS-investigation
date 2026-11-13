@@ -1,0 +1,40 @@
+{
+  "optimizer_updates": 0,
+  "ranks": [
+    {
+      "rank": 0,
+      "sha256": "f8da8dd7763efff06fa659e6d30ae9c103a3b6425eed174d3f471a2def37284e"
+    },
+    {
+      "rank": 1,
+      "sha256": "670295d9d7f63c29726bcfa10662a954692e733c8dd215bf628a979b0d9dbf6b"
+    },
+    {
+      "rank": 2,
+      "sha256": "7eabdeb080537fe8ac5b890091cd441453a32e1e57b95ecbfb0864dc82a31919"
+    },
+    {
+      "rank": 3,
+      "sha256": "1c9935fa49a2414c5b7681f4a2fc1c9cb197527e3611fa0955c8c39751a8c935"
+    },
+    {
+      "rank": 4,
+      "sha256": "b0a267e16e125ad65de7f441b2a58a90ad08961adb8d655e0577d6bc1ec9e9d9"
+    },
+    {
+      "rank": 5,
+      "sha256": "2812cf7a2cb0ded7b90cad66d8c6b9e45064581268b6de7e2671b3da1692db4c"
+    },
+    {
+      "rank": 6,
+      "sha256": "41c5c7767cee23c91eb9c36e9e05f313d92194a57e3e45fc4bf4f5dddef46ce8"
+    },
+    {
+      "rank": 7,
+      "sha256": "a69f2227439dd3a83a0bc22d282ad34ffa04347e403e083c0cd1173460b05161"
+    }
+  ],
+  "scientific_run_resumed": false,
+  "scientific_training_admitted": false,
+  "status": "completed_eight_rank_engineering_probe"
+}

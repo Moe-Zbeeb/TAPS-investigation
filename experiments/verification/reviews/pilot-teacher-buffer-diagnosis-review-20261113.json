@@ -1,0 +1,358 @@
+{
+  "artifact_inventory": {
+    "results/progress-2026-11-13/teacher-diagnostics/v1/completion.json": {
+      "sha256": "5329ce383bd9b519b65986a46b30b8c11b8ed97ac4376f38887f0ba5361282d5",
+      "size_bytes": 1080
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v1/launch.json": {
+      "sha256": "912e11a997843236374096ba0fabc32250d1d3d17e9e38d6eec8c02e797122c0",
+      "size_bytes": 5523
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v1/rank-0.json": {
+      "sha256": "f8da8dd7763efff06fa659e6d30ae9c103a3b6425eed174d3f471a2def37284e",
+      "size_bytes": 229255
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v1/rank-1.json": {
+      "sha256": "670295d9d7f63c29726bcfa10662a954692e733c8dd215bf628a979b0d9dbf6b",
+      "size_bytes": 229255
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v1/rank-2.json": {
+      "sha256": "7eabdeb080537fe8ac5b890091cd441453a32e1e57b95ecbfb0864dc82a31919",
+      "size_bytes": 229780
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v1/rank-3.json": {
+      "sha256": "1c9935fa49a2414c5b7681f4a2fc1c9cb197527e3611fa0955c8c39751a8c935",
+      "size_bytes": 229952
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v1/rank-4.json": {
+      "sha256": "b0a267e16e125ad65de7f441b2a58a90ad08961adb8d655e0577d6bc1ec9e9d9",
+      "size_bytes": 229572
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v1/rank-5.json": {
+      "sha256": "2812cf7a2cb0ded7b90cad66d8c6b9e45064581268b6de7e2671b3da1692db4c",
+      "size_bytes": 229303
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v1/rank-6.json": {
+      "sha256": "41c5c7767cee23c91eb9c36e9e05f313d92194a57e3e45fc4bf4f5dddef46ce8",
+      "size_bytes": 229129
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v1/rank-7.json": {
+      "sha256": "a69f2227439dd3a83a0bc22d282ad34ffa04347e403e083c0cd1173460b05161",
+      "size_bytes": 229700
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v2/completion.json": {
+      "sha256": "1b2cd7b98607f2ac999b87c159263b91e3b33d602720bf8cc10bbe3356985556",
+      "size_bytes": 1080
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v2/launch.json": {
+      "sha256": "58bf66ecf3826924102209cbcbf3597fd598cd2118243674a7a8d66bd307d5d8",
+      "size_bytes": 5556
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v2/rank-0.json": {
+      "sha256": "98ad24b64a607ece0fc0a7646f7b4113aee4d0422a3a17f52e8fa6500f429f6c",
+      "size_bytes": 238003
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v2/rank-1.json": {
+      "sha256": "b2b1fd6e1565d4dc44a9c51275a513f1759e8f5a4d5bcff2badb51778176f6e7",
+      "size_bytes": 237859
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v2/rank-2.json": {
+      "sha256": "e279ae2eb3667933fe0b3ba2626940dc4b71e750cbfe844ae6ef79f0c2a0f1a1",
+      "size_bytes": 238453
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v2/rank-3.json": {
+      "sha256": "b56ac8ba15376b315c8e47275014ab7531e65d17315e3cf45f4f8f240bec23ff",
+      "size_bytes": 238585
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v2/rank-4.json": {
+      "sha256": "cd02e5b9d02ddc074f576e927fa3c8bcc7765e5c745221a091ed19560779ab98",
+      "size_bytes": 238161
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v2/rank-5.json": {
+      "sha256": "a9f0c5a4c3bfc2cbbb3ed724fcf98d77f80f574f125703207d857d0869e7b9dc",
+      "size_bytes": 238041
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v2/rank-6.json": {
+      "sha256": "b7478e2d2bd956f34a9027d941430ecab31b5f32609d29e2d0961ab5b5baadeb",
+      "size_bytes": 237859
+    },
+    "results/progress-2026-11-13/teacher-diagnostics/v2/rank-7.json": {
+      "sha256": "c6a50d14da4dfa151c3d98e2f6412024788c563da4547ab2a1f9f551781ac9f9",
+      "size_bytes": 238329
+    }
+  },
+  "artifact_inventory_identity_sha256": "dddece2d37509c3ac49687f1f7cf940da5a847f8c957298d0f0500d6440c6b3b",
+  "decision": "confirmed_buffer_conversion_diagnosis_and_minimal_correction_design",
+  "evidence": {
+    "v1": {
+      "completion": {
+        "path": "results/progress-2026-11-13/teacher-diagnostics/v1/completion.json",
+        "sha256": "5329ce383bd9b519b65986a46b30b8c11b8ed97ac4376f38887f0ba5361282d5"
+      },
+      "launch": {
+        "path": "results/progress-2026-11-13/teacher-diagnostics/v1/launch.json",
+        "sha256": "912e11a997843236374096ba0fabc32250d1d3d17e9e38d6eec8c02e797122c0"
+      },
+      "launcher_sha256": "91b884a2a804367587faa19bf9dbac86929c0ff55c2f2f9d45be2dad5e14931a",
+      "probe_sha256": "baf7ef57efb13795a5da76d5f7759d9604a871eea4b93e24116cf9b894257770",
+      "ranks": [
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 0,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 1,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 2,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 3,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 4,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 5,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 6,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 7,
+          "teacher_parameter_differences": 0
+        }
+      ]
+    },
+    "v2": {
+      "completion": {
+        "path": "results/progress-2026-11-13/teacher-diagnostics/v2/completion.json",
+        "sha256": "1b2cd7b98607f2ac999b87c159263b91e3b33d602720bf8cc10bbe3356985556"
+      },
+      "launch": {
+        "path": "results/progress-2026-11-13/teacher-diagnostics/v2/launch.json",
+        "sha256": "58bf66ecf3826924102209cbcbf3597fd598cd2118243674a7a8d66bd307d5d8"
+      },
+      "launcher_sha256": "4d34fa5d27ba6eda772932f659695dbef99700a959f1fbcf4b12d1c64d9a0b82",
+      "probe_sha256": "ebc18cf898019213d92456f6ca58e41789cda2282c7033a2622c818ee39b7026",
+      "ranks": [
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 0,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 1,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 2,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 3,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 4,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 5,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 6,
+          "teacher_parameter_differences": 0
+        },
+        {
+          "cases": 5,
+          "fp32_to_fp16_changed_teacher_buffers": 32,
+          "pre_deepspeed_buffer_identity_equals_standalone": true,
+          "rank": 7,
+          "teacher_parameter_differences": 0
+        }
+      ]
+    }
+  },
+  "failure_example": {
+    "base_position": 320,
+    "cache_index": 4906,
+    "example_id": "5a67fb14eb7ad3c4285b194447d021e3c098c512bb6a1d6d12c40c25833dc8b7",
+    "native_argmax_before_correction": 68425,
+    "native_top_logits_before": [
+      24.578125,
+      24.5625
+    ],
+    "rank": 2,
+    "standalone_and_corrected_argmax": 524,
+    "standalone_top_logits": [
+      24.5625,
+      24.5625
+    ],
+    "step_zero_based": 207
+  },
+  "findings": [
+    "On all8ranks the complete32-buffer teacher inventory comprises64element FP32 rotary inv_freq tensors. Native pre-DS identities exactly equal the standalone eligibility teacher. DS initialization converts all32 tensors to FP16; all teacher parameters remain byte-equal between native and standalone.",
+    "With zero optimizer updates, the unchanged failed-run schedule reproduces rank2step207/cacheindex4906/position320: native full-vocabulary argmax68425 is outside the fixed vocabulary, whereas standalone argmax524 is covered. This is an initialization numerical-route mismatch, not evidence of teacher parameter learning or training-induced drift.",
+    "The isolated v2 intervention restores the complete exact standalone buffer state after DS initialization. All40fixed rank/step cases then have equal complete selected-logit identities over64contexts, zero argmax disagreements and no uncovered selected context. The exact previous failing case is repaired without masks, Q, schedule, vocabulary or data changes.",
+    "A minimal production correction can capture the pristine pre-DS FP32 buffer tensors and restore those exact bytes/dtypes to the corresponding post-DS CUDA devices. Pre-DS tensors already match standalone; a second verifier model is unnecessary in production.",
+    "The reviewed production-helper source captures/restores the narrow buffer state, freezes its identity in checkpoint_policy, and explicitly rechecks full teacher buffer identity/frozen/eval state immediately after initial start or checkpoint restore before anysample. It is acceptable for fresh isolated engineering; exact-helper v3 execution and the final worker source scientific requalification remain pending."
+  ],
+  "hardware": [
+    [
+      "0",
+      "GPU-8e177e1b-ae73-55d4-98ad-d0b4e339a434",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "1",
+      "GPU-14e0c2c9-b33f-f4aa-b4fc-6632c19e2641",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "2",
+      "GPU-f2d62d3a-a420-2871-4bc9-ec9911202d1a",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "3",
+      "GPU-1870ead3-a098-9d90-ed88-aac3941baf95",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "4",
+      "GPU-a04ae5d9-0556-c89b-c034-3c04f8bb3fa8",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "5",
+      "GPU-f7c56cd2-e8de-03d7-db2c-d4009f3b3797",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "6",
+      "GPU-01fcdb82-ccf6-4d20-c903-23911d81031a",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ],
+    [
+      "7",
+      "GPU-61620af6-dea3-e5b0-dc25-b8d057be615d",
+      "NVIDIA A100 80GB PCIe",
+      "81920",
+      "580.65.06"
+    ]
+  ],
+  "limitations": [
+    "The controlled intervention provides strong causal engineering evidence for the observed failure. It does not prove all examples, all24studies, future buffers/runtimes, or training completion.",
+    "Reviewer read the actual launch/completion/all8rank JSONs and verified their bound hashes and complete cross-version identities. Full selected-logit equality is supported by the reviewed producer tensor fingerprints; reviewer did not independently reload every retained selected-logit .pt tensor or rerun GPU forwards.",
+    "The diagnostic captures selected logits, not independent identities of every hidden feature. New numerical qualification must cover the actual teacher-feature/student training route.",
+    "Native full-mask G0 has no cachedQ gate and retains its internally qualified native objective; this mismatch can still affect teacher numerical behavior and potential quality wherever DS converts buffers. No universal lack-of-impact claim is made."
+  ],
+  "plan": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-training/rq1-pilot-24-20261112-v2/plans/rq1-pilot-24-20261112-v2-code-original-s0.json",
+    "sha256": "195e3357520276749c57ed7e7c5799ed8bff8ec269bc4bd498876adceec6d258"
+  },
+  "production_source_jobs_or_admission_mutated_by_reviewer": false,
+  "requalification_and_new_study_requirements": [
+    "Execute the exact production pre-DS-snapshot helper in an isolated fresh eight-rank probe and show restored full buffer identities and complete selected logits equal standalone, including rank2step207. V2 used standalone-clone intervention and is not this implementation proof.",
+    "Freeze a new pilot source bundle, explicit teacher-buffer policy and new24-run study/plan identities. Preserve and reference the failed study, source,207committed updates, checkpoint/logs and physical cost; restart every scientific run from the complete released common ancestor atstep0.",
+    "Reuse sealed data/cache/vocabulary and existing scan eligibility only with exact unchanged scanner/model/input/runtime/hardware identities plus source-level complete teacher parameter/buffer/function equivalence after the new initialization. Finite40case agreement alone does not validate arbitrary new scan semantics; if that equivalence is not proved, rescan cached examples and compare full gate bitmaps without regenerating data.",
+    "Re-execute all12 registered qualification phases on the new source/teacher policy: both response policies, uninterrupted/direct reference/restart/alternate-pad and stock export coverage. Rerun independent CE/gradient/outside-mask, full-state/restart/suffix, all13 Adam/FP32 updates, runtime and export audits against the new source pins; old numerical evidence cannot admit changed teacher targets/features.",
+    "Add a bounded fresh engineering prefix through at least208successful attempted updates on the failing schedule, retaining all8 online Q checks and zero skips, so the exact previously missed boundary is exercised before the new fixed-budget study is admitted.",
+    "Obtain a separate actual new-evidence review and root integration with complete artifact rehash before new scientific workers run. Keep generalist training on its separately admitted native source; applying this policy to native G0 is a different recipe change requiring its own qualification."
+  ],
+  "required_correction_boundaries": [
+    "Change only the pilot teacher initialization policy; keep native numerical core7, targets, released ancestor, cache, eligibility population, fixed32k vocabulary, Q64, selected masks, ordered examples and optimizer/exposure budgets unchanged.",
+    "Snapshot exact pristine tensors before any DS conversion; restore original FP32 values onto the correct local CUDA device after initialization. Do not merely upcast already rounded FP16 buffers or regenerate approximate rotary frequencies.",
+    "Require the exact complete32\u00d764 buffer inventory, frozen/eval teacher, original dtype/shape, and equal pristine/restored identities. Retain a named buffer-policy receipt in qualification/scientific attempt evidence.",
+    "Preserve the new explicit buffer-identity/frozen/eval assertion immediately after initial start or checkpoint restore; trainable-state_identity alone excludes teacher buffers. Exercise this assertion in the newly source-bound restart qualification.",
+    "Never waive the online exactlyQ teacher coverage assertion, drop the failing position/example, change eligibility to make the old failed run pass, or resume its partially trained checkpoint."
+  ],
+  "reviewed_at_utc": "2026-11-13T10:16:20.871623+00:00",
+  "reviewer": "independent-agent-native-evidence-review",
+  "runtime": {
+    "attention": "unchanged pinned custom LlamaAttention",
+    "attention_mask": "all ones",
+    "batch": 1,
+    "cublas_workspace_config": ":4096:8",
+    "cuda": "12.4",
+    "cudnn_tf32": false,
+    "length": 2048,
+    "matmul_tf32": false,
+    "target_dtype": "float16",
+    "torch": "2.6.0+cu124"
+  },
+  "scientific_run_resume_authorized": false,
+  "scientific_training_admitted": false,
+  "scope": "isolated_teacher_gate_v1_v2_actual_diagnosis_and_proposed_pilot_only_buffer_correction; no scientific admission",
+  "source_reviewed_for_bounded_engineering": {
+    "experiments/verification/launch_teacher_gate_probe_20261113.py": "05d125fea80abed3d8968733bc6e0bede5d831ea9775d656a4f6fe060442e8fa",
+    "experiments/verification/pilot_teacher_gate_probe_20261113.py": "1f3ab82da730bac154d34909101624aa0d912b6bd5d7593ded4bdbb8b770ab2c",
+    "src/taps_rebuild/pilot_train.py": "a5431b8b168d81bfcf6516f4add920b238948c7ea0a8cea94f0d60f464ca9c33"
+  }
+}

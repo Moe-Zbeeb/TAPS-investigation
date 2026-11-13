@@ -1,0 +1,171 @@
+{
+  "actual_evidence": {
+    "full_data_profile_successful_updates_per_rank": 200,
+    "named_trainable_parameters_with_nonzero_raw_adam": 13,
+    "named_trainable_parameters_with_positive_fp32_change_at_profile": 13,
+    "profile_skipped_steps_per_rank": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "qualification_successful_updates_per_rank": 4,
+    "ranks": 8,
+    "reference_successful_updates_per_rank": 4,
+    "restart_split_updates": [
+      2,
+      2
+    ],
+    "retained_pre_step_gradient_partition_files": 96,
+    "runtime_actual_gpu_cases": 32,
+    "stock_equal_token_cases": 8,
+    "stock_synthetic_compatibility_cases": 8
+  },
+  "admission_bridge": {
+    "runtime_interpreter": {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/rl-infra/python/cpython-3.10.21-linux-x86_64-gnu/bin/python3.10",
+      "sha256": "ca420bd4614ae7757b4cd4938b3c663e98d2b631bda518610071d9a4ca0b509e",
+      "size_bytes": 18835288
+    },
+    "sha256": "81dfb486f81d95c45ae10dd282bb8f35af809bf2366b46daf4f8f02a4c59965c"
+  },
+  "approval_conditions": [
+    "Root integration and the unchanged qualified numerical core plus exact reviewed admission-only v4 bridge must rehash retained evidence and verify matching report/review/source/data/vocabulary/runtime identities before scientific worker entry.",
+    "Launch a fresh scratch generalist with this exact native full-mask GAS2 dynamic-scaler nonreentrant checkpoint and CPU FP32 rotary2054 recipe. Never resume the retired reentrant generalist or its cancelled continuation.",
+    "Preserve current owned allocation verification and eight-rank physical-device assignment. Use only source-matched committed checkpoints and the new v4 plan for any continuation across the allocation deadline.",
+    "Keep all13 backward liveness checks, actual scaler/skipped-update accounting, native epoch budget, frozen data/source identities and exact recovery checks active. Failures require diagnosis and a scoped new qualification if the recipe changes.",
+    "Training admission does not admit held-out quality/speed conclusions, changed inference/posterior/serving methods, pilot continuation or new data/mask policies."
+  ],
+  "binding": {
+    "checkpoint_mode": "non_reentrant",
+    "full_data_sha256": {
+      "train": "9425a337fc350eddf4b8dcc0acb505ad12781021f21e67bc864f4aa51c19991c",
+      "validation": "6bccf32f970e0fd75f3e64d6f9badf125e0cd9b15dc867d6c33a225a5b0530f7"
+    },
+    "native_ds_config_sha256": "02b432995b51d8fa1cce7685b7430de7ce14de0419a6729cd9ff0c324c1bec0b",
+    "required_packages": {
+      "accelerate": "==0.26.0",
+      "datasets": "==3.6.0",
+      "deepspeed": "==0.17.1",
+      "huggingface-hub": "==0.33.4",
+      "ninja": null,
+      "numpy": "==1.26.4",
+      "protobuf": "==3.19.0",
+      "pyarrow": "==20.0.0",
+      "pydantic": "==2.11.4",
+      "safetensors": "==0.5.3",
+      "sentencepiece": "==0.1.99",
+      "torch": "==2.6.0",
+      "tqdm": null,
+      "transformers": "==4.53.1",
+      "wandb": "==0.20.1"
+    },
+    "rotary_capacity": 2054,
+    "runtime_python": "envs/native-eagle3/bin/python",
+    "source_sha256": {
+      "native_full_body.py": "40109aae2cdd5b06fa601220175569823f94e0e63d69c44942e93854740046c1",
+      "native_full_body_queue.py": "1cbd366356bfcfe308aa2cdbd02c4a839b0abcb3b45b6b07db68312c58a95d5b",
+      "native_gradients.py": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+      "native_recovery.py": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+      "native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+      "pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+      "pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7"
+    },
+    "target_identity_sha256": "7c3d0c33c2a43a10ba658bdca906de7412050d8c094083a34e0d6fced7c94b6c",
+    "vocabulary_cache_sha256": "721e69e9ad00105f47f1c5e5bcd95e0aebff4acdadd405ca697a314ed1cc8def",
+    "world_size": 8
+  },
+  "blocking_findings": [],
+  "checks_reviewed": {
+    "all13_named_backward_callbacks_and_raw_adam_moments": "passed",
+    "all13_named_fp32_master_changes_at200": "passed",
+    "all_seven_qualified_numerical_sources_unchanged": "passed",
+    "compiled_report_descriptor_and_complete_unchanged_inventory_union": "passed",
+    "complete_full_data200_successful_updates_all_eight_ranks_zero_skips": "passed",
+    "eight_rank_four_vs_two_plus_two_raw_model_optimizer_scaler_scheduler_rng_sampler_and_metrics": "passed",
+    "full_native_direct_function_pre_step_gradient_and_state_parity": "passed",
+    "independent_complete_raw_export_and_eight_rank_stock_compatibility": "passed",
+    "profile_pre_post_runtime_source_package_and_actual_gpu_binding": "passed",
+    "real2048_contexts_and_cpu_fp32_rotary2054_priming": "passed",
+    "sole_exact_resolved_interpreter_exception": "passed",
+    "teacher_provenance_and_exact_train_validation_vocabulary_binding": "passed"
+  },
+  "compiled_report_cpu_job_id": "2217506",
+  "compiler": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/native-full-body-admission-20261113-v1/src/taps_rebuild/native_full_body_admission.py",
+    "sha256": "1526d64accb3d33aa54f9c2f554321180f7bdb6c11f20abe8a315fdb4b4eef3d"
+  },
+  "decision": "approved",
+  "evidence_artifact_count": 819,
+  "evidence_inventory_bytes": 115557262068,
+  "evidence_inventory_identity_sha256": "25cf53ac0059d73d79509fadec396984bcba7342f04726910b11f15ec408e909",
+  "failed_historical_reports_preserved": true,
+  "full_data_sha256": {
+    "train": "9425a337fc350eddf4b8dcc0acb505ad12781021f21e67bc864f4aa51c19991c",
+    "validation": "6bccf32f970e0fd75f3e64d6f9badf125e0cd9b15dc867d6c33a225a5b0530f7"
+  },
+  "independent_reports": {
+    "raw": {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-audit/native-full-body-20261112-v2/raw-v2.json",
+      "sha256": "0adf62f9f56984b809877d60e67018e78a8b4c855b9c8b201e9b466e7f1b2ed9"
+    },
+    "runtime": {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-audit/native-full-body-20261112-v2/runtime-audit.json",
+      "sha256": "7b1fce19f8ff33dbd97823267d220eec4ff6a6ece18deea3becbc3e7db50b2d8"
+    },
+    "stock": {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-audit/native-full-body-20261112-v2/stock-independent.json",
+      "sha256": "b8571d7ba70dd111c531def01007e0e6b579e7f671c87637f92afd80ab91c609"
+    },
+    "teacher": {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/pilot-independent-audit/rq1-pilot-24-20261112-v1/teacher-replay.json",
+      "sha256": "f2d8052ef1a5903d6912a83ced8159a59b19cebbb7ec5d675c0ffa40d79ce495"
+    },
+    "teacher_review": {
+      "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/rq1-pilot-admission-20261112-v4/teacher-review.json",
+      "sha256": "23d8c7b1a3eec830468321c8d9e28959624d83b46f1f8e76a4dc76e0f8350bbe"
+    }
+  },
+  "limitations": [
+    "This authorizes source-bound fresh corrected native scratch training; it is not forty-epoch completion, a trained-quality result, paper-number reproduction, or admission of the separate matched-budget24pilot study.",
+    "Raw full-model evidence compares genuine direct-function native training and corrected checkpointing at registered finite states. It does not recompute full-network FP64 derivatives from every input or prove universal floating-point identity.",
+    "The two unavailable fields in raw-v2 are supplied by separately passing source-bound runtime and stock independent reports; raw-v2 itself remains unchanged and partial_evidence.",
+    "The runtime pre/post source-ordered interval covers the full200-update profile. Short qualification runtime bindings are retrospective, and there is no adversarial machine, GPU-driver-binary, or every-loaded-process-library attestation.",
+    "Stock export compatibility comprises one synthetic nine-token continuation perrank with matching AR/SD tokens. It establishes neither quality/speedup nor universal or long-sequence losslessness.",
+    "Teacher provenance validates retained worker/canonical/native identities and configured termination metadata, not independently retained last-token IDs, regenerated response correctness, or absence of semantic benchmark contamination.",
+    "Reviewer independently read analyzer/bridge/compiler source and actual original/compiled report bytes, verified hashes, bindings, inventory self-identities and complete union inclusion. Retained115.6GB artifact bytes were rehashed by the reviewed actual CPU compiler and must be rehashed again by integration/runtime gates; this review does not claim another complete raw numerical rerun.",
+    "The pilot online teacher Q-coverage failure after207updates remains a separate blocking issue. No eligibility waiver, failed-run resume, or pilot scientific result is approved."
+  ],
+  "production_source_jobs_or_admission_mutated_by_reviewer": false,
+  "profile": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-admission/native-full-body-20261113-v1/profile.json",
+    "sha256": "e48da0ff9dc7c6dff97ef970bb90f27bf76b69ed7c80bc73e38cbd974079d6d6"
+  },
+  "qualification": {
+    "path": "/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/native-full-body-admission/native-full-body-20261113-v1/qualification.json",
+    "sha256": "14bb4435f41a30deaed74bb599f913ff62b29d29ae7d1e94d090472063cc5d58"
+  },
+  "review_type": "actual_compiled_evidence_level_review_after_independent_raw_runtime_stock_and_teacher_replays",
+  "reviewed_at_utc": "2026-11-13T10:10:57.234544+00:00",
+  "reviewer": "independent-agent-native-evidence-review",
+  "scientific_training_admitted": true,
+  "scope": "source_bound_corrected_eight_rank_full_mask_native_scratch_generalist_training_only",
+  "source_review": {
+    "path": "experiments/verification/reviews/native-full-body-v4-bridge-source-review-20261112.json",
+    "sha256": "16cce1aae9f71ffb3792abf6ff91f9a3a58f3cba005f8fcdc3a41a3220d4c35f"
+  },
+  "source_sha256": {
+    "native_full_body.py": "40109aae2cdd5b06fa601220175569823f94e0e63d69c44942e93854740046c1",
+    "native_full_body_queue.py": "1cbd366356bfcfe308aa2cdbd02c4a839b0abcb3b45b6b07db68312c58a95d5b",
+    "native_gradients.py": "594ee0ee196f9deceecdfe7af7a2bda6b8ee728f2aa9c222748689755c4f4d1a",
+    "native_recovery.py": "4293c07e350a4bafbb18520050888daf7a7d84a7760c5da9e1e7db7649a34c10",
+    "native_training.py": "2aad19f7aefddfb70dd02b78d2eaf9709c90834d2308d055a836be83de5fec51",
+    "pilot_cache.py": "f9ad06ae2d754c4485bbd22f3e8b98f65ab9706877f40b8961e9f4f1e706ea5e",
+    "pool.py": "b00f1930c4eb74ab1312426978487162f6105e5c8b2b478ae0d5894b9898b8c7"
+  },
+  "vocabulary_cache_sha256": "721e69e9ad00105f47f1c5e5bcd95e0aebff4acdadd405ca697a314ed1cc8def"
+}

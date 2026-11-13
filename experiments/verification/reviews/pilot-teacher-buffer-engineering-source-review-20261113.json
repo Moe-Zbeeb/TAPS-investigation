@@ -1,0 +1,55 @@
+{
+  "blocking_source_findings": [],
+  "decision": "approved_for_fresh_bounded_pilot_engineering_only",
+  "limitations": [
+    "Source review approves only the finite engineering release described above. It does not approve unseen v3 results, completed qualification, scientific training, zero-LR raw classifications, quality, serving or full PDF completion.",
+    "Native numerical core7 and its separately admitted generalist recipe remain unchanged."
+  ],
+  "production_source_jobs_or_admission_mutated_by_reviewer": false,
+  "release_conditions_for_bounded_engineering": [
+    "Stage all reviewed files, wrapper and recipe into a fresh immutable bundle and verify their exact hashes; do not redeploy into the failed study or alter its frozen producer.",
+    "Before preparation/release, validate the actual v3 exact-helper probe completion and all8rank receipts, all40complete selected-logit identities, unchanged data/runtime/hardware, and matching helper ASTs against the final worker. The wrapper itself does not implement this prerequisite; the separately frozen CPU preparation/release step must enforce and retain it.",
+    "Require a fresh study directory/model namespace with the sealed existing cache/eligibility/vocabulary and unchanged explicit schedules/masks. Preserve failed-study207updates and costs; no scientific failed-run resume.",
+    "Keep protected holder and successor untouched, verify current authority against Slurm immediately before attachment, use all8GPUs inside the existing allocation and remain within the user allowance.",
+    "If the208prefix or any standard qualification phase fails, stop and retain evidence; no science is admitted by this receipt or wrapper."
+  ],
+  "reviewed_at_utc": "2026-11-13T10:19:02.184439+00:00",
+  "reviewed_behavior": [
+    "The teacher buffer helpers preserve pristine32\u00d764 CPUFP32 inv_freq values before DS and restore exact bytes/dtypes to corresponding CUDA devices; worker checks complete teacher buffer identity/frozen/eval state after initial start or checkpoint restoration.",
+    "The new teacher-gate-prefix route requires qualification=True, fresh resume=None, exact code/original/seed0 condition, stop208, and no reference/capture/alternate-pad/allocation-stop options. It requires the exact isolated outputs/pilot-qualifications/STUDY/teacher-gate-prefix directory.",
+    "The ordinary qualification limit remains4 and scientific fixed budget remains1536. Scientific worker admission and exact frozen source/study/recipe checks are unchanged. The prefix calls the unchanged Q guard, seven-head losses, all13 callback coverage, finite/no-overflow checks, released initialization, schedule/mask checks and checkpoint code.",
+    "Prefix outputs are marked qualification=True, teacher_gate_engineering_prefix=True and completed_prefix, and exports/checkpoints are in the engineering namespace. It writes no scientific admission or scientific run completion.",
+    "The frozen wrapper verifies the source bundle and fresh study, live owned protected eight-GPU holder and registered deep10 device mapping; it executes one exact208update prefix and validates all8rank/source-plan/policy/step/gradient receipts before running existing12standard qualification phases.",
+    "New recipe changes only study_id, historical limitation text and explicit teacher_buffer_policy; all cohort/seed/response-policy, Q, mask, schedule, initialization, optimizer, exposure, checkpoint, evaluation and compute-matching settings remain unchanged."
+  ],
+  "reviewer": "independent-agent-native-evidence-review",
+  "scientific_failed_run_resume_authorized": false,
+  "scientific_release_still_requires": [
+    "Completed exact208update prefix and all12new standard GPU qualification phases on the final source and new study.",
+    "A separately source-bound independent audit with new-study pins and freshly reconstructed numerical/raw/restart/zero-learning-rate facts. Do not relabel hardcoded old-study V8 facts as new evidence.",
+    "Complete teacher policy, source/runtime/data/vocabulary/hardware bindings, actual independent review and root integration with retained-artifact rehash."
+  ],
+  "scientific_training_admitted": false,
+  "scope": "source_only_pilot_teacher_buffer_fix_exact208_update_prefix_and_existing12qualification_phase_chain",
+  "source_sha256": {
+    "configs/rq1-pilot-24-20261113.json": "2e0e7d0a685d6b29271676cd7ffbcbdc5b42d977df97d8eb398dbf4a73939773",
+    "experiments/verification/qualify_teacher_buffers_20261113.py": "1a27103dab4faa14f6ead30dc5e5c1fee457e3d98783c4e86e5b61a2a121833e",
+    "src/taps_rebuild/pilot_pipeline.py": "45a813eb3f7063ac8224665ca8397f5a1efd390e25035b23b4c667436f320cf6",
+    "src/taps_rebuild/pilot_queue.py": "0c2ec34b25496f793338abbd3495ea9553f13dde8928c4b9777f5d565506a80f",
+    "src/taps_rebuild/pilot_study.py": "8e9fb70fb92240d9253711cca23c0343d1f5b894c32b87eb12e0d2058872f882",
+    "src/taps_rebuild/pilot_train.py": "f700df226d9bd0ea3391868c24e6780efcfde0be3967bda2dba354e7cc699a4a"
+  },
+  "study_id": "rq1-pilot-24-20261113-v3",
+  "teacher_buffer_helper_ast_sha256": {
+    "restore_teacher_buffers": "5b7e2386e09c91714de0778f6805a5b9c3cb73048b80c86bf053505b6e146a54",
+    "teacher_buffer_snapshot": "1fc92dc524bdc28792ef2b08bf38d6d3a4db1ba3714ea1678465a0254b13d303"
+  },
+  "validation": {
+    "ast_parse": "passed_all_reviewed_python_files",
+    "boundary_predicates": "reviewed/executed isolated AST predicates: exact allowed208route accepted; invalid flags/resume/condition/output/budget rejected; standard4/science1536retained",
+    "gpu_execution_claimed": false,
+    "source_unit_test_command": "PYTHONPATH=src python3 -B -Werror -m unittest discover -s tests -p test_pilot_study.py",
+    "source_unit_tests_passed": 5,
+    "torch_execution_claimed": false
+  }
+}

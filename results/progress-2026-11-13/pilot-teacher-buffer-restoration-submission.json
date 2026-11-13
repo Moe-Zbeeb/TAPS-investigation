@@ -1,0 +1,27 @@
+{
+  "job_id": "2217509",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=grad-students",
+    "--partition=low-priority",
+    "--qos=normal",
+    "--nodes=1",
+    "--ntasks=1",
+    "--nodelist=deep-chungus-6",
+    "--cpus-per-task=1",
+    "--mem=4G",
+    "--time=01:00:00",
+    "--chdir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild",
+    "--job-name=taps-teacher-buffer-probe",
+    "--output=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-teacher-gate-probe-20261113-v2/launch-%j.log",
+    "--wrap",
+    "/bin/bash /mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-teacher-gate-probe-20261113-v2/launch.sh"
+  ],
+  "verified_slurm": "JobId=2217509 JobName=taps-teacher-buffer-probe UserId=mohamadzbib(29562) GroupId=mohamadzbib(29562) MCS_label=N/A Priority=49 Nice=0 Account=grad-students QOS=normal JobState=PENDING Reason=None Dependency=(null) Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0 RunTime=00:00:00 TimeLimit=01:00:00 TimeMin=N/A SubmitTime=2026-11-13T05:10:57 EligibleTime=2026-11-13T05:10:57 AccrueTime=Unknown StartTime=Unknown EndTime=Unknown Deadline=N/A SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-11-13T05:10:57 Scheduler=Main Partition=low-priority AllocNode:Sid=mslurm:905163 ReqNodeList=deep-chungus-6 ExcNodeList=(null) NodeList=(null) NumNodes=1-1 NumCPUs=1 NumTasks=1 CPUs/Task=1 ReqB:S:C:T=0:0:*:* TRES=cpu=1,mem=4G,node=1,billing=1 Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=* MinCPUsNode=1 MinMemoryNode=4G MinTmpDiskNode=0 Features=(null) DelayBoot=00:00:00 OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null) Command=(null) WorkDir=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild StdErr=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-teacher-gate-probe-20261113-v2/launch-2217509.log StdIn=/dev/null StdOut=/mnt/nfs/home/mohamadzbib/projects/taps-rebuild/outputs/preparation/pilot-teacher-gate-probe-20261113-v2/launch-2217509.log Power= \n",
+  "scope": "Isolated eight-rank teacher buffer intervention; zero optimizer updates or scientific resume",
+  "source_sha256": {
+    "launch_teacher_gate_probe_20261113.py": "4d34fa5d27ba6eda772932f659695dbef99700a959f1fbcf4b12d1c64d9a0b82",
+    "pilot_teacher_gate_probe_20261113.py": "ebc18cf898019213d92456f6ca58e41789cda2282c7033a2622c818ee39b7026"
+  }
+}

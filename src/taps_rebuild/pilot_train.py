@@ -47,6 +47,27 @@ def load_plan(path, qualification):
     return plan
 
 
+def teacher_buffer_snapshot(teacher, torch):
+    require(not teacher.training and all(not module.training for module in teacher.modules()) and all(not value.requires_grad for value in teacher.parameters()), 'Pilot teacher must be frozen and in evaluation mode before buffer capture')
+    buffers = {name: value.detach().clone() for name, value in teacher.named_buffers()}
+    require(len(buffers) == 32 and all(re.fullmatch(r'model\.layers\.\d+\.self_attn\.rotary_emb\.inv_freq', name) and value.device.type == 'cpu' and value.dtype == torch.float32 and tuple(value.shape) == (64,) for name, value in buffers.items()), 'Pilot pristine teacher buffer contract differs')
+    return buffers
+
+
+def restore_teacher_buffers(teacher, snapshot, torch):
+    current = dict(teacher.named_buffers())
+    require(set(current) == set(snapshot) and all(not value.requires_grad for value in teacher.parameters()), 'Pilot teacher buffer inventory or frozen parameters changed')
+    for name, value in snapshot.items():
+        require(current[name].device.type == 'cuda' and current[name].shape == value.shape and value.device.type == 'cpu' and value.dtype == torch.float32, 'Pilot teacher buffer restoration geometry differs')
+        parent, leaf = name.rsplit('.', 1)
+        teacher.get_submodule(parent)._buffers[leaf] = value.to(device=current[name].device, dtype=value.dtype)
+    expected = native.tensor_state_identity(snapshot, torch)
+    actual = native.tensor_state_identity(dict(teacher.named_buffers()), torch)
+    require(actual == expected, 'Pilot teacher buffers differ from pristine preconversion bytes')
+    teacher.eval()
+    return {'policy': 'exact_pre_deepspeed_fp32_teacher_buffers', 'buffer_names': sorted(snapshot), 'pristine_buffer_identity_sha256': expected, 'restored_buffer_identity_sha256': actual, 'teacher_parameters_remain_frozen': True, 'teacher_remains_in_evaluation_mode': all(not module.training for module in teacher.modules())}
+
+
 def rng_state(torch):
     import numpy as np
     state = np.random.get_state()
@@ -208,7 +229,7 @@ def update(engine, batch, quota):
     return losses, loss
 
 
-def worker(plan_path, directory, attempt, stop, resume=None, qualification=False, reference=False, capture=False, alternate_pad=False, allocation_stop_epoch=None):
+def worker(plan_path, directory, attempt, stop, resume=None, qualification=False, reference=False, capture=False, alternate_pad=False, allocation_stop_epoch=None, teacher_gate_prefix=False):
     require(os.environ.get('SLURM_JOB_ID') and int(os.environ['WORLD_SIZE']) == 8, 'Pilot worker requires eight-GPU Slurm')
     import numpy as np
     import torch
@@ -216,6 +237,7 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
     from accelerate.utils import set_seed
 
     plan = load_plan(plan_path, qualification)
+    require(not teacher_gate_prefix or qualification and stop == 208 and resume is None and not (reference or capture or alternate_pad) and allocation_stop_epoch is None and plan['cohort'] == 'code' and plan['policy'] == 'original' and plan['seed'] == 0, 'Teacher gate engineering prefix requires its exact fresh failing condition and208-update budget')
     require(plan['recipe']['checkpoint_mode'] == 'non_reentrant', 'Full-body pilots require corrected non-reentrant checkpointing')
     checkpoint_policy = install_checkpoint_policy('off_reference' if reference else 'non_reentrant')
     rank = int(os.environ['LOCAL_RANK'])
@@ -223,11 +245,12 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
     torch.cuda.set_device(rank)
     runtime, hardware = backend(torch), devices()
     require(runtime == plan['scan_runtime'] and hardware == plan['hardware'], 'Training differs from eligibility runtime or ordered physical hardware')
-    require(0 < stop <= (4 if qualification else 1536) and (qualification or stop % plan['recipe']['checkpoint_interval'] == 0), 'Pilot stop boundary is not registered')
+    require(0 < stop <= (208 if teacher_gate_prefix else 4 if qualification else 1536) and (qualification or stop % plan['recipe']['checkpoint_interval'] == 0), 'Pilot stop boundary is not registered')
     directory = Path(directory).resolve()
     expected = Path(plan['project_root']) / 'outputs'
     require(directory.is_relative_to(expected), 'Pilot journals must stay under project outputs/')
     require(directory.is_relative_to(expected / 'pilot-qualifications' / plan['study_id']) if qualification else directory == Path(plan['output']), 'Pilot execution directory differs from its registered namespace')
+    require(not teacher_gate_prefix or directory == expected / 'pilot-qualifications' / plan['study_id'] / 'teacher-gate-prefix', 'Teacher gate engineering prefix requires its isolated qualification directory')
     directory.mkdir(parents=True, exist_ok=True)
     require(re.fullmatch('[A-Za-z0-9][A-Za-z0-9_.-]{0,63}', attempt), 'Pilot attempt name is invalid')
     model_root = model_directory(plan, directory, qualification)
@@ -267,9 +290,12 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
     model = cnets.Model(config, plan['recipe']['ds_config'], training, path=plan['target']['path'], load_emb=True, load_head=True)
     model.scandata(None, plan['target']['path'])
     checkpoint_policy['rotary_cache'] = prime_rotary_cache(model, torch)
+    teacher_buffers = teacher_buffer_snapshot(model.target_model, torch)
     engine, _, _, _ = deepspeed.initialize(model=model, model_parameters=model.parameters(), config=plan['recipe']['ds_config'])
     engine.train()
     model.target_model.eval()
+    checkpoint_policy['teacher_buffers'] = restore_teacher_buffers(model.target_model, teacher_buffers, torch)
+    del teacher_buffers
     initial = state_identity(engine, torch)
     initial_names = sorted(name for name, value in model.named_parameters() if value.requires_grad)
     require(not any(name.startswith(('target_model.', 'embed_tokens.')) for name in initial_names), 'Frozen teacher or embedding is trainable')
@@ -282,6 +308,7 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
     if resume:
         require(Path(resume).resolve() == Path(resume) and Path(resume).parent == model_root / 'checkpoints', 'Pilot resume checkpoint is outside its model run')
     start = restore(engine, plan, trajectory, Path(resume), torch, rank) if resume else 0
+    require(native.tensor_state_identity(dict(model.target_model.named_buffers()), torch) == checkpoint_policy['teacher_buffers']['pristine_buffer_identity_sha256'] and all(not value.requires_grad for value in model.target_model.parameters()) and all(not module.training for module in model.target_model.modules()), 'Pilot checkpoint restoration changed the pristine frozen teacher buffer policy')
     require(start < stop, 'Pilot checkpoint cursor is beyond requested stop')
     count = cache_receipt['rank_examples'][rank]
     ids = np.memmap(cache / ('rank-' + str(rank) + '.ids'), mode='r', dtype='<i4', shape=(count, 2, 2048))
@@ -369,6 +396,7 @@ def worker(plan_path, directory, attempt, stop, resume=None, qualification=False
     final = state_identity(engine, torch)
     report = {'status': 'completed_prefix' if stop < 1536 else 'completed_fixed_budget', 'qualification': qualification, 'reference': reference, 'plan_identity_sha256': plan['identity_sha256'], 'source_sha256': plan['source_sha256'], 'rank': rank, 'start_step': start, 'stop_step': stop, 'successful_updates_this_attempt': stop - start, 'logical_examples_per_rank': stop, 'logical_effective_contexts_per_rank': stop * plan['quota'], 'cuda_default_stream_seconds_this_attempt': cuda_seconds, 'rank_loop_seconds_this_attempt': loop_seconds, 'checkpoint_seconds_this_attempt': checkpoint_seconds, 'physical_attempts_this_process': stop - start, 'state_identity': final, 'journal_sha256': pool.digest(journal), 'vocabulary_identity_sha256': native.tensor_state_identity({key: getattr(model, key) for key in ('d2t', 't2d')}, torch)}
     report['checkpoint_policy'] = checkpoint_policy
+    report['teacher_gate_engineering_prefix'] = teacher_gate_prefix
     report['all_thirteen_trainables_received_finite_nonzero_gradients_each_update'] = True
     report['cuda_max_allocated_bytes'] = torch.cuda.max_memory_allocated(rank)
     report['cuda_max_reserved_bytes'] = torch.cuda.max_memory_reserved(rank)
@@ -406,9 +434,10 @@ def main():
     parser.add_argument('--capture', action='store_true')
     parser.add_argument('--alternate-pad', action='store_true')
     parser.add_argument('--allocation-stop-epoch', type=float)
+    parser.add_argument('--teacher-gate-prefix', action='store_true')
     args = parser.parse_args()
     require(not (args.reference or args.capture or args.alternate_pad) or args.qualification, 'Numerical/reference modes are engineering qualifications only')
-    print(json.dumps(worker(args.plan, args.directory, args.attempt, args.stop, args.resume, args.qualification, args.reference, args.capture, args.alternate_pad, args.allocation_stop_epoch), indent=2))
+    print(json.dumps(worker(args.plan, args.directory, args.attempt, args.stop, args.resume, args.qualification, args.reference, args.capture, args.alternate_pad, args.allocation_stop_epoch, args.teacher_gate_prefix), indent=2))
 
 
 if __name__ == '__main__':
