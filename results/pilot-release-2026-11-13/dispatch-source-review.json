@@ -1,0 +1,23 @@
+{
+  "scope": "Scheduling-only full-node high-priority or normal-priority dispatch for the exact admitted fresh24pilot study",
+  "reviewer": "side-conversation final code review",
+  "scientific_source_changed": false,
+  "new_scientific_approval": false,
+  "files": {
+    "experiments/verification/side_pilot_dispatch_20261113.py": "ea59203efd8ff4aac8463ea644be67ee0ff7dadbf4c00c76c5abb0034eecc041",
+    "tests/test_side_pilot_dispatch.py": "964f96ad6502962e634ee88c874517ce2006cb9a370ecbac9d2a404cf51109c9"
+  },
+  "verified_behavior": [
+    "Exact study/report/review hashes and unchanged complete producer bundle are required.",
+    "Only registered physical deep10 GPUs are allowed; all8GPUs must be owned and used.",
+    "Existing protected high-priority holders and continuations are never cancelled or modified.",
+    "An owned pending fallback can yield to a live validated high-priority holder; active normal work is never duplicated.",
+    "Only exact zero-exit clean allocation boundaries continue; failed/preempted or numerically dirty work is not retried automatically.",
+    "Normal batch uses grad-students/low-priority/normal, exclusive8A100,48h,no automatic Slurm requeue."
+  ],
+  "tests": {
+    "full_suite": "479 tests,9 skips,passed before final two cancellation-race tests",
+    "focused": "11 tests passed including two final cancellation-race cases"
+  },
+  "limitation": "Operational mocked tests establish source behavior, not actual allocation or training execution."
+}
